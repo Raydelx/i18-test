@@ -1,0 +1,105 @@
+---
+import Container from "./container.astro";
+interface Props {
+  class?: string;
+  name: string;
+  charge: string;
+  nationality: string;
+  idioms: string;
+  skills?: string;
+  src: string;
+  alt: string;
+  cualification?: string;
+}
+const { name, charge, nationality, idioms, skills, src, alt, cualification } =
+  Astro.props;
+---
+
+<Container
+  ><section>
+    <div
+      class={`
+      ${Astro.props.class} 
+      h-full 
+      mt-28 
+      rounded-xl 
+      border 
+      grid md:grid-cols-2 
+      bg-gradient-to-r from-blue-200 to-cyan-200
+      `}>
+      <div class="grid place-content-center">
+        <img
+          class="mask md:h-[25rem] -mt-28"
+          src={src}
+          alt={alt}
+          style="filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5))"
+        />
+      </div>
+
+      <div class="flex flex-col p-4 h-full justify-end gap-2">
+        <h2
+          class="max-w-2xl text-3xl font-bold text-black tracking-tight leading-none">
+          {name}
+        </h2>
+        <p class="max-w-2xl font-medium text-gray-700 md:text-lg">
+          {charge}
+        </p>
+        <div>
+          <h2
+            class="max-w-2xl mt-2 text-xl font-bold text-black tracking-tight leading-none">
+            Nationality:
+          </h2>
+          <p class="max-w-2xl font-medium text-gray-700 md:text-lg">
+            {nationality}
+          </p>
+        </div>
+        <div>
+          <h2
+            class="max-w-xl text-xl font-bold text-black tracking-tight leading-none">
+            Languages:
+          </h2>
+          <ul class="max-w-2xl font-medium text-gray-700 md:text-lg">
+            {idioms}
+          </ul>
+        </div>
+        {
+          skills && (
+            <div>
+              <div>
+                <h3 class="max-w-xl text-xl font-bold text-black tracking-tight leading-none mb-2">
+                  {skills}
+                </h3>
+              </div>
+            </div>
+          )
+        }
+
+        {
+          cualification && (
+            <div class="grid md:grid-cols-3 gap-4">
+              <div class="md:col-span-2">
+                <div>
+                  <h3 class="max-w-xl text-xl font-bold text-black tracking-tight leading-none ">
+                    Qualification:
+                  </h3>
+                  <ul class="max-w-2xl font-medium text-gray-700 md:text-lg ">
+                    {cualification}
+                  </ul>
+                </div>
+              </div>
+              <div class="grid grid-cols-2 place-items-center">
+                <slot name="logo" />
+                <slot name="logo2" />
+              </div>
+            </div>
+          )
+        }
+      </div>
+    </div>
+  </section></Container
+>
+<style>
+  .mask {
+    mask-image: linear-gradient(black 80%, transparent);
+  }
+</style>

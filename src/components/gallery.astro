@@ -1,0 +1,101 @@
+---
+import "photoswipe/style.css";
+---
+
+<div>
+  <h2
+    class="text-3xl lg:p-8 lg:text-4xl font-bold lg:tracking-tight xl:tracking-tighter mb-10">
+    Gallery
+  </h2>
+  <div
+    class="pswp-gallery grid grid-cols-3 md:grid-cols-5 gap-5 object-fill"
+    id="gallery">
+    <a
+      class="object-cover"
+      href="/gallery/img-1.jpg"
+      data-cropped="true"
+      data-pswp-width="1349"
+      data-pswp-height="607"
+      target="_blank">
+      <img
+        class="h-44 w-52 md:size-64 object-cover rounded-xl hover:scale-105 duration-200 transition-all"
+        src="/gallery/img-1.webp"
+        alt=""
+      />
+    </a>
+    <a
+      href="/gallery/img-2.jpg"
+      data-cropped="true"
+      data-pswp-width="1024"
+      data-pswp-height="768"
+      target="_blank">
+      <img
+        class="h-44 w-52 object-cover rounded-xl md:size-64 hover:scale-105 duration-200"
+        src="/gallery/img-2.jpg"
+        alt=""
+      />
+    </a>
+    <a
+      href="/gallery/img-3.jpg"
+      data-cropped="true"
+      data-pswp-width="4000"
+      data-pswp-height="3000"
+      target="_blank">
+      <img
+        class="h-44 w-52 object-cover rounded-xl md:size-64 hover:scale-105 duration-200 transition-all"
+        src="/gallery/img-3.webp"
+        alt=""
+      />
+    </a>
+    <a
+      href="/gallery/img-4.jpg"
+      data-cropped="true"
+      data-pswp-width="6067"
+      data-pswp-height="3467"
+      target="_blank">
+      <img
+        class="h-44 w-52 object-cover rounded-xl md:size-64 hover:scale-105 duration-200 transition-all"
+        src="/gallery/img-4.webp"
+        alt=""
+      />
+    </a>
+    <a
+      href="/gallery/img-5.jpg"
+      data-cropped="true"
+      data-pswp-width="4763"
+      data-pswp-height="3175"
+      target="_blank">
+      <img
+        class="h-44 w-52 object-cover rounded-xl md:size-64 hover:scale-105 duration-200 transition-all"
+        src="/gallery/img-5.webp"
+        alt=""
+      />
+    </a>
+  </div>
+  <div class="flex m-auto">
+    <div
+      class="relative inline-flex group m-auto mt-10 content-center justify-center">
+      <div
+        class="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg filter group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200">
+      </div>
+      <a
+        href="/gallery/"
+        title=""
+        role="button"
+        class="relative items-center justify-center px-5 py-2 text-base font-bold text-white transition-all duration-200 bg-gray-900 border-2 border-transparent focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 hover:bg-gray-800 rounded">
+        Go to Gallery
+      </a>
+    </div>
+  </div>
+</div>
+
+<script>
+  import PhotoSwipeLightbox from "photoswipe/lightbox";
+
+  const lightbox = new PhotoSwipeLightbox({
+    gallery: "#gallery",
+    children: "a",
+    pswpModule: () => import("photoswipe"),
+  });
+  lightbox.init();
+</script>

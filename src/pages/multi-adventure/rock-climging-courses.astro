@@ -1,0 +1,419 @@
+---
+import Container from "../../components/container.astro";
+import InformationProducts from "../../components/ui/informationProducts.astro";
+import Icon from "../../components/Icon.astro";
+import Layout from "../../layouts/Layout.astro";
+import SliderReact from "../../hooks/SliderReact";
+import Days from "../../components/products-components/days.astro";
+import Includes from "../../components/products-components/includes.astro";
+import Link from "../../components/ui/link.astro";
+import Cancellation from "../../components/products-components/cancellation.astro";
+import Widget from "@/components/products-components/widget.astro";
+import Dots from "@/components/ui/dots.astro";
+
+// Duplica y cambia las rutas para añadir o modificar las fotos
+
+const IMG = [
+  {
+    src: "/multi-adventure/rock-climbing-courses/rcc-1.webp",
+  },
+  {
+    src: "/multi-adventure/rock-climbing-courses/rcc-2.webp",
+  },
+  {
+    src: "/multi-adventure/rock-climbing-courses/rcc-3.webp",
+  },
+  {
+    src: "/multi-adventure/rock-climbing-courses/rcc-4.webp",
+  },
+  {
+    src: "/multi-adventure/rock-climbing-courses/rcc-5.webp",
+  },
+];
+
+const brings = [
+  {
+    title:
+      "Technical clothing appropriate for the time of year and sporting activity (fleece, windbreaker, waterproof and breathable jacket, gloves, etc.). A windbreaker or thin fleece is always useful, even in summer.",
+  },
+  {
+    title: "Comfortable clothing that is neither tight nor bulky",
+  },
+  {
+    title: "Backpack of approximately 15 to 30 liters.",
+  },
+  {
+    title: "Approach shoes or sneakers",
+  },
+  {
+    title: "1L water bottle",
+  },
+  {
+    title: "Picnic",
+  },
+  {
+    title: "Sun protection (sunglasses, sunscreen, lip balm, cap or hat)",
+  },
+  {
+    title: "Thermal blanket",
+  },
+  {
+    title: "A pencil and paper",
+  },
+];
+---
+
+<Layout title="Gravel Bike / MTB">
+  <Container>
+    <main class="mt-16">
+      <!-- Foto, nombre y destino -->
+
+      <div
+        class="bg-center bg-no-repeat bg-[url('/multi-adventure/rock-climbing-courses/rcc-principal.webp')] bg-cover h-[30rem] rounded-2xl">
+        <div class="flex flex-col justify-end h-full p-6 w-auto">
+          <div class="flex gap-2">
+            <Icon icon="destiny-logo" size="1.6rem" color="white" />
+            <p
+              class="text-xl font-normal text-white lg:text-2xl flex flex-col justify-end h-full [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
+              Granada
+            </p>
+          </div>
+
+          <h1
+            class="text-3xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-5xl [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
+            Rock Climbing Courses
+          </h1>
+        </div>
+      </div>
+
+      <!-- Informacion general de los viajes -->
+
+      <div
+        class="grid grid-cols-2 md:grid-cols-6 h-auto mt-3 gap-3 place-content-start md:px-6">
+        <InformationProducts title="Price" subtitle="Trip Notes">
+          <div slot="icon">
+            <Icon icon="price-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts title="Pre-booking" subtitle="100%">
+          <div slot="icon">
+            <Icon icon="price-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts title="Minimum of persons" subtitle="1">
+          <div slot="icon">
+            <Icon icon="group-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts title="Maximum of persons" subtitle="6">
+          <div slot="icon">
+            <Icon icon="group-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts title="Duration" subtitle="Check Trips Notes">
+          <div slot="icon">
+            <Icon icon="timer-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts title="Tour type" subtitle="Guided">
+          <div slot="icon">
+            <Icon icon="guide-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts title="Season" subtitle2="All Year">
+          <!-- <div slot="icon">
+            <Icon icon="autumn-logo" size="1.6rem" color="#0E46A3" />
+          </div> -->
+        </InformationProducts>
+        <InformationProducts title="Rock Climbing">
+          <div slot="icon">
+            <Icon icon="hike-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+      </div>
+
+      <!-- Informacion tecnica -->
+      <div class="p-4">
+        <h2
+          class="text-4xl md:text-3xl xl:text-4xl font-bold mt-16 mb-8 text-center">
+          Courses
+        </h2>
+        <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-10">
+          <div class="flex flex-col gap-2 justify-center items-center">
+            <Icon icon="book-logo" size="2.5rem" color="#0E46A3" />
+            <p class="mt-2">Sport Leading Climbing Course</p>
+          </div>
+          <div class="flex flex-col gap-2 justify-center items-center">
+            <Icon icon="book-logo" size="2.5rem" color="#0E46A3" />
+            <p class="mt-2">Climbing Fall Belay Course</p>
+          </div>
+          <div class="flex flex-col gap-2 justify-center items-center">
+            <Icon icon="book-logo" size="2.5rem" color="#0E46A3" />
+            <p class="mt-2">Sport Multi-pitch Climbing Course</p>
+          </div>
+          <div class="flex flex-col gap-2 justify-center items-center">
+            <Icon icon="book-logo" size="2.5rem" color="#0E46A3" />
+            <p class="mt-2">Self-Rescue Course on multi-pitch Routes</p>
+          </div>
+        </div>
+      </div>
+      <!--  Include, exclude, complementaries  -->
+      <div
+        class="grid md:grid-cols-2 lg:grid-cols-3 mt-20 md:mt-26 md:mb-36 gap-16 md:gap-4">
+        <!-- Include -->
+        <Includes title="Included">
+          <ul slot="description" class="mt-4 flex flex-col gap-2">
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                Liability insurance and assistance
+              </p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                Rock climbing Sports Technician
+              </p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Transfer</p>
+            </li>
+            <li class="flex gap-2">
+              <div>
+                <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              </div>
+              <p class="max-w-[320px] text-md">
+                If necessary, personal equipment (climbing shoes, helmet, and
+                harness)
+              </p>
+            </li>
+
+            <li class="flex gap-2">
+              <div>
+                <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              </div>
+              <p class="max-w-[320px] text-md">
+                Collective material (ropes, carabiners, slings, belay devices,
+                etc.)
+              </p>
+            </li>
+          </ul>
+        </Includes>
+        <!-- Exclude -->
+        <Includes title="Not Included">
+          <div slot="description" class="flex flex-col gap-2 mt-4">
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Lunch</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Snack</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Water</p>
+            </li>
+          </div>
+        </Includes>
+        <!-- Complementaries -->
+      </div>
+
+      <div class="grid md:grid-cols-2 h-auto gap-10 md:gap-20 md:py-36 py-10">
+        <div class="static h-[385px] hidden md:block">
+          <img
+            class="rounded-xl absolute md:w-[20rem] lg:w-[25rem] hover:z-40 transition-all duration-300 ease-out hover:scale-105"
+            src="/multi-adventure/rock-climbing-courses/rcc-principal.webp"
+            alt="ciclista mirando la sierra con cicicleta a su lado"
+          />
+          <img
+            class="rounded-xl absolute md:w-[10rem] lg:w-[12rem] md:mt-48 lg:mt-60 ml-6 z-10 grayscale-[60%] hover:grayscale-0 transition-all duration-300 ease-out hover:scale-105"
+            src="/multi-adventure/rock-climbing-courses/rcc-1.webp"
+            alt="ciclista mirando la sierra con cicicleta a su lado"
+          />
+          <img
+            class="rounded-xl absolute md:w-[10rem] lg:w-[15em] ml-64 md:-mt-24 lg:-mt-32 grayscale-[60%] hover:grayscale-0 transition-all duration-300 ease-out hover:scale-105"
+            src="/multi-adventure/rock-climbing-courses/rcc-2.webp"
+            alt="ciclista mirando la sierra con cicicleta a su lado"
+          />
+        </div>
+
+        <div class="grid gap-5">
+          <div class="">
+            <h2
+              class="max-w-2xl md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+              Availability
+            </h2>
+            <Dots class="mb-4" />
+
+            <ul class="grid gap-2 text-lg">
+              <li class="flex flex-wrap gap-2">
+                <Icon icon="spring-logo" size="1.6rem" color="#0E46A3" />
+                <p>All Year</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="">
+            <h2
+              class="max-w-2xl md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+              Requirements
+            </h2>
+            <Dots class="mb-4" />
+            <p class="text-lg text-gray-900">
+              <span class="text-xl">🔹</span> Age: 18 years
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <Widget
+        title="What to bring for rock climbing"
+        description="Weather is important to consider while packing for your outdoor activity. Your packing list is based on your comfort and sensitivity. Layering your clothes is the best way to travel and be outdoors. It is highly recommended as the best way to stay warm and cool, as the weather is bound to change in the mountains."
+        img="/multi-adventure/rock-climbing/rc-product.webp"
+        text="Any questions about the recommendations of the material do not hesitate to contact us. "
+        brings={brings}
+      />
+
+      <!-- Button to download PDF -->
+      <section class="grid md:grid-cols-2 gap-6">
+        <Cancellation />
+      </section>
+      <div
+        class="grid bg-[#0E46A3] place-items-center md:mb-20 border-spacing-3 backdrop-blur-sm w-fit m-auto md:px-28 p-10 mt-12 rounded-xl shadow-[0px_0px_23px_14px_#00000024]">
+        <h2 class="text-2xl md:text-3xl font-bold text-center text-gray-200">
+          More information about our Courses
+        </h2>
+        <Link
+          style="muted"
+          href="/multi-adventure/rock-climbing-courses/Sport-Leading-Climbing-Course.pdf"
+          download="Sport Leading Climbing Course"
+          class="flex gap-1 items-center justify-center mt-8 font-semibold"
+          rel="noopener">
+          Sport leading climbing course
+        </Link>
+        <Link
+          style="muted"
+          href="/multi-adventure/rock-climbing-courses/Sport-multi-pitch-climbing-course.pdf"
+          download="Sport multi pitch climbing course"
+          class="flex gap-1 items-center justify-center mt-8 font-semibold"
+          rel="noopener">
+          Sport multi pitch climbing course
+        </Link>
+        <Link
+          style="muted"
+          href="/multi-adventure/rock-climbing-courses/Climbing-fall-belay-course.pdf"
+          download="Climbing fall belay course"
+          class="flex gap-1 items-center justify-center mt-8 font-semibold"
+          rel="noopener">
+          Climbing fall belay course
+        </Link>
+        <Link
+          style="muted"
+          href="/multi-adventure/rock-climbing-courses/Self-rescue-course-on-multi-pitch-routes.pdf"
+          download="Self-rescue course on multi pitch routes"
+          class="flex gap-1 items-center justify-center mt-8 font-semibold"
+          rel="noopener">
+          Self-rescue course on multi pitch routes
+        </Link>
+      </div>
+
+      <!-- Slider Photos -->
+      <section class="m-auto md:w-full rounded-xl md:px-8 md:py-20">
+        <ol class="relative mt-16">
+          {(<SliderReact IMG={IMG} client:visible />)}
+        </ol>
+      </section>
+
+      <!--  TimeLine per days  -->
+      <h2
+        class="text-4xl md:text-5xl xl:text-6xl md:p-4 mt-16 font-bold mb-12 text-center">
+        What to expect
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-16 mt-4 p-4 place-items-center">
+        <div
+          class="flex flex-col gap-2 isolate aspect-video w-[22rem] md:w-[30rem] rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 p-4">
+          <h3 class="text-xl font-bold">Sport Leading Climbing Course</h3>
+          <p class="text-gray-700">
+            The introductory sport climbing course aims at people who want to
+            gain autonomy and confidence when climbing on rocks or walls.
+          </p>
+          <p class="text-gray-700">
+            The course will allow you to climb sport climbing routes of up to
+            one pitch with complete autonomy and safety.
+          </p>
+          <p class="text-gray-700">
+            <strong>First day: </strong>Indoor climbing wall
+          </p>
+          <p class="text-gray-700">
+            <strong>Second day: </strong>Outdoor on the rock
+          </p>
+        </div>
+        <div
+          class="flex flex-col gap-2 isolate aspect-video w-[22rem] md:w-[30rem] rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 p-4">
+          <h3 class="text-xl font-bold">Climbing Fall Belay Course</h3>
+          <p class="text-gray-700">
+            The main focus of the course is to teach participants how to
+            minimize the impact of falls through dynamic belaying techniques,
+            increasing the safety and confidence of both the climber and the
+            belayer. The course is designed for climbers of all levels, from
+            beginners to advanced, who wish to improve their belaying skills and
+            learn advanced fall management techniques on natural rock.
+          </p>
+
+          <p class="text-gray-700">
+            <strong>First day: </strong>Indoor
+          </p>
+          <p class="text-gray-700">
+            <strong>Second day: </strong>Outdoor
+          </p>
+        </div>
+        <div
+          class="flex flex-col gap-2 isolate aspect-video w-[22rem] md:w-[30rem] rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 p-4">
+          <h3 class="text-xl font-bold">Sport Multi-pitch Climbing Course</h3>
+          <p class="text-gray-700">
+            The introductory multi-pitch sport climbing course is designed for
+            those who want to learn the techniques and skills necessary to climb
+            sports routes of various lengths. Participants will learn how to
+            belay each other, climb progressively, and overcome the obstacles
+            that arise on multi-pitch routes.
+          </p>
+          <p class="text-gray-700">
+            The course will allow you to climb sport climbing routes of up to
+            one pitch with complete autonomy and safety.
+          </p>
+          <p class="text-gray-700">
+            <strong>First day: </strong>Indoor
+          </p>
+          <p class="text-gray-700">
+            <strong>Second day: </strong>Outdoor on the rock
+          </p>
+        </div>
+        <div
+          class="flex flex-col gap-2 isolate aspect-video w-[22rem] md:w-[30rem] rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 p-4">
+          <h3 class="text-xl font-bold">
+            Self-Rescue Course on Multi-pitch Routes
+          </h3>
+          <p class="text-gray-700">
+            The course prepares and teaches you to deal with unexpected
+            situations and handle the necessary equipment with confidence and
+            safety. You learn to master essential self-rescue techniques in
+            climbing with intensive practical and theoretical training.
+          </p>
+          <p class="text-gray-700">
+            The course will allow you to climb sport climbing routes of up to
+            one pitch with complete autonomy and safety.
+          </p>
+          <p class="text-gray-700">
+            <strong>First day: </strong>Indoor
+          </p>
+          <p class="text-gray-700">
+            <strong>Second day: </strong>Indoor
+          </p>
+        </div>
+      </div>
+    </main>
+  </Container>
+</Layout>

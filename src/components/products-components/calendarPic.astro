@@ -1,0 +1,75 @@
+---
+interface Props {
+  title: string;
+}
+const { title } = Astro.props;
+---
+
+<div class="grid max-w-screen-xl mx-auto gap-14 mt-6 lg:grid-cols-12">
+  <div id="trophies-text" class="mr-auto lg:col-span-4 md:text-right">
+    <h2
+      id="trophies-text"
+      class="max-w-2xl md:mb-12 mb-4 font-bold tracking-tight leading-none text-4xl md:text-5xl xl:text-6xl">
+      {title}
+    </h2>
+    <slot name="date" />
+  </div>
+  <div
+    id="trophies"
+    class="hidden lg:col-span-8 lg:flex max-h-96 place-content-end theater">
+    <slot name="picture" />
+  </div>
+</div>
+
+<!-- <style>
+  #theater,
+  #trophies-text h2,
+  #trophies-text p {
+    animation: cover-animation linear both;
+    animation-timeline: view();
+  }
+  #theater-text h2,
+  #theater-text p,
+  #trophies {
+    animation: entry-animation linear both;
+    animation-timeline: view();
+  }
+  #theater {
+    animation-range: entry 10% cover 40%;
+  }
+  #theater-text h2 {
+    animation-range: entry 10% cover 30%;
+  }
+  #theater-text p {
+    animation-range: entry 10% cover 20%;
+  }
+  #trophies {
+    animation-range: entry 30% cover 50%;
+  }
+  #trophies-text h2 {
+    animation-range: entry 30% cover 40%;
+  }
+  #trophies-text p {
+    animation-range: entry 20% cover 30%;
+  }
+  @keyframes entry-animation {
+    0% {
+      opacity: 0;
+      translate: var(--entry-animation) 0;
+    }
+    100% {
+      opacity: 1;
+      translate: 0 0;
+    }
+  }
+  @keyframes cover-animation {
+    0% {
+      opacity: 0;
+      translate: var(--cover-animation) 0;
+    }
+    100% {
+      opacity: 1;
+      translate: 0 0;
+    }
+  }
+</style> -->

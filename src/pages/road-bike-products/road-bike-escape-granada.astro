@@ -1,0 +1,551 @@
+---
+import Container from "../../components/container.astro";
+import InformationProducts from "../../components/ui/informationProducts.astro";
+import Icon from "../../components/Icon.astro";
+import Layout from "../../layouts/Layout.astro";
+import SliderReact from "../../hooks/SliderReact";
+import Days from "../../components/products-components/days.astro";
+import Includes from "../../components/products-components/includes.astro";
+import Cancellation from "../../components/products-components/cancellation.astro";
+import Widget from "@/components/products-components/widget.astro";
+import Dots from "@/components/ui/dots.astro";
+import Route from "@/components/ui/icons/route.astro";
+import Link from "@/components/ui/link.astro";
+
+// Duplica y cambia las rutas para añadir o modificar las fotos
+
+const IMG = [
+  {
+    src: "/cycle-tour/roadbike/roadbike-escape-granada/rb-eg-1.webp",
+  },
+  {
+    src: "/cycle-tour/roadbike/roadbike-escape-granada/rb-eg-2.webp",
+  },
+  {
+    src: "/cycle-tour/roadbike/roadbike-escape-granada/rb-eg-3.webp",
+  },
+  {
+    src: "/cycle-tour/roadbike/roadbike-escape-granada/rb-eg-4.webp",
+  },
+];
+
+const brings = [
+  {
+    title: "Helmet and gloves. Included.",
+  },
+  {
+    title: "Comfortable clothing and shoes.",
+  },
+  {
+    title: "Cycle glasses.",
+  },
+  {
+    title: "Water (minimum 1 L) included",
+  },
+  {
+    title: "Sun protection.",
+  },
+];
+---
+
+<Layout title="Gravel Bike / MTB">
+  <Container>
+    <main class="mt-16">
+      <!-- Foto, nombre y destino -->
+
+      <div
+        class="bg-center bg-no-repeat bg-[url('/cycle-tour/roadbike/roadbike-escape-granada/rb-eg-principal.webp')] bg-cover h-[30rem] rounded-2xl">
+        <div class="flex flex-col justify-end h-full p-6 w-auto">
+          <div class="flex gap-2">
+            <Icon icon="destiny-logo" size="1.6rem" color="white" />
+            <p
+              class="text-xl font-normal text-white lg:text-2xl flex flex-col justify-end h-full [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
+              Granada
+            </p>
+          </div>
+
+          <h1
+            class="text-3xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-5xl [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
+            Road Bike Escape Granada
+          </h1>
+        </div>
+      </div>
+
+      <!-- Informacion general de los viajes -->
+
+      <div
+        class="grid grid-cols-2 md:grid-cols-6 h-auto mt-3 gap-3 place-content-start md:px-6">
+        <InformationProducts title="Price" subtitle="680">
+          <div slot="icon">
+            <Icon icon="price-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts title="Pre-booking" subtitle="20%">
+          <div slot="icon">
+            <Icon icon="price-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts title="Minimum of persons" subtitle="4">
+          <div slot="icon">
+            <Icon icon="group-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+
+        <InformationProducts title="Duration" subtitle="4 Days">
+          <div slot="icon">
+            <Icon icon="timer-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts title="Tour type" subtitle="Guided">
+          <div slot="icon">
+            <Icon icon="guide-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts title="Season" subtitle2="Spring Autumn Winter">
+          <!-- <div slot="icon">
+            <Icon icon="autumn-logo" size="1.6rem" color="#0E46A3" />
+          </div> -->
+        </InformationProducts>
+      </div>
+      <div class="">
+        <div
+          class="grid grid-cols-2 justify-between md:grid-cols-6 h-auto mt-3 gap-3 md:px-6">
+          <InformationProducts title="Total distance" subtitle="All levels">
+            <div slot="icon">
+              <Icon icon="distance-logo" size="1.6rem" color="#0E46A3" />
+            </div>
+          </InformationProducts>
+          <InformationProducts title="Total ascent" subtitle="All levels">
+            <div slot="icon">
+              <Icon icon="up-logo" size="1.6rem" color="#0E46A3" />
+            </div>
+          </InformationProducts>
+          <InformationProducts title="Total descent" subtitle="All levels">
+            <div slot="icon">
+              <Icon icon="down-logo" size="1.6rem" color="#0E46A3" />
+            </div>
+          </InformationProducts>
+          <InformationProducts title="Route type" subtitle="Flower">
+            <div slot="icon">
+              <Route />
+            </div>
+          </InformationProducts>
+          <InformationProducts title="Difficulty" subtitle="All levels">
+            <div slot="icon"></div>
+          </InformationProducts>
+          <InformationProducts title="Road Bike" subtitle="Yes">
+            <div slot="icon">
+              <Icon icon="bike-logo" size="1.6rem" color="#0E46A3" />
+            </div>
+          </InformationProducts>
+        </div>
+      </div>
+
+      <!-- Informacion tecnica -->
+
+      <!--  Include, exclude, complementaries  -->
+      <div
+        class="grid md:grid-cols-2 lg:grid-cols-2 mt-20 md:mt-26 md:mb-36 gap-16 md:gap-4">
+        <!-- Include -->
+        <Includes title="Included">
+          <ul slot="description" class="mt-4 flex flex-col gap-2">
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Professional guides</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                Liability insurance and assistance
+              </p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Backup vehicle</p>
+            </li>
+            <li class="flex gap-2">
+              <div>
+                <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              </div>
+              <p class="max-w-[320px] text-md">Luggage transport</p>
+            </li>
+            <li class="flex gap-2">
+              <div>
+                <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              </div>
+              <p class="max-w-[320px] text-md">Airport Transfer</p>
+            </li>
+            <li class="flex gap-2">
+              <div>
+                <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              </div>
+              <p class="max-w-[320px] text-md">Accommodation: 3 nights</p>
+            </li>
+            <li class="flex gap-2">
+              <div>
+                <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              </div>
+              <p class="max-w-[320px] text-md">Breakfast: 3 days</p>
+            </li>
+            <li class="flex gap-2">
+              <div>
+                <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              </div>
+              <p class="max-w-[320px] text-md">
+                Snack provisions during the cycle routess
+              </p>
+            </li>
+            <li class="flex gap-2">
+              <div>
+                <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              </div>
+              <p class="max-w-[320px] text-md">Road bike and helmet</p>
+            </li>
+            <li class="flex gap-2">
+              <div>
+                <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              </div>
+              <p class="max-w-[320px] text-md">Water bottle and cycle shirt</p>
+            </li>
+          </ul>
+        </Includes>
+        <!-- Exclude -->
+        <Includes title="Not Included">
+          <div slot="description" class="flex flex-col gap-2 mt-4">
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Flight</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Travel & assistance insurance</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Cancellation insurance</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Lunch and dinner</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Extra meals</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Extra excursions</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Personal expenses</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Tips</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Extra nights</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                Private transport after or before the tour
+              </p>
+            </li>
+          </div>
+        </Includes>
+        <!-- Complementaries -->
+      </div>
+
+      <div class="grid md:grid-cols-2 h-auto gap-10 md:gap-20 py-10">
+        <div class="static h-[385px] hidden md:block content-center">
+          <img
+            class="rounded-xl absolute md:w-[20rem] lg:w-[25rem] hover:z-40 transition-all duration-300 ease-out hover:scale-105"
+            src="/cycle-tour/roadbike/roadbike-trails-granada/rb-tg-3.webp"
+            alt="ciclista mirando la sierra con cicicleta a su lado"
+          />
+          <img
+            class="rounded-xl absolute md:w-[10rem] lg:w-[16rem] md:mt-48 lg:mt-60 ml-6 z-10 grayscale-[60%] hover:grayscale-0 transition-all duration-300 ease-out hover:scale-105"
+            src="/cycle-tour/roadbike/roadbike-trails-granada/rb-tg-principal.webp"
+            alt="ciclista mirando la sierra con cicicleta a su lado"
+          />
+          <img
+            class="rounded-xl absolute md:w-[10rem] lg:w-[18em] ml-64 md:-mt-24 lg:-mt-32 grayscale-[60%] hover:grayscale-0 transition-all duration-300 ease-out hover:scale-105"
+            src="/cycle-tour/roadbike/roadbike-trails-granada/rb-tg-1.webp"
+            alt="ciclista mirando la sierra con cicicleta a su lado"
+          />
+        </div>
+
+        <div class="grid gap-5">
+          <div class="">
+            <h2
+              class="max-w-2xl md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+              Availability
+            </h2>
+            <Dots class="mb-4" />
+
+            <ul class="grid gap-2 text-lg">
+              <li class="flex flex-wrap gap-2">
+                <Icon icon="spring-logo" size="1.6rem" color="#0E46A3" />
+                <p>Spring / Autumn / Winter</p>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2
+              class="max-w-2xl md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+              Highlight
+            </h2>
+            <Dots class="mb-4" />
+            <p class="text-lg text-gray-900">
+              Explore the Outdoors of Granada on your Road bike through an area
+              with many landscapes from rolling hills, pine forests, deserts,
+              and mountains to the tropical coast.
+            </p>
+            <p class="text-lg text-gray-900">
+              Enjoy our rural hotel selected with great care for its location
+              and character to make your trip a single experience.
+            </p>
+          </div>
+
+          <div class="">
+            <h2
+              class="max-w-2xl md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+              Requirements
+            </h2>
+            <Dots class="mb-4" />
+            <p class="text-lg text-gray-900">
+              <span class="text-xl">🔹</span> Cycling is an activity carrying some
+              inherent risks. Please consider your skills, abilities, and fitness
+              carefully, and always wear a helmet.
+            </p>
+            <p class="text-lg text-gray-900">
+              <span class="text-xl">🔹</span> The route type and difficulty are based
+              on your fitness level and technical skills. Before booking the “Road
+              Bike Escape Granada,” please fill out a questionnaire form to tailor
+              your itinerary to the right level.
+            </p>
+            <p class="text-lg text-gray-900">
+              <span class="text-xl">🔹</span> n your ROAD BIKE Questionnaire, you
+              should submit honest information about your Road Bike experience, physical
+              fitness, and comfort. We offer different trails for all levels to give
+              you a positive and safe experience with us.
+            </p>
+            <p class="text-lg text-gray-900">
+              <span class="text-xl">🔹</span> If you are uncertain about what fitness
+              level or technical difficulty is most appropriate for you, check our
+              Blog Cycling article “Cycle grades” or contact us.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-12 md:gap-20 md:mt-14 items-center">
+        <div class="mb-6 md:mb-20">
+          <h2
+            class="max-w-2xl md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+            Optional
+          </h2>
+          <Dots class="mb-4" />
+          <p class="text-lg text-gray-900 mb-2">
+            ¿Rent a bike or bring your own? A rental bike might not be perfectly
+            suited to you individually, but consider the following advantages of
+            renting a bike while traveling.
+          </p>
+          <p class="text-lg text-gray-900">
+            <span class="text-xl">🔹</span> It makes your life easier.
+          </p>
+          <p class="text-lg text-gray-900">
+            <span class="text-xl">🔹</span> No worries about damaging your bike during
+            transport.
+          </p>
+          <p class="text-lg text-gray-900">
+            <span class="text-xl">🔹</span> No setting up your bicycle on the first
+            day.
+          </p>
+          <p class="text-lg text-gray-900">
+            <span class="text-xl">🔹</span> We select the MTB that suits you the
+            best.
+          </p>
+
+          <p class="text-lg text-gray-900 mt-4">
+            Very good reasons to travel with your bike.
+          </p>
+          <p class="text-lg text-gray-900">Comfortable and confident:</p>
+          <p class="text-lg text-gray-900">
+            <span class="text-xl">🔹</span> You are focused on performance.
+          </p>
+          <p class="text-lg text-gray-900">
+            <span class="text-xl">🔹</span> You’re confident in handling your bike.
+          </p>
+          <p class="text-lg text-gray-900">
+            <span class="text-xl">🔹</span> It could save money.
+          </p>
+        </div>
+        <div>
+          <img
+            class="rounded-xl hidden md:block"
+            src="/cycle-tour/roadbike/roadbike-escape-granada/rb-eg-product.webp"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="grid md:grid-cols-2 gap-6 md:gap-12 mt-10">
+        <div class="mb-6 md:mb-20">
+          <h2
+            class="max-w-2xl md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+            Road Bike
+          </h2>
+          <Dots class="mb-4" />
+          <p class="text-lg text-gray-900 mb-2">
+            Check our BLOG CYCLING article “Our Bicycle Selection” to see your
+            Road Bike. We provide 3 high-quality Full Carbon Road Bikes. When
+            booking, you indicate your height and weight so that the bicycle's
+            frame size is correct at the start of your tour.
+          </p>
+          <p class="text-lg text-gray-900">
+            <span class="text-xl">🔹</span> We help you fit your pedals or saddle
+            if you'd like to bring them.
+          </p>
+          <p class="text-lg text-gray-900">
+            <span class="text-xl">🔹</span> We provide low-range gearing suited to
+            mountainous terrain.
+          </p>
+        </div>
+        <div class="mb-6 md:mb-20">
+          <h2
+            class="max-w-2xl md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+            Level
+          </h2>
+          <Dots class="mb-4" />
+          <p class="text-lg text-gray-900 mb-2">
+            The route type and difficulty are based on your fitness level and
+            technical skills. Before booking the “Road Bike Trails Granada,”
+            please fill out a questionnaire form to tailor your itinerary to the
+            right level. After receiving your questionnaire, we send you an MTB
+            Bike route with technical information.
+          </p>
+        </div>
+      </div>
+
+      <!-- Button to download PDF -->
+      <section class="grid md:grid-cols-2 gap-6">
+        <div>
+          <div>
+            <h2 class="md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+              Cancellation Policy
+            </h2>
+            <Dots class="mb-4" />
+          </div>
+
+          <div>
+            <p class="text-lg text-gray-700 mt-1">See Terms and Conditions.</p>
+          </div>
+        </div>
+        <div>
+          <h2
+            class="max-w-2xl md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+            Recommendations
+          </h2>
+          <Dots class="mb-4" />
+          <p class="text-lg text-gray-900">
+            <span class="text-xl">🔹</span> Explore the city of Granada in the afternoon
+            with some tapas or experience a Flamenco show in the evening.
+          </p>
+          <p class="text-lg text-gray-900">
+            <span class="text-xl">🔹</span> Join a guided Alhambra tour, a palace
+            and fortress monument of Islamic architecture. (World Heritage Site by
+            UNESCO)
+          </p>
+          <p class="text-lg text-gray-900">
+            <span class="text-xl">🔹</span> Visit the Oil Mill Interpretation Centre
+            with various routes where you can discover the culture of olive oil.
+          </p>
+          <p class="text-lg text-gray-900">
+            <span class="text-xl">🔹</span> You don't have to organize anything.
+            We handle your reservations to meet your needs If you are interested
+            in one of these recommendations or any other activity.
+          </p>
+        </div>
+      </section>
+      <div
+        class="grid bg-[#0E46A3] place-items-center border-spacing-3 backdrop-blur-sm w-fit m-auto md:px-28 p-10 mt-24 rounded-xl shadow-[0px_0px_23px_14px_#00000024]">
+        <h2 class="text-2xl md:text-3xl font-bold text-center text-gray-200">
+          More information about our tour
+        </h2>
+        <Link
+          style="muted"
+          href="/cycle-tour/roadbike/roadbike-escape-granada/ROAD BIKE ESCAPE GRANADA.pdf"
+          download="Road Bike Escape Granada"
+          class="flex gap-1 items-center justify-center mt-8 font-semibold"
+          rel="noopener">
+          View trip notes
+        </Link>
+      </div>
+
+      <!-- Slider Photos -->
+      <section class="m-auto md:w-full rounded-xl md:px-8 md:py-20">
+        <ol class="relative mt-16">
+          {(<SliderReact IMG={IMG} client:visible />)}
+        </ol>
+      </section>
+
+      <!--  TimeLine per days  -->
+      <h2 class="text-4xl md:text-5xl xl:text-6xl md:p-4 mt-16 font-bold mb-4">
+        What to expect
+      </h2>
+      <p class="text-gray-700 text-lg mt-4 md:px-4">
+        Granada is a perfect cycling getaway destination, excellent for a
+        cycling holiday.
+      </p>
+      <p class="text-gray-700 text-lg mt-4 md:px-4">
+        There is an infinity of cycle routes for all levels from beginners to
+        advanced cyclists with different gradient climbs of varying lengths and
+        a huge variety of elevation profiles through an area with a great
+        diversity of landscapes from rolling hills, pine forests, deserts, and
+        mountains to the tropical coast. The roads are well-surfaced with little
+        traffic in a mountainous region with popular mountain passes and iconic
+        climbs where professionals come to train on these great roads such as
+        the Sierra Nevada Stage which is one of the great climbs in Spain and
+        has been selected for several times during “La Vuelta”, Tour of Spain,
+        as a Grand Tour Summit Finish on the highest paved road in Europe.
+      </p>
+      <p class="text-gray-700 text-lg mt-4 md:px-4">
+        The Road Bike Escape Granada Tour takes you on 3 varied routes. Except
+        for the first day, the rides are organized in the morning, giving you
+        time to relax in the afternoon while enjoying your rural accommodation.
+      </p>
+      <p class="text-gray-700 text-lg mt-4 md:px-4">
+        On the first day, we organize a route in the afternoon.
+      </p>
+      <p class="text-gray-700 text-lg mt-4 md:px-4">
+        There is the option to visit the city of Granada and explore the many
+        cultural sites and countless tapa bars and restaurants. For those who
+        would like to visit the Alhambra Palace, there is the option to organize
+        the tour on the last day in the morning.
+      </p>
+      <p class="text-gray-700 text-lg mt-4 md:px-4">
+        Being a tour of 4 days, the Road Bike Escape Granada is designed for
+        those who need a break and want to take a few days off looking for some
+        great riding.
+      </p>
+      <p class="text-gray-700 text-lg mt-4 md:px-4">
+        For non-riding partners, we organize extra activities during your stay.
+      </p>
+      <p class="text-gray-700 text-lg mt-4 md:px-4">
+        Easy to get to Granada by our organized transport either in the airport
+        Málaga or Granada.
+      </p>
+      <p class="text-gray-700 text-lg mt-4 md:px-4">
+        We have extensive knowledge of all the trails and tailor each ride to
+        the guests to ensure you a great experience with us.
+      </p>
+      <p class="text-gray-700 text-lg mt-4 md:px-4">
+        Join us and experience our cycle routes, an ideal place to challenge
+        yourself and experience epic bicycle routes through the province.
+      </p>
+    </main>
+  </Container>
+</Layout>

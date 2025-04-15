@@ -1,0 +1,17 @@
+---
+import Container from "../components/container.astro";
+import Sectionhead from "../components/sectionhead.astro";
+import Layout from "../layouts/Layout.astro";
+import Form from "@/hooks/Form";
+---
+
+<Layout title="Contact">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Book my Tour</Fragment>
+      <Fragment slot="desc"></Fragment>
+    </Sectionhead>
+
+    <Form client:visible />
+  </Container>
+</Layout>

@@ -1,0 +1,50 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Container from "../components/container.astro";
+import Sectionhead from "../components/sectionhead.astro";
+import Card from "../components/card.astro";
+
+const GRAVELKBIKE = [
+  {
+    name: "Sierra Nevada",
+    description: "E-Bike Tour",
+    href: "/gravel-bike/sierra-nevada/",
+    href_img: "/cycle-tour/montainbike/sierra-nevada/sierranevada-1.webp",
+    alt_img: "Sierra nevada tour with e-bike",
+  },
+  {
+    name: "MTB Escape Granada",
+    description: "",
+    href: "/gravel-bike/mtb-escape-granada",
+    href_img: "/cycle-tour/montainbike/mtb-escape-granada/mtb-eg-product.webp",
+    alt_img: "MTB Escape Granada",
+  },
+  {
+    name: "MTB Trails Granada",
+    description: "",
+    href: "/gravel-bike/mtb-trails-granada",
+    href_img: "/cycle-tour/montainbike/mtb-trails-granada/mtb-tg-product.webp",
+    alt_img: "MTB Escape Granada",
+  },
+];
+---
+
+<Layout title="Gravel Bike / MTB Products">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">MTB</Fragment>
+      <Fragment slot="desc"></Fragment>
+    </Sectionhead>
+    <main class="mt-32">
+      <ul class="grid md:grid-cols-2 lg:grid-cols-3 gap-12 w-full">
+        {
+          GRAVELKBIKE.map((tour) => (
+            <li class="mb-10">
+              <Card {...tour} />
+            </li>
+          ))
+        }
+      </ul>
+    </main>
+  </Container>
+</Layout>

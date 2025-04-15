@@ -1,0 +1,36 @@
+{
+    
+    "faqs": [
+      {
+        "question": "How do I book my tour?",
+        "answer": "Click  \"Book my tour \" on the homepage and answer the following questions. Fill out the form that will appear below. You receive a confirmation by email with the payment - and tour details. "
+      },
+      {
+        "question": "What methods of payment are accepted?",
+        "answer": "Bank transfer payment. After booking a tour you will receive a proforma invoice with your tour- and payment details. We reserve the right to cancel your reservation if the final payment is not received when due."
+      },
+      {
+        "question": "What languages are available for guided tours?",
+        "answer": "Spanish, English, Dutch and French."
+      },
+      {
+        "question": "Do I need travel insurance?",
+        "answer": "The company Montaraz Outdoors & Culture does not offer insurance. To ensure the safety and security of our clients we recommend arranging appropriate travel insurance during your trip. On multi-day or 8-day tours, it is obligatory and your responsibility to arrange travel insurance. Ensure you have read and understood the full terms and conditions of your travel insurance policy and that you are covered for all activities you intend to undertake whilst on the tour. Your Insurance Policy must fully cover you for medical expenses and emergency repatriation to your home country. "
+      },
+      {
+        "question": "Is my deposit refundable?",
+        "answer": "The client has the right to cancel the tour in writing and sign if the cancellation takes place more than the given date. (See Terms and Conditions - Cancellation Policy for each activity) Once, we have received your notice, the cancellation will take effect."
+      },
+      {
+        "question": "When will I receive more detailed information about my tour so I can star planning my travel?",
+        "answer": "General information about each activity you find in the trip notes. Detailed information about the activity will be sent after making a pre-reservation."
+      },
+      {
+        "question": "Price private tour?",
+        "answer": "The price for private tours is not mentioned in the tour information. If you are interested in one of our private tours send us a message by Email, WhatsApp, or click  \"book my tour\". The price depends on the number of people and the optional complementaries."
+      }
+      
+    ]
+  }
+
+  

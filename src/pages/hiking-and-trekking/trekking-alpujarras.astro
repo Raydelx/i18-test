@@ -1,0 +1,568 @@
+---
+import Container from "../../components/container.astro";
+import InformationProducts from "../../components/ui/informationProducts.astro";
+import Icon from "../../components/Icon.astro";
+import Layout from "../../layouts/Layout.astro";
+import SliderReact from "../../hooks/SliderReact";
+import Days from "@/components/products-components/days.astro";
+import Includes from "@/components/products-components/includes.astro";
+import Route from "@/components/ui/icons/route.astro";
+import Link from "@/components/ui/link.astro";
+import Dots from "@/components/ui/dots.astro";
+import Widget from "@/components/products-components/widget.astro";
+
+// Duplica y cambia las rutas para añadir o modificar las fotos
+
+const IMG = [
+  {
+    src: "/hiking-and-trekking/trekking-alpujarras/ta-1.webp",
+  },
+  {
+    src: "/hiking-and-trekking/trekking-alpujarras/ta-2.webp",
+  },
+  {
+    src: "/hiking-and-trekking/trekking-alpujarras/ta-3.webp",
+  },
+  {
+    src: "/hiking-and-trekking/trekking-alpujarras/ta-4.webp",
+  },
+  {
+    src: "/hiking-and-trekking/trekking-alpujarras/ta-5.webp",
+  },
+];
+const DAYS = [
+  {
+    day: "1",
+    tecnicalInfo: false,
+    description:
+      "Upon arrival in Málaga or Granada, our pick-up will drive us to our rural hotel in the Guadix region located between the north of the Sierra Nevada Mountain Range and the Gorafe desert, one of the unique landscapes of the province of Granada. Upon arrival in Málaga or Granada, our pick-up will drive us to our rural hotel in the Guadix region located between the north of the Sierra Nevada Mountain Range and the Gorafe desert, one of the unique landscapes of the province of Granada. The tour leader will organize dinner to celebrate the first day of the journey.",
+  },
+  {
+    day: "2",
+    tecnicalInfo: true,
+    title: "Trail 1 Laroles – Válor",
+    description:
+      "After breakfast, we drive over the mountain pass “Puerto La Ragua” to the trekking starting point in the Laroles village. The trail starts at the upper part of the village, at 1000 meters above sea level, from where you can see the flat roofs of the town's houses. One of the defining elements of the territory that reaches its maximum significance in the Alpujarra region is the architecture with values from other cultures and civilizations. The orography and relief of the terrain influence the profile of the towns. These villages are distributed and oriented towards the south so that the sun offers them its luminosity and keeps them warm for as long as possible in the cold winters. Most of these towns are located in the middle of the slopes that descend from the top of the Sierra Nevada in a stepped composition that gives them a charm.",
+    description2: "Dinner: The tour leader will organize a dinner.",
+    totalDistance: "13 KM",
+    totalAscent: "550 M",
+    totalDescent: "650 M",
+    duration: "5 hours",
+    physical_difficulty: "B",
+    technical_difficulty: "B",
+  },
+  {
+    day: "3",
+    tecnicalInfo: true,
+    title: "Trail 2 Válor – Mecina Bombarón",
+    description:
+      "We leave the village of Válor which was the homeland of the Alpujarra hero Aben Humeya, a descendant of the Umayyad caliphs, who was proclaimed King of the Alpujarra after the Moorish uprising against the Christians in the reign of Philip II, back in 1568. The second hike will take us to Yegen, a peaceful village where the romantic traveler Gerald Brenan lived known as the author of “Al Sur de Granada”, one of the best-known books about the Alpujarra. After crossing the Mecina River and a steep climb we reach the village of Mecina Bombarón. After we take the car that brings us to our next hotel nearby in the village of Cádiar located between the Sierra Nevada and the Contraviesa mountain range.",
+    description2: "Dinner: The tour leader will organize a dinner.",
+    totalDistance: "13 KM",
+    totalAscent: "700 M",
+    totalDescent: "400 M",
+    duration: "5 hours",
+    physical_difficulty: "B",
+    technical_difficulty: "B",
+  },
+  {
+    day: "4",
+    tecnicalInfo: true,
+    title: "Trail 3 Cádiar - Trevélez",
+    description:
+      "Today's stage will be more demanding. It will take us from the southernmost point of the Alpujarra trail (800 meters) to the highest trekking point, about 1.500 meters above sea level, in the village of Trevélez. Besides being the highest village in the Sierra Nevada, Trevélez is renowned for its naturally cured hams, benefiting from the healthy air of Sierra Nevada. In the 19th century, the ham of Trevélez gained recognition when Queen Isabel II granted it the distinction of being a supplier to the Royal House. It currently holds the Denomination of Origin and has attained worldwide recognition.",
+    description2: "Dinner: The tour leader will organize a dinner.",
+    totalDistance: "20 KM",
+    totalAscent: "1.300 M",
+    totalDescent: "900 M",
+    duration: "8 hours",
+    physical_difficulty: "C",
+    technical_difficulty: "B",
+  },
+  {
+    day: "5",
+    tecnicalInfo: true,
+    title: "Trail 4 Trevélez – La Taha",
+    description:
+      "Today, the trail takes you through a forest of holm oaks which in autumn offers a colorful and impressive valley. In spring the gorse and broom come into bloom, producing a sea of bright yellow flowers. The panoramic views we pass expose the rugged landscapes with deep valleys and large slopes of the Alpujarra region. Isolated places like ravines are home to many species of fauna and flora due to microclimates characterized by freezing temperatures in winter and mild temperatures in summer. After crossing two ravines and a long descent the path arrives at the village of Busquístar near our destination for today called “La Taha”, a municipality that consists of several beautiful small towns. The name derives from the administrative divisions of the ancient Kingdom of Granada during the Nasrid era. It is a peaceful place with stunning views, preserving well-maintained traditional neighborhoods in the Alpujarra.",
+    description2: "Dinner: The tour leader will organize a dinner.",
+    totalDistance: "17 KM",
+    totalAscent: "650 M",
+    totalDescent: "950 M",
+    duration: "6 hours",
+    physical_difficulty: "B",
+    technical_difficulty: "B",
+  },
+  {
+    day: "6",
+    tecnicalInfo: true,
+    title: "Trail 5 La Taha – Capileira ",
+    description:
+      "Today's last stage is an upward trail with a long ascent in the morning that brings us to our last destination, the village of Capileira, the highest of the three small towns located at 1.435 meters in the gorge of the Poqueira River. The Poqueira Gorge and the three villages on its slopes have become one of the most iconic sights of the Alpujarra Mountains. It is located at the foot of the highest peaks and contains one of the most surprising landscapes of the Sierra Nevada Natural Park making it a must-see for anyone who wants to get to know the Alpujarra. Here we stay for the last two nights of the trekking.",
+    description2: "Free Dinner",
+    totalDistance: "9 KM",
+    totalAscent: "815 M",
+    totalDescent: "410 M",
+    duration: "5 hours",
+    physical_difficulty: "C",
+    technical_difficulty: "B",
+  },
+  {
+    day: "7",
+    tecnicalInfo: false,
+    title: "Free day Capileira",
+    description:
+      "Explore the Historic-Artistic site of Poqueira River Valley and the three villages; Pampaneira, Bubión, and Capileira.",
+    description2:
+      "Although its origins date back to the Phoenicians, Romans, and Visigoths, the strongest legacy is left by the Arabs. The traditional architecture with typical white houses and flat roofs built along steep and winding streets, irrigation systems, agriculture, and linguistic roots are the inheritance left by a culture that was present for eight hundred years.",
+    description3:
+      "For the enthusiasts, there is the option to join the guide for an extra hike in the area.",
+    description4:
+      "The guide will organize a place to have dinner together to celebrate the last evening of the journey.",
+  },
+  {
+    day: "8",
+    tecnicalInfo: false,
+    description:
+      "The journey ends after breakfast at our hotel. There will be a private transfer from the hotel to the airport in Málaga or Granada.",
+  },
+];
+
+const brings = [
+  {
+    title: "Water bottle",
+  },
+  {
+    title: "Picnic",
+  },
+  {
+    title: "Light day pack 20 l – 35 L",
+  },
+  {
+    title: "Waterproof Rain cover backpack",
+  },
+  {
+    title: "Weather-appropriate and comfortable clothing",
+  },
+  {
+    title: "Hiking jacket",
+  },
+  {
+    title: "Quick-drying pants/shorts",
+  },
+  {
+    title: "Long-sleeve shirt",
+  },
+  {
+    title: "Hiking socks",
+  },
+  {
+    title: "Rainwear (jacket and pants)",
+  },
+  {
+    title: "Hiking shoes, not open shoes!",
+  },
+  {
+    title: "Trekking poles.",
+  },
+  {
+    title: "Sun protection",
+  },
+  {
+    title: "Polar fleece or softshell jacket",
+  },
+  {
+    title: "Gloves",
+  },
+  {
+    title: "Warm hat",
+  },
+  {
+    title: "Neck gaiter",
+  },
+];
+---
+
+<Layout title="">
+  <Container>
+    <main class="mt-16">
+      <!-- Foto, nombre y destino -->
+
+      <div
+        class="bg-center bg-no-repeat bg-[url('/public/hiking-and-trekking/trekking-alpujarras/ta-principal.webp')] h-[25rem] rounded-2xl bg-cover">
+        <div class="flex flex-col justify-end h-full p-6 w-auto bg-cover">
+          <div class="flex gap-2 [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
+            <Icon icon="destiny-logo" size="1.6rem" color="gray" />
+            <p
+              class="text-xl font-normal text-white lg:text-2xl flex flex-col justify-end h-full [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
+              Sierra Nevada Natural Park
+            </p>
+          </div>
+
+          <h1
+            class="text-3xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-5xl [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
+            Trekking Alpujarras
+          </h1>
+        </div>
+      </div>
+
+      <!-- Informacion general de los viajes -->
+
+      <div
+        class="grid grid-cols-2 md:grid-cols-6 h-auto mt-3 gap-3 place-content-start md:px-6">
+        <InformationProducts title="Price" subtitle="1.100">
+          <div slot="icon">
+            <Icon icon="price-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts title="Pre-booking" subtitle="20%">
+          <div slot="icon">
+            <Icon icon="price-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts title="Minimum of persons" subtitle="4">
+          <div slot="icon">
+            <Icon icon="group-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts title="Duration" subtitle="8 Days">
+          <div slot="icon">
+            <Icon icon="timer-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts title="Tour type" subtitle="Guided">
+          <div slot="icon">
+            <Icon icon="guide-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts title="Season" subtitle2="Spring Autumn">
+          <!-- <div slot="icon">
+            <Icon icon="autumn-logo" size="1.6rem" color="#0E46A3" />
+          </div> -->
+        </InformationProducts>
+      </div>
+
+      <!-- Informacion tecnica -->
+
+      <div class="">
+        <div
+          class="grid grid-cols-2 justify-between md:grid-cols-6 h-auto mt-3 gap-3 md:px-6">
+          <InformationProducts title="Total distance" subtitle="72 km">
+            <div slot="icon">
+              <Icon icon="distance-logo" size="1.6rem" color="#0E46A3" />
+            </div>
+          </InformationProducts>
+
+          <InformationProducts title="Total ascent" subtitle="4.015 m">
+            <div slot="icon">
+              <Icon icon="up-logo" size="1.6rem" color="#0E46A3" />
+            </div>
+          </InformationProducts>
+          <InformationProducts title="Total descent" subtitle="3.310 m">
+            <div slot="icon">
+              <Icon icon="down-logo" size="1.6rem" color="#0E46A3" />
+            </div>
+          </InformationProducts>
+          <InformationProducts title="Route type" subtitle="Point to point">
+            <div slot="icon">
+              <Route />
+            </div>
+          </InformationProducts>
+          <InformationProducts title="Physical Difficulty" subtitle="B - C" />
+          <InformationProducts title="Technical Difficulty" subtitle="B" />
+        </div>
+      </div>
+
+      <!--  Include, exclude, complementaries  -->
+      <div
+        class="grid md:grid-cols-2 lg:grid-cols-3 mt-20 md:mt-26 md:mb-36 gap-16 md:gap-4">
+        <!-- Include -->
+        <Includes title="Included">
+          <ul slot="description" class="mt-4 flex flex-col gap-2">
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Qualified Mountain Leader</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                Liability insurance and assistance
+              </p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Airport transfer</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Daily luggage transport</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Accommodation: 7 nights</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Breakfast: 7 days</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Hiking shirt</p>
+            </li>
+          </ul>
+        </Includes>
+        <!-- Exclude -->
+        <Includes title="Not Included">
+          <div slot="description" class="flex flex-col gap-2 mt-4">
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Flight</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Travel & assistance insurance</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Cancellation insurance</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Lunch and dinner</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Extra meals</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Extra nights</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                Extra excursions or activities
+              </p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Personal expenses</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Tips</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                Private transport after or before the tour
+              </p>
+            </li>
+          </div>
+        </Includes>
+        <!-- Complementaries -->
+        <Includes title="Extra">
+          <div slot="description" class="flex flex-col gap-2 mt-4">
+            <li class="flex gap-2">
+              <div>
+                <Icon icon="complement-logo" size="1.6rem" color="#0E46A3" />
+              </div>
+              <p class="max-w-[320px] text-md">
+                Visit and taste the famous ham of Trevélez in the highest
+                village of Sierra Nevada.
+              </p>
+            </li>
+            <li class="flex gap-2">
+              <div>
+                <Icon icon="complement-logo" size="1.6rem" color="#0E46A3" />
+              </div>
+            </li>
+          </div>
+        </Includes>
+      </div>
+    </main>
+
+    <div
+      class="grid md:grid-cols-2 h-auto gap-10 md:gap-20 md:py-36 py-10 items-center">
+      <div class="static h-[385px] hidden md:block">
+        <img
+          class="rounded-xl absolute md:w-[20rem] lg:w-[25rem] hover:z-40 transition-all duration-300 ease-out hover:scale-105"
+          src="/hiking-and-trekking/trekking-alpujarras/ta-1.webp"
+          alt="ciclista mirando la sierra con cicicleta a su lado"
+        />
+        <img
+          class="rounded-xl absolute md:w-[10rem] lg:w-[12rem] md:mt-48 lg:mt-60 ml-6 z-10 grayscale-[60%] hover:grayscale-0 transition-all duration-300 ease-out hover:scale-105"
+          src="/hiking-and-trekking/trekking-alpujarras/ta-5.webp"
+          alt="ciclista mirando la sierra con cicicleta a su lado"
+        />
+        <img
+          class="rounded-xl absolute md:w-[10rem] lg:w-[15em] ml-64 md:-mt-24 lg:-mt-32 grayscale-[60%] hover:grayscale-0 transition-all duration-300 ease-out hover:scale-105"
+          src="/hiking-and-trekking/trekking-alpujarras/ta-4.webp"
+          alt="ciclista mirando la sierra con cicicleta a su lado"
+        />
+      </div>
+
+      <div class="grid gap-5">
+        <div class="grid grid-flow-row gap-4">
+          <h2
+            class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+            Availability
+          </h2>
+          <h2 class="max-w-2xl mb-2 md:px-0 font-bold text-xl md:text-2xl">
+            2025
+          </h2>
+
+          <ul class="grid gap-2 text-lg">
+            <li class="flex flex-wrap gap-2">
+              <div>
+                <p>20-09 / 27-09</p>
+              </div>
+            </li>
+          </ul>
+          <h2 class="max-w-2xl mt-4 mb-2 md:px-0 font-bold text-xl md:text-2xl">
+            2026
+          </h2>
+
+          <ul class="grid gap-2 text-lg">
+            <li class="flex flex-wrap gap-2">
+              <div>
+                <p>11-04 / 18-04</p>
+                <p>05-09 / 12-09</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mt-4">
+          <h2
+            class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+            Highlight
+          </h2>
+          <p class="text-lg text-gray-900 mb-1">
+            <span class="text-xl">🔹</span> Sierra Nevada Natural Park
+          </p>
+          <p class="text-lg text-gray-900 mb-1">
+            <span class="text-xl">🔹</span> Whitewashed mountain villages
+          </p>
+          <p class="text-lg text-gray-900 mb-1">
+            <span class="text-xl">🔹</span> Beautiful scenery while hiking
+          </p>
+          <p class="text-lg text-gray-900 mb-1">
+            <span class="text-xl">🔹</span> Mountain ecosystem
+          </p>
+          <p class="text-lg text-gray-900 mb-1">
+            <span class="text-xl">🔹</span> The selected rural hotels
+          </p>
+          <p class="text-lg text-gray-900 mb-1">
+            <span class="text-xl">🔹</span> Sleeping in the highest village of the
+            Sierra Nevada
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <Widget
+      title="What to bring for Hiking"
+      description="Weather is important to consider while packing for your outdoor activity. Your packing list is based on your comfort and sensitivity. Layering your clothes is the best way to travel and be outdoors. It is highly recommended as the best way to stay warm and cool, as the weather is bound to change in the mountains."
+      img="/hiking-and-trekking/trekking-alpujarras/bring.webp"
+      text="Any questions about the material's recommendations, contact us or check our blog, “What to Bring for Hiking.” "
+      brings={brings}
+    />
+
+    <!-- Button to download PDF -->
+    <section class="grid md:grid-cols-2 gap-10">
+      <div class="">
+        <h2
+          class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+          Requirements
+        </h2>
+        <p class="text-lg text-gray-900 mb-1">
+          <span class="text-xl strong">🔹</span> Good physical fitness, with the
+          habit of walking
+        </p>
+        <p class="text-lg text-gray-900">
+          <span class="text-xl">🔹</span> Closed shoes, no open shoes!
+        </p>
+        <p class="text-lg text-gray-900">
+          <span class="text-xl">🔹</span> Material: Basic hiking gear is required.
+          Good hiking boots and walking sticks are recommended.
+        </p>
+        <p class="text-lg text-gray-900">
+          <span class="text-xl">🔹</span> Booking Conditions. Please take a look
+          at the terms and conditions.
+        </p>
+        <p class="text-lg text-gray-900">
+          <span class="text-xl">🔹</span> Travel insurance. Please take a look at
+          the terms and conditions.
+        </p>
+        <p class="text-lg text-gray-900">
+          <span class="text-xl">🔹</span> Release of liability form. Please take
+          a look at the terms and conditions.
+        </p>
+      </div>
+      <div class="">
+        <div>
+          <h2 class="md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+            Cancellation Policy
+          </h2>
+          <Dots class="mb-4" />
+        </div>
+
+        <div>
+          <p class="text-lg text-gray-700 mt-1">See Terms and Conditions.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slider Photos -->
+    <section class="m-auto md:w-full rounded-xl md:px-8 md:py-20">
+      <ol class="relative mt-16">
+        {(<SliderReact IMG={IMG} client:visible client:only="react" />)}
+      </ol>
+    </section>
+
+    <!--  TimeLine per days  -->
+    <h2 class="text-4xl md:text-5xl xl:text-6xl md:px-8 mt-8 font-bold mb-4">
+      What to expect
+    </h2>
+
+    <h2 class="text-2xl md:text-3xl xl:text-4xl md:p-8 mt-16 font-bold mb-4">
+      Hiking in the rich Andalusian culture and history with the natural beauty
+      of picturesque landscapes, charming villages, and iconic landmarks.
+    </h2>
+    <p class="text-md text-gray-500 md:p-8">
+      Your main luggage is taken between the villages along the route. This
+      leaves you free to hike with a light bag with the essentials you need
+      during the day. Hiking with a light backpack is much more pleasant than
+      dragging a heavy rucksack, allowing you to enjoy the landscape without a
+      heavy load. The trekking takes you through the picturesque Alpujarra
+      region on the southern slopes of the Sierra Nevada, Spain's highest
+      mountain range. It seems like a journey back in time, as the area has its
+      unique culture from ancient times to the present day, shown in its food
+      culture, architecture, and traditions. The main feature of the outstanding
+      landscape is the villages situated mainly above 1.000 m. They are made up
+      of white, square-shaped houses with flat roofs spreading out across the
+      valleys. The adventure sets out from the village of Laroles located near
+      the pass of La Ragua, the only connection between the north and south of
+      the Sierra Nevada, and heading toward the west.
+    </p>
+    <p class="text-md text-gray-500 mb-8 md:px-8">
+      During the journey, you will discover the many villages and their terraced
+      fields climbing the slopes presenting beautiful views and dramatic
+      landscapes of the mountain range. The blossoms of spring and the colors of
+      autumn are the ideal time to join the trekking making it a unique
+      experience.
+    </p>
+    <p class="text-md text-gray-500 mb-8 md:px-8">
+      Join us and uncover the hidden beauty of the Alpujarra region a treasure
+      to discover!
+    </p>
+    {
+      DAYS.map((tour) => (
+        <ol class="mb-10">
+          <Days {...tour} />
+        </ol>
+      ))
+    }
+  </Container>
+</Layout>

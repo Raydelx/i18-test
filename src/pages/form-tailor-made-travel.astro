@@ -1,0 +1,24 @@
+---
+import Container from "../components/container.astro";
+import Sectionhead from "../components/sectionhead.astro";
+import TarilorMadeForm from "../components/tarilorMadeForm.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Contact">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Tailor-Made Travel Inquire Form</Fragment>
+      <Fragment slot="desc"
+        >Montaraz Outdoor & Culture will reach out after reviewing your travel
+        inquiry. We will answer you within 3 weekdays by email.</Fragment
+      >
+    </Sectionhead>
+
+    <div class="grid gap-10 mx-auto max-w-4xl mt-16">
+      <div>
+        <TarilorMadeForm />
+      </div>
+    </div>
+  </Container>
+</Layout>

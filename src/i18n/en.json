@@ -1,0 +1,21 @@
+{
+    "NAV":{
+        "HOME": "Home",
+        "TAILOR_MADE": "Tailor-Made Travel",
+        "EXPERIENCE": "Experience",
+        "BLOG": "Blog",
+        "GALLERY": "Gallery",
+        "ABOUT": "About",
+        "CONTACT_US": "Contact Us",
+        "CYCLE_TRAVELS": "Cycle Tours",
+        "HIKING_TREKKING": "Hiking & Trekking",
+        "CULTURAL_TRAVELS": "Cultural Travels Tours",
+        "MULTI_ADVENTURE_ACTIVITIES": "Multi-Adventures Tours"
+    },
+    
+    "HERO_H1_1": "Explore our",
+    "HERO_H1_COLOR": "True Outdoor Travel Experiences",
+    "HERO_H1_2": "suitable for anyone who enjoys an active way of traveling",
+    "HERO_A": "Book my Tour",
+    "CARD_HOME_1": "Guided Tours"
+}

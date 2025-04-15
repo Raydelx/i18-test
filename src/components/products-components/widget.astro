@@ -1,0 +1,48 @@
+---
+import Dots from "../ui/dots.astro";
+interface Props {
+  title: string;
+  img: string;
+  description: string;
+  text?: string;
+  brings?: { title: string }[];
+}
+const { title, img, description, brings, text } = Astro.props;
+---
+
+<div class="py-10 mx-auto">
+  <div class="lg:flex lg:items-center gap-12">
+    <div class="w-full space-y-4 lg:w-1/2">
+      <div>
+        <h1 class="text-3xl font-semibold text-gray lg:text-4xl">
+          {title}
+        </h1>
+        <Dots />
+        <p class="mt-3 text-lg text-gray">{description}</p>
+      </div>
+
+      {
+        brings &&
+          brings.length > 0 &&
+          brings.map((brings) => (
+            <div class="md:flex md:items-start md:-mx-4">
+              <div class="mt-4 md:mx-4 md:mt-0">
+                <p class=" text-gray text-lg ">
+                  <span class="text-xl">🔹</span>
+                  {brings.title}
+                </p>
+              </div>
+            </div>
+          ))
+      }
+      <p class="mt-4 text-gray text-lg">{text}</p>
+    </div>
+    <div class="w-full lg:w-1/2 h-90 rounded-xl overflow-hidden">
+      <img
+        src={img}
+        alt={title}
+        class="rounded-xl hidden md:block overflow-hidden w-full h-full object-cover hover:scale-110 transition-transform duration-1000"
+      />
+    </div>
+  </div>
+</div>

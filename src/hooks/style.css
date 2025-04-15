@@ -1,0 +1,12 @@
+.swiper-button-prev{
+    --swiper-navigation-size: 25px;
+    color: gray;
+}
+.swiper-button-next{
+    --swiper-navigation-size: 25px;
+    color: gray;
+}
+.swiper-pagination-bullet {
+    --swiper-pagination-color: white
+}
+

@@ -1,0 +1,42 @@
+---
+import Link from "./ui/link.astro";
+interface Props {
+  name: string;
+  href: string;
+  description: string;
+  href_img: string;
+  alt_img: string;
+}
+
+const { name, description, href_img, alt_img, href } = Astro.props;
+---
+
+<div
+  class="m-auto grid gap-12 lg:w-full h-full pb-12 hover:scale-105 duration-200">
+  <div class="bg-white rounded-2xl shadow-xl px-6 pt-12 flex flex-col">
+    <div class="">
+      <img
+        src={href_img}
+        class="m-auto rounded-2xl object-cover md:rounded-2xl md:-mt-24 -mt-32 h-[250px] w-[300px] md:w-[360px]"
+        alt={alt_img}
+        loading="lazy"
+      />
+    </div>
+    <div class="mt-5 h-full">
+      <h3 class="text-2xl font-semibold text-black">{name}</h3>
+      <p class="mb-6">
+        {description}
+      </p>
+    </div>
+    <div class="content-end mb-8">
+      <Link
+        size="lg"
+        style="primary"
+        rel="noopener"
+        href={href}
+        class="flex gap-1 items-center justify-center">
+        More info
+      </Link>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,39 @@
+---
+interface Props {
+  class?: string;
+  title: string;
+  subtitle?: string;
+  subtitle2?: string;
+  subtitle3?: string;
+}
+
+const { title, subtitle, subtitle2, subtitle3 } = Astro.props;
+---
+
+<div
+  class="grid hover:scale-110 transition-all duration-200 drop-shadow-md hover:drop-shadow-xl">
+  <div class="md:p-3">
+    <p class="text-black font-semibold md:text-xl text-xl tracking-wider">
+      {title}
+    </p>
+    <div class="flex flex-col gap-2 mt-1">
+      <div class="flex gap-2 mt-1">
+        <slot name="icon" />
+        <p class="text-black md:text-lg text-lg">{subtitle}</p>
+        {
+          subtitle2 && (
+            <p class="text-black md:text-lg text-lg md:w-5">{subtitle2}</p>
+          )
+        }
+      </div>
+      {
+        subtitle3 && (
+          <div class="flex gap-2 mt-1">
+            <slot name="icon" />
+            <p class="text-black md:text-lg text-lg">{subtitle3}</p>
+          </div>
+        )
+      }
+    </div>
+  </div>
+</div>

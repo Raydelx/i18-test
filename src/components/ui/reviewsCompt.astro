@@ -1,0 +1,31 @@
+---
+type ReviewsProps = {
+  header: {
+    name: string;
+    productName: string;
+    valoration: string;
+  };
+  body: {
+    text: string;
+  };
+};
+type Props = {
+  data: ReviewsProps;
+  id?: string;
+  classes?: string;
+};
+const { data, id, classes } = Astro.props;
+const { header, body } = data;
+---
+
+<div id={id} class="md:p-8 divide-y-2 divide-slate-600">
+  <div class="grid mb-4">
+    <h3 class="font-bold text-xl">{header.name}</h3>
+    <h3 class="text-gray-500">{header.productName}</h3>
+    <p>{header.valoration}</p>
+  </div>
+
+  <div>
+    <p class="mt-4">"{body.text}"</p>
+  </div>
+</div>

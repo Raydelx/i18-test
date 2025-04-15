@@ -1,0 +1,347 @@
+---
+import Container from "../../components/container.astro";
+import InformationProducts from "../../components/ui/informationProducts.astro";
+import Icon from "../../components/Icon.astro";
+import Layout from "../../layouts/Layout.astro";
+import SliderReact from "../../hooks/SliderReact";
+import Days from "../../components/products-components/days.astro";
+import Includes from "../../components/products-components/includes.astro";
+import Link from "../../components/ui/link.astro";
+import Cancellation from "../../components/products-components/cancellation.astro";
+import Widget from "@/components/products-components/widget.astro";
+import Dots from "@/components/ui/dots.astro";
+
+// Duplica y cambia las rutas para añadir o modificar las fotos
+
+const IMG = [
+  {
+    src: "/multi-adventure/rock-climbing/rc-1.webp",
+  },
+  {
+    src: "/multi-adventure/rock-climbing/rc-2.webp",
+  },
+  {
+    src: "/multi-adventure/rock-climbing/rc-3.webp",
+  },
+  {
+    src: "/multi-adventure/rock-climbing/rc-4.webp",
+  },
+  {
+    src: "/multi-adventure/rock-climbing/rc-5.webp",
+  },
+];
+
+const brings = [
+  {
+    title:
+      "Technical clothing appropriate for the time of year and sporting activity (fleece, windbreaker, waterproof and breathable jacket, gloves, etc.). A windbreaker or thin fleece is always useful, even in summer.",
+  },
+  {
+    title: "Comfortable clothing that is neither tight nor bulky",
+  },
+  {
+    title: "Backpack of approximately 15 to 30 liters.",
+  },
+  {
+    title: "Approach shoes or sneakers",
+  },
+  {
+    title: "1L water bottle",
+  },
+  {
+    title: "Picnic",
+  },
+  {
+    title: "Sun protection (sunglasses, sunscreen, lip balm, cap or hat)",
+  },
+  {
+    title: "Thermal blanket",
+  },
+  {
+    title: "A pencil and paper",
+  },
+];
+---
+
+<Layout title="Gravel Bike / MTB">
+  <Container>
+    <main class="mt-16">
+      <!-- Foto, nombre y destino -->
+
+      <div
+        class="bg-center bg-no-repeat bg-[url('/multi-adventure/rock-climbing/rc-principal.jpg')] bg-cover h-[30rem] rounded-2xl">
+        <div class="flex flex-col justify-end h-full p-6 w-auto">
+          <div class="flex gap-2">
+            <Icon icon="destiny-logo" size="1.6rem" color="white" />
+            <p
+              class="text-xl font-normal text-white lg:text-2xl flex flex-col justify-end h-full [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
+              Granada
+            </p>
+          </div>
+
+          <h1
+            class="text-3xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-5xl [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
+            Top-Rope Rock Climbing
+          </h1>
+        </div>
+      </div>
+
+      <!-- Informacion general de los viajes -->
+
+      <div
+        class="grid grid-cols-2 md:grid-cols-6 h-auto mt-3 gap-3 place-content-start md:px-6">
+        <InformationProducts title="Price" subtitle="55 - 100">
+          <div slot="icon">
+            <Icon icon="price-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts title="Pre-booking" subtitle="100%">
+          <div slot="icon">
+            <Icon icon="price-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts title="Minimum of persons" subtitle="1">
+          <div slot="icon">
+            <Icon icon="group-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts title="Maximum of persons" subtitle="6">
+          <div slot="icon">
+            <Icon icon="group-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts title="Duration" subtitle="4 Hours">
+          <div slot="icon">
+            <Icon icon="timer-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts title="Tour type" subtitle="Guided">
+          <div slot="icon">
+            <Icon icon="guide-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts title="Season" subtitle2="All Year">
+          <!-- <div slot="icon">
+            <Icon icon="autumn-logo" size="1.6rem" color="#0E46A3" />
+          </div> -->
+        </InformationProducts>
+        <InformationProducts title="Rock Climbing">
+          <div slot="icon">
+            <Icon icon="hike-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+      </div>
+
+      <!-- Informacion tecnica -->
+
+      <!--  Include, exclude, complementaries  -->
+      <div
+        class="grid md:grid-cols-2 lg:grid-cols-2 mt-20 md:mt-26 md:mb-36 gap-16 md:gap-4">
+        <!-- Include -->
+        <Includes title="Included">
+          <ul slot="description" class="mt-4 flex flex-col gap-2">
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                Liability insurance and assistance
+              </p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                Rock climbing Sports Technician
+              </p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Transfer</p>
+            </li>
+            <li class="flex gap-2">
+              <div>
+                <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              </div>
+              <p class="max-w-[320px] text-md">
+                If necessary, personal equipment (climbing shoes, helmet, and
+                harness)
+              </p>
+            </li>
+
+            <li class="flex gap-2">
+              <div>
+                <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              </div>
+              <p class="max-w-[320px] text-md">
+                Collective material (ropes, carabiners, slings, belay devices,
+                etc.)
+              </p>
+            </li>
+          </ul>
+        </Includes>
+        <!-- Exclude -->
+        <Includes title="Not Included">
+          <div slot="description" class="flex flex-col gap-2 mt-4">
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Lunch</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Snack</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Water</p>
+            </li>
+          </div>
+        </Includes>
+        <!-- Complementaries -->
+      </div>
+
+      <div class="grid md:grid-cols-2 h-auto gap-10 md:gap-20 md:py-36 py-10">
+        <div class="static h-[385px] hidden md:block">
+          <img
+            class="rounded-xl absolute md:w-[20rem] lg:w-[25rem] hover:z-40 transition-all duration-300 ease-out hover:scale-105"
+            src="/multi-adventure/rock-climbing/rc-principal.jpg"
+            alt="ciclista mirando la sierra con cicicleta a su lado"
+          />
+          <img
+            class="rounded-xl absolute md:w-[10rem] lg:w-[12rem] md:mt-48 lg:mt-60 ml-6 z-10 grayscale-[60%] hover:grayscale-0 transition-all duration-300 ease-out hover:scale-105"
+            src="/multi-adventure/rock-climbing/rc-3.webp"
+            alt="ciclista mirando la sierra con cicicleta a su lado"
+          />
+          <img
+            class="rounded-xl absolute md:w-[10rem] lg:w-[15em] ml-64 md:-mt-24 lg:-mt-32 grayscale-[60%] hover:grayscale-0 transition-all duration-300 ease-out hover:scale-105"
+            src="/multi-adventure/rock-climbing/rc-1.webp"
+            alt="ciclista mirando la sierra con cicicleta a su lado"
+          />
+        </div>
+
+        <div class="grid gap-5">
+          <div class="">
+            <h2
+              class="max-w-2xl md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+              Availability
+            </h2>
+            <Dots class="mb-4" />
+
+            <ul class="grid gap-2 text-lg">
+              <li class="flex flex-wrap gap-2">
+                <Icon icon="spring-logo" size="1.6rem" color="#0E46A3" />
+                <p>All Year</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="">
+            <h2
+              class="max-w-2xl md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+              Requirements
+            </h2>
+            <Dots class="mb-4" />
+            <p class="text-lg text-gray-900">
+              <span class="text-xl">🔹</span> Age: 18 years
+            </p>
+            <p class="text-lg text-gray-900">
+              <span class="text-xl">🔹</span> Previous Experience: Not necessary
+            </p>
+            <p class="text-lg text-gray-900">
+              <span class="text-xl">🔹</span> Previous training: Not necessary
+            </p>
+            <p class="text-lg text-gray-900">
+              <span class="text-xl">🔹</span> Difficulty: Initiation IV / V
+            </p>
+            <p class="text-lg text-gray-900">
+              <span class="text-xl">🔹</span> Normal physical condition and agility
+              are required. The difficulty is adapted to the person's physical and
+              technical capacity.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <Widget
+        title="What to bring for rock climbing"
+        description="Weather is important to consider while packing for your outdoor activity. Your packing list is based on your comfort and sensitivity. Layering your clothes is the best way to travel and be outdoors. It is highly recommended as the best way to stay warm and cool, as the weather is bound to change in the mountains."
+        img="/multi-adventure/rock-climbing/rc-product.webp"
+        text="Any questions about the recommendations of the material do not hesitate to contact us. "
+        brings={brings}
+      />
+
+      <!-- Button to download PDF -->
+      <section class="grid md:grid-cols-2 gap-6">
+        <Cancellation />
+        <div class="">
+          <h2
+            class="max-w-2xl md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+            Goals
+          </h2>
+          <Dots class="mb-4" />
+          <p class="text-lg text-gray-900 mb-1">
+            <span class="text-xl">🔹</span> Have a first experience of rock climbing
+            on equipped single-pitch routes
+          </p>
+          <p class="text-lg text-gray-900">
+            <span class="text-xl">🔹</span> Make the figure eight knot and secure
+            with grigri to carry out a safe experience
+          </p>
+          <p class="text-lg text-gray-900">
+            <span class="text-xl">🔹</span> Learning how to belay a top-rope climbing
+            partner
+          </p>
+          <p class="text-lg text-gray-900">
+            <span class="text-xl">🔹</span> Know the sport climbing equipment
+          </p>
+          <p class="text-lg text-gray-900">
+            <span class="text-xl">🔹</span> Know the rope knot for sport climbing
+            (figure eight knot)
+          </p>
+        </div>
+      </section>
+
+      <!-- Slider Photos -->
+      <section class="m-auto md:w-full rounded-xl md:px-8 md:py-20">
+        <ol class="relative mt-16">
+          {(<SliderReact IMG={IMG} client:visible />)}
+        </ol>
+      </section>
+
+      <!--  TimeLine per days  -->
+      <h2 class="text-4xl md:text-5xl xl:text-6xl md:p-4 mt-16 font-bold mb-4">
+        What to expect
+      </h2>
+      <p class="text-gray-700 text-lg mt-4 px-4">
+        We invite you to experience rock climbing in Granada with spectacular
+        views, ideal for those who want to get started and improve their
+        knowledge and skills.
+      </p>
+      <div class="grid md:grid-cols-2 gap-16 mt-4 p-4">
+        <div class="flex flex-col gap-2">
+          <h3 class="text-xl font-bold">Location 1: Los Cahorros Monachil</h3>
+          <p>
+            This scenic Dolomite canyon with its waterfalls and hanging bridges
+            is home to one of the oldest crags in Spain
+          </p>
+          <p>20 meters routes</p>
+          <p>Dolomite limestone</p>
+          <p>Ideal for beginners</p>
+        </div>
+        <div class="flex flex-col gap-2">
+          <h3 class="text-xl font-bold">Location 2: Alfacar</h3>
+          <p>15 meters routes</p>
+          <p>Dolomite limestone</p>
+          <p>Ideal for beginners</p>
+        </div>
+      </div>
+      <div class="flex flex-col gap-2 p-4">
+        <h3 class="text-4xl md:text-5xl xl:text-6xl font-bold mt-16 mb-4">
+          Price:
+        </h3>
+        <p>2 people - 100 €</p>
+        <p>3 people - 90 €</p>
+        <p>4 people - 75 €</p>
+        <p>5 people - 60 €</p>
+        <p>6 people - 55 €</p>
+      </div>
+    </main>
+  </Container>
+</Layout>

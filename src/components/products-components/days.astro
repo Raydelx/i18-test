@@ -1,0 +1,387 @@
+---
+import Icon from "../Icon.astro";
+import Route from "../ui/icons/route.astro";
+
+interface Props {
+  day?: string;
+  title?: string;
+  title2?: string;
+  strong?: string;
+  strong2?: string;
+  strong3?: string;
+  description: string;
+  description2?: string;
+  description3?: string;
+  description4?: string;
+  description5?: string;
+  description6?: string;
+  totalDistance?: string;
+  totalAscent?: string;
+  totalDescent?: string;
+  totalDistance2?: string;
+  totalAscent2?: string;
+  totalDescent2?: string;
+  duration2?: string;
+  routeType?: string;
+  duration?: string;
+  optional1?: string;
+  optional2?: string;
+  tecnicalInfo?: boolean;
+  difficulty?: string;
+  techical_optional?: string;
+  physical_difficulty?: string;
+  technical_difficulty?: string;
+  techical_optional2?: string;
+  physical_difficulty2?: string;
+  technical_difficulty2?: string;
+}
+const {
+  day,
+  title,
+  title2,
+  strong,
+  strong2,
+  strong3,
+  description,
+  description2,
+  description3,
+  description4,
+  description5,
+  description6,
+  totalDistance,
+  totalAscent,
+  totalDescent,
+  totalDistance2,
+  totalAscent2,
+  totalDescent2,
+  routeType,
+  duration,
+  duration2,
+  optional1,
+  optional2,
+  tecnicalInfo,
+  difficulty,
+  techical_optional,
+  physical_difficulty,
+  technical_difficulty,
+  techical_optional2,
+  physical_difficulty2,
+  technical_difficulty2,
+} = Astro.props;
+---
+
+{
+  tecnicalInfo === true ? (
+    <div class="grid md:grid-cols-6 md:p-8 md:gap-10 gap-5">
+      <div class="col-span-3">
+        {day && (
+          <div>
+            <h2 class="md:text-3xl text-2xl font-bold mb-2">Day {day}</h2>
+          </div>
+        )}
+        {title2 && (
+          <div>
+            <h2 class="md:text-3xl text-2xl font-bold mb-2">{title2}</h2>
+          </div>
+        )}
+        {title && <p class="text-gray-500 text-xl mt-2 font-bold">{title}</p>}
+        <p class="text-gray-500 text-md">{description}</p>
+        {description2 && (
+          <p class="text-gray-500 text-md mt-2">{description2}</p>
+        )}
+        {strong && <p class="text-gray-500 text-xl mt-2 font-bold">{strong}</p>}
+        {description3 && (
+          <p class="text-gray-500 text-md mt-2">{description3}</p>
+        )}
+        {strong2 && (
+          <p class="text-gray-500 text-xl mt-2 font-bold">{strong2}</p>
+        )}
+        {description4 && (
+          <p class="text-gray-500 text-md mt-2">{description4}</p>
+        )}
+        {strong3 && (
+          <p class="text-gray-500 text-xl mt-2 font-bold">{strong3}</p>
+        )}
+        {description5 && (
+          <p class="text-gray-500 text-md mt-2">{description5}</p>
+        )}
+        {description6 && (
+          <p class="text-gray-500 text-md mt-2">{description6}</p>
+        )}
+        {optional1 && (
+          <p class="text-gray-500 text-md">
+            <span class="font-bold">Optional: </span>
+            {optional1}
+          </p>
+        )}
+        {optional2 && (
+          <p class="text-gray-500 text-md">
+            <span class="font-bold">Optional: </span>
+            {optional2}
+          </p>
+        )}
+      </div>
+      <div class="md:col-span-3 grid gap-4 place-content-end">
+        {techical_optional && (
+          <div class="grid grid-cols-6 gap-14 md:gap-2">
+            <div class="grid col-span-5">
+              <p class="text-pretty text-black-900 text-xl font-bold">
+                {techical_optional}
+              </p>
+            </div>
+          </div>
+        )}
+        {totalDistance && (
+          <div class="grid grid-cols-6 gap-14 md:gap-2">
+            <div class="col-span-1">
+              <Icon icon="distance-logo" size="3rem" color="#0E46A3" />
+            </div>
+            <div class="grid col-span-5">
+              <h2 class="text-pretty text-neutral-900 text-xl font-bold">
+                Total Distance
+              </h2>
+              <p class="text-pretty text-gray-500 text-md">{totalDistance}</p>
+            </div>
+          </div>
+        )}
+        {totalAscent && (
+          <div class="grid grid-cols-6 gap-14 md:gap-2">
+            <div class="col-span-1">
+              <Icon icon="up-logo" size="3rem" color="#0E46A3" />
+            </div>
+            <div class="grid col-span-5">
+              <h2 class="text-pretty text-neutral-900 text-xl font-bold">
+                Total Ascent
+              </h2>
+              <p class="text-pretty text-gray-500 text-md">{totalAscent}</p>
+            </div>
+          </div>
+        )}
+        {totalDescent && (
+          <div class="grid grid-cols-6 gap-14 md:gap-2">
+            <div class="col-span-1">
+              <Icon icon="down-logo" size="3rem" color="#0E46A3" />
+            </div>
+            <div class="grid col-span-5">
+              <h2 class="text-pretty text-neutral-900 text-xl font-bold">
+                Total Descent
+              </h2>
+              <p class="text-pretty text-gray-500 text-md">{totalDescent}</p>
+            </div>
+          </div>
+        )}
+        {routeType && (
+          <div class="grid grid-cols-6 gap-14 md:gap-2">
+            <div class="col-span-1">
+              <Icon icon="route-logo" size="3rem" color="#0E46A3" />
+            </div>
+            <div class="grid col-span-5">
+              <h2 class="text-pretty text-neutral-900 text-xl font-bold">
+                Route Type
+              </h2>
+              <p class="text-pretty text-gray-500 text-md">{routeType}</p>
+            </div>
+          </div>
+        )}
+        {duration && (
+          <div class="grid grid-cols-6 gap-14 md:gap-2">
+            <div class="col-span-1">
+              <Icon icon="timer-logo" size="3rem" color="#0E46A3" />
+            </div>
+            <div class="grid col-span-5">
+              <h2 class="text-pretty text-neutral-900 text-xl font-bold">
+                Duration Trial
+              </h2>
+              <p class="text-pretty text-gray-500 text-md">{duration}</p>
+            </div>
+          </div>
+        )}
+        {difficulty && (
+          <div class="grid grid-cols-6 gap-14 md:gap-2">
+            <div class="col-span-1">
+              <Icon icon="difficulty-logo" size="3rem" color="#0E46A3" />
+            </div>
+            <div class="grid col-span-5">
+              <h2 class="text-pretty text-neutral-900 text-xl font-bold">
+                Difficulty
+              </h2>
+              <p class="text-pretty text-gray-500 text-md">{difficulty}</p>
+            </div>
+          </div>
+        )}
+
+        {physical_difficulty && (
+          <div class="grid grid-cols-6 gap-14 md:gap-2">
+            <div class="col-span-1">
+              <Icon icon="difficulty-logo" size="3rem" color="#0E46A3" />
+            </div>
+            <div class="grid col-span-5">
+              <h2 class="text-pretty text-neutral-900 text-xl font-bold">
+                Physical Difficulty
+              </h2>
+              <p class="text-pretty text-gray-500 text-md">
+                {physical_difficulty}
+              </p>
+            </div>
+          </div>
+        )}
+        {technical_difficulty && (
+          <div class="grid grid-cols-6 gap-14 md:gap-2">
+            <div class="col-span-1">
+              <Icon icon="boot-logo" size="3rem" color="#0E46A3" />
+            </div>
+            <div class="grid col-span-5">
+              <h2 class="text-pretty text-neutral-900 text-xl font-bold">
+                Technical Difficulty
+              </h2>
+              <p class="text-pretty text-gray-500 text-md">
+                {technical_difficulty}
+              </p>
+            </div>
+          </div>
+        )}
+        {techical_optional2 && (
+          <div class="grid grid-cols-6 gap-14 md:gap-2">
+            <div class="grid col-span-5">
+              <p class="text-pretty text-black-900 text-xl font-bold">
+                {techical_optional2}
+              </p>
+            </div>
+          </div>
+        )}
+        {totalDistance2 && (
+          <div class="grid grid-cols-6 gap-14 md:gap-2">
+            <div class="col-span-1">
+              <Icon icon="distance-logo" size="3rem" color="#0E46A3" />
+            </div>
+            <div class="grid col-span-5">
+              <h2 class="text-pretty text-neutral-900 text-xl font-bold">
+                Total Distance
+              </h2>
+              <p class="text-pretty text-gray-500 text-md">{totalDistance2}</p>
+            </div>
+          </div>
+        )}
+        {totalAscent2 && (
+          <div class="grid grid-cols-6 gap-14 md:gap-2">
+            <div class="col-span-1">
+              <Icon icon="up-logo" size="3rem" color="#0E46A3" />
+            </div>
+            <div class="grid col-span-5">
+              <h2 class="text-pretty text-neutral-900 text-xl font-bold">
+                Total Ascent
+              </h2>
+              <p class="text-pretty text-gray-500 text-md">{totalAscent2}</p>
+            </div>
+          </div>
+        )}
+        {totalDescent2 && (
+          <div class="grid grid-cols-6 gap-14 md:gap-2">
+            <div class="col-span-1">
+              <Icon icon="down-logo" size="3rem" color="#0E46A3" />
+            </div>
+            <div class="grid col-span-5">
+              <h2 class="text-pretty text-neutral-900 text-xl font-bold">
+                Total Descent
+              </h2>
+              <p class="text-pretty text-gray-500 text-md">{totalDescent2}</p>
+            </div>
+          </div>
+        )}
+
+        {duration2 && (
+          <div class="grid grid-cols-6 gap-14 md:gap-2">
+            <div class="col-span-1">
+              <Icon icon="timer-logo" size="3rem" color="#0E46A3" />
+            </div>
+            <div class="grid col-span-5">
+              <h2 class="text-pretty text-neutral-900 text-xl font-bold">
+                Duration Trial
+              </h2>
+              <p class="text-pretty text-gray-500 text-md">{duration2}</p>
+            </div>
+          </div>
+        )}
+
+        {physical_difficulty2 && (
+          <div class="grid grid-cols-6 gap-14 md:gap-2">
+            <div class="col-span-1">
+              <Icon icon="difficulty-logo" size="3rem" color="#0E46A3" />
+            </div>
+            <div class="grid col-span-5">
+              <h2 class="text-pretty text-neutral-900 text-xl font-bold">
+                Physical Difficulty
+              </h2>
+              <p class="text-pretty text-gray-500 text-md">
+                {physical_difficulty2}
+              </p>
+            </div>
+          </div>
+        )}
+        {technical_difficulty2 && (
+          <div class="grid grid-cols-6 gap-14 md:gap-2">
+            <div class="col-span-1">
+              <Icon icon="boot-logo" size="3rem" color="#0E46A3" />
+            </div>
+            <div class="grid col-span-5">
+              <h2 class="text-pretty text-neutral-900 text-xl font-bold">
+                Technical Difficulty
+              </h2>
+              <p class="text-pretty text-gray-500 text-md">
+                {technical_difficulty2}
+              </p>
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
+  ) : (
+    <div class="grid md:grid-cols-2 md:p-8 md:gap-10 gap-5">
+      <div class="col-span-3">
+        {day && (
+          <div>
+            <h2 class="md:text-3xl text-2xl font-bold mb-2">Day {day}</h2>
+          </div>
+        )}
+        {title2 && (
+          <div>
+            <h2 class="md:text-3xl text-2xl font-bold mb-2">{title2}</h2>
+          </div>
+        )}
+        {title && <p class="text-gray-500 text-xl mt-2 font-bold">{title}</p>}
+        <p class="text-gray-500 text-md">{description}</p>
+        {description2 && (
+          <p class="text-gray-500 text-md mt-2">{description2}</p>
+        )}
+        {strong && <p class="text-gray-500 text-xl mt-2 font-bold">{strong}</p>}
+        {description3 && (
+          <p class="text-gray-500 text-md mt-2">{description3}</p>
+        )}
+        {description4 && (
+          <p class="text-gray-500 text-md mt-2">{description4}</p>
+        )}
+        {strong3 && (
+          <p class="text-gray-500 text-xl mt-2 font-bold">{strong3}</p>
+        )}
+        {description5 && (
+          <p class="text-gray-500 text-md mt-2">{description5}</p>
+        )}
+        {description6 && (
+          <p class="text-gray-500 text-md mt-2">{description6}</p>
+        )}
+        {optional1 && (
+          <p class="text-gray-500 text-md">
+            <span class="font-bold">Optional: </span>
+            {optional1}
+          </p>
+        )}
+        {optional2 && (
+          <p class="text-gray-500 text-md">
+            <span class="font-bold">Optional: </span>
+            {optional2}
+          </p>
+        )}
+      </div>
+    </div>
+  )
+}

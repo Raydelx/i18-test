@@ -1,0 +1,32 @@
+---
+import reviewsProps from "../data_files/reviewsData.json";
+import ReviewsCompt from "@/components/ui/reviewsCompt.astro";
+
+type ReviewsProps = {
+  header: {
+    name: string;
+    productName: string;
+    valoration: string;
+  };
+  body: {
+    text: string;
+  };
+};
+
+const reviewsData: ReviewsProps[] = reviewsProps as ReviewsProps[];
+---
+
+<section>
+  <h2 class="text-3xl xl:text-4xl md:p-8 mt-10 font-bold mb-4">
+    What our clients said about us?
+  </h2>
+  <ul class="grid md:grid-cols-2 md:gap-6">
+    {
+      reviewsData.map((item, key) => (
+        <ol class="mb-4 ">
+          <ReviewsCompt data={item} id={`review-${key}`} />
+        </ol>
+      ))
+    }
+  </ul>
+</section>

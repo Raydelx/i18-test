@@ -1,0 +1,350 @@
+---
+import Container from "../../components/container.astro";
+import InformationProducts from "../../components/ui/informationProducts.astro";
+import Icon from "../../components/Icon.astro";
+import Layout from "../../layouts/Layout.astro";
+import SliderReact from "../../hooks/SliderReact";
+import Days from "@/components/products-components/days.astro";
+import Includes from "@/components/products-components/includes.astro";
+import Route from "@/components/ui/icons/route.astro";
+import Link from "@/components/ui/link.astro";
+import Cancellation from "@/components/products-components/cancellation.astro";
+import Widget from "@/components/products-components/widget.astro";
+import Dots from "@/components/ui/dots.astro";
+
+// Duplica y cambia las rutas para añadir o modificar las fotos
+
+const IMG = [
+  {
+    src: "/hiking-and-trekking/king-of-the-mountain/kom-1.webp",
+  },
+  {
+    src: "/hiking-and-trekking/king-of-the-mountain/kom-2.webp",
+  },
+  {
+    src: "/hiking-and-trekking/king-of-the-mountain/kom-3.webp",
+  },
+  {
+    src: "/hiking-and-trekking/king-of-the-mountain/kom-4.webp",
+  },
+  {
+    src: "/hiking-and-trekking/king-of-the-mountain/kom-5.webp",
+  },
+];
+const DAYS = [
+  {
+    day: "1",
+    tecnicalInfo: true,
+    description:
+      "Walk through the spectacular lunar scenery of the dolomite landscape in the Sierra Nevada National Park. At the summit, you will be rewarded with 360º views of Sierra Nevada and the surroundings of the City Granada. A great escape from the city and a perfect day out in the mountains!",
+    optional1:
+      "On the way back we can have a great lunch at a typical rural Andalusian farmhouse.",
+    totalDistance: "11 km",
+    totalAscent: "750 m",
+    totalDescent: "750 m",
+    duration: "4 hours",
+  },
+];
+
+const brings = [
+  {
+    title: "Water bottle minimum 1.5 L",
+  },
+  {
+    title: "Picnic / snack",
+  },
+  {
+    title: "Light backpack",
+  },
+  {
+    title: "Weather-appropriate and comfortable clothing",
+  },
+  {
+    title: "Hiking jacket",
+  },
+  {
+    title: "Hiking shoes",
+  },
+  {
+    title: "Sun protection",
+  },
+  {
+    title: "Gloves",
+  },
+  {
+    title: "Warm hat",
+  },
+  {
+    title: "Neck gaiter",
+  },
+  {
+    title: "Trekking poles",
+  },
+];
+---
+
+<Layout title="">
+  <Container>
+    <main class="mt-16">
+      <!-- Foto, nombre y destino -->
+
+      <div
+        class="bg-center bg-no-repeat bg-[url('/public/hiking-and-trekking/king-of-the-mountain/kom-product.webp')] h-[25rem] rounded-2xl bg-cover">
+        <div class="flex flex-col justify-end h-full p-6 w-auto">
+          <div class="flex gap-2">
+            <Icon icon="destiny-logo" size="1.6rem" color="white" />
+            <p
+              class="text-xl font-normal text-white lg:text-2xl flex flex-col justify-end h-full [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
+              Sierra Nevada National Park
+            </p>
+          </div>
+
+          <h1
+            class="text-3xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-5xl [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
+            King of The Low Mountains
+          </h1>
+        </div>
+      </div>
+
+      <!-- Informacion general de los viajes -->
+
+      <div
+        class="grid grid-cols-2 md:grid-cols-6 h-auto mt-3 gap-3 place-content-start md:px-6">
+        <InformationProducts title="Price" subtitle="70 (4 Pax)">
+          <div slot="icon">
+            <Icon icon="price-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts title="Pre-booking" subtitle="100%">
+          <div slot="icon">
+            <Icon icon="price-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts title="Minimum of persons" subtitle="2">
+          <div slot="icon">
+            <Icon icon="group-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts title="Duration" subtitle="6 Hours">
+          <div slot="icon">
+            <Icon icon="timer-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts title="Tour type" subtitle="Guided">
+          <div slot="icon">
+            <Icon icon="guide-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts title="Season" subtitle2="Winter Spring Autumn">
+          <!-- <div slot="icon">
+            <Icon icon="autumn-logo" size="1.6rem" color="#0E46A3" />
+          </div> -->
+        </InformationProducts>
+      </div>
+
+      <!-- Informacion tecnica -->
+
+      <div class="">
+        <div
+          class="grid grid-cols-2 justify-between md:grid-cols-6 h-auto mt-3 gap-3 md:px-6">
+          <InformationProducts title="Total distance" subtitle="11 km">
+            <div slot="icon">
+              <Icon icon="distance-logo" size="1.6rem" color="#0E46A3" />
+            </div>
+          </InformationProducts>
+
+          <InformationProducts title="Total ascent" subtitle="750 m">
+            <div slot="icon">
+              <Icon icon="up-logo" size="1.6rem" color="#0E46A3" />
+            </div>
+          </InformationProducts>
+          <InformationProducts title="Total descent" subtitle="750 m">
+            <div slot="icon">
+              <Icon icon="down-logo" size="1.6rem" color="#0E46A3" />
+            </div>
+          </InformationProducts>
+          <InformationProducts title="Route type" subtitle="Loop Trial">
+            <div slot="icon">
+              <Route />
+            </div>
+          </InformationProducts>
+
+          <InformationProducts title="Physical Difficulty" subtitle="B" />
+          <InformationProducts title="Technical Difficulty" subtitle="B" />
+        </div>
+      </div>
+
+      <!--  Include, exclude, complementaries  -->
+      <div
+        class="grid md:grid-cols-2 lg:grid-cols-3 mt-20 md:mt-26 md:mb-36 gap-16 md:gap-4">
+        <!-- Include -->
+        <Includes title="Included">
+          <ul slot="description" class="mt-4 flex flex-col gap-2">
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Qualified Mountain Leader</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                Liability insurance and assistance
+              </p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Transfer</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Water</p>
+            </li>
+          </ul>
+        </Includes>
+        <!-- Exclude -->
+        <Includes title="Not Included">
+          <div slot="description" class="flex flex-col gap-2 mt-4">
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Lunch</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Snack</p>
+            </li>
+          </div>
+        </Includes>
+        <!-- Complementaries -->
+        <Includes title="Extra">
+          <div slot="description" class="flex flex-col gap-2 mt-4">
+            <li class="flex gap-2">
+              <Icon icon="complement-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                Lunch at local rural Andalusian Farmhouse
+              </p>
+            </li>
+          </div>
+        </Includes>
+      </div>
+    </main>
+
+    <div class="grid md:grid-cols-2 h-auto gap-10 md:gap-20 md:py-36 py-10">
+      <div class="static h-[385px] hidden md:block">
+        <img
+          class="rounded-xl absolute md:w-[20rem] lg:w-[25rem] hover:z-40 transition-all duration-300 ease-out hover:scale-105"
+          src="/hiking-and-trekking/family-hike-gorge-of-sierra-nevada/fh-3.webp"
+          alt="ciclista mirando la sierra con cicicleta a su lado"
+        />
+        <img
+          class="rounded-xl absolute md:w-[10rem] lg:w-[12rem] md:mt-48 lg:mt-60 ml-6 z-10 grayscale-[60%] hover:grayscale-0 transition-all duration-300 ease-out hover:scale-105"
+          src="/hiking-and-trekking/family-hike-gorge-of-sierra-nevada/fh-4.webp"
+          alt="ciclista mirando la sierra con cicicleta a su lado"
+        />
+        <img
+          class="rounded-xl absolute md:w-[10rem] lg:w-[15em] ml-64 md:-mt-24 lg:-mt-32 grayscale-[60%] hover:grayscale-0 transition-all duration-300 ease-out hover:scale-105"
+          src="/hiking-and-trekking/family-hike-gorge-of-sierra-nevada/fh-2.webp"
+          alt="ciclista mirando la sierra con cicicleta a su lado"
+        />
+      </div>
+
+      <div class="grid gap-5">
+        <div class="">
+          <h2
+            class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+            Availability
+          </h2>
+
+          <ul class="grid gap-2 text-lg">
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="spring-logo" size="1.6rem" color="#0E46A3" />
+              <p>Spring</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="autumn-logo" size="1.6rem" color="#0E46A3" />
+              <p>Autumn</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="winter-logo" size="1.6rem" color="#0E46A3" />
+              <p>Winter</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="">
+          <h2
+            class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+            Highlight
+          </h2>
+          <p class="text-lg text-gray-900 mb-1">
+            <span class="text-xl">🔹</span> Hiking in Sierra Nevada National
+          </p>
+          <p class="text-lg text-gray-900 mb-1">
+            <span class="text-xl">🔹</span> Dolomite landscape
+          </p>
+          <p class="text-lg text-gray-900 mb-1">
+            <span class="text-xl">🔹</span> 360º viewpoint at 2.080 m
+          </p>
+        </div>
+        <div class="flex flex-col gap-2 md:p-4">
+          <div>
+            <h3 class="text-4xl md:text-5xl xl:text-6xl font-bold">Price:</h3>
+            <Dots class="mb-4" />
+          </div>
+          <p class="text-gray-700">2-4 people: 70 € p.p.</p>
+          <p class="text-gray-700">5 people – 50 € p.p</p>
+          <p class="text-gray-700">6 people – 45 € p.p</p>
+          <p class="text-gray-700">7 people – 40 € p.p</p>
+        </div>
+      </div>
+    </div>
+
+    <Widget
+      title="What to bring for Hiking"
+      description="Weather is important to consider while packing for your outdoor activity. Your packing list is based on your comfort and sensitivity. Layering your clothes is the best way to travel and be outdoors. It is highly recommended as the best way to stay warm and cool, as the weather is bound to change in the mountains."
+      img="/hiking-and-trekking/trekking-alpujarras/bring.webp"
+      text="Any questions about the recommendations of the material do not hesitate to contact us."
+      brings={brings}
+    />
+
+    <!-- Button to download PDF -->
+    <section class="grid md:grid-cols-2 gap-10">
+      <div class="">
+        <h2
+          class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+          Requirements
+        </h2>
+        <p class="text-lg text-gray-900 mb-1">
+          <span class="text-xl strong">🔹</span> Physical fitness: normal, with the
+          habit of walking.
+        </p>
+        <p class="text-lg text-gray-900">
+          <span class="text-xl">🔹</span> Basic hiking gear is required. Good hiking
+          boots and walking sticks are recommended.
+        </p>
+        <p class="text-lg text-gray-900">
+          <span class="text-xl">🔹</span> Minimum age: 12 years old with the habit
+          of walking
+        </p>
+      </div>
+      <Cancellation />
+    </section>
+
+    <!-- Slider Photos -->
+    <section class="m-auto md:w-full rounded-xl md:px-8 md:py-20">
+      <ol class="relative mt-16">
+        {(<SliderReact IMG={IMG} client:visible />)}
+      </ol>
+    </section>
+
+    <!--  TimeLine per days  -->
+    <h2 class="text-4xl md:text-5xl xl:text-6xl md:p-8 mt-16 font-bold mb-4">
+      What to expect
+    </h2>
+    {
+      DAYS.map((tour) => (
+        <ol class="mb-10">
+          <Days {...tour} />
+        </ol>
+      ))
+    }
+  </Container>
+</Layout>

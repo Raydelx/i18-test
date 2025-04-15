@@ -1,0 +1,569 @@
+---
+import Container from "../../components/container.astro";
+import InformationProducts from "../../components/ui/informationProducts.astro";
+import Icon from "../../components/Icon.astro";
+import Layout from "../../layouts/Layout.astro";
+import SliderReact from "../../hooks/SliderReact";
+import Days from "@/components/products-components/days.astro";
+import Includes from "@/components/products-components/includes.astro";
+import Wheel from "@/components/ui/icons/wheel.astro";
+import Route from "@/components/ui/icons/route.astro";
+import Link from "@/components/ui/link.astro";
+import reviewsProps from "../../data_files/reviewsData.json";
+import Cancellation from "@/components/products-components/cancellation.astro";
+import ReviewsCompt from "@/components/ui/reviewsCompt.astro";
+
+// Duplica y cambia las rutas para añadir o modificar las fotos
+1;
+const IMG = [
+  {
+    src: "/cycle-tour/leisure-cycling/epic-landscape-e-bike-tour-granada/els-1.webp",
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/epic-landscape-e-bike-tour-granada/els-2.webp",
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/epic-landscape-e-bike-tour-granada/els-3.webp",
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/epic-landscape-e-bike-tour-granada/els-4.webp",
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/epic-landscape-e-bike-tour-granada/els-5.webp",
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/epic-landscape-e-bike-tour-granada/els-6.webp",
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/epic-landscape-e-bike-tour-granada/els-7.webp",
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/epic-landscape-e-bike-tour-granada/els-8.webp",
+  },
+];
+
+type ReviewsProps = {
+  header: {
+    name: string;
+    productName: string;
+    valoration: string;
+  };
+  body: {
+    text: string;
+  };
+};
+
+const reviewsData: ReviewsProps[] = reviewsProps as ReviewsProps[];
+
+const DAYS = [
+  {
+    day: "1",
+    tecnicalInfo: false,
+    title: "Welcome",
+    description:
+      "Upon arrival either in Málaga or Granada, our pick-up will drive us to our hotel in Granada.",
+    strong: "Free day Granada",
+    description3:
+      "A city with history located at the foot of the Sierra Nevada mountains. The cultural riches of Granada with influences from the Moors, Catholics, and Jews make this city in Spain into an important cultural center with Moorish rule spanning 800 years of occupation.",
+    description4:
+      "In the afternoon there is the optional guided tour of Alhambra and the gardens of the Generalife for those who have pre-reserved the activity. ",
+    description5:
+      "The rest of the day you are free to explore more beautiful places and to try the Granada tapas which are known for serving free tapas with every drink.",
+    description6:
+      "The tour guide will organize a place to have dinner together to celebrate the first evening of the journey.",
+  },
+  {
+    day: "2",
+    tecnicalInfo: true,
+    title: "Track 1 In search of cave dwellings",
+    description:
+      "After breakfast, our pick-up will drive us to the starting point of the first cycle ride in search of the cave dwellings located northeast of Granada. The tour leader will give an introductory briefing about the trip, followed by a safety and bicycle technical briefing. After the briefing, you can try out your bicycles and make minor adjustments to ensure comfort.",
+    description2:
+      "We start to pedal through the mountainous landscape, a route of tranquility and beauty of great historical-cultural and natural interest belonging to the territory of the Granada Geopark, which was declared a UNESCO Global Geopark. ",
+    description4:
+      "After passing several villages, the road leads us to the old town of Guadix, showing an important heritage of monuments, with the medieval Arab Citadel, the Cathedral, and various Mudejar-style buildings. The most characteristic feature is that many of the inhabitants of this large town live in cave houses.",
+    description5:
+      "After a visit to the cave houses, we will cycle to our cave hotel, where we will stay the second night. ",
+    totalDistance: "50 km",
+    totalAscent: "800 m",
+    totalDescent: "680 m",
+    duration: "6 hours",
+    difficulty: "Level 3",
+  },
+
+  {
+    day: "3",
+    tecnicalInfo: true,
+    title: "Track 2 First Route Alpujarras",
+    description:
+      "A route through a beautiful region of white mountain villages nestled between the southern slopes of the Sierra Nevada and the Mediterranean Sea.",
+    description2:
+      "The Alpujarra is an area where time seems to stand still. It is the last redoubt of the Moriscos from Granada showing the symbiosis between man and the environment reached by the Moorish culture of Al-Andalus.",
+    description3:
+      "We start the day by driving to “Puerto de la Ragua”, a mountain pass at an elevation of 2.000 meters, located on the boundary of Granada and Almería provinces. The route passes through picturesque villages with stunning views over the valley and its terraced farms. On clear days, it’s possible to see the Mediterranean Sea and even Africa.",
+    description4:
+      "Along the way, there is time to stop and explore some of the rustic villages having a very distinct architecture as a result of the Berber occupation: flat-roofed, box-shaped white houses with tall round chimneys, clustered along narrow, winding, and steep streets, clinging to the mountains of the Sierra Nevada.",
+    description5:
+      "Our next hotel is a “cortijada”, a traditional group of homesteads and farm buildings, that has been transformed into a hotel.",
+    totalDistance: "50 km",
+    totalAscent: "850 m",
+    totalDescent: "2.050 m",
+    duration: "5 hours",
+    difficulty: "Level 3",
+  },
+  {
+    day: "4",
+    tecnicalInfo: true,
+    title: "Track 3 Second Route Alpujarras",
+    description:
+      "After breakfast, we drive back to the higher part of the Alpujarras to continue the journey with our first destination the village Trevélez, one of the highest villages in Spain located at 1.480 meters in the Trevélez Gorge. It is well known for ham drying in a traditional way, which has its own Denomination of Origin for its quality and great flavor.",
+    description2:
+      "There is an optional ham tour for those who have pre-reserved the activity.",
+    description3:
+      "Then we keep cycling towards the village Capileira, at 1.435 meters, the highest of the three villages in the Poquiera Gorge, one of the most beautiful places in the Alpujarras. A truly great experience to stay the night with the breathtaking landscapes of the southern slopes of Sierra Nevada.",
+    totalDistance: "40 km",
+    totalAscent: "1.020 m",
+    totalDescent: "850 m",
+    duration: "6 hours",
+    difficulty: "Level 3",
+  },
+  {
+    day: "5",
+    tecnicalInfo: true,
+    title: "Track 4 From Mountains to Coastline",
+    description:
+      "A ride through the beautiful Lecrín Valley, a mixture of pine forest and cultivated land, towards the Tropical Coast of Granada.",
+    description2:
+      "We leave the Alpujarras behind us and drive to the highest village of the Lecrín Valley where we stay the last night of the tour.",
+    description3:
+      "There is an optional Olive oil tour in the morning for those who have pre-reserved the activity.",
+    description4:
+      "Our last cycle day takes us through the Lecrín Valley, an area of rolling hills, ravines, rugged cliffs, and rivers covered with cultivated citrus and orange groves, almond trees, and olive oil plantations.",
+    description5:
+      "We go towards the viewpoint where the Mediterranean Sea comes into view with our destination the village of Salobreña.",
+    description6:
+      "Next, after enjoying a swim and a drink, we will head back to our rural hotel where we will celebrate our last evening of the cycle journey. ",
+    totalDistance: "50 km",
+    totalAscent: "450 m",
+    totalDescent: "1.350 m",
+    duration: "7 hours",
+    difficulty: "Level 2",
+  },
+  {
+    day: "6",
+    tecnicalInfo: false,
+    title: "Goodbye",
+    description:
+      "The journey ends after breakfast. There will be a private airport transfer from the hotel to the airport in Granada or Málaga.",
+  },
+];
+---
+
+<Layout title="">
+  <Container>
+    <main class="mt-16">
+      <!-- Foto, nombre y destino -->
+
+      <div
+        class="bg-center bg-cover bg-no-repeat bg-[url('/public/cycle-tour/leisure-cycling/epic-landscape-e-bike-tour-granada/els-principal.webp')] h-[25rem] rounded-2xl">
+        <div class="flex flex-col justify-end h-full p-6 w-auto">
+          <div class="flex gap-2">
+            <Icon icon="destiny-logo" size="1.6rem" color="white" />
+            <p
+              class="text-xl font-normal text-white lg:text-2xl flex flex-col justify-end h-full [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
+              Granada
+            </p>
+          </div>
+          <div>
+            <h1
+              class="text-3xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-5xl [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
+              Cycle Granada E-bike Tour 6 Days
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- Informacion general de los viajes -->
+
+      <div
+        class="grid grid-cols-2 md:grid-cols-6 h-auto mt-3 gap-3 place-content-start md:px-6">
+        <InformationProducts title="Price" subtitle="995">
+          <div slot="icon">
+            <Icon icon="price-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts title="Pre-booking" subtitle="20%">
+          <div slot="icon">
+            <Icon icon="price-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts title="Minimum of persons" subtitle="4">
+          <div slot="icon">
+            <Icon icon="group-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts title="Duration" subtitle="6 Days">
+          <div slot="icon">
+            <Icon icon="timer-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts title="Tour type" subtitle="Guided">
+          <div slot="icon">
+            <Icon icon="guide-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts title="Season" subtitle2="Spring Autumn">
+          <div slot="icon">
+            <Icon icon="spring-logo" size="1.6rem" color="#0E46A3" />
+            <Icon icon="autumn-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+      </div>
+
+      <!-- Informacion tecnica -->
+
+      <div class="">
+        <div
+          class="grid grid-cols-2 justify-between md:grid-cols-6 h-auto mt-3 gap-3 md:px-6">
+          <InformationProducts title="Total distance" subtitle="190 km">
+            <div slot="icon">
+              <Icon icon="distance-logo" size="1.6rem" color="#0E46A3" />
+            </div>
+          </InformationProducts>
+
+          <InformationProducts title="Total ascent" subtitle="3.120 m">
+            <div slot="icon">
+              <Icon icon="up-logo" size="1.6rem" color="#0E46A3" />
+            </div>
+          </InformationProducts>
+          <InformationProducts title="Total descent" subtitle="4.930 m">
+            <div slot="icon">
+              <Icon icon="down-logo" size="1.6rem" color="#0E46A3" />
+            </div>
+          </InformationProducts>
+          <InformationProducts title="Route type" subtitle="Point to point">
+            <div slot="icon">
+              <Route />
+            </div>
+          </InformationProducts>
+          <InformationProducts title="Difficulty" subtitle="Level 3">
+            <div class="flex gap-1" slot="icon"></div>
+          </InformationProducts>
+          <InformationProducts title="E-Bike" subtitle="Yes">
+            <div slot="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="45"
+                height="30"
+                fill="#0E46A3"
+                viewBox="80 90 330 330"
+                ><path
+                  d="M83.172,319.817Q85.646,320,88.1,320A64,64,0,0,0,136.544,214.29a64.376,64.376,0,0,0-11.981-10.841l9.59-17.982,46.293,46.293A31.986,31.986,0,1,0,235.7,264h20.823a64.023,64.023,0,1,0,42.47-68.439l-10.025-19.605L300.944,152H316a20,20,0,0,0,0-40H276a20,20,0,0,0,0,40h7.053l-8,16H143.469l16.49-30.918L160,137l4.8-9H200a8,8,0,0,0,0-16H166.624A24.039,24.039,0,0,0,144,96H120a8,8,0,0,0-8,8v32a8,8,0,0,0,8,8h18.136l-27.748,52.028a64.045,64.045,0,0,0-86.2,55.141h0A64.072,64.072,0,0,0,83.172,319.817ZM312,256a8,8,0,1,1,8,8A8.009,8.009,0,0,1,312,256Zm-20-38.953L303.183,238.9a24.037,24.037,0,0,0-5.8,9.1h-24.7A48.052,48.052,0,0,1,292.007,217.047Zm-14.122-27.618,6.775,13.25A64.062,64.062,0,0,0,256.521,248H240a31.8,31.8,0,0,0-4.446-16.244ZM260.686,184l-36.443,36.443a31.9,31.9,0,0,0-32.483,0L155.314,184ZM96,256a8,8,0,1,1-8-8A8.009,8.009,0,0,1,96,256Z"
+                ></path><path
+                  d="M380,168H344v16h36a92,92,0,0,1,0,184H327.324a47.991,47.991,0,0,0-94.642,0H190.99A32.057,32.057,0,0,0,160,344H120a8,8,0,0,0-8,8H96a8,8,0,1,0,0,16h16v16H96a8,8,0,1,0,0,16h16a8,8,0,0,0,8,8h40a32.057,32.057,0,0,0,30.987-24h41.692a47.991,47.991,0,0,0,94.642,0H380a108,108,0,0,0,0-216ZM294.659,380.438l-16,24-13.312-8.876L273.055,384H272a8,8,0,0,1-6.653-12.438l16-24,13.312,8.876L286.951,368H288a8,8,0,0,1,6.656,12.438Z"
+                ></path></svg
+              >
+            </div>
+          </InformationProducts>
+        </div>
+      </div>
+
+      <!--  Include, exclude, complementaries  -->
+      <div
+        class="grid md:grid-cols-2 lg:grid-cols-3 mt-20 md:mt-26 md:mb-36 gap-16 md:gap-4">
+        <!-- Include -->
+        <Includes title="Included">
+          <ul slot="description" class="mt-4 flex flex-col gap-2">
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">2 Professionals guides</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                Liability insurance and assistance
+              </p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Backup vehicle</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Luggage transport</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Airport Transfer</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Accommodation: 5 nights</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Breakfast: 5 days</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Lunch: 4 picnics</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">E-bike</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Helmet</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Water bottle</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Cycle shirt</p>
+            </li>
+          </ul>
+        </Includes>
+        <!-- Exclude -->
+        <Includes title="Not Included">
+          <div slot="description" class="flex flex-col gap-2 mt-4">
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Flight</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Travel & assistance insurance</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Cancellation insurance</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Dinner</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Extra meals</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Extra excursions</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Personal expenses</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Tips</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Extra nights</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                Private transport after or before the tour
+              </p>
+            </li>
+          </div>
+        </Includes>
+        <!-- Complementaries -->
+        <Includes title="Extra">
+          <div slot="description" class="flex flex-col gap-2 mt-4">
+            <h1 class="font-bold">Need to be booked in Advance</h1>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="complement-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Private room: 220 € (5nights)</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="complement-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                Private guided tour Alhambra: 55 €
+              </p>
+            </li>
+            <li class="flex gap-2">
+              <div>
+                <Icon icon="complement-logo" size="1.6rem" color="#0E46A3" />
+              </div>
+              <p class="max-w-[320px] text-md">
+                Guided tour of the ham-curing process in the highest village of
+                Sierra Nevada + tasting: 10 €
+              </p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="complement-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Olive Oil tasting: 15 €</p>
+              <p>
+                At the feet of Sierra Nevada, we offer you the possibility to
+                taste and appreciate olive oil through our senses, and a guided
+                route in the olive oil museum.
+              </p>
+            </li>
+          </div>
+        </Includes>
+      </div>
+    </main>
+
+    <div class="grid md:grid-cols-2 h-auto gap-10 md:gap-20 md:py-36 py-10">
+      <div class="static h-[385px] hidden md:block">
+        <img
+          class="rounded-xl absolute md:w-[20rem] lg:w-[25rem] hover:z-40 transition-all duration-300 ease-out hover:scale-105"
+          src="/cycle-tour/montainbike/sierra-nevada/sierra-feature.webp"
+          alt="ciclista mirando la sierra con cicicleta a su lado"
+        />
+        <img
+          class="rounded-xl absolute md:w-[10rem] lg:w-[12rem] md:mt-48 lg:mt-60 ml-6 z-10 grayscale-[60%] hover:grayscale-0 transition-all duration-300 ease-out hover:scale-105"
+          src="/cycle-tour/montainbike/sierra-nevada/sierra-feature2.webp"
+          alt="ciclista mirando la sierra con cicicleta a su lado"
+        />
+        <img
+          class="rounded-xl absolute md:w-[10rem] lg:w-[15em] ml-64 md:-mt-24 lg:-mt-32 grayscale-[60%] hover:grayscale-0 transition-all duration-300 ease-out hover:scale-105"
+          src="/cycle-tour/montainbike/sierra-nevada/sierra-feature3.webp"
+          alt="ciclista mirando la sierra con cicicleta a su lado"
+        />
+      </div>
+
+      <div class="grid gap-5 md:-mt-20">
+        <div>
+          <h2
+            class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+            Availability
+          </h2>
+          <div class="grid md:grid-cols-2 gap-4 mt-6">
+            <ul class="grid gap-2 text-lg">
+              <li class="flex flex-wrap gap-2">
+                <Icon icon="spring-logo" size="1.6rem" color="#0E46A3" />
+                <p>Spring</p>
+              </li>
+              <li class="flex flex-wrap gap-2">
+                <Icon icon="autumn-logo" size="1.6rem" color="#0E46A3" />
+                <p>Autumn</p>
+              </li>
+            </ul>
+            <div class="grid">
+              <li>21-03-2026 / 26-03/2026</li>
+            </div>
+          </div>
+        </div>
+
+        <div class="">
+          <h2
+            class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+            Highlight
+          </h2>
+          <p class="text-lg text-gray-900 mb-1">
+            <span class="text-xl">🔹</span> Epic, ever-changing landscapes from desert
+            landscapes, high mountains with traditional villages, and the tropical
+            Mediterranean coast towards Granada, the mythical city that witnessed
+            the fall of the last king of Moorish Al-Andalus.
+          </p>
+          <p class="text-lg text-gray-900">
+            <span class="text-xl">🔹</span> Rural hotels
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Button to download PDF -->
+    <section class="grid md:grid-cols-2 gap-10">
+      <div class="">
+        <h2
+          class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+          Requirements
+        </h2>
+        <p class="text-lg text-gray-900 mb-1">
+          <span class="text-xl strong">🔹</span> Booking Conditions. See terms and
+          conditions.
+        </p>
+        <p class="text-lg text-gray-900 mb-1">
+          <span class="text-xl strong">🔹</span> Travel insurance. See terms and
+          conditions.
+        </p>
+        <p class="text-lg text-gray-900 mb-1">
+          <span class="text-xl strong">🔹</span> Release of liability form. See terms
+          and conditions.
+        </p>
+      </div>
+      <!-- <Cancellation /> -->
+
+      <div class="">
+        <h2 class="font-bold text-4xl md:text-5xl xl:text-6xl">
+          Cancellation Policy
+        </h2>
+        <div>
+          <p class="text-lg text-gray-700 mt-2">See Terms and Conditions</p>
+        </div>
+      </div>
+    </section>
+    <div
+      class="grid bg-[#0E46A3] place-items-center md:mb-20 border-spacing-3 backdrop-blur-sm w-fit m-auto md:px-28 p-10 md:mt-40 mt-12 rounded-xl shadow-[0px_0px_23px_14px_#00000024]">
+      <h2 class="text-2xl md:text-3xl font-bold text-center text-gray-200">
+        More information about our tour
+      </h2>
+      <Link
+        style="muted"
+        href="/cycle-tour/leisure-cycling/epic-landscape-e-bike-tour-granada/TRIP NOTES CYCLE GRANADA E-BIKE TOUR.pdf"
+        download="Trips Notes Cycle Granada E-Bike Tour"
+        class="flex gap-1 items-center justify-center mt-8 font-semibold"
+        rel="noopener">
+        View trip notes
+      </Link>
+    </div>
+
+    <!-- Slider Photos -->
+    <section class="m-auto md:w-full rounded-xl md:px-8 md:py-20">
+      <ol class="relative mt-16">
+        {(<SliderReact IMG={IMG} client:visible />)}
+      </ol>
+    </section>
+
+    <!--  TimeLine per days  -->
+    <div class="md:p-8">
+      <h2
+        class="max-w-2xl md:p-8 mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+        What to Expect
+      </h2>
+      <p class="text-lg text-gray-900 mb-1">
+        <span class="text-xl strong">🔹</span> Sun and snow, land and sea, history
+        and legend
+      </p>
+      <p class="text-lg text-gray-900">
+        <span class="text-xl">🔹</span> The province of Granada has so much to offer,
+        from the mythical city that witnessed the fall of the last king of Moorish
+        Al-Andalus to untouched natural areas. The land that charmed romantic travelers
+        still captivates anybody who visits it. The Cycling Journey takes you along
+        epic, ever-changing landscapes from a vast high plateau to desert landscapes,
+        high mountains with traditional villages, and the tropical Mediterranean
+        coast towards Granada.
+      </p>
+    </div>
+
+    {
+      DAYS.map((tour) => (
+        <ol class="mb-10">
+          <Days {...tour} />
+        </ol>
+      ))
+    }
+    <!-- <section>
+      <h2 class="text-4xl md:text-5xl xl:text-6xl md:p-8 mt-10 font-bold mb-4">
+        What our clients said about us?
+      </h2>
+      <ul class="grid md:grid-cols-2 md:gap-6">
+        {
+          reviewsData.map((item, key) => (
+            <ol class="mb-4 ">
+              <ReviewsCompt data={item} id={`review-${key}`} />
+            </ol>
+          ))
+        }
+      </ul>
+    </section> -->
+  </Container>
+</Layout>

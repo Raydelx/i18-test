@@ -1,0 +1,277 @@
+---
+import Container from "../../components/container.astro";
+import InformationProducts from "../../components/ui/informationProducts.astro";
+import Icon from "../../components/Icon.astro";
+import Layout from "../../layouts/Layout.astro";
+import SliderReact from "../../hooks/SliderReact";
+import Days from "@/components/products-components/days.astro";
+import Includes from "@/components/products-components/includes.astro";
+import Link from "@/components/ui/link.astro";
+import Cancellation from "@/components/products-components/cancellation.astro";
+import Dots from "@/components/ui/dots.astro";
+
+// Duplica y cambia las rutas para añadir o modificar las fotos
+
+const IMG = [
+  {
+    src: "/cultural-travels/a-breathtaking-road-trip-through-the-alpujarras/alp-1.webp",
+  },
+  {
+    src: "/cultural-travels/a-breathtaking-road-trip-through-the-alpujarras/alp-2.webp",
+  },
+  {
+    src: "/cultural-travels/a-breathtaking-road-trip-through-the-alpujarras/alp-3.webp",
+  },
+  {
+    src: "/cultural-travels/a-breathtaking-road-trip-through-the-alpujarras/alp-4.webp",
+  },
+  {
+    src: "/cultural-travels/a-breathtaking-road-trip-through-the-alpujarras/alp-5.webp",
+  },
+];
+const DAYS = [
+  {
+    day: "1",
+    description:
+      "A cultural tour of the Alpujarras offers a captivating journey through stunning landscapes and rich traditions. Starting from the city of Granada, we embark on a scenic drive toward the village Trevélez located in the heart of the Natural Park Sierra Nevada. The town is considered one of the highest in Spain and is renowned for its high-quality ham. We will visit a traditional ham drying room “Secadero”, where you will learn about curing ham and finish with an Iberian ham tasting.",
+    description2:
+      "Afterward, we continue our journey through the picturesque Alpujarras, heading towards the village Pórtugos to see the beautiful orange waterfall called “Fuente Agria” which means Fountain of Sourness. Traditionally, this water is used by the people in the Alpujarras for medicinal purposes due to the high concentration of minerals in the water.",
+    description3:
+      "Next, we go to the enchanting three white villages “Pampaneira, Bubión, and Capileira”. The villages, with their distinctive whitewashed buildings and narrow, winding streets, offer a glimpse into the region’s Moorish heritage. Here, we enjoy a great lunch, savoring local cuisine in Capileira, the highest town of the three.",
+    description4:
+      "Later on, we stop in Pampaneira to have a little walk, buy local products, and enjoy the serene beauty of the surrounding mountains.",
+    description5:
+      "Before we head back to Granada, we stop one more time at “Puente de Tablate”, the bridge and Gateway to the Alpujarras. Over the centuries this site has been the key location in many battles.",
+    description6:
+      "This tour provides a perfect blend of cultural immersion and natural beauty, making it an unforgettable experience.",
+    tecnicalInfo: false,
+  },
+];
+---
+
+<Layout title="Gravel Bike / MTB">
+  <Container>
+    <main class="mt-16">
+      <!-- Foto, nombre y destino -->
+
+      <div
+        class="bg-center bg-no-repeat bg-[url('/cultural-travels/a-breathtaking-road-trip-through-the-alpujarras/alp-principal.webp')] h-[25rem] rounded-2xl">
+        <div class="flex flex-col justify-end h-full p-6 w-auto">
+          <div class="flex gap-2">
+            <Icon icon="destiny-logo" size="1.6rem" color="white" />
+            <p
+              class="text-xl font-normal text-white lg:text-2xl flex flex-col justify-end h-full [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
+              Alpujarras Sierra Nevada
+            </p>
+          </div>
+
+          <h1
+            class="text-3xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-5xl [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
+            A breathtaking road trip through the Alpujarras
+          </h1>
+        </div>
+      </div>
+
+      <!-- Informacion general de los viajes -->
+
+      <div
+        class="grid grid-cols-2 md:grid-cols-6 h-auto mt-3 gap-3 place-content-start md:px-6">
+        <InformationProducts title="Price" subtitle="125 (4pax.)">
+          <div slot="icon">
+            <Icon icon="price-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts title="Pre-booking" subtitle="100%">
+          <div slot="icon">
+            <Icon icon="price-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts title="Minimum of persons" subtitle="2">
+          <div slot="icon">
+            <Icon icon="group-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts title="Duration" subtitle="8 - 10 Hours">
+          <div slot="icon">
+            <Icon icon="timer-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts title="Tour type" subtitle="Guided">
+          <div slot="icon">
+            <Icon icon="guide-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts title="Season" subtitle2="All Year">
+          <!-- <div slot="icon">
+            <Icon icon="autumn-logo" size="1.6rem" color="#0E46A3" />
+          </div> -->
+        </InformationProducts>
+      </div>
+
+      <!-- Informacion tecnica -->
+
+      <!--  Include, exclude, complementaries  -->
+      <div
+        class="grid md:grid-cols-2 lg:grid-cols-3 mt-20 md:mt-26 md:mb-36 gap-16 md:gap-4">
+        <!-- Include -->
+        <Includes title="Included">
+          <ul slot="description" class="mt-4 flex flex-col gap-2">
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Professional guide</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                Liability insurance and assistance
+              </p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Transfer</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Water</p>
+            </li>
+          </ul>
+        </Includes>
+        <!-- Exclude -->
+        <Includes title="Not Included">
+          <div slot="description" class="flex flex-col gap-2 mt-4">
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Lunch</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Snack</p>
+            </li>
+          </div>
+        </Includes>
+        <!-- Complementaries -->
+        <Includes title="Extras">
+          <div slot="description" class="flex flex-col gap-2 mt-4">
+            <li class="flex gap-2">
+              <Icon icon="complement-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                <span class="font-bold">Lunch:</span> Local restaurant
+              </p>
+            </li>
+            <li class="flex gap-2">
+              <div>
+                <Icon icon="complement-logo" size="1.6rem" color="#0E46A3" />
+              </div>
+
+              <p class="max-w-[320px] text-md">
+                <span class="font-bold">Visit:</span> Ham-making tradition process
+                + tasting. <span class="font-bold">Price:</span> 10 € p.p.
+              </p>
+            </li>
+          </div>
+        </Includes>
+      </div>
+
+      <div class="grid md:grid-cols-2 h-auto gap-10 md:gap-20 md:py-36 py-10">
+        <div class="static h-[385px] hidden md:block">
+          <img
+            class="rounded-xl absolute md:w-[20rem] lg:w-[25rem] hover:z-40 transition-all duration-300 ease-out hover:scale-105"
+            src="/cultural-travels/a-breathtaking-road-trip-through-the-alpujarras/alp-4.webp"
+            alt="ciclista mirando la sierra con cicicleta a su lado"
+          />
+          <img
+            class="rounded-xl absolute md:w-[10rem] lg:w-[12rem] md:mt-48 lg:mt-60 ml-6 z-10 grayscale-[60%] hover:grayscale-0 transition-all duration-300 ease-out hover:scale-105"
+            src="/cultural-travels/a-breathtaking-road-trip-through-the-alpujarras/alp-3.webp"
+            alt="ciclista mirando la sierra con cicicleta a su lado"
+          />
+          <img
+            class="rounded-xl absolute md:w-[10rem] lg:w-[15em] ml-64 md:-mt-24 lg:-mt-32 grayscale-[60%] hover:grayscale-0 transition-all duration-300 ease-out hover:scale-105"
+            src="/cultural-travels/a-breathtaking-road-trip-through-the-alpujarras/alp-1.webp"
+            alt="ciclista mirando la sierra con cicicleta a su lado"
+          />
+        </div>
+
+        <div class="grid gap-5">
+          <div class="">
+            <h2
+              class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+              Availability
+            </h2>
+
+            <ul class="grid gap-2 text-lg">
+              <li class="flex flex-wrap gap-2">
+                <Icon icon="spring-logo" size="1.6rem" color="#0E46A3" />
+                <p>All Year</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="">
+            <h2
+              class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+              Highlight
+            </h2>
+            <p class="text-lg text-gray-900 mb-1">
+              <span class="text-xl">🔹</span> Trip through the Alpujarras, a natural
+              beauty between the Sierra Nevada Mountain range and the Mediterranean
+              Sea
+            </p>
+            <p class="text-lg text-gray-900">
+              <span class="text-xl">🔹</span> Visit Trevélez, the highest village
+              in the Sierra Nevada, at 1.476 m
+            </p>
+            <p class="text-lg text-gray-900">
+              <span class="text-xl">🔹</span> Visit Secadero “ham drying room” +
+              degustation
+            </p>
+            <p class="text-lg text-gray-900">
+              <span class="text-xl">🔹</span> Visit the three white villages “Pampaneira,
+              Bubión, Capileira
+            </p>
+            <p class="text-lg text-gray-900">
+              <span class="text-xl">🔹</span> Lunch in Capileira
+            </p>
+            <p class="text-lg text-gray-900">
+              <span class="text-xl">🔹</span> The bridge of Tablate
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Button to download PDF -->
+      <section class="grid md:grid-cols-2 gap-6">
+        <Cancellation />
+        <div class="flex flex-col gap-2 md:p-4">
+          <div>
+            <h3 class="text-4xl md:text-5xl xl:text-6xl font-bold">Price:</h3>
+            <Dots class="mb-4" />
+          </div>
+          <p class="text-gray-700">2 - 3 people: 150 € p.p.</p>
+          <p class="text-gray-700">4 - 5 people: 125 € p.p.</p>
+          <p class="text-gray-700">6 people: 120 € p.p.</p>
+          <p class="text-gray-700">7 people: 110 € p.p.</p>
+          <p class="text-gray-700">For families, there is a discount.</p>
+        </div>
+      </section>
+
+      <!-- Slider Photos -->
+      <section class="m-auto md:w-full rounded-xl md:px-8 md:py-20">
+        <ol class="relative mt-16">
+          {(<SliderReact IMG={IMG} client:visible client:only="react" />)}
+        </ol>
+      </section>
+
+      <!--  TimeLine per days  -->
+      <h2 class="text-4xl md:text-5xl xl:text-6xl md:p-8 mt-16 font-bold mb-4">
+        What to expect
+      </h2>
+      {
+        DAYS.map((tour) => (
+          <ol class="mb-10">
+            <Days {...tour} />
+          </ol>
+        ))
+      }
+    </main>
+  </Container>
+</Layout>

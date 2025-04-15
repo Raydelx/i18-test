@@ -1,0 +1,33 @@
+---
+import BentoItem from "../components/bentoItem.astro";
+---
+
+<section
+  class={`
+    w-full max-w-[1400px]
+    grid lg:grid-cols-10 auto-rows-[22rem] gap-4
+    mx-auto  md:p-10
+  `}>
+  <BentoItem
+    class="col-span-10 lg:col-span-5"
+    title="Rock Climbing"
+    href="/rock-climbing/">
+    <div
+      slot="image"
+      class="background transition-scale absolute bottom-0 left-0 top-0
+        -z-10 h-full w-full bg-blue-350
+        bg-cover bg-center bg-no-repeat opacity-95 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      style="background-image: url('/multi-adventure/rock-climbing.webp')">
+    </div>
+  </BentoItem>
+
+  <BentoItem class="col-span-10 lg:col-span-5" title="Via Ferrata" href="#">
+    <div
+      slot="image"
+      class="background transition-scale absolute bottom-0 left-0 top-0
+        -z-10 h-full w-full bg-blue-350
+        bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      style="background-image: url('/multi-adventure/via-ferrata.webp')">
+    </div>
+  </BentoItem>
+</section>

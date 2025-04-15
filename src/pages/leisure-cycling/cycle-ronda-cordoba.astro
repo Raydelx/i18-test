@@ -1,0 +1,628 @@
+---
+import Container from "../../components/container.astro";
+import InformationProducts from "../../components/ui/informationProducts.astro";
+import Icon from "../../components/Icon.astro";
+import Layout from "../../layouts/Layout.astro";
+import SliderReact from "../../hooks/SliderReact";
+import Days from "@/components/products-components/days.astro";
+import Includes from "@/components/products-components/includes.astro";
+import Wheel from "@/components/ui/icons/wheel.astro";
+import Route from "@/components/ui/icons/route.astro";
+import Link from "@/components/ui/link.astro";
+import reviewsProps from "../../data_files/reviewsData.json";
+import ReviewsCompt from "@/components/ui/reviewsCompt.astro";
+import Cancellation from "@/components/products-components/cancellation.astro";
+
+// Duplica y cambia las rutas para añadir o modificar las fotos
+
+const IMG = [
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jrc-1.webp",
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jrc-2.webp",
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jrc-3.webp",
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jrc-4.webp",
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jrc-5.webp",
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jrc-6.webp",
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jrc-7.webp",
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jrc-8.webp",
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jrc-9.webp",
+  },
+];
+
+type ReviewsProps = {
+  header: {
+    name: string;
+    productName: string;
+    valoration: string;
+  };
+  body: {
+    text: string;
+  };
+};
+
+const reviewsData: ReviewsProps[] = reviewsProps as ReviewsProps[];
+
+const DAYS = [
+  {
+    day: "1",
+    tecnicalInfo: false,
+    title: "Welcome",
+    description:
+      "Upon arrival in Málaga, our pick-up will drive us to our rural hotel in Ronda located above a deep gorge that separates the city in half. The tour guide will organize an introductory briefing about the trip the same day followed by a safety briefing.",
+    strong: "Free day Ronda",
+    description3:
+      "Start the day exploring Ronda’s famous sights such as the iconic bridge or the Plaza de Toros, the oldest bullring in Spain. Or take a side trip to one of the many vineyards, an excellent way to deepen your knowledge about local wines.",
+    description4:
+      "The tour leader will organize dinner to celebrate the first day of the journey. ",
+  },
+  {
+    day: "2",
+    tecnicalInfo: true,
+    title: "Track 1 Mountain Range Sierra de las Nieves",
+    description:
+      "Off we go to the breathtaking Gaitanes Gorge, one of the most spectacular landscapes in the Malaga mountains where we stay the second night of the trip.",
+    description2:
+      "We leave our hotel along meandering country roads, passing through the Ronda Mountain Range and the National Park Sierra de las Nieves, a 100 % stunning landscape. After a picnic lunch at a panoramic viewpoint, we continue toward our hotel nestled in the heart of the Natural Park.",
+    strong: "Free afternoon",
+    description3: "Swimming pool and breathtaking views",
+    description4: "Optional walk “Caminito del Rey”",
+    totalDistance: "57 km",
+    totalAscent: "730 m",
+    totalDescent: "1.240 m",
+    duration: "5 hours",
+    difficulty: "Level 2",
+  },
+
+  {
+    day: "3",
+    tecnicalInfo: true,
+    title: "Track 2 Andalusia’s Countryside",
+    description:
+      "After breakfast, we drive the first kilometers with our backup vehicle to skip the steep part and to bring us back higher up where we start our second track.",
+    description2:
+      "Today, we will cycle through Andalusia’s countryside, a mountainous and colorful landscape where Mediterranean crops alternate with pastureland. After the picnic lunch, we continue towards the village of Antequera with its rich historic center that claims to have the most churches per inhabitant in Spain. From Monasteries, palaces, and the Moorish fortress to prehistoric dolmens are some of the many places to see.",
+
+    totalDistance: "45 km",
+    totalAscent: "1.260 m",
+    totalDescent: "920 m",
+    duration: "5 hours",
+    difficulty: "Level 4",
+  },
+  {
+    day: "4",
+    tecnicalInfo: true,
+    title: "Track 3 Mountainous Olive Groves",
+    description:
+      "Today is the only time we drive to our new starting point, a village built on the ruins of an old Moorish castle that tops a rocky outcrop overlooking the beautiful valley and lake below.",
+    description2:
+      "The route takes us through the Olive Grove Landscapes of Andalusia in the Sierras Subbéticas Natural Park and Geopark. Spain has olive groves scattered over almost all the country. Still, their biggest concentration is in Andalusia, with locations where olive trees were used from when the Hispania Baetica region used to supply olive oil to the Roman capital at the very least.",
+    description3:
+      "Our destination today is the village Priego de Córdoba in the heart of the Natural Park. Before dinner, we offer you the possibility to learn how to taste and appreciate olive oil through our senses through an olive oil master where you will discover the smell, aroma, and flavor of each sample of olive oil.",
+    strong2: "Free afternoon",
+    description4: "Discover the old part of the village",
+    totalDistance: "41 km",
+    totalAscent: "750 m",
+    totalDescent: "740 m",
+    duration: "6 hours",
+    difficulty: "Level 3",
+  },
+  {
+    day: "5",
+    tecnicalInfo: true,
+    title: "Track 4 The Route of the Old Oil Train",
+    description:
+      "Today we continue cycling through the beautiful landscapes of the Sierras Subbéticas mountains which take us into picturesque villages.",
+    description2:
+      "After another outdoor picnic, we follow the traces of the old train track called “Vía Verde” that runs between olive trees and vineyards. These Green Roads across Spain have been recovered for cyclists and hikers",
+    description3:
+      "The route of the old oil train leads us to our next accommodation, a traditional Andalusian farmhouse converted into a hotel.",
+    strong2: "Free afternoon",
+    description4: "Swimming pool and breathtaking views",
+    strong3: "Dinner",
+    description5:
+      "The tour leader will organize a panoramic walk and dinner in the village of Zuheros.",
+    totalDistance: "60 km",
+    totalAscent: "720 m",
+    totalDescent: "800 m",
+    duration: "7 hours",
+    difficulty: "Level 3 (part 1) - Level 1 (part 2) ",
+  },
+  {
+    day: "6",
+    tecnicalInfo: true,
+    title: "Track 5 The Caliphate and the Mozarabic Route",
+    description:
+      "On your last cycling day, we follow two historic routes that guide us to the city of Córdoba, our final destination. The Route of the Caliphate is the Andalusian Legacy that connects Cordoba and Granada, the capital cities of the Caliphate and Nasrid al-Andalus. It was one of the busiest paths of the Iberian Peninsula during the Middle Ages because it was used by traders from all around the known world, who supplied and traded in these important population centers; it was also the route of knowledge, sciences, and arts.",
+    description2:
+      "The other historic route is the Mozarabic Way to Santiago de Compostela. An ancient trail that pays tribute to all those Christians called Mozarabs who stayed in the territories of Al-Andalus. A journey that reminds us of that time when, despite being repressed, these Christians maintained their belief and devotion.",
+    description3:
+      "The last part of the longest cycle track will reveal our destination of the journey with views of the city of Córdoba located in the Guadalquivir depression formed by the Guadalquivir River.",
+    strong2: "Dinner",
+    description4:
+      "The Tour leader will organize a dinner to celebrate our final destination.",
+
+    totalDistance: "80 km",
+    totalAscent: "550 m",
+    totalDescent: "1.060 m",
+    duration: "6 hours",
+    difficulty: "Level 3",
+  },
+  {
+    day: "7",
+    tecnicalInfo: false,
+    title: "Free day Córdoba",
+    description:
+      "Explore the city’s history and culture known for its unique blend of Roman, Moorish, and Christian influences. The city was once a significant Roman settlement and later became the capital of the Islamic Emirate and then the Caliphate of Córdoba, under which it flourished as one of the largest and most advanced cities in the world during the Middle Ages.",
+    description2:
+      "In the morning there is an optional tour of the Mosque of Córdoba for those who have pre-reserved the activity.",
+    strong2: "Dinner",
+    description4:
+      "The tour guide will organize a place to have dinner together to celebrate the last evening of the journey.",
+  },
+  {
+    day: "8",
+    tecnicalInfo: false,
+    title: "Goodbye",
+    description:
+      "The journey ends after breakfast at our hotel. There will be a private airport transfer from the hotel to the airport in Málaga.",
+  },
+];
+---
+
+<Layout title="">
+  <Container>
+    <main class="mt-16">
+      <!-- Foto, nombre y destino -->
+
+      <div
+        class="bg-center bg-cover bg-no-repeat bg-[url('/public/cycle-tour/leisure-cycling/cycle-journey-andalusia/jrc-principal.webp')] h-[25rem] rounded-2xl">
+        <div class="flex flex-col justify-end h-full p-6 w-auto">
+          <div class="flex gap-2">
+            <Icon icon="destiny-logo" size="1.6rem" color="white" />
+            <p
+              class="text-xl font-normal text-white lg:text-2xl flex flex-col justify-end h-full [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
+              Andalusia
+            </p>
+          </div>
+          <div>
+            <h1
+              class="text-3xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-5xl [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
+              Cycle Ronda - Córdoba E-bike Tour 8 Days
+            </h1>
+            <p
+              class="text-xl font-normal text-white lg:text-2xl flex flex-col h-full [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Informacion general de los viajes -->
+
+      <div
+        class="grid grid-cols-2 md:grid-cols-6 h-auto mt-3 gap-3 place-content-start md:px-6">
+        <InformationProducts title="Price" subtitle="1.550">
+          <div slot="icon">
+            <Icon icon="price-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts title="Pre-booking" subtitle="20%">
+          <div slot="icon">
+            <Icon icon="price-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts title="Minimum of persons" subtitle="7">
+          <div slot="icon">
+            <Icon icon="group-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts title="Duration" subtitle="8 Days">
+          <div slot="icon">
+            <Icon icon="timer-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts title="Tour type" subtitle="Guided">
+          <div slot="icon">
+            <Icon icon="guide-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts title="Season" subtitle2="Spring Autumn">
+          <div slot="icon">
+            <Icon icon="spring-logo" size="1.6rem" color="#0E46A3" />
+            <Icon icon="autumn-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+      </div>
+
+      <!-- Informacion tecnica -->
+
+      <div class="">
+        <div
+          class="grid grid-cols-2 justify-between md:grid-cols-6 h-auto mt-3 gap-3 md:px-6">
+          <InformationProducts title="Total distance" subtitle="283 km">
+            <div slot="icon">
+              <Icon icon="distance-logo" size="1.6rem" color="#0E46A3" />
+            </div>
+          </InformationProducts>
+
+          <InformationProducts title="Total ascent" subtitle="4000 m">
+            <div slot="icon">
+              <Icon icon="up-logo" size="1.6rem" color="#0E46A3" />
+            </div>
+          </InformationProducts>
+          <InformationProducts title="Total descent" subtitle="4760 m">
+            <div slot="icon">
+              <Icon icon="down-logo" size="1.6rem" color="#0E46A3" />
+            </div>
+          </InformationProducts>
+          <InformationProducts title="Route type" subtitle="Point to point">
+            <div slot="icon">
+              <Route />
+            </div>
+          </InformationProducts>
+          <InformationProducts title="Difficulty" subtitle="3-4">
+            <div class="flex gap-1" slot="icon"></div>
+          </InformationProducts>
+          <InformationProducts title="E-Bike" subtitle="Yes">
+            <div slot="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="45"
+                height="30"
+                fill="#0E46A3"
+                viewBox="80 90 330 330"
+                ><path
+                  d="M83.172,319.817Q85.646,320,88.1,320A64,64,0,0,0,136.544,214.29a64.376,64.376,0,0,0-11.981-10.841l9.59-17.982,46.293,46.293A31.986,31.986,0,1,0,235.7,264h20.823a64.023,64.023,0,1,0,42.47-68.439l-10.025-19.605L300.944,152H316a20,20,0,0,0,0-40H276a20,20,0,0,0,0,40h7.053l-8,16H143.469l16.49-30.918L160,137l4.8-9H200a8,8,0,0,0,0-16H166.624A24.039,24.039,0,0,0,144,96H120a8,8,0,0,0-8,8v32a8,8,0,0,0,8,8h18.136l-27.748,52.028a64.045,64.045,0,0,0-86.2,55.141h0A64.072,64.072,0,0,0,83.172,319.817ZM312,256a8,8,0,1,1,8,8A8.009,8.009,0,0,1,312,256Zm-20-38.953L303.183,238.9a24.037,24.037,0,0,0-5.8,9.1h-24.7A48.052,48.052,0,0,1,292.007,217.047Zm-14.122-27.618,6.775,13.25A64.062,64.062,0,0,0,256.521,248H240a31.8,31.8,0,0,0-4.446-16.244ZM260.686,184l-36.443,36.443a31.9,31.9,0,0,0-32.483,0L155.314,184ZM96,256a8,8,0,1,1-8-8A8.009,8.009,0,0,1,96,256Z"
+                ></path><path
+                  d="M380,168H344v16h36a92,92,0,0,1,0,184H327.324a47.991,47.991,0,0,0-94.642,0H190.99A32.057,32.057,0,0,0,160,344H120a8,8,0,0,0-8,8H96a8,8,0,1,0,0,16h16v16H96a8,8,0,1,0,0,16h16a8,8,0,0,0,8,8h40a32.057,32.057,0,0,0,30.987-24h41.692a47.991,47.991,0,0,0,94.642,0H380a108,108,0,0,0,0-216ZM294.659,380.438l-16,24-13.312-8.876L273.055,384H272a8,8,0,0,1-6.653-12.438l16-24,13.312,8.876L286.951,368H288a8,8,0,0,1,6.656,12.438Z"
+                ></path></svg
+              >
+            </div>
+          </InformationProducts>
+        </div>
+      </div>
+
+      <!--  Include, exclude, complementaries  -->
+      <div
+        class="grid md:grid-cols-2 lg:grid-cols-3 mt-20 md:mt-26 md:mb-36 gap-16 md:gap-4">
+        <!-- Include -->
+        <Includes title="Included">
+          <ul slot="description" class="mt-4 flex flex-col gap-2">
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">2 Professionals guides</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                Liability insurance and assistance
+              </p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Backup vehicle</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Luggage transport</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Airport Transfer</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Accommodation: 7 nights</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Breakfast: 7 days</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Lunch: 5 picnics</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">E-bike</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Helmet</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Water bottle</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Cycle shirt</p>
+            </li>
+          </ul>
+        </Includes>
+        <!-- Exclude -->
+        <Includes title="Not Included">
+          <div slot="description" class="flex flex-col gap-2 mt-4">
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Flight</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Travel & assistance insurance</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Cancellation insurance</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Dinner</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Extra meals</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Extra excursions</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Personal expenses</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Tips</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Extra nights</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                Private transport after or before the tour
+              </p>
+            </li>
+          </div>
+        </Includes>
+        <!-- Complementaries -->
+        <Includes title="Extra">
+          <div slot="description" class="flex flex-col gap-2 mt-4">
+            <h1 class="font-bold">Need to be booked in Advance</h1>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="complement-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Private room: 300 € (7nights)</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <div>
+                <Icon icon="complement-logo" size="1.6rem" color="#0E46A3" />
+              </div>
+              <p class="max-w-[320px] text-md">Road bike or Gravel bike.</p>
+              <p>
+                Ride for everyone. For those who have a good level of physical
+                condition can join the tour on a Road bike or Gravel bike at
+                extra cost.
+              </p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="complement-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Caminito del Rey: 30 €</p>
+              <p>
+                An aerial path that runs along the Gaitanes Gorge, an impressive
+                canyon opened by the Guadalhorce River. (5 km, 2hours)
+              </p>
+            </li>
+            <li class="flex gap-2">
+              <div>
+                <Icon icon="complement-logo" size="1.6rem" color="#0E46A3" />
+              </div>
+              <p class="max-w-[320px] text-md">
+                Private guided tour of the Mosque of Córdoba: 40 €
+              </p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="complement-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Olive Oil tasting: 15 €</p>
+              <p>
+                In the heart of Andalucía, we offer you the possibility to learn
+                how to taste and appreciate olive oil through our senses.
+              </p>
+            </li>
+          </div>
+        </Includes>
+      </div>
+    </main>
+
+    <div class="grid md:grid-cols-2 h-auto gap-10 md:gap-20 md:py-36 py-10">
+      <div class="static h-[385px] hidden md:block">
+        <img
+          class="rounded-xl absolute md:w-[20rem] lg:w-[25rem] hover:z-40 transition-all duration-300 ease-out hover:scale-105"
+          src="/cycle-tour/montainbike/sierra-nevada/sierra-feature.webp"
+          alt="ciclista mirando la sierra con cicicleta a su lado"
+        />
+        <img
+          class="rounded-xl absolute md:w-[10rem] lg:w-[12rem] md:mt-48 lg:mt-60 ml-6 z-10 grayscale-[60%] hover:grayscale-0 transition-all duration-300 ease-out hover:scale-105"
+          src="/cycle-tour/montainbike/sierra-nevada/sierra-feature2.webp"
+          alt="ciclista mirando la sierra con cicicleta a su lado"
+        />
+        <img
+          class="rounded-xl absolute md:w-[10rem] lg:w-[15em] ml-64 md:-mt-24 lg:-mt-32 grayscale-[60%] hover:grayscale-0 transition-all duration-300 ease-out hover:scale-105"
+          src="/cycle-tour/montainbike/sierra-nevada/sierra-feature3.webp"
+          alt="ciclista mirando la sierra con cicicleta a su lado"
+        />
+      </div>
+
+      <div class="grid gap-5 md:-mt-20">
+        <div>
+          <h2
+            class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+            Availability
+          </h2>
+          <div class="grid md:grid-cols-2 gap-4 mt-6">
+            <ul class="grid gap-2 text-lg">
+              <li class="flex flex-wrap gap-2">
+                <Icon icon="spring-logo" size="1.6rem" color="#0E46A3" />
+                <p>Spring</p>
+              </li>
+              <li class="flex flex-wrap gap-2">
+                <Icon icon="autumn-logo" size="1.6rem" color="#0E46A3" />
+                <p>Autumn</p>
+              </li>
+            </ul>
+            <div class="grid">
+              <li>18/10/2025 - 25/10/2025</li>
+              <li>09/05/2026 - 16/05/2026</li>
+              <li>03/10/2026 - 10/10/2026</li>
+            </div>
+          </div>
+        </div>
+
+        <div class="">
+          <h2
+            class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+            Highlight
+          </h2>
+          <p class="text-lg text-gray-900 mb-1">
+            <span class="text-xl">🔹</span> City of Ronda
+          </p>
+          <p class="text-lg text-gray-900">
+            <span class="text-xl">🔹</span> Caminito del Rey
+          </p>
+          <p class="text-lg text-gray-900">
+            <span class="text-xl">🔹</span> City of Antequera
+          </p>
+          <p class="text-lg text-gray-900">
+            <span class="text-xl">🔹</span> Sierras Subbéticas Natural Park and Geopark
+            UNESCO
+          </p>
+          <p class="text-lg text-gray-900">
+            <span class="text-xl">🔹</span> Olive Oil tasting
+          </p>
+          <p class="text-lg text-gray-900">
+            <span class="text-xl">🔹</span> City of Córdoba
+          </p>
+          <p class="text-lg text-gray-900">
+            <span class="text-xl">🔹</span> Private tour of the Mosque of Córdoba
+          </p>
+          <p class="text-lg text-gray-900">
+            <span class="text-xl">🔹</span> The selected rural hotels
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Button to download PDF -->
+    <section class="grid md:grid-cols-2 gap-10">
+      <div class="">
+        <h2
+          class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+          Requirements
+        </h2>
+        <p class="text-lg text-gray-900 mb-1">
+          <span class="text-xl strong">🔹</span> Booking Conditions. See terms and
+          conditions.
+        </p>
+        <p class="text-lg text-gray-900 mb-1">
+          <span class="text-xl strong">🔹</span> Travel insurance. See terms and
+          conditions.
+        </p>
+        <p class="text-lg text-gray-900 mb-1">
+          <span class="text-xl strong">🔹</span> Release of liability form. See terms
+          and conditions.
+        </p>
+      </div>
+      <!-- <Cancellation /> -->
+
+      <div class="">
+        <h2 class="font-bold text-4xl md:text-5xl xl:text-6xl">
+          Cancellation Policy
+        </h2>
+        <div>
+          <p class="text-lg text-gray-700 mt-2">See Terms and Conditions</p>
+        </div>
+      </div>
+    </section>
+    <div
+      class="grid bg-[#0E46A3] place-items-center md:mb-20 border-spacing-3 backdrop-blur-sm w-fit m-auto md:px-28 p-10 md:mt-40 mt-12 rounded-xl shadow-[0px_0px_23px_14px_#00000024]">
+      <h2 class="text-2xl md:text-3xl font-bold text-center text-gray-200">
+        More information about our tour
+      </h2>
+      <Link
+        style="muted"
+        href="/cycle-tour/leisure-cycling/cycle-journey-andalusia/TRIP NOTES CYCLE RONDA - CÓRDOBA.pdf"
+        download="Trips Notes Cycle Ronda - Córdoba"
+        class="flex gap-1 items-center justify-center mt-8 font-semibold"
+        rel="noopener">
+        View trip notes
+      </Link>
+    </div>
+
+    <!-- Slider Photos -->
+    <section class="m-auto md:w-full rounded-xl md:px-8 md:py-20">
+      <ol class="relative mt-16">
+        {(<SliderReact IMG={IMG} client:visible />)}
+      </ol>
+    </section>
+
+    <!--  TimeLine per days  -->
+    <div class="md:p-8">
+      <h2
+        class="max-w-2xl md:p-8 mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+        What to Expect
+      </h2>
+      <p class="text-lg text-gray-900 mb-1">
+        <span class="text-xl strong">🔹</span> Uncover the hidden beauty of Andalusia,
+        a treasure to discover!
+      </p>
+      <p class="text-lg text-gray-900">
+        <span class="text-xl">🔹</span> 8 days immersing in the rich Andalusian culture,
+        natural beauty, and history as you cycle through picturesque landscapes,
+        charming villages, and iconic landmarks.
+      </p>
+      <p class="text-lg text-gray-900">
+        <span class="text-xl">🔹</span> The South of Spain has so much to offer,
+        from the charming city of Ronda to the historic city of Córdoba, an unforgettable
+        cycling adventure through the heart of Andalusia.
+      </p>
+    </div>
+
+    {
+      DAYS.map((tour) => (
+        <ol class="mb-10">
+          <Days {...tour} />
+        </ol>
+      ))
+    }
+    <section>
+      <h2 class="text-4xl md:text-5xl xl:text-6xl md:p-8 mt-10 font-bold mb-4">
+        What our clients said about us?
+      </h2>
+      <ul class="grid md:grid-cols-2 md:gap-6">
+        {
+          reviewsData.map((item, key) => (
+            <ol class="mb-4 ">
+              <ReviewsCompt data={item} id={`review-${key}`} />
+            </ol>
+          ))
+        }
+      </ul>
+    </section>
+  </Container>
+</Layout>

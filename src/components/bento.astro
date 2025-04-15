@@ -1,0 +1,61 @@
+---
+import BentoItem from "../components/bentoItem.astro";
+---
+
+<section
+  class={`
+    w-full max-w-[1400px]
+    grid lg:grid-cols-10 auto-rows-[22rem] gap-4
+    mx-auto  md:p-10
+  `}>
+  <BentoItem
+    class="col-span-10 lg:col-span-6"
+    title="Tour Bike"
+    href="/leisure-cycling/">
+    <div
+      slot="image"
+      class="background transition-scale absolute bottom-0 left-0 top-0
+        -z-10 h-full w-full bg-blue-350
+        bg-cover bg-center bg-no-repeat opacity-95 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      style="background-image: url('/cycle-tour/leisure.webp')">
+    </div>
+  </BentoItem>
+
+  <BentoItem
+    class="col-span-10 lg:col-span-4"
+    title="MTB"
+    href="/gravel-bike-mtb">
+    <div
+      slot="image"
+      class="background transition-scale absolute bottom-0 left-0 top-0
+        -z-10 h-full w-full bg-blue-350
+        bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      style="background-image: url('/cycle-tour/montainbike.webp')">
+    </div>
+  </BentoItem>
+
+  <BentoItem
+    class="col-span-10 lg:col-span-4"
+    title="Road Bike"
+    href="/road-bike/">
+    <div
+      slot="image"
+      class="background transition-scale absolute bottom-0 left-0 top-0
+        -z-10 h-full w-full bg-blue-350
+        bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      style="background-image: url('/cycle-tour/roadbike.webp')">
+    </div>
+  </BentoItem>
+  <BentoItem
+    class="col-span-10 lg:col-span-6"
+    title="Bikepack"
+    href="/bikepack/">
+    <div
+      slot="image"
+      class="background transition-scale absolute bottom-0 left-0 top-0
+        -z-10 h-full w-full bg-blue-350
+        bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      style="background-image: url('/cycle-tour/bikepack.webp')">
+    </div>
+  </BentoItem>
+</section>

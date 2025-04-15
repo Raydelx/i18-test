@@ -1,0 +1,74 @@
+---
+import NewFaq from "@/components/newFaq.astro";
+import Container from "@/components/container.astro";
+import faqs from "@/data_files/faqs.json";
+import Layout from "@/layouts/Layout.astro";
+import SliderReactHome from "@/hooks/SliderReactHome";
+import CardHome from "@/components/cardHome.astro";
+import Gallery from "@/components/gallery.astro";
+import Hero from "@/components/hero.astro";
+import Reviews from "@/components/reviews.astro";
+
+import { getI18N } from "@/i18n/";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+const IMG = [
+  {
+    src: "/home/home14.webp",
+  },
+  {
+    src: "/home/home15.webp",
+  },
+  {
+    src: "/home/home16.webp",
+  },
+  {
+    src: "/home/home17.webp",
+  },
+  {
+    src: "/home/home18.webp",
+  },
+  {
+    src: "/home/home19.webp",
+  },
+  {
+    src: "/home/home20.webp",
+  },
+  {
+    src: "/home/home21.webp",
+  },
+  {
+    src: "/home/home22.webp",
+  },
+  {
+    src: "/home/home23.webp",
+  },
+];
+---
+
+<Layout title="">
+  <section class="m-auto md:w-full">
+    <ol class="relative">
+      {(<SliderReactHome IMG={IMG} client:visible client:only="react" />)}
+    </ol>
+  </section>
+  <Container class="w-full">
+    <section class="mb-10 md:mb-28">
+      <Hero />
+      <h1 class="text-red-700">{currentLocale}</h1>
+      <h1 class="text-red-500">{i18n.HERO_H1_1}</h1>
+    </section>
+
+    <section>
+      <CardHome />
+    </section>
+
+    <section class="mt-10 w-auto flex justify-center">
+      <NewFaq title="Frequently<br />asked questions" faqs={faqs} />
+    </section>
+
+    <Reviews />
+    <Gallery />
+  </Container>
+</Layout>

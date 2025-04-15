@@ -1,0 +1,16 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Container from "../components/container.astro";
+import Sectionhead from "../components/sectionhead.astro";
+import GalleryFull from "../components/galleryFull.astro";
+---
+
+<Layout title="Gallery">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Gallery</Fragment>
+      <Fragment slot="desc"></Fragment>
+    </Sectionhead>
+    <GalleryFull />
+  </Container>
+</Layout>

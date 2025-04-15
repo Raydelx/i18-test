@@ -1,0 +1,18 @@
+---
+interface Props {
+  title: string;
+}
+const { title } = Astro.props;
+---
+
+<div
+  class="group flex flex-col justify-start items-start mx-auto gap-2 w-[23rem] duration-500 relative rounded-lg p-4 bg-gray-100 hover:-translate-y-2 hover:shadow-xl shadow-gray-300 md:mt-10 rg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-30 border border-gray-100">
+  <h2
+    class="absolute duration-300 shadow-md group-hover:-translate-y-4 group-hover:-translate-x-4 md:-right-5 font-bold text-xl text-center w-[200px] bg-[#0E46A3] text-white px-4 py-2 rounded-xl -mt-10">
+    {title}
+  </h2>
+
+  <div class="">
+    <slot name="description" />
+  </div>
+</div>

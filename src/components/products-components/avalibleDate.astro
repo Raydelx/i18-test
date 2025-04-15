@@ -1,0 +1,12 @@
+---
+interface Props {
+  from: string;
+  to: string;
+}
+const { from, to } = Astro.props;
+---
+
+<p
+  class="max-w-2xl mb-6 text-gray-500 lg:mb-8 md:text-lg lg:text-xl text-start font-semibold">
+  {from} - {to}
+</p>
