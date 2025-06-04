@@ -1,0 +1,701 @@
+{
+    "NAV":{
+        "HOME": "Thuis",
+        "TAILOR_MADE": "Op maat gemaakte reizen",
+        "EXPERIENCE": " Ervaring",
+        "BLOG": " Blog",
+        "GALLERY": " Galerij",
+        "ABOUT": "  Over",
+        "CONTACT_US": " Neem contact met ons op",
+        "CYCLE_TRAVELS": " Fietstochten",
+        "HIKING_TREKKING": "Wandelen & Trekking",
+        "CULTURAL_TRAVELS": "Culturele reizen",
+        "MULTI_ADVENTURE_ACTIVITIES": "Multi-avonturen"
+    },   
+
+    "CANCELLATION":{
+        "TITLE": "Annuleringsbeleid",
+        "SUBTITLE": "Gratis annulering:",
+        "TEXT_1": "Annuleer tot 48 uur voor aanvang van de activiteit en u ontvangt een volledige terugbetaling",
+        "TEXT_2": "Zie Algemene Voorwaarden"
+    },
+
+    "INFORMATION_PRODUCTS": {
+        "PRICE": "Prijs",
+        "PRE_BOOKING": "Vooraf boeken",
+        "MINUMUM_OF_PERSONS": "Minimum aantal personen",
+        "DURATION": "Duur",
+        "ROUTE_TYPE": "Routetype",
+        "SEASON": "Seizoen",
+        "TOTAL_DISTANCE": "Totale afstand",
+        "TOTAL_ASCENT": "Totale stijging",
+        "TOTAL_DESCENT": "Totale daling",
+        "DIFFICULTY": "Moeilijkheidsgraad",
+        "PHYSICAL_DIFFICULTY": "Fysieke moeilijkheidsgraad",
+        "TECHNICAL_DIFFICULTY": "Technische moeilijkheidsgraad"      
+    },
+
+    "INCLUDES": {
+        "INCLUDED": "Inbegrepen",
+        "NOT_INCLUDED": "Niet inbegrepen",
+        "EXTRA": "Extra"
+    },
+
+    "DAY" : {
+        "DAY": "Dag ",
+        "OPTIONAL": "Optioneel:",
+        "TOTAL_DISTANCE": "Totale Afstand",
+        "TOTAL_ASCENT": "Totale Stijging",
+        "TOTAL_DESCENT": "Totale Daling",
+        "ROUTE_TYPE": "Routetype",
+        "DURATION": "Duur Proef",
+        "DIFFICULTY": "Moeilijkheidsgraad",
+        "PHYSICAL_DIFFICULTY": "Fysieke Moeilijkheidsgraad",
+        "TECHNICAL_DIFFICULTY": "Technische Moeilijkheidsgraad"    
+    },
+
+    "TAILOR_MADE": { 
+        "TITLE": "Op Maat Gemaakte Reizen",
+        "TITLE_1": "Een reis gecreëerd met een persoonlijke touch",
+
+        "STEPS_TITLE" : "Stel je droomreis samen!",
+        "STEPS_SUBTITLE_1" : "Aangepast aan jouw wensen, onze reizen zijn volledig gepersonaliseerd of kunnen worden aangepast van bestaande reizen. Perfect voor families, vrienden of incentive-reizen. Jij kiest de motivaties, bestemmingen, reisduur, accommodaties en activiteiten, waardoor flexibel reizen in je eigen tempo mogelijk is.",
+        "STEPS_SUBTITLE_2" : "Laat ons een onvergetelijke reis voor je creëren!",
+
+        "STEPS_CARD_1_TITLE" : "Reismotivatie",
+        "STEPS_CARD_1_TEXT" : "Vertel ons over je reismotivatie en stuur ons ons aanvraagformulier. We nemen contact met je op nadat we je aanvraagformulier hebben ontvangen.",
+
+        "STEPS_CARD_2_TITLE" : "Ontwerp",
+        "STEPS_CARD_2_TEXT" : "Met een persoonlijke touch ontwerpen we jouw reis en zorgen we ervoor dat elk detail jouw unieke voorkeuren weerspiegelt, waardoor het een onvergetelijke ervaring wordt die speciaal voor jou is samengesteld.",
+
+        "STEPS_CARD_3_TITLE" : "Presentatie",
+        "STEPS_CARD_3_TEXT" : "We presenteren je een gepersonaliseerd Reis- en Tourvoorstel dat is afgestemd op jouw voorkeuren en wensen.",
+
+        "STEPS_CARD_4_TITLE" : "Aanpassing",
+        "STEPS_CARD_4_TEXT" : "Samen passen we het reisvoorstel aan totdat het volledig aansluit bij jouw voorkeuren en verwachtingen.",
+
+        "WHY_TITLE" : "Waarom reizen met",
+        "WHY_TITLE_AFTER_BR" : "Montaraz Outdoors & Culture?",
+
+        "WHY_CARD_1_TITLE" : "Tijd Besparen",
+        "WHY_CARD_1_TEXT" : "Ontspan en geniet! Je hoeft niets te organiseren. Het enige wat je hoeft te doen is informatie geven en wij regelen de rest om aan jouw specifieke behoeften te voldoen.",
+
+        "WHY_CARD_2_TITLE" : "24/7 Ondersteuning tijdens reizen",
+        "WHY_CARD_2_TEXT" : "Toegang tot 24/7 reisondersteuning biedt gemoedsrust. Medische noodsituatie, verloren documenten of andere dringende zaken, 24/7 ondersteuning is van onschatbare waarde. Je hebt een team dat klaar staat om je te helpen wanneer dat nodig is.",
+
+        "WHY_CARD_3_TITLE" : "Persoonlijke Touch",
+        "WHY_CARD_3_TEXT" : "Reizen met een budget betekent dat je controle hebt over je vakantie. Een uniek moment betekent een duidelijk persoonlijke en aanpasbare ervaring die aansluit bij jouw specifieke wensen.",
+
+        "WHY_CARD_4_TITLE" : "Duurzaam Reizen",
+        "WHY_CARD_4_TEXT" : "We promoten en streven naar duurzaam reizen door reizigers aan te moedigen bewuste keuzes te maken die rekening houden met de milieu-, sociale en economische impact van toerisme en streven naar een meer verantwoord en vervullend avontuur.",
+
+        "BANNER_TITLE" : "Geïnteresseerd in een op maat gemaakte reis ontworpen",
+        "BANNER_TITLE_AFTER_BR" : "exclusief voor jou?",
+        "BANNER_BUTTON" : "Vul ons aanvraagformulier in"
+    },
+
+    "FORM_TAILOR":{
+        "TITLE": "Op Maat Gemaakte Reizen Aanvraagformulier",
+        "SUBTITLE": "Montaraz Outdoor & Culture neemt contact met u op na het beoordelen van uw reisaanvraag. We antwoorden u binnen 3 werkdagen per e-mail.",
+        
+        "PERSONAL_INFO": "Persoonlijke Informatie",
+
+        "TRAVEL_INFO": "Reisinformatie",
+        "TRAVEL_INFO_AIRPORT": "Naam van de aankomstluchthaven",
+        "TRAVEL_INFO_DATE": "Aankomstdatum",
+        "TRAVEL_INFO_LENGTH": "Duur van uw reis in dagen",
+        "TRAVEL_INFO_EXPERIENCE": "Welke ervaring zoekt u?",
+        "TRAVEL_INFO_TRAVELERS": "Hoeveel reizigers en leeftijden?",
+        "TRAVEL_INFO_ROOM": "Voorkeur voor kamer",
+        "TRAVEL_INFO_PLACES": "Welke plaatsen wilt u verkennen?",
+        "TRAVEL_INFO_SPECIAL": "Speciale interesses?",
+        "TRAVEL_INFO_IMPORTANT": "Wat zijn de belangrijkste dingen die u zoekt in een vakantie?",
+        "TRAVEL_INFO_COMMENTS": "Heeft u opmerkingen of speciale verzoeken?",
+
+        "BOOKING_STEPS": "Boekingsstappen",
+
+        "BOOKING_STEPS_1": "Stap 1 Aanvraag",
+        "BOOKING_STEPS_1_TEXT": "We antwoorden u binnen 3 werkdagen per e-mail om beschikbaarheid te bevestigen.",
+        
+        "BOOKING_STEPS_2": "Stap 2 Reis- & Tourvoorstel",
+        "BOOKING_STEPS_2_TEXT": "We sturen u een Reis- & Tourvoorstel met daarin uw Privétour, de prijs per persoon en informatie zoals reisroutes, accommodatiegegevens, activiteitenaanbod, benodigde documenten en meer. Elk Reis- & Tourvoorstel kan worden aangepast om volledig aan uw interesses te voldoen en uw gepersonaliseerde vakantie te creëren.",
+
+        "BOOKING_STEPS_3": "Stap 3 Behoud uw datum",
+        "BOOKING_STEPS_3_TEXT": "Na het creëren van uw privétour houden we het Reis- & Tourvoorstel 15 dagen vast zonder verplichting.",
+
+        "BOOKING_STEPS_4": "Stap 4 Vrijwaringsformulier",
+        "BOOKING_STEPS_4_TEXT": "Klanten zijn verplicht ons vrijwaringsformulier in te vullen en te ondertekenen en de volledige voorwaarden van de aangeboden tours te begrijpen. Handtekeningen zijn vereist vóór de voorlopige reservering. We kunnen reizigers niet toestaan deel te nemen aan enig aspect van Montaraz Outdoors & Culture tours zonder een ondertekend vrijwaringsformulier.",
+
+        "BOOKING_STEPS_5": "Stap 5 Aanbetaling & Voorlopige Reservering",
+        "BOOKING_STEPS_5_TEXT": "De tour is officieel gereserveerd wanneer de klant 20% van de totale tourprijs per persoon stort vóór het einde van de 15-daagse reserveringsperiode. Als er geen aanbetaling wordt ontvangen, wordt uw Reis- & Tourvoorstel geannuleerd. We bevestigen officieel uw voorlopige reservering na de storting van 20% van de totale tourprijs per persoon. Eventuele aanpassingen en wijzigingen die door de klant worden aangevraagd na de voorlopige reservering, zullen een aangepaste prijs hebben die wordt toegevoegd aan de totale prijs.",
+
+        "BOOKING_STEPS_6": "Stap 6 Het resterende saldo",
+        "BOOKING_STEPS_6_TEXT": "We sturen de klant een e-mail met het resterende saldo.",
+
+        "BOOKING_STEPS_7": "Stap 7 Eindbetaling + Reisverzekering",
+        "BOOKING_STEPS_7_TEXT": "De totale reissom moet uiterlijk op de eindbetalingsdatum door ons zijn ontvangen (zie boekingsvoorwaarden en annuleringsbeleid). Als het saldo niet op de vervaldatum is betaald, beschouwen we uw boeking als geannuleerd en zijn annuleringskosten van toepassing. We bevestigen officieel uw eindbetaling na de storting van de rest van de totale prijs per persoon. De klant dient op eigen kosten een adequate en geldige reisverzekering af te sluiten om de tour te boeken en ervoor te zorgen dat hij/zij de volledige voorwaarden van de reisverzekering begrijpt en heeft gelezen om ervoor te zorgen dat hij/zij gedekt is voor alle activiteiten die hij/zij tijdens de reis wil ondernemen. Montaraz Outdoors & Culture kan u niet helpen bij het verkrijgen van een verzekering.",
+
+        "IMPORTANT_STEPS": "Belangrijk",
+
+        "IMPORTANT_1": "Het is uw verantwoordelijkheid om een passende reisverzekering te regelen.",
+        "IMPORTANT_2": "Het is uw verantwoordelijkheid om uw vluchten te regelen.",
+        "IMPORTANT_3": "¡Dubbel Check! Zorg ervoor dat u de volledige voorwaarden van uw reisverzekering heeft gelezen en begrepen om ervoor te zorgen dat u gedekt bent voor alle activiteiten die u wilt ondernemen tijdens de tour. Uw verzekeringspolis moet u volledig dekken voor medische kosten en noodrepatriëring naar uw thuisland.",
+        "IMPORTANT_4": "Ik bevestig dat ik deze planningsservice begrijp.",
+        "IMPORTANT_5": "Ik begrijp dat ik het planningsproces zonder kosten kan stoppen.",
+        "IMPORTANT_6": "Ik begrijp en accepteer ook dat de klant het recht heeft om de tour schriftelijk en ondertekend te annuleren. Zodra we uw kennisgeving ontvangen, wordt de annulering van kracht. Uw aanbetaling wordt teruggestort op dezelfde rekening waarmee u de betaling heeft gedaan. Het teruggestorte bedrag is afhankelijk van de annuleringskosten. Bankkosten voor de transactie kunnen van toepassing zijn en worden in mindering gebracht op het teruggestorte bedrag.",
+
+        "CHECK_1": "Ik heb de boekingsstappen gelezen en begrepen.",
+        "CHECK_2": "Ik heb de belangrijke informatie gelezen en begrepen.",
+        "CHECK_3": "Ik heb gelezen en accepteer het ",
+        "CHECK_A": "Privacybeleid ",
+        "CHECK_BUTTON": "Bericht Verzenden"
+    },
+    
+    "ABOUT": {
+        "ABOUT": "Over",
+        "TITLE": "Montaraz",
+        "TITLE_1": "Buiten & Cultuur",
+        "SUBTITLE": "Montaraz Outdoors & Culture, gevestigd in Granada, in het zuiden van Spanje, is een Adventure Travel Company die gespecialiseerd is in Actieve Vakanties.",
+        "HERO_1": "De Grote Buitenlucht",
+        "HERO_1_TEXT": "Neem de tijd om te reizen",
+        "HERO_2": "Nieuwe Ervaringen",
+        "HERO_2_TEXT": "Ontdek onze echte outdoor reiservaringen geschikt voor iedereen die geniet van een actieve manier van reizen",
+        "HERO_3": "Reizen in Kleine Groepen",
+        "HERO_3_TEXT": "Geeft mensen de vrijheid om in hun eigen tempo te gaan en hun reisgezelschap beter te leren kennen",
+        "HERO_4": "Professionele Gids",
+        "HERO_4_TEXT": "Met vele jaren uitgebreide expertise en lokale kennis",
+        "HERO_5": "Duurzaam Reizen",
+        "HERO_5_TEXT": "Door bewuster te reizen, proberen we negatieve effecten op het milieu te minimaliseren en streven we naar een positieve sociale impact op lokale gemeenschappen en economieën.",
+        "TEAM": "Team",
+        "QUOTE": "Op jonge leeftijd begon ik de wereld rond te reizen. Sindsdien is mijn leven een ontdekkingsreis geweest. Als resultaat van deze avontuurlijke levensstijl heb ik mijn passie omgezet in een beroep en het bedrijf Montaraz Outdoors and Culture opgericht.",
+        "QUOTE_1": "Oprichter Montaraz Outdoors and Culture",
+
+        "MICHAEL_CHARGE":"Oprichter / Projectmanager / Berggids / Fietsgids",
+        "MICHAEL_NATIONALITY":"België",
+        "MICHAEL_LENGUAGES":"Nederlands / Spaans / Frans / Engels",
+        "MICHAEL_QUALIFICATION":"Bergsporttechnicus / Socio nº1945 AEGM / UIMLA",
+
+        "JOSE_CHARGE":"Projectmanager / Fietsgids",
+        "JOSE_NATIONALITY":"Spanje",
+        "JOSE_LENGUAGES":"Spaans / Engels",
+        "JOSE_QUALIFICATION":"Fietsgids / Fietsmonteur",
+
+        "MARIA_CHARGE":"Operationeel Coördinator",
+        "MARIA_NATIONALITY":"Spanje",
+        "MARIA_LENGUAGES":"Spaans / Engels",
+        "MARIA_QUALIFICATION":"Verpleegkundige / PhD Verloskunde",
+
+        "MANUEL_CHARGE":"Skileraar",
+        "MANUEL_NATIONALITY":"Spanje",
+        "MANUEL_LENGUAGES":"Spaans / Engels",
+        "MANUEL_QUALIFICATION":"Bachelor in Sportwetenschappen / Specialisatie in hoogprestatieskiën / Master in Lichamelijke Opvoeding / Sporttechnicus Alpineskiën",
+
+        "ANXO_CHARGE":"Gids / Rotsklim Instructeur",
+        "ANXO_NATIONALITY":"Spanje",
+        "ANXO_LENGUAGES":"Spaans / Engels",
+        "ANXO_QUALIFICATION":"Afgestudeerd in Filosofie / Klimsporttechnicus / Sporttechnicus Berg en Klimmen"
+        
+    },
+
+    "CONTACT":{
+        "TITLE": "Contact",
+        "SUBTITLE": "Maak je klaar om nieuwe ervaringen te creëren",
+        "TEXT": "Neem contact op met Montaraz Outdoors & Culture",
+        "DIRECTION": "Spanje, Granada",
+        "NAME": "Volledige Naam",
+        "EMAIL":"E-mailadres",
+        "TEXT_1": "Uw Bericht",
+        "SEND": "Bericht Versturen"
+    },
+
+
+    "TERMS":{
+        "TITLE": "Algemene voorwaarden",
+        "SUBTITEL_1": "Reisvoorwaarden",
+        "SUBTITEL_2": "Aansprakelijkheidsvrijstelling",
+
+        "TEXT_1": "Ik heb me aangemeld om deel te nemen aan de tour die op de website Montaraz Outdoors & Culture wordt vermeld. Ik neem deel aan deze reis met de kennis van de talrijke risico's en gevaren die ermee gepaard gaan, waaronder maar niet beperkt tot: nalatigheid op welke manier dan ook van Montaraz Outdoors & Culture, inclusief, maar niet beperkt tot, nalatigheid bij de uitvoering of organisatie van de reis in elk opzicht van begin tot einde, nalatigheid met betrekking tot de selectie of het onderhoud van fietsen, het gebruik, de installatie of het onderhoud van optionele of extra apparatuur zoals pedalen voor fietstochten of andere apparatuur voor wandel- en multi-avontuurlijke tours, enz., bij het onderhoud of de werking van een busje of ander motorvoertuig dat wordt gebruikt om passagiers te vervoeren, enz.; overmacht of natuurrampen, oorlogshandelingen of burgerlijke onrust, opstand of revolutie, overheidsdaden, stakingen of andere arbeidsactiviteiten; fysieke inspanning waarvoor ik niet ben voorbereid; nalatig of roekeloos fietsen door de deelnemer of anderen; onvermogen om een fiets correct te bedienen; natuurkrachten; weersomstandigheden; transportstoringen of het falen van een transportmechanisme om tijdig of veilig aan te komen of te vertrekken, of dit nu per vliegtuig, trein, auto, boot, kano, kajak, fiets, ski, paard of ander dier, te voet of op een andere manier gebeurt; gevaren die gepaard gaan met zwemmen of springen van boten, inclusief de mogelijkheid om een boot, een object of een persoon te raken tijdens het doen, vast komen te zitten in ruwe of snel stromende wateren, enz., consumptie van alcoholische dranken, medicijnen of andere stoffen, al dan niet voorgeschreven; risico's verbonden aan voedsel, voedselallergieën of onzuiver water; terrorisme of de dreiging daarvan; criminele activiteiten; beten van of gevaren verbonden aan wilde of andere dieren, plagen of insecten; nalatigheid of opzettelijk wangedrag door derden; defecten of storingen van fietsen of andere apparatuur; financiële wanbetaling van een leverancier; grote hoogte; ongeval, allergische reactie of ziekte zonder toegang tot middelen voor snelle evacuatie of beschikbaarheid van medische benodigdheden of diensten; de adequaatheid van medische zorg zodra deze wordt verleend; epidemieën of de dreiging daarvan, inclusief, maar niet beperkt tot, blootstelling aan COVID-19 door middel van overdracht; gestolen, verloren of zoekgeraakte bagage of eigendommen; en diefstal of inbraak in busjes, hotelkamers of elders.",
+        "TEXT_2": "Ik erken dat het plezier en de opwinding van avontuurlijk reizen deels voortkomen uit de inherente risico's die gepaard gaan met reizen en activiteiten buiten de geaccepteerde veiligheid van het leven thuis of op het werk.",
+        "TEXT_3": "IK GA AKKOORD OM VERANTWOORDELIJK TE ZIJN VOOR MIJN EIGEN WELZIJN EN ACCEPTEER ALLE RISICO'S VAN VERTRAGING, ONVOORZIENE GEBEURTENISSEN, ONGEMAK, ZIEKTE, LETSEL, EMOTIONEEL TRAUMA OF OVERLIJDEN.",
+        "TEXT_4": "Ik erken dat de kosten van alle Montaraz Outdoors & Culture-reizen zijn gebaseerd op deelnemers die deze vrijwaringsverklaring ondertekenen.",
+        "TEXT_5": "Ik ga ermee akkoord dat deze overeenkomst wettelijk bindend is voor mij persoonlijk, alle leden van mijn gezin en alle minderjarigen die met mij reizen, en hun erfgenamen, opvolgers, rechtverkrijgenden en wettelijke vertegenwoordigers, met de bedoeling alle risico's die met deze reis gepaard gaan volledig te aanvaarden en Montaraz Outdoors & Culture in de ruimste mate toegestaan door de wet vrij te stellen van enige aansprakelijkheid.",
+        "TEXT_6": "Ik begrijp dat Montaraz Outdoors & Culture het recht behoudt om fotografische of filmopnamen van een van haar reizen te maken en ga ermee akkoord dat Montaraz Outdoors & Culture dergelijke fotografische of filmopnamen mag gebruiken voor promotionele en/of commerciële doeleinden, evenals goedkeuring geeft voor dergelijk gebruik door derden met wie Montaraz Outdoors & Culture mogelijk samenwerkt in gezamenlijke marketing, zonder enige vergoeding aan mij. Ik draag alle rechten, titels en belangen die ik mogelijk heb in of op enig medium waarin mijn naam of gelijkenis kan verschijnen over aan Montaraz Outdoors & Culture.",
+        "TEXT_7": "Ik ga ermee akkoord om alle schriftelijke en mondelinge veiligheidsregels te volgen die door Montaraz Outdoors & Culture aan mij worden gepresenteerd. Ik begrijp dat Montaraz Outdoors & Culture het recht behoudt om een deelnemer te weigeren of van een reis te verwijderen, zonder restitutie, als deze persoon niet in staat wordt geacht om aan de eisen van de activiteiten te voldoen, als deze persoon als beledigend wordt beschouwd tegenover andere deelnemers, leiders of derden, of als deze persoon het plezier van de reis voor anderen belemmert. Montaraz Outdoors & Culture behoudt zich het recht voor om routes, hotels, reisroutes en reiswijzigingen aan te brengen indien nodig of wenselijk om de kwaliteit van de reis te verbeteren en/of het comfort en welzijn van gasten te waarborgen.",
+        "TEXT_8": "Deelname aan touractiviteiten van het bedrijf Montaraz Outdoors & Culture mag alleen worden overwogen als u goed getraind bent en in goede fysieke en medische conditie verkeert om fietstochten, wandeltochten of multi-avontuurlijke activiteiten te ondernemen. U bent verantwoordelijk voor het bepalen of u aan de fysieke eisen van de tour kunt voldoen en uw gezondheid en welzijn tijdens de tour blijven uw verantwoordelijkheid. Als u twijfelt over uw gezondheid en fitheid om deel te nemen, dient u contact op te nemen met het bedrijf en/of een arts voordat u boekt.",
+        "TEXT_9": "U erkent dat fiets- en wandeltochten of multi-avontuurlijke activiteiten inspannende activiteiten zijn en dat er inherente gevaren, risico's en bepaalde elementen van onvoorspelbaarheid verbonden zijn aan deelname aan de tour. U erkent en accepteert dat deze activiteiten een fysiek veeleisende sport zijn die aanzienlijke risico's op letsel en potentiële gevaren van ongevallen of botsingen met zich meebrengen, wat kan resulteren in letsel. U neemt verantwoordelijkheid en aansprakelijkheid voor alle bijbehorende risico's van de tour.",
+        "TEXT_10": "dat hij/zij door het bedrijf Montaraz Outdoors & Culture in begrijpelijke taal voldoende is geïnformeerd over de specificaties van de activiteiten waaraan hij/zij gaat deelnemen en over de fysieke voorwaarden die nodig zijn voor dergelijke deelname.",
+        "TEXT_11": "dat hij/zij de regels kent, begrijpt en accepteert die zijn vastgesteld voor de verschillende activiteiten en dat hij/zij zich onderwerpt aan het gezag van de leiding en/of discipline van de organisatie.",
+        "TEXT_12": "dat hij/zij duidelijk en voldoende is geïnformeerd over de risico's van de verschillende activiteiten, over de kwalificaties van de gidsen en over de veiligheidsmaatregelen die door de organisatie tijdens de activiteiten worden genomen.",
+        "TEXT_13": "dat hij/zij geen ziekte, handicap of medische beperking heeft die de beoefening van deze activiteiten verhindert.",
+        "TEXT_14": "de klant erkent dat hij/zij in goede fysieke en mentale conditie verkeert die geschikt is voor dergelijke activiteiten, zonder enige fysieke of mentale ziekte die de uitvoering van dergelijke activiteiten verhindert of ondermijnt.",
+        "TEXT_15": "dat hij/zij vrijwillig de risico's van de sport- en/of avontuurlijke activiteit aanvaardt en daarmee de organisatie vrijwaart van enige schade of nadeel die hij/zij tijdens de activiteit kan lijden. Deze vrijstelling omvat niet de schade of nadelen veroorzaakt door nalatigheid van de organisatie.",
+        "TEXT_16": "dat u verantwoordelijk bent voor naleving van alle wetten van het land of de landen waarin de tour plaatsvindt, inclusief alle verkeersregels en drugswetgeving. Het is uw verantwoordelijkheid om ervoor te zorgen dat u op de hoogte bent van deze wetten en regels.",
+
+        "SUBTITEL_3": "Het niet naleven van een van de onderstaande voorwaarden zal leiden tot onmiddellijke uitsluiting van onze activiteiten.",
+
+        "TEXT_17": "de deelnemer dient te allen tijde strikt de instructies en het reisschema van de gids(en) op te volgen.",
+        "TEXT_18": "de deelnemer moet te allen tijde met beide handen op het stuur fietsen en wordt gewaarschuwd voor het gevaar hiervan tijdens fietstochten.",
+        "TEXT_19": "het is verplicht om altijd een helm te dragen tijdens fietstochten.",
+        "TEXT_20": "om veiligheid en bescherming te garanderen, vereist Montaraz Outdoors & Culture dat een helm volgens Europese normen te allen tijde wordt gedragen tijdens een fietstocht.",
+        "TEXT_21": "het is verboden om de gidsen in te halen en acties met de fiets uit te voeren die hun veiligheid in gevaar brengen of tijdens een wandelactiviteit.",
+        "TEXT_22": "de klant begrijpt en accepteert de regel om de activiteit niet uit te voeren onder invloed van alcohol en/of drugs. Deelname onder invloed van alcohol en/of drugs is volledig verboden. Het gebruik van dergelijke stoffen vóór of tijdens de activiteit is expliciet verboden. In dit geval is de organisatie niet verantwoordelijk voor schade die voortvloeit uit deze actie en wijst zij ook elke juridische aansprakelijkheid af die hieruit voortvloeit.",
+
+        "SUBTITEL_4": "Verzekering en boekingsvoorwaarden.",
+
+        "TEXT_23": "de klant dient op eigen kosten een adequate en geldige reisverzekering af te sluiten om de tour te boeken en ervoor te zorgen dat hij/zij de volledige voorwaarden van de reisverzekering begrijpt en heeft gelezen om ervoor te zorgen dat hij/zij gedekt is voor alle activiteiten die hij/zij tijdens de reis wil ondernemen.",
+        "TEXT_24": "de klant moet rechtstreeks contact opnemen met de verzekeringsmaatschappij in geval van een claimafwikkeling.",
+        "TEXT_25": "de volledige betaling moet worden ontvangen volgens de procedures zoals vastgelegd in de betalingsvoorwaarden. Indien niet op tijd betaald, behoudt het bedrijf zich het recht voor om de boeking te annuleren met verlies van de aanbetaling en de schaal van annuleringskosten toe te passen zoals vermeld in het annuleringsbeleid.",
+        "TEXT_26": "het minimum aantal deelnemers; alle aangeboden tours vinden plaats bij een minimum aantal deelnemers, als dit aantal niet wordt bereikt, kan het bedrijf de reis annuleren tot 45 dagen voor de startdatum en heeft hij/zij recht op een volledige terugbetaling van de totale reissom voor meerdaagse tours.",
+
+        "SUBTITEL_5": "Overige",
+
+        "TEXT_27": "het bedrijf is niet verantwoordelijk en/of aansprakelijk voor enige schade veroorzaakt aan de klant door redenen buiten de controle van het bedrijf.",
+        "TEXT_28": "het bedrijf is niet verantwoordelijk en/of aansprakelijk voor verlies van bagage of persoonlijke bezittingen veroorzaakt aan de klant door redenen buiten de controle van het bedrijf.",
+        "TEXT_29": "in het geval dat een klant samen met zijn gezin gedwongen wordt om een tour georganiseerd door Montaraz Outdoors & Culture te beëindigen om welke reden dan ook, inclusief ziekte, overlijden of verlies van reisdocumenten. Er zal geen aanspraak worden gemaakt op terugbetaling van niet-gebruikte diensten. Zelfs als een klant niet in staat is om de plaats van aanvang te bereiken om welke reden dan ook, inclusief verlies van bagage of verlies van reisdocumenten, wordt zijn boeking als geannuleerd beschouwd en worden 100% annuleringskosten in rekening gebracht.",
+        "TEXT_30": "het bedrijf is in geen geval aansprakelijk jegens de klant of enige persoon die met hem/haar reist voor overlijden, persoonlijk letsel, ziekte, ongeval, verlies, vertraging, ongemak, verhoogde kosten, gevolgschade en/of schade, of enige vorm van diefstal, hoe dan ook veroorzaakt.",
+        "TEXT_31": "het bedrijf behoudt zich het recht voor om deelname van een klant in te trekken wiens gedrag naar verwachting de soepele werking van de tour zal beïnvloeden of het plezier of de veiligheid van andere deelnemers nadelig zal beïnvloeden en zal geen enkele aansprakelijkheid hebben jegens een dergelijke persoon.",
+        "TEXT_32": "Persoonlijke gegevens die het bedrijf bewaart, worden na elke tour verwijderd, tenzij hij/zij informatie wil ontvangen over andere of nieuwe activiteiten. Het bedrijf zal hun telefoonnummer en e-mailadres bewaren, en de andere verstrekte persoonlijke gegevens zullen worden verwijderd.",
+
+        "SUBTITEL_6": "Vrijwaringsformulier.",
+
+        "TEXT_33": "De klanten zijn verplicht om ons vrijwaringsformulier in te vullen en te ondertekenen en de volledige voorwaarden van de aangeboden tour te begrijpen. Handtekeningen zijn vereist vóór de voorlopige reservering. We kunnen reizigers niet toestaan deel te nemen aan enig aspect van een Montaraz Outdoors & Culture-tour zonder een ondertekend vrijwaringsformulier.",
+        "TEXT_34": "IK HEB DIT VRIJWARINGSFORMULIER ZORGVULDIG GELEZEN EN BEGRIJP VOLLEDIG DE INHOUD.",
+
+        "SUBTITEL_7": "Boekingsvoorwaarden",
+
+        "TEXT_35": "Een tour boeken: Montaraz Outdoors & Culture biedt de best mogelijke manier om flexibele boekingsvoorwaarden te plannen om uw vakantie beter te plannen.",
+        "TEXT_36": "Reserveer uw reis op elk moment via de website Montaraz Outdoors & Culture per e-mail, sms of telefoon.",
+        "TEXT_37": "Hoe eerder u boekt, hoe meer opties u heeft qua data.",
+        "TEXT_38": "Prijs. Alle tours bevatten gedetailleerde informatie over alle items die in de tourprijs zijn inbegrepen.",
+        "TEXT_39": "Boeking van een 1-daagse tour. De tour is officieel gereserveerd wanneer de klant 100% van de totale tourprijs per persoon stort. We bevestigen uw reservering na de storting van 100% van de totale tourprijs per persoon. De definitieve boekingsdatum is 48 uur voor vertrek. 1-daagse tours met een andere definitieve boekingsdatum worden vermeld in de tourbeschrijving.",
+        "TEXT_40": "Boeking van een meerdaagse tour. De tour is officieel gereserveerd wanneer de klant 20% van de totale tourprijs per persoon stort. We bevestigen uw voorlopige reservering na de storting van 20% van de totale tourprijs per persoon. De definitieve betalingsdatum wordt vermeld in de tourbeschrijving. Als het saldo niet op de vervaldatum is betaald, beschouwen we uw boeking als geannuleerd en zijn annuleringskosten van toepassing (zie annuleringskosten voor meerdaagse tours). We bevestigen officieel uw definitieve betaling na de storting van de rest van de totale prijs per persoon.",
+
+        "SUBTITEL_8": "Boeking van een op maat gemaakte tour.",
+
+        "TEXT_41": "De tours zijn volledig gepersonaliseerd of kunnen worden aangepast van bestaande tours.",
+        "TEXT_42": "Boekingsstappen:",
+        "TEXT_43": "Aanvraag",
+        "TEXT_44": "Reis- en tourvoorstel",
+        "TEXT_45": "We houden uw datum 15 dagen vast zonder verplichting",
+        "TEXT_46": "Vrijwaringsformulier. Klanten zijn verplicht ons vrijwaringsformulier in te vullen en te ondertekenen en de volledige voorwaarden van de aangeboden tours te begrijpen. Handtekeningen zijn vereist vóór de voorlopige reservering. We kunnen reizigers niet toestaan deel te nemen aan enig aspect van een Montaraz Outdoors & Culture-tour zonder een ondertekend vrijwaringsformulier.",
+        "TEXT_47": "Aanbetaling en voorlopige reservering. De tour is officieel gereserveerd wanneer de klant 20% van de totale tourprijs per persoon stort vóór het einde van de 15-daagse reserveringsperiode. Als er geen aanbetaling wordt ontvangen, wordt uw Reis- en Tourvoorstel geannuleerd. We bevestigen officieel uw voorlopige reservering na de storting van 20% van de totale tourprijs per persoon.",
+        "TEXT_48": "Het resterende saldo. We sturen de klant een e-mail met het resterende saldo.",
+        "TEXT_49": "Eindbetaling + Reisverzekering. De totale tourprijs moet uiterlijk op de eindbetalingsdatum door ons zijn ontvangen. Als het saldo niet op de vervaldatum is betaald, beschouwen we uw boeking als geannuleerd en zijn annuleringskosten van toepassing. We bevestigen officieel uw eindbetaling na de storting van de rest van de totale prijs per persoon. (De eindbetalingsdatum en annuleringskosten worden vermeld in de tourbeschrijving)",
+        "TEXT_50": "Aanpassingen. Eventuele aanpassingen en wijzigingen die door de klant worden aangevraagd na de voorlopige reservering, zullen een aangepaste prijs hebben die wordt toegevoegd aan de totale prijs.",
+
+        "SUBTITEL_9": "Reisverzekering.",
+
+        "TEXT_51": "De klant moet op eigen kosten een adequate en geldige reisverzekering afsluiten om een meerdaagse tour te boeken en ervoor zorgen dat hij/zij de volledige voorwaarden van de reisverzekering begrijpt en heeft gelezen om ervoor te zorgen dat hij/zij gedekt is voor alle activiteiten die hij/zij tijdens de reis wil ondernemen. Montaraz Outdoors & Culture biedt geen hulp bij het verkrijgen van een verzekering.",
+
+        "SUBTITEL_10": "Vrijwaringsformulier.",
+
+        "TEXT_52": "Klanten zijn verplicht ons vrijwaringsformulier in te vullen en te ondertekenen en de volledige voorwaarden van de aangeboden tours te begrijpen. Handtekeningen zijn vereist vóór de voorlopige reservering. We kunnen reizigers niet toestaan deel te nemen aan enig aspect van een Montaraz Outdoors & Culture-tour zonder een ondertekend vrijwaringsformulier.",
+        
+        "SUBTITEL_11": "Annuleringsbeleid",
+
+        "TEXT_53": "De klant heeft het recht om de tour schriftelijk te annuleren en te ondertekenen als de annulering plaatsvindt vóór de opgegeven datum. Zodra we uw kennisgeving ontvangen, wordt de annulering van kracht. Hoe uw tours te annuleren:",
+        "TEXT_54": "Schrijf een e-mail naar Montaraz Outdoors & Culture.",
+        "TEXT_55": "Nadat u uw tour heeft geannuleerd, wordt uw aanbetaling teruggestort op dezelfde rekening waarmee u de betaling heeft gedaan. Het teruggestorte bedrag is afhankelijk van de annuleringskosten. Bankkosten worden in mindering gebracht.",
+        "TEXT_56": "U heeft recht op een volledige terugbetaling van de totale reissom als we uw reis niet kunnen garanderen door het niet hebben van een minimum groepsgrootte. Als een annulering moet worden gedaan, zullen we u onmiddellijk informeren en u op de hoogte stellen van de annulering niet minder dan 45 dagen vóór de start van uw reis.",
+        "TEXT_57": "U heeft recht op een volledige terugbetaling van de reissom vanwege buitengewone omstandigheden, zoals oorlogshandelingen, aanzienlijke risico's voor de volksgezondheid, of een natuurramp zoals weersomstandigheden, waardoor reizen onmogelijk wordt.",
+
+        "SUBTITEL_12": "Boeking van een 1-daagse tour.",
+
+        "TEXT_58": "Als de annulering meer dan 48 uur vóór vertrek plaatsvindt, wordt uw volledige aanbetaling terugbetaald.",
+        "TEXT_59": "Als geannuleerd binnen 48 tot 24 uur vóór vertrek, wordt een annuleringsvergoeding van 50% van de totale reissom in rekening gebracht.",
+        "TEXT_60": "Als geannuleerd minder dan 24 uur vóór vertrek, wordt een annuleringsvergoeding van 100% van de totale prijs in rekening gebracht.",
+        "TEXT_61": "Aanbetaling en voorlopige reservering: 100% per persoon",
+        "TEXT_62": "De volledige aanbetaling wordt terugbetaald: meer dan 48 uur vóór vertrek",
+        "TEXT_63": "Eindbetalingsdatum: 48 uur vóór vertrek",
+        "TEXT_64": "1-daagse tours met een andere definitieve boekingsdatum en eindbetalingsdatum worden vermeld in de tourbeschrijving.",
+        "TEXT_65": "Het teruggestorte bedrag is afhankelijk van de annuleringskosten. Bankkosten worden in mindering gebracht.",
+
+        "SUBTITEL_13": "Boeking van een 2-daagse tour.",
+
+        "TEXT_66": "Als de annulering meer dan 4 dagen vóór vertrek plaatsvindt, wordt uw volledige aanbetaling terugbetaald.",
+        "TEXT_67": "Als geannuleerd van 4 tot 2 dagen vóór vertrek, wordt een annuleringsvergoeding van 50% van de totale reissom in rekening gebracht.",
+        "TEXT_68": "Als geannuleerd minder dan 48 uur vóór vertrek, wordt een annuleringsvergoeding van 100% van de totale prijs in rekening gebracht.",
+        "TEXT_69": "Aanbetaling en voorlopige reservering: 100% per persoon",
+        "TEXT_70": "De volledige aanbetaling wordt terugbetaald: meer dan 4 dagen vóór vertrek",
+        "TEXT_71": "Eindbetalingsdatum: 4 dagen vóór vertrek",
+        "TEXT_72": "2-daagse tours met een andere definitieve boekingsdatum en eindbetalingsdatum worden vermeld in de tourbeschrijving.",
+        "TEXT_73": "Het teruggestorte bedrag is afhankelijk van de annuleringskosten. Bankkosten worden in mindering gebracht.",
+
+        "SUBTITEL_14": "Boeking van een 4-daagse tour.",
+
+        "TEXT_74": "Als de annulering meer dan 30 dagen vóór vertrek plaatsvindt, wordt uw volledige aanbetaling terugbetaald.",
+        "TEXT_75": "Als geannuleerd van 30 tot 21 dagen vóór vertrek, 20% van de totale reissom.",
+        "TEXT_76": "Als geannuleerd van 21 tot 14 dagen vóór vertrek, 50% van de totale reissom.",
+        "TEXT_77": "Als geannuleerd minder dan 14 dagen vóór vertrek, 100% van de totale reissom.",
+        "TEXT_78": "Aanbetaling en voorlopige reservering: 20% per persoon",
+        "TEXT_79": "De volledige aanbetaling wordt terugbetaald: meer dan 30 dagen vóór vertrek",
+        "TEXT_80": "Eindbetalingsdatum: de totale reissom moet uiterlijk 30 dagen vóór vertrek door ons zijn ontvangen. Als het saldo niet op de vervaldatum is betaald, beschouwen we uw boeking als geannuleerd en zijn annuleringskosten van toepassing.",
+        "TEXT_81": "Het teruggestorte bedrag is afhankelijk van de annuleringskosten. Bankkosten worden in mindering gebracht.",
+        "TEXT_82": "Meerdaagse tours met een andere eindbetalingsdatum en annuleringskosten worden vermeld in de tourbeschrijving.",
+
+        "SUBTITEL_15": "Boeking van tours van 8 dagen of meer.",
+
+        "TEXT_83": "Als de annulering meer dan 30 dagen vóór vertrek plaatsvindt, wordt uw volledige aanbetaling terugbetaald.",
+        "TEXT_84": "Als geannuleerd van 30 tot 21 dagen vóór vertrek, 20% van de totale reissom.",
+        "TEXT_85": "Als geannuleerd van 21 tot 14 dagen vóór vertrek, 50% van de totale reissom.",
+        "TEXT_86": "Als geannuleerd minder dan 14 dagen vóór vertrek, 100% van de totale reissom.",
+        "TEXT_87": "Aanbetaling en voorlopige reservering: 20% per persoon",
+        "TEXT_88": "De volledige aanbetaling wordt terugbetaald: meer dan 45 dagen vóór vertrek",
+        "TEXT_89": "Eindbetalingsdatum: de totale reissom moet uiterlijk 45 dagen vóór vertrek door ons zijn ontvangen. Als het saldo niet op de vervaldatum is betaald, beschouwen we uw boeking als geannuleerd en zijn annuleringskosten van toepassing.",
+        "TEXT_90": "Het teruggestorte bedrag is afhankelijk van de annuleringskosten. Bankkosten worden in mindering gebracht.",
+
+        "SUBTITEL_16": "Boeking van een op maat gemaakte tour.",
+
+        "TEXT_91": "Aanbetaling en voorlopige reservering: de tour is officieel gereserveerd wanneer de klant 20% van de totale tourprijs per persoon stort vóór het einde van de 15-daagse reserveringsperiode. Als er geen aanbetaling wordt ontvangen, wordt uw Reis- en Tourvoorstel geannuleerd. We bevestigen officieel uw voorlopige reservering na de storting van 20% van de totale tourprijs per persoon.",
+        "TEXT_92": "De eindbetalingsdatum en annuleringskosten worden vermeld in de tourbeschrijving."
+        
+    },
+
+    "PRIVACY": {
+        "TITLE": "Privacybeleid",
+        "TEXT_1": "Dit privacybeleid beschrijft hoe we uw persoonlijke informatie verkrijgen, opslaan en gebruiken wanneer u onze website gebruikt of ermee communiceert, of wanneer we uw persoonlijke informatie verkrijgen of verzamelen via andere kanalen zoals e-mail, telefoon, schriftelijke communicatie of sociale media. Door onze website of andere kanalen te gebruiken of uw persoonlijke informatie met ons te delen, accepteert u en stemt u in met de praktijken die in dit privacybeleid worden beschreven.",
+        "TEXT_2": "Dit privacybeleid beschrijft de voorwaarden waaronder de door gebruikers verstrekte informatie wordt gebruikt en beschermd bij het gebruik van onze website. Dit bedrijf zet zich in voor de beveiliging van de gegevens van zijn gebruikers. Wanneer we u vragen om persoonlijke informatie in te vullen die u kan identificeren, doen we dit om ervoor te zorgen dat deze alleen wordt gebruikt in overeenstemming met de voorwaarden van dit document. Dit privacybeleid kan echter in de loop van de tijd veranderen of worden bijgewerkt, dus we raden u aan en benadrukken dat u deze pagina voortdurend bekijkt om ervoor te zorgen dat u akkoord gaat met dergelijke wijzigingen.",
+        "TEXT_3": "Lees dit privacybeleid zorgvuldig door.",
+        "SUBTITEL_1": "Cookies",
+        "TEXT_5": "Een cookie verwijst naar een bestand dat wordt verzonden om toestemming te vragen om op uw computer te worden opgeslagen. Na acceptatie wordt het bestand aangemaakt en wordt de cookie vervolgens gebruikt om informatie te verkrijgen over webverkeer en om toekomstige bezoeken aan een website te vergemakkelijken. Een andere functie van cookies is dat websites u individueel kunnen herkennen en u daarom de beste gepersonaliseerde service op hun website kunnen bieden.",
+        "TEXT_6": "Onze website gebruikt cookies om de bezochte pagina's en hun frequentie te identificeren. Deze informatie wordt alleen gebruikt voor statistische analyse en wordt vervolgens permanent verwijderd. U kunt cookies op elk moment van uw computer verwijderen. Cookies helpen echter om een betere service op websites te bieden, ze geven geen toegang tot informatie van uw computer of u, tenzij u dit wilt en deze rechtstreeks verstrekt. U kunt het gebruik van cookies accepteren of weigeren, maar de meeste browsers accepteren cookies automatisch omdat dit dient om een betere webservice te hebben. U kunt ook de instellingen van uw computer wijzigen om cookies te weigeren. Als u ze weigert, kunt u mogelijk sommige van onze diensten niet gebruiken.",
+        "SUBTITEL_2": "Persoonlijke informatie",
+        "TEXT_7": "We verzamelen persoonlijke informatie over u wanneer u deze aan ons verstrekt, bijvoorbeeld via uw gebruik van onze website en de functies ervan, wanneer u rechtstreeks contact met ons opneemt via e-mail, telefoon, schriftelijk of via sociale media, wanneer u onze tours boekt, specifieke informatie kan nodig zijn om een activiteit te reserveren, of wanneer u een van onze applicaties of andere middelen gebruikt waarmee u persoonlijke informatie aan ons verstrekt. Het type informatie dat we over u verzamelen, kan informatie bevatten zoals:",
+        "TEXT_8": "Uw naam",
+        "TEXT_9": "Uw e-mailadres",
+        "TEXT_10": "Uw adres",
+        "TEXT_11": "Uw telefoonnummer",
+        "TEXT_12": "Demografische gegevens (bijv. geslacht, geboortedatum)",
+        "TEXT_13": "Paspoortgegevens (bijv. paspoortnummer, land van afgifte, datum van afgifte en vervaldatum)",
+        "TEXT_14": "Medische/Dieetgegevens (bijv. informatie over uw medische en fysieke conditie, dieetbeperkingen en vereisten, en voedselallergieën die relevant kunnen zijn voor uw deelname aan onze reizen)",
+        "SUBTITEL_3": "Gebruik van verzamelde informatie",
+        "TEXT_15": "Onze website gebruikt de informatie om de best mogelijke service te bieden, met name om een gebruikersbestand bij te houden, bestellingen indien van toepassing, en om onze producten en diensten te verbeteren.",
+        "TEXT_16": "De soorten gegevens die kunnen worden opgevraagd en verwerkt zijn:",
+        "TEXT_17": "Identificatiegegevens.",
+        "TEXT_18": "We verzamelen ook automatisch gegevens over uw bezoek aan onze website zoals beschreven in het cookiebeleid.",
+        "TEXT_19": "Telkens wanneer we uw persoonlijke gegevens opvragen, zullen we u informeren welke persoonlijke gegevens we verzamelen en voor welk doel. Over het algemeen verzamelen en verwerken we uw gegevens voor:",
+        "TEXT_20": "Het verstrekken van informatie, diensten, producten, relevante informatie en nieuws in de sector.",
+        "TEXT_21": "Het verzenden van communicatie kan periodiek worden verzonden via onze site met speciale aanbiedingen, nieuwe producten en andere reclame-informatie die we relevant voor u achten of die u enig voordeel kan bieden, deze e-mails worden verzonden naar het adres dat u opgeeft.",
+        "TEXT_22": "Transacties verwerken en uw deelname aan onze reizen vergemakkelijken.",
+        "TEXT_23": "Ons helpen u beter van dienst te zijn, inclusief het personaliseren van uw online ervaring en het afstemmen van inhoud, aanbevelingen en aanbiedingen die we aan u tonen.",
+        "TEXT_24": "We honoreren alle verzoeken om geen post, telefoon of andere verzoeken van Montaraz Outdoors & Culture te ontvangen.",
+        
+        "SUBTITEL_4": "Hoe we uw gegevens delen",
+        "TEXT_26": "Wanneer u toegang krijgt tot of gebruik maakt van onze website, verzamelen en verwerken we uw persoonlijke informatie voor de in dit beleid beschreven doeleinden. We vertrouwen op verschillende wettelijke grondslagen om uw informatie op deze manieren te gebruiken. Deze wettelijke grondslagen omvatten:",
+        "TEXT_27": "Toestemming. We kunnen uw gegevens delen als u ons specifieke toestemming heeft gegeven om uw persoonlijke informatie op een specifieke manier of voor een specifiek doel te gebruiken.",
+        "TEXT_28": "Uitvoering van een contract. Wanneer we een contract met u hebben afgesloten, kunnen we uw persoonlijke informatie delen om de voorwaarden van ons contract na te komen.",
+        "TEXT_29": "Wettelijke verplichtingen. We kunnen uw informatie openbaar maken wanneer we wettelijk verplicht zijn dit te doen om te voldoen aan toepasselijke wetgeving, overheidsverzoeken, een gerechtelijke procedure, gerechtelijk bevel of juridisch proces, zoals in reactie op een gerechtelijk bevel of een dagvaarding (inclusief in reactie op openbare autoriteiten om te voldoen aan nationale veiligheids- of wetshandhavingsvereisten).",
+        "TEXT_30": "Externe dienstverleners. We kunnen uw gegevens delen met externe leveranciers, dienstverleners, aannemers of agenten die diensten voor ons of namens ons uitvoeren en toegang tot dergelijke informatie nodig hebben om dat werk te doen. Voorbeelden zijn hotels, reisgidsen, pre/post- en on-trip serviceproviders, betalingsverwerkers, informatieverwerkers, data-analisten, e-mailbezorgingsproviders, hostingserviceproviders en derden die ons helpen met onze klantenservice en marketinginspanningen. Die bedrijven mogen alleen de persoonlijke gegevens verkrijgen die ze nodig hebben om de dienst te leveren.",
+        "SUBTITEL_5": "Bewaring van persoonlijke gegevens",
+        "TEXT_31": "We bewaren uw persoonlijke informatie zolang als nodig is voor de in dit privacybeleid uiteengezette doeleinden, of voor een langere bewaartermijn indien vereist of toegestaan door de wet (zoals belasting-, boekhoudkundige of andere wettelijke vereisten).",
+        "TEXT_32": "Wanneer we geen lopende legitieme zakelijke behoefte hebben om uw persoonlijke informatie te verwerken, of als u vraagt dat uw persoonlijke informatie wordt verwijderd, zullen we deze verwijderen.",
+        "SUBTITEL_6": "Beveiliging van persoonlijke gegevens",
+        "TEXT_33": "Montaraz Outdoors & Culture neemt voorzorgsmaatregelen om ervoor te zorgen dat persoonlijke informatie privé blijft. Houd er rekening mee dat we de beveiliging van persoonlijke informatie niet kunnen garanderen. Ongeautoriseerde toegang of gebruik, hardware- of softwarefouten en andere factoren kunnen de beveiliging van persoonlijke informatie op elk moment in gevaar brengen.",
+        "SUBTITEL_7": "Privacy van kinderen",
+        "TEXT_34": "We verzamelen informatie over minderjarigen (jonger dan 18 jaar), inclusief naam en contactgegevens, demografische gegevens, paspoortgegevens en medische/diëtistische gegevens, wanneer ze samen met hun ouders reizen.",
+        "TEXT_35": "We verzamelen of vragen niet bewust persoonlijke informatie van minderjarigen (jonger dan 18 jaar) wanneer ze niet samen met hun ouders reizen, en/of zonder geverifieerde ouderlijke toestemming.",
+        "TEXT_36": "In het geval dat we ontdekken dat we persoonlijke informatie van een minderjarige hebben verzameld zonder geverifieerde ouderlijke toestemming, zullen we die informatie zo snel mogelijk verwijderen. Als u denkt dat we dergelijke informatie van een minderjarige hebben, neem dan contact met ons op.",
+        "SUBTITEL_8": "Forums en andere interactieve diensten",
+        "TEXT_37": "Onze website en de andere kanalen die we gebruiken, kunnen discussieforums of andere interactieve gebieden of diensten bevatten, waaronder blogs, chatrooms, prikborden, berichtenborden, beoordelingen, sociale media-berichten, geüploade foto's of video's, of andere gebieden of diensten waarin u of derden inhoud, berichten, opmerkingen, materialen of andere items creëren, plaatsen of opslaan ('Interactieve gebieden'). Als u een interactief gebied gebruikt, moet u zich ervan bewust zijn dat deze gebieden, inclusief alle persoonlijke gegevens die u plaatst of verstrekt, door anderen kunnen worden bekeken en openbaar kunnen worden verspreid buiten de kanalen in perpetuïteit.",
+        "TEXT_38": "We zijn niet verantwoordelijk voor de openbare openbaarmaking van persoonlijke gegevens die u indient in verband met de interactieve gebieden, noch zijn we verantwoordelijk voor hoe anderen die informatie kunnen gebruiken, inclusief het sturen van ongevraagde berichten naar u. Berichten in interactieve gebieden kunnen voor onbepaalde tijd worden bewaard. Als u op enig moment wilt verzoeken dat we een bericht verwijderen, neem dan contact met ons op en zorg ervoor dat u uw volledige naam, e-mailadres en informatie verstrekt die voldoende is om ons in staat te stellen de inzending(en) te lokaliseren die u wilt laten verwijderen. In sommige gevallen kunnen we alleen uw persoonlijke gegevens verwijderen, maar de rest van uw inzending behouden. Het verwijderen van een bericht uit een interactief gebied is naar ons goeddunken. Het verwijderen van een bericht uit een interactief gebied betekent niet noodzakelijkerwijs dat het bericht wordt verwijderd uit onze backendsystemen, noch garandeert het een volledige of uitgebreide verwijdering van berichten die mogelijk door derden zijn gekopieerd terwijl ze openbaar toegankelijk waren.",
+        "SUBTITEL_9": "UW RECHTEN Algemene Verordening Gegevensbescherming (AVG)",
+        "TEXT_39": "Toegang tot uw persoonlijke gegevens en alle andere informatie zoals aangegeven in artikel 15.1 van de AVG",
+        "TEXT_40": "Uw persoonlijke gegevens corrigeren die onjuist of onvolledig zijn volgens artikel 16 van de AVG.",
+        "TEXT_41": "Uw persoonlijke gegevens verwijderen volgens artikel 17 van de AVG.",
+        "TEXT_42": "De verwerking van uw persoonlijke gegevens beperken volgens artikel 18 van de AVG.",
+        "TEXT_43": "De overdraagbaarheid van uw gegevens aanvragen volgens artikel 20 van de AVG.",
+        "TEXT_44": "Bezwaar maken tegen de verwerking van uw persoonlijke gegevens volgens artikel 21 van de AVG",
+        "TEXT_45": "Als u toestemming heeft gegeven voor een specifiek doel, heeft u het recht om de gegeven toestemming op elk moment in te trekken, zonder afbreuk te doen aan de wettigheid van de verwerking op basis van de toestemming vóór de intrekking ervan.",
+        "TEXT_46": "U kunt deze rechten uitoefenen door een gemotiveerde en geaccrediteerde communicatie naar ons te sturen",
+        "TEXT_47": "Op uw verzoek zullen we uw informatie uit onze actieve databases verwijderen. Sommige informatie kan echter in onze bestanden worden bewaard om fraude te voorkomen, problemen op te lossen, te helpen bij onderzoeken en/of te voldoen aan wettelijke vereisten.",
+        "SUBTITEL_10": "JURIDISCHE INFORMATIE",
+        "TEXT_48": "De vereisten van dit beleid vullen aan en vervangen niet andere vereisten onder toepasselijke gegevensbeschermingswetgeving, die in elk geval voorrang hebben",
+        "TEXT_49": "Dit beleid is onderhevig aan periodieke herziening en kan op elk moment door het bedrijf worden gewijzigd. Wanneer dit gebeurt, zullen we u op de hoogte stellen van eventuele wijzigingen en u vragen de meest recente versie van ons beleid opnieuw te lezen en uw acceptatie te bevestigen.",
+        "SUBTITLE_11": "Als u vragen, opmerkingen of zorgen heeft over ons privacybeleid, neem dan contact met ons op."
+        
+    },
+    "FAQ": {
+        "TITLE": "FAQ",
+        "SUBTITEL_1": "RESERVERING",
+        "QUESTION_1": "Hoe boek ik mijn tour online?",
+        "TEXT_1": "Elke activiteit moet worden geboekt door ons een e-mail te sturen met de volgende gegevens: De naam van de activiteit, de datum van deelname aan de activiteit, het aantal personen. Volledige naam, geboortedatum, telefoonnummer, e-mail, nationaliteit. Lengte en gewicht voor fietstochten of multi-avontuuractiviteiten.",
+
+        "QUESTION_2": "Hoe ver van tevoren moet ik mijn activiteit boeken?",
+        "TEXT_2": "Hoe eerder u boekt, hoe groter de kans dat de tour wordt bevestigd, aangezien elke activiteit een minimum aantal personen vereist om de reservering te voltooien. Als u een meerdaagse tour zoekt, vereist de reservering een eerdere boekingsdatum volgens het annuleringsbeleid van de activiteit.",
+
+        "QUESTION_3": "Wat als ik een privétour wil boeken?",
+        "TEXT_3": "Elke activiteit kan als privétour worden geboekt. Voor privétours kunt u ons een TailorMade Travel-document sturen dat u in de kop van de pagina kunt vinden, of ons een e-mail sturen met uw verzoek.",
+
+        "QUESTION_4": "Op maat gemaakte reizen?",
+        "TEXT_4": "Elke tour kan worden aangepast aan de interesses en voorkeuren van de klant. We creëren en organiseren een gepersonaliseerde tour, ideaal voor reizen met familie, een groep vrienden of tijdens een incentive-reis. U bepaalt de duur van de reis, bestemmingsvoorkeuren, type accommodaties en een scala aan activiteiten met volledige flexibiliteit om in uw eigen tempo te reizen.",
+
+        "QUESTION_5": "Prijs privétours?",
+        "TEXT_5": "De prijs per persoon varieert op basis van het aantal personen, de bestemming, accommodatie, de duur van uw vakantie, het scala aan activiteiten en de tijd van het jaar waarin u reist.",
+           
+        "QUESTION_6": "Boekingsstappen privétours?",
+        "TEXT_6": "Zie Tailor-Made Travel, te vinden in de kop van de pagina.",
+        
+        "QUESTION_7": "Wanneer moet ik een privétour of een op maat gemaakte reis boeken?",
+        "TEXT_7": "Hoe eerder u boekt, hoe meer opties u heeft qua data, accommodaties en het scala aan activiteiten.",
+
+        "QUESTION_8": "Hoeveel is de aanbetaling voor de tour?",
+        "TEXT_8": "Zie Algemene Voorwaarden en/of activiteitinformatie.",
+
+        "QUESTION_9": "Is mijn aanbetaling restitueerbaar?",
+        "TEXT_9": "Zie Algemene Voorwaarden.",
+
+        "QUESTION_10": "Wanneer ontvang ik meer gedetailleerde informatie over mijn reis zodat ik mijn reis kan plannen?",
+        "TEXT_10": "Algemene informatie over elke activiteit vindt u in de reisnotities. Gedetailleerde informatie over de activiteit wordt verzonden na het maken van een voorlopige reservering.",
+
+        "QUESTION_11": "Mijn vertrek is niet gegarandeerd. Wanneer weet ik of mijn reis doorgaat zodat ik vluchten kan boeken?",
+        "TEXT_11": "Als een annulering moet worden gedaan, informeren we u onmiddellijk en stellen we u op de hoogte van de annulering niet minder dan 45 dagen vóór de start van uw reis voor een meerdaagse tour of tours van 8 dagen of meer. We bevestigen de klant zo snel mogelijk om uw reis te garanderen als we de minimale groepsgrootte hebben bereikt.",
+
+        "QUESTION_12": "Hoe kom ik bij het begin van de reis en hoe kom ik na afloop van de reis bij de luchthaven?",
+        "TEXT_12": "Elke tour heeft een privétransfer op de eerste en laatste dag, wat wordt vermeld in de reisnotities.",
+
+        "QUESTION_13": "Zal Montaraz Outdoors & Culture mij helpen een kamer te boeken voor of na mijn reis als ik mijn vakantie verleng?",
+        "TEXT_13": "Ja. Hotelverlengingen, het toevoegen van een extra dag of dagen bij onze geselecteerde accommodaties kan worden geregeld, maar moet van tevoren worden aangevraagd.",
+
+        "QUESTION_14": "Kameropties?",
+        "TEXT_14": "Tours van 8 dagen of meer: Het kamertype is een standaard tweepersoonskamer toegewezen aan twee personen met twee eenpersoonsbedden of een tweepersoonsbed voor koppels met een eigen badkamer. Kamers worden in overleg verdeeld volgens het geslacht van de reizigers. Privékamers kunnen worden geboekt tegen een meerprijs voor degenen die niet willen delen met andere groepsleden. Vanwege de beperkte capaciteit van de hotels moet een eenpersoonskamer altijd worden aangevraagd. Multi-daagse tour: Het kamertype is een standaard tweepersoonskamer toegewezen aan twee personen met twee eenpersoonsbedden of een tweepersoonsbed voor koppels met een eigen badkamer. Kamers worden in overleg verdeeld volgens het geslacht van de reizigers. Privékamers kunnen worden geboekt tegen een meerprijs voor degenen die niet willen delen met andere groepsleden. Het is mogelijk dat kameropties verschillen voor een meerdaagse tour en dit wordt vermeld in de reisnotities.",
+
+        "QUESTION_15": "Bevestiging van hotelverlengingen?",
+        "TEXT_15": "We bevestigen uw verzoek zo snel mogelijk. De extra kosten worden toegevoegd aan de totale prijs van de tour en aan de aanbetaling van 20% om uw voorlopige reservering te maken.",
+
+        "QUESTION_16": "Welke betaalmethoden worden geaccepteerd?",
+        "TEXT_16": "Bankoverschrijving. Na het boeken van een tour ontvangt u een proforma factuur met uw tour- en betalingsgegevens. Als de eindbetaling niet op tijd wordt ontvangen, behouden we ons het recht voor om uw reservering te annuleren.",
+
+        "QUESTION_17": "Heb ik een reisverzekering nodig?",
+        "TEXT_17": "Verplicht voor meerdaagse tours of tours van 8 dagen of meer.",
+        "TEXT_17_1": "Het is uw verantwoordelijkheid om een passende reisverzekering te regelen. Zorg ervoor dat u de volledige voorwaarden van uw reisverzekering heeft gelezen en begrepen om ervoor te zorgen dat u gedekt bent voor alle activiteiten die u tijdens de tour wilt ondernemen. Uw verzekeringspolis moet u volledig dekken voor medische kosten en noodrepatriëring naar uw thuisland.",
+
+        "QUESTION_18": "Biedt Montaraz Outdoors & Culture verzekeringen aan?",
+        "TEXT_18": "Nee",
+
+        "QUESTION_19": "Kan ik om welke reden dan ook annuleren?",
+        "TEXT_19": "De klant heeft het recht om de tour schriftelijk en ondertekend te annuleren als de annulering plaatsvindt vóór de opgegeven datum. (Zie Annuleringsbeleid voor elke activiteit) Zodra we uw kennisgeving ontvangen, wordt de annulering van kracht.",
+        "TEXT_19_1": "We nemen onze verantwoordelijkheid en u heeft recht op een volledige terugbetaling van de totale reissom als we uw reis niet kunnen garanderen door het niet hebben van een minimum groepsgrootte. Als een annulering moet worden gedaan, zullen we u onmiddellijk informeren en u op de hoogte stellen van de annulering niet minder dan 45 dagen vóór de start van uw reis. U heeft recht op een volledige terugbetaling van de totale reissom vanwege buitengewone omstandigheden, zoals oorlogshandelingen, aanzienlijke risico's voor de volksgezondheid, of een natuurramp zoals weersomstandigheden, waardoor reizen onmogelijk wordt.",
+
+        "QUESTION_20": "Wat als een familielid ziek wordt of als ik ziek of gewond raak?",
+        "TEXT_20": "Montaraz Outdoors & Culture is niet verantwoordelijk voor annuleringen die persoonlijke redenen of andere redenen aangeven. Als het evenement plaatsvindt binnen de annuleringskosten, behandelen we uw boeking als geannuleerd en zijn annuleringskosten van toepassing.",
+
+        "QUESTION_21": "Dieetbeperkingen en voedselintolerantie?",
+        "TEXT_21": "Laat het ons weten wanneer u een tour boekt. Na elke geboekte tour ontvangt u een bevestiging waarin u een vragenformulier moet invullen voordat u aan de tour deelneemt.",
+
+        "QUESTION_22": "Updates en reisdetails?",
+        "TEXT_22": "Eventuele updates over uw reis worden onmiddellijk per e-mail verzonden. Kort voor vertrek sturen we u de laatste update inclusief groepsdetails – het aantal reizigers, koppels en soloreizigers, en de leeftijdscategorie van de groep. Om privacyredenen geven we geen persoonlijke gegevens. Vanwege de beperkte capaciteit van de hotels door de groepsgrootte, data, enz., worden eventuele wijzigingen in hotels onmiddellijk aan u gecommuniceerd.",
+
+        "SUBTITEL_2": "FIETSEN & WANDELEN",
+        
+        "QUESTION_23": "Ik weet niet zeker of ik de ritten of wandelingen kan voltooien?",
+        "TEXT_23": "Mensen hebben vaak verschillende verwachtingen en vaardigheden voor actieve vakanties, daarom hebben we onze tours geclassificeerd met moeilijkheidsniveaus om onze reizigers beter te informeren voordat ze de verkeerde tour boeken. Alle actieve tours hebben geclassificeerde fysieke en technische niveaus die passen bij uw verwachtingen en vaardigheden om een positieve reiservaring te garanderen. Als u zich zorgen maakt over uw conditie of vermogen om een van de activiteiten te voltooien, neem dan contact met ons op door ons een e-mail te sturen. We helpen u de juiste reis voor u te selecteren en adviseren u hoe u zich het beste kunt voorbereiden.",
+
+        "QUESTION_24": "Hoeveel uur activiteit kan ik elke dag verwachten?",
+        "TEXT_24": "Elke tour heeft gedetailleerde informatie die een geschatte activiteitenduur en de totale tijd die nodig is voor een activiteit bevat.",
+
+        "QUESTION_25": "In welke conditie moet ik zijn om van mijn reis te genieten?",
+        "TEXT_25": "De tours zijn geclassificeerd met moeilijkheidsniveaus. Bekijk onze moeilijkheidsclassificatieniveaus of neem contact met ons op door ons een e-mail te sturen. We helpen u de juiste reis voor u te selecteren en adviseren u hoe u zich het beste kunt voorbereiden.",
+
+        "QUESTION_26": "Welke soorten fietsen bieden jullie aan en hoe weet ik welk type fiets het beste voor mij is?",
+        "TEXT_26": "Mountainbike / Gravelbike / Racefiets / Tourfiets / E-bike",
+        "TEXT_26_1": "Het type fiets hangt af van de tour",
+        "TEXT_26_2": "Wanneer u een fietstour boekt, vragen we uw lengte en gewicht om de perfecte fiets voor u te selecteren. Kleine aanpassingen worden op de eerste dag van de tour verzorgd. Als u zich zorgen maakt over de fietsselectie, neem dan contact met ons op en we helpen u en adviseren u over uw voorkeuren (frametype, maat, pedalen, enz.)",
+
+        "QUESTION_27": "Kan ik mijn eigen fiets meenemen?",
+        "TEXT_27": "Ja",
+
+        "QUESTION_28": "Wat is de minimumleeftijd voor kinderen om te fietsen?",
+        "TEXT_28": "De minimale gemiddelde leeftijd is 11 jaar en een minimale lengte van 1,50 meter, wat u kunt vinden in de reisnotities onder vereisten.",
+
+        "QUESTION_29": "Is er een minimumleeftijd om een e-bike te rijden?",
+        "TEXT_29": "De minimumleeftijd is 11 jaar oud en een minimale lengte van 1,50 meter",
+
+        "QUESTION_30": "Hoe weet ik welke maat fiets ik moet aanvragen?",
+        "TEXT_30": "Bekijk onze blog waar u meer informatie kunt vinden of neem contact met ons op met uw vragen.",
+
+        "QUESTION_31": "Zijn helmen verplicht tijdens fietstochten?",
+        "TEXT_31": "Ja. Het is verplicht om een helm te dragen tijdens onze fietstochten, wat is inbegrepen in de tour. Of u kunt uw eigen helm meenemen. Montaraz Outdoors & Culture beschouwt het als een wettelijke vereiste om een helm te dragen. In geval van een ongeval met persoonlijk letsel worden bepaalde verzekeringspolissen ongeldig verklaard in gevallen waarin geen helm werd gedragen.",
+
+        "QUESTION_32": "Trainingstips?",
+        "TEXT_32": "Bekijk onze blog waar u meer informatie kunt vinden of neem contact met ons op met uw vragen.",
+
+        "SUBTITEL_3": "GEORGANISEERDE GROEPSREIZEN",
+
+        "QUESTION_33": "Waarom georganiseerde groepsreizen?",
+        "TEXT_33": "Georganiseerde groepsreizen hebben voordelen en zijn een aantrekkelijke optie om positieve ervaringen te bieden. Een van de belangrijkste voordelen van georganiseerde groepsreizen is dat u niets hoeft te plannen. Accommodaties, reisroutes en maaltijden zijn vooraf geregeld, wat betekent dat u zich kunt concentreren op het genieten van de reis in plaats van bezig te zijn met logistieke details. Ook kan het vaak leiden tot aanzienlijke besparingen wanneer u reist als onderdeel van een georganiseerde groep. Het is een kans om nieuwe mensen te ontmoeten die vergelijkbare interesses delen, wat de reiservaring kan verbeteren. Onze tours worden begeleid door deskundige gidsen die inzichten kunnen bieden die u misschien niet zelf ontdekt. Het biedt een gevoel van veiligheid, we zorgen ervoor dat de reisroute veilig is, en ze zijn voorbereid om eventuele noodsituaties aan te pakken. We bieden een gestructureerde reisroute die helpt ervoor te zorgen dat u de beste bezienswaardigheden ziet en het meeste uit uw tijd haalt. Geschikt voor alle leeftijden, waardoor het ideaal is voor gezinnen en een breed scala aan leeftijdsgroepen en interesses.",
+
+        "QUESTION_34": "Wat kan ik verwachten?",
+        "TEXT_34": "Groepsreizen geven u de flexibiliteit om op eigen gelegenheid te verkennen tijdens onze vooraf ontworpen tours, vergezeld door andere reizigers, een geweldige mix van persoonlijke vrijheid en het ontmoeten van nieuwe mensen. De gemiddelde groepsgrootte is 8 met koppels, vrienden en individuele reizigers."
+    },
+    
+
+    "HERO_H1_1": "Ontdek onze",
+    "HERO_H1_COLOR": "Echte Outdoor Reiservaringen",
+    "HERO_H1_2": "Geschikt voor iedereen die geniet van een actieve manier van reizen",
+    "HERO_A": "Boek mijn tour",
+    "CARD_HOME_1": "Geleide rondleidingen",
+
+    "PRODUCTS": {
+        "CULTURAL_TRAVELS": {
+            "BREATHTAKING_ROAD_TRIP_ALPUJARRAS": {
+                "TITLE": "Een adembenemende roadtrip door de Alpujarras",
+                "LOCATION": "Alpujarras Sierra Nevada",
+
+                "PRICE": "125 (4pax.)",
+                "PRE_BOOKING": "100%",
+                "MINUMUM_OF_PERSONS": "2",
+                "DURATION": "8 - 10 Uur",
+                "ROUTE_TYPE": "Geleid",
+                "SEASON": "Het hele jaar door",
+                
+                "INCLUDED": {
+                    "TITLE": "Inclusief",
+                    "TEXT_1": "Professionele gids",
+                    "TEXT_2": "Aansprakelijkheidsverzekering en assistentie",
+                    "TEXT_3": "Transfer",
+                    "TEXT_4": "Water"
+                },
+
+                "NOT_INCLUDED": {
+                    "TITLE": "Niet inbegrepen",
+                    "TEXT_1": "Lunch",
+                    "TEXT_2": "Snack"
+                },
+
+                "EXTRA": {
+                    "TITLE": "Extra",
+                    "TEXT_1": "Lunch: Lokaal restaurant",
+                    "TEXT_2": "Bezoek: Traditioneel hamproductieproces + proeverij. Prijs: 10 € p.p."
+                },
+
+                "AVAILABILITY": "Beschikbaarheid",
+                "AVAILABILITY_TEXT": "Het hele jaar door",
+
+                "HIGHLIGHT": "Hoogtepunten",
+                "HIGHLIGHT_TEXT_1": "Reis door de Alpujarras, een natuurlijke schoonheid tussen de Sierra Nevada-bergketen en de Middellandse Zee",
+                "HIGHLIGHT_TEXT_2": "Bezoek Trevélez, het hoogste dorp in de Sierra Nevada, op 1.476 m",
+                "HIGHLIGHT_TEXT_3": "Bezoek Secadero “ham droogkamer” + proeverij",
+                "HIGHLIGHT_TEXT_4": "Bezoek de drie witte dorpen “Pampaneira, Bubión, Capileira",
+                "HIGHLIGHT_TEXT_5": "Lunch in Capileira",
+                "HIGHLIGHT_TEXT_6": "De brug van Tablate",
+
+                "PRICES": "Prijs:",
+                "PRICES_TEXT_1": "2 - 3 personen: 150 € p.p.",
+                "PRICES_TEXT_2": "4 - 5 personen: 125 € p.p.",
+                "PRICES_TEXT_3": "6 personen: 120 € p.p.",
+                "PRICES_TEXT_4": "7 personen: 110 € p.p.",
+                "PRICES_TEXT_5": "Voor gezinnen is er een korting.",
+
+                "WHAT_TO_EXPECT": "Wat te verwachten",
+
+                "DAYS" : {
+                    "DAY_1" : {
+                        "TEXT_1": "Een culturele tour door de Alpujarras biedt een boeiende reis door adembenemende landschappen en rijke tradities. Vanuit de stad Granada beginnen we aan een schilderachtige rit naar het dorp Trevélez, gelegen in het hart van het natuurpark Sierra Nevada. Het dorp wordt beschouwd als een van de hoogste in Spanje en staat bekend om zijn hoogwaardige ham. We bezoeken een traditionele ham droogkamer “Secadero”, waar je meer leert over het rijpen van ham en afsluit met een proeverij van Iberische ham.",
+                        "TEXT_2": "Daarna vervolgen we onze reis door de pittoreske Alpujarras, richting het dorp Pórtugos om de prachtige oranje waterval genaamd “Fuente Agria” te zien, wat Bron van Zuurheid betekent. Traditioneel wordt dit water door de mensen in de Alpujarras gebruikt voor medicinale doeleinden vanwege de hoge concentratie mineralen in het water.",
+                        "TEXT_3": "Vervolgens gaan we naar de betoverende drie witte dorpen “Pampaneira, Bubión en Capileira”. De dorpen, met hun kenmerkende witgekalkte gebouwen en smalle, kronkelende straatjes, bieden een kijkje in het Moorse erfgoed van de regio. Hier genieten we van een heerlijke lunch en proeven we de lokale keuken in Capileira, het hoogste dorp van de drie.",
+                        "TEXT_4": "Later stoppen we in Pampaneira voor een korte wandeling, om lokale producten te kopen en te genieten van de serene schoonheid van de omliggende bergen.",
+                        "TEXT_5": "Voordat we terugkeren naar Granada, stoppen we nog een keer bij “Puente de Tablate”, de brug en toegangspoort tot de Alpujarras. Door de eeuwen heen is deze plek een sleutelpositie geweest in vele veldslagen.",
+                        "TEXT_6": "Deze tour biedt een perfecte mix van culturele onderdompeling en natuurlijke schoonheid, waardoor het een onvergetelijke ervaring wordt."
+                    }
+                }   
+
+            }
+        },
+        
+        "MULTI_ADVENTURE": {
+
+            "ROCK_CLIMBING": {
+            "TITLE": "Top-Rope Rotsklimmen",
+            "LOCATION": "Granada",
+
+            "PRICE": "55 - 100",
+            "PRE_BOOKING": "100%",
+            "MINUMUM_OF_PERSONS": "1",
+            "MAXUMUM_OF_PERSONS": "6",
+            "DURATION": "4 Uur",
+            "ROUTE_TYPE": "Geleid",
+            "SEASON": "Het hele jaar door",
+            
+            "INCLUDED": {
+                "TITLE": "Inbegrepen",
+                "TEXT_1": "Aansprakelijkheidsverzekering en assistentie",
+                "TEXT_2": "Rotsklim Sporttechnicus",
+                "TEXT_3": "Indien nodig, persoonlijke uitrusting (klimschoenen, helm en harnas)",
+                "TEXT_4": "Transfer",
+                "TEXT_5": "Collectief materiaal (touwen, karabiners, slings, zekerapparaten, etc.)"
+            },
+
+            "NOT_INCLUDED": {
+                "TITLE": "Niet inbegrepen",
+                "TEXT_1": "Lunch",
+                "TEXT_2": "Snack",
+                "TEXT_3": "Water"
+            },
+
+            "AVAILABILITY": "Beschikbaarheid",
+            "AVAILABILITY_TEXT": "Het hele jaar door",
+
+            "HIGHLIGHT": "Vereisten",
+            "HIGHLIGHT_TEXT_1": "Leeftijd: 18 jaar",
+            "HIGHLIGHT_TEXT_2": "Eerdere ervaring: Niet nodig",
+            "HIGHLIGHT_TEXT_3": "Eerdere training: Niet nodig",
+            "HIGHLIGHT_TEXT_4": "Moeilijkheid: Initiatie IV / V",
+            "HIGHLIGHT_TEXT_5": "Normale fysieke conditie en behendigheid zijn vereist. De moeilijkheid wordt aangepast aan de fysieke en technische capaciteit van de persoon.",
+
+            "WHAT_TO_BRING": {
+                "TITLE": "Wat mee te nemen voor rotsklimmen",
+                "TEXT_1": "Het weer is belangrijk om rekening mee te houden bij het inpakken voor uw buitenactiviteit. Uw paklijst is gebaseerd op uw comfort en gevoeligheid. Het dragen van laagjes kleding is de beste manier om te reizen en buiten te zijn. Het wordt sterk aanbevolen als de beste manier om warm en koel te blijven, aangezien het weer in de bergen onvoorspelbaar kan veranderen.",
+                "BRING_1": "Technische kleding geschikt voor de tijd van het jaar en sportactiviteit (fleece, windjack, waterdichte en ademende jas, handschoenen, etc.). Een windjack of dunne fleece is altijd handig, zelfs in de zomer.",
+                "BRING_2": "Comfortabele kleding die niet strak of omvangrijk is",
+                "BRING_3": "Rugzak van ongeveer 15 tot 30 liter.",
+                "BRING_4": "Approach schoenen of sneakers",
+                "BRING_5": "1L waterfles",
+                "BRING_6": "Picknick",
+                "BRING_7": "Zonnebescherming (zonnebril, zonnebrandcrème, lippenbalsem, pet of hoed)",
+                "BRING_8": "Thermische deken",
+                "BRING_9": "Een potlood en papier",
+                "TEXT_2": "Heeft u vragen over de aanbevelingen van het materiaal, aarzel dan niet om contact met ons op te nemen."
+            },
+
+            "GOALS" :{
+                "TITLE": "Doelen",
+                "TEXT_1": "Een eerste ervaring hebben met rotsklimmen op uitgeruste single-pitch routes",
+                "TEXT_2": "De achtknoop maken en beveiligen met grigri voor een veilige ervaring",
+                "TEXT_3": "Leren hoe je een top-rope klimpartner moet zekeren",
+                "TEXT_4": "Het sportklimmateriaal leren kennen",
+                "TEXT_5": "De touwknoop voor sportklimmen leren kennen (achtknoop)"
+                
+            },
+            
+            "PRICES": "Prijs:",
+            "PRICES_TEXT_1": "2 personen - 100 €",
+            "PRICES_TEXT_2": "3 personen - 90 €",
+            "PRICES_TEXT_3": "4 personen - 75 €",
+            "PRICES_TEXT_4": "5 personen - 60 €",
+            "PRICES_TEXT_5": "6 personen - 55 €",
+
+            "WHAT_TO_EXPECT": {
+                "TITLE": "Wat te verwachten",
+                "TEXT_1": "We nodigen u uit om rotsklimmen in Granada te ervaren met spectaculaire uitzichten, ideaal voor degenen die willen beginnen en hun kennis en vaardigheden willen verbeteren.",
+
+                "LOCATION_1":{
+                "TITLE": "Locatie 1: Los Cahorros Monachil",
+                "TEXT_1": "Deze schilderachtige Dolomietenkloof met zijn watervallen en hangbruggen is de thuisbasis van een van de oudste klimgebieden in Spanje",
+                "TEXT_2": "20 meter routes",
+                "TEXT_3": "Dolomiet kalksteen",
+                "TEXT_4": "Ideaal voor beginners"
+                },
+                "LOCATION_2": {
+                "TITLE": "Locatie 2: Alfacar",
+                "TEXT_1": "15 meter routes",
+                "TEXT_2": "Dolomiet kalksteen",
+                "TEXT_3": "Ideaal voor beginners"
+                
+                }      
+            }                
+            }
+        }
+        
+        
+    }
+}

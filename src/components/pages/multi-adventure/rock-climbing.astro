@@ -1,0 +1,425 @@
+---
+import Container from "../../../components/container.astro";
+import InformationProducts from "../../../components/ui/informationProducts.astro";
+import Icon from "../../../components/Icon.astro";
+import Layout from "../../../layouts/Layout.astro";
+import SliderReact from "../../../hooks/SliderReact";
+import Includes from "../../../components/products-components/includes.astro";
+import Cancellation from "../../../components/products-components/cancellation.astro";
+import Widget from "@/components/products-components/widget.astro";
+import Dots from "@/components/ui/dots.astro";
+
+import { getI18N } from "@/i18n/";
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+
+// Duplica y cambia las rutas para añadir o modificar las fotos
+
+const IMG = [
+  {
+    src: "/multi-adventure/rock-climbing/rc-1.webp",
+  },
+  {
+    src: "/multi-adventure/rock-climbing/rc-2.webp",
+  },
+  {
+    src: "/multi-adventure/rock-climbing/rc-3.webp",
+  },
+  {
+    src: "/multi-adventure/rock-climbing/rc-4.webp",
+  },
+  {
+    src: "/multi-adventure/rock-climbing/rc-5.webp",
+  },
+];
+
+const brings = [
+  {
+    title: i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.WHAT_TO_BRING.BRING_1,
+  },
+  {
+    title: i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.WHAT_TO_BRING.BRING_2,
+  },
+  {
+    title: i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.WHAT_TO_BRING.BRING_3,
+  },
+  {
+    title: i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.WHAT_TO_BRING.BRING_4,
+  },
+  {
+    title: i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.WHAT_TO_BRING.BRING_5,
+  },
+  {
+    title: i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.WHAT_TO_BRING.BRING_6,
+  },
+  {
+    title: i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.WHAT_TO_BRING.BRING_7,
+  },
+  {
+    title: i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.WHAT_TO_BRING.BRING_8,
+  },
+  {
+    title: i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.WHAT_TO_BRING.BRING_9,
+  },
+];
+---
+
+<Layout title="Gravel Bike / MTB">
+  <Container>
+    <main class="mt-16">
+      <!-- Foto, nombre y destino -->
+
+      <div
+        class="bg-center bg-no-repeat bg-[url('/multi-adventure/rock-climbing/rc-principal.jpg')] bg-cover h-[30rem] rounded-2xl">
+        <div class="flex flex-col justify-end h-full p-6 w-auto">
+          <div class="flex gap-2">
+            <Icon icon="destiny-logo" size="1.6rem" color="white" />
+            <p
+              class="text-xl font-normal text-white lg:text-2xl flex flex-col justify-end h-full [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
+              Granada
+            </p>
+          </div>
+
+          <h1
+            class="text-3xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-5xl [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
+            {i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.TITLE}
+          </h1>
+        </div>
+      </div>
+
+      <!-- Informacion general de los viajes -->
+
+      <div
+        class="grid grid-cols-2 md:grid-cols-6 h-auto mt-3 gap-3 place-content-start md:px-6">
+        <InformationProducts title="Price" subtitle="55 - 100">
+          <div slot="icon">
+            <Icon icon="price-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts title="Pre-booking" subtitle="100%">
+          <div slot="icon">
+            <Icon icon="price-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts title="Minimum of persons" subtitle="1">
+          <div slot="icon">
+            <Icon icon="group-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts title="Maximum of persons" subtitle="6">
+          <div slot="icon">
+            <Icon icon="group-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts
+          title="Duration"
+          subtitle={i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.DURATION}>
+          <div slot="icon">
+            1
+            <Icon icon="timer-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts
+          title="Tour type"
+          subtitle={i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.ROUTE_TYPE}>
+          <div slot="icon">
+            <Icon icon="guide-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts
+          title="Season"
+          subtitle2={i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.SEASON}>
+          <!-- <div slot="icon">
+            <Icon icon="autumn-logo" size="1.6rem" color="#0E46A3" />
+          </div> -->
+        </InformationProducts>
+        <InformationProducts title="Rock Climbing">
+          <div slot="icon">
+            <Icon icon="hike-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+      </div>
+
+      <!-- Informacion tecnica -->
+
+      <!--  Include, exclude, complementaries  -->
+      <div
+        class="grid md:grid-cols-2 lg:grid-cols-2 mt-20 md:mt-26 md:mb-36 gap-16 md:gap-4">
+        <!-- Include -->
+        <Includes
+          title={i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.INCLUDED.TITLE}>
+          <ul slot="description" class="mt-4 flex flex-col gap-2">
+            <li class="flex gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                {i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.INCLUDED.TEXT_1}
+              </p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                {i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.INCLUDED.TEXT_2}
+              </p>
+            </li>
+            <li class="flex gap-2">
+              <div>
+                <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              </div>
+              <p class="max-w-[320px] text-md">
+                {i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.INCLUDED.TEXT_3}
+              </p>
+            </li>
+            <li class="flex gap-2">
+              <div>
+                <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              </div>
+              <p class="max-w-[320px] text-md">
+                {i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.INCLUDED.TEXT_4}
+              </p>
+            </li>
+
+            <li class="flex gap-2">
+              <div>
+                <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              </div>
+              <p class="max-w-[320px] text-md">
+                {i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.INCLUDED.TEXT_5}
+              </p>
+            </li>
+          </ul>
+        </Includes>
+        <!-- Exclude -->
+        <Includes
+          title={i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.NOT_INCLUDED
+            .TITLE}>
+          <div slot="description" class="flex flex-col gap-2 mt-4">
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                {
+                  i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.NOT_INCLUDED
+                    .TEXT_1
+                }
+              </p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                {
+                  i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.NOT_INCLUDED
+                    .TEXT_2
+                }
+              </p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                {
+                  i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.NOT_INCLUDED
+                    .TEXT_3
+                }
+              </p>
+            </li>
+          </div>
+        </Includes>
+        <!-- Complementaries -->
+      </div>
+
+      <div class="grid md:grid-cols-2 h-auto gap-10 md:gap-20 md:py-36 py-10">
+        <div class="static h-[385px] hidden md:block">
+          <img
+            class="rounded-xl absolute md:w-[20rem] lg:w-[25rem] hover:z-40 transition-all duration-300 ease-out hover:scale-105"
+            src="/multi-adventure/rock-climbing/rc-principal.jpg"
+            alt="ciclista mirando la sierra con cicicleta a su lado"
+          />
+          <img
+            class="rounded-xl absolute md:w-[10rem] lg:w-[12rem] md:mt-48 lg:mt-60 ml-6 z-10 grayscale-[60%] hover:grayscale-0 transition-all duration-300 ease-out hover:scale-105"
+            src="/multi-adventure/rock-climbing/rc-3.webp"
+            alt="ciclista mirando la sierra con cicicleta a su lado"
+          />
+          <img
+            class="rounded-xl absolute md:w-[10rem] lg:w-[15em] ml-64 md:-mt-24 lg:-mt-32 grayscale-[60%] hover:grayscale-0 transition-all duration-300 ease-out hover:scale-105"
+            src="/multi-adventure/rock-climbing/rc-1.webp"
+            alt="ciclista mirando la sierra con cicicleta a su lado"
+          />
+        </div>
+
+        <div class="grid gap-5">
+          <div class="">
+            <h2
+              class="max-w-2xl md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+              {i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.AVAILABILITY}
+            </h2>
+            <Dots class="mb-4" />
+
+            <ul class="grid gap-2 text-lg">
+              <li class="flex flex-wrap gap-2">
+                <Icon icon="spring-logo" size="1.6rem" color="#0E46A3" />
+                <p>
+                  {
+                    i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING
+                      .AVAILABILITY_TEXT
+                  }
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="">
+            <h2
+              class="max-w-2xl md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+              {i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.HIGHLIGHT}
+            </h2>
+            <Dots class="mb-4" />
+            <p class="text-lg text-gray-900">
+              <span class="text-xl">🔹</span>
+              {i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.HIGHLIGHT_TEXT_1}
+            </p>
+            <p class="text-lg text-gray-900">
+              <span class="text-xl">🔹</span>
+              {i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.HIGHLIGHT_TEXT_2}
+            </p>
+            <p class="text-lg text-gray-900">
+              <span class="text-xl">🔹</span>
+              {i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.HIGHLIGHT_TEXT_3}
+            </p>
+            <p class="text-lg text-gray-900">
+              <span class="text-xl">🔹</span>
+              {i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.HIGHLIGHT_TEXT_4}
+            </p>
+            <p class="text-lg text-gray-900">
+              <span class="text-xl">🔹</span>
+              {i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.HIGHLIGHT_TEXT_5}
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <Widget
+        title={i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.WHAT_TO_BRING.TITLE}
+        description={i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.WHAT_TO_BRING
+          .TEXT_1}
+        img="/multi-adventure/rock-climbing/rc-product.webp"
+        text={i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.WHAT_TO_BRING.TEXT_2}
+        brings={brings}
+      />
+
+      <!-- Button to download PDF -->
+      <section class="grid md:grid-cols-2 gap-6">
+        <Cancellation />
+        <div class="">
+          <h2
+            class="max-w-2xl md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+            {i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.GOALS.TITLE}
+          </h2>
+          <Dots class="mb-4" />
+          <p class="text-lg text-gray-900 mb-1">
+            <span class="text-xl">🔹</span>
+            {i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.GOALS.TEXT_1}
+          </p>
+          <p class="text-lg text-gray-900">
+            <span class="text-xl">🔹</span>
+            {i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.GOALS.TEXT_2}
+          </p>
+          <p class="text-lg text-gray-900">
+            <span class="text-xl">🔹</span>
+            {i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.GOALS.TEXT_3}
+          </p>
+          <p class="text-lg text-gray-900">
+            <span class="text-xl">🔹</span>
+            {i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.GOALS.TEXT_4}
+          </p>
+          <p class="text-lg text-gray-900">
+            <span class="text-xl">🔹</span>
+            {i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.GOALS.TEXT_5}
+          </p>
+        </div>
+      </section>
+
+      <!-- Slider Photos -->
+      <section class="m-auto md:w-full rounded-xl md:px-8 md:py-20">
+        <ol class="relative mt-16">
+          {(<SliderReact IMG={IMG} client:visible />)}
+        </ol>
+      </section>
+
+      <!--  TimeLine per days  -->
+      <h2 class="text-4xl md:text-5xl xl:text-6xl md:p-4 mt-16 font-bold mb-4">
+        {i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.WHAT_TO_EXPECT.TITLE}
+      </h2>
+      <p class="text-gray-700 text-lg mt-4 px-4">
+        {i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.WHAT_TO_EXPECT.TEXT_1}
+      </p>
+      <div class="grid md:grid-cols-2 gap-16 mt-4 p-4">
+        <div class="flex flex-col gap-2">
+          <h3 class="text-xl font-bold">
+            {
+              i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.WHAT_TO_EXPECT
+                .LOCATION_1.TITLE
+            }
+          </h3>
+          <p>
+            {
+              i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.WHAT_TO_EXPECT
+                .LOCATION_1.TEXT_1
+            }
+          </p>
+          <p>
+            {
+              i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.WHAT_TO_EXPECT
+                .LOCATION_1.TEXT_2
+            }
+          </p>
+          <p>
+            {
+              i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.WHAT_TO_EXPECT
+                .LOCATION_1.TEXT_3
+            }
+          </p>
+          <p>
+            {
+              i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.WHAT_TO_EXPECT
+                .LOCATION_1.TEXT_4
+            }
+          </p>
+        </div>
+        <div class="flex flex-col gap-2">
+          <h3 class="text-xl font-bold">
+            {
+              i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.WHAT_TO_EXPECT
+                .LOCATION_2.TITLE
+            }
+          </h3>
+          <p>
+            {
+              i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.WHAT_TO_EXPECT
+                .LOCATION_2.TEXT_1
+            }
+          </p>
+          <p>
+            {
+              i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.WHAT_TO_EXPECT
+                .LOCATION_2.TEXT_2
+            }
+          </p>
+          <p>
+            {
+              i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.WHAT_TO_EXPECT
+                .LOCATION_2.TEXT_3
+            }
+          </p>
+        </div>
+      </div>
+      <div class="flex flex-col gap-2 p-4">
+        <h3 class="text-4xl md:text-5xl xl:text-6xl font-bold mt-16 mb-4">
+          {i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.PRICES}
+        </h3>
+        <p>{i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.PRICES_TEXT_1}</p>
+        <p>{i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.PRICES_TEXT_2}</p>
+        <p>{i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.PRICES_TEXT_3}</p>
+        <p>{i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.PRICES_TEXT_4}</p>
+        <p>{i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING.PRICES_TEXT_5}</p>
+      </div>
+    </main>
+  </Container>
+</Layout>

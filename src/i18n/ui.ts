@@ -9,9 +9,9 @@ export const LANGUAGES: Record<
 		name: 'English',
 		
 	},
-	de: {
-		code: 'de',
-		name: 'Deutsch',
+	nl: {
+		code: 'nl',
+		name: 'Dutch',
 		
 	},
 	
@@ -21,7 +21,7 @@ export const defaultLang = 'en';
 export const showDefaultLang = false;
 
 export const ui = {
-	de: {
+	nl: {
 		'nav.inicio': 'Home',
 		'nav.blog': 'Blog',
 		'nav.gallery': 'Galerij',
@@ -41,19 +41,31 @@ export const ui = {
 } as const;
 
 export const routes = {
-	de: {
+	nl: {
 		blog: 'blog',
-		gallery: 'galerij',
-		about: 'over_ons',
-		contact: 'contacteer_ons',
+		gallery: 'gallery',
+		about: 'about',
+		contact: 'contact',
+		faq: 'faq',
 		'tailor-made-travel': 'tailor-made-travel',
+		'terms-and-conditions': 'terms-and-conditions',
+		'privacy-policy': 'privacy-policy',
+		'form-tailor-made-travel': 'form-tailor-made-travel',
+		'a-breathtaking-road-trip-through-the-alpujarras': 'cultural-travels/a-breathtaking-road-trip-through-the-alpujarras',
+		'rock-climbing': 'multi-adventure/rock-climbing',
 	},
 	en: {
 		blog: 'blog',
 		gallery: 'gallery',
 		about: 'about',
 		cantact: 'contact',
+		faq: 'faq',
 		'tailor-made-travel': 'tailor-made-travel',
+		'terms-and-conditions': 'terms-and-conditions',
+		'privacy-policy': 'privacy-policy',
+		'form-tailor-made-travel': 'form-tailor-made-travel',
+		'a-breathtaking-road-trip-through-the-alpujarras': 'cultural-travels/a-breathtaking-road-trip-through-the-alpujarras',
+		'rock-climbing': 'multi-adventure/rock-climbing',
 	},
 	
 };

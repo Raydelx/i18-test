@@ -6,46 +6,58 @@ import Icon from "../ui/icons/Icon.astro";
 import Dropdown from "./dropdown.astro";
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 import { getI18N } from "@/i18n/";
+import {
+  getLangFromUrl,
+  useTranslations,
+  useTranslatedPath,
+} from "/i18n/utils.js";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
 
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
 
 const menuitems = [
   {
-    title: i18n.NAV.HOME,
-    path: "/",
-  },
-  {
     title: i18n.NAV.EXPERIENCE,
-    path: "#",
+    path: translatePath("#"),
+
     children: [
       {
         title: i18n.NAV.CYCLE_TRAVELS,
-        path: "/cycling/",
+        path: translatePath("cycling"),
       },
       {
         title: i18n.NAV.HIKING_TREKKING,
-        path: "/trekking-hikking/",
+        path: translatePath("trekking-hikking"),
       },
-      { title: i18n.NAV.CULTURAL_TRAVELS, path: "/cultural-travels-tours/" },
-      { title: i18n.NAV.MULTI_ADVENTURE_ACTIVITIES, path: "/multi-adventure/" },
+      {
+        title: i18n.NAV.CULTURAL_TRAVELS,
+        path: translatePath("cultural-travels"),
+      },
+      {
+        title: i18n.NAV.MULTI_ADVENTURE_ACTIVITIES,
+        path: translatePath("multi-adventure"),
+      },
     ],
   },
   {
     title: i18n.NAV.BLOG,
-    path: "/blog/",
+    path: translatePath("blog"),
   },
   {
     title: i18n.NAV.GALLERY,
-    path: "/gallery/",
+    path: translatePath("gallery"),
   },
   {
     title: i18n.NAV.ABOUT,
-    path: "/about/",
+    path: translatePath("about"),
   },
   {
     title: i18n.NAV.CONTACT_US,
-    path: "/contact/",
+    path: translatePath("contact"),
   },
 ];
 ---
@@ -55,7 +67,7 @@ const menuitems = [
     class="top-0 flex z-50 flex-col lg:flex-row justify-between items-center my-5 rounded-md">
     <Astronav>
       <div class="relative flex w-full lg:w-auto items-center justify-between">
-        <a href="/" class="text-lg">
+        <a href={translatePath("/")} class="text-lg">
           <img
             src="/logo.png"
             class="size-20"
@@ -91,7 +103,7 @@ const menuitems = [
         </ul>
         <div class="lg:hidden flex items-center mt-3 gap-4">
           <LanguageSelector />
-          <Link href="/tailor-made-travel/" size="md" block
+          <Link href={translatePath("tailor-made-travel")} size="md" block
             >{i18n.NAV.TAILOR_MADE}
             <slot name="icon">
               <svg
@@ -114,7 +126,7 @@ const menuitems = [
         <LanguageSelector />
         <Link
           class="font-semibold"
-          href="/tailor-made-travel/"
+          href={translatePath("tailor-made-travel")}
           size="md"
           icon="click-logo">
           {i18n.NAV.TAILOR_MADE}

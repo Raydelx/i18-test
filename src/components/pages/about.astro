@@ -1,0 +1,96 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Container from "@/components/container.astro";
+import Sectionhead from "@/components/sectionhead.astro";
+import AboutHero from "@/components/about-components/aboutHero.astro";
+import AboutHeroIzq from "@/components/about-components/aboutHeroIzq.astro";
+import Team from "@/components/team.astro";
+import { getI18N } from "@/i18n/";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+---
+
+<Layout title="About">
+  <Container>
+    <Sectionhead class="mb-6">
+      <Fragment slot="title">{i18n.ABOUT.ABOUT}</Fragment>
+      <Fragment slot="desc"></Fragment>
+    </Sectionhead>
+    <div
+      class="bg-no-repeat bg-cover bg-[url('/photos_about/principal.webp')] h-[16rem] md:h-[30rem] mt-10 rounded-xl">
+    </div>
+    <img class="size-56 md:mt-10 mt-6 m-auto" src="/logo.svg" alt="" />
+    <div class="grid place-items-center md:mb-24 md:mt-10 mb-12 mt-8">
+      <h2
+        class="max-w-2xl text-3xl font-bold e tracking-tight leading-none md:text-4xl xl:text-5xl">
+        {i18n.ABOUT.TITLE}
+      </h2>
+      <h2
+        class="max-w-2xl mb-4 text-3xl t font-bold tracking-tight leading-none md:text-4xl xl:text-15xl">
+        {i18n.ABOUT.TITLE_1}
+      </h2>
+      <p
+        class="max-w-2xl font-medium t md:text-lg lg:text-xl text-center text-gray-500">
+        {i18n.ABOUT.SUBTITLE}
+      </p>
+    </div>
+  </Container>
+
+  <Container>
+    <AboutHero title={i18n.ABOUT.HERO_1} subtitle={i18n.ABOUT.HERO_1_TEXT}>
+      <img
+        class="rounded-xl object-cover"
+        slot="picture"
+        src="/photos_about/great_outdoors.webp"
+        alt=""
+      />
+    </AboutHero>
+
+    <AboutHeroIzq title={i18n.ABOUT.HERO_2} subtitle={i18n.ABOUT.HERO_2_TEXT}>
+      <img
+        class="rounded-xl object-cover"
+        slot="picture"
+        src="/photos_about/create_new_experiences.webp"
+        alt=""
+      />
+    </AboutHeroIzq>
+
+    <AboutHero title={i18n.ABOUT.HERO_3} subtitle={i18n.ABOUT.HERO_3_TEXT}>
+      <img
+        sizes="h-6"
+        class="rounded-xl object-cover h-[320px]"
+        slot="picture"
+        src="/photos_about/small_group_travel.webp"
+        alt=""
+      />
+    </AboutHero>
+
+    <AboutHeroIzq title={i18n.ABOUT.HERO_4} subtitle={i18n.ABOUT.HERO_4_TEXT}>
+      <img
+        class="rounded-xl object-cover"
+        slot="picture"
+        src="/photos_about/prefesional_guides.webp"
+        alt=""
+      />
+    </AboutHeroIzq>
+
+    <AboutHero title={i18n.ABOUT.HERO_5} subtitle={i18n.ABOUT.HERO_5_TEXT}>
+      <img
+        class="rounded-xl object-cover h-[320px]"
+        slot="picture"
+        src="/photos_about/sustainable_travel.webp"
+        alt=""
+      />
+    </AboutHero>
+
+    <div class="grid place-items-center md:mt-24 mt-10">
+      <h2
+        class="max-w-2xl text-2xl font-bold tracking-tight leading-none md:text-4xl lg:text-5xl mb-4">
+        {i18n.ABOUT.TEAM}
+      </h2>
+    </div>
+  </Container>
+
+  <Team />
+</Layout>

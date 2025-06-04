@@ -1,0 +1,267 @@
+---
+import Sectionhead from "@/components/sectionhead.astro";
+import Container from "@/components/container.astro";
+import Layout from "@/layouts/Layout.astro";
+
+import { getI18N } from "@/i18n/";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+---
+
+<Layout title="FAQ">
+  <Sectionhead>
+    <Fragment slot="title"> FAQ </Fragment>
+    <Fragment slot="desc"></Fragment>
+  </Sectionhead>
+  <Container class="w-full mt-16">
+    <!-- Reservations -->
+    <h2 class="text-2xl font-bold mb-4">{i18n.FAQ.SUBTITEL_1}</h2>
+    <div>
+      <h2 class="text-xl font-bold mb-4">{i18n.FAQ.QUESTION_1}</h2>
+      <p class="mb-4">
+        {i18n.FAQ.TEXT_1}
+      </p>
+    </div>
+    <div>
+      <h2 class="text-xl font-bold mb-4">
+        {i18n.FAQ.QUESTION_2}
+      </h2>
+      <p class="mb-4">
+        {i18n.FAQ.TEXT_2}
+      </p>
+    </div>
+    <div>
+      <h2 class="text-xl font-bold mb-4">
+        {i18n.FAQ.QUESTION_3}
+      </h2>
+      <p class="mb-4">
+        {i18n.FAQ.TEXT_3}
+      </p>
+    </div>
+    <div>
+      <h2 class="text-xl font-bold mb-4">{i18n.FAQ.QUESTION_4}</h2>
+      <p class="mb-4">
+        {i18n.FAQ.TEXT_4}
+      </p>
+    </div>
+    <div>
+      <h2 class="text-xl font-bold mb-4">{i18n.FAQ.QUESTION_5}</h2>
+      <p class="mb-4">
+        {i18n.FAQ.TEXT_5}
+      </p>
+    </div>
+    <div>
+      <h2 class="text-xl font-bold mb-4">{i18n.FAQ.QUESTION_6}</h2>
+      <p class="mb-4">
+        {i18n.FAQ.TEXT_6}
+      </p>
+    </div>
+    <div>
+      <h2 class="text-xl font-bold mb-4">
+        {i18n.FAQ.QUESTION_7}
+      </h2>
+      <p class="mb-4">
+        {i18n.FAQ.TEXT_7}
+      </p>
+    </div>
+    <div>
+      <h2 class="text-xl font-bold mb-4">{i18n.FAQ.QUESTION_8}</h2>
+      <p class="mb-4">{i18n.FAQ.TEXT_8}</p>
+    </div>
+    <div>
+      <h2 class="text-xl font-bold mb-4">{i18n.FAQ.QUESTION_9}</h2>
+      <p class="mb-4">{i18n.FAQ.TEXT_9}</p>
+    </div>
+    <div>
+      <h2 class="text-xl font-bold mb-4">
+        {i18n.FAQ.QUESTION_10}
+      </h2>
+      <p class="mb-4">
+        {i18n.FAQ.TEXT_10}
+      </p>
+    </div>
+    <div>
+      <h2 class="text-xl font-bold mb-4">
+        {i18n.FAQ.QUESTION_11}
+      </h2>
+      <p class="mb-4">
+        {i18n.FAQ.TEXT_11}
+      </p>
+    </div>
+    <div>
+      <h2 class="text-xl font-bold mb-4">
+        {i18n.FAQ.QUESTION_12}
+      </h2>
+      <p class="mb-4">
+        {i18n.FAQ.TEXT_12}
+      </p>
+    </div>
+    <div>
+      <h2 class="text-xl font-bold mb-4">
+        {i18n.FAQ.QUESTION_13}
+      </h2>
+      <p class="mb-4">
+        {i18n.FAQ.TEXT_13}
+      </p>
+    </div>
+    <div>
+      <h2 class="text-xl font-bold mb-4">{i18n.FAQ.QUESTION_14}</h2>
+      <p class="mb-4">
+        {i18n.FAQ.TEXT_14}
+      </p>
+    </div>
+    <div>
+      <h2 class="text-xl font-bold mb-4">{i18n.FAQ.QUESTION_15}</h2>
+      <p class="mb-4">
+        {i18n.FAQ.TEXT_15}
+      </p>
+    </div>
+    <div>
+      <h2 class="text-xl font-bold mb-4">
+        {i18n.FAQ.QUESTION_16}
+      </h2>
+      <p class="mb-4">
+        {i18n.FAQ.TEXT_16}
+      </p>
+    </div>
+    <div>
+      <h2 class="text-xl font-bold mb-4">{i18n.FAQ.QUESTION_17}</h2>
+      <p class="mb-4">{i18n.FAQ.TEXT_17}</p>
+      <p class="mb-4">
+        {i18n.FAQ.TEXT_17_1}
+      </p>
+    </div>
+    <div>
+      <h2 class="text-xl font-bold mb-4">
+        {i18n.FAQ.QUESTION_18}
+      </h2>
+      <p class="mb-4">{i18n.FAQ.TEXT_18}</p>
+    </div>
+    <div>
+      <h2 class="text-xl font-bold mb-4">{i18n.FAQ.QUESTION_19}</h2>
+      <p class="mb-4">
+        {i18n.FAQ.TEXT_19}
+      </p>
+      <p class="mb-4">
+        {i18n.FAQ.TEXT_19_1}
+      </p>
+    </div>
+    <div>
+      <h2 class="text-xl font-bold mb-4">
+        {i18n.FAQ.QUESTION_20}
+      </h2>
+      <p class="mb-4">
+        {i18n.FAQ.TEXT_20}
+      </p>
+    </div>
+    <div>
+      <h2 class="text-xl font-bold mb-4">
+        {i18n.FAQ.QUESTION_21}
+      </h2>
+      <p class="mb-4">
+        {i18n.FAQ.TEXT_21}
+      </p>
+    </div>
+    <div>
+      <h2 class="text-xl font-bold mb-4">{i18n.FAQ.QUESTION_22}</h2>
+      <p class="mb-4">
+        {i18n.FAQ.TEXT_22}
+      </p>
+    </div>
+    <!-- RESERVATION -->
+    <h2 class="text-2xl font-bold mb-4 mt-16">{i18n.FAQ.SUBTITEL_2}</h2>
+    <div>
+      <h2 class="text-xl font-bold mb-4">
+        {i18n.FAQ.QUESTION_23}
+      </h2>
+      <p class="mb-4">
+        {i18n.FAQ.TEXT_23}
+      </p>
+    </div>
+    <div>
+      <h2 class="text-xl font-bold mb-4">
+        {i18n.FAQ.QUESTION_24}
+      </h2>
+      <p class="mb-4">
+        {i18n.FAQ.TEXT_24}
+      </p>
+    </div>
+    <div>
+      <h2 class="text-xl font-bold mb-4">
+        {i18n.FAQ.QUESTION_25}
+      </h2>
+      <p class="mb-4">
+        {i18n.FAQ.TEXT_25}
+      </p>
+    </div>
+    <div>
+      <h2 class="text-xl font-bold mb-4">
+        {i18n.FAQ.QUESTION_26}
+      </h2>
+      <p class="mb-4">
+        {i18n.FAQ.TEXT_26}
+      </p>
+      <p class="mb-4">{i18n.FAQ.TEXT_26_1}</p>
+      <p class="mb-4">
+        {i18n.FAQ.TEXT_26_2}
+      </p>
+    </div>
+    <div>
+      <h2 class="text-xl font-bold mb-4">{i18n.FAQ.QUESTION_27}</h2>
+      <p class="mb-4">{i18n.FAQ.TEXT_27}</p>
+    </div>
+    <div>
+      <h2 class="text-xl font-bold mb-4">
+        {i18n.FAQ.QUESTION_28}
+      </h2>
+      <p class="mb-4">
+        {i18n.FAQ.TEXT_28}
+      </p>
+    </div>
+    <div>
+      <h2 class="text-xl font-bold mb-4">
+        {i18n.FAQ.QUESTION_29}
+      </h2>
+      <p class="mb-4">
+        {i18n.FAQ.TEXT_29}
+      </p>
+    </div>
+    <div>
+      <h2 class="text-xl font-bold mb-4">
+        {i18n.FAQ.QUESTION_30}
+      </h2>
+      <p class="mb-4">
+        {i18n.FAQ.TEXT_30}
+      </p>
+    </div>
+    <div>
+      <h2 class="text-xl font-bold mb-4">
+        {i18n.FAQ.QUESTION_31}
+      </h2>
+      <p class="mb-4">
+        {i18n.FAQ.TEXT_31}
+      </p>
+    </div>
+    <div>
+      <h2 class="text-xl font-bold mb-4">{i18n.FAQ.QUESTION_32}</h2>
+      <p class="mb-4">
+        {i18n.FAQ.TEXT_32}
+      </p>
+    </div>
+    <!-- ORGANIZED GROUP TRAVEL  -->
+    <h2 class="text-2xl font-bold mb-4 mt-16">{i18n.FAQ.SUBTITEL_3}</h2>
+    <div>
+      <h2 class="text-xl font-bold mb-4">{i18n.FAQ.QUESTION_33}</h2>
+      <p class="mb-4">
+        {i18n.FAQ.TEXT_33}
+      </p>
+    </div>
+    <div>
+      <h2 class="text-xl font-bold mb-4">{i18n.FAQ.QUESTION_34}</h2>
+      <p class="mb-4">
+        {i18n.FAQ.TEXT_34}
+      </p>
+    </div>
+  </Container>
+</Layout>

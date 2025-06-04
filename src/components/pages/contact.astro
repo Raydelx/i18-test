@@ -1,0 +1,49 @@
+---
+import Contactform from "@/components/contactform.astro";
+import Container from "@/components/container.astro";
+import Sectionhead from "@/components/sectionhead.astro";
+import Layout from "@/layouts/Layout.astro";
+import Icon from "@/components/Icon.astro";
+
+import { getI18N } from "@/i18n/";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+---
+
+<Layout title="Contact">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">{i18n.CONTACT.TITLE}</Fragment>
+      <Fragment slot="desc">{i18n.CONTACT.SUBTITLE}</Fragment>
+    </Sectionhead>
+
+    <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl mt-16">
+      <div>
+        <h2 class="font-medium text-2xl text-gray-800">
+          {i18n.CONTACT.TEXT}
+        </h2>
+
+        <div class="mt-5">
+          <div class="flex items-center mt-2 space-x-2 text-gray-600">
+            <Icon icon="destiny-logo" size="1.6rem" color="#0E46A3" />
+            <span>{i18n.CONTACT.DIRECTION}</span>
+          </div><div class="flex items-center mt-2 space-x-2 text-gray-600">
+            <Icon icon="mail-logo" size="1.6rem" color="#0E46A3" /><a
+              href="mailto:montarazoutdoors@gmail.com"
+              >montarazoutdoors@gmail.com
+            </a>
+          </div><div class="flex items-center mt-2 space-x-2 text-gray-600">
+            <Icon icon="tel-logo" size="1.6rem" color="#0E46A3" /><a
+              href="tel:+1 (987) 4587 899"
+              >(+34) 665 311 314
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <Contactform />
+      </div>
+    </div>
+  </Container>
+</Layout>

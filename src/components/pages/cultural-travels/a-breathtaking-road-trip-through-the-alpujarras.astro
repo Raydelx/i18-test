@@ -1,0 +1,409 @@
+---
+import Container from "@components/container.astro";
+import InformationProducts from "@components/ui/informationProducts.astro";
+import Icon from "@components/Icon.astro";
+import Layout from "../../../layouts/Layout.astro";
+import SliderReact from "../../../hooks/SliderReact";
+import Days from "@/components/products-components/days.astro";
+import Includes from "@/components/products-components/includes.astro";
+import Link from "@/components/ui/link.astro";
+import Cancellation from "@/components/products-components/cancellation.astro";
+import Dots from "@/components/ui/dots.astro";
+import { getI18N } from "@/i18n/";
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+
+// Duplica y cambia las rutas para añadir o modificar las fotos
+
+const IMG = [
+  {
+    src: "/cultural-travels/a-breathtaking-road-trip-through-the-alpujarras/alp-1.webp",
+  },
+  {
+    src: "/cultural-travels/a-breathtaking-road-trip-through-the-alpujarras/alp-2.webp",
+  },
+  {
+    src: "/cultural-travels/a-breathtaking-road-trip-through-the-alpujarras/alp-3.webp",
+  },
+  {
+    src: "/cultural-travels/a-breathtaking-road-trip-through-the-alpujarras/alp-4.webp",
+  },
+  {
+    src: "/cultural-travels/a-breathtaking-road-trip-through-the-alpujarras/alp-5.webp",
+  },
+];
+const DAYS = [
+  {
+    day: "1",
+    description:
+      i18n.PRODUCTS.CULTURAL_TRAVELS.BREATHTAKING_ROAD_TRIP_ALPUJARRAS.DAYS
+        .DAY_1.TEXT_1,
+    description2:
+      i18n.PRODUCTS.CULTURAL_TRAVELS.BREATHTAKING_ROAD_TRIP_ALPUJARRAS.DAYS
+        .DAY_1.TEXT_2,
+    description3:
+      i18n.PRODUCTS.CULTURAL_TRAVELS.BREATHTAKING_ROAD_TRIP_ALPUJARRAS.DAYS
+        .DAY_1.TEXT_3,
+    description4:
+      i18n.PRODUCTS.CULTURAL_TRAVELS.BREATHTAKING_ROAD_TRIP_ALPUJARRAS.DAYS
+        .DAY_1.TEXT_4,
+    description5:
+      i18n.PRODUCTS.CULTURAL_TRAVELS.BREATHTAKING_ROAD_TRIP_ALPUJARRAS.DAYS
+        .DAY_1.TEXT_5,
+    description6:
+      i18n.PRODUCTS.CULTURAL_TRAVELS.BREATHTAKING_ROAD_TRIP_ALPUJARRAS.DAYS
+        .DAY_1.TEXT_6,
+    tecnicalInfo: false,
+  },
+];
+---
+
+<Layout title="Gravel Bike / MTB">
+  <Container>
+    <main class="mt-16">
+      <!-- Foto, nombre y destino -->
+
+      <div
+        class="bg-center bg-no-repeat bg-[url('/cultural-travels/a-breathtaking-road-trip-through-the-alpujarras/alp-principal.webp')] bg-cover h-[25rem] rounded-2xl">
+        <div class="flex flex-col justify-end h-full p-6 w-auto">
+          <div class="flex gap-2">
+            <Icon icon="destiny-logo" size="1.6rem" color="white" />
+            <p
+              class="text-xl font-normal text-white lg:text-2xl flex flex-col justify-end h-full [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
+              {
+                i18n.PRODUCTS.CULTURAL_TRAVELS.BREATHTAKING_ROAD_TRIP_ALPUJARRAS
+                  .LOCATION
+              }
+            </p>
+          </div>
+
+          <h1
+            class="text-3xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-5xl [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
+            {
+              i18n.PRODUCTS.CULTURAL_TRAVELS.BREATHTAKING_ROAD_TRIP_ALPUJARRAS
+                .TITLE
+            }
+          </h1>
+        </div>
+      </div>
+
+      <!-- Informacion general de los viajes -->
+
+      <div
+        class="grid grid-cols-2 md:grid-cols-6 h-auto mt-3 gap-3 place-content-start md:px-6">
+        <InformationProducts
+          title={i18n.INFORMATION_PRODUCTS.PRICE}
+          subtitle={i18n.PRODUCTS.CULTURAL_TRAVELS
+            .BREATHTAKING_ROAD_TRIP_ALPUJARRAS.PRICE}>
+          <div slot="icon">
+            <Icon icon="price-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts
+          title={i18n.INFORMATION_PRODUCTS.PRE_BOOKING}
+          subtitle={i18n.PRODUCTS.CULTURAL_TRAVELS
+            .BREATHTAKING_ROAD_TRIP_ALPUJARRAS.PRE_BOOKING}>
+          <div slot="icon">
+            <Icon icon="price-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts
+          title={i18n.INFORMATION_PRODUCTS.MINUMUM_OF_PERSONS}
+          subtitle={i18n.PRODUCTS.CULTURAL_TRAVELS
+            .BREATHTAKING_ROAD_TRIP_ALPUJARRAS.MINUMUM_OF_PERSONS}>
+          <div slot="icon">
+            <Icon icon="group-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts
+          title={i18n.INFORMATION_PRODUCTS.DURATION}
+          subtitle={i18n.PRODUCTS.CULTURAL_TRAVELS
+            .BREATHTAKING_ROAD_TRIP_ALPUJARRAS.DURATION}>
+          <div slot="icon">
+            <Icon icon="timer-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts
+          title={i18n.INFORMATION_PRODUCTS.ROUTE_TYPE}
+          subtitle={i18n.PRODUCTS.CULTURAL_TRAVELS
+            .BREATHTAKING_ROAD_TRIP_ALPUJARRAS.ROUTE_TYPE}>
+          <div slot="icon">
+            <Icon icon="guide-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts
+          title={i18n.INFORMATION_PRODUCTS.SEASON}
+          subtitle2={i18n.PRODUCTS.CULTURAL_TRAVELS
+            .BREATHTAKING_ROAD_TRIP_ALPUJARRAS.SEASON}>
+          <!-- <div slot="icon">
+            <Icon icon="autumn-logo" size="1.6rem" color="#0E46A3" />
+          </div> -->
+        </InformationProducts>
+      </div>
+
+      <!-- Informacion tecnica -->
+
+      <!--  Include, exclude, complementaries  -->
+      <div
+        class="grid md:grid-cols-2 lg:grid-cols-3 mt-20 md:mt-26 md:mb-36 gap-16 md:gap-4">
+        <!-- Include -->
+        <Includes title={i18n.INCLUDES.INCLUDED}>
+          <div slot="description" class="mt-4 flex flex-col gap-2">
+            <li class="flex gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                {
+                  i18n.PRODUCTS.CULTURAL_TRAVELS
+                    .BREATHTAKING_ROAD_TRIP_ALPUJARRAS.INCLUDED.TEXT_1
+                }
+              </p>
+            </li>
+            <li class="flex gap-2">
+              <div>
+                <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              </div>
+
+              <p class="max-w-[320px] text-md">
+                {
+                  i18n.PRODUCTS.CULTURAL_TRAVELS
+                    .BREATHTAKING_ROAD_TRIP_ALPUJARRAS.INCLUDED.TEXT_2
+                }
+              </p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                {
+                  i18n.PRODUCTS.CULTURAL_TRAVELS
+                    .BREATHTAKING_ROAD_TRIP_ALPUJARRAS.INCLUDED.TEXT_3
+                }
+              </p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                {
+                  i18n.PRODUCTS.CULTURAL_TRAVELS
+                    .BREATHTAKING_ROAD_TRIP_ALPUJARRAS.INCLUDED.TEXT_4
+                }
+              </p>
+            </li>
+          </div>
+        </Includes>
+        <!-- Exclude -->
+        <Includes title={i18n.INCLUDES.NOT_INCLUDED}>
+          <div slot="description" class="flex flex-col gap-2 mt-4">
+            <li class="flex gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                {
+                  i18n.PRODUCTS.CULTURAL_TRAVELS
+                    .BREATHTAKING_ROAD_TRIP_ALPUJARRAS.NOT_INCLUDED.TEXT_1
+                }
+              </p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                {
+                  i18n.PRODUCTS.CULTURAL_TRAVELS
+                    .BREATHTAKING_ROAD_TRIP_ALPUJARRAS.NOT_INCLUDED.TEXT_2
+                }
+              </p>
+            </li>
+          </div>
+        </Includes>
+        <!-- Complementaries -->
+        <Includes title={i18n.INCLUDES.EXTRA}>
+          <div slot="description" class="flex flex-col gap-2 mt-4">
+            <li class="flex gap-2">
+              <Icon icon="complement-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                {
+                  i18n.PRODUCTS.CULTURAL_TRAVELS
+                    .BREATHTAKING_ROAD_TRIP_ALPUJARRAS.EXTRA.TEXT_1
+                }
+              </p>
+            </li>
+            <li class="flex gap-2">
+              <div>
+                <Icon icon="complement-logo" size="1.6rem" color="#0E46A3" />
+              </div>
+
+              <p class="max-w-[320px] text-md">
+                {
+                  i18n.PRODUCTS.CULTURAL_TRAVELS
+                    .BREATHTAKING_ROAD_TRIP_ALPUJARRAS.EXTRA.TEXT_2
+                }
+              </p>
+            </li>
+          </div>
+        </Includes>
+      </div>
+
+      <div class="grid md:grid-cols-2 h-auto gap-10 md:gap-20 md:py-36 py-10">
+        <div class="static h-[385px] hidden md:block">
+          <img
+            class="rounded-xl absolute md:w-[20rem] lg:w-[25rem] hover:z-40 transition-all duration-300 ease-out hover:scale-105"
+            src="/cultural-travels/a-breathtaking-road-trip-through-the-alpujarras/alp-4.webp"
+            alt="ciclista mirando la sierra con cicicleta a su lado"
+          />
+          <img
+            class="rounded-xl absolute md:w-[10rem] lg:w-[12rem] md:mt-48 lg:mt-60 ml-6 z-10 grayscale-[60%] hover:grayscale-0 transition-all duration-300 ease-out hover:scale-105"
+            src="/cultural-travels/a-breathtaking-road-trip-through-the-alpujarras/alp-3.webp"
+            alt="ciclista mirando la sierra con cicicleta a su lado"
+          />
+          <img
+            class="rounded-xl absolute md:w-[10rem] lg:w-[15em] ml-64 md:-mt-24 lg:-mt-32 grayscale-[60%] hover:grayscale-0 transition-all duration-300 ease-out hover:scale-105"
+            src="/cultural-travels/a-breathtaking-road-trip-through-the-alpujarras/alp-1.webp"
+            alt="ciclista mirando la sierra con cicicleta a su lado"
+          />
+        </div>
+
+        <div class="grid gap-5">
+          <div class="">
+            <h2
+              class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+              {
+                i18n.PRODUCTS.CULTURAL_TRAVELS.BREATHTAKING_ROAD_TRIP_ALPUJARRAS
+                  .AVAILABILITY
+              }
+            </h2>
+
+            <ul class="grid gap-2 text-lg">
+              <li class="flex flex-wrap gap-2">
+                <Icon icon="spring-logo" size="1.6rem" color="#0E46A3" />
+                <p>
+                  {
+                    i18n.PRODUCTS.CULTURAL_TRAVELS
+                      .BREATHTAKING_ROAD_TRIP_ALPUJARRAS.AVAILABILITY_TEXT
+                  }
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="">
+            <h2
+              class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+              {
+                i18n.PRODUCTS.CULTURAL_TRAVELS.BREATHTAKING_ROAD_TRIP_ALPUJARRAS
+                  .HIGHLIGHT
+              }
+            </h2>
+            <p class="text-lg text-gray-900 mb-1">
+              <span class="text-xl">🔹</span>
+              {
+                i18n.PRODUCTS.CULTURAL_TRAVELS.BREATHTAKING_ROAD_TRIP_ALPUJARRAS
+                  .HIGHLIGHT_TEXT_1
+              }
+            </p>
+            <p class="text-lg text-gray-900">
+              <span class="text-xl">🔹</span>
+              {
+                i18n.PRODUCTS.CULTURAL_TRAVELS.BREATHTAKING_ROAD_TRIP_ALPUJARRAS
+                  .HIGHLIGHT_TEXT_2
+              }
+            </p>
+            <p class="text-lg text-gray-900">
+              <span class="text-xl">🔹</span>
+              {
+                i18n.PRODUCTS.CULTURAL_TRAVELS.BREATHTAKING_ROAD_TRIP_ALPUJARRAS
+                  .HIGHLIGHT_TEXT_3
+              }
+            </p>
+            <p class="text-lg text-gray-900">
+              <span class="text-xl">🔹</span>
+              {
+                i18n.PRODUCTS.CULTURAL_TRAVELS.BREATHTAKING_ROAD_TRIP_ALPUJARRAS
+                  .HIGHLIGHT_TEXT_4
+              }
+            </p>
+            <p class="text-lg text-gray-900">
+              <span class="text-xl">🔹</span>
+              {
+                i18n.PRODUCTS.CULTURAL_TRAVELS.BREATHTAKING_ROAD_TRIP_ALPUJARRAS
+                  .HIGHLIGHT_TEXT_5
+              }
+            </p>
+            <p class="text-lg text-gray-900">
+              <span class="text-xl">🔹</span>
+              {
+                i18n.PRODUCTS.CULTURAL_TRAVELS.BREATHTAKING_ROAD_TRIP_ALPUJARRAS
+                  .HIGHLIGHT_TEXT_6
+              }
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Button to download PDF -->
+      <section class="grid md:grid-cols-2 gap-6">
+        <Cancellation />
+        <div class="flex flex-col gap-2 md:p-4">
+          <div>
+            <h3 class="text-4xl md:text-5xl xl:text-6xl font-bold">
+              {
+                i18n.PRODUCTS.CULTURAL_TRAVELS.BREATHTAKING_ROAD_TRIP_ALPUJARRAS
+                  .PRICES
+              }
+            </h3>
+            <Dots class="mb-4" />
+          </div>
+          <p class="text-gray-700">
+            {
+              i18n.PRODUCTS.CULTURAL_TRAVELS.BREATHTAKING_ROAD_TRIP_ALPUJARRAS
+                .PRICES_TEXT_1
+            }
+          </p>
+          <p class="text-gray-700">
+            {
+              i18n.PRODUCTS.CULTURAL_TRAVELS.BREATHTAKING_ROAD_TRIP_ALPUJARRAS
+                .PRICES_TEXT_2
+            }
+          </p>
+          <p class="text-gray-700">
+            {
+              i18n.PRODUCTS.CULTURAL_TRAVELS.BREATHTAKING_ROAD_TRIP_ALPUJARRAS
+                .PRICES_TEXT_3
+            }
+          </p>
+          <p class="text-gray-700">
+            {
+              i18n.PRODUCTS.CULTURAL_TRAVELS.BREATHTAKING_ROAD_TRIP_ALPUJARRAS
+                .PRICES_TEXT_4
+            }
+          </p>
+          <p class="text-gray-700">
+            {
+              i18n.PRODUCTS.CULTURAL_TRAVELS.BREATHTAKING_ROAD_TRIP_ALPUJARRAS
+                .PRICES_TEXT_5
+            }
+          </p>
+        </div>
+      </section>
+
+      <!-- Slider Photos -->
+      <section class="m-auto md:w-full rounded-xl md:px-8 md:py-20">
+        <ol class="relative mt-16">
+          {(<SliderReact IMG={IMG} client:visible client:only="react" />)}
+        </ol>
+      </section>
+
+      <!--  TimeLine per days  -->
+      <h2 class="text-4xl md:text-5xl xl:text-6xl md:p-8 mt-16 font-bold mb-4">
+        {
+          i18n.PRODUCTS.CULTURAL_TRAVELS.BREATHTAKING_ROAD_TRIP_ALPUJARRAS
+            .WHAT_TO_EXPECT
+        }
+      </h2>
+      {
+        DAYS.map((tour) => (
+          <ol class="mb-10">
+            <Days {...tour} />
+          </ol>
+        ))
+      }
+    </main>
+  </Container>
+</Layout>

@@ -1,0 +1,235 @@
+---
+import Sectionhead from "@/components/sectionhead.astro";
+import Container from "@/components/container.astro";
+import Layout from "@/layouts/Layout.astro";
+
+import { getI18N } from "@/i18n/";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+---
+
+<Layout title="Pricay Policy">
+  <Sectionhead>
+    <Fragment slot="title"> {i18n.PRIVACY.TITLE}</Fragment>
+    <Fragment slot="desc"></Fragment>
+  </Sectionhead>
+  <Container class="w-full mt-16">
+    <p class="mb-4">
+      {i18n.PRIVACY.TEXT_1}
+    </p>
+    <p class="mb-4">
+      {i18n.PRIVACY.TEXT_2}
+    </p>
+    <p class="mb-4 font-semibold">{i18n.PRIVACY.TEXT_3}</p>
+
+    <h2 class="text-2xl font-bold mb-4">{i18n.PRIVACY.SUBTITEL_1}</h2>
+    <p class="mb-4">
+      {i18n.PRIVACY.TEXT_5}
+    </p>
+    <p class="mb-4">
+      {i18n.PRIVACY.TEXT_6}
+    </p>
+
+    <h2 class="text-2xl font-bold mb-4">{i18n.PRIVACY.SUBTITEL_2}</h2>
+    <p class="mb-4">
+      {i18n.PRIVACY.TEXT_7}
+    </p>
+
+    <div class="mb-4 flex flex-row gap-4">
+      <p class="font-bold min-w-5">I.</p>
+      <p>{i18n.PRIVACY.TEXT_8}</p>
+    </div>
+    <div class="mb-4 flex flex-row gap-4">
+      <p class="font-bold min-w-5">II.</p>
+      <p>{i18n.PRIVACY.TEXT_9}</p>
+    </div>
+    <div class="mb-4 flex flex-row gap-4">
+      <p class="font-bold min-w-5">III.</p>
+      <p>{i18n.PRIVACY.TEXT_10}</p>
+    </div>
+    <div class="mb-4 flex flex-row gap-4">
+      <p class="font-bold min-w-5">IV.</p>
+      <p>{i18n.PRIVACY.TEXT_11}</p>
+    </div>
+    <div class="mb-4 flex flex-row gap-4">
+      <p class="font-bold min-w-5">V.</p>
+      <p>{i18n.PRIVACY.TEXT_12}</p>
+    </div>
+    <div class="mb-4 flex flex-row gap-4">
+      <p class="font-bold min-w-5">VI.</p>
+      <p>
+        {i18n.PRIVACY.TEXT_13})
+      </p>
+    </div>
+    <div class="mb-4 flex flex-row gap-4">
+      <p class="font-bold min-w-5">VII.</p>
+      <p>
+        {i18n.PRIVACY.TEXT_14})
+      </p>
+    </div>
+
+    <h2 class="text-2xl font-bold mb-4">{i18n.PRIVACY.SUBTITEL_3}</h2>
+    <p class="mb-4">
+      {i18n.PRIVACY.TEXT_15}
+    </p>
+    <p class="mb-4">
+      {i18n.PRIVACY.TEXT_16}
+    </p>
+    <div class="mb-4 flex flex-row gap-4">
+      <p class="font-bold min-w-5">I.</p>
+      <p>{i18n.PRIVACY.TEXT_17}</p>
+    </div><div class="mb-4 flex flex-row gap-4">
+      <p class="font-bold min-w-5">II.</p>
+      <p>
+        {i18n.PRIVACY.TEXT_18}
+      </p>
+    </div><div class="mb-4 flex flex-row gap-4">
+      <p class="font-bold min-w-5">III.</p>
+      <p>
+        {i18n.PRIVACY.TEXT_19}
+      </p>
+    </div>
+    <div class="gap-4 px-10">
+      <div class="mb-4 flex flex-row gap-4">
+        <p class="font-bold min-w-5">-</p>
+        <p>
+          {i18n.PRIVACY.TEXT_20}
+        </p>
+      </div>
+      <div class="mb-4 flex flex-row gap-4">
+        <p class="font-bold min-w-5">-</p>
+        <p>
+          {i18n.PRIVACY.TEXT_21}
+        </p>
+      </div>
+      <div class="mb-4 flex flex-row gap-4">
+        <p class="font-bold min-w-5">-</p>
+        <p>
+          {i18n.PRIVACY.TEXT_22}
+        </p>
+      </div>
+      <div class="mb-4 flex flex-row gap-4">
+        <p class="font-bold min-w-5">-</p>
+        <p>
+          {i18n.PRIVACY.TEXT_23}
+        </p>
+      </div>
+    </div>
+    <div class="mb-4 flex flex-row gap-4">
+      <p class="font-bold min-w-5">IV.</p>
+      <p>
+        {i18n.PRIVACY.TEXT_24}
+      </p>
+    </div>
+
+    <!-- How we share your data -->
+
+    <h2 class="text-2xl font-bold mb-4">{i18n.PRIVACY.SUBTITEL_4}</h2>
+    <p class="mb-4">
+      {i18n.PRIVACY.TEXT_26}
+    </p>
+    <div class="mb-4 flex flex-row gap-4">
+      <p class="font-bold min-w-5">I.</p>
+      <p>
+        {i18n.PRIVACY.TEXT_27}
+      </p>
+    </div>
+    <div class="mb-4 flex flex-row gap-4">
+      <p class="font-bold min-w-5">II.</p>
+      <p>
+        {i18n.PRIVACY.TEXT_28}
+      </p>
+    </div>
+    <div class="mb-4 flex flex-row gap-4">
+      <p class="font-bold min-w-5">III.</p>
+      <p>
+        {i18n.PRIVACY.TEXT_29}
+      </p>
+    </div>
+    <div class="gap-4 px-10">
+      <div class="mb-4 flex flex-row gap-4">
+        <p class="font-bold min-w-5">-</p>
+        <p>
+          {i18n.PRIVACY.TEXT_30}
+        </p>
+      </div>
+    </div>
+
+    <h2 class="text-2xl font-bold mb-4">{i18n.PRIVACY.SUBTITEL_5}</h2>
+    <p class="mb-4">
+      {i18n.PRIVACY.TEXT_31}
+    </p>
+    <p class="mb-4">
+      {i18n.PRIVACY.TEXT_32}
+    </p>
+    <h2 class="text-2xl font-bold mb-4">{i18n.PRIVACY.SUBTITEL_6}</h2>
+    <p class="mb-4">
+      {i18n.PRIVACY.TEXT_33}
+    </p>
+
+    <h2 class="text-2xl font-bold mb-4">{i18n.PRIVACY.SUBTITEL_7}</h2>
+    <p class="mb-4">
+      {i18n.PRIVACY.TEXT_34}
+    </p>
+    <p class="mb-4">
+      {i18n.PRIVACY.TEXT_35}
+    </p>
+    <p class="mb-4">
+      {i18n.PRIVACY.TEXT_36}
+    </p>
+
+    <h2 class="text-2xl font-bold mb-4">
+      {i18n.PRIVACY.SUBTITEL_8}
+    </h2>
+    <p class="mb-4">
+      {i18n.PRIVACY.TEXT_37}
+    </p>
+    <p class="mb-4">
+      {i18n.PRIVACY.TEXT_38}
+    </p>
+
+    <h2 class="text-2xl font-bold mb-4">
+      {i18n.PRIVACY.SUBTITEL_9}
+    </h2>
+    <p class="mb-4">
+      {i18n.PRIVACY.TEXT_39}
+    </p>
+    <p class="mb-4">
+      {i18n.PRIVACY.TEXT_40}
+    </p>
+    <p class="mb-4">{i18n.PRIVACY.TEXT_41}</p>
+    <p class="mb-4">
+      {i18n.PRIVACY.TEXT_42}
+    </p>
+    <p class="mb-4">
+      {i18n.PRIVACY.TEXT_43}
+    </p>
+    <p class="mb-4">
+      {i18n.PRIVACY.TEXT_44}
+    </p>
+    <p class="mb-4">
+      {i18n.PRIVACY.TEXT_45}
+    </p>
+    <p class="mb-4">
+      {i18n.PRIVACY.TEXT_46}
+    </p>
+    <p class="mb-4">
+      {i18n.PRIVACY.TEXT_47}
+    </p>
+
+    <!-- LEGAL INFORMATION -->
+
+    <h2 class="text-2xl font-bold mb-4">{i18n.PRIVACY.SUBTITEL_10}</h2>
+    <p class="mb-4">
+      {i18n.PRIVACY.TEXT_48}
+    </p>
+    <p class="mb-4">
+      {i18n.PRIVACY.TEXT_49}
+    </p>
+
+    <h2 class="text-2xl font-bold mb-4">
+      {i18n.PRIVACY.SUBTITLE_11}
+    </h2>
+  </Container>
+</Layout>

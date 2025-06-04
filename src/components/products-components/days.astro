@@ -1,6 +1,9 @@
 ---
 import Icon from "../Icon.astro";
-import Route from "../ui/icons/route.astro";
+import { getI18N } from "@/i18n/";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
 
 interface Props {
   day?: string;
@@ -76,7 +79,9 @@ const {
       <div class="col-span-3">
         {day && (
           <div>
-            <h2 class="md:text-3xl text-2xl font-bold mb-2">Day {day}</h2>
+            <h2 class="md:text-3xl text-2xl font-bold mb-2">
+              {i18n.DAY.DAY} {day}
+            </h2>
           </div>
         )}
         {title2 && (
@@ -110,13 +115,13 @@ const {
         )}
         {optional1 && (
           <p class="text-gray-500 text-md">
-            <span class="font-bold">Optional: </span>
+            <span class="font-bold">{i18n.DAY.OPTIONAL}: </span>
             {optional1}
           </p>
         )}
         {optional2 && (
           <p class="text-gray-500 text-md">
-            <span class="font-bold">Optional: </span>
+            <span class="font-bold">{i18n.DAY.OPTIONAL}: </span>
             {optional2}
           </p>
         )}
@@ -138,7 +143,7 @@ const {
             </div>
             <div class="grid col-span-5">
               <h2 class="text-pretty text-neutral-900 text-xl font-bold">
-                Total Distance
+                {i18n.DAY.TOTAL_DISTANCE}
               </h2>
               <p class="text-pretty text-gray-500 text-md">{totalDistance}</p>
             </div>
@@ -151,7 +156,7 @@ const {
             </div>
             <div class="grid col-span-5">
               <h2 class="text-pretty text-neutral-900 text-xl font-bold">
-                Total Ascent
+                {i18n.DAY.TOTAL_ASCENT}
               </h2>
               <p class="text-pretty text-gray-500 text-md">{totalAscent}</p>
             </div>
@@ -164,7 +169,7 @@ const {
             </div>
             <div class="grid col-span-5">
               <h2 class="text-pretty text-neutral-900 text-xl font-bold">
-                Total Descent
+                {i18n.DAY.TOTAL_DESCENT}
               </h2>
               <p class="text-pretty text-gray-500 text-md">{totalDescent}</p>
             </div>
@@ -177,7 +182,7 @@ const {
             </div>
             <div class="grid col-span-5">
               <h2 class="text-pretty text-neutral-900 text-xl font-bold">
-                Route Type
+                {i18n.DAY.ROUTE_TYPE}
               </h2>
               <p class="text-pretty text-gray-500 text-md">{routeType}</p>
             </div>
@@ -190,7 +195,7 @@ const {
             </div>
             <div class="grid col-span-5">
               <h2 class="text-pretty text-neutral-900 text-xl font-bold">
-                Duration Trial
+                {i18n.DAY.DURATION}
               </h2>
               <p class="text-pretty text-gray-500 text-md">{duration}</p>
             </div>
@@ -203,7 +208,7 @@ const {
             </div>
             <div class="grid col-span-5">
               <h2 class="text-pretty text-neutral-900 text-xl font-bold">
-                Difficulty
+                {i18n.DAY.DIFFICULTY}
               </h2>
               <p class="text-pretty text-gray-500 text-md">{difficulty}</p>
             </div>
@@ -217,7 +222,7 @@ const {
             </div>
             <div class="grid col-span-5">
               <h2 class="text-pretty text-neutral-900 text-xl font-bold">
-                Physical Difficulty
+                {i18n.DAY.PHYSICAL_DIFFICULTY}
               </h2>
               <p class="text-pretty text-gray-500 text-md">
                 {physical_difficulty}
@@ -232,7 +237,7 @@ const {
             </div>
             <div class="grid col-span-5">
               <h2 class="text-pretty text-neutral-900 text-xl font-bold">
-                Technical Difficulty
+                {i18n.DAY.TECHNICAL_DIFFICULTY}
               </h2>
               <p class="text-pretty text-gray-500 text-md">
                 {technical_difficulty}
@@ -256,7 +261,7 @@ const {
             </div>
             <div class="grid col-span-5">
               <h2 class="text-pretty text-neutral-900 text-xl font-bold">
-                Total Distance
+                {i18n.DAY.TOTAL_DISTANCE}
               </h2>
               <p class="text-pretty text-gray-500 text-md">{totalDistance2}</p>
             </div>
@@ -269,7 +274,7 @@ const {
             </div>
             <div class="grid col-span-5">
               <h2 class="text-pretty text-neutral-900 text-xl font-bold">
-                Total Ascent
+                {i18n.DAY.TOTAL_ASCENT}
               </h2>
               <p class="text-pretty text-gray-500 text-md">{totalAscent2}</p>
             </div>
@@ -282,7 +287,7 @@ const {
             </div>
             <div class="grid col-span-5">
               <h2 class="text-pretty text-neutral-900 text-xl font-bold">
-                Total Descent
+                {i18n.DAY.TOTAL_DESCENT}
               </h2>
               <p class="text-pretty text-gray-500 text-md">{totalDescent2}</p>
             </div>
@@ -296,7 +301,7 @@ const {
             </div>
             <div class="grid col-span-5">
               <h2 class="text-pretty text-neutral-900 text-xl font-bold">
-                Duration Trial
+                {i18n.DAY.DURATION}
               </h2>
               <p class="text-pretty text-gray-500 text-md">{duration2}</p>
             </div>
@@ -310,7 +315,7 @@ const {
             </div>
             <div class="grid col-span-5">
               <h2 class="text-pretty text-neutral-900 text-xl font-bold">
-                Physical Difficulty
+                {i18n.DAY.PHYSICAL_DIFFICULTY}
               </h2>
               <p class="text-pretty text-gray-500 text-md">
                 {physical_difficulty2}
@@ -325,7 +330,7 @@ const {
             </div>
             <div class="grid col-span-5">
               <h2 class="text-pretty text-neutral-900 text-xl font-bold">
-                Technical Difficulty
+                {i18n.DAY.TECHNICAL_DIFFICULTY}
               </h2>
               <p class="text-pretty text-gray-500 text-md">
                 {technical_difficulty2}
@@ -340,7 +345,9 @@ const {
       <div class="col-span-3">
         {day && (
           <div>
-            <h2 class="md:text-3xl text-2xl font-bold mb-2">Day {day}</h2>
+            <h2 class="md:text-3xl text-2xl font-bold mb-2">
+              {i18n.DAY.DAY} {day}
+            </h2>
           </div>
         )}
         {title2 && (
@@ -371,13 +378,13 @@ const {
         )}
         {optional1 && (
           <p class="text-gray-500 text-md">
-            <span class="font-bold">Optional: </span>
+            <span class="font-bold">{i18n.DAY.OPTIONAL}: </span>
             {optional1}
           </p>
         )}
         {optional2 && (
           <p class="text-gray-500 text-md">
-            <span class="font-bold">Optional: </span>
+            <span class="font-bold">{i18n.DAY.OPTIONAL}: </span>
             {optional2}
           </p>
         )}

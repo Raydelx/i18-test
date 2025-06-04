@@ -1,5 +1,9 @@
 ---
 import TeamItem from "./teamItem.astro";
+import { getI18N } from "@/i18n/";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
 ---
 
 <figure class="max-w-screen-md mx-auto text-center px-5 mt-4">
@@ -15,10 +19,7 @@ import TeamItem from "./teamItem.astro";
   </svg>
   <blockquote>
     <p class="text-2xl italic font-medium text-gray-900">
-      "At a young age, I began traveling the world. Since then, my life has been
-      a voyage of discovery. As a result of this adventurous lifestyle, I have
-      turned my passion into a profession and founded the company Montaraz
-      Outdoors and Culture."
+      "{i18n.ABOUT.QUOTE}"
     </p>
   </blockquote>
   <figcaption
@@ -27,18 +28,16 @@ import TeamItem from "./teamItem.astro";
     <div
       class="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-500">
       <cite class="pe-3 font-medium text-gray-900">Michael Hugo</cite>
-      <cite class="ps-3 text-sm text-gray-500"
-        >Founder Montaraz Outdoors and Culture</cite
-      >
+      <cite class="ps-3 text-sm text-gray-500">{i18n.ABOUT.QUOTE_1}</cite>
     </div>
   </figcaption>
 </figure>
 <TeamItem
   name="Michael Hugo Vanrapenbusch"
-  charge="Founder / Project Manager / Mountain Guide / Cycle Guide "
-  nationality="Belgium"
-  idioms="Dutch / Spanish / French / English"
-  cualification="Mountain Sport Technician / Socio nº1945 AEGM / UIMLA"
+  charge={i18n.ABOUT.MICHAEL_CHARGE}
+  nationality={i18n.ABOUT.MICHAEL_NATIONALITY}
+  idioms={i18n.ABOUT.MICHAEL_LENGUAGES}
+  cualification={i18n.ABOUT.MICHAEL_QUALIFICATION}
   src="/michel.png"
   alt="michael with helmet smiling"
   class="bg-gradient-to-r from-violet-200 to-cyan-200"
@@ -48,10 +47,10 @@ import TeamItem from "./teamItem.astro";
 
 <TeamItem
   name="Jose Vicente Castro Lopez"
-  charge="Project Manager / Cycle Guide"
-  nationality="Spain"
-  idioms="Spanish / English"
-  cualification="Cycle guide / Bicycle Mechanic "
+  charge={i18n.ABOUT.JOSE_CHARGE}
+  nationality={i18n.ABOUT.JOSE_NATIONALITY}
+  idioms={i18n.ABOUT.JOSE_LENGUAGES}
+  cualification={i18n.ABOUT.JOSE_QUALIFICATION}
   src="/castro.png"
   alt="Michael Project manager"
   class="bg-gradient-to-r from-violet-200 to-cyan-200">
@@ -61,30 +60,30 @@ import TeamItem from "./teamItem.astro";
 >
 <TeamItem
   name="Maria Egea Molina"
-  charge="Operation Coordinator"
-  nationality="Spain"
-  idioms="Spanish / English"
-  cualification="Nurse / Phd Midwifery"
+  charge={i18n.ABOUT.MARIA_CHARGE}
+  nationality={i18n.ABOUT.MARIA_NATIONALITY}
+  idioms={i18n.ABOUT.MARIA_LENGUAGES}
+  cualification={i18n.ABOUT.MARIA_QUALIFICATION}
   src="/maria2.png"
   alt="Maria Operation Coordinator"
   class="bg-gradient-to-r from-violet-200 to-cyan-200"
 />
 <TeamItem
   name="Manuel Baeza"
-  charge="Ski Instructor"
-  nationality="Spain"
-  idioms="Spanish / English"
-  cualification="Bachelor's Degree in Sport Sciences / Specialization in high performance skiing / Master in Physical Education / Sports Technician Alpine Skiing"
+  charge={i18n.ABOUT.MANUEL_CHARGE}
+  nationality={i18n.ABOUT.MANUEL_NATIONALITY}
+  idioms={i18n.ABOUT.MANUEL_LENGUAGES}
+  cualification={i18n.ABOUT.MANUEL_QUALIFICATION}
   src="/manolo.png"
   alt="Maniel Baeza"
   class="bg-gradient-to-r from-blue-200 to-cyan-200"
 />
 <TeamItem
   name="Anxo"
-  charge="Guide / Rock climbing Instructor"
-  nationality="Spain"
-  idioms="Spanish / English"
-  cualification="Graduate Diploma in Philosophy /Climbing Sports Technician  / Sports Technician Mountain and Climbing"
+  charge={i18n.ABOUT.ANXO_CHARGE}
+  nationality={i18n.ABOUT.ANXO_NATIONALITY}
+  idioms={i18n.ABOUT.ANXO_LENGUAGES}
+  cualification={i18n.ABOUT.ANXO_QUALIFICATION}
   src="/anxo.png"
   alt="Maniel Baeza"
   class="bg-gradient-to-r from-blue-200 to-cyan-200"

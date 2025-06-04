@@ -1,7 +1,11 @@
 ---
 import Icon from "./Icon.astro";
 import Container from "../components/container.astro";
-import MontarazLogo from "../components/container.astro";
+
+import { getLangFromUrl, useTranslatedPath } from "/i18n/utils.js";
+
+const lang = getLangFromUrl(Astro.url);
+const translatePath = useTranslatedPath(lang);
 ---
 
 <svg
@@ -324,15 +328,15 @@ c-57 22 -53 108 5 97 15 -3 27 -2 27 3 0 14 -14 16 -45 8z"
       </div>
       <div class="grid gap-2 px-2 mt-8 md:mt-0">
         <h2 class="text-lg font-semibold text-gray-100">Quick Links</h2>
-        <a href="/terms-and-conditions/" class="hover:opacity-50 text-gray-100"
-          >Terms & Conditions</a
+        <a
+          href={translatePath("terms-and-conditions")}
+          class="hover:opacity-50 text-gray-100">Terms & Conditions</a
         >
         <a
-          href="/privacy-policy/"
-          target="_blank"
+          href={translatePath("privacy-policy")}
           class="hover:opacity-50 text-gray-100">Privacy Policy</a
         >
-        <a href="/faq/" target="_blank" class="hover:opacity-50 text-gray-100"
+        <a href={translatePath("faq")} class="hover:opacity-50 text-gray-100"
           >FAQ</a
         >
       </div>

@@ -12,10 +12,690 @@
         "CULTURAL_TRAVELS": "Cultural Travels Tours",
         "MULTI_ADVENTURE_ACTIVITIES": "Multi-Adventures Tours"
     },
-    
+
+    "CANCELLATION":{
+        "TITLE": "Cancellation Policy",
+        "SUBTITLE": "Free Cancellation:",
+        "TEXT_1": "Cancel up to 48 hours before the start of the activity and you will receive a full refund",
+        "TEXT_2": "See Terms and Conditions"
+    },
+
+    "INCLUDES": {
+        "INCLUDED": "Included",
+        "NOT_INCLUDED": "Not Included",
+        "EXTRA": "Extra"
+    },
+
+    "INFORMATION_PRODUCTS": {
+        "PRICE": "Price",
+        "PRE_BOOKING": "Pre-booking",
+        "MINUMUM_OF_PERSONS": "Minimum of persons",
+        "DURATION": "Duration",
+        "ROUTE_TYPE": "Route Type",
+        "SEASON": "Season",
+        "TOTAL_DISTANCE": "Total Distance",
+        "TOTAL_ASCENT": "Total Ascent",
+        "TOTAL_DESCENT": "Total Descent",
+        "DIFFICULTY": "Difficulty",
+        "PHYSICAL_DIFFICULTY": "Physical Difficulty",
+        "TECHNICAL_DIFFICULTY": "Technical Difficulty"      
+    },
+
+    "DAY" : {
+        "DAY": "Day ",
+        "OPTIONAL": "Optional:",
+        "TOTAL_DISTANCE": "Total Distance",
+        "TOTAL_ASCENT": "Total Ascent",
+        "TOTAL_DESCENT": "Total Descent",
+        "ROUTE_TYPE": "Route Type",
+        "DURATION": "Duration Trial",
+        "DIFFICULTY": "Difficulty",
+        "PHYSICAL_DIFFICULTY": "Physical Difficulty",
+        "TECHNICAL_DIFFICULTY": "Technical Difficulty"    
+    },
+
+    "TAILOR_MADE": { 
+        "TITLE": "Tailor-Made Travel",
+        "TITLE_1": "A journey created with a personal touch",
+
+        "STEPS_TITLE" : "Craft your dream trip!",
+        "STEPS_SUBTITLE_1" : "Tailored to your desires, our tours are fully personalized or can be modified from existing ones. Perfect for families, friends, or incentive trips. You choose the motivations, destinations, trip duration, accommodations, and activities, allowing flexible, pace-setting travel.",
+        "STEPS_SUBTITLE_2" : "Let us create an unforgettable journey for you!",
+
+        "STEPS_CARD_1_TITLE" : "Travel Motivation",
+        "STEPS_CARD_1_TEXT" : "Tell us about your travel motivation and send us our inquiry form. We will contact you after receiving your inquiry form.",
+
+        "STEPS_CARD_2_TITLE" : "Design",
+        "STEPS_CARD_2_TEXT" : "Crafting your journey with a personal touch, we ensure every detail reflects your unique preferences, making it an unforgettable experience tailored just for you.",
+
+        "STEPS_CARD_3_TITLE" : "Presentation",
+        "STEPS_CARD_3_TEXT" : "Presenting you with a personalized Travel & Tour Proposal tailored to your preferences and desires.",
+
+        "STEPS_CARD_4_TITLE" : "Adjustment",
+        "STEPS_CARD_4_TEXT" : "Together we adjust the travel proposal with you until we reach your preferences and expectations.",
+
+        "WHY_TITLE" : "Why travel with",
+        "WHY_TITLE_AFTER_BR" : "Montaraz Outdoors & Culture?",
+
+        "WHY_CARD_1_TITLE" : "Save Time",
+        "WHY_CARD_1_TEXT" : "Relax and enjoy yourself! You don't have to organize anything. All you have to do is provide information and we will handle the rest to meet your specific needs",
+
+        "WHY_CARD_2_TITLE" : "24/7 Support during tours",
+        "WHY_CARD_2_TEXT" : "Access to 24/7 travel support brings peace fo mind. Medical emergency, lost documents, or other urgent matters, having a 24/7 support is invaluable. You have a team ready to assist you whenever needed.",
+
+        "WHY_CARD_3_TITLE" : "Personal Touch",
+        "WHY_CARD_3_TEXT" : "Traveling on a budget means you have control over your vacation. One-of-a-kind-moment means distinctly personal and adaptable to you and your specific requirements.",
+
+        "WHY_CARD_4_TITLE" : "Sustainable Travel",
+        "WHY_CARD_4_TEXT" : "We promote and seek sustainable travel by encouraging travelers to make conscious choices that take into account the environmental, social, and economic impacts of tourism and aim for a more responsible and fulfilling adventure.",
+
+        "BANNER_TITLE" : "Interested in a Tailor-Made Travel designed",
+        "BANNER_TITLE_AFTER_BR" : "exclusively for you?",
+        "BANNER_BUTTON" : "Fiil out our inquiry form"
+
+    },
+
+    "FORM_TAILOR":{
+        "TITLE": "Tailor-Made Travel Inquiry Form",
+        "SUBTITLE": "Montaraz Outdoor & Culture will reach out after reviewing your travel inquiry. We will answer you within 3 weekdays by email.",
+        
+        "PERSONAL_INFO": "Personal Information",
+
+        "TRAVEL_INFO": "Travel information",
+        "TRAVEL_INFO_AIRPORT": "Arrival Airport Name",
+        "TRAVEL_INFO_DATE": "Arrival Date",
+        "TRAVEL_INFO_LENGTH": "Length of your trip in days",
+        "TRAVEL_INFO_EXPERIENCE": "Which experience are you looking for?",
+        "TRAVEL_INFO_TRAVELERS": "How many travelers and age?",
+        "TRAVEL_INFO_ROOM": "Room preference",
+        "TRAVEL_INFO_PLACES": "Which places would you like to explore?",
+        "TRAVEL_INFO_SPECIAL": "Special interests?",
+        "TRAVEL_INFO_IMPORTANT": "What are the most important things you look in a vacation?",
+        "TRAVEL_INFO_COMMENTS": "Do you have any comments or special requests?",
+        
+        "BOOKING_STEPS": "Booking Steps",
+
+        "BOOKING_STEPS_1": "Step 1 Request",
+        "BOOKING_STEPS_1_TEXT": "We will answer you within 3 weekdays by email to confirm availability.",
+        
+        "BOOKING_STEPS_2": "Step 2 Travel & Tour Proposal",
+        "BOOKING_STEPS_2_TEXT": "We will send you a Travel & Tour Proposal outlining your Private Tour with the price per person and information like travel itineraries, accommodation details, range of activities, necessary documents, and more. Any Travel & Tour Proposal can be modified to meet all your interests and to create your personalized holiday",
+
+        "BOOKING_STEPS_3": "Step 3 Hold your date",
+        "BOOKING_STEPS_3_TEXT": "After creating your private tour we hold the Travel & Tour Proposal for 15 days with no obligation.",
+
+        "BOOKING_STEPS_4": "Step 4 Release of liability form",
+        "BOOKING_STEPS_4_TEXT": "The clients are required to complete and sign our release of liability form and understand the full terms and conditions of the provided tours. Signatures are required before pre-reservation. We're unable to allow travelers to participate in any aspect of Montaraz Outdoors & Culture tours without a signed release form.",
+
+        "BOOKING_STEPS_5": "Step 5 Deposit & Pre-reservation",
+        "BOOKING_STEPS_5_TEXT": "The tour is officially reserved when the client deposits 20% of the total tour price per person before the 15-day hold period ends. If no deposit is received, your Travel & Tour Poposal will be canceled. We’ll officially confirm your pre-reservation after the deposit of 20% of the total tour price per person. Any adjustments and modifications requested from the client after the pre-reservation will have a final adjusted price added to the total price",
+
+        "BOOKING_STEPS_6": "Step 6 The remaining balance",
+        "BOOKING_STEPS_6_TEXT": "We send the client an email with the remaining balance.",
+
+        "BOOKING_STEPS_7": "Step 7 Final Payment + Travel insurance",
+        "BOOKING_STEPS_7_TEXT": "The total trip price must be received by us no later than the final total payment due date (see booking conditions and cancel policy). If the balance is not paid by the due date, we treat your booking as canceled and cancellation charges apply. We’ll officially confirm your final payment after the deposit of the rest of the total price per person. The client needs to take adequate valid travel insurance at their own cost to book the tour and ensure they have read and understood the full terms and conditions of your travel insurance policy to ensure that they are covered for all activities you intend to take during the trip. Montaraz Outdoors & Culture won't be able to help you obtain any insurance",
+
+        "IMPORTANT_STEPS": "Important",
+
+        "IMPORTANT_1": "It is your responsibility to arrange appropriate travel insurance",
+        "IMPORTANT_2": "It is your responsibility to arrange your flights",
+        "IMPORTANT_3": "¡Double Check! Ensure you have read and understood the full terms and conditions of your travel insurance policy to ensure that you are covered for all activities you intend to undertake whilst on the tour. Your Insurance Policy must fully cover you for medical expenses and emergency repatriation to your home country",
+        "IMPORTANT_4": "I confirm that I understand this planning service",
+        "IMPORTANT_5": "I understand that I can stop the planning process without any cost",
+        "IMPORTANT_6": "I also understand and agree that the client has the right to cancel the tour in writing and sign to us. Once we receive your notice, the cancellation will take effect. Your deposit will be returned to the same account that you have made the payment. The returned amount depends on the cancellation charges. Bank charges to make the transaction may apply and will be deducted from the returned amount",
+
+        "CHECK_1":"I have read and understood the booking steps.",
+        "CHECK_2":"I have read and understood the important information",
+        "CHECK_3":"I have read and accept the ",
+        "CHECK_A":"Privacy Policy ",
+        "CHECK_BUTTON":"Send Message"
+
+    },
+
+
+    "ABOUT": {
+        "ABOUT": "About",
+        "TITLE": "Montaraz",
+        "TITLE_1": "Outdoors & Culture",
+        "SUBTITLE": "Montaraz Outdoors & Culture, based in Granada, in southern Spain, is an Adventure Travel Company specializing in Active Holidays.",
+        "HERO_1": "The Great Outdoors",
+        "HERO_1_TEXT": "Take time to travel",
+        "HERO_2": "New Experiences",
+        "HERO_2_TEXT": "Explore our true outdoor travel experiences suitable for anyone who enjoys an active way of traveling",
+        "HERO_3": "Small Group Travel",
+        "HERO_3_TEXT": "Allows people to feel Freedom to go at their own pace and get to know their travel companies",
+        "HERO_4": "Professional Guide",
+        "HERO_4_TEXT": "With many years of extensive expertise and local knowledge",
+        "HERO_5": "Sustainable Travel",
+        "HERO_5_TEXT": "Being more conscious of how we travel, we seek to minimize negative impacts on the environment and aim to have a positive social impact on local communities and economies.",
+        "TEAM": "Team",
+        "QUOTE": "At a young age, I began traveling the world. Since then, my life has been a voyage of discovery. As a result of this adventurous lifestyle, I have turned my passion into a profession and founded the company Montaraz Outdoors and Culture.",
+        "QUOTE_1": "Founder Montaraz Outdoors and Culture",
+
+        "MICHAEL_CHARGE":"Founder / Project Manager / Mountain Guide / Cycle Guide",
+        "MICHAEL_NATIONALITY":"Belgium",
+        "MICHAEL_LENGUAGES":"Dutch / Spanish / French / English",
+        "MICHAEL_QUALIFICATION":"Mountain Sport Technician / Socio nº1945 AEGM / UIMLA",
+
+        "JOSE_CHARGE":"Project Manager / Cycle Guide",
+        "JOSE_NATIONALITY":"Spain",
+        "JOSE_LENGUAGES":"Spanish / English",
+        "JOSE_QUALIFICATION":"Cycle guide / Bicycle Mechanic",
+
+        "MARIA_CHARGE":"Operation Coordinator",
+        "MARIA_NATIONALITY":"Spain",
+        "MARIA_LENGUAGES":"Spanish / English",
+        "MARIA_QUALIFICATION":"Nurse / Phd Midwifery",
+
+        "MANUEL_CHARGE":"Ski Instructor",
+        "MANUEL_NATIONALITY":"Spain",
+        "MANUEL_LENGUAGES":"Spanish / English",
+        "MANUEL_QUALIFICATION":"Bachelor's Degree in Sport Sciences / Specialization in high performance skiing / Master in Physical Education / Sports Technician Alpine Skiing",
+
+        "ANXO_CHARGE":"Guide / Rock climbing Instructor",
+        "ANXO_NATIONALITY":"Spain",
+        "ANXO_LENGUAGES":"Spanish / English",
+        "ANXO_QUALIFICATION":"Graduate Diploma in Philosophy /Climbing Sports Technician / Sports Technician Mountain and Climbing"
+        
+    },
+
+    "CONTACT":{
+        "TITLE": "Contact",
+        "SUBTITLE": "Get Ready To Create New Experiences",
+        "TEXT": "Contact Monataraz Outdoors & Culture",
+        "DIRECTION": "Spain, Granada",
+        "NAME": "Full Name",
+        "EMAIL":"Email Address",
+        "TEXT_1": "Your Message",
+        "SEND": "Send Message"
+    },
+
+    "TERMS":{
+        "TITLE": "Terms and Conditions",
+        "SUBTITEL_1": "Conditions of travels",
+        "SUBTITEL_2": "Liability Release",
+
+        "TEXT_1": "I have applied to participate in the tour appointed on the website Montaraz Outdoors & Culture. I am participating in this trip with the knowledge of the numerous risks and dangers involved including but not limited to: negligence in any manner on the part of Montaraz Outdoors &; Culture including, without limitation, negligence in the conduct or arrangement of the trip in any respect from inception to completion, negligence with regard to bicycle selection or maintenance, the use, installation or maintenance of any optional or add-on equipment such as pedals for cycle tours or other equipment for hiking and multi adventure tours and etc., in the maintenance or operation of any van or other motor vehicle utilized to transport passengers, etc.; acts of God or force majeure, acts of war or civil unrest, insurrection or revolt, acts of government, strikes or other labor activities; physical exertion for which I am not prepared; negligent or reckless cycling by the participant or others; inability to properly operate a bicycle; forces of nature; weather conditions; transportation failures or the failure of any transportation mechanism to arrive or depart timely or safely, whether by plane, train, auto, boat, canoe, kayak, bicycle, ski, horseback or other animal, by foot, or by any other conveyance; dangers associated with swimming or jumping from boats including the possibility of hitting a boat, an object or a person while doing so, being caught in rough or rapidly moving waters, etc., consumption of alcoholic beverages, medications or other substances whether or not prescribed; risks associated with food, food allergies or impure water; terrorism or the threat thereof; criminal activity; bites from or dangers associated with wild or other animals, pests or insects; negligence or willful misconduct by third parties; breakdown or failure of bicycles or other equipment; financial default of any supplier; high altitude; accident, allergic reaction or illness without access to means of rapid evacuation or availability of medical supplies or services; the adequacy of medical attention once provided; epidemics or the threat thereof including, but not limited to, exposure to COVID-19 by any means of transmission; stolen, lost, or misplaced luggage or property; and theft or break-ins into vans, lodging rooms or elsewhere.",
+        "TEXT_2": "I acknowledge that the enjoyment and excitement of adventure travel is derived in part from the inherent risks incurred by travel and activity beyond the accepted safety of life at home or work.",
+        "TEXT_3": "I AGREE TO BE RESPONSIBLE FOR MY OWN WELFARE AND ACCEPT ANY AND ALL RISKS OF DELAY, UNANTICIPATED EVENTS, INCONVENIENCE, ILLNESS, INJURY, EMOTIONAL TRAUMA OR DEATH.",
+        "TEXT_4": "I acknowledge that the cost of all Montaraz Outdoors & Culture trips is based upon trip participants executing this Release agreement.",
+        "TEXT_5": "I agree that this Agreement shall be legally binding upon me personally, all members of my family and all minors traveling with me, and their heirs, successors, assigns, and legal representatives, it being my intention fully to assume all the risks associated with this trip and to release Montaraz Outdoors & Culture from any liability to the maximum extent permitted by law.",
+        "TEXT_6": "I understand that Montaraz Outdoors & Culture reserves the right to take photographic or film records of any of its trips and agree that Montaraz Outdoors & Culture may use any such photographic or film records for promotional and/or commercial purposes, as well as approve such use by third parties with whom Montaraz Outdoors & Culture may engage in joint marketing, without any remuneration to me. I assign to Montaraz Outdoors & Culture all rights, titles, and interests I may have in or to any media in which my name or likeness might appear.",
+        "TEXT_7": "I agree to follow all written and verbal rules of safety presented to me by Montaraz Outdoors & Culture. I understand that Montaraz Outdoors & Culture reserves the right to refuse as a trip participant or remove from a trip, without refund, any person it judges to be incapable of meeting the rigors and requirements of participating in the activities, who it judges is abusive to other trip participants, leaders or third parties, or who it determines detracts from the enjoyment of the trip by others. Montaraz Outdoors & Culture reserves the right to make route, hotel, itinerary, and trip modifications as required or desirable to improve the trip quality and/or to accommodate the comfort and well-being of guests.",
+        "TEXT_8": "Participation in tour activities of the company Montaraz Outdoors & Culture should only be considered if you are properly trained and in proper physical and medical condition to undertake cycle tour and hiking tours or multi adventure activities. You are responsible for determining whether you can meet the physical demands of the tour and your health and well-being throughout the tour remain your responsibility. If you have any doubts as to your health and fitness to participate, you should consult the company or/and a medical doctor before booking.",
+        "TEXT_9": "You acknowledge that cycle and hiking tours or multi adventurous are strenuous activities and that there are inherent dangers, risks, and certain elements of unpredictability associated with participating in the tour. You acknowledge and accept that these activities are a physically demanding sport carrying with it considerable risk of injury and potential danger of accident or collision which may result in injury. You assume responsibility and liability for all associated risks of the tour.",
+        "TEXT_10": "that he/she has been duly informed by the company Montaraz Outdoors & Culture in their compressible language of the specifications of the activities in which he/she’s going to participate and about the physical conditions needed for such participation.",
+        "TEXT_11": "that he/she knows, understands, and accepts the rules stated for the different activities and that he/she submits him/herself to the authority of the direction and/or discipline of the organization.",
+        "TEXT_12": "that he/she has been clearly and sufficiently informed about the risks of the different activities about the qualifications of the guided and about the safety measures to be taken by the organization during the activities.",
+        "TEXT_13": "that he/she doesn’t suffer any illness, disability, or medical restriction for the practice of these activities.",
+        "TEXT_14": "the client acknowledges that he/she is in good physical and mental conditions suitable for such activity, not having any physical or mental illness that prevents or undermines the realization of such activity.",
+        "TEXT_15": "that he/she assumes voluntarily the risks of the sport and/or adventure’s activity and, therefore, relieves the organization of any damage or prejudice that he/she may suffer during the activity. Such exemption does not include the damages or prejudices caused by the negligence of the organization.",
+        "TEXT_16": "that you are responsible for compliance with all laws of the country or countries in which the tour operates, including all traffic regulations and drug regulations. It is your responsibility to ensure you are aware of these laws and regulations.",
+
+        "SUBTITEL_3": "The non-fulfillment of any of these mentioned conditions below shall cause the immediate expulsion of our activities.",
+
+        "TEXT_17": "at all times the participant shall strictly follow the instructions and itinerary established by the guide/s.",
+        "TEXT_18": "at all times the participant must cycle with both hands always resting on the handlebar and is warned of its danger during cycle tours.",
+        "TEXT_19": "it is compulsory to wear a helmet always when the activity takes place during cycle tours.",
+        "TEXT_20": "to ensure safety and protection Montaraz Outdoors & Culture requires a European standard helmet to be worn at all times while riding a Bicycle Tour.",
+        "TEXT_21": "it is forbidden to overtake the guides and carry out actions with the bicycle that endanger their safety or during a hiking activity.",
+        "TEXT_22": "the client understands and accepts the rule of not doing the activity under the influence of alcohol and/or drugs. Participation under the influence of alcohol and/or drugs is completely forbidden. The intake of such substances before or during the activity is explicitly forbidden. In this case, the organization shall not be responsible for damages resulting from this action, also declining any legal liability arising therefrom.",
+
+        "SUBTITEL_4": "Insurance and booking conditions.",
+
+        "TEXT_23": "the client needs to take adequate valid travel insurance at their own cost to book the tour and ensure they have read and understood the full terms and conditions of your travel insurance policy to ensure that you are covered for all activities you intend to undertake during the trip.",
+        "TEXT_24": "the client has to deal directly with the insurance company in case of settlement of any claim.",
+        "TEXT_25": "the full payment must be received by procedures laid down under Payment Terms. If not paid in time, the company reserves the right to cancel the booking with consequent loss of deposit and apply the scale of cancellation charges as mentioned in the cancellation policy.",
+        "TEXT_26": "the minimum number of participants; all offered tours will take place at a minimum number of participants, if this number is not reached, the company may cancel the trip until 45 days before its starting date and he/she will be entitled to a full refund of the total trip price for multi-day tours.",
+
+        "SUBTITEL_5": "Others",
+
+        "TEXT_27": "the company shall not be responsible and /or liable for any damages caused to the client due to reasons beyond the control of the company.",
+        "TEXT_28": "the company shall not be responsible and/or liable for the loss of baggage or personal belongings caused to the client due to reasons beyond the control of the company.",
+        "TEXT_29": "in the case where a client along with his family is compelled to discontinue any kind of tour organized by Montaraz Outdoors & Culture due to any reason whatsoever including illness, death, or loss of any travel documents. No claim shall be entertained for a refund of unutilized services. Even if a client is unable to reach the place of commencement due to any reason whatsoever including loss of baggage or loss of travel documents, his booking shall be treated as cancellation and 100% cancellation charges will be charged.",
+        "TEXT_30": "the company shall, in no circumstances whatsoever be liable to the client or any person traveling with him/her for any death, personal injury, sickness, accident, loss, delay, discomfort, increased expenses, consequential loss, and/or damage, or any kind of theft, howsoever caused.",
+        "TEXT_31": "the company reserves the right to withdraw participation of any client whose behavior is deemed likely to affect the smooth operation of the tour or adversely affect the enjoyment or safety of other participants and shall be under no liability to any such person.",
+        "TEXT_32": "Apersonal data the company holds will be deleted after any tour unless he/she wants to receive information about other or new activities, the company will save their phone number and e-mail address, and the other personal data provided will be deleted.SD",
+
+        "SUBTITEL_6": "Release of liability form.",
+        
+        "TEXT_33": "The clients are required to complete and sign our release of liability form and understand the full terms and conditions of the provided tour. Signatures are required before pre-reservation. We're unable to allow travelers to participate in any aspect of a Montaraz Outdoors & Culture tour without a signed release form.",
+        "TEXT_34": "I HAVE CAREFULLY READ THIS LIABILITY RELEASE FORM AGREEMENT AND FULLY UNDERSTAND ITS CONTENTS.",
+
+        "SUBTITEL_7": "Booking Conditions",
+
+        "TEXT_35": "Booking a tour: Montaraz Outdoors & Culture provides the best possible way to flexible booking policies to plan better your holiday.",
+        "TEXT_36": "Reserve your trip anytime at the website Montaraz Outdoors & Culture by email, text message, or call.",
+        "TEXT_37": "The sooner you book, the more options you’ll have in terms of dates.",
+        "TEXT_38": "Price. All the tours have detailed information on all items included in the tour price.",
+        "TEXT_39": "Booking 1 day tour. The tour is officially reserved when the client deposits 100% of the total tour price per person. We’ll confirm your reservation after the deposit of 100% of the total tour price per person. The final booking date is 48 hours before departure. 1-day tours with a different final booking date will be mentioned in the tour description.",
+        "TEXT_40": "Booking a multi-day tour. The tour is officially reserved when the client deposits 20% of the total tour price per person. We’ll confirm your pre- reservation after the deposit of 20% of the total tour price per person. The final payment due date is mentioned in the tour description. If the balance is not paid by the due date, we treat your booking as canceled and cancellation charges apply (see cancellation fees for multi-day tours). We’ll officially confirm your final payment after the deposit of the rest of the total price per person.",
+
+        "SUBTITEL_8": "Booking a Tailor-made tour.",
+
+        "TEXT_41": "The tours are fully personalized or can be modified from existing ones.",
+        "TEXT_42": "Booking steps:",
+        "TEXT_43": "Request",
+        "TEXT_44": "Travel and tour proposal",
+        "TEXT_45": "We hold your date for 15 days with no obligation",
+        "TEXT_46": "Release of liability form. The clients are required to complete and sign our release of liability form and understand the full terms and conditions of the provided tours. Signatures are required before pre-reservation. We're unable to allow travelers to participate in any aspect of a Montaraz Outdoors & Culture tour without a signed release form.",
+        "TEXT_47": "Deposit and pre-reservation. The tour is officially reserved when the client deposits 20% of the total tour price per person before the 15-day hold period ends. If no deposit is received, your Travel & Tour Proposal will be canceled. We’ll officially confirm your pre- reservation after the deposit of 20% of the total tour price per person.",
+        "TEXT_48": "The remaining balance. We send the client an email with the remaining balance.",
+        "TEXT_49": "Final Payment + Travel insurance. The total tour price must be received by us no later than the final total payment due date. If the balance is not paid by the due date, we treat your booking as canceled and cancellation charges apply. We’ll officially confirm your final payment after the deposit of the rest of the total price per person. (The final total payment due date and cancellation charges will be mentioned in the tour description)",
+        "TEXT_50": "Adjustments. Any adjustments and modifications requested from the client after the pre-reservation will have a final adjusted price added to the total price.",
+
+        "SUBTITEL_9": "Travel insurance.",
+
+        "TEXT_51": "The client needs to take adequate valid travel insurance at their own cost to book a multi-day tour and ensure they have read and understood the full terms and conditions of their travel insurance policy to ensure that they are covered for all activities they intend to undertake during the trip. Montaraz Outdoors & Culture will not provide any assistance in obtaining any insurance.",
+
+        "SUBTITEL_10": "Release of liability form.",
+
+        "TEXT_52": "The clients are required to complete and sign our release of liability form and understand the full terms and conditions of the provided tours. Signatures are required before pre-reservation. We're unable to allow travelers to participate in any aspect of a Montaraz Outdoors & Culture tour without a signed release form.",
+        
+        "SUBTITEL_11": "Cancellation policy",
+
+        "TEXT_53": "The client has the right to cancel the tour in writing and sign if the cancellation takes place more than the given date. Once we receive your notice, the cancellation will take effect. How to Cancel Your Tours:",
+        "TEXT_54": "Write an e-mail to Montaraz Outdoors & Culture.",
+        "TEXT_55": "After you have canceled your tour, your deposit will be returned to the same account that you have made the payment. The returned amount depends on the cancellation charges. Bank charges will be deducted.",
+        "TEXT_56": "You will be entitled to a full refund of the total trip price if we cannot guarantee your trip by not having a minimum group size. If a cancellation has to be made, we will inform you immediately and notify you of cancellation not less than 45 days before the start of your trip.",
+        "TEXT_57": "You will be entitled to a full refund of the trip price because of extraordinary circumstances, such as warfare, significant risks to human health, or a natural disaster such as weather conditions, making travel impossible.",
+
+        "SUBTITEL_12": "Booking a 1-day tour.",
+
+        "TEXT_58": "If cancellation takes place more than 48 hours before departure, your full deposit will be returned.",
+        "TEXT_59": "If canceled within 48 to 24 hours before departure, a cancellation fee of 50% of the total trip price.",
+        "TEXT_60": "If canceled less than 24 hours before departure, a cancellation fee of 100% of the total price.",
+        "TEXT_61": "Deposit and pre-reservation: 100 % per person",
+        "TEXT_62": "The full deposit will be returned: more than 48 hours before departure",
+        "TEXT_63": "Final total payment due date: 48 hours before departure",
+        "TEXT_64": "1-day tours with a different final booking date and final total payment due date will be mentioned in the tour description.",
+        "TEXT_65": "The returned amount depends on the cancellation charges. Bank charges will be deducted.",
+
+        "SUBTITEL_13": "Booking a 2-day tour.",
+
+        "TEXT_66": "If cancellation takes place more than 4 days before departure, your full deposit will be returned.",
+        "TEXT_67": "If canceled from 4 to 2 days before departure, a cancellation fee of 50% of the total trip price.",
+        "TEXT_68": "If canceled less than 48 before departure, a cancellation fee of 100% of the total price.",
+        "TEXT_69": "Deposit and pre-reservation: 100 % per person",
+        "TEXT_70": "The full deposit will be returned: more than 4 days before departure",
+        "TEXT_71": "Final total payment due date: 4 days before departure",
+        "TEXT_72": "2-day tours with a different final booking date and final total payment due date will be mentioned in the tour description.",
+        "TEXT_73": "The returned amount depends on the cancellation charges. Bank charges will be deducted.",
+
+        "SUBTITEL_14": "Booking a 4-day tour.",
+
+        "TEXT_74": "If cancellation takes place more than 30 days before departure, your full deposit will be returned.",
+        "TEXT_75": "If canceled from 30 to 21 days before departure, 20% of the total trip price.",
+        "TEXT_76": "If canceled from 21 to 14 days before departure, 50% of the total trip price.",
+        "TEXT_77": "If canceled less than 14 days before departure, 100% of the total trip price.",
+        "TEXT_78": "Deposit and pre-reservation: 20 % per person",
+        "TEXT_79": "The full deposit will be returned: more than 30 days before departure",
+        "TEXT_80": "Final total payment due date: the total tour price must be received by us no later than 30 days before departure. If the balance is not paid by the due date, we treat your booking as canceled and cancellation charges apply.",
+        "TEXT_81": "The returned amount depends on the cancellation charges. Bank charges will be deducted.",
+        "TEXT_82": "Multi-day tours with a different final total payment due date and cancellation charges will be mentioned in the tour description",
+
+        "SUBTITEL_15": "Booking tours for 8 days or more.",
+
+        "TEXT_83": "If cancellation takes place more than 30 days before departure, your full deposit will be returned.",
+        "TEXT_84": "If canceled from 30 to 21 days before departure, 20% of the total trip price.",
+        "TEXT_85": "If canceled from 21 to 14 days before departure, 50% of the total trip price.",
+        "TEXT_86": "If canceled less than 14 days before departure, 100% of the total trip price.",
+        "TEXT_87": "Deposit and pre-reservation: 20 % per person",
+        "TEXT_88": "The full deposit will be returned: more than 45 days before departure",
+        "TEXT_89": "Final total payment due date: the total tour price must be received by us no later than 45 days before departure. If the balance is not paid by the due date, we treat your booking as canceled and cancellation charges apply.",
+        "TEXT_90": "The returned amount depends on the cancellation charges. Bank charges will be deducted.",
+
+        "SUBTITEL_16": "Booking a tailor-made tour.",
+
+        "TEXT_91": "Deposit and pre-reservation: the tour is officially reserved when the client deposits 20% of the total tour price per person before the 15- day hold period ends. If no deposit is received, your Travel & Tour Proposal will be canceled. We’ll officially confirm your pre- reservation after the deposit of 20% of the total tour price per person.",
+        "TEXT_92": "The final total payment due date and cancellation charges will be mentioned in the tour description."
+        
+    },
+
+   "PRIVACY": {
+        "TITLE": "Privacy Policy",
+        "TEXT_1": "This privacy policy describes how we obtain, store, and use your personal information when you use or interact with our website, or when we obtain or collect your personal information through other channels such as email, phone, written communication, or social media. By using our website or other channels or sharing your personal information with us, you accept and agree to the practices described in this privacy policy.",
+        "TEXT_2": "This privacy policy sets out the terms under which the information provided by its users is used and protected when using its website. This company is committed to the security of its users' data. When we ask you to fill in personal information that can identify you, we do so to ensure that it is only used in accordance with the terms of this document. However, this privacy policy may change or be updated over time, so we recommend and emphasize that you continually review this page to ensure that you agree with such changes.",
+        "TEXT_3": "Please read this privacy policy carefully.",
+        "SUBTITEL_1": "Cookies",
+        "TEXT_5": "A cookie refers to a file that is sent to request permission to be stored on your computer. Upon accepting said file, it is created and the cookie is then used to obtain information regarding web traffic and also facilitates future visits to a website. Another function that cookies have is that with them the websites can recognize you individually and therefore provide you with the best personalized service on their website.",
+        "TEXT_6": "Our website uses cookies to identify the pages that are visited and their frequency. This information is used only for statistical analysis and then the information is permanently deleted. You can delete cookies at any time from your computer. However, cookies help to provide a better service on the websites, they do not give access to information from your computer or you unless you want it and you directly provide it. You can accept or deny the use of cookies, however, most browsers automatically accept cookies as it serves to have a better web service. You can also change your computer settings to decline cookies. If they decline, you may not be able to use some of our services.",
+        "SUBTITEL_2": "Personal Information",
+        "TEXT_7": "We collect personal information about you when you provide it to us, such as through your use of our website and its features, when you contact us directly by email, phone, in writing, or via social media, when you book our tours, specific information may be required to reserve an activity, or when you use any of our applications or any other means by which you provide personal information to us. The type of information we collect about you may include information such as:",
+        "TEXT_8": "Your name",
+        "TEXT_9": "Your email address",
+        "TEXT_10": "Your address",
+        "TEXT_11": "Your phone number",
+        "TEXT_12": "Demographics (e.g. gender, birth date)",
+        "TEXT_13": "Passport data (e.g. passport number, country of issuance, date of issuance, and expiration date)",
+        "TEXT_14": "Medical/Dietary data (e.g. information regarding your medical and physical conditions, dietary restrictions and requirements, and food allergies that may be relevant to your participation in our trips)",
+        "SUBTITEL_3": "Use of collected information",
+        "TEXT_15": "Our website uses the information to provide the best possible service, particularly to maintain a record of users, and orders if applicable, and to improve our products and services.",
+        "TEXT_16": "The types of data that can be requested and processed are:",
+        "TEXT_17": "Identification data.",
+        "TEXT_18": "We also automatically collect data about your visit to our website as described in the cookie policy.",
+        "TEXT_19": "Whenever we request your Personal Data, we will inform you what personal data we collect and for what purpose. In general, we collect and process your data for:",
+        "TEXT_20": "Provide information, services, products, relevant information, and news in the sector.",
+        "TEXT_21": "Sending communications may be sent periodically through our site with special offers, new products, and other advertising information that we consider relevant to you or that may provide you with some benefit, these emails will be sent to the address you provide.",
+        "TEXT_22": "Process transactions and facilitate your participation on our trips.",
+        "TEXT_23": "Help us serve you better, including personalizing your online experience and tailoring content, recommendations, and offers we display to you.",
+        "TEXT_24": "We honor all requests not to receive mail, telephone, or other solicitations from Montaraz Outdoors & Culture.",
+        "SUBTITEL_4": "How we share your data",
+        "TEXT_26": "When you access or use our website, we collect and process your personal information for the purposes described in this policy. We rely on several legal bases to use your information in these ways. These legal bases include:",
+        "TEXT_27": "Consent. We may share your data if you have given us specific consent to use your personal information in a specific way or for a specific purpose.",
+        "TEXT_28": "Performance of a Contract. Where we have entered into a contract with you, we may share your personal information to fulfill the terms of our contract.",
+        "TEXT_29": "Legal Obligations. We may disclose your information where we are legally required to do so to comply with applicable law, governmental requests, a judicial proceeding, court order, or legal process, such as in response to a court order or a subpoena (including in response to public authorities to meet national security or law enforcement requirements).",
+        "TEXT_30": "Third-Party Service Providers. We may share your data with third-party vendors, service providers, contractors, or agents who perform services for us or on our behalf and require access to such information to do that work. Examples include hotels, tour guides, pre/post, and on-trip service providers, payment processors, information processors, data analysts, email delivery providers, hosting service providers, and third parties that assist us with our customer service and marketing efforts. Those companies will be permitted to obtain only the personal data they need to provide the service.",
+        "SUBTITEL_5": "Retention of Personal Data",
+        "TEXT_31": "We retain your personal information for as long as it is necessary for the purposes set out in this Privacy Policy, or for a longer retention period if required or permitted by law (such as tax, accounting, or other legal requirements).",
+        "TEXT_32": "When we have no ongoing legitimate business need to process your personal information, or if you ask that your personal information be deleted, we will either delete it.",
+        "SUBTITEL_6": "Security of Personal Data",
+        "TEXT_33": "Montaraz Outdoors & Culture takes precautions to ensure that personal information is kept private. Please note that we cannot guarantee the security of personal information. Unauthorized entry or use, hardware or software failure, and other factors may compromise the security of personal information at any time.",
+        "SUBTITEL_7": "Children’s Privacy",
+        "TEXT_34": "We collect information about minors (under the age of 18 years old), including name and contact data, demographic data, passport data, and medical/dietary data, when traveling together with their parents.",
+        "TEXT_35": "We do not knowingly collect or solicit personal information from minors (under the age of 18 years old) when not traveling together with their parents, and/or without verified parental consent",
+        "TEXT_36": "In the event we learn we have collected personal information from a minor without verified parental consent, we will delete that information as soon as possible. If you believe we may have any such information from a minor, please contact us.",
+        "SUBTITEL_8": "Forums and Other Interactive Services",
+        "TEXT_37": "Our website and the other channels we use may include discussion forums or other interactive areas or services, including blogs, chat rooms, bulletin boards, message boards, reviews, social media postings, uploaded photographs or videos, or other areas or services in which you or third parties create, post or store content, messages, comments, materials or other items (“Interactive Areas”). If you use an Interactive Area, you should be aware that these areas, including any personal data you post or provide, may be viewable by others and may be publicly distributed outside the channels in perpetuity.",
+        "TEXT_38": "We are not responsible for public disclosure of personal data you submit in connection with the Interactive Areas, nor are we responsible for how others might use that information, including sending you unsolicited messages. Interactive Area postings may be retained indefinitely. If at any time you would like to request that we remove a posting, please contact us a request and be sure to include your full name, email address, and information sufficient to permit us to locate the submission(s) that you are requesting be removed. In some cases, we may remove only your personal information, but maintain the rest of your submission. Removal of a posting from an Interactive Area is at our discretion. Removal of a posting from an Interactive Area does not necessarily mean that the posting will be deleted from our backend systems, nor does it ensure complete or comprehensive removal of postings that may have been copied by third parties while publicly accessible.",
+        "SUBTITEL_9": "YOUR RIGHTS General Data Protection Regulation (GDPR)",
+        "TEXT_39": "Access your personal data and any other information indicated in Article 15.1 of the RGPD",
+        "TEXT_40": "Rectify your personal data that is inaccurate or incomplete by Article 16 of the GDPR.",
+        "TEXT_41": "Delete your personal data by Article 17 of the GDPR.",
+        "TEXT_42": "Limit the processing of your personal data by Article 18 of the GDPR.",
+        "TEXT_43": "Request the portability of your data by Article 20 of the GDPR.",
+        "TEXT_44": "Object to the processing of your personal data by Article 21 of the GDPR",
+        "TEXT_45": "If you have given your consent for a specific purpose, you have the right to withdraw the consent given at any time, without affecting the legality of the processing based on the consent before its withdrawal.",
+        "TEXT_46": "You can exercise these rights by sending a motivated and accredited communication to us",
+        "TEXT_47": "Upon your request, we will delete your information from our active databases. However, some information may be retained in our files to prevent fraud, troubleshoot problems, assist with any investigations, and/or comply with legal requirements.",
+        "SUBTITEL_10": "LEGAL INFORMATION",
+        "TEXT_48": "The requirements of this Policy complement, and do not replace, any other requirements under applicable data protection law, which will prevail in any case",
+        "TEXT_49": "This Policy is subject to periodic review and may be modified by the company at any time. When this occurs, we will notify you of any changes and ask you to re-read the most recent version of our Policy and confirm your acceptance.",
+        "SUBTITLE_11": "If you have any questions, comments or concerns about our Privacy Policy, please contact us."        
+    },
+
+    "FAQ": {
+        "TITLE": "FAQ",
+        "SUBTITEL_1": "RESERVATION",
+        "QUESTION_1": "How do I book my tour online?",
+        "TEXT_1": "Any activity must be booked by sending us an e-mail with the following details: The name of the activity, the date of joining the activity, how many persons. Full name, date of birth, phone number, e-mail, nationality. Height and weight for cycling tours or multi-adventure activities.",
+
+        "QUESTION_2": "How far in advance do I need to book my activity?",
+        "TEXT_2": "The sooner you book, the more likely the tour will be confirmed, as every activity has a minimum number of persons required to proceed the reservation. If you’re looking for a multi-day tour, the reservation requires an earlier booking date according to the cancellation policy of the activity.",
+
+        "QUESTION_3": "What if I want to book a Private Tour?",
+        "TEXT_3": "Any activity can be booked as a private tour. For private tours, you can send us a TailerMade Travel document which you can find in the header of the page, or send us an email with your request.",
+
+        "QUESTION_4": "Tailor-Made Travel?",
+        "TEXT_4": "Any tour can be modified to meet the interests and preferences of the customer. We create and organize a personalized tour ideal when traveling as a family, a group of friends, or on an incentive trip. You determine the duration of the trip, destination preferences, type of accommodations, and a range of activities with full flexibility to travel at your own pace.",
+
+        "QUESTION_5": "Price Private Tours?",
+        "TEXT_5": "The price per person varies based on how many people, the destination, accommodation, the duration of your holiday, the range of activities, and the time of year you travel.",
+       
+       "QUESTION_6": "Booking steps Private Tours?",
+        "TEXT_6": "See Tailer-Made Travel which you can find in the header of the page.",
+        
+        "QUESTION_7": "When should I book a Private Tour or a Tailer-Made Travel?",
+        "TEXT_7": "The sooner you book, the more options you’ll have in terms of dates, accommodations, and the range of activities.",
+
+        "QUESTION_8": "How much is the tour deposit?",
+        "TEXT_8": "See Terms & Conditions and/or activity information.",
+
+        "QUESTION_9": "Is my deposit refundable?",
+        "TEXT_9": "See Terms & Conditions.",
+
+        "QUESTION_10": "When will I receive more detailed information about my trip so I can start planning my travel?",
+        "TEXT_10": "General information of each activity you find in the trip notes. Detailed information about the activity will be sent after making a pre-reservation.",
+
+        "QUESTION_11": "My departure is not guaranteed. When will I know if my trip will run so I can book flights?",
+        "TEXT_11": "If a cancellation has to be made, we will inform you immediately and notify you of cancellation not less than 45 days before the start of your trip for multi-day tour or tours for 8 days or more. We confirm the client as soon as possible to guarantee your trip if we have reached the minimum group size.",
+
+        "QUESTION_12": "How do I get to the start of the trip and how will I get to the airport after the trip ends?",
+        "TEXT_12": "Every tour has a private transfer on the first and the last day which is mentioned in the trip notes.",
+
+        "QUESTION_13": "Will Montaraz Outdoors & Culture help me book a room before or after my trip if I’m extending my vacation?",
+        "TEXT_13": "Yes. Hotel extensions, adding an extra day or days at our selected accommodations can be arranged but have to be requested in advance",
+
+        "QUESTION_14": "Room Options?",
+        "TEXT_14": "Tours for 8 days or more: The hotel room type is a Standard Double Room assigned to two people with two individual beds or one double bed for couples with a private bathroom. Rooms are distributed, in consultation, according to the gender of the travelers. Private rooms can be booked at an additional cost for those who do not wish to be shared with other group members. Due to the limited capacity of the hotels, a single room must always be requested. Multi-day tour: The hotel room type is a Standard Double Room assigned to two people with two individual beds or one double bed for couples with a private bathroom. Rooms are distributed, in consultation, according to the gender of the travelers. Private rooms can be booked at an additional cost for those who do not wish to be shared with other group members. Due to the limited capacity of the hotels, a single room must always be requested. Possible that room options are different for multi-day tour and is mentioned in the trip notes.",
+
+        "QUESTION_15": "Confirmation hotel extensions?",
+        "TEXT_15": "We confirm your request as soon as possible. The extra cost will be added to the total price of the tour and to the deposit of 20 % to make your pre-reservation.",
+
+        "QUESTION_16": "What methods of payment are accepted?",
+        "TEXT_16": "Bank transfer payment. After booking a tour you will receive a proforma invoice with your tour- and payment details. If final payment is not received when due, we reserve the right to cancel your reservation.",
+
+        "QUESTION_17": "Do I need a Travel Insurance?",
+        "TEXT_17": "Obligatory for multi-day tour or 8 days tour or more.",
+        "TEXT_17_1": "It is your responsibility to arrange appropriate travel insurance. Ensure you have read and understood the full terms and conditions of your travel insurance policy to ensure that you are covered for all activities you intend to undertake whilst on the tour. Your Insurance Policy must fully cover you for medical expenses and emergency repatriation to your home country.",
+
+        "QUESTION_18": "Does Montaraz Outdoors & Culture offer insurance?",
+        "TEXT_18": "No",
+
+        "QUESTION_19": "Can I cancel for any reason?",
+        "TEXT_19": "The client has the right to cancel the tour in writing and signed if the cancellation takes place more than the given date. (See Cancellation Policy for each activity) Once we receive your notice, the cancellation will take effect.",
+        "TEXT_19_1": "We take our responsibility and you will be entitled to a full refund of the total trip price if we are not able to guarantee your trip by not having a minimum group size. If a cancellation has to be made, we will inform you immediately and notify you of cancellation not less than 45 days before the start of your trip. You will be entitled to a full refund of the total trip price because of extraordinary circumstances meaning warfare, significant risks to human health, or a natural disaster such as weather conditions, which make it impossible to travel safely.",
+
+        "QUESTION_20": "What if a family member gets sick or what if I get sick or injured?",
+        "TEXT_20": "Montaraz Outdoors & Culture is not responsible for any cancellations that indicates personal reasons or other reasons. If the event takes place within the cancelation charges, we treat your booking as canceled and cancellation charges apply.",
+
+        "QUESTION_21": "Dietary restrictions and food intolerance?",
+        "TEXT_21": "Please let us know when you are booking a tour. After every booked tour you will receive a confirmation where you have to fill in a question form before joining the tour.",
+
+        "QUESTION_22": "Updates and trip details?",
+        "TEXT_22": "Any update about your trip will be immediately sent by e-mail. Shortly before departure, we will send you the latest update including group details – the number of travelers, couples, and solo travelers, and the age range of the group. For privacy reasons, we don’t give any personal details. Because of the limited capacity of the hotels due to the group size, dates, etc., any changes in hotels will be immediately communicated to you.",
+
+        "SUBTITEL_2": "CYCLING & HIKING",
+        
+        "QUESTION_23": "I am unsure about being able to finish the rides or hikes?",
+        "TEXT_23": "People often have different expectations and abilities for active holidays that way we have our tours graded with difficulty levels to better inform our travelers before booking the wrong tour. All active tours have graded physical and technical levels that fit your expectations and abilities to ensure a positive travel experience. If you have any concerns about your fitness or ability to complete any of the activities, please get in touch by sending us an e-mail. We will help you select the right trip for you and advise you on how best to prepare",
+
+        "QUESTION_24": "How many hours of activity can I expect each day?",
+        "TEXT_24": "Every tour has detailed information which includes an estimated activity duration and the total time required for an activity.",
+
+        "QUESTION_25": "What kind of shape do I need to be to enjoy my trip?",
+        "TEXT_25": "The tours are graded with difficulty levels. Please have a look at our difficult rating levels or get in touch by sending us an e-mail. We will help you select the right trip for you and advise you on how best to prepare",
+
+        "QUESTION_26": "What types of bikes do you offer and how do I know what bike type is best for me?",
+        "TEXT_26": "Mountainbike / Gravelbike / Roadbike / Tourbike / E-bike",
+        "TEXT_26_1": "The type of bike depends on the tour",
+        "TEXT_26_2": "When you book a cycle tour, we will ask your height and weight to pre-select the perfect bicycle for you. Minor adjustments will be take care of on the first day of the tour. If you have any concerns about the bike selection, please get in touch and we will help you and advise you about your preferences (frame type, size, pedals, etc.)",
+
+        "QUESTION_27": "Can I bring my own bicycle?",
+        "TEXT_27": "Yes",
+
+        "QUESTION_28": "What is the minimum age for kids to ride a bike?",
+        "TEXT_28": "The minimum average age is 11 years and a minimum height of 1.50 meters which you can find in the trip notes under requirements.",
+
+        "QUESTION_29": "Is there a minimum age to ride an e-bike?",
+        "TEXT_29": "The minimum age is 11 years old and a minimum height of 1.50 meters",
+
+        "QUESTION_30": "How do I know what size bike I should request?",
+        "TEXT_30": "Check out our blog where you can find more information or contact us with your questions.",
+
+        "QUESTION_31": "Are helmets required on cycle tours?",
+        "TEXT_31": "Yes. It is obligatory to wear a helmet on our cycle tours which is included in the tour. Or you can bring your own helmet. Montaraz Outdoors & Culture takes it as a legal requirement to wear a helmet. In case of an accident resulting in personal injury, certain insurance policies are invalidated in cases where a helmet was not being worn",
+
+        "QUESTION_32": "Training Tips?",
+        "TEXT_32": "Check out our blog where you can find more information or contact us with your questions.",
+
+        "SUBTITEL_3": "ORGANIZED GROUP TRAVEL",
+
+        "QUESTION_33": "Why organized group travel?",
+        "TEXT_33": "Organized group travel has benefits and is an attractive option to offer positive experiences. One of the main benefits of organized group travel is that you don`t have to plan anything. Accommodations, itineraries, and meals are pre-arranged, which means you can focus on enjoying the trip rather than be occupied with logistical details. Also, often it can lead to significant savings when traveling as part of an organized group. It’s a chance to meet new people who share similar interests, which can enhance the travel experience. Our tours come with knowledgeable guides who can offer insights that you might not discover on your own. It provides a sense of safety, we ensure that the travel itinerary is safe, and they are prepared to handle any emergencies that may arise. We provide a structured itinerary that helps ensure you see the best sights and make the most of your time. Suitable for all ages, making it ideal for families and a wide range of age groups and interests.",
+
+        "QUESTION_34": "What can I expect?",
+        "TEXT_34": "Group travel gives you the flexibility to explore on your own on our pre-designed tours accompanied by other travelers, a great blend of personal freedom and to meet new people. The average group size is 8 with couples, friends, and individual travelers."
+    },
     "HERO_H1_1": "Explore our",
     "HERO_H1_COLOR": "True Outdoor Travel Experiences",
     "HERO_H1_2": "suitable for anyone who enjoys an active way of traveling",
     "HERO_A": "Book my Tour",
-    "CARD_HOME_1": "Guided Tours"
+    "CARD_HOME_1": "Guided Tours",
+
+    "PRODUCTS": {
+
+        "CULTURAL_TRAVELS": {
+
+            "BREATHTAKING_ROAD_TRIP_ALPUJARRAS": {
+                "TITLE": "A breathtaking road trip through the Alpujarras",
+                "LOCATION": "Alpujarras Sierra Nevada",
+
+                "PRICE": "125 (4pax.)",
+                "PRE_BOOKING": "100%",
+                "MINUMUM_OF_PERSONS": "2",
+                "DURATION": "8 - 10 Hours",
+                "ROUTE_TYPE": "Guided",
+                "SEASON": "All Year",
+                
+                "INCLUDED": {
+                    "TITLE": "Included",
+                    "TEXT_1": "Professional guide",
+                    "TEXT_2": "Liability insurance and assistance",
+                    "TEXT_3": "Transfer",
+                    "TEXT_4": "Water"
+                },
+
+                "NOT_INCLUDED": {
+                    "TITLE": "Not included",
+                    "TEXT_1": "Lunch",
+                    "TEXT_2": "Snack"
+                },
+
+                "EXTRA": {
+                    "TITLE": "Extra",
+                    "TEXT_1": "Lunch: Local restaurant",
+                    "TEXT_2": "Visit: Ham-making tradition process + tasting. Price: 10 € p.p."
+                },
+
+                "AVAILABILITY": "Availability",
+                "AVAILABILITY_TEXT": "All Year",
+
+                "HIGHLIGHT": "Highlight",
+                "HIGHLIGHT_TEXT_1": "Trip through the Alpujarras, a natural beauty between the Sierra Nevada Mountain range and the Mediterranean Sea",
+                "HIGHLIGHT_TEXT_2": "Visit Trevélez, the highest village in the Sierra Nevada, at 1.476 m",
+                "HIGHLIGHT_TEXT_3": "Visit Secadero “ham drying room” + degustation",
+                "HIGHLIGHT_TEXT_4": "Visit the three white villages “Pampaneira, Bubión, Capileira",
+                "HIGHLIGHT_TEXT_5": "Lunch in Capileira",
+                "HIGHLIGHT_TEXT_6": "The bridge of Tablate",
+
+                "PRICES": "Price:",
+                "PRICES_TEXT_1": "2 - 3 people: 150 € p.p.",
+                "PRICES_TEXT_2": "4 - 5 people: 125 € p.p.",
+                "PRICES_TEXT_3": "6 people: 120 € p.p.",
+                "PRICES_TEXT_4": "7 people: 110 € p.p.",
+                "PRICES_TEXT_5": "For families, there is a discount.",
+
+                "WHAT_TO_EXPECT": "What to expect",
+
+                "DAYS" : {
+                    "DAY_1" : {
+                        "TEXT_1": "A cultural tour of the Alpujarras offers a captivating journey through stunning landscapes and rich traditions. Starting from the city of Granada, we embark on a scenic drive toward the village Trevélez located in the heart of the Natural Park Sierra Nevada. The town is considered one of the highest in Spain and is renowned for its high-quality ham. We will visit a traditional ham drying room “Secadero”, where you will learn about curing ham and finish with an Iberian ham tasting.",
+                        "TEXT_2": "Afterward, we continue our journey through the picturesque Alpujarras, heading towards the village Pórtugos to see the beautiful orange waterfall called “Fuente Agria” which means Fountain of Sourness. Traditionally, this water is used by the people in the Alpujarras for medicinal purposes due to the high concentration of minerals in the water.",
+                        "TEXT_3": "Next, we go to the enchanting three white villages “Pampaneira, Bubión, and Capileira”. The villages, with their distinctive whitewashed buildings and narrow, winding streets, offer a glimpse into the region’s Moorish heritage. Here, we enjoy a great lunch, savoring local cuisine in Capileira, the highest town of the three.",
+                        "TEXT_4": "Later on, we stop in Pampaneira to have a little walk, buy local products, and enjoy the serene beauty of the surrounding mountains.",
+                        "TEXT_5": "Before we head back to Granada, we stop one more time at “Puente de Tablate”, the bridge and Gateway to the Alpujarras. Over the centuries this site has been the key location in many battles.",
+                        "TEXT_6": "This tour provides a perfect blend of cultural immersion and natural beauty, making it an unforgettable experience."
+                    }
+                }   
+
+            }
+        },
+        "MULTI_ADVENTURE": {
+
+            "ROCK_CLIMBING": {
+                "TITLE": "Top-Rope Rock Climbing",
+                "LOCATION": "Granada",
+
+                "PRICE": "55 - 100",
+                "PRE_BOOKING": "100%",
+                "MINUMUM_OF_PERSONS": "1",
+                "MAXUMUM_OF_PERSONS": "6",
+                "DURATION": "4 Hours",
+                "ROUTE_TYPE": "Guided",
+                "SEASON": "All Year",
+                
+                "INCLUDED": {
+                    "TITLE": "Included",
+                    "TEXT_1": "Liability insurance and assistance",
+                    "TEXT_2": "Rock climbing Sports Technician",
+                    "TEXT_3": "If necessary, personal equipment (climbing shoes, helmet, and harness)",
+                    "TEXT_4": "Transfer",
+                    "TEXT_5": "Collective material (ropes, carabiners, slings, belay devices, etc.)"
+                },
+
+                "NOT_INCLUDED": {
+                    "TITLE": "Not included",
+                    "TEXT_1": "Lunch",
+                    "TEXT_2": "Snack",
+                    "TEXT_3": "Water"
+                },
+
+                "AVAILABILITY": "Availability",
+                "AVAILABILITY_TEXT": "All Year",
+
+                "HIGHLIGHT": "Requirements",
+                "HIGHLIGHT_TEXT_1": "Age: 18 years",
+                "HIGHLIGHT_TEXT_2": "Previous Experience: Not necessary",
+                "HIGHLIGHT_TEXT_3": "Previous training: Not necessary",
+                "HIGHLIGHT_TEXT_4": "Difficulty: Initiation IV / V",
+                "HIGHLIGHT_TEXT_5": "Normal physical condition and agility are required. The difficulty is adapted to the person's physical and technical capacity.",
+
+                "WHAT_TO_BRING": {
+                    "TITLE": "What to bring for rock climbing",
+                    "TEXT_1": "Weather is important to consider while packing for your outdoor activity. Your packing list is based on your comfort and sensitivity. Layering your clothes is the best way to travel and be outdoors. It is highly recommended as the best way to stay warm and cool, as the weather is bound to change in the mountains.",
+                    "BRING_1": "Technical clothing appropriate for the time of year and sporting activity (fleece, windbreaker, waterproof and breathable jacket, gloves, etc.). A windbreaker or thin fleece is always useful, even in summer.",
+                    "BRING_2": "Comfortable clothing that is neither tight nor bulky",
+                    "BRING_3": "Backpack of approximately 15 to 30 liters.",
+                    "BRING_4": "Approach shoes or sneakers",
+                    "BRING_5": "1L water bottle",
+                    "BRING_6": "Picnic",
+                    "BRING_7": "Sun protection (sunglasses, sunscreen, lip balm, cap or hat)",
+                    "BRING_8": "Thermal blanket",
+                    "BRING_9": "A pencil and paper",
+                    "TEXT_2": "Any questions about the recommendations of the material do not hesitate to contact us."
+                },
+
+                "GOALS" :{
+                    "TITLE": "Goals",
+                    "TEXT_1": "Have a first experience of rock climbing on equipped single-pitch routes",
+                    "TEXT_2": "Make the figure eight knot and secure with grigri to carry out a safe experience",
+                    "TEXT_3": "Learning how to belay a top-rope climbing partner",
+                    "TEXT_4": "Know the sport climbing equipment",
+                    "TEXT_5": "Know the rope knot for sport climbing (figure eight knot)"
+                    
+                },
+                
+                "PRICES": "Price:",
+                "PRICES_TEXT_1": "2 people - 100 €",
+                "PRICES_TEXT_2": "3 people - 90 €",
+                "PRICES_TEXT_3": "4 people - 75 €",
+                "PRICES_TEXT_4": "5 people - 60 €",
+                "PRICES_TEXT_5": "6 people - 55 €",
+
+                "WHAT_TO_EXPECT": {
+                    "TITLE": "What to expect",
+                    "TEXT_1": "We invite you to experience rock climbing in Granada with spectacular views, ideal for those who want to get started and improve their knowledge and skills.",
+
+                    "LOCATION_1":{
+                        "TITLE": "Location 1: Los Cahorros Monachil",
+                        "TEXT_1": "This scenic Dolomite canyon with its waterfalls and hanging bridges is home to one of the oldest crags in Spain",
+                        "TEXT_2": "20 meters routes",
+                        "TEXT_3": "Dolomite limestone",
+                        "TEXT_4": "Ideal for beginners"
+                    },
+                    "LOCATION_2": {
+                        "TITLE": "Location 2: Alfacar",
+                        "TEXT_1": "15 meters routes",
+                        "TEXT_2": "Dolomite limestone",
+                        "TEXT_3": "Ideal for beginners"
+                    
+                    }      
+                }                
+            }
+        }
+        
+        
+    }
 }

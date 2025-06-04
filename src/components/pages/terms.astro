@@ -1,0 +1,492 @@
+---
+import Sectionhead from "@/components/sectionhead.astro";
+import Container from "@/components/container.astro";
+import Layout from "@/layouts/Layout.astro";
+import { getI18N } from "@/i18n/";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+---
+
+<Layout title="Terms and Conditions">
+  <Sectionhead>
+    <Fragment slot="title"> {i18n.TERMS.TITLE} </Fragment>
+    <Fragment slot="desc"></Fragment>
+  </Sectionhead>
+  <Container class="w-full mt-16">
+    <h2 class="text-3xl font-bold mb-4">{i18n.TERMS.SUBTITEL_1}</h2>
+    <h2 class="text-2xl font-bold mb-4">{i18n.TERMS.SUBTITEL_2}</h2>
+    <p class="mb-4">
+      {i18n.TERMS.TEXT_1}
+    </p>
+    <p class="mb-4">
+      {i18n.TERMS.TEXT_2}
+    </p>
+    <p class="mb-4">
+      {i18n.TERMS.TEXT_3}
+    </p>
+    <p class="mb-4">
+      {i18n.TERMS.TEXT_4}
+    </p>
+    <p class="mb-4">
+      {i18n.TERMS.TEXT_5}
+    </p>
+    <p class="mb-4">
+      {i18n.TERMS.TEXT_6}
+    </p>
+    <p class="mb-4">
+      {i18n.TERMS.TEXT_7}
+    </p>
+    <p class="mb-4">
+      {i18n.TERMS.TEXT_8}
+    </p>
+    <p class="mb-4">
+      {i18n.TERMS.TEXT_9}
+    </p>
+    <div class="mb-4 flex flex-row gap-4">
+      <p class="font-bold min-w-5">I.</p>
+      <p>
+        {i18n.TERMS.TEXT_10}
+      </p>
+    </div>
+    <div class="mb-4 flex flex-row gap-4">
+      <p class="font-bold min-w-5">II.</p>
+      <p>
+        {i18n.TERMS.TEXT_11}
+      </p>
+    </div>
+    <div class="mb-4 flex flex-row gap-4">
+      <p class="font-bold min-w-5">III.</p>
+      <p>
+        {i18n.TERMS.TEXT_12}
+      </p>
+    </div>
+    <div class="mb-4 flex flex-row gap-4">
+      <p class="font-bold min-w-5">IV.</p>
+      <p>
+        {i18n.TERMS.TEXT_13}
+      </p>
+    </div>
+    <div class="mb-4 flex flex-row gap-4">
+      <p class="font-bold min-w-5">V.</p>
+      <p>
+        {i18n.TERMS.TEXT_14}
+      </p>
+    </div>
+    <div class="mb-4 flex flex-row gap-4">
+      <p class="font-bold min-w-5">VI.</p>
+      <p>
+        {i18n.TERMS.TEXT_15}
+      </p>
+    </div>
+    <div class="mb-4 flex flex-row gap-4">
+      <p class="font-bold min-w-5">VII.</p>
+      <p>
+        {i18n.TERMS.TEXT_16}
+      </p>
+    </div>
+    <p class="mb-4 font-bold">
+      {i18n.TERMS.SUBTITEL_3}
+    </p>
+    <div class="mb-4 flex flex-row gap-4">
+      <p class="font-bold min-w-5">I.</p>
+      <p>
+        {i18n.TERMS.TEXT_17}
+      </p>
+    </div><div class="mb-4 flex flex-row gap-4">
+      <p class="font-bold min-w-5">II.</p>
+      <p>
+        {i18n.TERMS.TEXT_18}
+      </p>
+    </div><div class="mb-4 flex flex-row gap-4">
+      <p class="font-bold min-w-5">III.</p>
+      <p>
+        {i18n.TERMS.TEXT_19}
+      </p>
+    </div><div class="mb-4 flex flex-row gap-4">
+      <p class="font-bold min-w-5">IV.</p>
+      <p>
+        {i18n.TERMS.TEXT_20}
+      </p>
+    </div><div class="mb-4 flex flex-row gap-4">
+      <p class="font-bold min-w-5">V.</p>
+      <p>
+        {i18n.TERMS.TEXT_21}
+      </p>
+    </div>
+    <div class="mb-4 flex flex-row gap-4">
+      <p class="font-bold min-w-5">VI.</p>
+      <p>
+        {i18n.TERMS.TEXT_22}
+      </p>
+    </div>
+    <p class="mb-4 font-bold">{i18n.TERMS.SUBTITEL_4}</p>
+    <div class="mb-4 flex flex-row gap-4">
+      <p class="font-bold min-w-5">I.</p>
+      <p>
+        {i18n.TERMS.TEXT_23}
+      </p>
+    </div>
+    <div class="mb-4 flex flex-row gap-4">
+      <p class="font-bold min-w-5">II.</p>
+      <p>
+        {i18n.TERMS.TEXT_24}
+      </p>
+    </div>
+    <div class="mb-4 flex flex-row gap-4">
+      <p class="font-bold min-w-5">III.</p>
+      <p>
+        {i18n.TERMS.TEXT_25}
+      </p>
+    </div>
+    <div class="mb-4 flex flex-row gap-4">
+      <p class="font-bold min-w-5">VI.</p>
+      <p>
+        {i18n.TERMS.TEXT_26}
+      </p>
+    </div>
+
+    <p class="mb-4 font-bold">{i18n.TERMS.SUBTITEL_5}</p>
+    <div class="mb-4 flex flex-row gap-4">
+      <p class="font-bold min-w-5">I.</p>
+      <p>
+        {i18n.TERMS.TEXT_27}
+      </p>
+    </div>
+    <div class="mb-4 flex flex-row gap-4">
+      <p class="font-bold min-w-5">II.</p>
+      <p>
+        {i18n.TERMS.TEXT_28}
+      </p>
+    </div>
+    <div class="mb-4 flex flex-row gap-4">
+      <p class="font-bold min-w-5">III.</p>
+      <p>
+        {i18n.TERMS.TEXT_29}
+      </p>
+    </div>
+    <div class="mb-4 flex flex-row gap-4">
+      <p class="font-bold min-w-5">IV.</p>
+      <p>
+        {i18n.TERMS.TEXT_30}
+      </p>
+    </div>
+    <div class="mb-4 flex flex-row gap-4">
+      <p class="font-bold min-w-5">V.</p>
+      <p>
+        {i18n.TERMS.TEXT_31}
+      </p>
+    </div>
+    <div class="mb-4 flex flex-row gap-4">
+      <p class="font-bold min-w-5">VI.</p>
+      <p>
+        {i18n.TERMS.TEXT_32}
+      </p>
+    </div>
+    <h2 class="text-2xl font-bold mb-4">{i18n.TERMS.SUBTITEL_6}</h2>
+    <p class="mb-4">
+      {i18n.TERMS.TEXT_33}
+    </p>
+    <p class="mb-4">
+      {i18n.TERMS.TEXT_34}
+    </p>
+    <section class="mt-16">
+      <h2 class="text-3xl font-bold mb-4">{i18n.TERMS.SUBTITEL_7}</h2>
+      <p class="mb-4">
+        {i18n.TERMS.TEXT_35}
+      </p>
+      <p class="mb-4">
+        {i18n.TERMS.TEXT_36}
+      </p>
+      <p class="mb-4">
+        {i18n.TERMS.TEXT_37}
+      </p>
+      <p class="mb-4">
+        {i18n.TERMS.TEXT_38}
+      </p>
+      <p class="mb-4">
+        {i18n.TERMS.TEXT_39}
+      </p>
+      <p class="mb-4">
+        {i18n.TERMS.TEXT_40}
+      </p>
+
+      <h2 class="text-2xl font-bold mb-4">{i18n.TERMS.SUBTITEL_8}</h2>
+      <p class="mb-4">
+        {i18n.TERMS.TEXT_41}
+      </p>
+      <p class="mb-4">{i18n.TERMS.TEXT_42}</p>
+      <div class="mb-4 flex flex-row gap-4">
+        <p class="font-bold min-w-5">🔵</p>
+        <p>{i18n.TERMS.TEXT_43}</p>
+      </div>
+      <div class="mb-4 flex flex-row gap-4">
+        <p class="font-bold min-w-5">🔵</p>
+        <p>{i18n.TERMS.TEXT_44}</p>
+      </div>
+      <div class="mb-4 flex flex-row gap-4">
+        <p class="font-bold min-w-5">🔵</p>
+        <p>{i18n.TERMS.TEXT_45}</p>
+      </div>
+      <div class="mb-4 flex flex-row gap-4">
+        <p class="font-bold min-w-5">🔵</p>
+        <p>
+          {i18n.TERMS.TEXT_46}
+        </p>
+      </div>
+      <div class="mb-4 flex flex-row gap-4">
+        <p class="font-bold min-w-5">🔵</p>
+        <p>
+          {i18n.TERMS.TEXT_47}
+        </p>
+      </div>
+      <div class="mb-4 flex flex-row gap-4">
+        <p class="font-bold min-w-5">🔵</p>
+        <p>
+          {i18n.TERMS.TEXT_48}
+        </p>
+      </div>
+      <div class="mb-4 flex flex-row gap-4">
+        <p class="font-bold min-w-5">🔵</p>
+        <p>
+          {i18n.TERMS.TEXT_49}
+        </p>
+      </div>
+      <div class="mb-4 flex flex-row gap-4">
+        <p class="font-bold min-w-5">🔵</p>
+        <p>
+          {i18n.TERMS.TEXT_50}
+        </p>
+      </div>
+      <p class="mb-4 font-bold">{i18n.TERMS.SUBTITEL_9}</p>
+      <p class="mb-4">
+        {i18n.TERMS.TEXT_51}
+      </p>
+      <p class="mb-4 font-bold">{i18n.TERMS.SUBTITEL_10}</p>
+      <p class="mb-4">
+        {i18n.TERMS.TEXT_52}
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold mb-4">{i18n.TERMS.SUBTITEL_11}</h2>
+      <p class="mb-4">
+        {i18n.TERMS.TEXT_53}
+      </p>
+      <div class="mb-4 flex flex-row gap-4">
+        <p class="font-bold min-w-5">🔵</p>
+        <p>{i18n.TERMS.TEXT_54}</p>
+      </div>
+      <div class="mb-4 flex flex-row gap-4">
+        <p class="font-bold min-w-5">🔵</p>
+        <p>
+          {i18n.TERMS.TEXT_55}
+        </p>
+      </div>
+      <p class="mb-4">
+        {i18n.TERMS.TEXT_56}
+      </p>
+      <p class="mb-4">
+        {i18n.TERMS.TEXT_57}
+      </p>
+      <h2 class="text-xl font-bold mt-10 mb-4">{i18n.TERMS.SUBTITEL_12}.</h2>
+      <div class="mb-4 flex flex-row gap-4">
+        <p class="font-bold min-w-5">🔵</p>
+        <p>
+          {i18n.TERMS.TEXT_58}
+        </p>
+      </div><div class="mb-4 flex flex-row gap-4">
+        <p class="font-bold min-w-5">🔵</p>
+        <p>
+          {i18n.TERMS.TEXT_59}
+        </p>
+      </div><div class="mb-4 flex flex-row gap-4">
+        <p class="font-bold min-w-5">🔵</p>
+        <p>
+          {i18n.TERMS.TEXT_60}
+        </p>
+      </div><div class="mb-4 flex flex-row gap-4">
+        <p class="font-bold min-w-5">🔵</p>
+        <p>{i18n.TERMS.TEXT_61}</p>
+      </div><div class="mb-4 flex flex-row gap-4">
+        <p class="font-bold min-w-5">🔵</p>
+        <p>
+          {i18n.TERMS.TEXT_62}
+        </p>
+      </div><div class="mb-4 flex flex-row gap-4">
+        <p class="font-bold min-w-5">🔵</p>
+        <p>{i18n.TERMS.TEXT_63}</p>
+      </div><div class="mb-4 flex flex-row gap-4">
+        <p class="font-bold min-w-5">🔵</p>
+        <p>
+          {i18n.TERMS.TEXT_64}
+        </p>
+      </div><div class="mb-4 flex flex-row gap-4">
+        <p class="font-bold min-w-5">🔵</p>
+        <p>
+          {i18n.TERMS.TEXT_65}
+        </p>
+      </div>
+      <h2 class="text-xl font-bold mt-10 mb-4">{i18n.TERMS.SUBTITEL_13}.</h2>
+      <div class="mb-4 flex flex-row gap-4">
+        <p class="font-bold min-w-5">🔵</p>
+        <p>
+          {i18n.TERMS.TEXT_66}
+        </p>
+      </div>
+      <div class="mb-4 flex flex-row gap-4">
+        <p class="font-bold min-w-5">🔵</p>
+        <p>
+          {i18n.TERMS.TEXT_67}
+        </p>
+      </div>
+      <div class="mb-4 flex flex-row gap-4">
+        <p class="font-bold min-w-5">🔵</p>
+        <p>
+          {i18n.TERMS.TEXT_68}
+        </p>
+      </div>
+      <div class="mb-4 flex flex-row gap-4">
+        <p class="font-bold min-w-5">🔵</p>
+        <p>{i18n.TERMS.TEXT_69}</p>
+      </div>
+      <div class="mb-4 flex flex-row gap-4">
+        <p class="font-bold min-w-5">🔵</p>
+        <p>
+          {i18n.TERMS.TEXT_70}
+        </p>
+      </div>
+      <div class="mb-4 flex flex-row gap-4">
+        <p class="font-bold min-w-5">🔵</p>
+        <p>{i18n.TERMS.TEXT_71}</p>
+      </div>
+      <div class="mb-4 flex flex-row gap-4">
+        <p class="font-bold min-w-5">🔵</p>
+        <p>
+          {i18n.TERMS.TEXT_72}
+        </p>
+      </div>
+      <div class="mb-4 flex flex-row gap-4">
+        <p class="font-bold min-w-5">🔵</p>
+        <p>
+          {i18n.TERMS.TEXT_73}
+        </p>
+      </div>
+      <h2 class="text-xl font-bold mt-10 mb-4">{i18n.TERMS.SUBTITEL_14}.</h2>
+      <div class="mb-4 flex flex-row gap-4">
+        <p class="font-bold min-w-5">🔵</p>
+        <p>
+          {i18n.TERMS.TEXT_74}
+        </p>
+      </div>
+      <div class="mb-4 flex flex-row gap-4">
+        <p class="font-bold min-w-5">🔵</p>
+        <p>
+          {i18n.TERMS.TEXT_75}
+        </p>
+      </div>
+      <div class="mb-4 flex flex-row gap-4">
+        <p class="font-bold min-w-5">🔵</p>
+        <p>
+          {i18n.TERMS.TEXT_76}
+        </p>
+      </div>
+      <div class="mb-4 flex flex-row gap-4">
+        <p class="font-bold min-w-5">🔵</p>
+        <p>
+          {i18n.TERMS.TEXT_77}
+        </p>
+      </div>
+      <div class="mb-4 flex flex-row gap-4">
+        <p class="font-bold min-w-5">🔵</p>
+        <p>{i18n.TERMS.TEXT_78}</p>
+      </div>
+      <div class="mb-4 flex flex-row gap-4">
+        <p class="font-bold min-w-5">🔵</p>
+        <p>
+          {i18n.TERMS.TEXT_79}
+        </p>
+      </div>
+      <div class="mb-4 flex flex-row gap-4">
+        <p class="font-bold min-w-5">🔵</p>
+        <p>
+          {i18n.TERMS.TEXT_80}
+        </p>
+      </div>
+      <div class="mb-4 flex flex-row gap-4">
+        <p class="font-bold min-w-5">🔵</p>
+        <p>
+          {i18n.TERMS.TEXT_81}
+        </p>
+      </div>
+      <div class="mb-4 flex flex-row gap-4">
+        <p class="font-bold min-w-5">🔵</p>
+        <p>
+          {i18n.TERMS.TEXT_82}
+        </p>
+      </div>
+      <h2 class="text-xl font-bold mt-10 mb-4">
+        {i18n.TERMS.SUBTITEL_15}.
+      </h2>
+      <div class="mb-4 flex flex-row gap-4">
+        <p class="font-bold min-w-5">🔵</p>
+        <p>
+          {i18n.TERMS.TEXT_83}
+        </p>
+      </div>
+      <div class="mb-4 flex flex-row gap-4">
+        <p class="font-bold min-w-5">🔵</p>
+        <p>
+          {i18n.TERMS.TEXT_84}
+        </p>
+      </div>
+      <div class="mb-4 flex flex-row gap-4">
+        <p class="font-bold min-w-5">🔵</p>
+        <p>
+          {i18n.TERMS.TEXT_85}
+        </p>
+      </div>
+      <div class="mb-4 flex flex-row gap-4">
+        <p class="font-bold min-w-5">🔵</p>
+        <p>
+          {i18n.TERMS.TEXT_86}
+        </p>
+      </div>
+      <div class="mb-4 flex flex-row gap-4">
+        <p class="font-bold min-w-5">🔵</p>
+        <p>{i18n.TERMS.TEXT_87}</p>
+      </div>
+      <div class="mb-4 flex flex-row gap-4">
+        <p class="font-bold min-w-5">🔵</p>
+        <p>
+          {i18n.TERMS.TEXT_88}
+        </p>
+      </div>
+      <div class="mb-4 flex flex-row gap-4">
+        <p class="font-bold min-w-5">🔵</p>
+        <p>
+          {i18n.TERMS.TEXT_89}
+        </p>
+      </div>
+      <div class="mb-4 flex flex-row gap-4">
+        <p class="font-bold min-w-5">🔵</p>
+        <p>
+          {i18n.TERMS.TEXT_90}
+        </p>
+      </div>
+      <h2 class="text-xl font-bold mt-10 mb-4">{i18n.TERMS.SUBTITEL_16}.</h2>
+      <div class="mb-4 flex flex-row gap-4">
+        <p class="font-bold min-w-5">🔵</p>
+        <p>
+          {i18n.TERMS.TEXT_91}
+        </p>
+      </div>
+      <div class="mb-4 flex flex-row gap-4">
+        <p class="font-bold min-w-5">🔵</p>
+        <p>
+          {i18n.TERMS.TEXT_92}
+        </p>
+      </div>
+    </section>
+  </Container>
+</Layout>

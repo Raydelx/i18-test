@@ -3,16 +3,17 @@ import Container from "@/components/container.astro";
 import Sectionhead from "@/components/sectionhead.astro";
 import TarilorMadeForm from "@/components/tarilorMadeForm.astro";
 import Layout from "@/layouts/Layout.astro";
+import { getI18N } from "@/i18n/";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
 ---
 
 <Layout title="Contact">
   <Container>
     <Sectionhead>
-      <Fragment slot="title">Tailor-Made Travel Inquire Form</Fragment>
-      <Fragment slot="desc"
-        >Montaraz Outdoor & Culture will reach out after reviewing your travel
-        inquiry. We will answer you within 3 weekdays by email.</Fragment
-      >
+      <Fragment slot="title">{i18n.FORM_TAILOR.TITLE}</Fragment>
+      <Fragment slot="desc">{i18n.FORM_TAILOR.SUBTITLE}</Fragment>
     </Sectionhead>
 
     <div class="grid gap-10 mx-auto max-w-4xl mt-16">

@@ -1,5 +1,13 @@
 ---
 import Button from "./ui/button.astro";
+import { getI18N } from "@/i18n/";
+import { getLangFromUrl, useTranslatedPath } from "/i18n/utils.js";
+
+const lang = getLangFromUrl(Astro.url);
+const translatePath = useTranslatedPath(lang);
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
 ---
 
 <!-- To make this contact form work, create your free access key from https://web3forms.com/
@@ -17,7 +25,9 @@ import Button from "./ui/button.astro";
   />
   <!-- Create your free access key from https://web3forms.com/ -->
   <input type="checkbox" class="hidden" style="display:none" name="botcheck" />
-  <h2 class="text-3xl mb-4 ml-1 font-semibold">Personal Information</h2>
+  <h2 class="text-3xl mb-4 ml-1 font-semibold">
+    {i18n.FORM_TAILOR.PERSONAL_INFO}
+  </h2>
   <div class="grid md:grid-cols-2 md:gap-4">
     <div class="mb-5">
       <input
@@ -76,11 +86,13 @@ import Button from "./ui/button.astro";
     </div>
   </div>
   <!-- Travel Information -->
-  <h2 class="text-3xl mb-4 ml-1 font-bold">Travel information</h2>
+  <h2 class="text-3xl mb-4 ml-1 font-bold">{i18n.FORM_TAILOR.TRAVEL_INFO}</h2>
   <!-- Arrival Airport -->
   <div class="grid md:grid-cols-2 md:gap-4">
     <div class="mb-5">
-      <label for="Arrival Airport" class="ml-1">Arrival Airport Name</label>
+      <label for="Arrival Airport" class="ml-1"
+        >{i18n.FORM_TAILOR.TRAVEL_INFO_AIRPORT}</label
+      >
       <input
         type="text"
         placeholder="Arrival Airport"
@@ -93,7 +105,9 @@ import Button from "./ui/button.astro";
       </div>
     </div>
     <div class="mb-5">
-      <label for="Arrival Airport" class="ml-1">Arrival Date</label>
+      <label for="Arrival Airport" class="ml-1"
+        >{i18n.FORM_TAILOR.TRAVEL_INFO_DATE}</label
+      >
       <input
         type="date"
         placeholder="date of arrival"
@@ -110,7 +124,7 @@ import Button from "./ui/button.astro";
   <div class="grid md:grid-cols-2 md:gap-2">
     <div class="mb-5">
       <label for="Arrival Airport" class="ml-1"
-        >Length of your trip in days</label
+        >{i18n.FORM_TAILOR.TRAVEL_INFO_LENGTH}</label
       >
       <input
         id="Arrival Airport"
@@ -126,7 +140,7 @@ import Button from "./ui/button.astro";
     </div>
     <div class="mb-5">
       <label for="Experience" class="ml-1"
-        >Which experience are you looking for?</label
+        >{i18n.FORM_TAILOR.TRAVEL_INFO_EXPERIENCE}</label
       >
       <input
         id="Experience"
@@ -147,8 +161,8 @@ import Button from "./ui/button.astro";
   <!-- How many travelers and age? -->
   <div class="mb-3">
     <label for="Travelers and Ages" class="ml-1"
-      >How many travelers and age?
-    </label>
+      >{i18n.FORM_TAILOR.TRAVEL_INFO_TRAVELERS}</label
+    >
     <label for="Travelers and Ages" class="ml-1"></label>
     <textarea
       id="Travelers and Ages"
@@ -164,7 +178,9 @@ Raquel Doret 24"
   </div>
   <!-- Room preference -->
   <div class="mb-3">
-    <label for="Room preference" class="ml-1">Room preference </label>
+    <label for="Room preference" class="ml-1"
+      >{i18n.FORM_TAILOR.TRAVEL_INFO_ROOM}</label
+    >
 
     <textarea
       id="Room preference"
@@ -180,8 +196,8 @@ Raquel Doret 24"
   <!-- Which places would you like to explore? -->
   <div class="mb-3">
     <label for="destinations" class="ml-1"
-      >Which places would you like to explore?
-    </label>
+      >{i18n.FORM_TAILOR.TRAVEL_INFO_PLACES}</label
+    >
     <label for="destinations" class="ml-1"></label>
     <textarea
       id="destinations"
@@ -195,7 +211,9 @@ Raquel Doret 24"
   </div>
   <!-- Special interests? -->
   <div class="mb-3">
-    <label for="special" class="ml-1">Special interests? </label>
+    <label for="special" class="ml-1"
+      >{i18n.FORM_TAILOR.TRAVEL_INFO_SPECIAL}</label
+    >
 
     <textarea
       id="special"
@@ -211,8 +229,8 @@ Raquel Doret 24"
   <!-- What is the most important thing you look in a vacation? -->
   <div class="mb-3">
     <label for="important" class="ml-1"
-      >What are the most important things you look in a vacation?
-    </label>
+      >{i18n.FORM_TAILOR.TRAVEL_INFO_IMPORTANT}</label
+    >
     <label for="important" class="ml-1"></label>
     <textarea
       id="important"
@@ -228,8 +246,8 @@ Raquel Doret 24"
   <!-- Specials request or comments -->
   <div class="mb-3">
     <label for="Travelers and Ages" class="ml-1"
-      >Do you have any comments or special requests?
-    </label>
+      >{i18n.FORM_TAILOR.TRAVEL_INFO_COMMENTS}</label
+    >
     <label for="Travelers and Ages" class="ml-1"></label>
     <textarea
       id="comments_requests"
@@ -243,144 +261,122 @@ Raquel Doret 24"
   </div>
   <!-- Booking Steps -->
   <div class="grip">
-    <h2 class="text-2xl font-bold mb-2">Booking Steps</h2>
+    <h2 class="text-2xl font-bold mb-2">{i18n.FORM_TAILOR.BOOKING_STEPS}</h2>
     <div>
       <div class="flex flex-row items-center gap-1">
         <spam class="text-sm">🔵</spam>
-        <h3 class="font-semibold text-lg">Step 1 Request</h3>
+        <h3 class="font-semibold text-lg">
+          {i18n.FORM_TAILOR.BOOKING_STEPS_1}
+        </h3>
       </div>
       <p class="mb-3">
-        We will answer you within 3 weekdays by email to confirm availability.
-      </p>
-    </div>
-    <div>
-      <div class="flex flex-row items-center gap-1">
-        <spam class="text-sm">🔵</spam>
-        <h3 class="font-semibold text-lg">Step 2 Travel & Tour Proposal</h3>
-      </div>
-      <p class="mb-3">
-        We will send you a Travel & Tour Proposal outlining your Private Tour
-        with the price per person and information like travel itineraries,
-        accommodation details, range of activities, necessary documents, and
-        more. Any Travel & Tour Proposal can be modified to meet all your
-        interests and to create your personalized holiday
-      </p>
-    </div>
-    <div>
-      <div class="flex flex-row items-center gap-1">
-        <spam class="text-sm">🔵</spam>
-        <h3 class="font-semibold text-lg">Step 3 Hold your date</h3>
-      </div>
-      <p class="mb-3">
-        After creating your private tour we hold the Travel & Tour Proposal for
-        15 days with no obligation.
-      </p>
-    </div>
-    <div>
-      <div class="flex flex-row items-center gap-1">
-        <spam class="text-sm">🔵</spam>
-        <h3 class="font-semibold text-lg">Step 4 Release of liability form</h3>
-      </div>
-      <p class="mb-3">
-        The clients are required to complete and sign our release of liability
-        form and understand the full terms and conditions of the provided tours.
-        Signatures are required before pre-reservation. We're unable to allow
-        travelers to participate in any aspect of Montaraz Outdoors & Culture
-        tours without a signed release form.
-      </p>
-    </div>
-    <div>
-      <div class="flex flex-row items-center gap-1">
-        <spam class="text-sm">🔵</spam>
-        <h3 class="font-semibold text-lg">Step 5 Deposit & Pre-reservation</h3>
-      </div>
-      <p class="mb-3">
-        The tour is officially reserved when the client deposits 20% of the
-        total tour price per person before the 15-day hold period ends. If no
-        deposit is received, your Travel & Tour Poposal will be canceled. We’ll
-        officially confirm your pre-reservation after the deposit of 20% of the
-        total tour price per person. Any adjustments and modifications requested
-        from the client after the pre-reservation will have a final adjusted
-        price added to the total price.
-      </p>
-    </div>
-    <div>
-      <div class="flex flex-row items-center gap-1">
-        <spam class="text-sm">🔵</spam>
-        <h3 class="font-semibold text-lg">Step 6 The remaining balance</h3>
-      </div>
-      <p class="mb-3">
-        We send the client an email with the remaining balance.
+        {i18n.FORM_TAILOR.BOOKING_STEPS_1_TEXT}
       </p>
     </div>
     <div>
       <div class="flex flex-row items-center gap-1">
         <spam class="text-sm">🔵</spam>
         <h3 class="font-semibold text-lg">
-          Step 7 Final Payment + Travel insurance
+          {i18n.FORM_TAILOR.BOOKING_STEPS_2}
+        </h3>1
+      </div>
+      <p class="mb-3">
+        {i18n.FORM_TAILOR.BOOKING_STEPS_2_TEXT}
+      </p>
+    </div>
+    <div>
+      <div class="flex flex-row items-center gap-1">
+        <spam class="text-sm">🔵</spam>
+        <h3 class="font-semibold text-lg">
+          {i18n.FORM_TAILOR.BOOKING_STEPS_3}
         </h3>
       </div>
       <p class="mb-3">
-        The total trip price must be received by us no later than the final
-        total payment due date (see booking conditions and cancel policy). If
-        the balance is not paid by the due date, we treat your booking as
-        canceled and cancellation charges apply. We’ll officially confirm your
-        final payment after the deposit of the rest of the total price per
-        person. The client needs to take adequate valid travel insurance at
-        their own cost to book the tour and ensure they have read and understood
-        the full terms and conditions of your travel insurance policy to ensure
-        that they are covered for all activities you intend to take during the
-        trip. Montaraz Outdoors & Culture won't be able to help you obtain any
-        insurance.
+        {i18n.FORM_TAILOR.BOOKING_STEPS_3_TEXT}
+      </p>
+    </div>
+    <div>
+      <div class="flex flex-row items-center gap-1">
+        <spam class="text-sm">🔵</spam>
+        <h3 class="font-semibold text-lg">
+          {i18n.FORM_TAILOR.BOOKING_STEPS_4}
+        </h3>
+      </div>
+      <p class="mb-3">
+        {i18n.FORM_TAILOR.BOOKING_STEPS_4_TEXT}
+      </p>
+    </div>
+    <div>
+      <div class="flex flex-row items-center gap-1">
+        <spam class="text-sm">🔵</spam>
+        <h3 class="font-semibold text-lg">
+          {i18n.FORM_TAILOR.BOOKING_STEPS_5}
+        </h3>
+      </div>
+      <p class="mb-3">
+        {i18n.FORM_TAILOR.BOOKING_STEPS_5_TEXT}
+      </p>
+    </div>
+    <div>
+      <div class="flex flex-row items-center gap-1">
+        <spam class="text-sm">🔵</spam>
+        <h3 class="font-semibold text-lg">
+          {i18n.FORM_TAILOR.BOOKING_STEPS_6}
+        </h3>
+      </div>
+      <p class="mb-3">
+        {i18n.FORM_TAILOR.BOOKING_STEPS_6_TEXT}
+      </p>
+    </div>
+    <div>
+      <div class="flex flex-row items-center gap-1">
+        <spam class="text-sm">🔵</spam>
+        <h3 class="font-semibold text-lg">
+          {i18n.FORM_TAILOR.BOOKING_STEPS_7}
+        </h3>
+      </div>
+      <p class="mb-3">
+        {i18n.FORM_TAILOR.BOOKING_STEPS_7_TEXT}
       </p>
     </div>
   </div>
 
-  <h2 class="text-2xl font-bold mb-2">Important</h2>
+  <h2 class="text-2xl font-bold mb-2">{i18n.FORM_TAILOR.IMPORTANT_STEPS}</h2>
   <div class="grip">
     <div class="flex">
       <h3 class="flex-none w-5">1.</h3>
       <p class="mb-3 flex-1">
-        It is your responsibility to arrange appropriate travel insurance
+        {i18n.FORM_TAILOR.IMPORTANT_1}
       </p>
     </div>
     <div class="flex">
       <h3 class="flex-none w-5">2.</h3>
       <p class="mb-3 flex-1">
-        It is your responsibility to arrange your flights.
+        {i18n.FORM_TAILOR.IMPORTANT_2}
       </p>
     </div>
     <div class="flex">
       <h3 class="flex-none w-5">3.</h3>
       <p class="mb-3 flex-1">
-        ¡Double Check! Ensure you have read and understood the full terms and
-        conditions of your travel insurance policy to ensure that you are
-        covered for all activities you intend to undertake whilst on the tour.
-        Your Insurance Policy must fully cover you for medical expenses and
-        emergency repatriation to your home country.
+        {i18n.FORM_TAILOR.IMPORTANT_3}
       </p>
     </div>
     <div class="flex">
       <h3 class="flex-none w-5">4.</h3>
       <p class="mb-3 flex-1">
-        I confirm that I understand this planning service
+        {i18n.FORM_TAILOR.IMPORTANT_4}
       </p>
     </div>
     <div class="flex">
       <h3 class="flex-none w-5">5.</h3>
       <p class="mb-3 flex-1">
-        I understand that I can stop the planning process without any cost.
+        {i18n.FORM_TAILOR.IMPORTANT_5}
       </p>
     </div>
     <div class="flex">
       <h3 class="flex-none w-5">6.</h3>
       <p class="mb-3 flex-1">
-        I also understand and agree that the client has the right to cancel the
-        tour in writing and sign to us. Once we receive your notice, the
-        cancellation will take effect. Your deposit will be returned to the same
-        account that you have made the payment. The returned amount depends on
-        the cancellation charges. Bank charges to make the transaction may apply
-        and will be deducted from the returned amount.
+        {i18n.FORM_TAILOR.IMPORTANT_6}
       </p>
     </div>
   </div>
@@ -395,7 +391,7 @@ Raquel Doret 24"
         class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
       />
       <label for="understad-checkbox" class="ms-2 text-md"
-        >I have read and understood the booking steps.</label
+        >{i18n.FORM_TAILOR.CHECK_1}</label
       >
     </div>
     <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
@@ -413,7 +409,7 @@ Raquel Doret 24"
         class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
       />
       <label for="agreed-checkbox" class="ms-2 text-md"
-        >I have read and understood the important information.</label
+        >{i18n.FORM_TAILOR.CHECK_2}</label
       >
     </div>
     <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
@@ -430,10 +426,12 @@ Raquel Doret 24"
         class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
       />
       <label for="policy-checkbox" class="ms-2 text-md"
-        >I have read and accept the <a
+        >{i18n.FORM_TAILOR.CHECK_A}
+        <a
           target="_blank"
           class="text-blue-600"
-          href="/privacy-policy.pdf/">Privacy Policy</a
+          href={translatePath("privacy-policy")}
+          >{i18n.FORM_TAILOR.CHECK_BUTTON}</a
         >.</label
       >
     </div>
