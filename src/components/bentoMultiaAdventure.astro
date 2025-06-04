@@ -1,5 +1,18 @@
 ---
 import BentoItem from "../components/bentoItem.astro";
+import { getI18N } from "@/i18n/";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+import {
+  getLangFromUrl,
+  useTranslations,
+  useTranslatedPath,
+} from "/i18n/utils.js";
+
+const lang = getLangFromUrl(Astro.url);
+
+const translatePath = useTranslatedPath(lang);
 ---
 
 <section
@@ -11,7 +24,7 @@ import BentoItem from "../components/bentoItem.astro";
   <BentoItem
     class="col-span-10 lg:col-span-5"
     title="Rock Climbing"
-    href="/rock-climbing/">
+    href={translatePath("/rock-climbing-products/")}>
     <div
       slot="image"
       class="background transition-scale absolute bottom-0 left-0 top-0
