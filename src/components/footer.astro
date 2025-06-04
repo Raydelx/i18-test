@@ -2,7 +2,7 @@
 import Icon from "./Icon.astro";
 import Container from "../components/container.astro";
 
-import { getLangFromUrl, useTranslatedPath } from "/i18n/utils.js";
+import { getLangFromUrl, useTranslatedPath } from "../i18n/utils.js";
 
 const lang = getLangFromUrl(Astro.url);
 const translatePath = useTranslatedPath(lang);
