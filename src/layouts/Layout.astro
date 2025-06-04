@@ -7,17 +7,20 @@ import "@fontsource/lato"; // Defaults to weight 400
 import "@fontsource/lato/400.css"; // Specify weight
 import "@fontsource/lato/400-italic.css"; // Specify weight and style
 
+import { getLangFromUrl } from "@/i18n/utils";
+
 // import { getLangFromUrl } from "@/i18n/utils";
 
 import WhatsappButton from "@/components/ui/whatsappButton.astro";
-import { getI18N } from "@/i18n/";
-const { currentLocale } = Astro;
+
 // const i18n = getI18N({ currentLocale });
 // const lang = getLangFromUrl(Astro.url);
 
 export interface Props {
   title: string;
 }
+
+const lang = getLangFromUrl(Astro.url);
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
 
@@ -31,7 +34,7 @@ const makeTitle = title
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={lang}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
