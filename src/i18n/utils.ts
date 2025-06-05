@@ -13,24 +13,16 @@ export function useTranslations(lang: keyof typeof ui) {
 }
 
 export function useTranslatedPath(lang: keyof typeof ui) {
-	return function translatePath(path: string, l: string = lang) {
-		const pathName = path.replaceAll('/', '');
-		const hasTranslation =
-			defaultLang !== l &&
-			(routes[l as keyof typeof routes] as Record<string, string>)[
-				pathName
-			] !== undefined;
-		const translatedPath = hasTranslation
-			? '/' +
-			  (routes[l as keyof typeof routes] as Record<string, string>)[
-					pathName
-			  ]
-			: path;
+    return function translatePath(path: string, l: string = lang) {
+        const segments = path.split('/').filter(Boolean);
+        const translations = routes[l as keyof typeof routes] as Record<string, string>;
+        const translatedSegments = segments.map(segment =>
+            defaultLang !== l && translations[segment] ? translations[segment] : segment
+        );
+        const translatedPath = '/' + translatedSegments.join('/');
 
-		return !showDefaultLang && l === defaultLang
-			? translatedPath
-			: `/${l}${translatedPath}`;
-	};
+        return `/${l}${translatedPath}`;
+    };
 }
 
 export function getRouteFromUrl(url: URL): string | undefined {

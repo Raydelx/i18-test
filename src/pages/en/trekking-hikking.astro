@@ -1,0 +1,87 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Container from "../../components/container.astro";
+import Sectionhead from "../../components/sectionhead.astro";
+import Card from "../../components/card.astro";
+
+const HikinkTrekking = [
+  {
+    name: "Family Hike - The Gorge of Sierra Nevada",
+    description: "",
+    href: "/hiking-and-trekking/family-hike-gorge-sierra-nevada/",
+    href_img:
+      "/hiking-and-trekking/family-hike-gorge-of-sierra-nevada/fh-product.webp",
+    alt_img: "string",
+  },
+  {
+    name: "King of The Low Mountains",
+    description: "",
+    href: "/hiking-and-trekking/king-of-the-low-mountains/",
+    href_img: "/hiking-and-trekking/king-of-the-mountain/kom-product.webp",
+    alt_img: "string",
+  },
+  {
+    name: "Sunrise Sierra Nevada",
+    description: "",
+    href: "/hiking-and-trekking/sunrise-sierra-nevada/",
+    href_img: "/hiking-and-trekking/sunrise-sierra-nevada/sr-product.webp",
+    alt_img: "string",
+  },
+  {
+    name: "Trekking Alpujarras",
+    description: "",
+    href: "/hiking-and-trekking/trekking-alpujarras/",
+    href_img: "/hiking-and-trekking/trekking-alpujarras/ta-product.webp",
+    alt_img: "string",
+  },
+  {
+    name: "The Old Mine Trail",
+    description: "",
+    href: "/hiking-and-trekking/the-old-mine-trail/",
+    href_img: "/hiking-and-trekking/the-old-mine-trail/tomt-product.webp",
+    alt_img: "string",
+  },
+  {
+    name: "1-Day Summit Mulhacén",
+    description: "",
+    href: "/hiking-and-trekking/1-day-summit-mulhacen/",
+    href_img: "/hiking-and-trekking/1-day-summit-mulhacen/1dsm-product.webp",
+    alt_img: "string",
+  },
+  {
+    name: "2-Day Summit Mulhacén",
+    description: "",
+    href: "/hiking-and-trekking/2-day-summit-mulhacen/",
+    href_img: "/hiking-and-trekking/2-day-summit-mulhacen/2dsm-product.webp",
+    alt_img: "string",
+  },
+  {
+    name: "Trekking Peaks of Sierra Nevada",
+    description: "Comming soon",
+    href: "#",
+    href_img:
+      "/hiking-and-trekking/trekking-peak-of-sierra-nevada/tposn-product.webp",
+    alt_img: "string",
+  },
+];
+---
+
+<Layout title="About">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Hiking & Trekking</Fragment>
+      <Fragment slot="desc"></Fragment>
+    </Sectionhead>
+    <main class="mt-32">
+      <ul class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
+        {
+          HikinkTrekking.map((tour) => (
+            <li class="mb-10">
+              <Card {...tour} />
+            </li>
+          ))
+        }
+      </ul>
+    </main>
+  </Container>
+</Layout>

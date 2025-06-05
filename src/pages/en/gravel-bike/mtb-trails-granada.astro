@@ -1,0 +1,380 @@
+---
+import Container from "../../../components/container.astro";
+import InformationProducts from "../../../components/ui/informationProducts.astro";
+import Icon from "../../../components/Icon.astro";
+import Layout from "../../../layouts/Layout.astro";
+import SliderReact from "../../../hooks/SliderReact";
+import Days from "../../../components/products-components/days.astro";
+import Includes from "../../../components/products-components/includes.astro";
+import Link from "../../../components/ui/link.astro";
+import Cancellation from "../../../components/products-components/cancellation.astro";
+import Widget from "@/components/products-components/widget.astro";
+import Dots from "@/components/ui/dots.astro";
+import Route from "@/components/ui/icons/route.astro";
+
+// Duplica y cambia las rutas para añadir o modificar las fotos
+
+const IMG = [
+  {
+    src: "/cycle-tour/montainbike/mtb-trails-granada/mtb-tg-1.webp",
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-trails-granada/mtb-tg-2.webp",
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-trails-granada/mtb-tg-3.webp",
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-trails-granada/mtb-tg-4.webp",
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-trails-granada/mtb-tg-5.webp",
+  },
+];
+
+const brings = [
+  {
+    title: "Helmet and gloves. Included.",
+  },
+  {
+    title: "Comfortable clothing and shoes.",
+  },
+  {
+    title: "Cycle glasses.",
+  },
+  {
+    title: "Water (minimum 1 L) included",
+  },
+  {
+    title: "Sun protection.",
+  },
+];
+
+const DAYS = [
+  {
+    day: "1",
+    tecnicalInfo: true,
+    description:
+      "Embarking on a mountain bike tour in Granada is a perfect location with endless MTB trails for all levels which involves your passion for mountain biking and the great scenery of Granada. Our selected cycle routes have different gradient climbs of varying lengths and a huge variety of elevation profiles through an area with a great diversity of landscapes from rolling hills, pine forests, deserts, and mountains to the tropical coast. We have extensive knowledge of all the trails and tailor each ride to the guests to ensure you a great experience with us. Join us and explore our trails with your friends or family in the great outdoors of Granada.",
+    totalDistance: "All Levels",
+    totalAscent: "All Levels",
+    totalDescent: "All Levels",
+    duration: "4 - 6 hours",
+  },
+];
+---
+
+<Layout title="Gravel Bike / MTB">
+  <Container>
+    <main class="mt-16">
+      <!-- Foto, nombre y destino -->
+
+      <div
+        class="bg-center bg-no-repeat bg-[url('/cycle-tour/montainbike/mtb-trails-granada/mtb-tg-principal.webp')] bg-cover h-[30rem] rounded-2xl">
+        <div class="flex flex-col justify-end h-full p-6 w-auto">
+          <div class="flex gap-2">
+            <Icon icon="destiny-logo" size="1.6rem" color="white" />
+            <p
+              class="text-xl font-normal text-white lg:text-2xl flex flex-col justify-end h-full [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
+              Granada
+            </p>
+          </div>
+
+          <h1
+            class="text-3xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-5xl [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
+            MTB Trails Granada
+          </h1>
+        </div>
+      </div>
+
+      <!-- Informacion general de los viajes -->
+
+      <div
+        class="grid grid-cols-2 md:grid-cols-6 h-auto mt-3 gap-3 place-content-start md:px-6">
+        <InformationProducts title="Price" subtitle="95">
+          <div slot="icon">
+            <Icon icon="price-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts title="Pre-booking" subtitle="100%">
+          <div slot="icon">
+            <Icon icon="price-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts title="Minimum of persons" subtitle="1">
+          <div slot="icon">
+            <Icon icon="group-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+
+        <InformationProducts title="Duration" subtitle="4 - 6 Hours">
+          <div slot="icon">
+            <Icon icon="timer-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts title="Tour type" subtitle="Guided">
+          <div slot="icon">
+            <Icon icon="guide-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts title="Season" subtitle2="All Year">
+          <!-- <div slot="icon">
+            <Icon icon="autumn-logo" size="1.6rem" color="#0E46A3" />
+          </div> -->
+        </InformationProducts>
+      </div>
+      <div class="">
+        <div
+          class="grid grid-cols-2 justify-between md:grid-cols-6 h-auto mt-3 gap-3 md:px-6">
+          <InformationProducts title="Total distance" subtitle="All levels">
+            <div slot="icon">
+              <Icon icon="distance-logo" size="1.6rem" color="#0E46A3" />
+            </div>
+          </InformationProducts>
+
+          <InformationProducts title="Total ascent" subtitle="All levels">
+            <div slot="icon">
+              <Icon icon="up-logo" size="1.6rem" color="#0E46A3" />
+            </div>
+          </InformationProducts>
+          <InformationProducts title="Total descent" subtitle="All levels">
+            <div slot="icon">
+              <Icon icon="down-logo" size="1.6rem" color="#0E46A3" />
+            </div>
+          </InformationProducts>
+          <InformationProducts
+            title="Route type"
+            subtitle="Loop or Point-to-point Route">
+            <div slot="icon">
+              <Route />
+            </div>
+          </InformationProducts>
+          <InformationProducts title="Difficulty" subtitle="All levels">
+            <div slot="icon"></div>
+          </InformationProducts>
+          <InformationProducts title="MTB" subtitle="Yes">
+            <div slot="icon">
+              <Icon icon="bike-logo" size="1.6rem" color="#0E46A3" />
+            </div>
+          </InformationProducts>
+        </div>
+      </div>
+
+      <!-- Informacion tecnica -->
+
+      <!--  Include, exclude, complementaries  -->
+      <div
+        class="grid md:grid-cols-2 lg:grid-cols-2 mt-20 md:mt-26 md:mb-36 gap-16 md:gap-4">
+        <!-- Include -->
+        <Includes title="Included">
+          <ul slot="description" class="mt-4 flex flex-col gap-2">
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Professional guide</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                Liability insurance and assistance
+              </p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Transfer</p>
+            </li>
+            <li class="flex gap-2">
+              <div>
+                <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              </div>
+              <p class="max-w-[320px] text-md">Mountain Bike</p>
+            </li>
+            <li class="flex gap-2">
+              <div>
+                <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              </div>
+              <p class="max-w-[320px] text-md">Helmet & gloves</p>
+            </li>
+            <li class="flex gap-2">
+              <div>
+                <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              </div>
+              <p class="max-w-[320px] text-md">Water</p>
+            </li>
+          </ul>
+        </Includes>
+        <!-- Exclude -->
+        <Includes title="Not Included">
+          <div slot="description" class="flex flex-col gap-2 mt-4">
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Snack</p>
+            </li>
+          </div>
+        </Includes>
+        <!-- Complementaries -->
+      </div>
+
+      <div
+        class="grid md:grid-cols-2 h-auto gap-10 md:gap-20 py-10 items-center">
+        <div class="static h-[385px] hidden md:block content-center">
+          <img
+            class="rounded-xl absolute md:w-[20rem] lg:w-[30rem] hover:z-40 transition-all duration-300 ease-out hover:scale-105"
+            src="/cycle-tour/montainbike/mtb-trails-granada/mtb-tg-5.webp"
+            alt="ciclista mirando la sierra con cicicleta a su lado"
+          />
+          <img
+            class="rounded-xl absolute md:w-[10rem] lg:w-[20rem] md:mt-48 lg:mt-30 ml-6 z-10 grayscale-[60%] hover:grayscale-0 transition-all duration-300 ease-out hover:scale-105"
+            src="/cycle-tour/montainbike/mtb-trails-granada/mtb-tg-1.webp"
+            alt="ciclista mirando la sierra con cicicleta a su lado"
+          />
+          <img
+            class="rounded-xl absolute md:w-[10rem] lg:w-[18em] ml-64 md:-mt-40 lg:-mt-24 grayscale-[60%] hover:grayscale-0 transition-all duration-300 ease-out hover:scale-105"
+            src="/cycle-tour/montainbike/mtb-trails-granada/mtb-tg-4.webp"
+            alt="ciclista mirando la sierra con cicicleta a su lado"
+          />
+        </div>
+
+        <div class="grid gap-5">
+          <div class="">
+            <h2
+              class="max-w-2xl md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+              Availability
+            </h2>
+            <Dots class="mb-4" />
+
+            <ul class="grid gap-2 text-lg">
+              <li class="flex flex-wrap gap-2">
+                <Icon icon="spring-logo" size="1.6rem" color="#0E46A3" />
+                <p>All Year</p>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2
+              class="max-w-2xl md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+              Highlight
+            </h2>
+            <Dots class="mb-4" />
+            <p class="text-lg text-gray-900">
+              Explore the Outdoors of Granada on your mountain bike through an
+              area with a great diversity of landscapes from rolling hills, pine
+              forests, deserts, and mountains to the tropical coast.
+            </p>
+          </div>
+
+          <div class="">
+            <h2
+              class="max-w-2xl md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+              Requirements
+            </h2>
+            <Dots class="mb-4" />
+            <p class="text-lg text-gray-900">
+              <span class="text-xl">🔹</span> Off-road cycling is an activity carrying
+              some inherent risks. Please consider your skills, abilities, and fitness
+              carefully, and always wear a helmet.
+            </p>
+            <p class="text-lg text-gray-900">
+              <span class="text-xl">🔹</span> The route type and difficulty are based
+              on your fitness level and technical skills. Booking a Mountain bike
+              Trail, we ask you to fill out a questionnaire form to tailor your itinerary
+              to the right level.
+            </p>
+            <p class="text-lg text-gray-900">
+              <span class="text-xl">🔹</span> In your MTB Questionnaire, you should
+              submit honest information about your mountain bike experience, physical
+              fitness, and comfort on technical terrain. We offer different trails
+              for all levels to give you a positive and safe experience with us.
+            </p>
+            <p class="text-lg text-gray-900">
+              <span class="text-xl">🔹</span> If you are uncertain about what fitness
+              level or technical difficulty is most appropriate for you, check our
+              Blog Cycling article “Cycle grades” or contact us.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <Widget
+        title="What to bring for cycling"
+        description="Weather is important to consider while packing for your outdoor activity. Your packing list is based on your comfort and sensitivity. The best way to travel and to be outdoors is to layer your clothes. Highly recommended as best way to stay warm and keep cool, as the weather is bound to change in the mountains."
+        img="/cycle-tour/montainbike/mtb-trails-granada/mtb-tg-6.webp"
+        text="We help you fit your pedals, saddle, etc. if you'd like to bring them. Any questions about the recommendations of the material do not hesitate to contact us. "
+        brings={brings}
+      />
+      <div class="grid md:grid-cols-2 gap-6 md:gap-12 mt-10">
+        <div class="mb-6 md:mb-20">
+          <h2
+            class="max-w-2xl md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+            Mountain Bike
+          </h2>
+          <Dots class="mb-4" />
+          <p class="text-lg text-gray-900 mb-2">
+            Check our BLOG CYCLING article “Our Bicycle Selection” to see your
+            Mountain Bike. We provide 2 high-quality Mountain Bikes. When
+            booking, you indicate your height and weight so that the bicycle's
+            frame size is correct at the start of your tour.
+          </p>
+          <p class="text-lg text-gray-900">
+            <span class="text-xl">🔹</span> We help you fit your pedals or saddle
+            if you'd like to bring them.
+          </p>
+          <p class="text-lg text-gray-900">
+            <span class="text-xl">🔹</span> We provide low-range gearing suited to
+            mountainous terrain.
+          </p>
+        </div>
+        <div class="mb-6 md:mb-20">
+          <h2
+            class="max-w-2xl md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+            Level
+          </h2>
+          <Dots class="mb-4" />
+          <p class="text-lg text-gray-900 mb-2">
+            The route type and difficulty are based on your fitness level and
+            technical skills. Before booking the “MTB Trails Granada,” please
+            fill out a questionnaire form to tailor your itinerary to the right
+            level. After receiving your questionnaire, we send you an MTB Bike
+            route with technical information.
+          </p>
+        </div>
+      </div>
+
+      <!-- Button to download PDF -->
+      <section class="grid md:grid-cols-2 gap-6 items-center">
+        <Cancellation />
+        <div class="flex flex-col gap-2 md:p-4">
+          <div>
+            <h3 class="text-4xl md:text-5xl xl:text-6xl font-bold">Price:</h3>
+            <Dots class="mb-4" />
+          </div>
+          <p>1 person - 170 €</p>
+          <p>2 people - 140 € p.p</p>
+          <p>3 people - 130 € p.p</p>
+          <p>4 people - 105 € p.p</p>
+          <p>5 people - 100 € p.p</p>
+          <p>7 people - 95 € p.p</p>
+        </div>
+      </section>
+
+      <!-- Slider Photos -->
+      <section class="m-auto md:w-full rounded-xl md:px-8 md:py-20">
+        <ol class="relative mt-16">
+          {(<SliderReact IMG={IMG} client:visible />)}
+        </ol>
+      </section>
+
+      <!--  TimeLine per days  -->
+      <h2 class="text-4xl md:text-5xl xl:text-6xl md:p-4 mt-16 font-bold mb-4">
+        What to expect
+      </h2>
+
+      {
+        DAYS.map((tour) => (
+          <ol class="mb-10">
+            <Days {...tour} />
+          </ol>
+        ))
+      }
+    </main>
+  </Container>
+</Layout>

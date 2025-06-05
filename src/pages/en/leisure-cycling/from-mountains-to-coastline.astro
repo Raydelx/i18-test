@@ -1,0 +1,363 @@
+---
+import Container from "../../../components/container.astro";
+import InformationProducts from "../../../components/ui/informationProducts.astro";
+import Icon from "../../../components/Icon.astro";
+import Layout from "../../../layouts/Layout.astro";
+import SliderReact from "../../../hooks/SliderReact";
+import Days from "@/components/products-components/days.astro";
+import Includes from "@/components/products-components/includes.astro";
+import Wheel from "@/components/ui/icons/wheel.astro";
+import Route from "@/components/ui/icons/route.astro";
+import Link from "@/components/ui/link.astro";
+import Cancellation from "@/components/products-components/cancellation.astro";
+import Widget from "@/components/products-components/widget.astro";
+
+// Duplica y cambia las rutas para añadir o modificar las fotos
+
+const IMG = [
+  {
+    src: "/cycle-tour/leisure-cycling/from-montains-to-coastline/fmtc-1.webp",
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/from-montains-to-coastline/fmtc-2.webp",
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/from-montains-to-coastline/fmtc-3.webp",
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/from-montains-to-coastline/fmtc-4.webp",
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/from-montains-to-coastline/fmtc-5.webp",
+  },
+];
+const DAYS = [
+  {
+    day: "1",
+    tecnicalInfo: true,
+    description:
+      "We drive to the charming village Nigüelas, a rural town on the western slopes of the Sierra Nevada Mountain range. Here we start the cycle ride that takes you through a beautiful valley, called Valle de Lecrín, a protected area of rolling hills, ravines, rugged cliffs, and rivers covered with cultivated citrus and orange groves, almond trees, and olive oil plantations. The cycle trail leads us to a panoramic viewpoint where the Mediterranean Sea appears and our destination, the town of Salobreña located on the top of a giant rock, capped with an ancient Moorish castle. There is time to enjoy a drink at the beach or a swim before we go back to Granada.",
+    optional1: "Olive oil tour at Spain’s oldest olive oil mill.",
+    optional2: "Lunch at the beach. Fresh fish or Paella. ",
+    totalDistance: "50 km",
+    totalAscent: "450 m",
+    totalDescent: "1350 m",
+    duration: "3-4 hours",
+  },
+];
+
+const brings = [
+  {
+    title: "Comfortable clothing and shoes.",
+  },
+  {
+    title: "Sunglasses",
+  },
+  {
+    title: "Sun protection ",
+  },
+];
+---
+
+<Layout title="">
+  <Container>
+    <main class="mt-16">
+      <!-- Foto, nombre y destino -->
+
+      <div
+        class="bg-center bg-cover bg-no-repeat bg-[url('/public/cycle-tour/leisure-cycling/from-montains-to-coastline/from-montains-to-coastline.jpg')] h-[25rem] rounded-2xl">
+        <div class="flex flex-col justify-end h-full p-6 w-auto bg-cover">
+          <div class="flex gap-2">
+            <Icon icon="destiny-logo" size="1.6rem" color="white" />
+            <p
+              class="text-xl font-normal text-white lg:text-2xl flex flex-col justify-end h-full [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
+              Granada
+            </p>
+          </div>
+
+          <h1
+            class="text-3xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-5xl [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
+            From Mountains to Coastline E-Bike Tour
+          </h1>
+        </div>
+      </div>
+
+      <!-- Informacion general de los viajes -->
+
+      <div
+        class="grid grid-cols-2 md:grid-cols-6 h-auto mt-3 gap-3 place-content-start md:px-6">
+        <InformationProducts title="Price" subtitle="110">
+          <div slot="icon">
+            <Icon icon="price-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts title="Pre-booking" subtitle="100%">
+          <div slot="icon">
+            <Icon icon="price-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts title="Minimum of persons" subtitle="4">
+          <div slot="icon">
+            <Icon icon="group-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts title="Duration" subtitle="8 Hours">
+          <div slot="icon">
+            <Icon icon="timer-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts title="Tour type" subtitle="Guided">
+          <div slot="icon">
+            <Icon icon="guide-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts title="Season" subtitle2="All Year">
+          <!-- <div slot="icon">
+            <Icon icon="autumn-logo" size="1.6rem" color="#0E46A3" />
+          </div> -->
+        </InformationProducts>
+      </div>
+
+      <!-- Informacion tecnica -->
+
+      <div class="">
+        <div
+          class="grid grid-cols-2 justify-between md:grid-cols-6 h-auto mt-3 gap-3 md:px-6">
+          <InformationProducts title="Total distance" subtitle="50 km">
+            <div slot="icon">
+              <Icon icon="distance-logo" size="1.6rem" color="#0E46A3" />
+            </div>
+          </InformationProducts>
+
+          <InformationProducts title="Total ascent" subtitle="450 m">
+            <div slot="icon">
+              <Icon icon="up-logo" size="1.6rem" color="#0E46A3" />
+            </div>
+          </InformationProducts>
+          <InformationProducts title="Total descent" subtitle="1350 m">
+            <div slot="icon">
+              <Icon icon="down-logo" size="1.6rem" color="#0E46A3" />
+            </div>
+          </InformationProducts>
+          <InformationProducts title="Route type" subtitle="Point to point">
+            <div slot="icon">
+              <Route />
+            </div>
+          </InformationProducts>
+          <InformationProducts title="Difficulty" subtitle="Easy">
+            <div class="flex gap-1" slot="icon"></div>
+          </InformationProducts>
+          <InformationProducts title="E-Bike" subtitle="Yes">
+            <div slot="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="45"
+                height="30"
+                fill="#0E46A3"
+                viewBox="80 90 330 330"
+                ><path
+                  d="M83.172,319.817Q85.646,320,88.1,320A64,64,0,0,0,136.544,214.29a64.376,64.376,0,0,0-11.981-10.841l9.59-17.982,46.293,46.293A31.986,31.986,0,1,0,235.7,264h20.823a64.023,64.023,0,1,0,42.47-68.439l-10.025-19.605L300.944,152H316a20,20,0,0,0,0-40H276a20,20,0,0,0,0,40h7.053l-8,16H143.469l16.49-30.918L160,137l4.8-9H200a8,8,0,0,0,0-16H166.624A24.039,24.039,0,0,0,144,96H120a8,8,0,0,0-8,8v32a8,8,0,0,0,8,8h18.136l-27.748,52.028a64.045,64.045,0,0,0-86.2,55.141h0A64.072,64.072,0,0,0,83.172,319.817ZM312,256a8,8,0,1,1,8,8A8.009,8.009,0,0,1,312,256Zm-20-38.953L303.183,238.9a24.037,24.037,0,0,0-5.8,9.1h-24.7A48.052,48.052,0,0,1,292.007,217.047Zm-14.122-27.618,6.775,13.25A64.062,64.062,0,0,0,256.521,248H240a31.8,31.8,0,0,0-4.446-16.244ZM260.686,184l-36.443,36.443a31.9,31.9,0,0,0-32.483,0L155.314,184ZM96,256a8,8,0,1,1-8-8A8.009,8.009,0,0,1,96,256Z"
+                ></path><path
+                  d="M380,168H344v16h36a92,92,0,0,1,0,184H327.324a47.991,47.991,0,0,0-94.642,0H190.99A32.057,32.057,0,0,0,160,344H120a8,8,0,0,0-8,8H96a8,8,0,1,0,0,16h16v16H96a8,8,0,1,0,0,16h16a8,8,0,0,0,8,8h40a32.057,32.057,0,0,0,30.987-24h41.692a47.991,47.991,0,0,0,94.642,0H380a108,108,0,0,0,0-216ZM294.659,380.438l-16,24-13.312-8.876L273.055,384H272a8,8,0,0,1-6.653-12.438l16-24,13.312,8.876L286.951,368H288a8,8,0,0,1,6.656,12.438Z"
+                ></path></svg
+              >
+            </div>
+          </InformationProducts>
+        </div>
+      </div>
+
+      <!--  Include, exclude, complementaries  -->
+      <div
+        class="grid md:grid-cols-2 lg:grid-cols-3 mt-20 md:mt-26 md:mb-36 gap-16 md:gap-4">
+        <!-- Include -->
+        <Includes title="Included">
+          <ul slot="description" class="mt-4 flex flex-col gap-2">
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Professional guide</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                Liability insurance and assistance
+              </p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Backup vehicle</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Transfer</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">E-bike + Pannier</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Helmet & gloves</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Snack and water</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Beach towel</p>
+            </li>
+          </ul>
+        </Includes>
+        <!-- Exclude -->
+        <Includes title="Not Included">
+          <div slot="description" class="flex flex-col gap-2 mt-4">
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Lunch</p>
+            </li>
+          </div>
+        </Includes>
+        <!-- Complementaries -->
+        <Includes title="Extra">
+          <div slot="description" class="flex flex-col gap-2 mt-4">
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="complement-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Olive oil tour</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="complement-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Lunch at the beach</p>
+            </li>
+          </div>
+        </Includes>
+      </div>
+    </main>
+
+    <div class="grid md:grid-cols-2 h-auto gap-10 md:gap-20 md:py-36 py-10">
+      <div class="static h-[385px] hidden md:block">
+        <img
+          class="rounded-xl absolute md:w-[20rem] lg:w-[25rem] hover:z-40 transition-all duration-300 ease-out hover:scale-105"
+          src="/cycle-tour/montainbike/sierra-nevada/sierra-feature.webp"
+          alt="ciclista mirando la sierra con cicicleta a su lado"
+        />
+        <img
+          class="rounded-xl absolute md:w-[10rem] lg:w-[12rem] md:mt-48 lg:mt-60 ml-6 z-10 grayscale-[60%] hover:grayscale-0 transition-all duration-300 ease-out hover:scale-105"
+          src="/cycle-tour/montainbike/sierra-nevada/sierra-feature2.webp"
+          alt="ciclista mirando la sierra con cicicleta a su lado"
+        />
+        <img
+          class="rounded-xl absolute md:w-[10rem] lg:w-[15em] ml-64 md:-mt-24 lg:-mt-32 grayscale-[60%] hover:grayscale-0 transition-all duration-300 ease-out hover:scale-105"
+          src="/cycle-tour/montainbike/sierra-nevada/sierra-feature3.webp"
+          alt="ciclista mirando la sierra con cicicleta a su lado"
+        />
+      </div>
+
+      <div class="grid gap-5">
+        <div class="">
+          <h2
+            class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+            Availability
+          </h2>
+
+          <ul class="grid gap-2 text-lg">
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="spring-logo" size="1.6rem" color="#0E46A3" />
+              <p>Spring</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="summer-logo" size="1.6rem" color="#0E46A3" />
+              <p>Summer</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="autumn-logo" size="1.6rem" color="#0E46A3" />
+              <p>Autumn</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="winter-logo" size="1.6rem" color="#0E46A3" />
+              <p>Winter</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="">
+          <h2
+            class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+            Highlight
+          </h2>
+          <p class="text-lg text-gray-900 mb-1">
+            <span class="text-xl">🔹</span> Scenic views of The Lecrín Valley and
+            The tropical Coast
+          </p>
+          <p class="text-lg text-gray-900">
+            <span class="text-xl">🔹</span> Great cycle road that winds through the
+            landscape
+          </p>
+          <p class="text-lg text-gray-900">
+            <span class="text-xl">🔹</span> Drink at the beach
+          </p>
+          <p class="text-lg text-gray-900">
+            <span class="text-xl">🔹</span> Olive Oil tour (Optional)
+          </p>
+          <p class="text-lg text-gray-900">
+            <span class="text-xl">🔹</span> Lunch at the beach (Optional)
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <Widget
+      title="What to bring for Cycling"
+      description="Weather is important to consider while packing for your outdoor activity. Your packing list is based on your comfort and sensitivity. Layering your clothes is the best way to travel and be outdoors. It is highly recommended as the best way to stay warm and cool, as the weather is bound to change in the mountains."
+      img="/hiking-and-trekking/trekking-alpujarras/bring.webp"
+      text="Any questions about the recommendations of the material do not hesitate to contact us."
+      brings={brings}
+    />
+
+    <!-- Button to download PDF -->
+    <section class="grid md:grid-cols-2 gap-10">
+      <div class="">
+        <h2
+          class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+          Requirements
+        </h2>
+        <p class="text-lg text-gray-900 mb-1">
+          <span class="text-xl strong">🔹</span> Good physical health
+        </p>
+        <p class="text-lg text-gray-900">
+          <span class="text-xl">🔹</span> Minimum age and height: 11 years and 1.50
+          m
+        </p>
+        <p class="text-lg text-gray-900">
+          <span class="text-xl">🔹</span> Closed shoes, no open shoes!
+        </p>
+        <p class="text-lg text-gray-900">
+          <span class="text-xl">🔹</span> You are capable of controlling bicycle
+          speed and direction on paved roads
+        </p>
+        <p class="text-lg text-gray-900">
+          <span class="text-xl">🔹</span> You can brake, and use gears with confidence
+        </p>
+      </div>
+      <Cancellation />
+    </section>
+
+    <!-- Slider Photos -->
+    <section class="m-auto md:w-full rounded-xl md:px-8 md:py-20">
+      <ol class="relative mt-16">
+        {(<SliderReact IMG={IMG} client:visible />)}
+      </ol>
+    </section>
+
+    <!--  TimeLine per days  -->
+    <h2 class="text-4xl md:text-5xl xl:text-6xl md:p-8 mt-16 font-bold mb-4">
+      What to expect
+    </h2>
+    {
+      DAYS.map((tour) => (
+        <ol class="mb-10">
+          <Days {...tour} />
+        </ol>
+      ))
+    }
+  </Container>
+</Layout>

@@ -1,0 +1,47 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Container from "../../components/container.astro";
+import Sectionhead from "../../components/sectionhead.astro";
+import Card from "../../components/card.astro";
+import { getI18N } from "../../i18n/";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+
+const TOURBIKEPRODUCTS = [
+  {
+    name: "RoadBike Trails Granada",
+    description: "",
+    href: "/road-bike-products/road-bike-trails-granada/",
+    href_img: "/cycle-tour/roadbike/roadbike-trails-granada/rb-tg-product.webp",
+    alt_img: "string",
+  },
+  {
+    name: "RoadBike Escape Granada",
+    description: "",
+    href: "/road-bike-products/road-bike-escape-granada/",
+    href_img: "/cycle-tour/roadbike/roadbike-escape-granada/rb-eg-product.webp",
+    alt_img: "string",
+  },
+];
+---
+
+<Layout title="E-Bike Products">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Road-Bike</Fragment>
+      <Fragment slot="desc"></Fragment>
+    </Sectionhead>
+    <main class="mt-24">
+      <ul class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
+        {
+          TOURBIKEPRODUCTS.map((tour) => (
+            <li class="mb-10 ">
+              <Card {...tour} />
+            </li>
+          ))
+        }
+      </ul>
+    </main>
+  </Container>
+</Layout>
