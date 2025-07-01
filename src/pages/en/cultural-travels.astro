@@ -4,11 +4,21 @@ import Container from "../../components/container.astro";
 import Sectionhead from "../../components/sectionhead.astro";
 import Card from "../../components/card.astro";
 
+import {
+  getLangFromUrl,
+  useTranslations,
+  useTranslatedPath,
+} from "../../i18n/utils.js";
+
+const lang = getLangFromUrl(Astro.url);
+
+const translatePath = useTranslatedPath(lang);
+
 const TOURBIKEPRODUCTS = [
   {
     name: "A breathtaking road trip through the Alpujarras",
     description: "",
-    href: "/cultural-travels/a-breathtaking-road-trip-through-the-alpujarras",
+    href: translatePath("a-breathtaking-road-trip-through-the-alpujarras"),
     href_img:
       "/cultural-travels/a-breathtaking-road-trip-through-the-alpujarras/alp-product.webp",
     alt_img: "string",

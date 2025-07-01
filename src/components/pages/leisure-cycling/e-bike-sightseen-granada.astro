@@ -12,6 +12,10 @@ import Link from "@/components/ui/link.astro";
 import Cancellation from "@/components/products-components/cancellation.astro";
 import Widget from "@/components/products-components/widget.astro";
 
+import { getI18N } from "@/i18n/";
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+
 // Duplica y cambia las rutas para añadir o modificar las fotos
 
 const IMG = [
@@ -35,7 +39,7 @@ const DAYS = [
   {
     day: "1",
     description:
-      "Discover Granada and the surroundings on two wheels, a great way to see panoramic views of Alhambra, the city, and the Sierra Nevada Mountain range.The ride starts in the city and brings you to a green landscape in the hills of Sabika where the Alhambra stands, facing both neighborhoods Albaicín and Sacromonte. After a coffee break, the guide will lead you through these neighborhoods showing you the important sites with the best viewpoints. A great way to explore the city and enjoy nature!",
+      i18n.PRODUCTS.LEISURE_CYCLING.E_BIKE_SIGHTSEEN_GRANADA.DAYS.DAY_1.TEXT_1,
     tecnicalInfo: true,
     totalDistance: "50 km",
     totalAscent: "600 m",
@@ -46,13 +50,19 @@ const DAYS = [
 
 const brings = [
   {
-    title: "Comfortable clothing and shoes.",
+    title:
+      i18n.PRODUCTS.LEISURE_CYCLING.E_BIKE_SIGHTSEEN_GRANADA.WHAT_TO_BRING
+        .BRING_1,
   },
   {
-    title: "Sunglasses",
+    title:
+      i18n.PRODUCTS.LEISURE_CYCLING.E_BIKE_SIGHTSEEN_GRANADA.WHAT_TO_BRING
+        .BRING_2,
   },
   {
-    title: "Sun protection ",
+    title:
+      i18n.PRODUCTS.LEISURE_CYCLING.E_BIKE_SIGHTSEEN_GRANADA.WHAT_TO_BRING
+        .BRING_3,
   },
 ];
 ---
@@ -69,13 +79,13 @@ const brings = [
             <Icon icon="destiny-logo" size="1.6rem" color="white" />
             <p
               class="text-xl font-normal text-white lg:text-2xl flex flex-col justify-end h-full [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
-              Granada
+              {i18n.PRODUCTS.LEISURE_CYCLING.E_BIKE_SIGHTSEEN_GRANADA.LOCATION}
             </p>
           </div>
 
           <h1
             class="text-3xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-5xl [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
-            Sightseeing Granada E-bike Tour
+            {i18n.PRODUCTS.LEISURE_CYCLING.E_BIKE_SIGHTSEEN_GRANADA.TITLE}
           </h1>
         </div>
       </div>
@@ -84,7 +94,10 @@ const brings = [
 
       <div
         class="grid grid-cols-2 md:grid-cols-6 h-auto mt-3 gap-3 place-content-start md:px-6">
-        <InformationProducts title="Price" subtitle="80 (2 pax.) ">
+        <InformationProducts
+          title="Price"
+          subtitle={i18n.PRODUCTS.LEISURE_CYCLING.E_BIKE_SIGHTSEEN_GRANADA
+            .PRICE}>
           <div slot="icon">
             <Icon icon="price-logo" size="1.6rem" color="#0E46A3" />
           </div>
@@ -99,12 +112,18 @@ const brings = [
             <Icon icon="group-logo" size="1.6rem" color="#0E46A3" />
           </div>
         </InformationProducts>
-        <InformationProducts title="Duration" subtitle="4 Hours">
+        <InformationProducts
+          title="Duration"
+          subtitle={i18n.PRODUCTS.LEISURE_CYCLING.E_BIKE_SIGHTSEEN_GRANADA
+            .DURATION}>
           <div slot="icon">
             <Icon icon="timer-logo" size="1.6rem" color="#0E46A3" />
           </div>
         </InformationProducts>
-        <InformationProducts title="Tour type" subtitle="Guided">
+        <InformationProducts
+          title="Tour type"
+          subtitle={i18n.PRODUCTS.LEISURE_CYCLING.E_BIKE_SIGHTSEEN_GRANADA
+            .TOUR_TYPE}>
           <div slot="icon">
             <Icon icon="guide-logo" size="1.6rem" color="#0E46A3" />
           </div>
@@ -137,12 +156,18 @@ const brings = [
               <Icon icon="down-logo" size="1.6rem" color="#0E46A3" />
             </div>
           </InformationProducts>
-          <InformationProducts title="Route type" subtitle="Loop">
+          <InformationProducts
+            title="Route type"
+            subtitle={i18n.PRODUCTS.LEISURE_CYCLING.E_BIKE_SIGHTSEEN_GRANADA
+              .ROUTE_TYPE}>
             <div slot="icon">
               <Route />
             </div>
           </InformationProducts>
-          <InformationProducts title="Difficulty" subtitle="Easy">
+          <InformationProducts
+            title="Difficulty"
+            subtitle={i18n.PRODUCTS.LEISURE_CYCLING.E_BIKE_SIGHTSEEN_GRANADA
+              .DIFFICULTY}>
             <div class="flex gap-1" slot="icon"></div>
           </InformationProducts>
           <InformationProducts title="E-Bike" subtitle="Yes">
@@ -168,42 +193,79 @@ const brings = [
       <div
         class="grid md:grid-cols-2 lg:grid-cols-2 mt-20 md:mt-26 md:mb-36 gap-16 md:gap-4">
         <!-- Include -->
-        <Includes title="Included">
+        <Includes
+          title={i18n.PRODUCTS.LEISURE_CYCLING.E_BIKE_SIGHTSEEN_GRANADA.INCLUDED
+            .TITLE}>
           <ul slot="description" class="mt-4 flex flex-col gap-2">
-            <li class="flex flex-wrap gap-2">
-              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
-              <p class="max-w-[320px] text-md">Professional guide</p>
-            </li>
-            <li class="flex flex-wrap gap-2">
+            <li class="flex gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
               <p class="max-w-[320px] text-md">
-                Liability insurance and assistance
+                {
+                  i18n.PRODUCTS.LEISURE_CYCLING.E_BIKE_SIGHTSEEN_GRANADA
+                    .INCLUDED.TEXT_1
+                }
+              </p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                {
+                  i18n.PRODUCTS.LEISURE_CYCLING.E_BIKE_SIGHTSEEN_GRANADA
+                    .INCLUDED.TEXT_2
+                }
+              </p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                {
+                  i18n.PRODUCTS.LEISURE_CYCLING.E_BIKE_SIGHTSEEN_GRANADA
+                    .INCLUDED.TEXT_3
+                }
+              </p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                {
+                  i18n.PRODUCTS.LEISURE_CYCLING.E_BIKE_SIGHTSEEN_GRANADA
+                    .INCLUDED.TEXT_4
+                }
               </p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
-              <p class="max-w-[320px] text-md">Transfer</p>
+              <p class="max-w-[320px] text-md">
+                {
+                  i18n.PRODUCTS.LEISURE_CYCLING.E_BIKE_SIGHTSEEN_GRANADA
+                    .INCLUDED.TEXT_5
+                }
+              </p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
-              <p class="max-w-[320px] text-md">E-bike + Pannier</p>
-            </li>
-            <li class="flex flex-wrap gap-2">
-              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
-              <p class="max-w-[320px] text-md">Helmet & gloves</p>
-            </li>
-            <li class="flex flex-wrap gap-2">
-              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
-              <p class="max-w-[320px] text-md">Water</p>
+              <p class="max-w-[320px] text-md">
+                {
+                  i18n.PRODUCTS.LEISURE_CYCLING.E_BIKE_SIGHTSEEN_GRANADA
+                    .INCLUDED.TEXT_6
+                }
+              </p>
             </li>
           </ul>
         </Includes>
         <!-- Exclude -->
-        <Includes title="Not Included">
+        <Includes
+          title={i18n.PRODUCTS.LEISURE_CYCLING.E_BIKE_SIGHTSEEN_GRANADA
+            .NOT_INCLUDED.TITLE}>
           <div slot="description" class="flex flex-col gap-2 mt-4">
             <li class="flex flex-wrap gap-2">
               <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
-              <p class="max-w-[320px] text-md">Lunch</p>
+              <p class="max-w-[320px] text-md">
+                {
+                  i18n.PRODUCTS.LEISURE_CYCLING.E_BIKE_SIGHTSEEN_GRANADA
+                    .NOT_INCLUDED.TEXT_1
+                }
+              </p>
             </li>
           </div>
         </Includes>
@@ -234,25 +296,48 @@ const brings = [
         <div class="">
           <h2
             class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
-            Availability
+            {
+              i18n.PRODUCTS.LEISURE_CYCLING.E_BIKE_SIGHTSEEN_GRANADA
+                .AVAILABILITY
+            }
           </h2>
 
           <ul class="grid gap-2 text-lg">
             <li class="flex flex-wrap gap-2">
               <Icon icon="spring-logo" size="1.6rem" color="#0E46A3" />
-              <p>Spring</p>
+              <p>
+                {
+                  i18n.PRODUCTS.LEISURE_CYCLING.E_BIKE_SIGHTSEEN_GRANADA
+                    .AVAILABILITY_TEXT_1
+                }
+              </p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="summer-logo" size="1.6rem" color="#0E46A3" />
-              <p>Summer</p>
+              <p>
+                {
+                  i18n.PRODUCTS.LEISURE_CYCLING.E_BIKE_SIGHTSEEN_GRANADA
+                    .AVAILABILITY_TEXT_2
+                }
+              </p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="autumn-logo" size="1.6rem" color="#0E46A3" />
-              <p>Autumn</p>
+              <p>
+                {
+                  i18n.PRODUCTS.LEISURE_CYCLING.E_BIKE_SIGHTSEEN_GRANADA
+                    .AVAILABILITY_TEXT_3
+                }
+              </p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="winter-logo" size="1.6rem" color="#0E46A3" />
-              <p>Winter</p>
+              <p>
+                {
+                  i18n.PRODUCTS.LEISURE_CYCLING.E_BIKE_SIGHTSEEN_GRANADA
+                    .AVAILABILITY_TEXT_4
+                }
+              </p>
             </li>
           </ul>
         </div>
@@ -260,25 +345,34 @@ const brings = [
         <div class="">
           <h2
             class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
-            Highlight
+            {i18n.PRODUCTS.LEISURE_CYCLING.E_BIKE_SIGHTSEEN_GRANADA.HIGHLIGHT}
           </h2>
           <p class="text-lg text-gray-900 mb-1">
-            <span class="text-xl">🔹</span> Panoramic views of Alhambra, the city,
-            and the Sierra Nevada Mountain range
+            <span class="text-xl">🔹</span>
+            {
+              i18n.PRODUCTS.LEISURE_CYCLING.E_BIKE_SIGHTSEEN_GRANADA
+                .HIGHLIGHT_TEXT_1
+            }
           </p>
           <p class="text-lg text-gray-900 mb-1">
-            <span class="text-xl">🔹</span>To get to know the history and
-            culture of Granada
+            <span class="text-xl">🔹</span>
+            {
+              i18n.PRODUCTS.LEISURE_CYCLING.E_BIKE_SIGHTSEEN_GRANADA
+                .HIGHLIGHT_TEXT_2
+            }
           </p>
         </div>
       </div>
     </div>
 
     <Widget
-      title="What to bring for Cycling"
-      description="Weather is important to consider while packing for your outdoor activity. Your packing list is based on your comfort and sensitivity. Layering your clothes is the best way to travel and be outdoors. It is highly recommended as the best way to stay warm and cool, as the weather is bound to change in the mountains."
+      title={i18n.PRODUCTS.LEISURE_CYCLING.E_BIKE_SIGHTSEEN_GRANADA
+        .WHAT_TO_BRING.TITLE}
+      description={i18n.PRODUCTS.LEISURE_CYCLING.E_BIKE_SIGHTSEEN_GRANADA
+        .WHAT_TO_BRING.TEXT_1}
       img="/hiking-and-trekking/trekking-alpujarras/bring.webp"
-      text="Any questions about the recommendations of the material do not hesitate to contact us."
+      text={i18n.PRODUCTS.LEISURE_CYCLING.E_BIKE_SIGHTSEEN_GRANADA.WHAT_TO_BRING
+        .TEXT_2}
       brings={brings}
     />
 
@@ -287,24 +381,42 @@ const brings = [
       <div class="">
         <h2
           class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
-          Requirements
+          {i18n.PRODUCTS.LEISURE_CYCLING.E_BIKE_SIGHTSEEN_GRANADA.REQUIEREMENTS}
         </h2>
         <p class="text-lg text-gray-900 mb-1">
-          <span class="text-xl strong">🔹</span> Good physical health
+          <span class="text-xl strong">🔹</span>
+          {
+            i18n.PRODUCTS.LEISURE_CYCLING.E_BIKE_SIGHTSEEN_GRANADA
+              .REQUIEREMENTS_TEXT_1
+          }
         </p>
         <p class="text-lg text-gray-900">
-          <span class="text-xl">🔹</span> Minimum age and height: 11 years and 1.50
-          m
+          <span class="text-xl">🔹</span>
+          {
+            i18n.PRODUCTS.LEISURE_CYCLING.E_BIKE_SIGHTSEEN_GRANADA
+              .REQUIEREMENTS_TEXT_2
+          }
         </p>
         <p class="text-lg text-gray-900">
-          <span class="text-xl">🔹</span> Closed shoes, no open shoes!
+          <span class="text-xl">🔹</span>
+          {
+            i18n.PRODUCTS.LEISURE_CYCLING.E_BIKE_SIGHTSEEN_GRANADA
+              .REQUIEREMENTS_TEXT_3
+          }
         </p>
         <p class="text-lg text-gray-900">
-          <span class="text-xl">🔹</span> You are capable of controlling bicycle
-          speed and direction on paved roads
+          <span class="text-xl">🔹</span>
+          {
+            i18n.PRODUCTS.LEISURE_CYCLING.E_BIKE_SIGHTSEEN_GRANADA
+              .REQUIEREMENTS_TEXT_4
+          }
         </p>
         <p class="text-lg text-gray-900">
-          <span class="text-xl">🔹</span> You can brake, and use gears with confidence
+          <span class="text-xl">🔹</span>
+          {
+            i18n.PRODUCTS.LEISURE_CYCLING.E_BIKE_SIGHTSEEN_GRANADA
+              .REQUIEREMENTS_TEXT_5
+          }
         </p>
       </div>
       <Cancellation />
@@ -319,7 +431,7 @@ const brings = [
 
     <!--  TimeLine per days  -->
     <h2 class="text-4xl md:text-5xl xl:text-6xl md:p-8 mt-16 font-bold mb-4">
-      What to expect
+      {i18n.PRODUCTS.LEISURE_CYCLING.E_BIKE_SIGHTSEEN_GRANADA.WHAT_TO_EXPECT}
     </h2>
     {
       DAYS.map((tour) => (

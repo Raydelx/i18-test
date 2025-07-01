@@ -55,6 +55,16 @@ export const routes = {
 		'form-tailor-made-travel': 'form-tailor-made-travel',
 		'a-breathtaking-road-trip-through-the-alpujarras': 'a-breathtaking-road-trip-through-the-alpujarras',
 		'rock-climbing': 'rock-climbing',
+		'rock-climbing-courses': 'rock-climbing-courses',
+		'leisure-cycling': 'leisure-cycling',
+		cycling: 'cycling',
+		'cycle-ronda-cordoba': 'cycle-ronda-cordoba',
+		'e-bike-sightseen-granada': 'e-bike-sightseen-granada',
+		'epic-landscape-e-bike-tour-granada': 'epic-landscape-e-bike-tour-granada',
+		'from-mountains-to-coastline': 'from-mountains-to-coastline',
+		'mtb-escape-granada': 'mtb-escape-granada',
+		'mtb-trails-granada': 'mtb-trails-granada',
+		'sierra-nevada': 'sierra-nevada',
 	},
 	en: {
 		blog: 'blog',
@@ -70,6 +80,16 @@ export const routes = {
 		'form-tailor-made-travel': 'form-tailor-made-travel',
 		'a-breathtaking-road-trip-through-the-alpujarras': 'a-breathtaking-road-trip-through-the-alpujarras',
 		'rock-climbing': 'rock-climbing',
+		'rock-climbing-courses': 'rock-climbing-courses',
+		'leisure-cycling': 'leisure-cycling',
+		cycling: 'cycling',
+		'cycle-ronda-cordoba': 'cycle-ronda-cordoba',
+		'e-bike-sightseen-granada': 'e-bike-sightseen-granada',
+		'epic-landscape-e-bike-tour-granada': 'epic-landscape-e-bike-tour-granada',
+		'from-mountains-to-coastline': 'from-mountains-to-coastline',
+		'mtb-escape-granada': 'mtb-escape-granada',
+		'mtb-trails-granada': 'mtb-trails-granada',
+		'sierra-nevada': 'sierra-nevada',
+		
 	},
-	
-};
+} 

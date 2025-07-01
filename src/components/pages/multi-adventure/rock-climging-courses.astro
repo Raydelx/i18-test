@@ -9,6 +9,9 @@ import Link from "../../../components/ui/link.astro";
 import Cancellation from "../../../components/products-components/cancellation.astro";
 import Widget from "@/components/products-components/widget.astro";
 import Dots from "@/components/ui/dots.astro";
+import { getI18N } from "@/i18n/";
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
 
 // Duplica y cambia las rutas para añadir o modificar las fotos
 
@@ -33,31 +36,40 @@ const IMG = [
 const brings = [
   {
     title:
-      "Technical clothing appropriate for the time of year and sporting activity (fleece, windbreaker, waterproof and breathable jacket, gloves, etc.). A windbreaker or thin fleece is always useful, even in summer.",
+      i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES.WHAT_TO_BRING.BRING_1,
   },
   {
-    title: "Comfortable clothing that is neither tight nor bulky",
+    title:
+      i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES.WHAT_TO_BRING.BRING_2,
   },
   {
-    title: "Backpack of approximately 15 to 30 liters.",
+    title:
+      i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES.WHAT_TO_BRING.BRING_3,
   },
   {
-    title: "Approach shoes or sneakers",
+    title:
+      i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES.WHAT_TO_BRING.BRING_4,
   },
   {
-    title: "1L water bottle",
+    title:
+      i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES.WHAT_TO_BRING.BRING_5,
   },
   {
-    title: "Picnic",
+    title:
+      i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES.WHAT_TO_BRING.BRING_6,
   },
   {
-    title: "Sun protection (sunglasses, sunscreen, lip balm, cap or hat)",
+    title:
+      i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES.WHAT_TO_BRING.BRING_7,
+  },
+
+  {
+    title:
+      i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES.WHAT_TO_BRING.BRING_8,
   },
   {
-    title: "Thermal blanket",
-  },
-  {
-    title: "A pencil and paper",
+    title:
+      i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES.WHAT_TO_BRING.BRING_9,
   },
 ];
 ---
@@ -80,7 +92,7 @@ const brings = [
 
           <h1
             class="text-3xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-5xl [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
-            Rock Climbing Courses
+            {i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES.TITLE}
           </h1>
         </div>
       </div>
@@ -89,7 +101,9 @@ const brings = [
 
       <div
         class="grid grid-cols-2 md:grid-cols-6 h-auto mt-3 gap-3 place-content-start md:px-6">
-        <InformationProducts title="Price" subtitle="Trip Notes">
+        <InformationProducts
+          title="Price"
+          subtitle={i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES.PRICE}>
           <div slot="icon">
             <Icon icon="price-logo" size="1.6rem" color="#0E46A3" />
           </div>
@@ -109,17 +123,26 @@ const brings = [
             <Icon icon="group-logo" size="1.6rem" color="#0E46A3" />
           </div>
         </InformationProducts>
-        <InformationProducts title="Duration" subtitle="Check Trips Notes">
+        <InformationProducts
+          title="Duration"
+          subtitle={i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES
+            .DURATION}>
           <div slot="icon">
             <Icon icon="timer-logo" size="1.6rem" color="#0E46A3" />
           </div>
         </InformationProducts>
-        <InformationProducts title="Tour type" subtitle="Guided">
+        <InformationProducts
+          title="Tour type"
+          subtitle={i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES
+            .ROUTE_TYPE}>
           <div slot="icon">
             <Icon icon="guide-logo" size="1.6rem" color="#0E46A3" />
           </div>
         </InformationProducts>
-        <InformationProducts title="Season" subtitle2="All Year">
+        <InformationProducts
+          title="Season"
+          subtitle2={i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES
+            .SEASON}>
           <!-- <div slot="icon">
             <Icon icon="autumn-logo" size="1.6rem" color="#0E46A3" />
           </div> -->
@@ -135,24 +158,44 @@ const brings = [
       <div class="p-4">
         <h2
           class="text-4xl md:text-3xl xl:text-4xl font-bold mt-16 mb-8 text-center">
-          Courses
+          {i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES.COURSES.TITLE}
         </h2>
         <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-10">
           <div class="flex flex-col gap-2 justify-center items-center">
             <Icon icon="book-logo" size="2.5rem" color="#0E46A3" />
-            <p class="mt-2">Sport Leading Climbing Course</p>
+            <p class="mt-2">
+              {
+                i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES.COURSES
+                  .COURSE_1
+              }
+            </p>
           </div>
           <div class="flex flex-col gap-2 justify-center items-center">
             <Icon icon="book-logo" size="2.5rem" color="#0E46A3" />
-            <p class="mt-2">Climbing Fall Belay Course</p>
+            <p class="mt-2">
+              {
+                i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES.COURSES
+                  .COURSE_2
+              }
+            </p>
           </div>
           <div class="flex flex-col gap-2 justify-center items-center">
             <Icon icon="book-logo" size="2.5rem" color="#0E46A3" />
-            <p class="mt-2">Sport Multi-pitch Climbing Course</p>
+            <p class="mt-2">
+              {
+                i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES.COURSES
+                  .COURSE_3
+              }
+            </p>
           </div>
           <div class="flex flex-col gap-2 justify-center items-center">
             <Icon icon="book-logo" size="2.5rem" color="#0E46A3" />
-            <p class="mt-2">Self-Rescue Course on multi-pitch Routes</p>
+            <p class="mt-2">
+              {
+                i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES.COURSES
+                  .COURSE_4
+              }
+            </p>
           </div>
         </div>
       </div>
@@ -160,31 +203,46 @@ const brings = [
       <div
         class="grid md:grid-cols-2 lg:grid-cols-3 mt-20 md:mt-26 md:mb-36 gap-16 md:gap-4">
         <!-- Include -->
-        <Includes title="Included">
+        <Includes
+          title={i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES.INCLUDED
+            .TITLE}>
           <ul slot="description" class="mt-4 flex flex-col gap-2">
-            <li class="flex flex-wrap gap-2">
+            <li class="flex gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
               <p class="max-w-[320px] text-md">
-                Liability insurance and assistance
+                {
+                  i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES.INCLUDED
+                    .TEXT_1
+                }
               </p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
               <p class="max-w-[320px] text-md">
-                Rock climbing Sports Technician
+                {
+                  i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES.INCLUDED
+                    .TEXT_2
+                }
               </p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
-              <p class="max-w-[320px] text-md">Transfer</p>
+              <p class="max-w-[320px] text-md">
+                {
+                  i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES.INCLUDED
+                    .TEXT_3
+                }
+              </p>
             </li>
             <li class="flex gap-2">
               <div>
                 <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
               </div>
               <p class="max-w-[320px] text-md">
-                If necessary, personal equipment (climbing shoes, helmet, and
-                harness)
+                {
+                  i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES.INCLUDED
+                    .TEXT_4
+                }
               </p>
             </li>
 
@@ -193,26 +251,45 @@ const brings = [
                 <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
               </div>
               <p class="max-w-[320px] text-md">
-                Collective material (ropes, carabiners, slings, belay devices,
-                etc.)
+                {
+                  i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES.INCLUDED
+                    .TEXT_4
+                }
               </p>
             </li>
           </ul>
         </Includes>
         <!-- Exclude -->
-        <Includes title="Not Included">
+        <Includes
+          title={i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES
+            .NOT_INCLUDED.TITLE}>
           <div slot="description" class="flex flex-col gap-2 mt-4">
             <li class="flex flex-wrap gap-2">
               <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
-              <p class="max-w-[320px] text-md">Lunch</p>
+              <p class="max-w-[320px] text-md">
+                {
+                  i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES
+                    .NOT_INCLUDED.TEXT_1
+                }
+              </p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
-              <p class="max-w-[320px] text-md">Snack</p>
+              <p class="max-w-[320px] text-md">
+                {
+                  i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES
+                    .NOT_INCLUDED.TEXT_2
+                }
+              </p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
-              <p class="max-w-[320px] text-md">Water</p>
+              <p class="max-w-[320px] text-md">
+                {
+                  i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES
+                    .NOT_INCLUDED.TEXT_3
+                }
+              </p>
             </li>
           </div>
         </Includes>
@@ -242,14 +319,19 @@ const brings = [
           <div class="">
             <h2
               class="max-w-2xl md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
-              Availability
+              {i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES.AVAILABILITY}
             </h2>
             <Dots class="mb-4" />
 
             <ul class="grid gap-2 text-lg">
               <li class="flex flex-wrap gap-2">
                 <Icon icon="spring-logo" size="1.6rem" color="#0E46A3" />
-                <p>All Year</p>
+                <p>
+                  {
+                    i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES
+                      .AVAILABILITY_TEXT
+                  }
+                </p>
               </li>
             </ul>
           </div>
@@ -257,21 +339,28 @@ const brings = [
           <div class="">
             <h2
               class="max-w-2xl md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
-              Requirements
+              {i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES.HIGHLIGHT}
             </h2>
             <Dots class="mb-4" />
             <p class="text-lg text-gray-900">
-              <span class="text-xl">🔹</span> Age: 18 years
+              <span class="text-xl">🔹</span>
+              {
+                i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES
+                  .HIGHLIGHT_TEXT_1
+              }
             </p>
           </div>
         </div>
       </div>
 
       <Widget
-        title="What to bring for rock climbing"
-        description="Weather is important to consider while packing for your outdoor activity. Your packing list is based on your comfort and sensitivity. Layering your clothes is the best way to travel and be outdoors. It is highly recommended as the best way to stay warm and cool, as the weather is bound to change in the mountains."
+        title={i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES.WHAT_TO_BRING
+          .TITLE}
+        description={i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES
+          .WHAT_TO_BRING.TEXT_1}
         img="/multi-adventure/rock-climbing/rc-product.webp"
-        text="Any questions about the recommendations of the material do not hesitate to contact us. "
+        text={i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES.WHAT_TO_BRING
+          .TEXT_2}
         brings={brings}
       />
 
@@ -282,7 +371,7 @@ const brings = [
       <div
         class="grid bg-[#0E46A3] place-items-center md:mb-20 border-spacing-3 backdrop-blur-sm w-fit m-auto md:px-28 p-10 mt-12 rounded-xl shadow-[0px_0px_23px_14px_#00000024]">
         <h2 class="text-2xl md:text-3xl font-bold text-center text-gray-200">
-          More information about our Courses
+          {i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES.MORE_INFO}
         </h2>
         <Link
           style="muted"
@@ -290,7 +379,7 @@ const brings = [
           download="Sport Leading Climbing Course"
           class="flex gap-1 items-center justify-center mt-8 font-semibold"
           rel="noopener">
-          Sport leading climbing course
+          {i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES.COURSES.COURSE_1}
         </Link>
         <Link
           style="muted"
@@ -298,7 +387,7 @@ const brings = [
           download="Sport multi pitch climbing course"
           class="flex gap-1 items-center justify-center mt-8 font-semibold"
           rel="noopener">
-          Sport multi pitch climbing course
+          {i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES.COURSES.COURSE_2}
         </Link>
         <Link
           style="muted"
@@ -306,7 +395,7 @@ const brings = [
           download="Climbing fall belay course"
           class="flex gap-1 items-center justify-center mt-8 font-semibold"
           rel="noopener">
-          Climbing fall belay course
+          {i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES.COURSES.COURSE_3}
         </Link>
         <Link
           style="muted"
@@ -314,7 +403,7 @@ const brings = [
           download="Self-rescue course on multi pitch routes"
           class="flex gap-1 items-center justify-center mt-8 font-semibold"
           rel="noopener">
-          Self-rescue course on multi pitch routes
+          {i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES.COURSES.COURSE_4}
         </Link>
       </div>
 
@@ -328,88 +417,184 @@ const brings = [
       <!--  TimeLine per days  -->
       <h2
         class="text-4xl md:text-5xl xl:text-6xl md:p-4 mt-16 font-bold mb-12 text-center">
-        What to expect
+        {
+          i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES.WHAT_TO_EXPECT
+            .TITLE
+        }
       </h2>
 
       <div class="grid md:grid-cols-2 gap-16 mt-4 p-4 place-items-center">
         <div
           class="flex flex-col gap-2 isolate aspect-video w-[22rem] md:w-[30rem] rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 p-4">
-          <h3 class="text-xl font-bold">Sport Leading Climbing Course</h3>
+          <h3 class="text-xl font-bold">
+            {
+              i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES.WHAT_TO_EXPECT
+                .COURSE_1.TITLE
+            }
+          </h3>
           <p class="text-gray-700">
-            The introductory sport climbing course aims at people who want to
-            gain autonomy and confidence when climbing on rocks or walls.
+            {
+              i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES.WHAT_TO_EXPECT
+                .COURSE_1.TEXT_1
+            }
           </p>
           <p class="text-gray-700">
-            The course will allow you to climb sport climbing routes of up to
-            one pitch with complete autonomy and safety.
+            {
+              i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES.WHAT_TO_EXPECT
+                .COURSE_1.TEXT_2
+            }
           </p>
           <p class="text-gray-700">
-            <strong>First day: </strong>Indoor climbing wall
+            <strong
+              >{
+                i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES
+                  .WHAT_TO_EXPECT.COURSE_1.STRONG_1
+              }</strong
+            >{
+              i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES.WHAT_TO_EXPECT
+                .COURSE_1.TEXT_3
+            }
           </p>
           <p class="text-gray-700">
-            <strong>Second day: </strong>Outdoor on the rock
-          </p>
-        </div>
-        <div
-          class="flex flex-col gap-2 isolate aspect-video w-[22rem] md:w-[30rem] rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 p-4">
-          <h3 class="text-xl font-bold">Climbing Fall Belay Course</h3>
-          <p class="text-gray-700">
-            The main focus of the course is to teach participants how to
-            minimize the impact of falls through dynamic belaying techniques,
-            increasing the safety and confidence of both the climber and the
-            belayer. The course is designed for climbers of all levels, from
-            beginners to advanced, who wish to improve their belaying skills and
-            learn advanced fall management techniques on natural rock.
-          </p>
-
-          <p class="text-gray-700">
-            <strong>First day: </strong>Indoor
-          </p>
-          <p class="text-gray-700">
-            <strong>Second day: </strong>Outdoor
-          </p>
-        </div>
-        <div
-          class="flex flex-col gap-2 isolate aspect-video w-[22rem] md:w-[30rem] rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 p-4">
-          <h3 class="text-xl font-bold">Sport Multi-pitch Climbing Course</h3>
-          <p class="text-gray-700">
-            The introductory multi-pitch sport climbing course is designed for
-            those who want to learn the techniques and skills necessary to climb
-            sports routes of various lengths. Participants will learn how to
-            belay each other, climb progressively, and overcome the obstacles
-            that arise on multi-pitch routes.
-          </p>
-          <p class="text-gray-700">
-            The course will allow you to climb sport climbing routes of up to
-            one pitch with complete autonomy and safety.
-          </p>
-          <p class="text-gray-700">
-            <strong>First day: </strong>Indoor
-          </p>
-          <p class="text-gray-700">
-            <strong>Second day: </strong>Outdoor on the rock
+            <strong>
+              {
+                i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES
+                  .WHAT_TO_EXPECT.COURSE_1.STRONG_2
+              }</strong
+            >{
+              i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES.WHAT_TO_EXPECT
+                .COURSE_1.TEXT_4
+            }
           </p>
         </div>
         <div
           class="flex flex-col gap-2 isolate aspect-video w-[22rem] md:w-[30rem] rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 p-4">
           <h3 class="text-xl font-bold">
-            Self-Rescue Course on Multi-pitch Routes
+            {
+              i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES.WHAT_TO_EXPECT
+                .COURSE_2.TITLE
+            }
           </h3>
           <p class="text-gray-700">
-            The course prepares and teaches you to deal with unexpected
-            situations and handle the necessary equipment with confidence and
-            safety. You learn to master essential self-rescue techniques in
-            climbing with intensive practical and theoretical training.
+            {
+              i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES.WHAT_TO_EXPECT
+                .COURSE_2.TEXT_1
+            }
+          </p>
+
+          <p class="text-gray-700">
+            <strong
+              >{
+                i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES
+                  .WHAT_TO_EXPECT.COURSE_2.STRONG_1
+              }</strong
+            >
+            {
+              i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES.WHAT_TO_EXPECT
+                .COURSE_2.TEXT_3
+            }
           </p>
           <p class="text-gray-700">
-            The course will allow you to climb sport climbing routes of up to
-            one pitch with complete autonomy and safety.
+            <strong
+              >{
+                i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES
+                  .WHAT_TO_EXPECT.COURSE_2.STRONG_2
+              }</strong
+            >
+            {
+              i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES.WHAT_TO_EXPECT
+                .COURSE_2.TEXT_4
+            }
+          </p>
+        </div>
+        <div
+          class="flex flex-col gap-2 isolate aspect-video w-[22rem] md:w-[30rem] rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 p-4">
+          <h3 class="text-xl font-bold">
+            {
+              i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES.WHAT_TO_EXPECT
+                .COURSE_3.TITLE
+            }
+          </h3>
+          <p class="text-gray-700">
+            {
+              i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES.WHAT_TO_EXPECT
+                .COURSE_3.TEXT_1
+            }
           </p>
           <p class="text-gray-700">
-            <strong>First day: </strong>Indoor
+            {
+              i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES.WHAT_TO_EXPECT
+                .COURSE_3.TEXT_2
+            }
           </p>
           <p class="text-gray-700">
-            <strong>Second day: </strong>Indoor
+            <strong
+              >{
+                i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES
+                  .WHAT_TO_EXPECT.COURSE_3.STRONG_1
+              }</strong
+            >
+            {
+              i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES.WHAT_TO_EXPECT
+                .COURSE_3.TEXT_3
+            }
+          </p>
+          <p class="text-gray-700">
+            <strong
+              >{
+                i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES
+                  .WHAT_TO_EXPECT.COURSE_3.STRONG_2
+              }</strong
+            >
+            {
+              i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES.WHAT_TO_EXPECT
+                .COURSE_3.TEXT_4
+            }
+          </p>
+        </div>
+        <div
+          class="flex flex-col gap-2 isolate aspect-video w-[22rem] md:w-[30rem] rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 p-4">
+          <h3 class="text-xl font-bold">
+            {
+              i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES.WHAT_TO_EXPECT
+                .COURSE_4.TITLE
+            }
+          </h3>
+          <p class="text-gray-700">
+            {
+              i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES.WHAT_TO_EXPECT
+                .COURSE_4.TEXT_1
+            }
+          </p>
+          <p class="text-gray-700">
+            {
+              i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES.WHAT_TO_EXPECT
+                .COURSE_4.TEXT_2
+            }
+          </p>
+          <p class="text-gray-700">
+            <strong
+              >{
+                i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES
+                  .WHAT_TO_EXPECT.COURSE_4.STRONG_1
+              }</strong
+            >
+            {
+              i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES.WHAT_TO_EXPECT
+                .COURSE_4.TEXT_3
+            }
+          </p>
+          <p class="text-gray-700">
+            <strong
+              >{
+                i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES
+                  .WHAT_TO_EXPECT.COURSE_4.STRONG_2
+              }</strong
+            >
+            {
+              i18n.PRODUCTS.MULTI_ADVENTURE.ROCK_CLIMBING_COURSES.WHAT_TO_EXPECT
+                .COURSE_4.TEXT_4
+            }
           </p>
         </div>
       </div>

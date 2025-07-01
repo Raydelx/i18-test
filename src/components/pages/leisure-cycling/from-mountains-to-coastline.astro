@@ -12,6 +12,10 @@ import Link from "@/components/ui/link.astro";
 import Cancellation from "@/components/products-components/cancellation.astro";
 import Widget from "@/components/products-components/widget.astro";
 
+import { getI18N } from "@/i18n/";
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+
 // Duplica y cambia las rutas para añadir o modificar las fotos
 
 const IMG = [
@@ -36,9 +40,11 @@ const DAYS = [
     day: "1",
     tecnicalInfo: true,
     description:
-      "We drive to the charming village Nigüelas, a rural town on the western slopes of the Sierra Nevada Mountain range. Here we start the cycle ride that takes you through a beautiful valley, called Valle de Lecrín, a protected area of rolling hills, ravines, rugged cliffs, and rivers covered with cultivated citrus and orange groves, almond trees, and olive oil plantations. The cycle trail leads us to a panoramic viewpoint where the Mediterranean Sea appears and our destination, the town of Salobreña located on the top of a giant rock, capped with an ancient Moorish castle. There is time to enjoy a drink at the beach or a swim before we go back to Granada.",
-    optional1: "Olive oil tour at Spain’s oldest olive oil mill.",
-    optional2: "Lunch at the beach. Fresh fish or Paella. ",
+      i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE.DAY_1.TEXT_1,
+    optional1:
+      i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE.DAY_1.TEXT_2,
+    optional2:
+      i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE.DAY_1.TEXT_3,
     totalDistance: "50 km",
     totalAscent: "450 m",
     totalDescent: "1350 m",
@@ -48,13 +54,19 @@ const DAYS = [
 
 const brings = [
   {
-    title: "Comfortable clothing and shoes.",
+    title:
+      i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE.WHAT_TO_BRING
+        .BRING_1,
   },
   {
-    title: "Sunglasses",
+    title:
+      i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE.WHAT_TO_BRING
+        .BRING_2,
   },
   {
-    title: "Sun protection ",
+    title:
+      i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE.WHAT_TO_BRING
+        .BRING_3,
   },
 ];
 ---
@@ -71,13 +83,13 @@ const brings = [
             <Icon icon="destiny-logo" size="1.6rem" color="white" />
             <p
               class="text-xl font-normal text-white lg:text-2xl flex flex-col justify-end h-full [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
-              Granada
+              {i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE.TITLE}
             </p>
           </div>
 
           <h1
             class="text-3xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-5xl [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
-            From Mountains to Coastline E-Bike Tour
+            {i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE.LOCATION}
           </h1>
         </div>
       </div>
@@ -86,32 +98,50 @@ const brings = [
 
       <div
         class="grid grid-cols-2 md:grid-cols-6 h-auto mt-3 gap-3 place-content-start md:px-6">
-        <InformationProducts title="Price" subtitle="110">
+        <InformationProducts
+          title="Price"
+          subtitle={i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE
+            .PRICE}>
           <div slot="icon">
             <Icon icon="price-logo" size="1.6rem" color="#0E46A3" />
           </div>
         </InformationProducts>
-        <InformationProducts title="Pre-booking" subtitle="100%">
+        <InformationProducts
+          title="Pre-booking"
+          subtitle={i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE
+            .PRE_BOOKING}>
           <div slot="icon">
             <Icon icon="price-logo" size="1.6rem" color="#0E46A3" />
           </div>
         </InformationProducts>
-        <InformationProducts title="Minimum of persons" subtitle="4">
+        <InformationProducts
+          title="Minimum of persons"
+          subtitle={i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE
+            .MINUMUM_OF_PERSONS}>
           <div slot="icon">
             <Icon icon="group-logo" size="1.6rem" color="#0E46A3" />
           </div>
         </InformationProducts>
-        <InformationProducts title="Duration" subtitle="8 Hours">
+        <InformationProducts
+          title="Duration"
+          subtitle={i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE
+            .DURATION}>
           <div slot="icon">
             <Icon icon="timer-logo" size="1.6rem" color="#0E46A3" />
           </div>
         </InformationProducts>
-        <InformationProducts title="Tour type" subtitle="Guided">
+        <InformationProducts
+          title="Tour type"
+          subtitle={i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE
+            .TOUR_TYPE}>
           <div slot="icon">
             <Icon icon="guide-logo" size="1.6rem" color="#0E46A3" />
           </div>
         </InformationProducts>
-        <InformationProducts title="Season" subtitle2="All Year">
+        <InformationProducts
+          title="Season"
+          subtitle2={i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE
+            .SEASON}>
           <!-- <div slot="icon">
             <Icon icon="autumn-logo" size="1.6rem" color="#0E46A3" />
           </div> -->
@@ -123,28 +153,43 @@ const brings = [
       <div class="">
         <div
           class="grid grid-cols-2 justify-between md:grid-cols-6 h-auto mt-3 gap-3 md:px-6">
-          <InformationProducts title="Total distance" subtitle="50 km">
+          <InformationProducts
+            title="Total distance"
+            subtitle={i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE
+              .TOTAL_DISTANCE}>
             <div slot="icon">
               <Icon icon="distance-logo" size="1.6rem" color="#0E46A3" />
             </div>
           </InformationProducts>
 
-          <InformationProducts title="Total ascent" subtitle="450 m">
+          <InformationProducts
+            title="Total ascent"
+            subtitle={i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE
+              .TOTAL_ASCENT}>
             <div slot="icon">
               <Icon icon="up-logo" size="1.6rem" color="#0E46A3" />
             </div>
           </InformationProducts>
-          <InformationProducts title="Total descent" subtitle="1350 m">
+          <InformationProducts
+            title="Total descent"
+            subtitle={i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE
+              .TOTAL_DESCENT}>
             <div slot="icon">
               <Icon icon="down-logo" size="1.6rem" color="#0E46A3" />
             </div>
           </InformationProducts>
-          <InformationProducts title="Route type" subtitle="Point to point">
+          <InformationProducts
+            title="Route type"
+            subtitle={i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE
+              .ROUTE_TYPE}>
             <div slot="icon">
               <Route />
             </div>
           </InformationProducts>
-          <InformationProducts title="Difficulty" subtitle="Easy">
+          <InformationProducts
+            title="Difficulty"
+            subtitle={i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE
+              .DIFFICULTY}>
             <div class="flex gap-1" slot="icon"></div>
           </InformationProducts>
           <InformationProducts title="E-Bike" subtitle="Yes">
@@ -170,65 +215,124 @@ const brings = [
       <div
         class="grid md:grid-cols-2 lg:grid-cols-3 mt-20 md:mt-26 md:mb-36 gap-16 md:gap-4">
         <!-- Include -->
-        <Includes title="Included">
+        <Includes
+          title={i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE
+            .INCLUDED.TITLE}>
           <ul slot="description" class="mt-4 flex flex-col gap-2">
             <li class="flex flex-wrap gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
-              <p class="max-w-[320px] text-md">Professional guide</p>
+              <p class="max-w-[320px] text-md">
+                {
+                  i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE
+                    .INCLUDED.TEXT_1
+                }
+              </p>
             </li>
-            <li class="flex flex-wrap gap-2">
+            <li class="flex gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
               <p class="max-w-[320px] text-md">
-                Liability insurance and assistance
+                {
+                  i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE
+                    .INCLUDED.TEXT_2
+                }
               </p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
-              <p class="max-w-[320px] text-md">Backup vehicle</p>
+              <p class="max-w-[320px] text-md">
+                {
+                  i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE
+                    .INCLUDED.TEXT_3
+                }
+              </p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
-              <p class="max-w-[320px] text-md">Transfer</p>
+              <p class="max-w-[320px] text-md">
+                {
+                  i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE
+                    .INCLUDED.TEXT_4
+                }
+              </p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
-              <p class="max-w-[320px] text-md">E-bike + Pannier</p>
+              <p class="max-w-[320px] text-md">
+                {
+                  i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE
+                    .INCLUDED.TEXT_5
+                }
+              </p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
-              <p class="max-w-[320px] text-md">Helmet & gloves</p>
+              <p class="max-w-[320px] text-md">
+                {
+                  i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE
+                    .INCLUDED.TEXT_6
+                }
+              </p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
-              <p class="max-w-[320px] text-md">Snack and water</p>
+              <p class="max-w-[320px] text-md">
+                {
+                  i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE
+                    .INCLUDED.TEXT_7
+                }
+              </p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
-              <p class="max-w-[320px] text-md">Beach towel</p>
+              <p class="max-w-[320px] text-md">
+                {
+                  i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE
+                    .INCLUDED.TEXT_8
+                }
+              </p>
             </li>
           </ul>
         </Includes>
         <!-- Exclude -->
-        <Includes title="Not Included">
+        <Includes
+          title={i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE
+            .NOT_INCLUDED.TITLE}>
           <div slot="description" class="flex flex-col gap-2 mt-4">
             <li class="flex flex-wrap gap-2">
               <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
-              <p class="max-w-[320px] text-md">Lunch</p>
+              <p class="max-w-[320px] text-md">
+                {
+                  i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE
+                    .NOT_INCLUDED.TEXT_1
+                }
+              </p>
             </li>
           </div>
         </Includes>
         <!-- Complementaries -->
-        <Includes title="Extra">
+        <Includes
+          title={i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE.EXTRA
+            .TITLE}>
           <div slot="description" class="flex flex-col gap-2 mt-4">
             <li class="flex flex-wrap gap-2">
               <Icon icon="complement-logo" size="1.6rem" color="#0E46A3" />
-              <p class="max-w-[320px] text-md">Olive oil tour</p>
-            </li>
-            <li class="flex flex-wrap gap-2">
-              <Icon icon="complement-logo" size="1.6rem" color="#0E46A3" />
-              <p class="max-w-[320px] text-md">Lunch at the beach</p>
+              <p class="max-w-[320px] text-md">
+                {
+                  i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE
+                    .EXTRA.TEXT_1
+                }
+              </p>
             </li>
           </div>
+          <li class="flex flex-wrap gap-2">
+            <Icon icon="complement-logo" size="1.6rem" color="#0E46A3" />
+            <p class="max-w-[320px] text-md">
+              {
+                i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE.EXTRA
+                  .TEXT_2
+              }
+            </p>
+          </li>
         </Includes>
       </div>
     </main>
@@ -256,25 +360,48 @@ const brings = [
         <div class="">
           <h2
             class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
-            Availability
+            {
+              i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE
+                .AVAILABILITY
+            }
           </h2>
 
           <ul class="grid gap-2 text-lg">
             <li class="flex flex-wrap gap-2">
               <Icon icon="spring-logo" size="1.6rem" color="#0E46A3" />
-              <p>Spring</p>
+              <p>
+                {
+                  i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE
+                    .AVAILABILITY_TEXT_1
+                }
+              </p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="summer-logo" size="1.6rem" color="#0E46A3" />
-              <p>Summer</p>
+              <p>
+                {
+                  i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE
+                    .AVAILABILITY_TEXT_2
+                }
+              </p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="autumn-logo" size="1.6rem" color="#0E46A3" />
-              <p>Autumn</p>
+              <p>
+                {
+                  i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE
+                    .AVAILABILITY_TEXT_3
+                }
+              </p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="winter-logo" size="1.6rem" color="#0E46A3" />
-              <p>Winter</p>
+              <p>
+                {
+                  i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE
+                    .AVAILABILITY_TEXT_4
+                }
+              </p>
             </li>
           </ul>
         </div>
@@ -282,24 +409,45 @@ const brings = [
         <div class="">
           <h2
             class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
-            Highlight
+            {
+              i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE
+                .HIGHLIGHT
+            }
           </h2>
           <p class="text-lg text-gray-900 mb-1">
-            <span class="text-xl">🔹</span> Scenic views of The Lecrín Valley and
-            The tropical Coast
+            <span class="text-xl">🔹</span>
+            {
+              i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE
+                .HIGHLIGHT_TEXT_1
+            }
           </p>
           <p class="text-lg text-gray-900">
-            <span class="text-xl">🔹</span> Great cycle road that winds through the
-            landscape
+            <span class="text-xl">🔹</span>
+            {
+              i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE
+                .HIGHLIGHT_TEXT_2
+            }
           </p>
           <p class="text-lg text-gray-900">
-            <span class="text-xl">🔹</span> Drink at the beach
+            <span class="text-xl">🔹</span>
+            {
+              i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE
+                .HIGHLIGHT_TEXT_3
+            }
           </p>
           <p class="text-lg text-gray-900">
-            <span class="text-xl">🔹</span> Olive Oil tour (Optional)
+            <span class="text-xl">🔹</span>
+            {
+              i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE
+                .HIGHLIGHT_TEXT_4
+            }
           </p>
           <p class="text-lg text-gray-900">
-            <span class="text-xl">🔹</span> Lunch at the beach (Optional)
+            <span class="text-xl">🔹</span>
+            {
+              i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE
+                .HIGHLIGHT_TEXT_5
+            }
           </p>
         </div>
       </div>
@@ -318,24 +466,45 @@ const brings = [
       <div class="">
         <h2
           class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
-          Requirements
+          {
+            i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE
+              .REQUIEREMENTS
+          }
         </h2>
         <p class="text-lg text-gray-900 mb-1">
-          <span class="text-xl strong">🔹</span> Good physical health
+          <span class="text-xl strong">🔹</span>
+          {
+            i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE
+              .REQUIEREMENTS_TEXT_1
+          }
         </p>
         <p class="text-lg text-gray-900">
-          <span class="text-xl">🔹</span> Minimum age and height: 11 years and 1.50
-          m
+          <span class="text-xl">🔹</span>
+          {
+            i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE
+              .REQUIEREMENTS_TEXT_2
+          }
         </p>
         <p class="text-lg text-gray-900">
-          <span class="text-xl">🔹</span> Closed shoes, no open shoes!
+          <span class="text-xl">🔹</span>
+          {
+            i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE
+              .REQUIEREMENTS_TEXT_3
+          }
         </p>
         <p class="text-lg text-gray-900">
-          <span class="text-xl">🔹</span> You are capable of controlling bicycle
-          speed and direction on paved roads
+          <span class="text-xl">🔹</span>
+          {
+            i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE
+              .REQUIEREMENTS_TEXT_4
+          }
         </p>
         <p class="text-lg text-gray-900">
-          <span class="text-xl">🔹</span> You can brake, and use gears with confidence
+          <span class="text-xl">🔹</span>
+          {
+            i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE
+              .REQUIEREMENTS_TEXT_5
+          }
         </p>
       </div>
       <Cancellation />
@@ -350,7 +519,7 @@ const brings = [
 
     <!--  TimeLine per days  -->
     <h2 class="text-4xl md:text-5xl xl:text-6xl md:p-8 mt-16 font-bold mb-4">
-      What to expect
+      {i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE.WHAT_TO_EXPECT}
     </h2>
     {
       DAYS.map((tour) => (

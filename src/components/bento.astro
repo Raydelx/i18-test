@@ -1,5 +1,17 @@
 ---
 import BentoItem from "../components/bentoItem.astro";
+import {
+  getLangFromUrl,
+  useTranslations,
+  useTranslatedPath,
+} from "../i18n/utils.js";
+import { getI18N } from "@/i18n/";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
 ---
 
 <section
@@ -11,7 +23,7 @@ import BentoItem from "../components/bentoItem.astro";
   <BentoItem
     class="col-span-10 lg:col-span-6"
     title="Tour Bike"
-    href="/leisure-cycling/">
+    href={translatePath("leisure-cycling")}>
     <div
       slot="image"
       class="background transition-scale absolute bottom-0 left-0 top-0
@@ -24,7 +36,7 @@ import BentoItem from "../components/bentoItem.astro";
   <BentoItem
     class="col-span-10 lg:col-span-4"
     title="MTB"
-    href="/gravel-bike-mtb">
+    href={translatePath("gravel-bike-mtb")}>
     <div
       slot="image"
       class="background transition-scale absolute bottom-0 left-0 top-0
@@ -37,7 +49,7 @@ import BentoItem from "../components/bentoItem.astro";
   <BentoItem
     class="col-span-10 lg:col-span-4"
     title="Road Bike"
-    href="/road-bike/">
+    href={translatePath("road-bike")}>
     <div
       slot="image"
       class="background transition-scale absolute bottom-0 left-0 top-0
@@ -49,7 +61,7 @@ import BentoItem from "../components/bentoItem.astro";
   <BentoItem
     class="col-span-10 lg:col-span-6"
     title="Bikepack"
-    href="/bikepack/">
+    href={translatePath("bikepack")}>
     <div
       slot="image"
       class="background transition-scale absolute bottom-0 left-0 top-0

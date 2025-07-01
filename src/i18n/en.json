@@ -536,6 +536,706 @@
 
     "PRODUCTS": {
 
+        "GRAVEL_BIKE" : {
+
+            "SIERRA_NEVADA":{
+
+                "TITLE": "Sierra Nevada E-bike Tour",
+                "LOCATION": "Sierra Nevada",
+
+                "PRICE": "98",
+                "PRE_BOOKING": "98",
+                "MINUMUM_OF_PERSONS": "1",                
+                "DURATION": "6 Hours",
+                "TOUR_TYPE": "Guided",
+                "SEASON": "Spring  Summer  Autumn",
+
+                "TOTAL_DISTANCE": "58 km",
+                 "TOTAL_ASCENT": "500 m",
+                 "TOTAL_DESCENT": "1700 m",
+                 "ROUTE_TYPE": "Point to point",
+                 "DIFFICULTY": "S0 Easy",
+
+                 "INCLUDED": {
+                    "TITLE": "Included",
+                    "TEXT_1": "Professional guide",
+                    "TEXT_2": "Liability insurance and assistance",
+                    "TEXT_3": "Vehicle supported tour",
+                    "TEXT_4": "Transfer",
+                    "TEXT_5": "E-bike",
+                    "TEXT_6": "Helmet, gloves, wind jacket",                                
+                    "TEXT_7": "Snack and water"                                 
+                },
+                "NOT_INCLUDED": {
+                    "TITLE": "Not included"
+                    
+                },
+
+                "AVAILABILITY":"Availability",
+                "AVAILABILITY_SPRING":"Spring",
+                "AVAILABILITY_SUMMER":"Summer",
+                "AVAILABILITY_AUTUMN":"Autumn",
+                
+                "HIGHLIGHT":"Highlight",
+                "HIGHLIGHT_TEXT_1":"Cycling in the National Park Sierra Nevada.",
+                "HIGHLIGHT_TEXT_2":"Start at 2.000 meters with a stunning panorama over the three highest peaks of the Sierra Nevada.",
+
+                "REQUIEREMENTS":"Requirements",
+                "REQUIEREMENTS_TEXT_1":"Good physical health",
+                "REQUIEREMENTS_TEXT_2":"You are capable of controlling bicycle speed and direction",
+                "REQUIEREMENTS_TEXT_3":"You can brake and use gears with confidence.",
+                "REQUIEREMENTS_TEXT_4":"Age minimum 11 years",
+                "REQUIEREMENTS_TEXT_5":"Height min. 1.50 meters",
+                "REQUIEREMENTS_TEXT_6":"Closed shoes, no sandals!",
+
+                "WHAT_TO_BRING" : "What to bring for Hiking",
+                "WHAT_TO_BRING_TEXT_1" : "Weather is important to consider while packing for your outdoor activity. Your packing list is based on your comfort and sensitivity. The best way to travel and to be outdoors is to layer your clothes. Highly recommended as best way to stay warm and keep cool, as the weather is bound to change in the mountains.",
+                "WHAT_TO_BRING_TEXT_2" : "Comfortable clothing and shoes.",
+                "WHAT_TO_BRING_TEXT_3" : "Sunglasses",
+                "WHAT_TO_BRING_TEXT_4" : "Sun protection",                
+                "WHAT_TO_BRING_TEXT_5" : "Any questions about the recommendations of the material do not hesitate to contact us.",
+
+                "WHAT_TO_EXPECT": "What to expect",
+                "WHAT_TO_EXPECT_TEXT_1": "Imagine starting your bicycle tour in the Sierra Nevada National Park at an elevation of 2.000 meters with a panoramic view of the highest peaks of the mountain range.",
+                "WHAT_TO_EXPECT_TEXT_2": "A 45-minute journey will take us up to the starting point, where we begin to cycle down along a path without technical or physical difficulties. The trail takes you closer to the stunning landscapes, with every turn revealing vistas of beautiful views along winding roads that meander between old farms scattered along the mountainsides",
+                "WHAT_TO_EXPECT_TEXT_3": "Halfway through the tour, we provide a great snack with a fresh coffee at a beautiful lookout.",
+                "WHAT_TO_EXPECT_TEXT_4": "The last part brings Alhambra Palace into view, where we will cycle through the city’s small streets of Sacromonte and Albayzín before we finish at the plaza, the meeting point of the tour.",
+                "WHAT_TO_EXPECT_TEXT_5": "We provide helmets, gloves, and extra clothes. The backup vehicle will accompany us during the entire tour to ensure safety."
+
+            },
+
+
+
+            "MTB_TRAILS_BIKE": {
+                "TITLE": "MTB Trails Granada",
+                "LOCATION": "Granada",
+
+                "PRICE": "95",
+                "PRE_BOOKING": "100%",
+                "MINUMUM_OF_PERSONS": "1",                
+                "DURATION": "4 - 6 Hours",
+                "TOUR_TYPE": "Guided",
+                "SEASON": "All Year",
+
+                "TOTAL_DISTANCE": "All levels",
+                 "TOTAL_ASCENT": "All levels",
+                 "TOTAL_DESCENT": "All levels",
+                 "ROUTE_TYPE": "Loop or Point-to-point Route",
+                 "DIFFICULTY": "All Levels",
+
+                 "INCLUDED": {
+                    "TITLE": "Included",
+                    "TEXT_1": "Professional guide",
+                    "TEXT_2": "Liability insurance and assistance",
+                    "TEXT_3": "Transfer",
+                    "TEXT_4": "Mountain Bike",
+                    "TEXT_5": "Helmet & gloves",
+                    "TEXT_6": "Water"                                 
+                },
+                "NOT_INCLUDED": {
+                    "TITLE": "Not included",
+                    "TEXT_1": "Snack"
+                },
+
+                "AVAILABILITY":"Availability",
+                "AVAILABILITY_TEXT_1":"All Year",
+                
+                "HIGHLIGHT":"Highlight",
+                "HIGHLIGHT_TEXT_1":"Explore the Outdoors of Granada on your mountain bike through an area with a great diversity of landscapes from rolling hills, pine forests, deserts, and mountains to the tropical coast.",
+               
+                "REQUIEREMENTS":"Requirements",
+                "REQUIEREMENTS_TEXT_1":"Off-road cycling is an activity carrying some inherent risks. Please consider your skills, abilities, and fitness carefully, and always wear a helmet.",
+                "REQUIEREMENTS_TEXT_2":"The route type and difficulty are based on your fitness level and technical skills. Booking a Mountain bike Trail, we ask you to fill out a questionnaire form to tailor your itinerary to the right level.",
+                "REQUIEREMENTS_TEXT_3":"In your MTB Questionnaire, you should submit honest information about your mountain bike experience, physical fitness, and comfort on technical terrain. We offer different trails for all levels to give you a positive and safe experience with us.",
+                "REQUIEREMENTS_TEXT_4":"If you are uncertain about what fitness level or technical difficulty is most appropriate for you, check our Blog Cycling article “Cycle grades” or contact us.",
+                
+
+                "RECOMMENDATIONS" : "Recommendations",
+                "RECOMMENDATIONS_TEXT_1" : "Explore the city of Granada in the afternoon with some tapas or experience a Flamenco show in the evening.",
+                "RECOMMENDATIONS_TEXT_2" : "Join a guided Alhambra tour, a palace and fortress monument of Islamic architecture. (World Heritage Site by UNESCO)",
+                "RECOMMENDATIONS_TEXT_3" : "Visit the Oil Mill Interpretation Centre, which has various routes to discover olive oil's culture.",
+                "RECOMMENDATIONS_TEXT_4" : "You don't have to organize anything. We handle your reservations to meet your needs If you are interested in one of these recommendations or any other activity.",
+
+                "WHAT_TO_BRING" : "What to bring",
+                "WHAT_TO_BRING_TEXT_1" : "Weather is important to consider while packing for your outdoor activity. Your packing list is based on your comfort and sensitivity. The best way to travel and to be outdoors is to layer your clothes. Highly recommended as best way to stay warm and keep cool, as the weather is bound to change in the mountains.",
+                "WHAT_TO_BRING_TEXT_2" : "Helmet and gloves. Included.",
+                "WHAT_TO_BRING_TEXT_3" : "Comfortable clothing and shoes.",
+                "WHAT_TO_BRING_TEXT_4" : "Cycle glasses.",
+                "WHAT_TO_BRING_TEXT_5" : "Water (minimum 1 L) included",
+                "WHAT_TO_BRING_TEXT_6" : "Sun protection.",
+                "WHAT_TO_BRING_TEXT_7" : "We help you fit your pedals, saddle, etc. if you'd like to bring them. Any questions about the recommendations of the material do not hesitate to contact us.",
+
+                "MTB" : "MTB",
+                "MTB_TEXT_1" : "Check our BLOG CYCLING article “Our Bicycle Selection” to see your Mountain Bike. We provide 2 high-quality Mountain Bikes. When booking, you indicate your height and weight so that the bicycle's frame size is correct at the start of your tour.",
+                "MTB_TEXT_2" : "We help you fit your pedals or saddle if you'd like to bring them.",
+                "MTB_TEXT_3" : "We provide low-range gearing suited to mountainous terrain.",
+                
+                "LEVEL" : "Level",
+                "LEVEL_TEXT_1" : "The route type and difficulty are based on your fitness level and technical skills. Before booking the “MTB Trails Granada,” please fill out a questionnaire form to tailor your itinerary to the right level. After receiving your questionnaire, we send you an MTB Bike route with technical information.",
+
+                "WHAT_TO_EXPECT": "What to expect",
+                "WHAT_TO_EXPECT_TEXT_1": "Embarking on a mountain bike tour in Granada is a perfect location with endless MTB trails for all levels which involves your passion for mountain biking and the great scenery of Granada. Our selected cycle routes have different gradient climbs of varying lengths and a huge variety of elevation profiles through an area with a great diversity of landscapes from rolling hills, pine forests, deserts, and mountains to the tropical coast. We have extensive knowledge of all the trails and tailor each ride to the guests to ensure you a great experience with us. Join us and explore our trails with your friends or family in the great outdoors of Granada."
+
+                
+            },
+
+
+            "MTB_ESCAPE_GRANADA": {
+                "TITLE": "MTB Escape Granada",
+                "LOCATION": "Granada",
+
+                "PRICE": "680",
+                "PRE_BOOKING": "20%",
+                "MINUMUM_OF_PERSONS": "4",                
+                "DURATION": "4 Days",
+                "TOUR_TYPE": "Guided",
+                "SEASON": "Spring Autumn Winter",
+
+                "TOTAL_DISTANCE": "All levels",
+                 "TOTAL_ASCENT": "All levels",
+                 "TOTAL_DESCENT": "All levels",
+                 "ROUTE_TYPE": "Flower",
+                 "DIFFICULTY": "All Levels",
+
+                 "INCLUDED": {
+                    "TITLE": "Included",
+                    "TEXT_1": "Professional guides",
+                    "TEXT_2": "Liability insurance and assistance",
+                    "TEXT_3": "Backup vehicle",
+                    "TEXT_4": "Luggage transport",
+                    "TEXT_5": "Airport Transfer",
+                    "TEXT_6": "Accommodation: 3 nights",
+                    "TEXT_7": "Breakfast: 3 days",
+                    "TEXT_8": "Snack provisions during the cycle routes",
+                    "TEXT_9": "MTB and helmet",
+                    "TEXT_10": "Water bottle and shirt"                  
+                },
+                "NOT_INCLUDED": {
+                    "TITLE": "Not included",
+                    "TEXT_1": "Flight",
+                    "TEXT_2": "Travel & assistance insurance",
+                    "TEXT_3": "Cancellation insurance",
+                    "TEXT_4": "Lunch and dinner",
+                    "TEXT_5": "Extra meals",
+                    "TEXT_6": "Extra excursions",
+                    "TEXT_7": "Personal expenses",
+                    "TEXT_8": "Tips",
+                    "TEXT_9": "Extra nights",
+                    "TEXT_10": "Private transport after or before the tour"
+                },
+
+                "AVAILABILITY":"Availability",
+                "AVAILABILITY_TEXT_1":"Spring / Autumn / Winter",
+
+                "REQUIEREMENTS":"Requirements",
+                "REQUIEREMENTS_TEXT_1":"Off-road cycling is an activity carrying some inherent risks. Please consider your skills, abilities, and fitness carefully, and always wear a helmet.",
+                "REQUIEREMENTS_TEXT_2":"The route type and difficulty are based on your fitness level and technical skills. Booking the tour MTB Escape Granada, we ask you to fill out a questionnaire form to tailor your itinerary to the right level.",
+                "REQUIEREMENTS_TEXT_3":"In your MTB Questionnaire, you should submit honest information about your mountain bike experience, physical fitness, and comfort on technical terrain. We offer different trails for all levels to give you a positive and safe experience with us.",
+                "REQUIEREMENTS_TEXT_4":"If you are uncertain about what fitness level or technical difficulty is most appropriate for you, check our Blog Cycling article “Cycle grades” or contact us.",
+                
+                "HIGHLIGHT":"Highlight",
+                "HIGHLIGHT_TEXT_1":"Explore the Outdoors of Granada on your MTB through an area with many landscapes from rolling hills, pine forests, deserts, and mountains to the tropical coast.",
+                "HIGHLIGHT_TEXT_2":"Enjoy our rural hotel selected with great care for its location and character to make your trip a single experience.",
+
+                "RECOMMENDATIONS" : "Recommendations",
+                "RECOMMENDATIONS_TEXT_1" : "Explore the city of Granada in the afternoon with some tapas or experience a Flamenco show in the evening.",
+                "RECOMMENDATIONS_TEXT_2" : "Join a guided Alhambra tour, a palace and fortress monument of Islamic architecture. (World Heritage Site by UNESCO)",
+                "RECOMMENDATIONS_TEXT_3" : "Visit the Oil Mill Interpretation Centre, which has various routes to discover olive oil's culture.",
+                "RECOMMENDATIONS_TEXT_4" : "You don't have to organize anything. We handle your reservations to meet your needs If you are interested in one of these recommendations or any other activity.",
+
+                "OPTIONAL" : "Optional",
+                "OPTIONAL_TEXT_1" : "Rent a bike or bring your own? A rental bike might not be perfectly suited to you individually, but consider the following advantages of renting a bike while traveling.",
+                "OPTIONAL_TEXT_2" : "It makes your life easier.",
+                "OPTIONAL_TEXT_3" : "No worries about damaging your bike during transport.",
+                "OPTIONAL_TEXT_4" : "No setting up your bicycle on the first day.",
+                "OPTIONAL_TEXT_5" : "We select the MTB that suits you the best.",
+                "OPTIONAL_TEXT_6" : "Very good reasons to travel with your bike.",
+                "OPTIONAL_TEXT_7" : "Comfortable and confident:",
+                "OPTIONAL_TEXT_8" : "You are focused on performance.",
+                "OPTIONAL_TEXT_9" : "You’re confident in handling your bike.",
+                "OPTIONAL_TEXT_10" : "It could save money.",
+
+                "MTB" : "MTB",
+                "MTB_TEXT_1" : "Check our BLOG CYCLING article “Our Bicycle Selection” to see your MTB. We provide 2 high-quality mountain bikes.",
+                "MTB_TEXT_2" : "When booking, you indicate your height and weight to have the correct frame size of the bicycle at the start of your tour.",
+                "MTB_TEXT_3" : "We facilitate fitting your pedals or saddle if you wish to bring them.",
+                "MTB_TEXT_4" : "We provide low-range gearing suited to mountainous terrain",
+                "MTB_TEXT_5" : "We provide spare parts and take care of the day-to-day maintenance during the tour.",
+
+                "CANCELLATION" : "Cancellation Policy",
+                "CANCELLATION_TEXT" : "See Terms and Conditions",
+
+                "LEVEL" : "Level",
+                "LEVEL_TEXT_1" : "The route type and difficulty are based on your fitness level and technical skills. Booking the tour MTB Escape Granada, we ask you to fill out a questionnaire form to tailor your itinerary to the right level. After receiving your questionnaire, we send you 3 MTB routes with technical information.",
+
+                "INFO": "More information about our tours",
+                "INFO_BUTTON_1": "View trip notes",
+
+                "WHAT_TO_EXPECT": "What to expect",
+                "WHAT_TO_EXPECT_TEXT_1": "Granada is a perfect cycling getaway destination, excellent for a cycling holiday. There is an infinity of MTB trails for all levels from beginners to advanced cyclists with different gradient climbs of varying lengths and a huge variety of elevation profiles through an area with a great diversity of landscapes from rolling hills, pine forests, deserts, and mountains to the tropical coast. The MTB Escape Granada Tour takes you on 3 varied trails. Except for the first day, the rides are organized in the morning, giving you time to relax in the afternoon while enjoying your rural accommodation. On the first day, we organize a route in the afternoon. There is the option to visit the city of Granada and explore the many cultural sites and countless tapa bars and restaurants. For those who would like to visit the Alhambra Palace, there is the option to organize the tour on the last day in the morning. Being a tour of 4 days, the MTB Escape Granada is designed for those who need a break and want to take a few days off looking for some great riding. For non-riding partners, we organize extra activities during your stay. Easy to get to Granada by our organized transport either in the airport Málaga or Granada. We have extensive knowledge of all the trails and tailor each ride to the guests to ensure you a great experience with us. Join us and explore our trails with your friends or family in the great outdoors of Granada."
+                
+
+                
+            }
+
+        },
+
+        "LEISURE_CYCLING": {
+
+            "FROM_MOUNTAINS_TO_COASTLINE": {
+                "TITLE": "From Mountains to Coastline E-Bike Tour",
+                "LOCATION": "Granada",
+
+                "PRICE": "110",
+                "PRE_BOOKING": "100%",
+                "MINUMUM_OF_PERSONS": "4",
+                "DURATION": "8 Hours",
+                "TOUR_TYPE": "Guided",
+                "SEASON": "All Year",
+
+                "TOTAL_DISTANCE": "50 km",
+                 "TOTAL_ASCENT": "450 m",
+                 "TOTAL_DESCENT": "1350 m",
+                 "ROUTE_TYPE": "Point to point",
+                 "DIFFICULTY": "Easy",
+
+                "INCLUDED": {
+                    "TITLE": "Included",
+                    "TEXT_1": "Professional guide",
+                    "TEXT_2": "Liability insurance and assistance",
+                    "TEXT_3": "Backup vehicle",
+                    "TEXT_4": "Transfer",
+                    "TEXT_5": "E-bike + Pannier",
+                    "TEXT_6": "Helmet & gloves",
+                    "TEXT_7": "Snack and water",
+                    "TEXT_8": "Beach towel" 
+                       
+                },
+                "NOT_INCLUDED": {
+                    "TITLE": "Not included",
+                    "TEXT_1": "Lunch"
+                    
+                },
+                "EXTRA": {
+                    "TITLE": "Extra",
+                    "TEXT_1":"Olive oil tour",
+                    "TEXT_2":"Lunch at the beach"
+                    
+                    
+                },
+
+                "AVAILABILITY":"Availability",
+                "AVAILABILITY_TEXT_1":"Spring",
+                "AVAILABILITY_TEXT_2":"Summer",
+                "AVAILABILITY_TEXT_3":"Autumn",
+                "AVAILABILITY_TEXT_4":"Winter",
+
+                "HIGHLIGHT":"Highlight",
+                "HIGHLIGHT_TEXT_1":"Scenic views of The Lecrín Valley and The tropical Coast",
+                "HIGHLIGHT_TEXT_2":"Great cycle road that winds through the landscape",
+                "HIGHLIGHT_TEXT_3":"Drink at the beach",
+                "HIGHLIGHT_TEXT_4":"Olive Oil tour (Optional)",
+                "HIGHLIGHT_TEXT_5":"Lunch at the beach (Optional)",
+                
+                "REQUIEREMENTS":"Requirements",
+                "REQUIEREMENTS_TEXT_1":"Good physical health",
+                "REQUIEREMENTS_TEXT_2":"Minimum age and height: 11 years and 1.50 m",
+                "REQUIEREMENTS_TEXT_3":"Closed shoes, no open shoes!",
+                "REQUIEREMENTS_TEXT_4":"You are capable of controlling bicycle speed and direction on paved roads",
+                "REQUIEREMENTS_TEXT_5":"You can brake, and use gears with confidence",
+
+                "WHAT_TO_BRING": {
+                    "TITLE": "What to bring for Cycling",
+                    "TEXT_1": "Weather is important to consider while packing for your outdoor activity. Your packing list is based on your comfort and sensitivity. Layering your clothes is the best way to travel and be outdoors. It is highly recommended as the best way to stay warm and cool, as the weather is bound to change in the mountains.",
+
+                    "BRING_1": "Comfortable clothing and shoes.",
+                    "BRING_2": "Sunglasses",
+                    "BRING_3": "Sun protection",
+                    
+                    "TEXT_2": "Any questions about the recommendations of the material do not hesitate to contact us."
+                },
+            
+            
+                "WHAT_TO_EXPECT":"What to expect",
+
+                "DAY_1":{
+                        
+                        "TEXT_1":"We drive to the charming village Nigüelas, a rural town on the western slopes of the Sierra Nevada Mountain range. Here we start the cycle ride that takes you through a beautiful valley, called Valle de Lecrín, a protected area of rolling hills, ravines, rugged cliffs, and rivers covered with cultivated citrus and orange groves, almond trees, and olive oil plantations. The cycle trail leads us to a panoramic viewpoint where the Mediterranean Sea appears and our destination, the town of Salobreña located on the top of a giant rock, capped with an ancient Moorish castle. There is time to enjoy a drink at the beach or a swim before we go back to Granada.",
+                        "TEXT_2":"Olive oil tour at Spain’s oldest olive oil mill.",
+                        "TEXT_3":"Lunch at the beach. Fresh fish or Paella."
+                }
+            },
+
+            "EPIC_LANDSCAPE_E_BIKE_TOUR_GRANADA": {
+
+                "TITLE": "Epic Landscape E-bike Tour Granada",
+                "LOCATION": "Granada",
+
+                "PRICE": "995",
+                "PRE_BOOKING": "100%",
+                "MINUMUM_OF_PERSONS": "4",
+                "DURATION": "6 Days",
+                "TOUR_TYPE": "Guided",
+                "SEASON": "Spring Autumn",
+
+                "TOTAL_DISTANCE": "190 km",
+                 "TOTAL_ASCENT": "3120 m",
+                 "TOTAL_DESCENT": "4930 m",
+                 "ROUTE_TYPE": "Point to point",
+                 "DIFFICULTY": "Level 3",
+
+                "INCLUDED": {
+                    "TITLE": "Included",
+                    "TEXT_1": "2 Professionals guides",
+                    "TEXT_2": "Liability insurance and assistance",
+                    "TEXT_3": "Backup vehicle",
+                    "TEXT_4": "Luggage transport",
+                    "TEXT_5": "Airport Transfer",
+                    "TEXT_6": "Accommodation: 5 nights",
+                    "TEXT_7": "Breakfast: 5 days",
+                    "TEXT_8": "Lunch: 4 picnics",
+                    "TEXT_9": "E-bike",
+                    "TEXT_10": "Helmet",
+                    "TEXT_11": "Water bottle",
+                    "TEXT_12": "Cycle shirt"
+                       
+                },
+                "NOT_INCLUDED": {
+                    "TITLE": "Not included",
+                    "TEXT_1": "Flight",
+                    "TEXT_2": "Travel & assistance insurance",
+                    "TEXT_3": "Cancellation insurance",
+                    "TEXT_4": "Dinner",
+                    "TEXT_5": "Extra meals",
+                    "TEXT_6": "Extra excursions",
+                    "TEXT_7": "Personal expenses",
+                    "TEXT_8": "Tips",
+                    "TEXT_9": "Extra nights",
+                    "TEXT_10": "Private transport after or before the tour"
+                },
+                "EXTRA": {
+                    "TITLE": "Extra",
+                    "SUBTITLE": "Need to be booked in Advance",
+                    "TEXT_1": "Private room: 220 € (5 nights)",
+                    "TEXT_2": "Private guided tour Alhambra: 55 €",
+                    "TEXT_3": "Guided tour of the ham-curing process in the highest village of Sierra Nevada + tasting: 10 €",
+                    "TEXT_4": "Olive Oil tasting: 15 €",
+                    "TEXT_5": "At the feet of Sierra Nevada, we offer you the possibility to taste and appreciate olive oil through our senses, and a guided route in the olive oil museum."
+                    
+                },
+
+                "AVAILABILITY": "Availability",
+                "AVAILABILITY_TEXT_1": "Spring",
+                "AVAILABILITY_TEXT_2": "Autumn",
+
+                "HIGHLIGHT": "Highlight",
+                "HIGHLIGHT_TEXT_1": "Epic, ever-changing landscapes from desert landscapes, high mountains with traditional villages, and the tropical Mediterranean coast towards Granada, the mythical city that witnessed the fall of the last king of Moorish Al-Andalus.",
+                "HIGHLIGHT_TEXT_2": "Rural hotels",
+                
+
+                "REQUIEREMENTS": "Requirements",
+                "REQUIEREMENTS_TEXT_1": "Booking Conditions. See terms and conditions.",
+                "REQUIEREMENTS_TEXT_2": "Travel insurance. See terms and conditions.",
+                "REQUIEREMENTS_TEXT_3": "Release of liability form. See terms and conditions.",
+
+                "CANCELLATION": "Cancellation Policy",
+                "CANCELLATION_TEXT": "See Terms and Conditions",
+
+                "WHAT_TO_EXPECT": "What to expect",
+                "WHAT_TO_EXPECT_TEXT_1": "Sun and snow, land and sea, history and legend",
+                "WHAT_TO_EXPECT_TEXT_2": "The province of Granada has so much to offer, from the mythical city that witnessed the fall of the last king of Moorish Al-Andalus to untouched natural areas. The land that charmed romantic travelers still captivates anybody who visits it. The Cycling Journey takes you along epic, ever-changing landscapes from a vast high plateau to desert landscapes, high mountains with traditional villages, and the tropical Mediterranean coast towards Granada.",
+
+                "DAY_1": {
+
+                        "STRONG_1": "Welcome",
+                        "TEXT_1": "Upon arrival either in Málaga or Granada, our pick-up will drive us to our hotel in Granada.",
+
+                        "STRONG_2": "Free day Granada",
+                        "TEXT_2": "A city with history located at the foot of the Sierra Nevada mountains. The cultural riches of Granada with influences from the Moors, Catholics, and Jews make this city in Spain into an important cultural center with Moorish rule spanning 800 years of occupation.",
+                        "TEXT_3": "In the afternoon there is the optional guided tour of Alhambra and the gardens of the Generalife for those who have pre-reserved the activity.",
+                        "TEXT_4": "The rest of the day you are free to explore more beautiful places and to try the Granada tapas which are known for serving free tapas with every drink.",
+                        "TEXT_5": "The tour guide will organize a place to have dinner together to celebrate the first evening of the journey."
+                     },
+                     "DAY_2": {
+
+                        "STRONG_1": "Track 1 In search of cave dwellings",
+                        "TEXT_1": "After breakfast, our pick-up will drive us to the starting point of the first cycle ride in search of the cave dwellings located northeast of Granada. The tour leader will give an introductory briefing about the trip, followed by a safety and bicycle technical briefing. After the briefing, you can try out your bicycles and make minor adjustments to ensure comfort.",
+                        "TEXT_2": "We start to pedal through the mountainous landscape, a route of tranquility and beauty of great historical-cultural and natural interest belonging to the territory of the Granada Geopark, which was declared a UNESCO Global Geopark.",
+                        "TEXT_3": "After passing several villages, the road leads us to the old town of Guadix, showing an important heritage of monuments, with the medieval Arab Citadel, the Cathedral, and various Mudejar-style buildings. The most characteristic feature is that many of the inhabitants of this large town live in cave houses.",
+                        "TEXT_4": "After a visit to the cave houses, we will cycle to our cave hotel, where we will stay the second night."
+                     },
+                     "DAY_3": {
+
+                        "STRONG_1": "Track 2 First Route Alpujarras",
+                        "TEXT_1": "A route through a beautiful region of white mountain villages nestled between the southern slopes of the Sierra Nevada and the Mediterranean Sea.",
+                        "TEXT_2": "The Alpujarra is an area where time seems to stand still. It is the last redoubt of the Moriscos from Granada showing the symbiosis between man and the environment reached by the Moorish culture of Al-Andalus.",
+                        "TEXT_3": "We start the day by driving to “Puerto de la Ragua”, a mountain pass at an elevation of 2.000 meters, located on the boundary of Granada and Almería provinces. The route passes through picturesque villages with stunning views over the valley and its terraced farms. On clear days, it’s possible to see the Mediterranean Sea and even Africa.",                      
+                        "TEXT_4": "Along the way, there is time to stop and explore some of the rustic villages having a very distinct architecture as a result of the Berber occupation: flat-roofed, box-shaped white houses with tall round chimneys, clustered along narrow, winding, and steep streets, clinging to the mountains of the Sierra Nevada.",                      
+                        "TEXT_5": "Our next hotel is a “cortijada”, a traditional group of homesteads and farm buildings, that has been transformed into a hotel."                    
+                     },
+                     "DAY_4": {
+
+                        "STRONG_1": "Track 3 Second Route Alpujarras",
+                        "TEXT_1": "After breakfast, we drive back to the higher part of the Alpujarras to continue the journey with our first destination the village Trevélez, one of the highest villages in Spain located at 1.480 meters in the Trevélez Gorge. It is well known for ham drying in a traditional way, which has its own Denomination of Origin for its quality and great flavor.",       
+                        "TEXT_2": "There is an optional ham tour for those who have pre-reserved the activity.",       
+                        "TEXT_3": "Then we keep cycling towards the village Capileira, at 1.435 meters, the highest of the three villages in the Poquiera Gorge, one of the most beautiful places in the Alpujarras. A truly great experience to stay the night with the breathtaking landscapes of the southern slopes of Sierra Nevada."
+                                     
+                     },
+                     "DAY_5": {
+
+                        "STRONG_1": "Track 4 The Route of the Old Oil Train",
+                        "TEXT_1": "A ride through the beautiful Lecrín Valley, a mixture of pine forest and cultivated land, towards the Tropical Coast of Granada.",
+                        "TEXT_2": "We leave the Alpujarras behind us and drive to the highest village of the Lecrín Valley where we stay the last night of the tour.",       
+                        "TEXT_3": "There is an optional Olive oil tour in the morning for those who have pre-reserved the activity.",       
+                        "TEXT_4": "Our last cycle day takes us through the Lecrín Valley, an area of rolling hills, ravines, rugged cliffs, and rivers covered with cultivated citrus and orange groves, almond trees, and olive oil plantations.",
+                        "TEXT_5": "We go towards the viewpoint where the Mediterranean Sea comes into view with our destination the village of Salobreña.",              
+                        "TEXT_6": "Next, after enjoying a swim and a drink, we will head back to our rural hotel where we will celebrate our last evening of the cycle journey."              
+                     },
+                     "DAY_6": {
+
+                        "STRONG_1": "Goodbye",
+                        "TEXT_1": "The journey ends after breakfast. There will be a private airport transfer from the hotel to the airport in Granada or Málaga."
+                                                                            
+                     }
+
+
+            },
+
+             "CYCLE_RONDA_CORDOBA":{
+                 "TITLE": "Cycle Ronda - Córdoba E-bike Tour 8 Days",
+                 "LOCATION": "Andalusia",
+
+                 "PRICE": "1.550",
+                 "PRE_BOOKING": "20%",
+                 "MINUMUM_OF_PERSONS": "7",
+                 "DURATION": "8 Days",
+                 "TOUR_TYPE": "Guided",
+                 "SEASON": "Spring Autumn",
+
+                 "TOTAL_DISTANCE": "283 km",
+                 "TOTAL_ASCENT": "4000 m",
+                 "TOTAL_DESCENT": "4760 m",
+                 "ROUTE_TYPE": "Point to point",
+                 "DIFFICULTY": "3 - 4",
+
+                 "PHYSICAL_DIFFICULTY": "Physical Difficulty",
+                 "TECHNICAL_DIFFICULTY": "Technical Difficulty",
+
+                    "INCLUDED": {
+                        "TITLE": "Included",
+                        "TEXT_1": "2 Professionals guides",
+                        "TEXT_2": "Liability insurance and assistance",
+                        "TEXT_3": "Backup vehicle",
+                        "TEXT_4": "Luggage transport",
+                        "TEXT_5": "Airport Transfer",
+                        "TEXT_6": "Accommodation: 7 nights",
+                        "TEXT_7": "Breakfast: 7 days",
+                        "TEXT_8": "Lunch: 5 picnics",
+                        "TEXT_9": "E-bike",
+                        "TEXT_10": "Helmet",
+                        "TEXT_11": "Water bottle",
+                        "TEXT_12": "Cycle shirt"
+                       
+                    },
+                    "NOT_INCLUDED": {
+                        "TITLE": "Not included",
+                        "TEXT_1": "Flight",
+                        "TEXT_2": "Travel & assistance insurance",
+                        "TEXT_3": "Cancellation insurance",
+                        "TEXT_4": "Dinner",
+                        "TEXT_5": "Extra meals",
+                        "TEXT_6": "Extra excursions",
+                        "TEXT_7": "Personal expenses",
+                        "TEXT_8": "Tips",
+                        "TEXT_9": "Extra nights",
+                        "TEXT_10": "Private transport after or before the tour"
+                    },
+                    "EXTRA": {
+                        "TITLE": "Extra",
+                        "SUBTITLE": "Need to be booked in Advance",
+                        "TEXT_1": "Private room: 300 € (7nights)",
+                        "TEXT_2": "Road bike or Gravel bike.",
+                        "TEXT_3": "Ride for everyone. For those who have a good level of physical condition can join the tour on a Road bike or Gravel bike at extra cost.",
+                        "TEXT_4": "Caminito del Rey: 30 €",
+                        "TEXT_5": "An aerial path that runs along the Gaitanes Gorge, an impressive canyon opened by the Guadalhorce River. (5 km, 2hours)",
+                        "TEXT_6": "Private guided tour of the Mosque of Córdoba: 40 €",
+                        "TEXT_7": "Olive Oil tasting: 15 €",
+                        "TEXT_8": "In the heart of Andalucía, we offer you the possibility to learn how to taste and appreciate olive oil through our senses."
+                    },
+
+                    "AVAILABILITY": "Availability",
+                    "AVAILABILITY_TEXT_1": "Spring",
+                    "AVAILABILITY_TEXT_2": "Autumn",
+
+                    "HIGHLIGHT": "Highlight",
+                    "HIGHLIGHT_TEXT_1": "City of Ronda",
+                    "HIGHLIGHT_TEXT_2": "Caminito del Rey",
+                    "HIGHLIGHT_TEXT_3": "City of Antequera",
+                    "HIGHLIGHT_TEXT_4": "Sierras Subbéticas Natural Park and Geopark UNESCO",
+                    "HIGHLIGHT_TEXT_5": "Olive Oil tasting",    
+                    "HIGHLIGHT_TEXT_6": "City of Córdoba",    
+                    "HIGHLIGHT_TEXT_7": "Private tour of the Mosque of Córdoba",    
+                    "HIGHLIGHT_TEXT_8": "The selected rural hotels",    
+
+                    "REQUIEREMENTS": "Requirements",
+                    "REQUIEREMENTS_TEXT_1": "Booking Conditions. See terms and conditions.",
+                    "REQUIEREMENTS_TEXT_2": "Travel insurance. See terms and conditions.",
+                    "REQUIEREMENTS_TEXT_3": "Release of liability form. See terms and conditions.",
+
+                    "CANCELLATION": "Cancellation Policy",
+                    "CANCELLATION_TEXT": "See Terms and Conditions",
+
+                    "NOTES": "More Information about our tour",
+                    "NOTES_TEXT_1": "View trip notes",
+
+                 "WHAT_TO_EXPECT": {
+                        "TITLE": "What to expect",
+                     "TEXT_1": "Uncover the hidden beauty of Andalusia, a treasure to discover!",
+                     "TEXT_2": "8 days immersing in the rich Andalusian culture, natural beauty, and history as you cycle through picturesque landscapes, charming villages, and iconic landmarks",
+                     "TEXT_3": "The South of Spain has so much to offer, from the charming city of Ronda to the historic city of Córdoba, an unforgettable cycling adventure through the heart of Andalusia",
+
+                     "DAY_1": {
+
+                        "STRONG_1": "Welcome",
+                        "TEXT_1": "Upon arrival in Málaga, our pick-up will drive us to our rural hotel in Ronda located above a deep gorge that separates the city in half. The tour guide will organize an introductory briefing about the trip the same day followed by a safety briefing.",
+                        "STRONG_2": "Free day Ronda",
+                        "TEXT_2": "Start the day exploring Ronda’s famous sights such as the iconic bridge or the Plaza de Toros, the oldest bullring in Spain. Or take a side trip to one of the many vineyards, an excellent way to deepen your knowledge about local wines.",
+                        "TEXT_3": "The tour leader will organize dinner to celebrate the first day of the journey."
+                     },
+                     "DAY_2": {
+
+                        "STRONG_1": "Track 1 Mountain Range Sierra de las Nieves",
+                        "TEXT_1": "Off we go to the breathtaking Gaitanes Gorge, one of the most spectacular landscapes in the Malaga mountains where we stay the second night of the trip.",
+                        "TEXT_2": "We leave our hotel along meandering country roads, passing through the Ronda Mountain Range and the National Park Sierra de las Nieves, a 100 % stunning landscape. After a picnic lunch at a panoramic viewpoint, we continue toward our hotel nestled in the heart of the Natural Park.",
+                        "STRONG_2": "Free day Ronda",
+                        "TEXT_3": "Swimming pool and breathtaking views",
+                        "TEXT_4": "Optional walk “Caminito del Rey”"
+                     },
+                     "DAY_3": {
+
+                        "STRONG_1": "Track 2 Andalusia’s Countryside",
+                        "TEXT_1": "After breakfast, we drive the first kilometers with our backup vehicle to skip the steep part and to bring us back higher up where we start our second track.",
+                        "TEXT_2": "Today, we will cycle through Andalusia’s countryside, a mountainous and colorful landscape where Mediterranean crops alternate with pastureland. After the picnic lunch, we continue towards the village of Antequera with its rich historic center that claims to have the most churches per inhabitant in Spain. From Monasteries, palaces, and the Moorish fortress to prehistoric dolmens are some of the many places to see."                      
+                     },
+                     "DAY_4": {
+
+                        "STRONG_1": "Track 3 Mountainous Olive Groves",
+                        "TEXT_1": "Today is the only time we drive to our new starting point, a village built on the ruins of an old Moorish castle that tops a rocky outcrop overlooking the beautiful valley and lake below.",
+                        "TEXT_2": "The route takes us through the Olive Grove Landscapes of Andalusia in the Sierras Subbéticas Natural Park and Geopark. Spain has olive groves scattered over almost all the country. Still, their biggest concentration is in Andalusia, with locations where olive trees were used from when the Hispania Baetica region used to supply olive oil to the Roman capital at the very least.",       
+                        "TEXT_3": "Our destination today is the village Priego de Córdoba in the heart of the Natural Park. Before dinner, we offer you the possibility to learn how to taste and appreciate olive oil through our senses through an olive oil master where you will discover the smell, aroma, and flavor of each sample of olive oil",       
+                        "STRONG_2": "Free afternoon",
+                        "TEXT_4": "Discover the old part of the village"                
+                     },
+                     "DAY_5": {
+
+                        "STRONG_1": "Track 4 The Route of the Old Oil Train",
+                        "TEXT_1": "Today we continue cycling through the beautiful landscapes of the Sierras Subbéticas mountains which take us into picturesque villages.",
+                        "TEXT_2": "After another outdoor picnic, we follow the traces of the old train track called “Vía Verde” that runs between olive trees and vineyards. These Green Roads across Spain have been recovered for cyclists and hikers",       
+                        "TEXT_3": "The route of the old oil train leads us to our next accommodation, a traditional Andalusian farmhouse converted into a hotel",       
+                        "STRONG_2": "Free afternoon",
+                        "TEXT_4": "Swimming pool and breathtaking views",                
+                        "STRONG_3": "Dinner",
+                        "TEXT_5": "The tour leader will organize a panoramic walk and dinner in the village of Zuheros."              
+                     },
+                     "DAY_6": {
+
+                        "STRONG_1": "Track 5 The Caliphate and the Mozarabic Route",
+                        "TEXT_1": "On your last cycling day, we follow two historic routes that guide us to the city of Córdoba, our final destination. The Route of the Caliphate is the Andalusian Legacy that connects Cordoba and Granada, the capital cities of the Caliphate and Nasrid al-Andalus. It was one of the busiest paths of the Iberian Peninsula during the Middle Ages because it was used by traders from all around the known world, who supplied and traded in these important population centers; it was also the route of knowledge, sciences, and arts",
+                        "TEXT_2": "The other historic route is the Mozarabic Way to Santiago de Compostela. An ancient trail that pays tribute to all those Christians called Mozarabs who stayed in the territories of Al-Andalus. A journey that reminds us of that time when, despite being repressed, these Christians maintained their belief and devotion.",       
+                        "TEXT_3": "The last part of the longest cycle track will reveal our destination of the journey with views of the city of Córdoba located in the Guadalquivir depression formed by the Guadalquivir River.",       
+                        "STRONG_2": "Dinner",
+                        "TEXT_4": "The Tour leader will organize a dinner to celebrate our final destination."                                                    
+                     },
+                     "DAY_7": {
+
+                        "STRONG_1": "Free day Córdoba",
+                        "TEXT_1": "Explore the city’s history and culture known for its unique blend of Roman, Moorish, and Christian influences. The city was once a significant Roman settlement and later became the capital of the Islamic Emirate and then the Caliphate of Córdoba, under which it flourished as one of the largest and most advanced cities in the world during the Middle Ages.",
+                        "TEXT_2": "In the morning there is an optional tour of the Mosque of Córdoba for those who have pre-reserved the activity.",       
+                        "TEXT_3": "The tour guide will organize a place to have dinner together to celebrate the last evening of the journey"                                                
+                     },
+                     "DAY_8": {
+
+                        "STRONG_1": "Goodbye",
+                        "TEXT_1": "The journey ends after breakfast at our hotel. There will be a private airport transfer from the hotel to the airport in Málaga."
+                                                               
+                     }
+                     
+                 },
+
+                 "CLIENTS" :{
+                    "TITLE": "What our clients said about us?"
+                 }
+             },
+
+              "E_BIKE_SIGHTSEEN_GRANADA": {
+                "TITLE": "Sightseeing Granada E-bike Tour",
+                "LOCATION": "Granada",
+
+                "PRICE": "80 (2pax.)",
+                "PRE_BOOKING": "100%",
+                "MINUMUM_OF_PERSONS": "2",                
+                "DURATION": "4 Hours",
+                "TOUR_TYPE": "Guided",
+                "SEASON": "All Year",
+
+                "ROUTE_TYPE": "Loop",
+                "DIFFICULTY": "Easy",
+                
+                "INCLUDED": {
+                    "TITLE": "Included",
+                    "TEXT_1": "Professional guide",
+                    "TEXT_2": "Liability insurance and assistance",
+                    "TEXT_3": "E-bike + Pannier",
+                    "TEXT_4": "Helmet & gloves",
+                    "TEXT_5": "Water",
+                    "TEXT_6": "Transfer"
+                },
+
+                "NOT_INCLUDED": {
+                    "TITLE": "Not included",
+                    "TEXT_1": "Lunch"
+                },
+
+                "AVAILABILITY": "Availability",
+                "AVAILABILITY_TEXT_1": "Spring",
+                "AVAILABILITY_TEXT_2": "Autumn",
+                "AVAILABILITY_TEXT_3": "Winter",
+                "AVAILABILITY_TEXT_4": "Summer",
+
+                "HIGHLIGHT": "Highlight",
+                "HIGHLIGHT_TEXT_1": "Panoramic views of Alhambra, the city, and the Sierra Nevada Mountain range",
+                "HIGHLIGHT_TEXT_2": "To get to know the history and culture of Granada",
+
+                "REQUIEREMENTS": "Requirements",
+                "REQUIEREMENTS_TEXT_1": "Good physical health",
+                "REQUIEREMENTS_TEXT_2": "Minimum age and height: 11 years and 1.50 m",
+                "REQUIEREMENTS_TEXT_3": "Closed shoes, no open shoes!",
+                "REQUIEREMENTS_TEXT_4": "You are capable of controlling bicycle speed and direction on paved roads",
+                "REQUIEREMENTS_TEXT_5": "You can brake, and use gears with confidence",
+                
+
+                "WHAT_TO_BRING": {
+                    "TITLE": "What to bring for Cycling",
+                    "TEXT_1": "Weather is important to consider while packing for your outdoor activity. Your packing list is based on your comfort and sensitivity. Layering your clothes is the best way to travel and be outdoors. It is highly recommended as the best way to stay warm and cool, as the weather is bound to change in the mountains.",
+
+                    "BRING_1": "Comfortable clothing and shoes.",
+                    "BRING_2": "Sunglasses",
+                    "BRING_3": "Sun protection",
+                    
+                    "TEXT_2": "Any questions about the recommendations of the material do not hesitate to contact us."
+                },
+
+
+                "WHAT_TO_EXPECT": "What to expect",
+                "DAYS" : {
+                    "DAY_1" : {
+                        "TEXT_1": "Discover Granada and the surroundings on two wheels, a great way to see panoramic views of Alhambra, the city, and the Sierra Nevada Mountain range.The ride starts in the city and brings you to a green landscape in the hills of Sabika where the Alhambra stands, facing both neighborhoods Albaicín and Sacromonte. After a coffee break, the guide will lead you through these neighborhoods showing you the important sites with the best viewpoints. A great way to explore the city and enjoy nature!"
+                        
+                    }
+                }
+             }
+        },
+
         "CULTURAL_TRAVELS": {
 
             "BREATHTAKING_ROAD_TRIP_ALPUJARRAS": {
@@ -693,9 +1393,112 @@
                     
                     }      
                 }                
+            },
+
+            "ROCK_CLIMBING_COURSES": {
+                "TITLE": "Rock Climbing Courses",
+                "LOCATION": "Granada",
+
+                "PRICE": "Trip Notes",
+                "PRE_BOOKING": "100%",
+                "MINUMUM_OF_PERSONS": "1",
+                "MAXUMUM_OF_PERSONS": "6",
+                "DURATION": "Check Trips Notes",
+                "ROUTE_TYPE": "Guided",
+                "SEASON": "All Year",
+
+                "COURSES": {
+                    "TITLE": "Courses",
+                    "COURSE_1": "Sport Leading Climbing Course",
+                    "COURSE_2": "Climbing Fall Belay Course",
+                    "COURSE_3": "Sport Multi-pitch Climbing Course",
+                    "COURSE_4": "Self-Rescue Course on multi-pitch Routes"
+                },
+
+                "INCLUDED": {
+                    "TITLE": "Included",
+                    "TEXT_1": "Liability insurance and assistance",
+                    "TEXT_2": "Rock climbing Sports Technician",
+                    "TEXT_3": "Transfer",
+                    "TEXT_4": "If necessary, personal equipment (climbing shoes, helmet, and harness)",
+                    "TEXT_5": "Collective material (ropes, carabiners, slings, belay devices, etc.)"
+                },
+
+                "NOT_INCLUDED": {
+                    "TITLE": "Not included",
+                    "TEXT_1": "Lunch",
+                    "TEXT_2": "Snack",
+                    "TEXT_3": "Water"
+                },
+
+                "AVAILABILITY": "Availability",
+                "AVAILABILITY_TEXT": "All Year",
+
+                "HIGHLIGHT": "Requirements",
+                "HIGHLIGHT_TEXT_1": "Age: 18 years",
+
+                "WHAT_TO_BRING": {
+                    "TITLE": "What to bring for rock climbing",
+                    "TEXT_1": "Weather is important to consider while packing for your outdoor activity. Your packing list is based on your comfort and sensitivity. Layering your clothes is the best way to travel and be outdoors. It is highly recommended as the best way to stay warm and cool, as the weather is bound to change in the mountains.",
+                    "BRING_1": "Technical clothing appropriate for the time of year and sporting activity (fleece, windbreaker, waterproof and breathable jacket, gloves, etc.). A windbreaker or thin fleece is always useful, even in summer.",
+                    "BRING_2": "Comfortable clothing that is neither tight nor bulky",
+                    "BRING_3": "Backpack of approximately 15 to 30 liters.",
+                    "BRING_4": "Approach shoes or sneakers",
+                    "BRING_5": "1L water bottle",
+                    "BRING_6": "Picnic",
+                    "BRING_7": "Sun protection (sunglasses, sunscreen, lip balm, cap or hat)",
+                    "BRING_8": "Thermal blanket",
+                    "BRING_9": "A pencil and paper",
+                    "TEXT_2": "Any questions about the recommendations of the material do not hesitate to contact us."
+                },
+
+                "MORE_INFO": "More information about our Courses",
+                "MORE_INFO_TEXT_1": "Sport leading climbing course",
+                "MORE_INFO_TEXT_2": "Sport multi pitch climbing course",
+                "MORE_INFO_TEXT_3": "Climbing fall belay course",
+                "MORE_INFO_TEXT_4": "Self-rescue course on multi pitch routes",
+
+                "WHAT_TO_EXPECT": {
+                    "TITLE": "What to expect",
+                    
+                    "COURSE_1": {
+                        "TITLE": "Sport Leading Climbing Course",
+                        "TEXT_1": "The introductory sport climbing course aims at people who want to gain autonomy and confidence when climbing on rocks or walls.",
+                        "TEXT_2": "The course will allow you to climb sport climbing routes of up to one pitch with complete autonomy and safety.",
+                        "STRONG_1": "First day: ",
+                        "TEXT_3": "Indoor climbing wall",
+                        "STRONG_2": "Second day: ",
+                        "TEXT_4": "Outdoor on the rock"
+                    },
+                    "COURSE_2": {
+                        "TITLE": "Climbing Fall Belay Course",
+                        "TEXT_1": "The main focus of the course is to teach participants how to minimize the impact of falls through dynamic belaying techniques, increasing the safety and confidence of both the climber and the belayer. The course is designed for climbers of all levels, from beginners to advanced, who wish to improve their belaying skills and learn advanced fall management techniques on natural rock.",
+                        "STRONG_1": "First day: ",
+                        "TEXT_3": "Indoor",
+                        "STRONG_2": "Second day: ",
+                        "TEXT_4": "Outdoor"
+                    
+                    },      
+                    "COURSE_3": {
+                        "TITLE": "Sport Multi-pitch Climbing Course",
+                        "TEXT_1": "The introductory multi-pitch sport climbing course is designed for those who want to learn the techniques and skills necessary to climb sports routes of various lengths. Participants will learn how to belay each other, climb progressively, and overcome the obstacles that arise on multi-pitch routes.",
+                        "TEXT_2": "The course will allow you to climb sport climbing routes of up to one pitch with complete autonomy and safety.",
+                        "STRONG_1": "First day: ",
+                        "TEXT_3": "Indoor",
+                        "STRONG_2": "Second day: ",
+                        "TEXT_4": "Outdoor on the rock"                    
+                    },      
+                    "COURSE_4": {
+                        "TITLE": "Sport Multi-pitch Climbing Course",
+                        "TEXT_1": "The course prepares and teaches you to deal with unexpected situations and handle the necessary equipment with confidence and safety. You learn to master essential self-rescue techniques in climbing with intensive practical and theoretical training.",
+                        "TEXT_2": "The course will allow you to climb sport climbing routes of up to one pitch with complete autonomy and safety.",
+                        "STRONG_1": "First day: ",
+                        "TEXT_3": "Indoor",
+                        "STRONG_2": "Second day: ",
+                        "TEXT_4": "Indoor"                    
+                    }      
+                }          
             }
         }
-        
-        
     }
 }

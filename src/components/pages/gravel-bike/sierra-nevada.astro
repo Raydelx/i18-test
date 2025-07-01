@@ -6,11 +6,14 @@ import Layout from "../../../layouts/Layout.astro";
 import SliderReact from "../../../hooks/SliderReact";
 import Days from "@/components/products-components/days.astro";
 import Includes from "@/components/products-components/includes.astro";
-import Wheel from "@/components/ui/icons/wheel.astro";
 import Route from "@/components/ui/icons/route.astro";
-import Link from "@/components/ui/link.astro";
 import Cancellation from "@/components/products-components/cancellation.astro";
 import Widget from "@/components/products-components/widget.astro";
+
+import { getI18N } from "@/i18n/";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
 
 // Duplica y cambia las rutas para añadir o modificar las fotos
 
@@ -35,16 +38,11 @@ const DAYS = [
   {
     day: "1",
     tecnicalInfo: true,
-    description:
-      "Imagine starting your bicycle tour in the Sierra Nevada National Park at an elevation of 2.000 meters with a panoramic view of the highest peaks of the mountain range.",
-    description2:
-      "A 45-minute journey will take us up to the starting point, where we begin to cycle down along a path without technical or physical difficulties. The trail takes you closer to the stunning landscapes, with every turn revealing vistas of beautiful views along winding roads that meander between old farms scattered along the mountainsides",
-    description3:
-      "Halfway through the tour, we provide a great snack with a fresh coffee at a beautiful lookout.",
-    description4:
-      "The last part brings Alhambra Palace into view, where we will cycle through the city’s small streets of Sacromonte and Albayzín before we finish at the plaza, the meeting point of the tour.",
-    description5:
-      "We provide helmets, gloves, and extra clothes. The backup vehicle will accompany us during the entire tour to ensure safety. ",
+    description: i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.WHAT_TO_EXPECT_TEXT_1,
+    description2: i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.WHAT_TO_EXPECT_TEXT_2,
+    description3: i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.WHAT_TO_EXPECT_TEXT_3,
+    description4: i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.WHAT_TO_EXPECT_TEXT_4,
+    description5: i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.WHAT_TO_EXPECT_TEXT_5,
     totalDistance: "58 km",
     totalAscent: "500 m",
     totalDescent: "1700 m",
@@ -54,13 +52,13 @@ const DAYS = [
 
 const brings = [
   {
-    title: "Comfortable clothing and shoes.",
+    title: i18n.PRODUCTS.GRAVEL_BIKE.MTB_TRAILS_BIKE.WHAT_TO_BRING_TEXT_2,
   },
   {
-    title: "Sunglasses",
+    title: i18n.PRODUCTS.GRAVEL_BIKE.MTB_TRAILS_BIKE.WHAT_TO_BRING_TEXT_3,
   },
   {
-    title: "Sun protection ",
+    title: i18n.PRODUCTS.GRAVEL_BIKE.MTB_TRAILS_BIKE.WHAT_TO_BRING_TEXT_4,
   },
 ];
 ---
@@ -71,19 +69,19 @@ const brings = [
       <!-- Foto, nombre y destino -->
 
       <div
-        class="bg-center bg-no-repeat bg-[url('/public/cycle-tour/montainbike/sierra-nevada/info-sierranevada.webp')] h-[25rem] rounded-2xl">
+        class="bg-center bg-no-repeat bg-[url('/public/cycle-tour/montainbike/sierra-nevada/info-sierranevada.webp')] bg-cover h-[30rem] rounded-2xl">
         <div class="flex flex-col justify-end h-full p-6 w-auto">
           <div class="flex gap-2">
             <Icon icon="destiny-logo" size="1.6rem" color="white" />
             <p
               class="text-xl font-normal text-white lg:text-2xl flex flex-col justify-end h-full [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
-              Sierra Nevada
+              {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.LOCATION}
             </p>
           </div>
 
           <h1
             class="text-3xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-5xl [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
-            Sierra Nevada E-Bike Tour
+            {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.TITLE}
           </h1>
         </div>
       </div>
@@ -92,32 +90,44 @@ const brings = [
 
       <div
         class="grid grid-cols-2 md:grid-cols-6 h-auto mt-3 gap-3 place-content-start md:px-6">
-        <InformationProducts title="Price" subtitle="98">
+        <InformationProducts
+          title="Price"
+          subtitle={i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.PRICE}>
           <div slot="icon">
             <Icon icon="price-logo" size="1.6rem" color="#0E46A3" />
           </div>
         </InformationProducts>
-        <InformationProducts title="Pre-booking" subtitle="98">
+        <InformationProducts
+          title="Pre-booking"
+          subtitle={i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.PRE_BOOKING}>
           <div slot="icon">
             <Icon icon="price-logo" size="1.6rem" color="#0E46A3" />
           </div>
         </InformationProducts>
-        <InformationProducts title="Minimum of persons" subtitle="1">
+        <InformationProducts
+          title="Minimum of persons"
+          subtitle={i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.MINUMUM_OF_PERSONS}>
           <div slot="icon">
             <Icon icon="group-logo" size="1.6rem" color="#0E46A3" />
           </div>
         </InformationProducts>
-        <InformationProducts title="Duration" subtitle="6 Hours">
+        <InformationProducts
+          title="Duration"
+          subtitle={i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.DURATION}>
           <div slot="icon">
             <Icon icon="timer-logo" size="1.6rem" color="#0E46A3" />
           </div>
         </InformationProducts>
-        <InformationProducts title="Tour type" subtitle="Guided">
+        <InformationProducts
+          title="Tour type"
+          subtitle={i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.TOUR_TYPE}>
           <div slot="icon">
             <Icon icon="guide-logo" size="1.6rem" color="#0E46A3" />
           </div>
         </InformationProducts>
-        <InformationProducts title="Season" subtitle2="Spring  Summer  Autumn">
+        <InformationProducts
+          title="Season"
+          subtitle2={i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.SEASON}>
           <!-- <div slot="icon">
             <Icon icon="autumn-logo" size="1.6rem" color="#0E46A3" />
           </div> -->
@@ -129,28 +139,38 @@ const brings = [
       <div class="">
         <div
           class="grid grid-cols-2 justify-between md:grid-cols-6 h-auto mt-3 gap-3 md:px-6">
-          <InformationProducts title="Total distance" subtitle="58 km">
+          <InformationProducts
+            title="Total distance"
+            subtitle={i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.TOTAL_DISTANCE}>
             <div slot="icon">
               <Icon icon="distance-logo" size="1.6rem" color="#0E46A3" />
             </div>
           </InformationProducts>
 
-          <InformationProducts title="Total ascent" subtitle="500 m">
+          <InformationProducts
+            title="Total ascent"
+            subtitle={i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.TOTAL_ASCENT}>
             <div slot="icon">
               <Icon icon="up-logo" size="1.6rem" color="#0E46A3" />
             </div>
           </InformationProducts>
-          <InformationProducts title="Total descent" subtitle="1700 m">
+          <InformationProducts
+            title="Total descent"
+            subtitle={i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.TOTAL_DESCENT}>
             <div slot="icon">
               <Icon icon="down-logo" size="1.6rem" color="#0E46A3" />
             </div>
           </InformationProducts>
-          <InformationProducts title="Route type" subtitle="Point to point">
+          <InformationProducts
+            title="Route type"
+            subtitle={i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.ROUTE_TYPE}>
             <div slot="icon">
               <Route />
             </div>
           </InformationProducts>
-          <InformationProducts title="Difficulty" subtitle="S0 Easy">
+          <InformationProducts
+            title="Difficulty"
+            subtitle={i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.DIFFICULTY}>
             <div slot="icon"></div>
           </InformationProducts>
           <InformationProducts title="E-Bike" subtitle="Yes">
@@ -176,42 +196,56 @@ const brings = [
       <div
         class="grid md:grid-cols-2 lg:grid-cols-2 mt-20 md:mt-26 md:mb-36 gap-16 md:gap-4">
         <!-- Include -->
-        <Includes title="Included">
+        <Includes
+          title={i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.INCLUDED.TITLE}>
           <ul slot="description" class="mt-4 flex flex-col gap-2">
             <li class="flex flex-wrap gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
-              <p class="max-w-[320px] text-md">Professional guide</p>
-            </li>
-            <li class="flex flex-wrap gap-2">
-              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
               <p class="max-w-[320px] text-md">
-                Liability insurance and assistance
+                {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.INCLUDED.TEXT_1}
               </p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
-              <p class="max-w-[320px] text-md">Vehicle supported tour</p>
+              <p class="max-w-[320px] text-md">
+                {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.INCLUDED.TEXT_2}
+              </p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
-              <p class="max-w-[320px] text-md">Transfer</p>
+              <p class="max-w-[320px] text-md">
+                {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.INCLUDED.TEXT_3}
+              </p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
-              <p class="max-w-[320px] text-md">E-bike</p>
+              <p class="max-w-[320px] text-md">
+                {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.INCLUDED.TEXT_4}
+              </p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
-              <p class="max-w-[320px] text-md">Helmet, gloves, wind jacket</p>
+              <p class="max-w-[320px] text-md">
+                {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.INCLUDED.TEXT_5}
+              </p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
-              <p class="max-w-[320px] text-md">Snack and water</p>
+              <p class="max-w-[320px] text-md">
+                {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.INCLUDED.TEXT_6}
+              </p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.INCLUDED.TEXT_7}
+              </p>
             </li>
           </ul>
         </Includes>
         <!-- Exclude -->
-        <Includes title="Not Included">
+        <Includes
+          title={i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.NOT_INCLUDED.TITLE}>
           <div slot="description" class="flex flex-col gap-2 mt-4"></div>
         </Includes>
         <!-- Complementaries -->
@@ -241,21 +275,27 @@ const brings = [
         <div class="">
           <h2
             class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
-            Availability
+            {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.AVAILABILITY}
           </h2>
 
           <ul class="grid gap-2 text-lg">
             <li class="flex flex-wrap gap-2">
               <Icon icon="spring-logo" size="1.6rem" color="#0E46A3" />
-              <p>Spring</p>
+              <p>
+                {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.AVAILABILITY_SPRING}
+              </p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="summer-logo" size="1.6rem" color="#0E46A3" />
-              <p>Summer</p>
+              <p>
+                {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.AVAILABILITY_SUMMER}
+              </p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="autumn-logo" size="1.6rem" color="#0E46A3" />
-              <p>Autumn</p>
+              <p>
+                {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.AVAILABILITY_AUTUMN}
+              </p>
             </li>
           </ul>
         </div>
@@ -263,14 +303,15 @@ const brings = [
         <div class="">
           <h2
             class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
-            Highlight
+            {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.HIGHLIGHT}
           </h2>
           <p class="text-lg text-gray-900 mb-1">
-            <span class="text-xl">🔹</span> Cycling in the National Park Sierra Nevada.
+            <span class="text-xl">🔹</span>
+            {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.HIGHLIGHT_TEXT_1}
           </p>
           <p class="text-lg text-gray-900">
-            <span class="text-xl">🔹</span> Start at 2.000 meters with a stunning
-            panorama over the three highest peaks of the Sierra Nevada.
+            <span class="text-xl">🔹</span>
+            {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.HIGHLIGHT_TEXT_2}
           </p>
         </div>
       </div>
@@ -281,37 +322,41 @@ const brings = [
       <div class="">
         <h2
           class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
-          Requirements
+          {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.REQUIEREMENTS}
         </h2>
         <p class="text-lg text-gray-900 mb-1">
-          <span class="text-xl strong">🔹</span> Good physical health
+          <span class="text-xl strong">🔹</span>
+          {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.REQUIEREMENTS_TEXT_1}
         </p>
         <p class="text-lg text-gray-900 mb-1">
-          <span class="text-xl strong">🔹</span> You are capable of controlling bicycle
-          speed and direction
+          <span class="text-xl strong">🔹</span>
+          {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.REQUIEREMENTS_TEXT_2}
         </p>
         <p class="text-lg text-gray-900 mb-1">
-          <span class="text-xl strong">🔹</span> You can brake and use gears with
-          confidence.
+          <span class="text-xl strong">🔹</span>
+          {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.REQUIEREMENTS_TEXT_3}
         </p>
         <p class="text-lg text-gray-900 mb-1">
-          <span class="text-xl strong">🔹</span> Age minimum 11 years
+          <span class="text-xl strong">🔹</span>
+          {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.REQUIEREMENTS_TEXT_4}
         </p>
         <p class="text-lg text-gray-900 mb-1">
-          <span class="text-xl strong">🔹</span> Height min. 1.50 meters
+          <span class="text-xl strong">🔹</span>
+          {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.REQUIEREMENTS_TEXT_5}
         </p>
         <p class="text-lg text-gray-900 mb-1">
-          <span class="text-xl strong">🔹</span> Closed shoes, no sandals!
+          <span class="text-xl strong">🔹</span>
+          {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.REQUIEREMENTS_TEXT_6}
         </p>
       </div>
       <Cancellation />
     </section>
 
     <Widget
-      title="What to bring for Hiking"
-      description="Weather is important to consider while packing for your outdoor activity. Your packing list is based on your comfort and sensitivity. Layering your clothes is the best way to travel and be outdoors. It is highly recommended as the best way to stay warm and cool, as the weather is bound to change in the mountains."
+      title={i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.WHAT_TO_BRING}
+      description={i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.WHAT_TO_BRING_TEXT_1}
       img="/hiking-and-trekking/trekking-alpujarras/bring.webp"
-      text="Any questions about the recommendations of the material do not hesitate to contact us."
+      text={i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.WHAT_TO_BRING_TEXT_5}
       brings={brings}
     />
 
@@ -324,7 +369,7 @@ const brings = [
 
     <!--  TimeLine per days  -->
     <h2 class="text-4xl md:text-5xl xl:text-6xl md:p-8 mt-16 font-bold mb-4">
-      What to expect
+      {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.WHAT_TO_EXPECT}
     </h2>
     {
       DAYS.map((tour) => (

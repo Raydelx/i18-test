@@ -536,6 +536,681 @@
     "CARD_HOME_1": "Geleide rondleidingen",
 
     "PRODUCTS": {
+
+        "GRAVEL_BIKE" : {
+            "SIERRA_NEVADA":{
+
+                "TITLE": "Sierra Nevada E-bike Tour",
+                "LOCATION": "Sierra Nevada",
+
+                "PRICE": "98",
+                "PRE_BOOKING": "98",
+                "MINUMUM_OF_PERSONS": "1",                
+                "DURATION": "6 Uur",
+                "TOUR_TYPE": "Geleid",
+                "SEASON": "Lente  Zomer  Herfst",
+
+                "TOTAL_DISTANCE": "58 km",
+                "TOTAL_ASCENT": "500 m",
+                "TOTAL_DESCENT": "1700 m",
+                "ROUTE_TYPE": "Punt tot punt",
+                "DIFFICULTY": "S0 Makkelijk",
+
+                "INCLUDED": {
+                    "TITLE": "Inbegrepen",
+                    "TEXT_1": "Professionele gids",
+                    "TEXT_2": "Aansprakelijkheidsverzekering en assistentie",
+                    "TEXT_3": "Tour met volgvoertuig",
+                    "TEXT_4": "Transfer",
+                    "TEXT_5": "E-bike",
+                    "TEXT_6": "Helm, handschoenen, windjack",                                
+                    "TEXT_7": "Snack en water"                                 
+                },
+                "NOT_INCLUDED": {
+                    "TITLE": "Niet inbegrepen"
+                },
+
+                "AVAILABILITY": "Beschikbaarheid",
+                "AVAILABILITY_SPRING": "Lente",
+                "AVAILABILITY_SUMMER": "Zomer",
+                "AVAILABILITY_AUTUMN": "Herfst",
+                
+                "HIGHLIGHT": "Hoogtepunten",
+                "HIGHLIGHT_TEXT_1": "Fietsen in het Nationaal Park Sierra Nevada.",
+                "HIGHLIGHT_TEXT_2": "Start op 2.000 meter met een prachtig panorama over de drie hoogste toppen van de Sierra Nevada.",
+
+                "REQUIEREMENTS": "Vereisten",
+                "REQUIEREMENTS_TEXT_1": "Goede fysieke gezondheid",
+                "REQUIEREMENTS_TEXT_2": "Je bent in staat om de snelheid en richting van de fiets te beheersen",
+                "REQUIEREMENTS_TEXT_3": "Je kunt remmen en versnellingen met vertrouwen gebruiken.",
+                "REQUIEREMENTS_TEXT_4": "Minimumleeftijd 11 jaar",
+                "REQUIEREMENTS_TEXT_5": "Minimale lengte 1,50 meter",
+                "REQUIEREMENTS_TEXT_6": "Gesloten schoenen, geen sandalen!",
+
+                "WHAT_TO_BRING": "Wat mee te nemen voor fietsen",
+                "WHAT_TO_BRING_TEXT_1": "Het weer is belangrijk om rekening mee te houden bij het inpakken voor je buitenactiviteit. Je paklijst is gebaseerd op je comfort en gevoeligheid. Het dragen van laagjes kleding is de beste manier om te reizen en buiten te zijn. Het wordt sterk aanbevolen als de beste manier om warm en koel te blijven, aangezien het weer in de bergen onvoorspelbaar kan veranderen.",
+                "WHAT_TO_BRING_TEXT_2": "Comfortabele kleding en schoenen.",
+                "WHAT_TO_BRING_TEXT_3": "Zonnebril",
+                "WHAT_TO_BRING_TEXT_4": "Zonnebescherming",                
+                "WHAT_TO_BRING_TEXT_5": "Heb je vragen over de aanbevelingen van het materiaal, aarzel dan niet om contact met ons op te nemen.",
+
+                "WHAT_TO_EXPECT": "Wat te verwachten",
+                "WHAT_TO_EXPECT_TEXT_1": "Stel je voor dat je je fietstocht begint in het Nationaal Park Sierra Nevada op een hoogte van 2.000 meter met een panoramisch uitzicht op de hoogste toppen van het gebergte.",
+                "WHAT_TO_EXPECT_TEXT_2": "Een rit van 45 minuten brengt ons naar het startpunt, waar we beginnen te fietsen langs een pad zonder technische of fysieke moeilijkheden. Het pad brengt je dichter bij de prachtige landschappen, met elke bocht die uitzichten onthult op mooie vergezichten langs kronkelende wegen tussen oude boerderijen verspreid over de berghellingen.",
+                "WHAT_TO_EXPECT_TEXT_3": "Halverwege de tour bieden we een heerlijke snack met verse koffie aan bij een prachtig uitkijkpunt.",
+                "WHAT_TO_EXPECT_TEXT_4": "Het laatste deel brengt het Alhambra-paleis in zicht, waar we door de smalle straatjes van Sacromonte en Albayzín fietsen voordat we eindigen op het plein, het ontmoetingspunt van de tour.",
+                "WHAT_TO_EXPECT_TEXT_5": "We voorzien in helmen, handschoenen en extra kleding. Het volgvoertuig begeleidt ons tijdens de hele tour voor de veiligheid."
+            },
+
+            "MTB_TRAILS_BIKE": {
+                "TITLE": "MTB Trails Granada",
+                "LOCATION": "Granada",
+
+                "PRICE": "95",
+                "PRE_BOOKING": "100%",
+                "MINUMUM_OF_PERSONS": "1",                
+                "DURATION": "4 - 6 Uur",
+                "TOUR_TYPE": "Geleid",
+                "SEASON": "Het hele jaar door",
+
+                "TOTAL_DISTANCE": "Alle niveaus",
+                "TOTAL_ASCENT": "Alle niveaus",
+                "TOTAL_DESCENT": "Alle niveaus",
+                "ROUTE_TYPE": "Lus of Punt-tot-punt Route",
+                "DIFFICULTY": "Alle niveaus",
+
+                "INCLUDED": {
+                    "TITLE": "Inbegrepen",
+                    "TEXT_1": "Professionele gids",
+                    "TEXT_2": "Aansprakelijkheidsverzekering en assistentie",
+                    "TEXT_3": "Transfer",
+                    "TEXT_4": "Mountainbike",
+                    "TEXT_5": "Helm & handschoenen",
+                    "TEXT_6": "Water"                                 
+                },
+                "NOT_INCLUDED": {
+                    "TITLE": "Niet inbegrepen",
+                    "TEXT_1": "Snack"
+                },
+
+                "AVAILABILITY":"Beschikbaarheid",
+                "AVAILABILITY_TEXT_1":"Het hele jaar door",
+                
+                "HIGHLIGHT":"Hoogtepunten",
+                "HIGHLIGHT_TEXT_1":"Ontdek de buitenlucht van Granada op je mountainbike door een gebied met een grote diversiteit aan landschappen, van glooiende heuvels, dennenbossen, woestijnen en bergen tot de tropische kust.",
+               
+                "REQUIEREMENTS":"Vereisten",
+                "REQUIEREMENTS_TEXT_1":"Off-road fietsen is een activiteit met inherente risico's. Overweeg zorgvuldig je vaardigheden, capaciteiten en conditie, en draag altijd een helm.",
+                "REQUIEREMENTS_TEXT_2":"Het routetype en de moeilijkheidsgraad zijn gebaseerd op je conditie en technische vaardigheden. Bij het boeken van een Mountainbike Trail vragen we je een vragenlijst in te vullen om je reisroute op het juiste niveau af te stemmen.",
+                "REQUIEREMENTS_TEXT_3":"In je MTB-vragenlijst dien je eerlijke informatie te geven over je mountainbike-ervaring, fysieke conditie en comfort op technisch terrein. We bieden verschillende routes voor alle niveaus om je een positieve en veilige ervaring te geven.",
+                "REQUIEREMENTS_TEXT_4":"Als je niet zeker weet welk conditieniveau of technische moeilijkheid het meest geschikt is voor jou, bekijk dan ons Blog Fietsen-artikel “Fietsgraden” of neem contact met ons op.",
+                
+
+                "RECOMMENDATIONS" : "Aanbevelingen",
+                "RECOMMENDATIONS_TEXT_1" : "Ontdek de stad Granada in de namiddag met wat tapas of ervaar een Flamencoshow in de avond.",
+                "RECOMMENDATIONS_TEXT_2" : "Doe mee aan een begeleide Alhambra-tour, een paleis en fort van islamitische architectuur. (Werelderfgoed door UNESCO)",
+                "RECOMMENDATIONS_TEXT_3" : "Bezoek het Olijfoliemolen Interpretatiecentrum, dat verschillende routes heeft om de cultuur van olijfolie te ontdekken.",
+                "RECOMMENDATIONS_TEXT_4" : "Je hoeft niets te organiseren. Wij regelen je reserveringen om aan je wensen te voldoen. Als je geïnteresseerd bent in een van deze aanbevelingen of een andere activiteit.",
+
+                "WHAT_TO_BRING" : "Wat mee te nemen",
+                "WHAT_TO_BRING_TEXT_1" : "Het weer is belangrijk om rekening mee te houden bij het inpakken voor je buitenactiviteit. Je paklijst is gebaseerd op je comfort en gevoeligheid. Het dragen van laagjes kleding is de beste manier om te reizen en buiten te zijn. Het wordt sterk aanbevolen als de beste manier om warm en koel te blijven, aangezien het weer in de bergen onvoorspelbaar kan veranderen.",
+                "WHAT_TO_BRING_TEXT_2" : "Helm en handschoenen. Inbegrepen.",
+                "WHAT_TO_BRING_TEXT_3" : "Comfortabele kleding en schoenen.",
+                "WHAT_TO_BRING_TEXT_4" : "Fietsbril.",
+                "WHAT_TO_BRING_TEXT_5" : "Water (minimaal 1 L) inbegrepen",
+                "WHAT_TO_BRING_TEXT_6" : "Zonnebescherming.",
+                "WHAT_TO_BRING_TEXT_7" : "We helpen je met het monteren van je pedalen, zadel, enz. als je deze wilt meenemen. Heb je vragen over de aanbevelingen van het materiaal, aarzel dan niet om contact met ons op te nemen.",
+
+                "MTB" : "MTB",
+                "MTB_TEXT_1" : "Bekijk ons BLOG FIETSEN-artikel “Onze Fietsselectie” om je mountainbike te zien. Wij bieden 2 hoogwaardige mountainbikes. Bij het boeken geef je je lengte en gewicht op zodat de framemaat van de fiets bij aanvang van je tour correct is.",
+                "MTB_TEXT_2" : "We helpen je graag met het monteren van je pedalen of zadel als je deze wilt meenemen.",
+                "MTB_TEXT_3" : "We bieden een breed bereik aan versnellingen, geschikt voor bergachtig terrein.",
+                "MTB_TEXT_4" : "We voorzien in reserveonderdelen en verzorgen het dagelijkse onderhoud tijdens de tour.",
+
+                "LEVEL" : "Niveau",
+                "LEVEL_TEXT_1" : "Het routetype en de moeilijkheidsgraad zijn gebaseerd op je conditie en technische vaardigheden. Voor het boeken van de “MTB Trails Granada” vragen we je een vragenlijst in te vullen om je reisroute op het juiste niveau af te stemmen. Na ontvangst van je vragenlijst sturen we je een MTB-route met technische informatie.",
+
+                "WHAT_TO_EXPECT": "Wat te verwachten",
+                "WHAT_TO_EXPECT_TEXT_1": "Een mountainbiketour in Granada is een perfecte locatie met eindeloze MTB-routes voor alle niveaus, waarbij je passie voor mountainbiken en het prachtige landschap van Granada samenkomen. Onze geselecteerde fietsroutes hebben verschillende hellingen van uiteenlopende lengtes en een enorme variatie aan hoogteprofielen door een gebied met een grote diversiteit aan landschappen, van glooiende heuvels, dennenbossen, woestijnen en bergen tot de tropische kust. We hebben uitgebreide kennis van alle routes en stemmen elke rit af op de gasten om je een geweldige ervaring te garanderen. Doe mee en verken onze routes met je vrienden of familie in de prachtige natuur van Granada."         
+            },
+
+            "MTB_ESCAPE_GRANADA": {
+                "TITLE": "MTB Escape Granada",
+                "LOCATION": "Granada",
+
+                "PRICE": "680",
+                "PRE_BOOKING": "20%",
+                "MINUMUM_OF_PERSONS": "4",                
+                "DURATION": "4 Dagen",
+                "TOUR_TYPE": "Geleid",
+                "SEASON": "Lente Herfst Winter",
+
+                "TOTAL_DISTANCE": "Alle niveaus",
+                "TOTAL_ASCENT": "Alle niveaus",
+                "TOTAL_DESCENT": "Alle niveaus",
+                "ROUTE_TYPE": "Bloem",
+                "DIFFICULTY": "Alle niveaus",
+
+                "INCLUDED": {
+                    "TITLE": "Inbegrepen",
+                    "TEXT_1": "Professionele gidsen",
+                    "TEXT_2": "Aansprakelijkheidsverzekering en assistentie",
+                    "TEXT_3": "Volgvoertuig",
+                    "TEXT_4": "Bagagetransport",
+                    "TEXT_5": "Luchthaventransfer",
+                    "TEXT_6": "Accommodatie: 3 nachten",
+                    "TEXT_7": "Ontbijt: 3 dagen",
+                    "TEXT_8": "Snacks tijdens de fietsroutes",
+                    "TEXT_9": "MTB en helm",
+                    "TEXT_10": "Waterfles en shirt"                  
+                },
+                "NOT_INCLUDED": {
+                    "TITLE": "Niet inbegrepen",
+                    "TEXT_1": "Vlucht",
+                    "TEXT_2": "Reis- & assistentieverzekering",
+                    "TEXT_3": "Annuleringsverzekering",
+                    "TEXT_4": "Lunch en diner",
+                    "TEXT_5": "Extra maaltijden",
+                    "TEXT_6": "Extra excursies",
+                    "TEXT_7": "Persoonlijke uitgaven",
+                    "TEXT_8": "Fooien",
+                    "TEXT_9": "Extra nachten",
+                    "TEXT_10": "Privévervoer voor of na de tour"
+                },
+
+                "AVAILABILITY":"Beschikbaarheid",
+                "AVAILABILITY_TEXT_1":"Lente / Herfst / Winter",
+
+                "REQUIEREMENTS":"Vereisten",
+                "REQUIEREMENTS_TEXT_1":"Off-road fietsen is een activiteit met inherente risico's. Overweeg zorgvuldig uw vaardigheden, capaciteiten en conditie, en draag altijd een helm.",
+                "REQUIEREMENTS_TEXT_2":"Het routetype en de moeilijkheidsgraad zijn gebaseerd op uw conditie en technische vaardigheden. Bij het boeken van de tour MTB Escape Granada vragen we u een vragenlijst in te vullen om uw reisroute op het juiste niveau af te stemmen.",
+                "REQUIEREMENTS_TEXT_3":"In uw MTB-vragenlijst dient u eerlijke informatie te geven over uw mountainbike-ervaring, fysieke conditie en comfort op technisch terrein. We bieden verschillende routes voor alle niveaus om u een positieve en veilige ervaring te geven.",
+                "REQUIEREMENTS_TEXT_4":"Als u niet zeker weet welk conditieniveau of technische moeilijkheid het meest geschikt is voor u, bekijk dan ons Blog Fietsen-artikel “Fietsgraden” of neem contact met ons op.",
+                
+                "HIGHLIGHT":"Hoogtepunten",
+                "HIGHLIGHT_TEXT_1":"Ontdek de buitenlucht van Granada op uw MTB door een gebied met veel landschappen, van glooiende heuvels, dennenbossen, woestijnen en bergen tot de tropische kust.",
+                "HIGHLIGHT_TEXT_2":"Geniet van ons zorgvuldig geselecteerde landelijke hotel vanwege de locatie en het karakter om van uw reis een unieke ervaring te maken.",
+
+                "RECOMMENDATIONS" : "Aanbevelingen",
+                "RECOMMENDATIONS_TEXT_1" : "Ontdek de stad Granada in de namiddag met wat tapas of ervaar een Flamencoshow in de avond.",
+                "RECOMMENDATIONS_TEXT_2" : "Doe mee aan een begeleide Alhambra-tour, een paleis en fort van islamitische architectuur. (Werelderfgoed door UNESCO)",
+                "RECOMMENDATIONS_TEXT_3" : "Bezoek het Olijfoliemolen Interpretatiecentrum, dat verschillende routes heeft om de cultuur van olijfolie te ontdekken.",
+                "RECOMMENDATIONS_TEXT_4" : "U hoeft niets te organiseren. Wij regelen uw reserveringen om aan uw wensen te voldoen. Als u geïnteresseerd bent in een van deze aanbevelingen of een andere activiteit.",
+
+                "OPTIONAL" : "Optioneel",
+                "OPTIONAL_TEXT_1" : "Huur een fiets of neem je eigen mee? Een huurfiets is misschien niet perfect op u afgestemd, maar overweeg de volgende voordelen van het huren van een fiets tijdens het reizen.",
+                "OPTIONAL_TEXT_2" : "Het maakt uw leven gemakkelijker.",
+                "OPTIONAL_TEXT_3" : "Geen zorgen over schade aan uw fiets tijdens het transport.",
+                "OPTIONAL_TEXT_4" : "Geen montage van uw fiets op de eerste dag.",
+                "OPTIONAL_TEXT_5" : "Wij selecteren de MTB die het beste bij u past.",
+                "OPTIONAL_TEXT_6" : "Zeer goede redenen om met uw eigen fiets te reizen.",
+                "OPTIONAL_TEXT_7" : "Comfortabel en vol vertrouwen:",
+                "OPTIONAL_TEXT_8" : "U bent gefocust op prestaties.",
+                "OPTIONAL_TEXT_9" : "U bent zeker van het hanteren van uw fiets.",
+                "OPTIONAL_TEXT_10" : "Het kan geld besparen.",
+
+                "MTB" : "MTB",
+                "MTB_TEXT_1" : "Bekijk ons BLOG FIETSEN-artikel “Onze Fietsselectie” om uw MTB te zien. Wij bieden 2 hoogwaardige mountainbikes.",
+                "MTB_TEXT_2" : "Bij het boeken geeft u uw lengte en gewicht op om de juiste framemaat van de fiets bij aanvang van uw tour te hebben.",
+                "MTB_TEXT_3" : "We helpen u graag met het monteren van uw pedalen of zadel als u deze wilt meenemen.",
+                "MTB_TEXT_4" : "We bieden een breed bereik aan versnellingen, geschikt voor bergachtig terrein.",
+                "MTB_TEXT_5" : "We voorzien in reserveonderdelen en verzorgen het dagelijkse onderhoud tijdens de tour.",
+
+                "CANCELLATION" : "Annuleringsbeleid",
+                "CANCELLATION_TEXT" : "Zie Algemene Voorwaarden",
+
+                "LEVEL" : "Niveau",
+                "LEVEL_TEXT_1" : "Het routetype en de moeilijkheidsgraad zijn gebaseerd op uw conditie en technische vaardigheden. Bij het boeken van de tour MTB Escape Granada vragen we u een vragenlijst in te vullen om uw reisroute op het juiste niveau af te stemmen. Na ontvangst van uw vragenlijst sturen we u 3 MTB-routes met technische informatie.",
+
+                "INFO": "Meer informatie over onze tours",
+                "INFO_BUTTON_1": "Bekijk reisnotities",
+
+                "WHAT_TO_EXPECT": "Wat te verwachten",
+                "WHAT_TO_EXPECT_TEXT_1": "Granada is een perfecte bestemming voor een fietsuitje, uitstekend voor een fietsvakantie. Er is een oneindigheid aan MTB-routes voor alle niveaus, van beginners tot gevorderde fietsers, met verschillende hellingen van uiteenlopende lengtes en een enorme variatie aan hoogteprofielen door een gebied met een grote diversiteit aan landschappen, van glooiende heuvels, dennenbossen, woestijnen en bergen tot de tropische kust. De MTB Escape Granada Tour neemt je mee op 3 gevarieerde routes. Behalve op de eerste dag worden de ritten 's ochtends georganiseerd, zodat je 's middags kunt ontspannen in je landelijke accommodatie. Op de eerste dag organiseren we een route in de middag. Er is de optie om de stad Granada te bezoeken en de vele culturele bezienswaardigheden en talloze tapasbars en restaurants te verkennen. Voor wie het Alhambra-paleis wil bezoeken, is er de mogelijkheid om de tour op de laatste dag in de ochtend te organiseren. Omdat het een tour van 4 dagen is, is de MTB Escape Granada ontworpen voor wie een pauze nodig heeft en een paar dagen vrij wil nemen voor mooie ritten. Voor niet-fietsende partners organiseren we extra activiteiten tijdens uw verblijf. Gemakkelijk te bereiken in Granada met ons georganiseerde vervoer, zowel vanaf de luchthaven Málaga als Granada. We hebben uitgebreide kennis van alle routes en stemmen elke rit af op de gasten om u een geweldige ervaring te garanderen. Doe mee en verken onze routes met uw vrienden of familie in de prachtige natuur van Granada."
+            }
+
+        },
+
+        "LEISURE_CYCLING": {
+
+            "FROM_MOUNTAINS_TO_COASTLINE": {
+                "TITLE": "Van Bergen tot Kustlijn E-bike Tour",
+                "LOCATION": "Granada",
+
+                "PRICE": "110",
+                "PRE_BOOKING": "100%",
+                "MINUMUM_OF_PERSONS": "4",
+                "DURATION": "8 Uur",
+                "TOUR_TYPE": "Geleid",
+                "SEASON": "Het hele jaar door",
+
+                "TOTAL_DISTANCE": "50 km",
+                "TOTAL_ASCENT": "450 m",
+                "TOTAL_DESCENT": "1350 m",
+                "ROUTE_TYPE": "Punt tot punt",
+                "DIFFICULTY": "Makkelijk",
+
+                "INCLUDED": {
+                    "TITLE": "Inbegrepen",
+                    "TEXT_1": "Professionele gids",
+                    "TEXT_2": "Aansprakelijkheidsverzekering en assistentie",
+                    "TEXT_3": "Volgvoertuig",
+                    "TEXT_4": "Transfer",
+                    "TEXT_5": "E-bike + Fietstas",
+                    "TEXT_6": "Helm & handschoenen",
+                    "TEXT_7": "Snack en water",
+                    "TEXT_8": "Strandhanddoek"
+                },
+                "NOT_INCLUDED": {
+                    "TITLE": "Niet inbegrepen",
+                    "TEXT_1": "Lunch"
+                },
+                "EXTRA": {
+                    "TITLE": "Extra",
+                    "TEXT_1": "Olijfolie-tour",
+                    "TEXT_2": "Lunch aan het strand"
+                },
+
+                "AVAILABILITY": "Beschikbaarheid",
+                "AVAILABILITY_TEXT_1": "Lente",
+                "AVAILABILITY_TEXT_2": "Zomer",
+                "AVAILABILITY_TEXT_3": "Herfst",
+                "AVAILABILITY_TEXT_4": "Winter",
+
+                "HIGHLIGHT": "Hoogtepunten",
+                "HIGHLIGHT_TEXT_1": "Schitterend uitzicht op de Lecrín-vallei en de tropische kust",
+                "HIGHLIGHT_TEXT_2": "Geweldige fietsroute die door het landschap slingert",
+                "HIGHLIGHT_TEXT_3": "Drankje aan het strand",
+                "HIGHLIGHT_TEXT_4": "Olijfolie-tour (optioneel)",
+                "HIGHLIGHT_TEXT_5": "Lunch aan het strand (optioneel)",
+
+                "REQUIEREMENTS": "Vereisten",
+                "REQUIEREMENTS_TEXT_1": "Goede fysieke gezondheid",
+                "REQUIEREMENTS_TEXT_2": "Minimumleeftijd en -lengte: 11 jaar en 1,50 m",
+                "REQUIEREMENTS_TEXT_3": "Gesloten schoenen, geen open schoenen!",
+                "REQUIEREMENTS_TEXT_4": "Je bent in staat om de snelheid en richting van de fiets op verharde wegen te beheersen",
+                "REQUIEREMENTS_TEXT_5": "Je kunt remmen en versnellingen met vertrouwen gebruiken",
+
+                "WHAT_TO_BRING": {
+                    "TITLE": "Wat mee te nemen voor fietsen",
+                    "TEXT_1": "Het weer is belangrijk om rekening mee te houden bij het inpakken voor uw buitenactiviteit. Uw paklijst is gebaseerd op uw comfort en gevoeligheid. Het dragen van laagjes kleding is de beste manier om te reizen en buiten te zijn. Het wordt sterk aanbevolen als de beste manier om warm en koel te blijven, aangezien het weer in de bergen onvoorspelbaar kan veranderen.",
+
+                    "BRING_1": "Comfortabele kleding en schoenen.",
+                    "BRING_2": "Zonnebril",
+                    "BRING_3": "Zonnebescherming",
+
+                    "TEXT_2": "Heeft u vragen over de aanbevelingen van het materiaal, aarzel dan niet om contact met ons op te nemen."
+                },
+
+                "WHAT_TO_EXPECT": "Wat te verwachten",
+
+                "DAY_1": {
+                    "TEXT_1": "We rijden naar het charmante dorp Nigüelas, een landelijke stad aan de westelijke hellingen van de Sierra Nevada. Hier beginnen we de fietstocht die je door een prachtige vallei voert, genaamd Valle de Lecrín, een beschermd gebied met glooiende heuvels, ravijnen, ruige kliffen en rivieren omgeven door citrus- en sinaasappelboomgaarden, amandelbomen en olijfplantages. De fietsroute leidt ons naar een panoramisch uitkijkpunt waar de Middellandse Zee verschijnt en onze bestemming, het stadje Salobreña, gelegen bovenop een gigantische rots met een oud Moors kasteel. Er is tijd om te genieten van een drankje aan het strand of een duik te nemen voordat we terugkeren naar Granada.",
+                    "TEXT_2": "Olijfolie-tour bij de oudste olijfoliemolen van Spanje.",
+                    "TEXT_3": "Lunch aan het strand. Verse vis of paella."
+                }
+            },
+
+            "EPIC_LANDSCAPE_E_BIKE_TOUR_GRANADA": {
+
+                "TITLE": "Epische Landschappen E-bike Tour Granada",
+                "LOCATION": "Granada",
+
+                "PRICE": "995",
+                "PRE_BOOKING": "100%",
+                "MINUMUM_OF_PERSONS": "4",
+                "DURATION": "6 Dagen",
+                "TOUR_TYPE": "Geleid",
+                "SEASON": "Lente Herfst",
+
+                "TOTAL_DISTANCE": "190 km",
+                "TOTAL_ASCENT": "3120 m",
+                "TOTAL_DESCENT": "4930 m",
+                "ROUTE_TYPE": "Punt tot punt",
+                "DIFFICULTY": "Niveau 3",
+
+                "INCLUDED": {
+                    "TITLE": "Inbegrepen",
+                    "TEXT_1": "2 Professionele gidsen",
+                    "TEXT_2": "Aansprakelijkheidsverzekering en assistentie",
+                    "TEXT_3": "Volgvoertuig",
+                    "TEXT_4": "Bagagetransport",
+                    "TEXT_5": "Luchthaventransfer",
+                    "TEXT_6": "Accommodatie: 5 nachten",
+                    "TEXT_7": "Ontbijt: 5 dagen",
+                    "TEXT_8": "Lunch: 4 picknicks",
+                    "TEXT_9": "E-bike",
+                    "TEXT_10": "Helm",
+                    "TEXT_11": "Waterfles",
+                    "TEXT_12": "Fietsshirt"
+                },
+                "NOT_INCLUDED": {
+                    "TITLE": "Niet inbegrepen",
+                    "TEXT_1": "Vlucht",
+                    "TEXT_2": "Reis- & assistentieverzekering",
+                    "TEXT_3": "Annuleringsverzekering",
+                    "TEXT_4": "Diner",
+                    "TEXT_5": "Extra maaltijden",
+                    "TEXT_6": "Extra excursies",
+                    "TEXT_7": "Persoonlijke uitgaven",
+                    "TEXT_8": "Fooien",
+                    "TEXT_9": "Extra nachten",
+                    "TEXT_10": "Privévervoer voor of na de tour"
+                },
+                "EXTRA": {
+                    "TITLE": "Extra",
+                    "SUBTITLE": "Moet vooraf worden geboekt",
+                    "TEXT_1": "Privékamer: 220 € (5 nachten)",
+                    "TEXT_2": "Privérondleiding Alhambra: 55 €",
+                    "TEXT_3": "Gidsbezoek hamproductieproces in het hoogste dorp van de Sierra Nevada + proeverij: 10 €",
+                    "TEXT_4": "Olijfolieproeverij: 15 €",
+                    "TEXT_5": "Aan de voet van de Sierra Nevada bieden we je de mogelijkheid om olijfolie te proeven en te waarderen met al je zintuigen, en een rondleiding in het olijfoliemuseum."
+                },
+
+                "AVAILABILITY": "Beschikbaarheid",
+                "AVAILABILITY_TEXT_1": "Lente",
+                "AVAILABILITY_TEXT_2": "Herfst",
+
+                "HIGHLIGHT": "Hoogtepunten",
+                "HIGHLIGHT_TEXT_1": "Epische, steeds veranderende landschappen van woestijnlandschappen, hoge bergen met traditionele dorpen, en de tropische Middellandse Zeekust richting Granada, de mythische stad die getuige was van de val van de laatste koning van Moors Al-Andalus.",
+                "HIGHLIGHT_TEXT_2": "Landelijke hotels",
+
+                "REQUIEREMENTS": "Vereisten",
+                "REQUIEREMENTS_TEXT_1": "Boekingsvoorwaarden. Zie algemene voorwaarden.",
+                "REQUIEREMENTS_TEXT_2": "Reisverzekering. Zie algemene voorwaarden.",
+                "REQUIEREMENTS_TEXT_3": "Vrijwaringsformulier. Zie algemene voorwaarden.",
+
+                "CANCELLATION": "Annuleringsbeleid",
+                "CANCELLATION_TEXT": "Zie algemene voorwaarden.",
+
+                "WHAT_TO_EXPECT": "Wat te verwachten",
+                "WHAT_TO_EXPECT_TEXT_1": "Zon en sneeuw, land en zee, geschiedenis en legende",
+                "WHAT_TO_EXPECT_TEXT_2": "De provincie Granada heeft zoveel te bieden, van de mythische stad die getuige was van de val van de laatste koning van Moors Al-Andalus tot ongerepte natuurgebieden. Het land dat romantische reizigers betoverde, blijft iedereen boeien die het bezoekt. De fietsreis voert je langs epische, steeds veranderende landschappen van een uitgestrekt hoogvlakte tot woestijnlandschappen, hoge bergen met traditionele dorpen, en de tropische Middellandse Zeekust richting Granada.",
+
+                "DAY_1": {
+
+                        "STRONG_1": "Welkom",
+                        "TEXT_1": "Bij aankomst in Málaga of Granada brengt onze transfer ons naar ons hotel in Granada.",
+
+                        "STRONG_2": "Vrije dag Granada",
+                        "TEXT_2": "Een stad met geschiedenis aan de voet van de Sierra Nevada. De culturele rijkdom van Granada met invloeden van de Moren, katholieken en joden maakt deze stad tot een belangrijk cultureel centrum met 800 jaar Moorse overheersing.",
+                        "TEXT_3": "In de namiddag is er een optionele rondleiding door het Alhambra en de tuinen van de Generalife voor degenen die de activiteit vooraf hebben gereserveerd.",
+                        "TEXT_4": "De rest van de dag ben je vrij om meer mooie plekken te ontdekken en de beroemde tapas van Granada te proberen, waar je bij elk drankje gratis tapas krijgt.",
+                        "TEXT_5": "De reisleider organiseert een plek om samen te dineren om de eerste avond van de reis te vieren."
+                },
+                "DAY_2": {
+
+                        "STRONG_1": "Etappe 1 Op zoek naar grotwoningen",
+                        "TEXT_1": "Na het ontbijt brengt onze transfer ons naar het startpunt van de eerste fietstocht op zoek naar de grotwoningen ten noordoosten van Granada. De reisleider geeft een introductiebijeenkomst over de reis, gevolgd door een veiligheids- en technische briefing over de fietsen. Daarna kun je je fiets uitproberen en kleine aanpassingen doen voor comfort.",
+                        "TEXT_2": "We beginnen te fietsen door het bergachtige landschap, een route vol rust en schoonheid met groot historisch-cultureel en natuurlijk belang, behorend tot het gebied van het Granada Geopark, dat is uitgeroepen tot UNESCO Global Geopark.",
+                        "TEXT_3": "Na verschillende dorpen gepasseerd te zijn, leidt de weg ons naar het oude centrum van Guadix, met een belangrijk erfgoed aan monumenten, zoals het middeleeuwse Arabische fort, de kathedraal en diverse gebouwen in Mudejar-stijl. Het meest kenmerkende is dat veel inwoners van deze grote stad in grotwoningen leven.",
+                        "TEXT_4": "Na een bezoek aan de grotwoningen fietsen we naar ons grothotel, waar we de tweede nacht verblijven."
+                },
+                "DAY_3": {
+
+                        "STRONG_1": "Etappe 2 Eerste route Alpujarras",
+                        "TEXT_1": "Een route door een prachtige regio van witte bergdorpen, gelegen tussen de zuidelijke hellingen van de Sierra Nevada en de Middellandse Zee.",
+                        "TEXT_2": "De Alpujarra is een gebied waar de tijd lijkt stil te staan. Het is het laatste toevluchtsoord van de Moriscos uit Granada en toont de symbiose tussen mens en omgeving die de Moorse cultuur van Al-Andalus bereikte.",
+                        "TEXT_3": "We beginnen de dag met een rit naar “Puerto de la Ragua”, een bergpas op 2.000 meter hoogte, op de grens van de provincies Granada en Almería. De route voert langs pittoreske dorpen met prachtig uitzicht over de vallei en de terrasvormige akkers. Op heldere dagen kun je de Middellandse Zee en zelfs Afrika zien.",
+                        "TEXT_4": "Onderweg is er tijd om enkele rustieke dorpen te verkennen met een heel eigen architectuur als gevolg van de Berberse bezetting: platte, witgekalkte huizen met hoge ronde schoorstenen, langs smalle, kronkelende en steile straatjes, tegen de bergen van de Sierra Nevada.",
+                        "TEXT_5": "Ons volgende hotel is een “cortijada”, een traditionele groep boerderijen en gebouwen, die is omgebouwd tot hotel."
+                },
+                "DAY_4": {
+
+                        "STRONG_1": "Etappe 3 Tweede route Alpujarras",
+                        "TEXT_1": "Na het ontbijt rijden we terug naar het hogere deel van de Alpujarras om de reis voort te zetten met als eerste bestemming het dorp Trevélez, een van de hoogste dorpen van Spanje op 1.480 meter in de Trevélez-kloof. Het staat bekend om zijn ham die op traditionele wijze wordt gedroogd en een eigen oorsprongsbenaming heeft vanwege de kwaliteit en smaak.",
+                        "TEXT_2": "Er is een optionele hamtour voor degenen die de activiteit vooraf hebben gereserveerd.",
+                        "TEXT_3": "Daarna fietsen we verder naar het dorp Capileira, op 1.435 meter, het hoogste van de drie dorpen in de Poqueira-kloof, een van de mooiste plekken van de Alpujarras. Een geweldige ervaring om hier te overnachten met het adembenemende uitzicht op de zuidelijke hellingen van de Sierra Nevada."
+                },
+                "DAY_5": {
+
+                        "STRONG_1": "Etappe 4 De route van de oude olietrein",
+                        "TEXT_1": "Een rit door de prachtige Lecrín-vallei, een mix van dennenbos en landbouwgrond, richting de Tropische Kust van Granada.",
+                        "TEXT_2": "We verlaten de Alpujarras en rijden naar het hoogste dorp van de Lecrín-vallei waar we de laatste nacht van de tour verblijven.",
+                        "TEXT_3": "Er is een optionele olijfolie-tour in de ochtend voor degenen die de activiteit vooraf hebben gereserveerd.",
+                        "TEXT_4": "Onze laatste fietsdag voert ons door de Lecrín-vallei, een gebied met glooiende heuvels, ravijnen, ruige kliffen en rivieren omgeven door citrus- en sinaasappelboomgaarden, amandelbomen en olijfplantages.",
+                        "TEXT_5": "We gaan richting het uitkijkpunt waar de Middellandse Zee in zicht komt met als bestemming het dorp Salobreña.",
+                        "TEXT_6": "Na te hebben genoten van een duik en een drankje keren we terug naar ons landelijke hotel waar we de laatste avond van de fietsreis vieren."
+                },
+                "DAY_6": {
+
+                        "STRONG_1": "Afscheid",
+                        "TEXT_1": "De reis eindigt na het ontbijt. Er is een privétransfer van het hotel naar de luchthaven van Granada of Málaga."
+                }
+            },
+
+             "CYCLE_RONDA_CORDOBA":{
+             "TITLE": "Fietstocht Ronda - Córdoba E-bike Tour 8 Dagen",
+             "LOCATION": "Andalusië",
+
+             "PRICE": "1.550",
+             "PRE_BOOKING": "20%",
+             "MINUMUM_OF_PERSONS": "7",
+             "DURATION": "8 Dagen",
+             "TOUR_TYPE": "Geleid",
+             "SEASON": "Lente Herfst",
+
+             "TOTAL_DISTANCE": "283 km",
+             "TOTAL_ASCENT": "4000 m",
+             "TOTAL_DESCENT": "4760 m",
+             "ROUTE_TYPE": "Punt tot punt",
+             "DIFFICULTY": "Moeilijkheidsgraad",
+             "PHYSICAL_DIFFICULTY": "Fysieke Moeilijkheidsgraad",
+             "TECHNICAL_DIFFICULTY": "Technische Moeilijkheidsgraad",
+
+                "INCLUDED": {
+                "TITLE": "Inbegrepen",
+                "TEXT_1": "2 Professionele gidsen",
+                "TEXT_2": "Aansprakelijkheidsverzekering en assistentie",
+                "TEXT_3": "Volgvoertuig",
+                "TEXT_4": "Bagagetransport",
+                "TEXT_5": "Luchthaventransfer",
+                "TEXT_6": "Accommodatie: 7 nachten",
+                "TEXT_7": "Ontbijt: 7 dagen",
+                "TEXT_8": "Lunch: 5 picknicks",
+                "TEXT_9": "E-bike",
+                "TEXT_10": "Helm",
+                "TEXT_11": "Waterfles",
+                "TEXT_12": "Fietsshirt"
+                   
+                },
+                "NOT_INCLUDED": {
+                "TITLE": "Niet inbegrepen",
+                "TEXT_1": "Vlucht",
+                "TEXT_2": "Reis- & assistentieverzekering",
+                "TEXT_3": "Annuleringsverzekering",
+                "TEXT_4": "Diner",
+                "TEXT_5": "Extra maaltijden",
+                "TEXT_6": "Extra excursies",
+                "TEXT_7": "Persoonlijke uitgaven",
+                "TEXT_8": "Fooien",
+                "TEXT_9": "Extra nachten",
+                "TEXT_10": "Privévervoer voor of na de tour"
+                },
+                "EXTRA": {
+                "TITLE": "Extra",
+                "SUBTITLE": "Moet vooraf worden geboekt",
+                "TEXT_1": "Privékamer: 300 € (7 nachten)",
+                "TEXT_2": "Racefiets of Gravelbike.",
+                "TEXT_3": "Rit voor iedereen. Voor wie een goed niveau van fysieke conditie heeft, kan deelnemen aan de tour op een racefiets of gravelbike tegen meerprijs.",
+                "TEXT_4": "Caminito del Rey: 30 €",
+                "TEXT_5": "Een luchtpad dat langs de Gaitanes-kloof loopt, een indrukwekkende kloof uitgesleten door de rivier de Guadalhorce. (5 km, 2 uur)",
+                "TEXT_6": "Privérondleiding door de Moskee van Córdoba: 40 €",
+                "TEXT_7": "Olijfolieproeverij: 15 €",
+                "TEXT_8": "In het hart van Andalusië bieden we je de mogelijkheid om te leren hoe je olijfolie kunt proeven en waarderen met al je zintuigen."
+                },
+
+                "AVAILABILITY": "Beschikbaarheid",
+                "AVAILABILITY_TEXT_1": "Lente",
+                "AVAILABILITY_TEXT_2": "Herfst",
+
+                "HIGHLIGHT": "Hoogtepunten",
+                "HIGHLIGHT_TEXT_1": "Stad Ronda",
+                "HIGHLIGHT_TEXT_2": "Caminito del Rey",
+                "HIGHLIGHT_TEXT_3": "Stad Antequera",
+                "HIGHLIGHT_TEXT_4": "Sierras Subbéticas Natuurpark en Geopark UNESCO",
+                "HIGHLIGHT_TEXT_5": "Olijfolieproeverij",    
+                "HIGHLIGHT_TEXT_6": "Stad Córdoba",    
+                "HIGHLIGHT_TEXT_7": "Privétour door de Moskee van Córdoba",    
+                "HIGHLIGHT_TEXT_8": "De geselecteerde landelijke hotels",
+
+                "REQUIEREMENTS": "Vereisten",
+                "REQUIEREMENTS_TEXT_1": "Boekingsvoorwaarden. Zie algemene voorwaarden.",
+                "REQUIEREMENTS_TEXT_2": "Reisverzekering. Zie algemene voorwaarden.",
+                "REQUIEREMENTS_TEXT_3": "Vrijwaringsformulier. Zie algemene voorwaarden.",
+
+                "CANCELLATION": "Annuleringsbeleid",
+                "CANCELLATION_TEXT": "Zie algemene voorwaarden.",
+
+                "NOTES": "Meer informatie over onze tour",
+                "NOTES_TEXT_1": "Bekijk reisnotities",
+
+                 "WHAT_TO_EXPECT": {
+                    "TITLE": "Wat te verwachten",
+                     "TEXT_1": "Ontdek de verborgen schoonheid van Andalusië, een schat om te ontdekken!",
+                     "TEXT_2": "8 dagen onderdompeling in de rijke Andalusische cultuur, natuurlijke schoonheid en geschiedenis terwijl je fietst door schilderachtige landschappen, charmante dorpjes en iconische bezienswaardigheden",
+                     "TEXT_3": "Het zuiden van Spanje heeft zoveel te bieden, van de charmante stad Ronda tot de historische stad Córdoba, een onvergetelijk fietsavontuur door het hart van Andalusië",
+
+                     "DAY_1": {
+
+                        "STRONG_1": "Welkom",
+                        "TEXT_1": "Bij aankomst in Málaga brengt onze transfer ons naar ons landelijke hotel in Ronda, gelegen boven een diepe kloof die de stad in tweeën deelt. De reisleider organiseert dezelfde dag een introductiebijeenkomst over de reis, gevolgd door een veiligheidsinstructie.",
+                        "STRONG_2": "Vrije dag Ronda",
+                        "TEXT_2": "Begin de dag met het verkennen van de beroemde bezienswaardigheden van Ronda, zoals de iconische brug of de Plaza de Toros, de oudste stierenvechtersarena van Spanje. Of maak een uitstapje naar een van de vele wijngaarden, een uitstekende manier om je kennis van lokale wijnen te verdiepen.",
+                        "TEXT_3": "De reisleider organiseert het diner om de eerste dag van de reis te vieren."
+                     },
+                     "DAY_2": {
+
+                        "STRONG_1": "Etappe 1 Sierra de las Nieves",
+                        "TEXT_1": "We vertrekken naar de adembenemende Gaitanes-kloof, een van de meest spectaculaire landschappen in de bergen van Málaga waar we de tweede nacht van de reis verblijven.",
+                        "TEXT_2": "We verlaten ons hotel via kronkelende landweggetjes, door de Ronda-bergketen en het Nationaal Park Sierra de las Nieves, een 100% indrukwekkend landschap. Na een picknicklunch bij een panoramisch uitzichtpunt gaan we verder naar ons hotel in het hart van het natuurpark.",
+                        "STRONG_2": "Vrije dag Ronda",
+                        "TEXT_3": "Zwembad en adembenemende uitzichten",
+                        "TEXT_4": "Optionele wandeling “Caminito del Rey”"
+                     },
+                     "DAY_3": {
+
+                        "STRONG_1": "Etappe 2 Andalusisch Platteland",
+                        "TEXT_1": "Na het ontbijt rijden we de eerste kilometers met onze volgwagen om het steile deel over te slaan en ons hoger te brengen waar we onze tweede etappe starten.",
+                        "TEXT_2": "Vandaag fietsen we door het Andalusische platteland, een bergachtig en kleurrijk landschap waar mediterrane gewassen afwisselen met weidegrond. Na de picknicklunch gaan we verder naar het dorp Antequera met zijn rijke historische centrum dat beweert de meeste kerken per inwoner van Spanje te hebben. Van kloosters, paleizen en het Moorse fort tot prehistorische dolmens zijn enkele van de vele bezienswaardigheden."
+                     },
+                     "DAY_4": {
+
+                        "STRONG_1": "Etappe 3 Bergachtige Olijfgaarden",
+                        "TEXT_1": "Vandaag is de enige keer dat we naar ons nieuwe startpunt rijden, een dorp gebouwd op de ruïnes van een oud Moors kasteel dat bovenop een rots uitkijkt over de prachtige vallei en het meer beneden.",
+                        "TEXT_2": "De route voert ons door de olijfgaarden van Andalusië in het natuurpark en geopark Sierras Subbéticas. Spanje heeft olijfgaarden verspreid over bijna het hele land, maar de grootste concentratie is in Andalusië, met locaties waar olijfbomen al werden gebruikt toen de regio Hispania Baetica olijfolie leverde aan de Romeinse hoofdstad.",
+                        "TEXT_3": "Onze bestemming vandaag is het dorp Priego de Córdoba in het hart van het natuurpark. Voor het diner bieden we je de mogelijkheid om te leren hoe je olijfolie kunt proeven en waarderen met al je zintuigen via een olijfoliemeester, waarbij je de geur, het aroma en de smaak van elke olijfolie ontdekt.",
+                        "STRONG_2": "Vrije namiddag",
+                        "TEXT_4": "Ontdek het oude deel van het dorp"
+                     },
+                     "DAY_5": {
+
+                        "STRONG_1": "Etappe 4 De Route van de Oude Olietrein",
+                        "TEXT_1": "Vandaag fietsen we verder door de prachtige landschappen van de bergen van de Sierras Subbéticas die ons naar pittoreske dorpjes brengen.",
+                        "TEXT_2": "Na opnieuw een picknick in de buitenlucht volgen we het spoor van het oude treintraject genaamd “Vía Verde” dat loopt tussen olijfbomen en wijngaarden. Deze Groene Wegen in Spanje zijn hersteld voor fietsers en wandelaars.",
+                        "TEXT_3": "De route van de oude olietrein brengt ons naar onze volgende accommodatie, een traditionele Andalusische boerderij omgebouwd tot hotel.",
+                        "STRONG_2": "Vrije namiddag",
+                        "TEXT_4": "Zwembad en adembenemende uitzichten",
+                        "STRONG_3": "Diner",
+                        "TEXT_5": "De reisleider organiseert een panoramische wandeling en diner in het dorp Zuheros."
+                     },
+                     "DAY_6": {
+
+                        "STRONG_1": "Etappe 5 De Kalifaat- en Mozarabische Route",
+                        "TEXT_1": "Op je laatste fietsdag volgen we twee historische routes die ons naar de stad Córdoba leiden, onze eindbestemming. De Route van het Kalifaat is het Andalusische erfgoed dat Córdoba en Granada verbindt, de hoofdsteden van het Kalifaat en Nasrid al-Andalus. Het was een van de drukste paden van het Iberisch schiereiland in de middeleeuwen, gebruikt door handelaren uit de hele bekende wereld, die deze belangrijke bevolkingscentra bevoorraadden en er handel dreven; het was ook de route van kennis, wetenschap en kunst.",
+                        "TEXT_2": "De andere historische route is de Mozarabische Weg naar Santiago de Compostela. Een oud pad dat hulde brengt aan alle christenen, de Mozaraben, die in de gebieden van Al-Andalus bleven. Een reis die ons herinnert aan die tijd waarin deze christenen, ondanks onderdrukking, hun geloof en toewijding behielden.",
+                        "TEXT_3": "Het laatste deel van de langste fietsroute onthult onze reisbestemming met uitzicht op de stad Córdoba, gelegen in de Guadalquivir-depressie gevormd door de rivier de Guadalquivir.",
+                        "STRONG_2": "Diner",
+                        "TEXT_4": "De reisleider organiseert een diner om onze eindbestemming te vieren."
+                     },
+                     "DAY_7": {
+
+                        "STRONG_1": "Vrije dag Córdoba",
+                        "TEXT_1": "Ontdek de geschiedenis en cultuur van de stad, bekend om haar unieke mix van Romeinse, Moorse en christelijke invloeden. De stad was ooit een belangrijke Romeinse nederzetting en werd later de hoofdstad van het islamitische emiraat en vervolgens het kalifaat van Córdoba, waaronder het uitgroeide tot een van de grootste en meest geavanceerde steden ter wereld in de middeleeuwen.",
+                        "TEXT_2": "In de ochtend is er een optionele rondleiding door de Moskee van Córdoba voor degenen die de activiteit vooraf hebben gereserveerd.",
+                        "TEXT_3": "De reisleider organiseert een plek om samen te dineren om de laatste avond van de reis te vieren."
+                     },
+                     "DAY_8": {
+
+                        "STRONG_1": "Afscheid",
+                        "TEXT_1": "De reis eindigt na het ontbijt in ons hotel. Er is een privétransfer van het hotel naar de luchthaven van Málaga."
+                     }
+                 },
+
+                 "CLIENTS" :{
+                    "TITLE": "Wat zeggen onze klanten over ons?"
+                 }
+             },
+
+            "E_BIKE_SIGHTSEEN_GRANADA": {
+                "TITLE": "Sightseeing Granada E-bike Tour",
+                "LOCATION": "Granada",
+
+                "PRICE": "80 (2pax.)",
+                "PRE_BOOKING": "100%",
+                "MINUMUM_OF_PERSONS": "2",                
+                "DURATION": "4 Uur",
+                "TOUR_TYPE": "Geleid",
+                "SEASON": "Het hele jaar door",
+
+                "ROUTE_TYPE": "Lus",
+                "DIFFICULTY": "Makkelijk",
+                
+                "INCLUDED": {
+                    "TITLE": "Inbegrepen",
+                    "TEXT_1": "Professionele gids",
+                    "TEXT_2": "Aansprakelijkheidsverzekering en assistentie",
+                    "TEXT_3": "E-bike + Fietstas",
+                    "TEXT_4": "Helm & handschoenen",
+                    "TEXT_5": "Water",
+                    "TEXT_6": "Transfer"
+                },
+
+                "NOT_INCLUDED": {
+                    "TITLE": "Niet inbegrepen",
+                    "TEXT_1": "Lunch"
+                },
+
+                "AVAILABILITY": "Beschikbaarheid",
+                "AVAILABILITY_TEXT_1": "Lente",
+                "AVAILABILITY_TEXT_2": "Herfst",
+                "AVAILABILITY_TEXT_3": "Winter",
+                "AVAILABILITY_TEXT_4": "Zomer",
+
+                "HIGHLIGHT": "Hoogtepunten",
+                "HIGHLIGHT_TEXT_1": "Panoramisch uitzicht op het Alhambra, de stad en het Sierra Nevada-gebergte",
+                "HIGHLIGHT_TEXT_2": "Leer de geschiedenis en cultuur van Granada kennen",
+
+                "REQUIEREMENTS": "Vereisten",
+                "REQUIEREMENTS_TEXT_1": "Goede fysieke gezondheid",
+                "REQUIEREMENTS_TEXT_2": "Minimumleeftijd en -lengte: 11 jaar en 1,50 m",
+                "REQUIEREMENTS_TEXT_3": "Gesloten schoenen, geen open schoenen!",
+                "REQUIEREMENTS_TEXT_4": "Je bent in staat om de snelheid en richting van de fiets op verharde wegen te beheersen",
+                "REQUIEREMENTS_TEXT_5": "Je kunt remmen en versnellingen met vertrouwen gebruiken",
+                
+
+                "WHAT_TO_BRING": {
+                    "TITLE": "Wat mee te nemen voor fietsen",
+                    "TEXT_1": "Het weer is belangrijk om rekening mee te houden bij het inpakken voor uw buitenactiviteit. Uw paklijst is gebaseerd op uw comfort en gevoeligheid. Het dragen van laagjes kleding is de beste manier om te reizen en buiten te zijn. Het wordt sterk aanbevolen als de beste manier om warm en koel te blijven, aangezien het weer in de bergen onvoorspelbaar kan veranderen.",
+
+                    "BRING_1": "Comfortabele kleding en schoenen.",
+                    "BRING_2": "Zonnebril",
+                    "BRING_3": "Zonnebescherming",
+                    
+                    "TEXT_2": "Heeft u vragen over de aanbevelingen van het materiaal, aarzel dan niet om contact met ons op te nemen."
+                },
+
+
+                "WHAT_TO_EXPECT": "Wat te verwachten",
+                "DAYS" : {
+                    "DAY_1" : {
+                        "TEXT_1": "Ontdek Granada en de omgeving op twee wielen, een geweldige manier om panoramisch uitzicht te krijgen op het Alhambra, de stad en het Sierra Nevada-gebergte. De rit begint in de stad en brengt je naar een groen landschap in de heuvels van Sabika waar het Alhambra staat, tegenover de wijken Albaicín en Sacromonte. Na een koffiepauze leidt de gids je door deze wijken en laat je de belangrijkste bezienswaardigheden zien met de beste uitzichtpunten. Een geweldige manier om de stad te verkennen en van de natuur te genieten!"
+                    }
+                }
+            }
+        },
+
+
         "CULTURAL_TRAVELS": {
             "BREATHTAKING_ROAD_TRIP_ALPUJARRAS": {
                 "TITLE": "Een adembenemende roadtrip door de Alpujarras",
@@ -693,9 +1368,110 @@
                 
                 }      
             }                
+            },
+            "ROCK_CLIMBING_COURSES": {
+                "TITLE": "Rotsklimcursussen",
+                "LOCATION": "Granada",
+
+                "PRICE": "Zie Reisnotities",
+                "PRE_BOOKING": "100%",
+                "MINUMUM_OF_PERSONS": "1",
+                "MAXUMUM_OF_PERSONS": "6",
+                "DURATION": "Zie Reisnotities",
+                "ROUTE_TYPE": "Geleid",
+                "SEASON": "Het hele jaar door",
+
+                "COURSES": {
+                    "TITLE": "Cursussen",
+                    "COURSE_1": "Sport Voorklimcursus",
+                    "COURSE_2": "Klimval Zekercursus",
+                    "COURSE_3": "Sport Multi-pitch Klimcursus",
+                    "COURSE_4": "Zelfreddingscursus op multi-pitch routes"
+                },
+
+                "INCLUDED": {
+                    "TITLE": "Inbegrepen",
+                    "TEXT_1": "Aansprakelijkheidsverzekering en assistentie",
+                    "TEXT_2": "Rotsklim Sporttechnicus",
+                    "TEXT_3": "Transfer",
+                    "TEXT_4": "Indien nodig, persoonlijke uitrusting (klimschoenen, helm en harnas)",
+                    "TEXT_5": "Collectief materiaal (touwen, karabiners, slings, zekerapparaten, etc.)"
+                },
+
+                "NOT_INCLUDED": {
+                    "TITLE": "Niet inbegrepen",
+                    "TEXT_1": "Lunch",
+                    "TEXT_2": "Snack",
+                    "TEXT_3": "Water"
+                },
+
+                "AVAILABILITY": "Beschikbaarheid",
+                "AVAILABILITY_TEXT": "Het hele jaar door",
+
+                "HIGHLIGHT": "Vereisten",
+                "HIGHLIGHT_TEXT_1": "Leeftijd: 18 jaar",
+
+                "WHAT_TO_BRING": {
+                    "TITLE": "Wat mee te nemen voor rotsklimmen",
+                    "TEXT_1": "Het weer is belangrijk om rekening mee te houden bij het inpakken voor uw buitenactiviteit. Uw paklijst is gebaseerd op uw comfort en gevoeligheid. Het dragen van laagjes kleding is de beste manier om te reizen en buiten te zijn. Het wordt sterk aanbevolen als de beste manier om warm en koel te blijven, aangezien het weer in de bergen onvoorspelbaar kan veranderen.",
+                    "BRING_1": "Technische kleding geschikt voor de tijd van het jaar en sportactiviteit (fleece, windjack, waterdichte en ademende jas, handschoenen, etc.). Een windjack of dunne fleece is altijd handig, zelfs in de zomer.",
+                    "BRING_2": "Comfortabele kleding die niet strak of omvangrijk is",
+                    "BRING_3": "Rugzak van ongeveer 15 tot 30 liter.",
+                    "BRING_4": "Approach schoenen of sneakers",
+                    "BRING_5": "1L waterfles",
+                    "BRING_6": "Picknick",
+                    "BRING_7": "Zonnebescherming (zonnebril, zonnebrandcrème, lippenbalsem, pet of hoed)",
+                    "BRING_8": "Thermische deken",
+                    "BRING_9": "Een potlood en papier",
+                    "TEXT_2": "Heeft u vragen over de aanbevelingen van het materiaal, aarzel dan niet om contact met ons op te nemen."
+                },
+
+                "MORE_INFO": "Meer informatie over onze cursussen",
+                "MORE_INFO_TEXT_1": "Sport voorklimcursus",
+                "MORE_INFO_TEXT_2": "Sport multi-pitch klimcursus",
+                "MORE_INFO_TEXT_3": "Klimval zekercursus",
+                "MORE_INFO_TEXT_4": "Zelfreddingscursus op multi-pitch routes",
+
+                "WHAT_TO_EXPECT": {
+                    "TITLE": "Wat te verwachten",
+                    
+                    "COURSE_1": {
+                        "TITLE": "Sport Voorklimcursus",
+                        "TEXT_1": "De introductiecursus sportklimmen is bedoeld voor mensen die autonomie en vertrouwen willen krijgen bij het klimmen op rotsen of wanden.",
+                        "TEXT_2": "De cursus stelt je in staat om sportklimroutes tot één touwlengte volledig zelfstandig en veilig te klimmen.",
+                        "STRONG_1": "Eerste dag: ",
+                        "TEXT_3": "Klimhal (indoor)",
+                        "STRONG_2": "Tweede dag: ",
+                        "TEXT_4": "Buiten op de rots"
+                    },
+                    "COURSE_2": {
+                        "TITLE": "Klimval Zekercursus",
+                        "TEXT_1": "De cursus richt zich op het aanleren van technieken om de impact van vallen te minimaliseren door dynamisch zekeren, wat de veiligheid en het vertrouwen van zowel klimmer als zekeraar vergroot. De cursus is bedoeld voor klimmers van elk niveau die hun zekervaardigheden willen verbeteren en geavanceerde valtechnieken willen leren op natuurlijke rots.",
+                        "STRONG_1": "Eerste dag",
+                        "TEXT_3": "Indoor",
+                        "STRONG_2": "Tweede dag: ",
+                        "TEXT_4": "Buiten"
+                    },      
+                    "COURSE_3": {
+                        "TITLE": "Sport Multi-pitch Klimcursus",
+                        "TEXT_1": "De introductiecursus multi-pitch sportklimmen is bedoeld voor wie de technieken en vaardigheden wil leren die nodig zijn om sportklimroutes van meerdere touwlengtes te klimmen. Deelnemers leren elkaar zekeren, progressief klimmen en obstakels overwinnen op multi-pitch routes.",
+                        "TEXT_2": "De cursus stelt je in staat om sportklimroutes tot één touwlengte volledig zelfstandig en veilig te klimmen.",
+                        "STRONG_1": "Eerste dag: ",
+                        "TEXT_3": "Indoor",
+                        "STRONG_2": "Tweede dag: ",
+                        "TEXT_4": "Buiten op de rots"                    
+                    },      
+                    "COURSE_4": {
+                        "TITLE": "Zelfreddingscursus op multi-pitch routes",
+                        "TEXT_1": "De cursus bereidt je voor en leert je om te gaan met onverwachte situaties en het benodigde materiaal met vertrouwen en veiligheid te hanteren. Je leert essentiële zelfreddingstechnieken in het klimmen met intensieve praktische en theoretische training.",
+                        "TEXT_2": "De cursus stelt je in staat om sportklimroutes tot één touwlengte volledig zelfstandig en veilig te klimmen.",
+                        "STRONG_1": "Eerste dag: ",
+                        "TEXT_3": "Indoor",
+                        "STRONG_2": "Tweede dag: ",
+                        "TEXT_4": "Indoor"                    
+                    }      
+                }          
             }
-        }
-        
-        
+        }             
     }
 }
