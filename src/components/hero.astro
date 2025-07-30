@@ -5,6 +5,16 @@ import { getI18N } from "@/i18n/";
 
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
+
+import {
+  getLangFromUrl,
+  useTranslations,
+  useTranslatedPath,
+} from "../i18n/utils.js";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
 ---
 
 <div class="grid md:grid-cols-2 md:p-6 mt-10">
@@ -21,7 +31,7 @@ const i18n = getI18N({ currentLocale });
           class="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg filter group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200">
         </div>
         <a
-          href="/book-my-tour/"
+          href={translatePath("book-my-tour")}
           title=""
           role="button"
           class="relative w-full px-14 py-4 font-bold text-white transition-all duration-200 bg-gray-900 text-center text-xl border-2 border-transparent focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 hover:bg-gray-800 rounded">

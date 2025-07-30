@@ -6,12 +6,10 @@ import Layout from "../../../layouts/Layout.astro";
 import SliderReact from "../../../hooks/SliderReact";
 import Days from "@/components/products-components/days.astro";
 import Includes from "@/components/products-components/includes.astro";
-import Wheel from "@/components/ui/icons/wheel.astro";
+
 import Route from "@/components/ui/icons/route.astro";
 import Link from "@/components/ui/link.astro";
 import reviewsProps from "../../../data_files/reviewsData.json";
-import Cancellation from "@/components/products-components/cancellation.astro";
-import ReviewsCompt from "@/components/ui/reviewsCompt.astro";
 
 import { getI18N } from "@/i18n/";
 const { currentLocale } = Astro;
@@ -230,25 +228,29 @@ const DAYS = [
       <div
         class="grid grid-cols-2 md:grid-cols-6 h-auto mt-3 gap-3 place-content-start md:px-6">
         <InformationProducts
-          title="Price"
+          title={i18n.INFO_PRODUCTS.PRICE}
           subtitle={i18n.PRODUCTS.LEISURE_CYCLING
             .EPIC_LANDSCAPE_E_BIKE_TOUR_GRANADA.PRICE}>
           <div slot="icon">
             <Icon icon="price-logo" size="1.6rem" color="#0E46A3" />
           </div>
         </InformationProducts>
-        <InformationProducts title="Pre-booking" subtitle="20%">
+        <InformationProducts
+          title={i18n.INFO_PRODUCTS.PRE_BOOKING}
+          subtitle="20%">
           <div slot="icon">
             <Icon icon="price-logo" size="1.6rem" color="#0E46A3" />
           </div>
         </InformationProducts>
-        <InformationProducts title="Minimum of persons" subtitle="4">
+        <InformationProducts
+          title={i18n.INFO_PRODUCTS.MINIMUM_OF_PERSONS}
+          subtitle="4">
           <div slot="icon">
             <Icon icon="group-logo" size="1.6rem" color="#0E46A3" />
           </div>
         </InformationProducts>
         <InformationProducts
-          title="Duration"
+          title={i18n.INFO_PRODUCTS.DURATION}
           subtitle={i18n.PRODUCTS.LEISURE_CYCLING
             .EPIC_LANDSCAPE_E_BIKE_TOUR_GRANADA.DURATION}>
           <div slot="icon">
@@ -256,7 +258,7 @@ const DAYS = [
           </div>
         </InformationProducts>
         <InformationProducts
-          title="Tour type"
+          title={i18n.INFO_PRODUCTS.TOUR_TYPE}
           subtitle={i18n.PRODUCTS.LEISURE_CYCLING
             .EPIC_LANDSCAPE_E_BIKE_TOUR_GRANADA.TOUR_TYPE}>
           <div slot="icon">
@@ -264,7 +266,7 @@ const DAYS = [
           </div>
         </InformationProducts>
         <InformationProducts
-          title="Season"
+          title={i18n.INFO_PRODUCTS.SEASON}
           subtitle2={i18n.PRODUCTS.LEISURE_CYCLING
             .EPIC_LANDSCAPE_E_BIKE_TOUR_GRANADA.SEASON}>
           <div slot="icon">
@@ -279,24 +281,30 @@ const DAYS = [
       <div class="">
         <div
           class="grid grid-cols-2 justify-between md:grid-cols-6 h-auto mt-3 gap-3 md:px-6">
-          <InformationProducts title="Total distance" subtitle="190 km">
+          <InformationProducts
+            title={i18n.INFO_PRODUCTS.TOTAL_DISTANCE}
+            subtitle="190 km">
             <div slot="icon">
               <Icon icon="distance-logo" size="1.6rem" color="#0E46A3" />
             </div>
           </InformationProducts>
 
-          <InformationProducts title="Total ascent" subtitle="3.120 m">
+          <InformationProducts
+            title={i18n.INFO_PRODUCTS.TOTAL_ASCENT}
+            subtitle="3.120 m">
             <div slot="icon">
               <Icon icon="up-logo" size="1.6rem" color="#0E46A3" />
             </div>
           </InformationProducts>
-          <InformationProducts title="Total descent" subtitle="4.930 m">
+          <InformationProducts
+            title={i18n.INFO_PRODUCTS.TOTAL_DESCENT}
+            subtitle="4.930 m">
             <div slot="icon">
               <Icon icon="down-logo" size="1.6rem" color="#0E46A3" />
             </div>
           </InformationProducts>
           <InformationProducts
-            title="Route type"
+            title={i18n.INFO_PRODUCTS.ROUTE_TYPE}
             subtitle={i18n.PRODUCTS.LEISURE_CYCLING
               .EPIC_LANDSCAPE_E_BIKE_TOUR_GRANADA.ROUTE_TYPE}>
             <div slot="icon">
@@ -304,7 +312,7 @@ const DAYS = [
             </div>
           </InformationProducts>
           <InformationProducts
-            title="Difficulty"
+            title={i18n.INFO_PRODUCTS.DIFFICULTY}
             subtitle={i18n.PRODUCTS.LEISURE_CYCLING
               .EPIC_LANDSCAPE_E_BIKE_TOUR_GRANADA.DIFFICULTY}>
             <div class="flex gap-1" slot="icon"></div>

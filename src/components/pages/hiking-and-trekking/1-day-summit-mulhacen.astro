@@ -11,6 +11,11 @@ import Dots from "@/components/ui/dots.astro";
 import Widget from "@/components/products-components/widget.astro";
 import Cancellation from "@/components/products-components/cancellation.astro";
 
+import { getI18N } from "@/i18n/";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+
 // Duplica y cambia las rutas para añadir o modificar las fotos
 
 const IMG = [
@@ -44,16 +49,16 @@ const IMG = [
 ];
 const DAYS = [
   {
-    title2: "Track 1 Nort-face (Challenging):",
+    title2: i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN.DAY_1.TITLE,
     tecnicalInfo: true,
     description:
-      "The route starts at Europe’s southernmost ski resort and follows a great ascent along the San Juan Valley towards the second-highest peak of the mountain range, Veleta 3.392 meters. The trail brings you to the Carihuela Refuge located in the mountain pass “Collado de la Veleta” on its southern slope at an altitude of 3.200 meters where you can see the remains of the trenches from the Civil War.",
+      i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN.DAY_1.TEXT_1,
     description2:
-      "Before our eyes, a wide landscape of the Mediterranean mountain range opens, and the peak Mulhacén rises majestically. The trails continue to the “Caldera Lagoon” of glacial origin and one of the most emblematic lagoons in the Sierra Nevada. From the mountain refuge, the iconic steep climb awaits us up to the peak of Mulhacén. We take the same path to return to the mountain village.",
+      i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN.DAY_1.TEXT_2,
     description3:
-      "We classify the north-face route as a challenging trail with a lot of distance and has characteristics of altitude hiking. The hike involves a significant height difference with a long ascent and descent divided into two parts during the entire hike. A steep summit climb on rocky and loose terrain. The descent is less strenuous but can be tough on the knees. The trail doesn’t have any technical obstacles. For more information check our blog and look for “Trail grades”",
+      i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN.DAY_1.TEXT_3,
     description4:
-      "Optional: there is a minibus or the summer ski lift at your disposal, which leaves us at around 3.000 meters, a significant reduction of ascent, distance, and the demands of the route. Ask for more information.",
+      i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN.DAY_1.TEXT_4,
     totalDistance: "28 Km",
     totalAscent: "1500 m",
     totalDescent: "1500 m",
@@ -62,18 +67,18 @@ const DAYS = [
     technical_difficulty: "C",
   },
   {
-    title2: "Track 2 South-face (Moderate):",
+    title2: i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN.DAY_2.TITLE,
     tecnicalInfo: true,
     description:
-      "The south-face option starts at the “Mirador de Trevelez” at 2.700 meters which we reach by the shuttle bus from the village of Capileira. From the starting point, there are privileged views of the Sierra Nevada Mountain range and the Granada coast.",
+      i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN.DAY_2.TEXT_1,
     description2:
-      "The trail goes slowly up to overcome the first slope “Loma del Tanto” leaving the viewpoint behind. Further ahead we hike in search of the Mulhacén II geodesic point at 3.362 meters surrounded by a different landscape of loose rocks and a lack of vegetation.",
+      i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN.DAY_2.TEXT_2,
     description3:
-      "The last stretch, which takes us to the summit, offers a magnificent panoramic view of the Caldera Lagoon, one of the most emblematic lagoons in the Sierra Nevada.",
+      i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN.DAY_2.TEXT_3,
     description4:
-      "Finally, after hiking the last slope we achieved our goal, the Peak of Mulhacén at 3.380 meters. We take the same path to return where the bus is waiting to bring us to the village of Capileira.",
+      i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN.DAY_2.TEXT_4,
     description5:
-      "We classify the south-face route as a moderate trail with characteristics of altitude hiking. The hike involves a considerable height difference with a boulder crossing in some parts without any technical obstacles. For more information check our blog and look for “Trail grades”",
+      i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN.DAY_2.TEXT_5,
     totalDistance: "13 Km",
     totalAscent: "800 m",
     totalDescent: "800 m",
@@ -85,44 +90,70 @@ const DAYS = [
 
 const brings = [
   {
-    title: "Water minimum 2 L",
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+        .WHAT_TO_BRING_TEXT_2,
   },
 
   {
-    title: "Picnic (sandwich, chocolate, dried fruit, etc.)",
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+        .WHAT_TO_BRING_TEXT_3,
   },
   {
-    title: "Light backpack (20-30L)",
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+        .WHAT_TO_BRING_TEXT_4,
   },
   {
-    title: "Weather-appropriate and technical clothing",
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+        .WHAT_TO_BRING_TEXT_5,
   },
   {
-    title: "Hiking jacket",
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+        .WHAT_TO_BRING_TEXT_6,
   },
   {
-    title: "Hiking shoes",
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+        .WHAT_TO_BRING_TEXT_7,
   },
   {
-    title: "Sun protection",
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+        .WHAT_TO_BRING_TEXT_8,
   },
   {
-    title: "Sunglasses",
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+        .WHAT_TO_BRING_TEXT_9,
   },
   {
-    title: "Hiking summer hat or cap",
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+        .WHAT_TO_BRING_TEXT_10,
   },
   {
-    title: "Trekking gloves",
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+        .WHAT_TO_BRING_TEXT_11,
   },
   {
-    title: "Warm hat and neck gaiter",
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+        .WHAT_TO_BRING_TEXT_12,
   },
   {
-    title: "Trekking poles (Recommended)",
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+        .WHAT_TO_BRING_TEXT_13,
   },
   {
-    title: "Headlamp",
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+        .WHAT_TO_BRING_TEXT_14,
   },
 ];
 ---
@@ -139,13 +170,13 @@ const brings = [
             <Icon icon="destiny-logo" size="1.6rem" color="gray" />
             <p
               class="text-xl font-normal text-white lg:text-2xl flex flex-col justify-end h-full [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
-              Sierra Nevada National Park
+              {i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN.LOCATION}
             </p>
           </div>
 
           <h1
             class="text-3xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-5xl [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
-            1-Day Summit Mulhacén
+            {i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN.TITLE}
           </h1>
         </div>
       </div>
@@ -154,35 +185,52 @@ const brings = [
 
       <div
         class="grid grid-cols-2 md:grid-cols-6 h-auto mt-3 gap-3 place-content-start md:px-6">
-        <InformationProducts title="Price" subtitle="80 (6 pax.)">
+        <InformationProducts
+          title="Price"
+          subtitle={i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+            .PRICE}>
           <div slot="icon">
             <Icon icon="price-logo" size="1.6rem" color="#0E46A3" />
           </div>
         </InformationProducts>
-        <InformationProducts title="Pre-booking" subtitle="100%">
+        <InformationProducts
+          title="Pre-booking"
+          subtitle={i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+            .PRE_BOOKING}>
           <div slot="icon">
             <Icon icon="price-logo" size="1.6rem" color="#0E46A3" />
           </div>
         </InformationProducts>
-        <InformationProducts title="Minimum of persons" subtitle="1">
+        <InformationProducts
+          title="Minimum of persons"
+          subtitle={i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+            .MINUMUM_OF_PERSONS}>
           <div slot="icon">
             <Icon icon="group-logo" size="1.6rem" color="#0E46A3" />
           </div>
         </InformationProducts>
         <InformationProducts
           title="Duration Trail"
-          subtitle="Trail 1: 9-10 hours"
-          subtitle3="Trail 2: 6 hours">
+          subtitle={i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+            .DURATION_1}
+          subtitle3={i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+            .DURATION_2}>
           <div slot="icon">
             <Icon icon="timer-logo" size="1.6rem" color="#0E46A3" />
           </div>
         </InformationProducts>
-        <InformationProducts title="Tour type" subtitle="Guided">
+        <InformationProducts
+          title="Tour type"
+          subtitle={i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+            .TOUR_TYPE}>
           <div slot="icon">
             <Icon icon="guide-logo" size="1.6rem" color="#0E46A3" />
           </div>
         </InformationProducts>
-        <InformationProducts title="Season" subtitle="Summer">
+        <InformationProducts
+          title="Season"
+          subtitle={i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+            .SEASON}>
           <!-- <div slot="icon">
             <Icon icon="autumn-logo" size="1.6rem" color="#0E46A3" />
           </div> -->
@@ -196,8 +244,10 @@ const brings = [
           class="grid grid-cols-2 justify-between md:grid-cols-6 h-auto mt-3 gap-3 md:px-6">
           <InformationProducts
             title="Total distance"
-            subtitle="Trail 1: 28 km"
-            subtitle3="Trail 2: 13 km">
+            subtitle={i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+              .TOTAL_DISTANCE_1}
+            subtitle3={i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+              .TOTAL_DISTANCE_2}>
             <div slot="icon">
               <Icon icon="distance-logo" size="1.6rem" color="#0E46A3" />
             </div>
@@ -205,34 +255,45 @@ const brings = [
 
           <InformationProducts
             title="Total ascent"
-            subtitle="Trail 1: 1.500 m"
-            subtitle3="Trail 2: 800 m">
+            subtitle={i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+              .TOTAL_ASCENT_1}
+            subtitle3={i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+              .TOTAL_ASCENT_2}>
             <div slot="icon">
               <Icon icon="up-logo" size="1.6rem" color="#0E46A3" />
             </div>
           </InformationProducts>
           <InformationProducts
             title="Total descent"
-            subtitle="Trail 1: 1.500 m"
-            subtitle3="Trail 2: 800 m">
+            subtitle={i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+              .TOTAL_DESCENT_1}
+            subtitle3={i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+              .TOTAL_DESCENT_2}>
             <div slot="icon">
               <Icon icon="down-logo" size="1.6rem" color="#0E46A3" />
             </div>
           </InformationProducts>
-          <InformationProducts title="Route type" subtitle="Out-and-Back">
+          <InformationProducts
+            title="Route type"
+            subtitle={i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+              .ROUTE_TYPE}>
             <div slot="icon">
               <Route />
             </div>
           </InformationProducts>
           <InformationProducts
             title="Physical Difficulty"
-            subtitle="Trail 1: D"
-            subtitle3="Trail 2: C"
+            subtitle={i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+              .PHYSICAL_DIFFICULTY_1}
+            subtitle3={i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+              .PHYSICAL_DIFFICULTY_2}
           />
           <InformationProducts
             title="Technical Difficulty"
-            subtitle="Trail 1: C"
-            subtitle3="Trail 2: C"
+            subtitle={i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+              .TECHNICAL_DIFFICULTY_1}
+            subtitle3={i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+              .TECHNICAL_DIFFICULTY_2}
           />
         </div>
       </div>
@@ -241,68 +302,111 @@ const brings = [
       <div
         class="grid md:grid-cols-2 lg:grid-cols-3 mt-20 md:mt-26 md:mb-36 gap-16 md:gap-4">
         <!-- Include -->
-        <Includes title="Included">
+        <Includes
+          title={i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN.INCLUDED
+            .TITLE}>
           <ul slot="description" class="mt-4 flex flex-col gap-2">
             <li class="flex flex-wrap gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
               <p class="max-w-[320px] text-md">
-                Professional Qualified Mountain Leader
+                {
+                  i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN.INCLUDED
+                    .TEXT_1
+                }
               </p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
               <p class="max-w-[320px] text-md">
-                Liability insurance and assistance
+                {
+                  i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN.INCLUDED
+                    .TEXT_2
+                }
               </p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
-              <p class="max-w-[320px] text-md">Transfer</p>
+              <p class="max-w-[320px] text-md">
+                {
+                  i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN.INCLUDED
+                    .TEXT_3
+                }
+              </p>
             </li>
           </ul>
         </Includes>
         <!-- Exclude -->
-        <Includes title="Not Included">
+        <Includes
+          title={i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+            .NOT_INCLUDED.TITLE}>
           <div slot="description" class="flex flex-col gap-2 mt-4">
             <li class="flex flex-wrap gap-2">
               <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
-              <p class="max-w-[320px] text-md">Snack and lunch</p>
+              <p class="max-w-[320px] text-md">
+                {
+                  i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+                    .NOT_INCLUDED.TEXT_1
+                }
+              </p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
-              <p class="max-w-[320px] text-md">Minibus (Optional)</p>
+              <p class="max-w-[320px] text-md">
+                {
+                  i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+                    .NOT_INCLUDED.TEXT_2
+                }
+              </p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
-              <p class="max-w-[320px] text-md">Summer ski lift (Optional)</p>
+              <p class="max-w-[320px] text-md">
+                {
+                  i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+                    .NOT_INCLUDED.TEXT_3
+                }
+              </p>
             </li>
           </div>
         </Includes>
-        <Includes title="Extra">
+        <Includes
+          title={i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN.EXTRA
+            .TITLE}>
           <div slot="description" class="flex flex-col gap-2 mt-4">
             <h2 class="max-w-[320px] text-md font-semibold">
-              Track 1 North-face (Challenging):
+              {
+                i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN.EXTRA
+                  .TEXT_1
+              }
             </h2>
             <li class="flex flex-wrap gap-2">
               <p class="max-w-[320px] text-md">
-                - You can use a minibus or summer ski lift, which leaves us at
-                around 3,000 meters. This is a significant reduction in ascent,
-                distance, and the route's demands. Ask for more information.
+                {
+                  i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN.EXTRA
+                    .TEXT_2
+                }
               </p>
             </li>
             <li class="flex flex-wrap gap-2">
               <p class="max-w-[320px] text-md">
-                - Acclimatize, and spend the night before at the mountain refuge
-                at 2.500 meters, the starting point of the ascent.
+                {
+                  i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN.EXTRA
+                    .TEXT_3
+                }
               </p>
             </li>
             <h2 class="max-w-[320px] text-md mt-3 font-semibold">
-              Track 2 South-face (Moderate):
+              {
+                i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN.EXTRA
+                  .TEXT_4
+              }
             </h2>
             <li class="flex flex-wrap gap-2">
               <p class="max-w-[320px] text-md">
-                - Acclimatize, and spend the night before in the village
-                Capileira, the starting point of the ascent.
+                {
+                  i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN.EXTRA
+                    .TEXT_3
+                }
               </p>
             </li>
           </div>
@@ -335,12 +439,15 @@ const brings = [
         <div class="grid grid-flow-row gap-4">
           <h2
             class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
-            Availability
+            {i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN.AVAILABILITY}
           </h2>
           <div class="flex gap-2">
             <Icon icon="spring-logo" size="1.6rem" color="#0E46A3" />
             <p class="max-w-2xl text-gray-900 mb-2 md:px-0 text-xl md:text-xl">
-              Summer
+              {
+                i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+                  .AVAILABILITY_SUMMER
+              }
             </p>
           </div>
         </div>
@@ -348,25 +455,34 @@ const brings = [
         <div class="">
           <h2
             class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
-            Highlight
+            {i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN.HIGHLIGHT}
           </h2>
           <p class="text-lg text-gray-900 mb-1">
-            <span class="text-xl">🔹</span> Climb the highest peak of mainland Spain,
-            Mulhacén 3.480 m.
+            <span class="text-xl">🔹</span>
+            {
+              i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+                .HIGHLIGHT_TEXT_1
+            }
           </p>
           <p class="text-lg text-gray-900 mb-1">
-            <span class="text-xl">🔹</span> Stunning mountain landscape and glacier
-            lakes
+            <span class="text-xl">🔹</span>
+            {
+              i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+                .HIGHLIGHT_TEXT_2
+            }
           </p>
         </div>
       </div>
     </div>
 
     <Widget
-      title="What to bring for Hiking"
-      description="Weather is important to consider while packing for your outdoor activity. Your packing list is based on your comfort and sensitivity. Layering your clothes is the best way to travel and be outdoors. It is highly recommended as the best way to stay warm and cool, as the weather is bound to change in the mountains."
+      title={i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+        .WHAT_TO_BRING}
+      description={i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+        .WHAT_TO_BRING_TEXT_1}
       img="/hiking-and-trekking/trekking-alpujarras/bring.webp"
-      text="If you have any questions about the material's recommendations, contact us or check out our blog, “What to Bring for Hiking.”"
+      text={i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+        .WHAT_TO_BRING_TEXT_15}
       brings={brings}
     />
 
@@ -375,99 +491,158 @@ const brings = [
       <div class="">
         <h2
           class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
-          Requirements
+          {i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN.REQUIEREMENTS}
         </h2>
         <p class="text-lg text-gray-900 mb-1">
-          <span class="text-xl strong">🔹</span> Physical fitness:
+          <span class="text-xl strong">🔹</span>
+          {
+            i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+              .REQUIEREMENTS_TEXT_1
+          }
         </p>
-        <p class="text-lg text-gray-900 mb-1 ml-5">- Track 1: Very good.</p>
         <p class="text-lg text-gray-900 mb-1 ml-5">
-          - Track 2: Good, with the habit of doing aerobic sports.
+          {
+            i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+              .REQUIEREMENTS_TEXT_2
+          }
+        </p>
+        <p class="text-lg text-gray-900 mb-1 ml-5">
+          {
+            i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+              .REQUIEREMENTS_TEXT_3
+          }
         </p>
         <p class="text-lg text-gray-900">
-          <span class="text-xl">🔹</span> Proper hiking equipment is required. Walking
-          sticks are recommended. Ankle-high hiking boots are required.
+          <span class="text-xl">🔹</span>
+          {
+            i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+              .REQUIEREMENTS_TEXT_4
+          }
         </p>
         <p class="text-lg text-gray-900">
-          <span class="text-xl">🔹</span> Previous mountain hiking experience:
+          <span class="text-xl">🔹</span>
+          {
+            i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+              .REQUIEREMENTS_TEXT_5
+          }
         </p>
-        <p class="text-lg text-gray-900 mb-1 ml-5">- Track 1: Necessary.</p>
-        <p class="text-lg text-gray-900 mb-1 ml-5">- Track 2: Recommended.</p>
+        <p class="text-lg text-gray-900 mb-1 ml-5">
+          {
+            i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+              .REQUIEREMENTS_TEXT_6
+          }
+        </p>
+        <p class="text-lg text-gray-900 mb-1 ml-5">
+          {
+            i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+              .REQUIEREMENTS_TEXT_7
+          }
+        </p>
       </div>
     </section>
     <section class="grid md:grid-cols-2 gap-10 items-center mt-10">
       <div>
         <h2
           class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
-          Recommendations
+          {
+            i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+              .RECOMMENDATIONS
+          }
         </h2>
         <Dots class="mb-4" />
         <p class="text-lg text-gray-700 mb-1">
-          We recommend having a good rest and better acclimatization, at the
-          mountain refuge or the village of Capileira for the easy option, the
-          night before to avoid any symptoms of altitude sickness.
+          {
+            i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+              .RECOMMENDATIONS_TEXT_1
+          }
         </p>
       </div>
       <div>
         <h2
           class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
-          Preparation
+          {i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN.PREPARATION}
         </h2>
         <Dots class="mb-4" />
         <p class="text-lg text-gray-700 mb-1">
-          - Evaluate your state of fitness.
+          {
+            i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+              .PREPARATION_TEXT_1
+          }
         </p>
         <p class="text-lg text-gray-700 mb-1">
-          - The best way to prepare yourself is to hike and carry a backpack
-          with some weight.
+          {
+            i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+              .PREPARATION_TEXT_2
+          }
         </p>
         <p class="text-lg text-gray-700 mb-1">
-          For more information check our blog and look for “How to prepare
-          physically for a hike”
+          {
+            i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+              .PREPARATION_TEXT_3
+          }
         </p>
       </div>
       <div>
         <h2
           class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
-          Sierra Nevada In Summer
+          {
+            i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+              .SIERRA_NEVADA_IN_SUMMER
+          }
         </h2>
         <Dots class="mb-4" />
         <p class="text-lg text-gray-700 mb-1">
-          The weather in the Sierra Nevada during the summer has an average
-          temperature of 24ºC and quite warm days. At 3.000 meters, the
-          temperatures might vary between 15ºC and 20ºC, and at night, the
-          temperature drops to 10ºC.
+          {
+            i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+              .SIERRA_NEVADA_IN_SUMMER_TEXT_1
+          }
         </p>
       </div>
       <div>
         <h2
           class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
-          Transport
+          {i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN.TRANSPORT}
         </h2>
         <Dots class="mb-4" />
         <p class="text-lg text-gray-700 mb-1">
-          For the first track, we drive from the city of Granada to the mountain
-          refuge at 2.500 meters. (approximately 1 hour drive)
-        </p>
-        <p class="text-lg text-gray-700 mb-1">
-          For the second track, we drive from the city of Granada to the village
-          of Capileira. (approximately 1h30 drive)
+          {
+            i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+              .TRANSPORT_TEXT_1
+          }
         </p>
       </div>
+      <p class="text-lg text-gray-700 mb-1">
+        {i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN.TRANSPORT_TEXT_2}
+      </p>
     </section>
+
     <section class="grid md:grid-cols-2 mt-10 gap-6 items-center">
       <Cancellation />
       <div class="flex flex-col gap-2 md:p-4">
         <div>
-          <h3 class="text-4xl md:text-5xl xl:text-6xl font-bold">Price:</h3>
+          <h3 class="text-4xl md:text-5xl xl:text-6xl font-bold">
+            {i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN.PRICES}:
+          </h3>
           <Dots class="mb-4" />
         </div>
-        <p class="text-gray-700">1 person - 200 €</p>
-        <p class="text-gray-700">2 people – 120 € p.p</p>
-        <p class="text-gray-700">3 people – 100 € p.p</p>
-        <p class="text-gray-700">4 people – 90 € p.p</p>
-        <p class="text-gray-700">6 people – 80 € p.p</p>
-        <p class="text-gray-700">7 people – 80 € p.p</p>
+        <p class="text-gray-700">
+          {i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN.PRICES_TEXT_1}
+        </p>
+        <p class="text-gray-700">
+          {i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN.PRICES_TEXT_2}
+        </p>
+        <p class="text-gray-700">
+          {i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN.PRICES_TEXT_3}
+        </p>
+        <p class="text-gray-700">
+          {i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN.PRICES_TEXT_4}
+        </p>
+        <p class="text-gray-700">
+          {i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN.PRICES_TEXT_5}
+        </p>
+        <p class="text-gray-700">
+          {i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN.PRICES_TEXT_6}
+        </p>
       </div>
     </section>
 
@@ -479,16 +654,21 @@ const brings = [
     </section>
 
     <!--  TimeLine per days  -->
+
     <h2 class="text-4xl md:text-5xl xl:text-6xl md:p-8 mt-16 font-bold">
-      What to expect
+      {i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN.WHAT_TO_EXPECT}
     </h2>
     <h2 class="text-2xl md:text-3xl xl:text-4xl md:px-8 mt-8 font-bold">
-      An outstanding adventure, the climb to the 3.480 meter-high Mulhacén peak,
-      the roof of the peninsula
+      {
+        i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+          .WHAT_TO_EXPECT_TEXT_1
+      }
     </h2>
     <p class="text-lg text-gray-700 md:px-8 mt-8 mb-8">
-      We offer two variations, with each a different physical difficulty, to
-      climb the Mulhacén peak.
+      {
+        i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+          .WHAT_TO_EXPECT_TEXT_2
+      }
     </p>
     {
       DAYS.map((tour) => (

@@ -7,10 +7,14 @@ import SliderReact from "../../../hooks/SliderReact";
 import Days from "@/components/products-components/days.astro";
 import Includes from "@/components/products-components/includes.astro";
 import Route from "@/components/ui/icons/route.astro";
-import Link from "@/components/ui/link.astro";
 import Cancellation from "@/components/products-components/cancellation.astro";
 import Widget from "@/components/products-components/widget.astro";
 import Dots from "@/components/ui/dots.astro";
+
+import { getI18N } from "@/i18n/";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
 
 // Duplica y cambia las rutas para añadir o modificar las fotos
 
@@ -33,10 +37,10 @@ const IMG = [
 ];
 const DAYS = [
   {
-    day: "1",
+    day: i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA.DAY_1.TITLE,
     tecnicalInfo: true,
     description:
-      "Under the dark sky, at an elevation of 2.500 meters, we start the ascent guided by the promise of the spectacular sunrise awaiting us at the summit of Veleta at 3.392 meters, the second-highest peak of the Sierra Nevada. As we crest the final ridge, the first hints of light emerge on the horizon, painting the sky in beautiful twilight colors of yellowish-red. Finally, atop the peak, we are greeted by the sunrise, a special moment of contemplation. After, we begin our descent retracing our steps along the trail we climbed. Let’s step inside the mountain refuge for a fresh coffee and breakfast. ",
+      i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA.DAY_1.TEXT_1,
     totalDistance: "12 km",
     totalAscent: "900 m",
     totalDescent: "900 m",
@@ -45,38 +49,48 @@ const DAYS = [
 ];
 const brings = [
   {
-    title: "Water bottle minimum 1 L",
-  },
-
-  {
-    title: "Picnic / snack",
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA.WHAT_TO_BRING_TEXT_2,
   },
   {
-    title: "Light backpack",
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA.WHAT_TO_BRING_TEXT_3,
   },
   {
-    title: "Weather-appropriate and comfortable clothing",
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA.WHAT_TO_BRING_TEXT_4,
   },
   {
-    title: "Hiking jacket",
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA.WHAT_TO_BRING_TEXT_5,
   },
   {
-    title: "Hiking shoes",
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA.WHAT_TO_BRING_TEXT_6,
   },
   {
-    title: "Sun protection",
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA.WHAT_TO_BRING_TEXT_7,
   },
   {
-    title: "Gloves",
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA.WHAT_TO_BRING_TEXT_8,
   },
   {
-    title: "Warm hat",
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA.WHAT_TO_BRING_TEXT_9,
   },
   {
-    title: "Neck gaiter",
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA.WHAT_TO_BRING_TEXT_10,
   },
   {
-    title: "Trekking poles ",
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA.WHAT_TO_BRING_TEXT_11,
+  },
+  {
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA.WHAT_TO_BRING_TEXT_12,
   },
 ];
 ---
@@ -93,13 +107,13 @@ const brings = [
             <Icon icon="destiny-logo" size="1.6rem" color="white" />
             <p
               class="text-xl font-normal text-white lg:text-2xl flex flex-col justify-end h-full [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
-              Sierra Nevada National Park
+              {i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA.LOCATION}
             </p>
           </div>
 
           <h1
             class="text-3xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-5xl [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
-            Sunrise Sierra Nevada
+            {i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA.TITLE}
           </h1>
         </div>
       </div>
@@ -108,32 +122,49 @@ const brings = [
 
       <div
         class="grid grid-cols-2 md:grid-cols-6 h-auto mt-3 gap-3 place-content-start md:px-6">
-        <InformationProducts title="Price" subtitle="90 (4 Pax)">
+        <InformationProducts
+          title="Price"
+          subtitle={i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA.PRICES}>
           <div slot="icon">
             <Icon icon="price-logo" size="1.6rem" color="#0E46A3" />
           </div>
         </InformationProducts>
-        <InformationProducts title="Pre-booking" subtitle="100%">
+        <InformationProducts
+          title="Pre-booking"
+          subtitle={i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA
+            .PRE_BOOKING}>
           <div slot="icon">
             <Icon icon="price-logo" size="1.6rem" color="#0E46A3" />
           </div>
         </InformationProducts>
-        <InformationProducts title="Minimum of persons" subtitle="2">
+        <InformationProducts
+          title="Minimum of persons"
+          subtitle={i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA
+            .MINIMUM_OF_PERSONS}>
           <div slot="icon">
             <Icon icon="group-logo" size="1.6rem" color="#0E46A3" />
           </div>
         </InformationProducts>
-        <InformationProducts title="Duration" subtitle="7 Hours">
+        <InformationProducts
+          title="Duration"
+          subtitle={i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA
+            .DURATION}>
           <div slot="icon">
             <Icon icon="timer-logo" size="1.6rem" color="#0E46A3" />
           </div>
         </InformationProducts>
-        <InformationProducts title="Tour type" subtitle="Guided">
+        <InformationProducts
+          title="Tour type"
+          subtitle={i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA
+            .TOUR_TYPE}>
           <div slot="icon">
             <Icon icon="guide-logo" size="1.6rem" color="#0E46A3" />
           </div>
         </InformationProducts>
-        <InformationProducts title="Season" subtitle2="Summer">
+        <InformationProducts
+          title="Season"
+          subtitle2={i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA
+            .SEASON}>
           <div slot="icon">
             <Icon icon="summer-logo" size="1.6rem" color="#0E46A3" />
           </div>
@@ -145,30 +176,50 @@ const brings = [
       <div class="">
         <div
           class="grid grid-cols-2 justify-between md:grid-cols-6 h-auto mt-3 gap-3 md:px-6">
-          <InformationProducts title="Total distance" subtitle="12 km">
+          <InformationProducts
+            title="Total distance"
+            subtitle={i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA
+              .TOTAL_DISTANCE}>
             <div slot="icon">
               <Icon icon="distance-logo" size="1.6rem" color="#0E46A3" />
             </div>
           </InformationProducts>
 
-          <InformationProducts title="Total ascent" subtitle="900 m">
+          <InformationProducts
+            title="Total ascent"
+            subtitle={i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA
+              .TOTAL_ASCENT}>
             <div slot="icon">
               <Icon icon="up-logo" size="1.6rem" color="#0E46A3" />
             </div>
           </InformationProducts>
-          <InformationProducts title="Total descent" subtitle="900 m">
+          <InformationProducts
+            title="Total descent"
+            subtitle={i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA
+              .TOTAL_DESCENT}>
             <div slot="icon">
               <Icon icon="down-logo" size="1.6rem" color="#0E46A3" />
             </div>
           </InformationProducts>
-          <InformationProducts title="Route type" subtitle="Out-and-back">
+          <InformationProducts
+            title="Route type"
+            subtitle={i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA
+              .ROUTE_TYPE}>
             <div slot="icon">
               <Route />
             </div>
           </InformationProducts>
 
-          <InformationProducts title="Physical Difficulty" subtitle="C" />
-          <InformationProducts title="Technical Difficulty" subtitle="B" />
+          <InformationProducts
+            title="Physical Difficulty"
+            subtitle={i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA
+              .PHYSICAL_DIFFICULTY}
+          />
+          <InformationProducts
+            title="Technical Difficulty"
+            subtitle={i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA
+              .TECHNICAL_DIFFICULTY}
+          />
         </div>
       </div>
 
@@ -176,25 +227,45 @@ const brings = [
       <div
         class="grid md:grid-cols-2 lg:grid-cols-3 mt-20 md:mt-26 md:mb-36 gap-16 md:gap-4">
         <!-- Include -->
-        <Includes title="Included">
+        <Includes
+          title={i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA.INCLUDED
+            .TITLE}>
           <ul slot="description" class="mt-4 flex flex-col gap-2">
-            <li class="flex flex-wrap gap-2">
-              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
-              <p class="max-w-[320px] text-md">Qualified Mountain Leader</p>
-            </li>
-            <li class="flex flex-wrap gap-2">
+            <li class="flex gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
               <p class="max-w-[320px] text-md">
-                Liability insurance and assistance
+                {
+                  i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA.INCLUDED
+                    .TEXT_1
+                }
               </p>
             </li>
-            <li class="flex flex-wrap gap-2">
+            <li class="flex gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
-              <p class="max-w-[320px] text-md">Transfer</p>
+              <p class="max-w-[320px] text-md">
+                {
+                  i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA.INCLUDED
+                    .TEXT_2
+                }
+              </p>
             </li>
-            <li class="flex flex-wrap gap-2">
+            <li class="flex gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
-              <p class="max-w-[320px] text-md">Water</p>
+              <p class="max-w-[320px] text-md">
+                {
+                  i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA.INCLUDED
+                    .TEXT_3
+                }
+              </p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                {
+                  i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA.INCLUDED
+                    .TEXT_4
+                }
+              </p>
             </li>
             <li class="flex gap-2">
               <div>
@@ -202,36 +273,61 @@ const brings = [
               </div>
               <div>
                 <p class="max-w-[320px] text-md">
-                  Material: Headlight, gloves, beanie, walking poles
+                  {
+                    i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA.INCLUDED
+                      .TEXT_5
+                  }
                 </p>
               </div>
             </li>
-            <li class="flex flex-wrap gap-2">
+            <li class="flex gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
-              <p class="max-w-[320px] text-md">A hot drink at the summit</p>
+              <p class="max-w-[320px] text-md">
+                {
+                  i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA.INCLUDED
+                    .TEXT_6
+                }
+              </p>
             </li>
           </ul>
         </Includes>
         <!-- Exclude -->
-        <Includes title="Not Included">
+        <Includes
+          title={i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA
+            .NOT_INCLUDED.TITLE}>
           <div slot="description" class="flex flex-col gap-2 mt-4">
             <li class="flex flex-wrap gap-2">
               <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
-              <p class="max-w-[320px] text-md">Breakfast</p>
+              <p class="max-w-[320px] text-md">
+                {
+                  i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA
+                    .NOT_INCLUDED.TEXT_1
+                }
+              </p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
-              <p class="max-w-[320px] text-md">Snack</p>
+              <p class="max-w-[320px] text-md">
+                {
+                  i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA
+                    .NOT_INCLUDED.TEXT_2
+                }
+              </p>
             </li>
           </div>
         </Includes>
         <!-- Complementaries -->
-        <Includes title="Extra">
+        <Includes
+          title={i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA.EXTRA
+            .TITLE}>
           <div slot="description" class="flex flex-col gap-2 mt-4">
             <li class="flex gap-2">
               <Icon icon="complement-logo" size="1.6rem" color="#0E46A3" />
               <p class="max-w-[320px] text-md">
-                Breakfast in a mountain refuge at the end of the walk
+                {
+                  i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA.EXTRA
+                    .TEXT_1
+                }
               </p>
             </li>
           </div>
@@ -262,13 +358,18 @@ const brings = [
         <div class="">
           <h2
             class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
-            Availability
+            {i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA.AVAILABILITY}
           </h2>
 
           <ul class="grid gap-2 text-lg">
             <li class="flex flex-wrap gap-2">
               <Icon icon="summer-logo" size="1.6rem" color="#0E46A3" />
-              <p>Summer</p>
+              <p>
+                {
+                  i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA
+                    .AVAILABILITY_SUMMER
+                }
+              </p>
             </li>
           </ul>
         </div>
@@ -276,41 +377,70 @@ const brings = [
         <div class="">
           <h2
             class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
-            Highlight
+            {i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA.HIGHLIGHT}
           </h2>
           <p class="text-lg text-gray-900 mb-1">
-            <span class="text-xl">🔹</span> National Park Sierra Nevada
+            <span class="text-xl">🔹</span>
+            {
+              i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA
+                .HIGHLIGHT_TEXT_1
+            }
           </p>
           <p class="text-lg text-gray-900 mb-1">
-            <span class="text-xl">🔹</span> Night Hike
+            <span class="text-xl">🔹</span>
+            {
+              i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA
+                .HIGHLIGHT_TEXT_2
+            }
           </p>
           <p class="text-lg text-gray-900 mb-1">
-            <span class="text-xl">🔹</span> Breakfast in the mountain refuge
+            <span class="text-xl">🔹</span>
+            {
+              i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA
+                .HIGHLIGHT_TEXT_3
+            }
           </p>
           <p class="text-lg text-gray-900 mb-1">
-            <span class="text-xl">🔹</span> Sunrise from the Peak Veleta at 3.392
-            meters
+            <span class="text-xl">🔹</span>
+            {
+              i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA
+                .HIGHLIGHT_TEXT_4
+            }
           </p>
         </div>
         <div class="flex flex-col gap-2 md:p-4">
           <div>
-            <h3 class="text-4xl md:text-5xl xl:text-6xl font-bold">Price:</h3>
+            <h3 class="text-4xl md:text-5xl xl:text-6xl font-bold">
+              {i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA.PRICES}:
+            </h3>
             <Dots class="mb-4" />
           </div>
-          <p class="text-gray-700">1 person - 200 €</p>
-          <p class="text-gray-700">2 people – 120 € p.p</p>
-          <p class="text-gray-700">3 people – 100 € p.p</p>
-          <p class="text-gray-700">4-5 people – 90 € p.p</p>
-          <p class="text-gray-700">6-7 people – 80 € p.p</p>
+          <p class="text-gray-700">
+            {i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA.PRICES_TEXT_1}
+          </p>
+          <p class="text-gray-700">
+            {i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA.PRICES_TEXT_2}
+          </p>
+          <p class="text-gray-700">
+            {i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA.PRICES_TEXT_3}
+          </p>
+          <p class="text-gray-700">
+            {i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA.PRICES_TEXT_4}
+          </p>
+          <p class="text-gray-700">
+            {i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA.PRICES_TEXT_5}
+          </p>
         </div>
       </div>
     </div>
 
     <Widget
-      title="What to bring for Hiking"
-      description="Weather is important to consider while packing for your outdoor activity. Your packing list is based on your comfort and sensitivity. Layering your clothes is the best way to travel and be outdoors. It is highly recommended as the best way to stay warm and cool, as the weather is bound to change in the mountains."
+      title={i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA.WHAT_TO_BRING}
+      description={i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA
+        .WHAT_TO_BRING_TEXT_1}
       img="/hiking-and-trekking/trekking-alpujarras/bring.webp"
-      text="Any questions about the recommendations of the material do not hesitate to contact us."
+      text={i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA
+        .WHAT_TO_BRING_TEXT_13}
       brings={brings}
     />
 
@@ -319,19 +449,28 @@ const brings = [
       <div class="">
         <h2
           class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
-          Requirements
+          {i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA.REQUIEREMENTS}
         </h2>
         <p class="text-lg text-gray-900 mb-1">
-          <span class="text-xl strong">🔹</span> Physical fitness: Good, with the
-          habit of doing aerobic sports.
+          <span class="text-xl strong">🔹</span>
+          {
+            i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA
+              .REQUIEREMENTS_TEXT_1
+          }
         </p>
         <p class="text-lg text-gray-900">
-          <span class="text-xl">🔹</span> Basic hiking gear is required. Good hiking
-          boots and walking sticks are recommended.
+          <span class="text-xl">🔹</span>
+          {
+            i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA
+              .REQUIEREMENTS_TEXT_2
+          }
         </p>
         <p class="text-lg text-gray-900">
-          <span class="text-xl">🔹</span> Minimum age: 14 years old with the habit
-          of walking
+          <span class="text-xl">🔹</span>
+          {
+            i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA
+              .REQUIEREMENTS_TEXT_3
+          }
         </p>
       </div>
       <Cancellation />
@@ -346,7 +485,7 @@ const brings = [
 
     <!--  TimeLine per days  -->
     <h2 class="text-4xl md:text-5xl xl:text-6xl md:p-8 mt-16 font-bold mb-4">
-      What to expect
+      {i18n.PRODUCTS.HIKING_TREKKING.SUNRISE_SIERRA_NEVADA.WHAT_TO_EXPECT}
     </h2>
     {
       DAYS.map((tour) => (

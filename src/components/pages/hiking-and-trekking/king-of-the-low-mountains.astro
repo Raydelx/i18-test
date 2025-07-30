@@ -12,6 +12,11 @@ import Cancellation from "@/components/products-components/cancellation.astro";
 import Widget from "@/components/products-components/widget.astro";
 import Dots from "@/components/ui/dots.astro";
 
+import { getI18N } from "@/i18n/";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+
 // Duplica y cambia las rutas para añadir o modificar las fotos
 
 const IMG = [
@@ -33,12 +38,12 @@ const IMG = [
 ];
 const DAYS = [
   {
-    day: "1",
+    day: i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS.DAY_1.TITLE,
     tecnicalInfo: true,
     description:
-      "Walk through the spectacular lunar scenery of the dolomite landscape in the Sierra Nevada National Park. At the summit, you will be rewarded with 360º views of Sierra Nevada and the surroundings of the City Granada. A great escape from the city and a perfect day out in the mountains!",
+      i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS.DAY_1.TEXT_1,
     optional1:
-      "On the way back we can have a great lunch at a typical rural Andalusian farmhouse.",
+      i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS.DAY_1.TEXT_2,
     totalDistance: "11 km",
     totalAscent: "750 m",
     totalDescent: "750 m",
@@ -48,37 +53,59 @@ const DAYS = [
 
 const brings = [
   {
-    title: "Water bottle minimum 1.5 L",
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS
+        .WHAT_TO_BRING_TEXT_2,
   },
   {
-    title: "Picnic / snack",
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS
+        .WHAT_TO_BRING_TEXT_3,
   },
   {
-    title: "Light backpack",
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS
+        .WHAT_TO_BRING_TEXT_4,
   },
   {
-    title: "Weather-appropriate and comfortable clothing",
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS
+        .WHAT_TO_BRING_TEXT_5,
   },
   {
-    title: "Hiking jacket",
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS
+        .WHAT_TO_BRING_TEXT_6,
   },
   {
-    title: "Hiking shoes",
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS
+        .WHAT_TO_BRING_TEXT_7,
   },
   {
-    title: "Sun protection",
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS
+        .WHAT_TO_BRING_TEXT_8,
   },
   {
-    title: "Gloves",
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS
+        .WHAT_TO_BRING_TEXT_9,
   },
   {
-    title: "Warm hat",
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS
+        .WHAT_TO_BRING_TEXT_10,
   },
   {
-    title: "Neck gaiter",
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS
+        .WHAT_TO_BRING_TEXT_11,
   },
   {
-    title: "Trekking poles",
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS
+        .WHAT_TO_BRING_TEXT_12,
   },
 ];
 ---
@@ -95,13 +122,13 @@ const brings = [
             <Icon icon="destiny-logo" size="1.6rem" color="white" />
             <p
               class="text-xl font-normal text-white lg:text-2xl flex flex-col justify-end h-full [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
-              Sierra Nevada National Park
+              {i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS.LOCATION}
             </p>
           </div>
 
           <h1
             class="text-3xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-5xl [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
-            King of The Low Mountains
+            {i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS.TITLE}
           </h1>
         </div>
       </div>
@@ -110,32 +137,50 @@ const brings = [
 
       <div
         class="grid grid-cols-2 md:grid-cols-6 h-auto mt-3 gap-3 place-content-start md:px-6">
-        <InformationProducts title="Price" subtitle="70 (4 Pax)">
+        <InformationProducts
+          title={i18n.INFO_PRODUCTS.PRICE}
+          subtitle={i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS
+            .PRICE}>
           <div slot="icon">
             <Icon icon="price-logo" size="1.6rem" color="#0E46A3" />
           </div>
         </InformationProducts>
-        <InformationProducts title="Pre-booking" subtitle="100%">
+        <InformationProducts
+          title={i18n.INFO_PRODUCTS.PRE_BOOKING}
+          subtitle={i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS
+            .PRE_BOOKING}>
           <div slot="icon">
             <Icon icon="price-logo" size="1.6rem" color="#0E46A3" />
           </div>
         </InformationProducts>
-        <InformationProducts title="Minimum of persons" subtitle="2">
+        <InformationProducts
+          title={i18n.INFO_PRODUCTS.MINIMUM_OF_PERSONS}
+          subtitle={i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS
+            .MINIMUM_OF_PERSONS}>
           <div slot="icon">
             <Icon icon="group-logo" size="1.6rem" color="#0E46A3" />
           </div>
         </InformationProducts>
-        <InformationProducts title="Duration" subtitle="6 Hours">
+        <InformationProducts
+          title={i18n.INFO_PRODUCTS.DURATION}
+          subtitle={i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS
+            .DURATION}>
           <div slot="icon">
             <Icon icon="timer-logo" size="1.6rem" color="#0E46A3" />
           </div>
         </InformationProducts>
-        <InformationProducts title="Tour type" subtitle="Guided">
+        <InformationProducts
+          title={i18n.INFO_PRODUCTS.TOUR_TYPE}
+          subtitle={i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS
+            .TOUR_TYPE}>
           <div slot="icon">
             <Icon icon="guide-logo" size="1.6rem" color="#0E46A3" />
           </div>
         </InformationProducts>
-        <InformationProducts title="Season" subtitle2="Winter Spring Autumn">
+        <InformationProducts
+          title={i18n.INFO_PRODUCTS.SEASON}
+          subtitle={i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS
+            .SEASON}>
           <!-- <div slot="icon">
             <Icon icon="autumn-logo" size="1.6rem" color="#0E46A3" />
           </div> -->
@@ -147,30 +192,50 @@ const brings = [
       <div class="">
         <div
           class="grid grid-cols-2 justify-between md:grid-cols-6 h-auto mt-3 gap-3 md:px-6">
-          <InformationProducts title="Total distance" subtitle="11 km">
+          <InformationProducts
+            title={i18n.INFO_PRODUCTS.TOTAL_DISTANCE}
+            subtitle={i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS
+              .TOTAL_DISTANCE}>
             <div slot="icon">
               <Icon icon="distance-logo" size="1.6rem" color="#0E46A3" />
             </div>
           </InformationProducts>
 
-          <InformationProducts title="Total ascent" subtitle="750 m">
+          <InformationProducts
+            title={i18n.INFO_PRODUCTS.TOTAL_ASCENT}
+            subtitle={i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS
+              .TOTAL_ASCENT}>
             <div slot="icon">
               <Icon icon="up-logo" size="1.6rem" color="#0E46A3" />
             </div>
           </InformationProducts>
-          <InformationProducts title="Total descent" subtitle="750 m">
+          <InformationProducts
+            title={i18n.INFO_PRODUCTS.TOTAL_DESCENT}
+            subtitle={i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS
+              .TOTAL_DESCENT}>
             <div slot="icon">
               <Icon icon="down-logo" size="1.6rem" color="#0E46A3" />
             </div>
           </InformationProducts>
-          <InformationProducts title="Route type" subtitle="Loop Trial">
+          <InformationProducts
+            title={i18n.INFO_PRODUCTS.ROUTE_TYPE}
+            subtitle={i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS
+              .ROUTE_TYPE}>
             <div slot="icon">
               <Route />
             </div>
           </InformationProducts>
 
-          <InformationProducts title="Physical Difficulty" subtitle="B" />
-          <InformationProducts title="Technical Difficulty" subtitle="B" />
+          <InformationProducts
+            title={i18n.INFO_PRODUCTS.PHYSICAL_DIFFICULTY}
+            subtitle={i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS
+              .PHYSICAL_DIFFICULTY}
+          />
+          <InformationProducts
+            title={i18n.INFO_PRODUCTS.TECHNICAL_DIFFICULTY}
+            subtitle={i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS
+              .TECHNICAL_DIFFICULTY}
+          />
         </div>
       </div>
 
@@ -178,48 +243,85 @@ const brings = [
       <div
         class="grid md:grid-cols-2 lg:grid-cols-3 mt-20 md:mt-26 md:mb-36 gap-16 md:gap-4">
         <!-- Include -->
-        <Includes title="Included">
+        <Includes
+          title={i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS
+            .INCLUDED.TITLE}>
           <ul slot="description" class="mt-4 flex flex-col gap-2">
-            <li class="flex flex-wrap gap-2">
-              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
-              <p class="max-w-[320px] text-md">Qualified Mountain Leader</p>
-            </li>
-            <li class="flex flex-wrap gap-2">
+            <li class="flex gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
               <p class="max-w-[320px] text-md">
-                Liability insurance and assistance
+                {
+                  i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS
+                    .INCLUDED.TEXT_1
+                }
               </p>
             </li>
-            <li class="flex flex-wrap gap-2">
+            <li class="flex gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
-              <p class="max-w-[320px] text-md">Transfer</p>
+              <p class="max-w-[320px] text-md">
+                {
+                  i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS
+                    .INCLUDED.TEXT_2
+                }
+              </p>
             </li>
-            <li class="flex flex-wrap gap-2">
+            <li class="flex gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
-              <p class="max-w-[320px] text-md">Water</p>
+              <p class="max-w-[320px] text-md">
+                {
+                  i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS
+                    .INCLUDED.TEXT_3
+                }
+              </p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                {
+                  i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS
+                    .INCLUDED.TEXT_4
+                }
+              </p>
             </li>
           </ul>
         </Includes>
         <!-- Exclude -->
-        <Includes title="Not Included">
+        <Includes
+          title={i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS
+            .NOT_INCLUDED.TITLE}>
           <div slot="description" class="flex flex-col gap-2 mt-4">
-            <li class="flex flex-wrap gap-2">
+            <li class="flex gap-2">
               <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
-              <p class="max-w-[320px] text-md">Lunch</p>
+              <p class="max-w-[320px] text-md">
+                {
+                  i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS
+                    .NOT_INCLUDED.TEXT_1
+                }
+              </p>
             </li>
-            <li class="flex flex-wrap gap-2">
+            <li class="flex gap-2">
               <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
-              <p class="max-w-[320px] text-md">Snack</p>
+              <p class="max-w-[320px] text-md">
+                {
+                  i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS
+                    .NOT_INCLUDED.TEXT_2
+                }
+              </p>
             </li>
           </div>
         </Includes>
         <!-- Complementaries -->
-        <Includes title="Extra">
+        <Includes
+          title={i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS.EXTRA
+            .TITLE}>
           <div slot="description" class="flex flex-col gap-2 mt-4">
             <li class="flex gap-2">
               <Icon icon="complement-logo" size="1.6rem" color="#0E46A3" />
               <p class="max-w-[320px] text-md">
-                Lunch at local rural Andalusian Farmhouse
+                {
+                  i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS.EXTRA
+                    .TEXT_1
+                }
               </p>
             </li>
           </div>
@@ -250,21 +352,39 @@ const brings = [
         <div class="">
           <h2
             class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
-            Availability
+            {
+              i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS
+                .AVAILABILITY
+            }
           </h2>
 
           <ul class="grid gap-2 text-lg">
             <li class="flex flex-wrap gap-2">
               <Icon icon="spring-logo" size="1.6rem" color="#0E46A3" />
-              <p>Spring</p>
+              <p>
+                {
+                  i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS
+                    .AVAILABILITY_SPRING
+                }
+              </p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="autumn-logo" size="1.6rem" color="#0E46A3" />
-              <p>Autumn</p>
+              <p>
+                {
+                  i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS
+                    .AVAILABILITY_AUTUMN
+                }
+              </p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="winter-logo" size="1.6rem" color="#0E46A3" />
-              <p>Winter</p>
+              <p>
+                {
+                  i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS
+                    .AVAILABILITY_WINTER
+                }
+              </p>
             </li>
           </ul>
         </div>
@@ -272,27 +392,61 @@ const brings = [
         <div class="">
           <h2
             class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
-            Highlight
+            {i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS.HIGHLIGHT}
           </h2>
           <p class="text-lg text-gray-900 mb-1">
-            <span class="text-xl">🔹</span> Hiking in Sierra Nevada National
+            <span class="text-xl">🔹</span>
+            {
+              i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS
+                .HIGHLIGHT_TEXT_1
+            }
           </p>
           <p class="text-lg text-gray-900 mb-1">
-            <span class="text-xl">🔹</span> Dolomite landscape
+            <span class="text-xl">🔹</span>
+            {
+              i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS
+                .HIGHLIGHT_TEXT_2
+            }
           </p>
           <p class="text-lg text-gray-900 mb-1">
-            <span class="text-xl">🔹</span> 360º viewpoint at 2.080 m
+            <span class="text-xl">🔹</span>
+            {
+              i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS
+                .HIGHLIGHT_TEXT_3
+            }
           </p>
         </div>
         <div class="flex flex-col gap-2 md:p-4">
           <div>
-            <h3 class="text-4xl md:text-5xl xl:text-6xl font-bold">Price:</h3>
+            <h3 class="text-4xl md:text-5xl xl:text-6xl font-bold">
+              {i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS.PRICES}
+            </h3>
             <Dots class="mb-4" />
           </div>
-          <p class="text-gray-700">2-4 people: 70 € p.p.</p>
-          <p class="text-gray-700">5 people – 50 € p.p</p>
-          <p class="text-gray-700">6 people – 45 € p.p</p>
-          <p class="text-gray-700">7 people – 40 € p.p</p>
+          <p class="text-gray-700">
+            {
+              i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS
+                .PRICES_TEXT_1
+            }
+          </p>
+          <p class="text-gray-700">
+            {
+              i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS
+                .PRICES_TEXT_2
+            }
+          </p>
+          <p class="text-gray-700">
+            {
+              i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS
+                .PRICES_TEXT_3
+            }
+          </p>
+          <p class="text-gray-700">
+            {
+              i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS
+                .PRICES_TEXT_4
+            }
+          </p>
         </div>
       </div>
     </div>
@@ -310,19 +464,31 @@ const brings = [
       <div class="">
         <h2
           class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
-          Requirements
+          {
+            i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS
+              .REQUIEREMENTS
+          }
         </h2>
         <p class="text-lg text-gray-900 mb-1">
-          <span class="text-xl strong">🔹</span> Physical fitness: normal, with the
-          habit of walking.
+          <span class="text-xl strong">🔹</span>
+          {
+            i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS
+              .REQUIEREMENTS_TEXT_1
+          }
         </p>
         <p class="text-lg text-gray-900">
-          <span class="text-xl">🔹</span> Basic hiking gear is required. Good hiking
-          boots and walking sticks are recommended.
+          <span class="text-xl">🔹</span>
+          {
+            i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS
+              .REQUIEREMENTS_TEXT_2
+          }
         </p>
         <p class="text-lg text-gray-900">
-          <span class="text-xl">🔹</span> Minimum age: 12 years old with the habit
-          of walking
+          <span class="text-xl">🔹</span>
+          {
+            i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS
+              .REQUIEREMENTS_TEXT_3
+          }
         </p>
       </div>
       <Cancellation />
@@ -337,7 +503,7 @@ const brings = [
 
     <!--  TimeLine per days  -->
     <h2 class="text-4xl md:text-5xl xl:text-6xl md:p-8 mt-16 font-bold mb-4">
-      What to expect
+      {i18n.PRODUCTS.HIKING_TREKKING.KING_OF_THE_LOW_MOUNTAINS.WHAT_TO_EXPECT}
     </h2>
     {
       DAYS.map((tour) => (

@@ -1,0 +1,676 @@
+---
+import Container from "../../../components/container.astro";
+import InformationProducts from "../../../components/ui/informationProducts.astro";
+import Icon from "../../../components/Icon.astro";
+import Layout from "../../../layouts/Layout.astro";
+import SliderReact from "../../../hooks/SliderReact";
+import Days from "@/components/products-components/days.astro";
+import Includes from "@/components/products-components/includes.astro";
+import Route from "@/components/ui/icons/route.astro";
+import Dots from "@/components/ui/dots.astro";
+import Widget from "@/components/products-components/widget.astro";
+import Cancellation from "@/components/products-components/cancellation.astro";
+
+import { getI18N } from "@/i18n/";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+
+// Duplica y cambia las rutas para añadir o modificar las fotos
+
+const IMG = [
+  {
+    src: "/hiking-and-trekking/2-day-summit-mulhacen/2dsm-1.webp",
+  },
+  {
+    src: "/hiking-and-trekking/2-day-summit-mulhacen/2dsm-2.webp",
+  },
+  {
+    src: "/hiking-and-trekking/2-day-summit-mulhacen/2dsm-3.webp",
+  },
+  {
+    src: "/hiking-and-trekking/2-day-summit-mulhacen/2dsm-4.webp",
+  },
+];
+const DAYS = [
+  {
+    title2: i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN.DAY_1.TITLE,
+    tecnicalInfo: true,
+    description:
+      i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN.DAY_1.TEXT_1,
+    description2:
+      i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN.DAY_1.TEXT_2,
+    description3:
+      i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN.DAY_1.TEXT_3,
+    description4:
+      i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN.DAY_1.TEXT_4,
+    totalDistance: "14 Km",
+    totalAscent: "850 m",
+    totalDescent: "885 m",
+    routeType: "Point-to-point",
+    physical_difficulty: "C",
+    technical_difficulty: "C",
+  },
+  {
+    title2: i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN.DAY_2.TITLE,
+    tecnicalInfo: true,
+    description:
+      i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN.DAY_2.TEXT_1,
+    description2:
+      i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN.DAY_2.TEXT_2,
+    description3:
+      i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN.DAY_2.TEXT_3,
+    description4:
+      i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN.DAY_2.TEXT_4,
+    description5:
+      i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN.DAY_2.TEXT_5,
+    description6:
+      i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN.DAY_2.TEXT_6,
+    totalDistance: "11 Km",
+    totalAscent: "1000 m",
+    totalDescent: "800 m",
+    routeType: "Point-to-point",
+    physical_difficulty: "C",
+    technical_difficulty: "C",
+  },
+];
+
+const brings = [
+  {
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+        .WHAT_TO_BRING_TEXT_2,
+  },
+
+  {
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+        .WHAT_TO_BRING_TEXT_3,
+  },
+  {
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+        .WHAT_TO_BRING_TEXT_4,
+  },
+  {
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+        .WHAT_TO_BRING_TEXT_5,
+  },
+  {
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+        .WHAT_TO_BRING_TEXT_6,
+  },
+  {
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+        .WHAT_TO_BRING_TEXT_7,
+  },
+  {
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+        .WHAT_TO_BRING_TEXT_8,
+  },
+  {
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+        .WHAT_TO_BRING_TEXT_9,
+  },
+  {
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+        .WHAT_TO_BRING_TEXT_10,
+  },
+  {
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+        .WHAT_TO_BRING_TEXT_11,
+  },
+  {
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+        .WHAT_TO_BRING_TEXT_12,
+  },
+  {
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+        .WHAT_TO_BRING_TEXT_13,
+  },
+  {
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
+        .WHAT_TO_BRING_TEXT_14,
+  },
+];
+---
+
+<Layout title="">
+  <Container>
+    <main class="mt-16">
+      <!-- Foto, nombre y destino -->
+
+      <div
+        class="bg-center bg-no-repeat bg-[url('/public/hiking-and-trekking/2-day-summit-mulhacen/2dsm-principal.webp')] h-[25rem] rounded-2xl bg-cover">
+        <div class="flex flex-col justify-end h-full p-6 w-auto bg-cover">
+          <div class="flex gap-2 [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
+            <Icon icon="destiny-logo" size="1.6rem" color="gray" />
+            <p
+              class="text-xl font-normal text-white lg:text-2xl flex flex-col justify-end h-full [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
+              {i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN.LOCATION}
+            </p>
+          </div>
+
+          <h1
+            class="text-3xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-5xl [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
+            {i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN.TITLE}
+          </h1>
+        </div>
+      </div>
+
+      <!-- Informacion general de los viajes -->
+
+      <div
+        class="grid grid-cols-2 md:grid-cols-6 h-auto mt-3 gap-3 place-content-start md:px-6">
+        <InformationProducts
+          title="Price"
+          subtitle={i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN
+            .PRICE}>
+          <div slot="icon">
+            <Icon icon="price-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts
+          title="Pre-booking"
+          subtitle={i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN
+            .PRE_BOOKING}>
+          <div slot="icon">
+            <Icon icon="price-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts
+          title="Minimum of persons"
+          subtitle={i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN
+            .MINUMUM_OF_PERSONS}>
+          <div slot="icon">
+            <Icon icon="group-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts
+          title="Duration Trail"
+          subtitle={i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN
+            .DURATION_1}
+          subtitle3={i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN
+            .DURATION_2}>
+          <div slot="icon">
+            <Icon icon="timer-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts
+          title="Tour type"
+          subtitle={i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN
+            .TOUR_TYPE}
+        />
+        <InformationProducts
+          title="Season"
+          subtitle={i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN
+            .SEASON}>
+          <div slot="icon">
+            <Icon icon="guide-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+          <!-- <div slot="icon">
+              <Icon icon="autumn-logo" size="1.6rem" color="#0E46A3" />
+            </div> -->
+        </InformationProducts>
+      </div>
+    </main>
+
+    <!-- Informacion tecnica -->
+
+    <div class="">
+      <div
+        class="grid grid-cols-2 justify-between md:grid-cols-6 h-auto mt-3 gap-3 md:px-6">
+        <InformationProducts
+          title="Total distance"
+          subtitle={i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN
+            .TOTAL_DISTANCE_1}
+          subtitle3={i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN
+            .TOTAL_DISTANCE_2}>
+          <div slot="icon">
+            <Icon icon="distance-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+
+        <InformationProducts
+          title="Total ascent"
+          subtitle={i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN
+            .TOTAL_ASCENT_1}
+          subtitle3={i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN
+            .TOTAL_ASCENT_2}>
+          <div slot="icon">
+            <Icon icon="up-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts
+          title="Total descent"
+          subtitle={i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN
+            .TOTAL_DESCENT_1}
+          subtitle3={i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN
+            .TOTAL_DESCENT_2}>
+          <div slot="icon">
+            <Icon icon="down-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts
+          title="Route type"
+          subtitle={i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN
+            .ROUTE_TYPE}>
+          <div slot="icon">
+            <Route />
+          </div>
+        </InformationProducts>
+        <InformationProducts
+          title="Physical Difficulty"
+          subtitle={i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN
+            .PHYSICAL_DIFFICULTY_1}
+          subtitle3={i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN
+            .PHYSICAL_DIFFICULTY_2}
+        />
+        <InformationProducts
+          title="Technical Difficulty"
+          subtitle={i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN
+            .TECHNICAL_DIFFICULTY_1}
+          subtitle3={i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN
+            .TECHNICAL_DIFFICULTY_2}
+        />
+      </div>
+    </div>
+
+    <!--  Include, exclude, complementaries  -->
+    <div
+      class="grid md:grid-cols-2 lg:grid-cols-3 mt-20 md:mt-26 md:mb-36 gap-16 md:gap-4">
+      <!-- Include -->
+      <Includes
+        title={i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN.INCLUDED
+          .TITLE}>
+        <ul slot="description" class="mt-4 flex flex-col gap-2">
+          <li class="flex gap-2">
+            <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+            <p class="max-w-[320px] text-md">
+              {
+                i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN.INCLUDED
+                  .TEXT_1
+              }
+            </p>
+          </li>
+          <li class="flex gap-2">
+            <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+            <p class="max-w-[320px] text-md">
+              {
+                i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN.INCLUDED
+                  .TEXT_2
+              }
+            </p>
+          </li>
+          <li class="flex gap-2">
+            <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+            <p class="max-w-[320px] text-md">
+              {
+                i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN.INCLUDED
+                  .TEXT_3
+              }
+            </p>
+          </li>
+          <li class="flex gap-2">
+            <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+            <p class="max-w-[320px] text-md">
+              {
+                i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN.INCLUDED
+                  .TEXT_4
+              }
+            </p>
+          </li>
+          <li class="flex gap-2">
+            <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+            <p class="max-w-[320px] text-md">
+              {
+                i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN.INCLUDED
+                  .TEXT_5
+              }
+            </p>
+          </li>
+          <li class="flex flex-wrap gap-2">
+            <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+            <p class="max-w-[320px] text-md">
+              {
+                i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN.INCLUDED
+                  .TEXT_6
+              }
+            </p>
+          </li>
+          <li class="flex flex-wrap gap-2">
+            <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+            <p class="max-w-[320px] text-md">
+              {
+                i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN.INCLUDED
+                  .TEXT_7
+              }
+            </p>
+          </li>
+          <li class="flex flex-wrap gap-2">
+            <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+            <p class="max-w-[320px] text-md">
+              {
+                i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN.INCLUDED
+                  .TEXT_8
+              }
+            </p>
+          </li>
+        </ul>
+      </Includes>
+      <!-- Exclude -->
+      <Includes
+        title={i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN
+          .NOT_INCLUDED.TITLE}>
+        <div slot="description" class="flex flex-col gap-2 mt-4">
+          <li class="flex flex-wrap gap-2">
+            <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+            <p class="max-w-[320px] text-md">
+              {
+                i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN
+                  .NOT_INCLUDED.TEXT_1
+              }
+            </p>
+          </li>
+          <li class="flex flex-wrap gap-2">
+            <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+            <p class="max-w-[320px] text-md">
+              {
+                i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN
+                  .NOT_INCLUDED.TEXT_2
+              }
+            </p>
+          </li>
+          <li class="flex flex-wrap gap-2">
+            <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+            <p class="max-w-[320px] text-md">
+              {
+                i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN
+                  .NOT_INCLUDED.TEXT_3
+              }
+            </p>
+          </li>
+        </div>
+      </Includes>
+      <Includes
+        title={i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN.EXTRA
+          .TITLE}>
+        <div slot="description" class="flex flex-col gap-2 mt-4">
+          <li class="flex flex-wrap gap-2">
+            <p class="max-w-[320px] text-md">
+              {
+                i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN.EXTRA
+                  .TEXT_1
+              }
+            </p>
+          </li>
+          <li class="flex flex-wrap gap-2">
+            <p class="max-w-[320px] text-md">
+              {
+                i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN.EXTRA
+                  .TEXT_2
+              }
+            </p>
+          </li>
+        </div>
+      </Includes>
+      <!-- Complementaries -->
+    </div>
+
+    <div
+      class="grid md:grid-cols-2 h-auto gap-10 md:gap-20 md:py-36 py-10 items-center">
+      <div class="static h-[385px] hidden md:block">
+        <img
+          class="rounded-xl absolute md:w-[20rem] lg:w-[25rem] hover:z-40 transition-all duration-300 ease-out hover:scale-105"
+          src="/hiking-and-trekking/2-day-summit-mulhacen/2dsm-1.webp"
+          alt="ciclista mirando la sierra con cicicleta a su lado"
+        />
+        <img
+          class="rounded-xl absolute md:w-[10rem] lg:w-[12rem] md:mt-48 lg:mt-60 ml-6 z-10 grayscale-[60%] hover:grayscale-0 transition-all duration-300 ease-out hover:scale-105"
+          src="/hiking-and-trekking/2-day-summit-mulhacen/2dsm-2.webp"
+          alt="ciclista mirando la sierra con cicicleta a su lado"
+        />
+        <img
+          class="rounded-xl absolute md:w-[10rem] lg:w-[15em] ml-64 md:-mt-24 lg:-mt-32 grayscale-[60%] hover:grayscale-0 transition-all duration-300 ease-out hover:scale-105"
+          src="/hiking-and-trekking/2-day-summit-mulhacen/2dsm-4.webp"
+          alt="ciclista mirando la sierra con cicicleta a su lado"
+        />
+      </div>
+
+      <div class="grid gap-5">
+        <div class="grid grid-flow-row gap-4">
+          <h2
+            class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+            {i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN.AVAILABILITY}
+          </h2>
+          <div class="flex gap-2">
+            <Icon icon="spring-logo" size="1.6rem" color="#0E46A3" />
+            <p class="max-w-2xl text-gray-900 mb-2 md:px-0 text-xl md:text-xl">
+              {
+                i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN
+                  .AVAILABILITY_SUMMER
+              }
+            </p>
+          </div>
+        </div>
+
+        <div class="">
+          <h2
+            class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+            {i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN.HIGHLIGHT}
+          </h2>
+          <p class="text-lg text-gray-900 mb-1">
+            <span class="text-xl">🔹</span>
+            {
+              i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN
+                .HIGHLIGHT_TEXT_1
+            }
+          </p>
+          <p class="text-lg text-gray-900 mb-1">
+            <span class="text-xl">🔹</span>
+            {
+              i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN
+                .HIGHLIGHT_TEXT_2
+            }
+          </p>
+          <p class="text-lg text-gray-900 mb-1">
+            <span class="text-xl">🔹</span>
+            {
+              i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN
+                .HIGHLIGHT_TEXT_3
+            }
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <Widget
+      title={i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN
+        .WHAT_TO_BRING}
+      description={i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN
+        .WHAT_TO_BRING_TEXT_1}
+      img="/hiking-and-trekking/trekking-alpujarras/bring.webp"
+      text={i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN
+        .WHAT_TO_BRING_TEXT_15}
+      brings={brings}
+    />
+
+    <!-- Button to download PDF -->
+    <section class="grid md:grid-cols-2 gap-10">
+      <div class="">
+        <h2
+          class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+          {i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN.REQUIEREMENTS}
+        </h2>
+        <p class="text-lg text-gray-900 mb-1">
+          <span class="text-xl strong">🔹</span>
+          {
+            i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN
+              .REQUIEREMENTS_TEXT_1
+          }
+        </p>
+
+        <p class="text-lg text-gray-900">
+          <span class="text-xl">🔹</span>
+          {
+            i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN
+              .REQUIEREMENTS_TEXT_2
+          }
+        </p>
+        <p class="text-lg text-gray-900">
+          <span class="text-xl">🔹</span>
+          {
+            i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN
+              .REQUIEREMENTS_TEXT_3
+          }
+        </p>
+      </div>
+    </section>
+    <section class="grid md:grid-cols-2 gap-10 items-center mt-10">
+      <div>
+        <h2
+          class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+          {
+            i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN
+              .RECOMMENDATIONS
+          }
+        </h2>
+        <Dots class="mb-4" />
+        <p class="text-lg text-gray-700 mb-1">
+          {
+            i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN
+              .RECOMMENDATIONS_TEXT_1
+          }
+        </p>
+      </div>
+      <div>
+        <h2
+          class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+          {i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN.PREPARATION}
+        </h2>
+        <Dots class="mb-4" />
+        <p class="text-lg text-gray-700 mb-1">
+          {
+            i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN
+              .PREPARATION_TEXT_1
+          }
+        </p>
+        <p class="text-lg text-gray-700 mb-1">
+          {
+            i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN
+              .PREPARATION_TEXT_2
+          }
+        </p>
+        <p class="text-lg text-gray-700 mb-1">
+          {
+            i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN
+              .PREPARATION_TEXT_3
+          }
+        </p>
+      </div>
+      <div>
+        <h2
+          class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+          {
+            i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN
+              .SIERRA_NEVADA_IN_SUMMER
+          }
+        </h2>
+        <Dots class="mb-4" />
+        <p class="text-lg text-gray-700 mb-1">
+          {
+            i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN
+              .SIERRA_NEVADA_IN_SUMMER_TEXT_1
+          }
+        </p>
+      </div>
+      <div>
+        <h2
+          class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+          {i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN.TRANSPORT}
+        </h2>
+        <Dots class="mb-4" />
+        <p class="text-lg text-gray-700 mb-1">
+          {
+            i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN
+              .TRANSPORT_TEXT_1
+          }
+        </p>
+      </div>
+    </section>
+
+    <section class="grid md:grid-cols-2 mt-10 gap-6 items-center">
+      <Cancellation />
+      <div class="flex flex-col gap-2 md:p-4">
+        <div>
+          <h3 class="text-4xl md:text-5xl xl:text-6xl font-bold">
+            {i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN.PRICES}:
+          </h3>
+          <Dots class="mb-4" />
+        </div>
+        <p class="text-gray-700">
+          {i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN.PRICES_TEXT_1}
+        </p>
+        <p class="text-gray-700">
+          {i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN.PRICES_TEXT_2}
+        </p>
+        <p class="text-gray-700">
+          {i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN.PRICES_TEXT_3}
+        </p>
+        <p class="text-gray-700">
+          {i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN.PRICES_TEXT_4}
+        </p>
+        <p class="text-gray-700">
+          {i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN.PRICES_TEXT_5}
+        </p>
+        <p class="text-gray-700">
+          {i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN.PRICES_TEXT_6}
+        </p>
+        <p class="text-gray-700">
+          {i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN.PRICES_TEXT_7}
+        </p>
+      </div>
+    </section>
+
+    <!-- Slider Photos -->
+    <section class="m-auto md:w-full rounded-xl md:px-8 md:py-20">
+      <ol class="relative mt-16">
+        {(<SliderReact IMG={IMG} client:visible />)}
+      </ol>
+    </section>
+
+    <!--  TimeLine per days  -->
+    <h2 class="text-4xl md:text-5xl xl:text-6xl md:p-8 mt-16 font-bold">
+      {i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN.WHAT_TO_EXPECT}
+    </h2>
+    <h2 class="text-2xl md:text-3xl xl:text-4xl md:px-8 mt-8 font-bold">
+      {
+        i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN
+          .WHAT_TO_EXPECT_TEXT_1
+      }
+    </h2>
+    <p class="text-lg text-gray-700 md:px-8 mt-8 mb-8">
+      {
+        i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN
+          .WHAT_TO_EXPECT_TEXT_2
+      }
+    </p>
+    {
+      DAYS.map((tour) => (
+        <ol class="mb-10">
+          <Days {...tour} />
+        </ol>
+      ))
+    }
+  </Container>
+</Layout>

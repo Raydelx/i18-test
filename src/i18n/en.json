@@ -26,21 +26,6 @@
         "EXTRA": "Extra"
     },
 
-    "INFORMATION_PRODUCTS": {
-        "PRICE": "Price",
-        "PRE_BOOKING": "Pre-booking",
-        "MINUMUM_OF_PERSONS": "Minimum of persons",
-        "DURATION": "Duration",
-        "ROUTE_TYPE": "Route Type",
-        "SEASON": "Season",
-        "TOTAL_DISTANCE": "Total Distance",
-        "TOTAL_ASCENT": "Total Ascent",
-        "TOTAL_DESCENT": "Total Descent",
-        "DIFFICULTY": "Difficulty",
-        "PHYSICAL_DIFFICULTY": "Physical Difficulty",
-        "TECHNICAL_DIFFICULTY": "Technical Difficulty"      
-    },
-
     "DAY" : {
         "DAY": "Day ",
         "OPTIONAL": "Optional:",
@@ -52,6 +37,22 @@
         "DIFFICULTY": "Difficulty",
         "PHYSICAL_DIFFICULTY": "Physical Difficulty",
         "TECHNICAL_DIFFICULTY": "Technical Difficulty"    
+    },
+
+    "INFO_PRODUCTS" :{
+        "PRICE": "Price",
+        "PRE_BOOKING": "Pre-booking",
+        "MINIMUM_OF_PERSONS": "Minimum of persons",
+        "DURATION": "Duration",
+        "TOUR_TYPE": "Tour Type",
+        "SEASON": "Season",
+        "TOTAL_DISTANCE": "Total Distance",
+        "TOTAL_ASCENT": "Total Ascent",
+        "TOTAL_DESCENT": "Total Descent",
+        "ROUTE_TYPE": "Route Type",
+        "DIFFICULTY": "Difficulty",
+        "PHYSICAL_DIFFICULTY": "Physical Difficulty",
+        "TECHNICAL_DIFFICULTY": "Technical Difficulty"
     },
 
     "TAILOR_MADE": { 
@@ -94,6 +95,53 @@
         "BANNER_BUTTON" : "Fiil out our inquiry form"
 
     },
+
+    "BOOK_MY_TOUR": {
+        "TITLE": "Book My Tour",
+
+        "FULL_NAME":"Full Name",
+        "NAME_PLACEHOLDER": "Enter your full name",
+
+        "EMAIL":"Email Address",
+        "EMAIL_PLACEHOLDER": "Enter your email address",
+
+        "PHONE":"Phone Number",
+        "PHONE_PLACEHOLDER": "Enter your phone number",
+
+        "NATIONALITY":"Nationality",
+        "NATIONALITY_PLACEHOLDER": "Enter your nationality",
+
+        "LANGUAGE" : "What language do you speak?",
+        "LANGUAGE_PLACEHOLDER": "Select your language",
+
+        "ACTIVITY": "Activity",
+        "ACTIVITY_PLACEHOLDER": "Select your activity",
+
+        "DATE": "Date of joinig the activity",
+        
+        "NUMBER OF PEOPLE": "How many people?",
+
+        "PARTICIPANTS" : "Participants",
+
+        "NAME": "Name",
+
+        "DATE_OF_BIRTH": "Date of birth",
+
+        "WEIGHT": "Weight (Only cycle tours)",
+        "WEIGHT_PLACEHOLDER": "Enter your weight in kg",
+
+        "HEIGHT": "Height (Only cycle tours)",
+        "HEIGHT_PLACEHOLDER": "Enter your height in M",
+
+        "CHECKBOX": "I accept the ",
+        "CHECKBOX_LINK": "liability terms",
+
+        "SEND": "Send"
+
+
+
+    },
+
 
     "FORM_TAILOR":{
         "TITLE": "Tailor-Made Travel Inquiry Form",
@@ -536,6 +584,783 @@
 
     "PRODUCTS": {
 
+        
+        "HIKING_TREKKING" : {
+            
+            "TREKKING_ALPUJARRAS":{
+
+                "TITLE": "Trekking Alpujarras",
+                "LOCATION": "Sierra Nevada Natural Park",
+                "PRICE": "1.100",
+                "PRE_BOOKING": "20%",
+                "MINUMUM_OF_PERSONS": "4",
+                "DURATION": "8 Days",
+                "TOUR_TYPE": "Guided",
+                "SEASON": "Spring Autumn",
+                "TOTAL_DISTANCE": "72 km",
+                "TOTAL_ASCENT": "4.015 m",
+                "TOTAL_DESCENT": "3.310 m",
+                "ROUTE_TYPE": "Point to point",
+                "PHYSICAL_DIFFICULTY": "B - C",
+                "TECHNICAL_DIFFICULTY": "B",
+
+                 "INCLUDED": {
+                    "TITLE": "Included",
+                    "TEXT_1": "Qualified Mountain Leader",
+                    "TEXT_2": "Liability insurance and assistance",
+                    "TEXT_3": "Airport Transfer",
+                    "TEXT_4": "Daily luggage transport",
+                    "TEXT_5": "Accommodation: 7 nights",
+                    "TEXT_6": "Breakfast: 7 days",
+                    "TEXT_7": "Hiking shirt"
+                },
+                "NOT_INCLUDED": {
+                    "TITLE": "Not included",
+                    "TEXT_1": "Flight",
+                    "TEXT_2": "Travel & assistance insurance",
+                    "TEXT_3": "Cancellation insurance",
+                    "TEXT_4": "Lunch and dinner",
+                    "TEXT_5": "Extra meals",
+                    "TEXT_6": "Extra nights",
+                    "TEXT_7": "Extra excursions or activities",
+                    "TEXT_8": "Personal expenses",
+                    "TEXT_9": "Tips",
+                    "TEXT_10": "Private transport after or before the tour"
+                },
+
+                "EXTRA": {
+                    "TITLE": "Extra",
+                    "TEXT_1": "Visit and taste the famous ham of Trevélez in the highest village of Sierra Nevada."
+                              
+                },
+
+                "AVAILABILITY": "Availability",
+                "AVAILABILITY_TEXT_1": "2025",
+                "AVAILABILITY_TEXT_2": "20-09 / 27-09",
+                "AVAILABILITY_TEXT_3": "2026",
+                "AVAILABILITY_TEXT_4": "11-04 / 18-04",
+                "AVAILABILITY_TEXT_5": "05-09 / 12-09",
+
+                "HIGHLIGHT": "Highlight",
+                "HIGHLIGHT_TEXT_1": "Sierra Nevada Natural Park",
+                "HIGHLIGHT_TEXT_2": "Whitewashed mountain villages",
+                "HIGHLIGHT_TEXT_3": "Beautiful scenery while hiking",
+                "HIGHLIGHT_TEXT_4": "Mountain ecosystem",
+                "HIGHLIGHT_TEXT_5": "The selected rural hotels",
+                "HIGHLIGHT_TEXT_6": "Sleeping in the highest village of the Sierra Nevada",
+
+                "WHAT_TO_BRING" : "What to bring for Hiking",
+                "WHAT_TO_BRING_TEXT_1" : "Weather is important to consider while packing for your outdoor activity. Your packing list is based on your comfort and sensitivity. Layering your clothes is the best way to travel and be outdoors. It is highly recommended as the best way to stay warm and cool, as the weather is bound to change in the mountains.",
+                "WHAT_TO_BRING_TEXT_2" : "Water bottle min. 1.5 L",
+                "WHAT_TO_BRING_TEXT_3" : "Picnic",
+                "WHAT_TO_BRING_TEXT_4" : "Light day pack 20 l – 35 L",
+                "WHAT_TO_BRING_TEXT_5" : "Waterproof Rain cover backpack",
+                "WHAT_TO_BRING_TEXT_6" : "Weather-appropriate and comfortable clothing",
+                "WHAT_TO_BRING_TEXT_7" : "Hiking jacket",
+                "WHAT_TO_BRING_TEXT_8" : "Quick-drying pants/shorts",
+                "WHAT_TO_BRING_TEXT_9" : "Long-sleeve shirt",
+                "WHAT_TO_BRING_TEXT_10" : "Hiking socks",
+                "WHAT_TO_BRING_TEXT_11" : "Rainwear (jacket and pants)",
+                "WHAT_TO_BRING_TEXT_12" : "Hiking shoes, not open shoes!",
+                "WHAT_TO_BRING_TEXT_13" : "Trekking poles.",
+                "WHAT_TO_BRING_TEXT_14" : "Sun protection",
+                "WHAT_TO_BRING_TEXT_15" : "Polar fleece or softshell jacket",
+                "WHAT_TO_BRING_TEXT_16" : "Gloves",
+                "WHAT_TO_BRING_TEXT_17" : "Warm hat",
+                "WHAT_TO_BRING_TEXT_18" : "Neck gaiter",
+                "WHAT_TO_BRING_TEXT_19" : "Any questions about the material's recommendations, contact us or check our blog, “What to Bring for Hiking.”",
+
+                "REQUIEREMENTS":"Requirements",
+                "REQUIEREMENTS_TEXT_1":"Good physical fitness, with the habit of walking",
+                "REQUIEREMENTS_TEXT_2":"Closed shoes, no open shoes!",
+                "REQUIEREMENTS_TEXT_3":"Material: Basic hiking gear is required. Good hiking boots and walking sticks are recommended.",
+                "REQUIEREMENTS_TEXT_4":"Booking Conditions. Please take a look at the terms and conditions.",
+                "REQUIEREMENTS_TEXT_5":"Travel insurance. Please take a look at the terms and conditions.",
+                "REQUIEREMENTS_TEXT_6":"Release of liability form. Please take a look at the terms and conditions.",
+
+                "CANCELLATION":"Cancellation Policy",
+                "CANCELLATION_TEXT":"See Terms and Conditions.",
+
+                "WHAT_TO_EXPECT": "What to expect",
+                "WHAT_TO_EXPECT_TEXT_1": "Hiking in the rich Andalusian culture and history with the natural beauty of picturesque landscapes, charming villages, and iconic landmarks.",
+                "WHAT_TO_EXPECT_TEXT_2": "Your main luggage is taken between the villages along the route. This leaves you free to hike with a light bag with the essentials you need during the day. Hiking with a light backpack is much more pleasant than dragging a heavy rucksack, allowing you to enjoy the landscape without a heavy load. The trekking takes you through the picturesque Alpujarra region on the southern slopes of the Sierra Nevada, Spain's highest mountain range. It seems like a journey back in time, as the area has its unique culture from ancient times to the present day, shown in its food culture, architecture, and traditions. The main feature of the outstanding landscape is the villages situated mainly above 1.000 m. They are made up of white, square-shaped houses with flat roofs spreading out across the valleys. The adventure sets out from the village of Laroles located near the pass of La Ragua, the only connection between the north and south of the Sierra Nevada, and heading toward the west.",
+                "WHAT_TO_EXPECT_TEXT_3": "During the journey, you will discover the many villages and their terraced fields climbing the slopes presenting beautiful views and dramatic landscapes of the mountain range. The blossoms of spring and the colors of autumn are the ideal time to join the trekking making it a unique experience.",
+                "WHAT_TO_EXPECT_TEXT_4": "Join us and uncover the hidden beauty of the Alpujarra region a treasure to discover!",
+
+                 "DAY_1": {
+                    "TITLE": "Day 1",
+                    "TEXT_1": "Upon arrival in Málaga or Granada, our pick-up will drive us to our rural hotel in the Guadix region located between the north of the Sierra Nevada Mountain Range and the Gorafe desert, one of the unique landscapes of the province of Granada. Upon arrival in Málaga or Granada, our pick-up will drive us to our rural hotel in the Guadix region located between the north of the Sierra Nevada Mountain Range and the Gorafe desert, one of the unique landscapes of the province of Granada. The tour leader will organize dinner to celebrate the first day of the journey."
+                 },
+
+                 "DAY_2": {
+                    "TITLE": "Day 2",
+                    "SUBTITLE": "Trail 1 Laroles – Válor",
+                    "TEXT_1": "After breakfast, we drive over the mountain pass “Puerto La Ragua” to the trekking starting point in the Laroles village. The trail starts at the upper part of the village, at 1000 meters above sea level, from where you can see the flat roofs of the town's houses. One of the defining elements of the territory that reaches its maximum significance in the Alpujarra region is the architecture with values from other cultures and civilizations. The orography and relief of the terrain influence the profile of the towns. These villages are distributed and oriented towards the south so that the sun offers them its luminosity and keeps them warm for as long as possible in the cold winters. Most of these towns are located in the middle of the slopes that descend from the top of the Sierra Nevada in a stepped composition that gives them a charm.",
+                    "TEXT_2": "Dinner: The tour leader will organize a dinner."
+                 },
+
+                 "DAY_3": {
+                    "TITLE": "Day 3",
+                    "SUBTITLE": "Trail 2 Válor – Mecina Bombarón",
+                    "TEXT_1": "We leave the village of Válor which was the homeland of the Alpujarra hero Aben Humeya, a descendant of the Umayyad caliphs, who was proclaimed King of the Alpujarra after the Moorish uprising against the Christians in the reign of Philip II, back in 1568. The second hike will take us to Yegen, a peaceful village where the romantic traveler Gerald Brenan lived known as the author of “Al Sur de Granada”, one of the best-known books about the Alpujarra. After crossing the Mecina River and a steep climb we reach the village of Mecina Bombarón. After we take the car that brings us to our next hotel nearby in the village of Cádiar located between the Sierra Nevada and the Contraviesa mountain range.",
+                    "TEXT_2": "Dinner: The tour leader will organize a dinner."
+                 },
+
+                 "DAY_4": {
+                    "TITLE": "Day 4",
+                    "SUBTITLE": "Trail 3 Cádiar - Trevélez",
+                    "TEXT_1": "Today's stage will be more demanding. It will take us from the southernmost point of the Alpujarra trail (800 meters) to the highest trekking point, about 1.500 meters above sea level, in the village of Trevélez. Besides being the highest village in the Sierra Nevada, Trevélez is renowned for its naturally cured hams, benefiting from the healthy air of Sierra Nevada. In the 19th century, the ham of Trevélez gained recognition when Queen Isabel II granted it the distinction of being a supplier to the Royal House. It currently holds the Denomination of Origin and has attained worldwide recognition.",
+                    "TEXT_2": "Dinner: The tour leader will organize a dinner."
+                 },
+
+                 "DAY_5": {
+                    "TITLE": "Day 5",
+                    "SUBTITLE": "Trail 4 Trevélez – La Taha",
+                    "TEXT_1": "Today, the trail takes you through a forest of holm oaks which in autumn offers a colorful and impressive valley. In spring the gorse and broom come into bloom, producing a sea of bright yellow flowers. The panoramic views we pass expose the rugged landscapes with deep valleys and large slopes of the Alpujarra region. Isolated places like ravines are home to many species of fauna and flora due to microclimates characterized by freezing temperatures in winter and mild temperatures in summer. After crossing two ravines and a long descent the path arrives at the village of Busquístar near our destination for today called “La Taha”, a municipality that consists of several beautiful small towns. The name derives from the administrative divisions of the ancient Kingdom of Granada during the Nasrid era. It is a peaceful place with stunning views, preserving well-maintained traditional neighborhoods in the Alpujarra.",
+                    "TEXT_2": "Dinner: The tour leader will organize a dinner."
+                 },
+
+                 "DAY_6": {
+                    "TITLE": "Day 6",
+                    "SUBTITLE": "Trail 5 La Taha – Capileira ",
+                    "TEXT_1": "Today's last stage is an upward trail with a long ascent in the morning that brings us to our last destination, the village of Capileira, the highest of the three small towns located at 1.435 meters in the gorge of the Poqueira River. The Poqueira Gorge and the three villages on its slopes have become one of the most iconic sights of the Alpujarra Mountains. It is located at the foot of the highest peaks and contains one of the most surprising landscapes of the Sierra Nevada Natural Park. Here we stay for the last two nights of the trekking.",
+                    "TEXT_2": "Free Dinner"
+                 },
+
+                 "DAY_7": {
+                    "TITLE": "Day 7",
+                    "SUBTITLE": "Free day Capileira",
+                    "TEXT_1": "Explore the Historic-Artistic site of Poqueira River Valley and the three villages; Pampaneira, Bubión, and Capileira.",
+                    "TEXT_2": "Although its origins date back to the Phoenicians, Romans, and Visigoths, the strongest legacy is left by the Arabs. The traditional architecture with typical white houses and flat roofs built along steep and winding streets, irrigation systems, agriculture, and linguistic roots are the inheritance left by a culture that was present for eight hundred years.",
+                    "TEXT_3": "For the enthusiasts, there is the option to join the guide for an extra hike in the area.",
+                    "TEXT_4": "The guide will organize a place to have dinner together to celebrate the last evening of the journey."
+                 },
+                    "DAY_8": {
+                        "TITLE": "Day 8",
+                        "TEXT_1": "The journey ends after breakfast at our hotel. There will be a private transfer from the hotel to the airport in Málaga or Granada."
+                    }
+
+                
+            },
+          
+            "THE_OLD_MINE_TRAIL": {
+
+                "TITLE": "The Old Mine Trail",
+                "LOCATION": "Sierra Nevada National Park",
+                "PRICE": "40 (6 pax.)",
+                "PRE_BOOKING": "100%",
+                "DURATION_1": "Trail 1: 7-8 hours",
+                "DURATION_2": "Trail 2: 6-7 hours",
+                "MINUMUM_OF_PERSONS": "2",
+                "TOUR_TYPE": "Guided",
+                "SEASON": "All year",
+
+                "TOTAL_DISTANCE_1": "Trail 1: 22 km",
+                "TOTAL_DISTANCE_2": "Trail 2: 15 km",
+
+                "TOTAL_ASCENT_1": "Trail 1: 1.000 m",
+                "TOTAL_ASCENT_2": "Trail 2: 800 m",
+
+                "TOTAL_DESCENT_1": "Trail 1: 1000 m",
+                "TOTAL_DESCENT_2": "Trail 2: 800 m",
+
+                "ROUTE_TYPE": "Loop Trail",               
+
+                "PHYSICAL_DIFFICULTY_1": "Trail 1: C",
+                "PHYSICAL_DIFFICULTY_2": "Trail 2: B",
+
+                "TECHNICAL_DIFFICULTY_1": "Trail 1: B",
+                "TECHNICAL_DIFFICULTY_2": "Trail 2: B",
+
+                 "INCLUDED": {
+                    "TITLE": "Included",
+                    "TEXT_1": "Professional qualified mountain leader",
+                    "TEXT_2": "Liability insurance and assistance",
+                    "TEXT_3": "Transfer"                                    
+                },
+                "NOT_INCLUDED": {
+                    "TITLE": "Not included",
+                    "TEXT_1": "Snack and lunch"                      
+                },
+
+                "AVAILABILITY": "Availability",
+                "AVAILABILITY_TEXT_1": "All Year",
+
+                "HIGHLIGHT": "Highlight",
+                "HIGHLIGHT_TEXT_1": "Sierra Nevada National Park",
+                "HIGHLIGHT_TEXT_2": "Spectacular views from the north face of the Sierra Nevada Mountain Range",
+                "HIGHLIGHT_TEXT_3": "The old mines",
+                "HIGHLIGHT_TEXT_4": "The iconic chestnut tree",
+                "HIGHLIGHT_TEXT_5": "Great diversity of flora", 
+                "HIGHLIGHT_TEXT_6": "Outdoors picnic",
+
+                "WHAT_TO_BRING" : "What to bring for Hiking",
+                "WHAT_TO_BRING_TEXT_1" : "Weather is important to consider while packing for your outdoor activity. Your packing list is based on your comfort and sensitivity. Layering your clothes is the best way to travel and be outdoors. It is highly recommended as the best way to stay warm and cool, as the weather is bound to change in the mountains.",
+                "WHAT_TO_BRING_TEXT_2" : "Water bottle min. 1.5 L",
+                "WHAT_TO_BRING_TEXT_3" : "Picnic",
+                "WHAT_TO_BRING_TEXT_4" : "Light backpack",                
+                "WHAT_TO_BRING_TEXT_5" : "Weather-appropriate and comfortable clothing",                
+                "WHAT_TO_BRING_TEXT_6" : "Hiking jacket",                
+                "WHAT_TO_BRING_TEXT_7" : "Hiking shoes, not open shoes!",                
+                "WHAT_TO_BRING_TEXT_8" : "Sun protection",                
+                "WHAT_TO_BRING_TEXT_9" : "Gloves",                
+                "WHAT_TO_BRING_TEXT_10" : "Warm hat",                
+                "WHAT_TO_BRING_TEXT_11" : "Neck gaiter",             
+                "WHAT_TO_BRING_TEXT_12" : "Trekking poles",             
+                "WHAT_TO_BRING_TEXT_13" : "Rain gear",             
+                "WHAT_TO_BRING_TEXT_14" : "Waterproof Rain cover backpack",             
+                "WHAT_TO_BRING_TEXT_15" : "Any questions about the material's recommendations, contact us or check our blog, “What to Bring for Hiking.”",
+
+                "REQUIEREMENTS":"Requirements",
+                "REQUIEREMENTS_TEXT_1":"Good physical fitness",
+                "REQUIEREMENTS_TEXT_2":"Minimum age: 16 years + habit of walking",
+                "REQUIEREMENTS_TEXT_3":"Closed shoes, no open shoes!",
+                "REQUIEREMENTS_TEXT_4":"Basic hiking gear is required (Check our blog for more information about hiking gear)",
+
+                "PRICES": "Price:",
+                "PRICES_TEXT_1": "2 - 4 people - 70 € p.p",
+                "PRICES_TEXT_2": "5 people - 50 € p.p",
+                "PRICES_TEXT_3": "6 people - 45 € p.p",
+                "PRICES_TEXT_4": "7 people - 40 € p.p",
+
+                "WHAT_TO_EXPECT": "What to expect",
+
+                 "DAY_1": {
+
+                    "TITLE": "Day 1",
+                    "TEXT_1": "One of the most beautiful routes in Sierra Nevada National Park is the Old Mine Trail. This historic path, built at the end of the 19th century to access the mines, follows the Genil River toward the confluence of several rivers at the very end of the valley. The valley reveals its stunning scenery, including the rugged north faces of the highest peaks in the Sierra Nevada: Mulhacén, Veleta, and Alcazaba. Throughout the day you come across ruins of stone buildings, old mine tunnels, and the typical Iberian Ibex or the golden eagles are common to see. To get to the starting point of the trail we drive approx. 30 min. to the beautiful village of Güéjar Sierra, a mountain town located at 1.000 meters on the northwestern slope of the Sierra Nevada National Park.",
+                    "TEXT_2": "We have two variants with different levels of hiking difficulty.",
+                    "TEXT_3": "(Check out our blog for more information about our hiking grades)"
+                    
+                }
+
+                
+            },
+            
+            "SUNRISE_SIERRA_NEVADA": {
+                "TITLE": "Sunrise Sierra Nevada",
+                "LOCATION": "Sierra Nevada National Park",
+                "PRICE": "90 (4 Pax)",
+                "PRE_BOOKING": "100%",
+                "MINIMUM_OF_PERSONS": "2",
+                "DURATION": "7 Hours",
+                "TOUR_TYPE": "Guided",
+                "SEASON": "Summer",
+
+                "TOTAL_DISTANCE": "12 km",
+                "TOTAL_ASCENT": "900 m",    
+                "TOTAL_DESCENT": "900 m",
+                "ROUTE_TYPE": "Out-and-back",
+                "PHYSICAL_DIFFICULTY": "C",
+                "TECHNICAL_DIFFICULTY": "B",
+
+                 "INCLUDED": {
+                    "TITLE": "Included",
+                    "TEXT_1": "Qualified Mountain Leader",
+                    "TEXT_2": "Liability insurance and assistance",
+                    "TEXT_3": "Transfer",
+                    "TEXT_4": "Water",
+                    "TEXT_5": "Material: Headlight, gloves, beanie, walking poles",
+                    "TEXT_6": "A hot drink at the summit"
+                },
+
+                "NOT_INCLUDED": {
+                    "TITLE": "Not included",                                                                  
+                    "TEXT_1": "Breakfast",
+                    "TEXT_2": "Snack"
+                },
+                "EXTRA": {
+                    "TITLE": "Extra",
+                    "TEXT_1": "Breakfast in a mountain refuge at the end of the walk"                 
+                },
+
+                "AVAILABILITY": "Availability",
+                "AVAILABILITY_SUMMER": "Summer",                
+                
+
+                "HIGHLIGHT": "Highlight",
+                "HIGHLIGHT_TEXT_1": "National Park Sierra Nevada",
+                "HIGHLIGHT_TEXT_2": "Night Hike",
+                "HIGHLIGHT_TEXT_3": "Breakfast in the mountain refuge",
+                "HIGHLIGHT_TEXT_4": "Sunrise from the Peak Veleta at 3.392 meters",
+
+                "PRICES": "Price:",
+                "PRICES_TEXT_1": "1 person - 200 €",
+                "PRICES_TEXT_2": "2 people – 120 € p.p",
+                "PRICES_TEXT_3": "3 people – 100 € p.p",
+                "PRICES_TEXT_4": "4-5 people – 90 € p.p",
+                "PRICES_TEXT_5": "6-7 people – 80 € p.p",
+
+                "WHAT_TO_BRING" : "What to bring for Hiking",
+                "WHAT_TO_BRING_TEXT_1" : "Weather is important to consider while packing for your outdoor activity. Your packing list is based on your comfort and sensitivity. Layering your clothes is the best way to travel and be outdoors. It is highly recommended as the best way to stay warm and cool, as the weather is bound to change in the mountains.",
+                "WHAT_TO_BRING_TEXT_2" : "Water canteen minimum 1 L",
+                "WHAT_TO_BRING_TEXT_3" : "Picnic / snack",
+                "WHAT_TO_BRING_TEXT_4" : "Light backpack",                
+                "WHAT_TO_BRING_TEXT_5" : "Weather-appropriate and comfortable clothing",                
+                "WHAT_TO_BRING_TEXT_6" : "Hiking jacket",                
+                "WHAT_TO_BRING_TEXT_7" : "Hiking shoes",                
+                "WHAT_TO_BRING_TEXT_8" : "Sun protection",                
+                "WHAT_TO_BRING_TEXT_9" : "Gloves",                
+                "WHAT_TO_BRING_TEXT_10" : "Warm hat",                
+                "WHAT_TO_BRING_TEXT_11" : "Neck gaiter",             
+                "WHAT_TO_BRING_TEXT_12" : "Trekking poles",             
+                "WHAT_TO_BRING_TEXT_13" : "Any questions about the recommendations of the material do not hesitate to contact us.",
+
+                "REQUIEREMENTS":"Requirements",
+                "REQUIEREMENTS_TEXT_1":"Physical fitness: Good, with the habit of doing aerobic sports.",
+                "REQUIEREMENTS_TEXT_2":"Basic hiking gear is required. Good hiking boots and walking sticks are recommended.",
+                "REQUIEREMENTS_TEXT_3":"Minimum age: 14 years old with the habit of walking",
+
+                "WHAT_TO_EXPECT": "What to expect",
+
+                 "DAY_1": {
+
+                    "TITLE": "Day 1",
+                    "TEXT_1": "Under the dark sky, at an elevation of 2.500 meters, we start the ascent guided by the promise of the spectacular sunrise awaiting us at the summit of Veleta at 3.392 meters, the second-highest peak of the Sierra Nevada. As we crest the final ridge, the first hints of light emerge on the horizon, painting the sky in beautiful twilight colors of yellowish-red. Finally, atop the peak, we are greeted by the sunrise, a special moment of contemplation. After, we begin our descent retracing our steps along the trail we climbed. Let’s step inside the mountain refuge for a fresh coffee and breakfast.",
+                    "TEXT_2": "On the way back we can have a great lunch at a typical rural Andalusian farmhouse."
+                    
+                }
+                            
+                
+            },
+
+            "KING_OF_THE_LOW_MOUNTAINS": {
+
+                "TITLE": "King of The Low Mountains",
+                "LOCATION": "Sierra Nevada National Park",
+                "PRICE": "70 (4 pax.)",
+                "PRE_BOOKING": "100%",
+                "MINIMUM_OF_PERSONS": "2",
+                "DURATION": "6 Hours",
+                "TOUR_TYPE": "Guided",
+                "SEASON": "Winter Spring Autumn",
+
+                "TOTAL_DISTANCE": "11 km",
+                "TOTAL_ASCENT": "750 m",
+                "TOTAL_DESCENT": "750 m",
+                "ROUTE_TYPE": "Loop Trial",
+                "PHYSICAL_DIFFICULTY": "B",
+                "TECHNICAL_DIFFICULTY": "B",
+
+                 "INCLUDED": {
+                    "TITLE": "Included",
+                    "TEXT_1": "Qualified Mountain Leader",
+                    "TEXT_2": "Liability insurance and assistance",
+                    "TEXT_3": "Transfer",
+                    "TEXT_4": "Water"
+                },
+                "NOT_INCLUDED": {
+                    "TITLE": "Not included",                                                                  
+                    "TEXT_1": "Lunch",
+                    "TEXT_2": "Snack"
+                },
+                "EXTRA": {
+                    "TITLE": "Extra",
+                    "TEXT_1": "Lunch at local rural Andalusian Farmhouse"                 
+                },
+
+                "AVAILABILITY": "Availability",
+                "AVAILABILITY_SPRING": "Spring",                
+                "AVAILABILITY_AUTUMN": "Autumn",
+                "AVAILABILITY_WINTER": "Winter",
+
+                "HIGHLIGHT": "Highlight",
+                "HIGHLIGHT_TEXT_1": "Hiking in Sierra Nevada National",
+                "HIGHLIGHT_TEXT_2": "Dolomite landscape",
+                "HIGHLIGHT_TEXT_3": "360º viewpoint at 2.080 m",
+
+                "PRICES": "Price:",
+                "PRICES_TEXT_1": "2 - 4 people: 70 € p.p.",
+                "PRICES_TEXT_2": "5 people – 50 € p.p",
+                "PRICES_TEXT_3": "6 people – 45 € p.p",
+                "PRICES_TEXT_4": "7 people – 40 € p.p",
+
+                "WHAT_TO_BRING" : "What to bring for Hiking",
+                "WHAT_TO_BRING_TEXT_1" : "Weather is important to consider while packing for your outdoor activity. Your packing list is based on your comfort and sensitivity. Layering your clothes is the best way to travel and be outdoors. It is highly recommended as the best way to stay warm and cool, as the weather is bound to change in the mountains.",
+                "WHAT_TO_BRING_TEXT_2" : "Water canteen minimum 1.5 L",
+                "WHAT_TO_BRING_TEXT_3" : "Picnic / snack",
+                "WHAT_TO_BRING_TEXT_4" : "Light backpack",                
+                "WHAT_TO_BRING_TEXT_5" : "Weather-appropriate and comfortable clothing",                
+                "WHAT_TO_BRING_TEXT_6" : "Hiking jacket",                
+                "WHAT_TO_BRING_TEXT_7" : "Hiking shoes",                
+                "WHAT_TO_BRING_TEXT_8" : "Sun protection",                
+                "WHAT_TO_BRING_TEXT_9" : "Gloves",                
+                "WHAT_TO_BRING_TEXT_10" : "Warm hat",                
+                "WHAT_TO_BRING_TEXT_11" : "Neck gaiter",             
+                "WHAT_TO_BRING_TEXT_12" : "Trekking poles",             
+                "WHAT_TO_BRING_TEXT_13" : "Any questions about the recommendations of the material do not hesitate to contact us.",
+
+                "REQUIEREMENTS":"Requirements",
+                "REQUIEREMENTS_TEXT_1":"Physical fitness: normal, with the habit of walking.",
+                "REQUIEREMENTS_TEXT_2":"Basic hiking gear is required. Good hiking boots and walking sticks are recommended.",
+                "REQUIEREMENTS_TEXT_3":"Minimum age: 12 years old with the habit of walking",
+
+                "WHAT_TO_EXPECT": "What to expect",
+
+                 "DAY_1": {
+
+                    "TITLE": "Day 1",
+                    "TEXT_1": "Walk through the spectacular lunar scenery of the dolomite landscape in the Sierra Nevada National Park. At the summit, you will be rewarded with 360º views of Sierra Nevada and the surroundings of the City Granada. A great escape from the city and a perfect day out in the mountains!",
+                    "TEXT_2": "On the way back we can have a great lunch at a typical rural Andalusian farmhouse."
+                    
+                }
+
+            },
+
+            "FAMILY_HIKE_GORGE_SIERRA_NEVADA": {
+
+                "TITLE": "Family Hike - The Gorge of Sierra Nevada",
+                "LOCATION": "Monachil Sierra Nevada",
+                "PRICE": "70 (4 pax.)",
+                "PRE_BOOKING": "100%",
+                "MINIMUM_OF_PERSONS": "2",
+                "DURATION": "6 Hours",
+                "TOUR_TYPE": "Guided",
+                "SEASON": "All Year",
+
+                "TOTAL_DISTANCE": "11 km",
+                "TOTAL_ASCENT": "400 m",
+                "TOTAL_DESCENT": "400 m",
+                "ROUTE_TYPE": "Loop Trial",
+                "PHYSICAL_DIFFICULTY": "B",
+                "TECHNICAL_DIFFICULTY": "B",
+
+                 "INCLUDED": {
+                    "TITLE": "Included",
+                    "TEXT_1": "Qualified Mountain Leader",
+                    "TEXT_2": "Liability insurance and assistance",
+                    "TEXT_3": "Transfer",
+                    "TEXT_4": "Water"
+                },
+                "NOT_INCLUDED": {
+                    "TITLE": "Not included",
+                    "TEXT_1": "Lunch"
+                },
+                "EXTRA": {
+                    "TITLE": "Extra"
+                    
+                },
+
+                "AVAILABILITY": "Availability",
+                "AVAILABILITY_SPRING": "Spring",
+                "AVAILABILITY_SUMMER": "Summer",
+                "AVAILABILITY_AUTUMN": "Autumn",
+                "AVAILABILITY_WINTER": "Winter",
+
+                "HIGHLIGHT": "Highlight",
+                "HIGHLIGHT_TEXT_1": "Sierra Nevada National Park",
+                "HIGHLIGHT_TEXT_2": "Suspension bridges",
+                "HIGHLIGHT_TEXT_3": "The Gorge",
+                "HIGHLIGHT_TEXT_4": "The river Monachil",
+                "HIGHLIGHT_TEXT_5": "Excellent views",
+                
+                "PRICES": "Price:",
+                "PRICES_TEXT_1": "2 - 4 people - 70 € p.p.",
+                "PRICES_TEXT_2": "5 people - 50 € p.p",
+                "PRICES_TEXT_3": "6 people - 45 € p.p",
+                "PRICES_TEXT_4": "7 people - 40 € p.p",
+                "PRICES_TEXT_5": "For families, there is a discount.",
+
+                "WHAT_TO_BRING" : "What to bring for Hiking",
+                "WHAT_TO_BRING_TEXT_1" : "Weather is important to consider while packing for your outdoor activity. Your packing list is based on your comfort and sensitivity. Layering your clothes is the best way to travel and be outdoors. It is highly recommended as the best way to stay warm and cool, as the weather is bound to change in the mountains.",
+                "WHAT_TO_BRING_TEXT_2" : "Water canteen minimum 1.5 L",
+                "WHAT_TO_BRING_TEXT_3" : "Picnic / snack",
+                "WHAT_TO_BRING_TEXT_4" : "Light backpack",                
+                "WHAT_TO_BRING_TEXT_5" : "Weather-appropriate and comfortable clothing",                
+                "WHAT_TO_BRING_TEXT_6" : "Hiking jacket",                
+                "WHAT_TO_BRING_TEXT_7" : "Hiking shoes",                
+                "WHAT_TO_BRING_TEXT_8" : "Sun protection",                
+                "WHAT_TO_BRING_TEXT_9" : "Gloves",                
+                "WHAT_TO_BRING_TEXT_10" : "Warm hat",                
+                "WHAT_TO_BRING_TEXT_11" : "Neck gaiter",             
+                "WHAT_TO_BRING_TEXT_12" : "Any questions about the recommendations of the material do not hesitate to contact us.",
+
+                "REQUIEREMENTS":"Requirements",
+                "REQUIEREMENTS_TEXT_1":"Physical fitness: normal, with the habit of walking.",
+                "REQUIEREMENTS_TEXT_2":"Basic hiking gear is required. Good hiking boots",
+                "REQUIEREMENTS_TEXT_3":"Minimum age: 8 years old with the habit of walking",
+
+                "WHAT_TO_EXPECT": "What to expect",
+
+                 "DAY_1": {
+
+                    "TITLE": "Day 1",
+                    "TEXT_1": "We drive to the village Monachil, located in a fertile valley of the Sierra Nevada Mountain Range at 800 meters above sea level, just outside Granada. The walking path, called Cahorros Trail, is a hiking path in the lower hills of Sierra Nevada National Park. The trail starts in the village following the river up toward the entrance of the narrow gorge. The way becomes a succession of stairs, crawling under overhanging rocks, and crossing hanging bridges along a cascading river through the canyon that creates rockpools and caves, making the walk an adventure for the whole family. At the end of the gorge, we return by a higher route, from which you get stunning views of the lush Monachil Valley. A great escape from the city and a perfect family day out in the mountains!"
+                    
+                }
+            },
+
+            "TWO_DAY_SUMMIT_MULHACEN": {
+
+                "TITLE": "2-Day Summit Mulhacén",
+                "LOCATION": "Sierra Nevada National Park",
+                "PRICE": "160 (6 pax.)",
+                "PRE_BOOKING": "100%",
+                "DURATION_1": "Day 1: 6 hours",
+                "DURATION_2": "Day 2: 6 hours",
+                "MINUMUM_OF_PERSONS": "1",
+                "TOUR_TYPE": "Guided",
+                "SEASON": "Summer",
+
+                "TOTAL_DISTANCE_1": "Day 1: 14 km",
+                "TOTAL_DISTANCE_2": "Day 2: 11 km",
+
+                "TOTAL_ASCENT_1": "Day 1: 850 m",
+                "TOTAL_ASCENT_2": "Day 2: 1000 m",
+
+                "TOTAL_DESCENT_1": "Day 1: 885 m",
+                "TOTAL_DESCENT_2": "Day 2: 800 m",
+
+                "ROUTE_TYPE": "Point-to-point",               
+
+                "PHYSICAL_DIFFICULTY_1": "Day 1: C",
+                "PHYSICAL_DIFFICULTY_2": "Day 2: C",
+
+                "TECHNICAL_DIFFICULTY_1": "Day 1: C",
+                "TECHNICAL_DIFFICULTY_2": "Day 2: C",
+
+                 "INCLUDED": {
+                    "TITLE": "Included",
+                    "TEXT_1": "Qualified Mountain Leader",
+                    "TEXT_2": "Liability insurance and assistance",
+                    "TEXT_3": "Transfer",                                           
+                    "TEXT_4": "1 night at the mountain refuge",                                          
+                    "TEXT_5": "Picnic: first and second day",                                          
+                    "TEXT_6": "Breakfast: second day",                                         
+                    "TEXT_7": "Dinner: first day",                                        
+                    "TEXT_8": "Minibus second day"                                       
+                },
+                "NOT_INCLUDED": {
+                    "TITLE": "Not included",
+                    "TEXT_1": "Snack",
+                    "TEXT_2": "Minibus first day (Optional)",
+                    "TEXT_3": "Summer ski lift first day (Optional)"                        
+                },
+                "EXTRA": {
+                    "TITLE": "Extra",
+                    "TEXT_1": "You can use a minibus or summer ski lift on the first day, which leaves us at around 3.000 meters, significantly reducing ascent, distance, and the route's demands. Ask for more information.",
+                    "TEXT_2": "Acclimatize, and spend the night before at the mountain refuge at 2.500 meters, the starting point of the ascent."
+                              
+                },
+                "AVAILABILITY":"Availability",
+                "AVAILABILITY_SUMMER":"Summer",
+
+                "HIGHLIGHT":"Highlight",
+                "HIGHLIGHT_TEXT_1":"Climb the highest peak of mainland Spain, Mulhacén 3.480 m.",
+                "HIGHLIGHT_TEXT_2":"Stunning mountain landscape and glacier lakes",
+                "HIGHLIGHT_TEXT_3":"Sleeping at the mountain refuge",
+
+                "WHAT_TO_BRING" : "What to bring for Hiking",
+                "WHAT_TO_BRING_TEXT_1" : "Weather is important to consider while packing for your outdoor activity. Your packing list is based on your comfort and sensitivity. Layering your clothes is the best way to travel and be outdoors. It is highly recommended as the best way to stay warm and cool, as the weather is bound to change in the mountains.",
+                "WHAT_TO_BRING_TEXT_2" : "Water canteen minimum 2 L",
+                "WHAT_TO_BRING_TEXT_3" : "Picnic (sandwich, chocolate, dried fruit, etc.)",
+                "WHAT_TO_BRING_TEXT_4" : "Light backpack (20-30L)",                
+                "WHAT_TO_BRING_TEXT_5" : "Weather-appropriate and technical clothing",                
+                "WHAT_TO_BRING_TEXT_6" : "Hiking jacket",                
+                "WHAT_TO_BRING_TEXT_7" : "Hiking shoes",                
+                "WHAT_TO_BRING_TEXT_8" : "Sun protection",                
+                "WHAT_TO_BRING_TEXT_9" : "Sunglasses",                
+                "WHAT_TO_BRING_TEXT_10" : "Hiking summer hat or cap",                
+                "WHAT_TO_BRING_TEXT_11" : "Trekking gloves",                
+                "WHAT_TO_BRING_TEXT_12" : "Warm hat and neck gaiter",                
+                "WHAT_TO_BRING_TEXT_13" : "Trekking poles (Recommended)",                
+                "WHAT_TO_BRING_TEXT_14" : "Headlamp",                
+                "WHAT_TO_BRING_TEXT_15" : "If you have any questions about the material's recommendations, contact us or check out our blog, “What to Bring for Hiking.”",
+
+                "WHAT_TO_EXPECT": "What to expect",
+                "WHAT_TO_EXPECT_TEXT_1": "An outstanding adventure, the climb to the 3.480 meter-high Mulhacén peak, the roof of the peninsula",
+                "WHAT_TO_EXPECT_TEXT_2": "We offer two variations, with each a different physical difficulty, to climb the Mulhacén peak.",
+
+                "REQUIEREMENTS":"Requirements",
+                "REQUIEREMENTS_TEXT_1":"Physical fitness: Good, with the habit of doing aerobic sports.",
+                "REQUIEREMENTS_TEXT_2":"Proper hiking equipment is required. Walking sticks are recommended, and ankle-high hiking boots are strongly recommended.",
+                "REQUIEREMENTS_TEXT_3":"Previous mountain hiking experience: recommended.",
+                
+
+                "RECOMMENDATIONS":"Recommendations",
+                "RECOMMENDATIONS_TEXT_1":"We recommend having a good rest and better acclimatization at the mountain refuge the night before to avoid any symptoms of altitude sickness.",
+
+                "PREPARATION":"Preparation",
+                "PREPARATION_TEXT_1":"- Evaluate your state of fitness.",
+                "PREPARATION_TEXT_2":"- The best way to prepare yourself is to hike and carry a backpack with some weight.",
+                "PREPARATION_TEXT_3":"For more information check our blog and look for “How to prepare physically for a hike”",
+
+                "SIERRA_NEVADA_IN_SUMMER": "Sierra Nevada in Summer",
+                "SIERRA_NEVADA_IN_SUMMER_TEXT_1": "The weather in the Sierra Nevada during the summer has an average temperature of 24ºC and quite warm days. At 3.000 meters, the temperatures might vary between 15ºC and 20ºC, and at night, the temperature drops to 10ºC.",
+
+                "TRANSPORT": "Transport",
+                "TRANSPORT_TEXT_1": "We drive from the city of Granada to the mountain refuge at 2.500 meters. (approximately 1 hour drive)",
+                
+
+                "PRICES": "Price:",
+                "PRICES_TEXT_1": "1 person - 340 €",
+                "PRICES_TEXT_2": "2 persons - 240 € p.p",
+                "PRICES_TEXT_3": "3 persons - 200 € p.p", 
+                "PRICES_TEXT_4": "4 persons - 180 € p.p",
+                "PRICES_TEXT_5": "4 persons - 168 € p.p",
+                "PRICES_TEXT_6": "6 persons - 160 € p.p",
+                "PRICES_TEXT_7": "7 persons - 154 € p.p",
+
+                "DAY_1": {
+
+                    "TITLE": "Day 1",
+                    "TEXT_1": "The route starts at Europe’s southernmost ski resort and follows a great ascent along the San Juan Valley towards the second-highest peak of the mountain range, Veleta 3.392 meters. The trail brings you to the Carihuela Refuge located in the mountain pass “Collado de la Veleta” on its southern slope at an altitude of 3.200 meters where you can see the remains of the trenches from the Civil War.",
+                    "TEXT_2": "Before our eyes, a wide landscape of the Mediterranean mountain range opens, and the peak Mulhacén rises majestically. The trails continue to the “Caldera Lagoon” of glacial origin and one of the most emblematic lagoons in the Sierra Nevada. From the mountain refuge, the iconic steep climb awaits us up to the peak of Mulhacén. We take the same path to return to the mountain village.",
+                     "TEXT_3": "We classify the north-face route as a challenging trail with a lot of distance and has characteristics of altitude hiking. The hike involves a significant height difference with a long ascent and descent divided into two parts during the entire hike. A steep summit climb on rocky and loose terrain. The descent is less strenuous but can be tough on the knees. The trail doesn’t have any technical obstacles. For more information check our blog and look for “Trail grades”",
+                    "TEXT_4": "Optional: there is a minibus or the summer ski lift at your disposal, which leaves us at around 3.000 meters, a significant reduction of ascent, distance, and the demands of the route. Ask for more information."
+                   
+                     },
+
+                "DAY_2": {
+
+                    "TITLE": "Day 2",
+                    "TEXT_1": "After breakfast at the refuge, we start the emblematic ascent to the Mulhacén peak.",
+                    "TEXT_2": "From the refuge, we hike gradually up toward Caldera Lagoon following the Mulhacén River through alpine meadows and rocky terrain, with panoramic views of the surrounding mountains and valleys.",
+                    "TEXT_3": "One of the most emblematic lagoons in the Sierra Nevada, Caldera Lagoon, sits below the ridges of Mulhacén. After having a rest at the mountain refuge, the iconic steep climb awaits us up to the peak of Mulhacén. Once at the summit, you’ll be rewarded with breathtaking views of the surrounding peaks and valleys.",
+                    "TEXT_4": "After enjoying your time at the summit, we begin the descent back along the south slope of Mulhacén to 2.700 meters altitude where we take the shuttle bus back to the village of Capileira in the Alpujarra region.",
+                    "TEXT_5": "After relaxing with a drink and a tapa in the white village we drive back to Granada.",
+                    "TEXT_6": "We classify the route as a moderate trail with characteristics of altitude hiking. The hike involves a considerable height difference with an ascent at the beginning and later a steep summit climb on rocky and loose terrain. The descent is less strenuous but can be tough on the knees. The trail doesn’t have any difficult obstacles. For more information check our blog and look for “Trail grades”"
+                    }
+
+
+            },
+
+            "ONE_DAY_SUMMIT_MULHACEN": {
+
+                "TITLE": "1-Day Summit Mulhacén",
+                "LOCATION": "Sierra Nevada National Park",
+                "PRICE": "80 (6 pax.)",
+                "PRE_BOOKING": "100%",
+                "DURATION_1": "Trail 1: 9-10 hours",
+                "DURATION_2": "Trail 2: 6 hours",
+                "MINUMUM_OF_PERSONS": "1",
+                "MAXIMUM_OF_PERSONS": "2",
+                "TOUR_TYPE": "Guided",
+                "SEASON": "Summer",
+
+                "TOTAL_DISTANCE_1": "Trail 1: 28 km",
+                "TOTAL_DISTANCE_2": "Trail 2: 13 km",
+
+                "TOTAL_ASCENT_1": "Trail 1: 1.500 m",
+                "TOTAL_ASCENT_2": "Trail 2: 800 m",
+
+                "TOTAL_DESCENT_1": "Trail 1: 1.500 m",
+                "TOTAL_DESCENT_2": "Trail 2: 800 m",
+
+                "ROUTE_TYPE": "Out-and-Back",               
+
+                "PHYSICAL_DIFFICULTY_1": "Trail 1: D",
+                "PHYSICAL_DIFFICULTY_2": "Trail 2: C",
+
+                "TECHNICAL_DIFFICULTY_1": "Trail 1: C",
+                "TECHNICAL_DIFFICULTY_2": "Trail 2: C",
+
+                 "INCLUDED": {
+                    "TITLE": "Included",
+                    "TEXT_1": "Professional Qualified Mountain Leader",
+                    "TEXT_2": "Liability insurance and assistance",
+                    "TEXT_3": "Transfer"                                           
+                },
+                "NOT_INCLUDED": {
+                    "TITLE": "Not included",
+                    "TEXT_1": "Snack and lunch",
+                    "TEXT_2": "Minibus (Optional)",
+                    "TEXT_3": "Summer ski lift (Optional)"                        
+                },
+                "EXTRA": {
+                    "TITLE": "Extra",
+                    "TEXT_1": "Track 1 North-face (Challenging):",
+                    "TEXT_2": "- You can use a minibus or summer ski lift, which leaves us at around 3,000 meters. This is a significant reduction in ascent, distance, and the route's demands. Ask for more information.",
+                    "TEXT_3": "- Acclimatize, and spend the night before at the mountain refuge at 2.500 meters, the starting point of the ascent.",                 
+                    "TEXT_4": "Track 2 South-face (Moderate):",                 
+                    "TEXT_5": "- Acclimatize, and spend the night before in the village Capileira, the starting point of the ascent."                
+                },
+
+                "AVAILABILITY":"Availability",
+                "AVAILABILITY_SUMMER":"Summer",
+
+                "HIGHLIGHT":"Highlight",
+                "HIGHLIGHT_TEXT_1":"Climb the highest peak of mainland Spain, Mulhacén 3.480 m.",
+                "HIGHLIGHT_TEXT_2":"Stunning mountain landscape and glacier lakes",
+
+                "WHAT_TO_BRING" : "What to bring for Hiking",
+                "WHAT_TO_BRING_TEXT_1" : "Weather is important to consider while packing for your outdoor activity. Your packing list is based on your comfort and sensitivity. Layering your clothes is the best way to travel and be outdoors. It is highly recommended as the best way to stay warm and cool, as the weather is bound to change in the mountains.",
+                "WHAT_TO_BRING_TEXT_2" : "Water minimum 2 L",
+                "WHAT_TO_BRING_TEXT_3" : "Picnic (sandwich, chocolate, dried fruit, etc.)",
+                "WHAT_TO_BRING_TEXT_4" : "Light backpack (20-30L)",                
+                "WHAT_TO_BRING_TEXT_5" : "Weather-appropriate and technical clothing",                
+                "WHAT_TO_BRING_TEXT_6" : "Hiking jacket",                
+                "WHAT_TO_BRING_TEXT_7" : "Hiking shoes",                
+                "WHAT_TO_BRING_TEXT_8" : "Sun protection",                
+                "WHAT_TO_BRING_TEXT_9" : "Sunglasses",                
+                "WHAT_TO_BRING_TEXT_10" : "Hiking summer hat or cap",                
+                "WHAT_TO_BRING_TEXT_11" : "Trekking gloves",                
+                "WHAT_TO_BRING_TEXT_12" : "Warm hat and neck gaiter",                
+                "WHAT_TO_BRING_TEXT_13" : "Trekking poles (Recommended)",                
+                "WHAT_TO_BRING_TEXT_14" : "Headlamp",                
+                "WHAT_TO_BRING_TEXT_15" : "If you have any questions about the material's recommendations, contact us or check out our blog, “What to Bring for Hiking.”",
+
+                "WHAT_TO_EXPECT": "What to expect",
+                "WHAT_TO_EXPECT_TEXT_1": "An outstanding adventure, the climb to the 3.480 meter-high Mulhacén peak, the roof of the peninsula",
+                "WHAT_TO_EXPECT_TEXT_2": "We offer two variations, with each a different physical difficulty, to climb the Mulhacén peak.",
+
+                "REQUIEREMENTS":"Requirements",
+                "REQUIEREMENTS_TEXT_1":"Physical fitness:",
+                "REQUIEREMENTS_TEXT_2":"- Track 1: Very good.",
+                "REQUIEREMENTS_TEXT_3":"- Track 2: Good, with the habit of doing aerobic sports.",
+                "REQUIEREMENTS_TEXT_4":"Proper hiking equipment is required. Walking sticks are recommended. Ankle-high hiking boots are required.",
+                "REQUIEREMENTS_TEXT_5":"Previous mountain hiking experience:",
+                "REQUIEREMENTS_TEXT_6":"- Track 1: Necessary.",
+                "REQUIEREMENTS_TEXT_7":"- Track 2: Recommended.",
+
+                "RECOMMENDATIONS":"Recommendations",
+                "RECOMMENDATIONS_TEXT_1":"We recommend having a good rest and better acclimatization, at the mountain refuge or the village of Capileira for the easy option, the night before to avoid any symptoms of altitude sickness.",
+
+                "PREPARATION":"Preparation",
+                "PREPARATION_TEXT_1":"- Evaluate your state of fitness.",
+                "PREPARATION_TEXT_2":"- The best way to prepare yourself is to hike and carry a backpack with some weight.",
+                "PREPARATION_TEXT_3":"For more information check our blog and look for “How to prepare physically for a hike”",
+
+                "SIERRA_NEVADA_IN_SUMMER": "Sierra Nevada in Summer",
+                "SIERRA_NEVADA_IN_SUMMER_TEXT_1": "The weather in the Sierra Nevada during the summer has an average temperature of 24ºC and quite warm days. At 3.000 meters, the temperatures might vary between 15ºC and 20ºC, and at night, the temperature drops to 10ºC.",
+
+                "TRANSPORT": "Transport",
+                "TRANSPORT_TEXT_1": "For the first track, we drive from the city of Granada to the mountain refuge at 2.500 meters. (approximately 1 hour drive)",
+                "TRANSPORT_TEXT_2": "For the second track, we drive from the city of Granada to the village of Capileira. (approximately 1h30 drive)",
+
+                "PRICES": "Price:",
+                "PRICES_TEXT_1": "1 person - 200 €",
+                "PRICES_TEXT_2": "2 persons - 120 € p.p",
+                "PRICES_TEXT_3": "3 persons - 100 € p.p", 
+                "PRICES_TEXT_4": "4 persons - 90 € p.p",
+                "PRICES_TEXT_5": "6 persons - 80 € p.p",
+                "PRICES_TEXT_6": "7 persons - 80 € p.p",
+
+                "DAY_1": {
+
+                    "TITLE": "Track 1 Nort-face (Challenging):",
+                    "TEXT_1": "The route starts at Europe’s southernmost ski resort and follows a great ascent along the San Juan Valley towards the second-highest peak of the mountain range, Veleta 3.392 meters. The trail brings you to the Carihuela Refuge located in the mountain pass “Collado de la Veleta” on its southern slope at an altitude of 3.200 meters where you can see the remains of the trenches from the Civil War.",
+                    "TEXT_2": "Before our eyes, a wide landscape of the Mediterranean mountain range opens, and the peak Mulhacén rises majestically. The trails continue to the “Caldera Lagoon” of glacial origin and one of the most emblematic lagoons in the Sierra Nevada. From the mountain refuge, the iconic steep climb awaits us up to the peak of Mulhacén. We take the same path to return to the mountain village.",
+                     "TEXT_3": "We classify the north-face route as a challenging trail with a lot of distance and has characteristics of altitude hiking. The hike involves a significant height difference with a long ascent and descent divided into two parts during the entire hike. A steep summit climb on rocky and loose terrain. The descent is less strenuous but can be tough on the knees. The trail doesn’t have any technical obstacles. For more information check our blog and look for “Trail grades”",
+                    "TEXT_4": "Optional: there is a minibus or the summer ski lift at your disposal, which leaves us at around 3.000 meters, a significant reduction of ascent, distance, and the demands of the route. Ask for more information."
+                   
+                     },
+
+                "DAY_2": {
+
+                    "TITLE": "Track 2 South-face (Moderate):",
+                    "TEXT_1": "The south-face option starts at the “Mirador de Trevelez” at 2.700 meters which we reach by the shuttle bus from the village of Capileira. From the starting point, there are privileged views of the Sierra Nevada Mountain range and the Granada coast.",
+                    "TEXT_2": "The trail goes slowly up to overcome the first slope “Loma del Tanto” leaving the viewpoint behind. Further ahead we hike in search of the Mulhacén II geodesic point at 3.362 meters surrounded by a different landscape of loose rocks and a lack of vegetation.",
+                    "TEXT_3": "The last stretch, which takes us to the summit, offers a magnificent panoramic view of the Caldera Lagoon, one of the most emblematic lagoons in the Sierra Nevada.",
+                    "TEXT_4": "Finally, after hiking the last slope we achieved our goal, the Peak of Mulhacén at 3.380 meters. We take the same path to return where the bus is waiting to bring us to the village of Capileira.",
+                    "TEXT_5": "We classify the south-face route as a moderate trail with characteristics of altitude hiking. The hike involves a considerable height difference with a boulder crossing in some parts without any technical obstacles. For more information check our blog and look for “Trail grades”"
+                    }
+
+
+            }
+ 
+        },
+
         "GRAVEL_BIKE" : {
 
             "SIERRA_NEVADA":{
@@ -601,6 +1426,7 @@
                 "WHAT_TO_EXPECT_TEXT_3": "Halfway through the tour, we provide a great snack with a fresh coffee at a beautiful lookout.",
                 "WHAT_TO_EXPECT_TEXT_4": "The last part brings Alhambra Palace into view, where we will cycle through the city’s small streets of Sacromonte and Albayzín before we finish at the plaza, the meeting point of the tour.",
                 "WHAT_TO_EXPECT_TEXT_5": "We provide helmets, gloves, and extra clothes. The backup vehicle will accompany us during the entire tour to ensure safety."
+                
 
             },
 

@@ -11,6 +11,11 @@ import Dots from "@/components/ui/dots.astro";
 import Widget from "@/components/products-components/widget.astro";
 import Cancellation from "@/components/products-components/cancellation.astro";
 
+import { getI18N } from "@/i18n/";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+
 // Duplica y cambia las rutas para añadir o modificar las fotos
 
 const IMG = [
@@ -32,14 +37,11 @@ const IMG = [
 ];
 const DAYS = [
   {
-    day: "1",
+    day: i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.DAY_1.TITLE,
     tecnicalInfo: true,
-    description:
-      "One of the most beautiful routes in Sierra Nevada National Park is the Old Mine Trail.  This historic path, built at the end of the 19th century to access the mines, follows the Genil River toward the confluence of several rivers at the very end of the valley. The valley reveals its stunning scenery, including the rugged north faces of the highest peaks in the Sierra Nevada: Mulhacén, Veleta, and Alcazaba. Throughout the day you come across ruins of stone buildings, old mine tunnels, and the typical Iberian Ibex or the golden eagles are common to see. To get to the starting point of the trail we drive approx. 30 min. to the beautiful village of Güéjar Sierra, a mountain town located at 1.000 meters on the northwestern slope of the Sierra Nevada National Park.",
-    description2:
-      "We have two variants with different levels of hiking difficulty.",
-    description3:
-      "(Check out our blog for more information about our hiking grades)",
+    description: i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.DAY_1.TEXT_1,
+    description2: i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.DAY_1.TEXT_2,
+    description3: i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.DAY_1.TEXT_3,
     techical_optional: "First loop",
     totalDistance: "22 KM",
     totalAscent: "1000 M",
@@ -60,43 +62,56 @@ const DAYS = [
 
 const brings = [
   {
-    title: "water bottle min. 1.5 L",
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.WHAT_TO_BRING_TEXT_2,
   },
   {
-    title: "Picnic",
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.WHAT_TO_BRING_TEXT_3,
   },
   {
-    title: "Light backpack",
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.WHAT_TO_BRING_TEXT_4,
   },
   {
-    title: "Weather-appropriate and comfortable clothing",
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.WHAT_TO_BRING_TEXT_5,
   },
   {
-    title: "Hiking jacket",
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.WHAT_TO_BRING_TEXT_6,
   },
   {
-    title: "Hiking shoes, not open shoes!",
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.WHAT_TO_BRING_TEXT_7,
   },
   {
-    title: "Sun protection",
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.WHAT_TO_BRING_TEXT_8,
   },
   {
-    title: "Rain gear",
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.WHAT_TO_BRING_TEXT_9,
   },
   {
-    title: "Waterproof Rain cover backpack",
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.WHAT_TO_BRING_TEXT_10,
   },
   {
-    title: "Gloves",
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.WHAT_TO_BRING_TEXT_11,
   },
   {
-    title: "Warm hat",
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.WHAT_TO_BRING_TEXT_12,
   },
   {
-    title: "Neck gaiter",
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.WHAT_TO_BRING_TEXT_13,
   },
   {
-    title: "Trekking poles",
+    title:
+      i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.WHAT_TO_BRING_TEXT_14,
   },
 ];
 ---
@@ -110,16 +125,16 @@ const brings = [
         class="bg-center bg-no-repeat bg-[url('/public/hiking-and-trekking/the-old-mine-trail/tomt-principal.webp')] h-[25rem] rounded-2xl bg-cover">
         <div class="flex flex-col justify-end h-full p-6 w-auto bg-cover">
           <div class="flex gap-2 [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
-            <Icon icon="destiny-logo" size="1.6rem" color="gray" />
+            <Icon icon="destiny-logo" size="1.6rem" color="white" />
             <p
               class="text-xl font-normal text-white lg:text-2xl flex flex-col justify-end h-full [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
-              Sierra Nevada National Park
+              {i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.LOCATION}
             </p>
           </div>
 
           <h1
             class="text-3xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-5xl [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
-            The Old Mine Trail
+            {i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.TITLE}
           </h1>
         </div>
       </div>
@@ -128,35 +143,48 @@ const brings = [
 
       <div
         class="grid grid-cols-2 md:grid-cols-6 h-auto mt-3 gap-3 place-content-start md:px-6">
-        <InformationProducts title="Price" subtitle="40 (6 pax.)">
+        <InformationProducts
+          title={i18n.INFO_PRODUCTS.PRICE}
+          subtitle={i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.PRICE}>
           <div slot="icon">
             <Icon icon="price-logo" size="1.6rem" color="#0E46A3" />
           </div>
         </InformationProducts>
-        <InformationProducts title="Pre-booking" subtitle="100%">
+        <InformationProducts
+          title={i18n.INFO_PRODUCTS.PRE_BOOKING}
+          subtitle={i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL
+            .PRE_BOOKING}>
           <div slot="icon">
             <Icon icon="price-logo" size="1.6rem" color="#0E46A3" />
           </div>
         </InformationProducts>
-        <InformationProducts title="Minimum of persons" subtitle="2">
+        <InformationProducts
+          title={i18n.INFO_PRODUCTS.MINIMUM_OF_PERSONS}
+          subtitle={i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL
+            .MINUMUM_OF_PERSONS}>
           <div slot="icon">
             <Icon icon="group-logo" size="1.6rem" color="#0E46A3" />
           </div>
         </InformationProducts>
         <InformationProducts
-          title="Duration Trail"
-          subtitle="Trail 1: 7-8 hours"
-          subtitle3="Trail 2: 6-7 hours">
+          title={i18n.INFO_PRODUCTS.DURATION}
+          subtitle={i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.DURATION_1}
+          subtitle3={i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL
+            .DURATION_2}>
           <div slot="icon">
             <Icon icon="timer-logo" size="1.6rem" color="#0E46A3" />
           </div>
         </InformationProducts>
-        <InformationProducts title="Tour type" subtitle="Guided">
+        <InformationProducts
+          title={i18n.INFO_PRODUCTS.TOUR_TYPE}
+          subtitle={i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.TOUR_TYPE}>
           <div slot="icon">
             <Icon icon="guide-logo" size="1.6rem" color="#0E46A3" />
           </div>
         </InformationProducts>
-        <InformationProducts title="Season" subtitle="All year">
+        <InformationProducts
+          title={i18n.INFO_PRODUCTS.SEASON}
+          subtitle={i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.SEASON}>
           <!-- <div slot="icon">
             <Icon icon="autumn-logo" size="1.6rem" color="#0E46A3" />
           </div> -->
@@ -169,26 +197,32 @@ const brings = [
         <div
           class="grid grid-cols-2 justify-between md:grid-cols-6 h-auto mt-3 gap-3 md:px-6">
           <InformationProducts
-            title="Total distance"
-            subtitle="Trail 1: 22 km"
-            subtitle3="Trail 2: 15 km">
+            title={i18n.INFO_PRODUCTS.TOTAL_DISTANCE}
+            subtitle={i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL
+              .TOTAL_DISTANCE_1}
+            subtitle3={i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL
+              .TOTAL_DISTANCE_2}>
             <div slot="icon">
               <Icon icon="distance-logo" size="1.6rem" color="#0E46A3" />
             </div>
           </InformationProducts>
 
           <InformationProducts
-            title="Total ascent"
-            subtitle="Trail 1: 1.000 m"
-            subtitle3="Trail 2: 800 m">
+            title={i18n.INFO_PRODUCTS.TOTAL_ASCENT}
+            subtitle={i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL
+              .TOTAL_ASCENT_1}
+            subtitle3={i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL
+              .TOTAL_ASCENT_2}>
             <div slot="icon">
               <Icon icon="up-logo" size="1.6rem" color="#0E46A3" />
             </div>
           </InformationProducts>
           <InformationProducts
-            title="Total descent"
-            subtitle="Trail 1: 1000 m"
-            subtitle3="Trail 2: 800 m">
+            title={i18n.INFO_PRODUCTS.TOTAL_DESCENT}
+            subtitle={i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL
+              .TOTAL_DESCENT_1}
+            subtitle3={i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL
+              .TOTAL_DESCENT_2}>
             <div slot="icon">
               <Icon icon="down-logo" size="1.6rem" color="#0E46A3" />
             </div>
@@ -199,14 +233,18 @@ const brings = [
             </div>
           </InformationProducts>
           <InformationProducts
-            title="Physical Difficulty"
-            subtitle="Trail 1: C"
-            subtitle3="Trail 2: B"
+            title={i18n.INFO_PRODUCTS.PHYSICAL_DIFFICULTY}
+            subtitle={i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL
+              .PHYSICAL_DIFFICULTY_1}
+            subtitle3={i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL
+              .PHYSICAL_DIFFICULTY_2}
           />
           <InformationProducts
-            title="Technical Difficulty"
-            subtitle="Trail 1: B"
-            subtitle3="Trail 2: B"
+            title={i18n.INFO_PRODUCTS.TECHNICAL_DIFFICULTY}
+            subtitle={i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL
+              .TECHNICAL_DIFFICULTY_1}
+            subtitle3={i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL
+              .TECHNICAL_DIFFICULTY_2}
           />
         </div>
       </div>
@@ -215,32 +253,52 @@ const brings = [
       <div
         class="grid md:grid-cols-2 lg:grid-cols-2 mt-20 md:mt-26 md:mb-36 gap-16 md:gap-4">
         <!-- Include -->
-        <Includes title="Included">
+        <Includes
+          title={i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.INCLUDED
+            .TITLE}>
           <ul slot="description" class="mt-4 flex flex-col gap-2">
-            <li class="flex flex-wrap gap-2">
+            <li class="flex gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
               <p class="max-w-[320px] text-md">
-                Professional qualified mountain leader
+                {
+                  i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.INCLUDED
+                    .TEXT_1
+                }
               </p>
             </li>
-            <li class="flex flex-wrap gap-2">
+            <li class="flex gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
               <p class="max-w-[320px] text-md">
-                Liability insurance and assistance
+                {
+                  i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.INCLUDED
+                    .TEXT_2
+                }
               </p>
             </li>
-            <li class="flex flex-wrap gap-2">
+            <li class="flex gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
-              <p class="max-w-[320px] text-md">Transfer</p>
+              <p class="max-w-[320px] text-md">
+                {
+                  i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.INCLUDED
+                    .TEXT_3
+                }
+              </p>
             </li>
           </ul>
         </Includes>
         <!-- Exclude -->
-        <Includes title="Not Included">
+        <Includes
+          title={i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.NOT_INCLUDED
+            .TITLE}>
           <div slot="description" class="flex flex-col gap-2 mt-4">
-            <li class="flex flex-wrap gap-2">
+            <li class="flex gap-2">
               <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
-              <p class="max-w-[320px] text-md">Snack and lunch</p>
+              <p class="max-w-[320px] text-md">
+                {
+                  i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.NOT_INCLUDED
+                    .TEXT_1
+                }
+              </p>
             </li>
           </div>
         </Includes>
@@ -272,12 +330,15 @@ const brings = [
         <div class="grid grid-flow-row gap-4">
           <h2
             class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
-            Availability
+            {i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.AVAILABILITY}
           </h2>
           <div class="flex gap-2">
             <Icon icon="spring-logo" size="1.6rem" color="#0E46A3" />
             <p class="max-w-2xl text-gray-900 mb-2 md:px-0 text-xl md:text-xl">
-              All Year
+              {
+                i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL
+                  .AVAILABILITY_TEXT_1
+              }
             </p>
           </div>
         </div>
@@ -285,36 +346,43 @@ const brings = [
         <div class="">
           <h2
             class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
-            Highlight
+            {i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.HIGHLIGHT}
           </h2>
           <p class="text-lg text-gray-900 mb-1">
-            <span class="text-xl">🔹</span> Sierra Nevada National Park
+            <span class="text-xl">🔹</span>
+            {i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.HIGHLIGHT_TEXT_1}
           </p>
           <p class="text-lg text-gray-900 mb-1">
-            <span class="text-xl">🔹</span> Spectacular views from the north face
-            of the Sierra Nevada Mountain Range
+            <span class="text-xl">🔹</span>
+            {i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.HIGHLIGHT_TEXT_2}
           </p>
           <p class="text-lg text-gray-900 mb-1">
-            <span class="text-xl">🔹</span> The old mines
+            <span class="text-xl">🔹</span>
+            {i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.HIGHLIGHT_TEXT_3}
           </p>
           <p class="text-lg text-gray-900 mb-1">
-            <span class="text-xl">🔹</span> The iconic chestnut tree
+            <span class="text-xl">🔹</span>
+            {i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.HIGHLIGHT_TEXT_4}
           </p>
           <p class="text-lg text-gray-900 mb-1">
-            <span class="text-xl">🔹</span> Great diversity of flora
+            <span class="text-xl">🔹</span>
+            {i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.HIGHLIGHT_TEXT_5}
           </p>
           <p class="text-lg text-gray-900 mb-1">
-            <span class="text-xl">🔹</span> Outdoors picnic
+            <span class="text-xl">🔹</span>
+            {i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.HIGHLIGHT_TEXT_6}
           </p>
         </div>
       </div>
     </div>
 
     <Widget
-      title="What to bring for Hiking"
-      description="Weather is important to consider while packing for your outdoor activity. Your packing list is based on your comfort and sensitivity. Layering your clothes is the best way to travel and be outdoors. It is highly recommended as the best way to stay warm and cool, as the weather is bound to change in the mountains."
+      title={i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.WHAT_TO_BRING}
+      description={i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL
+        .WHAT_TO_BRING_TEXT_1}
       img="/hiking-and-trekking/trekking-alpujarras/bring.webp"
-      text="Any questions about the material's recommendations, contact us or check our blog, “What to Bring for Hiking.” "
+      text={i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL
+        .WHAT_TO_BRING_TEXT_15}
       brings={brings}
     />
 
@@ -323,20 +391,35 @@ const brings = [
       <div class="">
         <h2
           class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
-          Requirements
+          {i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.REQUIEREMENTS}
         </h2>
         <p class="text-lg text-gray-900 mb-1">
-          <span class="text-xl strong">🔹</span> Good physical fitness
+          <span class="text-xl strong">🔹</span>
+          {
+            i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL
+              .REQUIEREMENTS_TEXT_1
+          }
         </p>
         <p class="text-lg text-gray-900">
-          <span class="text-xl">🔹</span> Minimum age: 16 years + habit of walking
+          <span class="text-xl">🔹</span>
+          {
+            i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL
+              .REQUIEREMENTS_TEXT_2
+          }
         </p>
         <p class="text-lg text-gray-900">
-          <span class="text-xl">🔹</span> Closed shoes, no open shoes!
+          <span class="text-xl">🔹</span>
+          {
+            i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL
+              .REQUIEREMENTS_TEXT_3
+          }
         </p>
         <p class="text-lg text-gray-900">
-          <span class="text-xl">🔹</span> Basic hiking gear is required (Check our
-          blog for more information about hiking gear)
+          <span class="text-xl">🔹</span>
+          {
+            i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL
+              .REQUIEREMENTS_TEXT_4
+          }
         </p>
       </div>
     </section>
@@ -344,14 +427,16 @@ const brings = [
       <Cancellation />
       <div class="flex flex-col gap-2 md:p-4">
         <div>
-          <h3 class="text-4xl md:text-5xl xl:text-6xl font-bold">Price:</h3>
+          <h3 class="text-4xl md:text-5xl xl:text-6xl font-bold">
+            {i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.PRICES}:
+          </h3>
           <Dots class="mb-4" />
         </div>
 
-        <p>2 - 4 people - 70 € p.p</p>
-        <p>5 people - 50 € p.p</p>
-        <p>6 people - 45 € p.p</p>
-        <p>7 people - 40 € p.p</p>
+        <p>{i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.PRICES_TEXT_1}</p>
+        <p>{i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.PRICES_TEXT_2}</p>
+        <p>{i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.PRICES_TEXT_3}</p>
+        <p>{i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.PRICES_TEXT_4}</p>
       </div>
     </section>
 
@@ -364,7 +449,7 @@ const brings = [
 
     <!--  TimeLine per days  -->
     <h2 class="text-4xl md:text-5xl xl:text-6xl md:p-8 mt-16 font-bold mb-4">
-      What to expect
+      {i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.WHAT_TO_EXPECT}
     </h2>
     {
       DAYS.map((tour) => (

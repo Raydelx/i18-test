@@ -20,21 +20,7 @@
         "TEXT_2": "Zie Algemene Voorwaarden"
     },
 
-    "INFORMATION_PRODUCTS": {
-        "PRICE": "Prijs",
-        "PRE_BOOKING": "Vooraf boeken",
-        "MINUMUM_OF_PERSONS": "Minimum aantal personen",
-        "DURATION": "Duur",
-        "ROUTE_TYPE": "Routetype",
-        "SEASON": "Seizoen",
-        "TOTAL_DISTANCE": "Totale afstand",
-        "TOTAL_ASCENT": "Totale stijging",
-        "TOTAL_DESCENT": "Totale daling",
-        "DIFFICULTY": "Moeilijkheidsgraad",
-        "PHYSICAL_DIFFICULTY": "Fysieke moeilijkheidsgraad",
-        "TECHNICAL_DIFFICULTY": "Technische moeilijkheidsgraad"      
-    },
-
+    
     "INCLUDES": {
         "INCLUDED": "Inbegrepen",
         "NOT_INCLUDED": "Niet inbegrepen",
@@ -52,6 +38,22 @@
         "DIFFICULTY": "Moeilijkheidsgraad",
         "PHYSICAL_DIFFICULTY": "Fysieke Moeilijkheidsgraad",
         "TECHNICAL_DIFFICULTY": "Technische Moeilijkheidsgraad"    
+    },
+
+    "INFO_PRODUCTS" :{
+        "PRICE": "Prijs",
+        "PRE_BOOKING": "Vooraf boeken",
+        "MINIMUM_OF_PERSONS": "Minimum aantal personen",
+        "DURATION": "Duur",
+        "TOUR_TYPE": "Tour type",
+        "SEASON": "Seizoen",
+        "TOTAL_DISTANCE": "Totale afstand",
+        "TOTAL_ASCENT": "Totale stijging",
+        "TOTAL_DESCENT": "Totale daling",
+        "ROUTE_TYPE": "Routetype",
+        "DIFFICULTY": "Moeilijkheidsgraad",
+        "PHYSICAL_DIFFICULTY": "Fysieke moeilijkheidsgraad",
+        "TECHNICAL_DIFFICULTY": "Technische moeilijkheidsgraad"
     },
 
     "TAILOR_MADE": { 
@@ -92,6 +94,49 @@
         "BANNER_TITLE" : "Geïnteresseerd in een op maat gemaakte reis ontworpen",
         "BANNER_TITLE_AFTER_BR" : "exclusief voor jou?",
         "BANNER_BUTTON" : "Vul ons aanvraagformulier in"
+    },
+
+    "BOOK_MY_TOUR": {
+        "TITLE": "Boek mijn tour",
+
+        "FULL_NAME": "Volledige naam",
+        "NAME_PLACEHOLDER": "Vul uw volledige naam in",
+
+        "EMAIL": "E-mailadres",
+        "EMAIL_PLACEHOLDER": "Vul uw e-mailadres in",
+
+        "PHONE": "Telefoonnummer",
+        "PHONE_PLACEHOLDER": "Vul uw telefoonnummer in",
+
+        "NATIONALITY": "Nationaliteit",
+        "NATIONALITY_PLACEHOLDER": "Vul uw nationaliteit in",
+
+        "LANGUAGE": "Welke taal spreekt u?",
+        "LANGUAGE_PLACEHOLDER": "Selecteer uw taal",
+
+        "ACTIVITY": "Activiteit",
+        "ACTIVITY_PLACEHOLDER": "Selecteer uw activiteit",
+
+        "DATE": "Datum van deelname aan de activiteit",
+
+        "NUMBER OF PEOPLE": "Hoeveel personen?",
+
+        "PARTICIPANTS": "Deelnemers",
+
+        "NAME": "Naam",
+
+        "DATE_OF_BIRTH": "Geboortedatum",
+
+        "WEIGHT": "Gewicht (alleen fietstochten)",
+        "WEIGHT_PLACEHOLDER": "Vul uw gewicht in kg in",
+
+        "HEIGHT": "Lengte (alleen fietstochten)",
+        "HEIGHT_PLACEHOLDER": "Vul uw lengte in meters in",
+
+        "CHECKBOX": "Ik accepteer de ",
+        "CHECKBOX_LINK": "aansprakelijkheidsvoorwaarden",
+
+        "SEND": "Verzenden"
     },
 
     "FORM_TAILOR":{
@@ -536,6 +581,777 @@
     "CARD_HOME_1": "Geleide rondleidingen",
 
     "PRODUCTS": {
+        
+
+        "HIKING_TREKKING" : {
+
+            "TREKKING_ALPUJARRAS":{
+
+                "TITLE": "Trekking Alpujarras",
+                "LOCATION": "Sierra Nevada Natuurpark",
+                "PRICE": "1.100",
+                "PRE_BOOKING": "20%",
+                "MINUMUM_OF_PERSONS": "4",
+                "DURATION": "8 Dagen",
+                "TOUR_TYPE": "Geleid",
+                "SEASON": "Lente Herfst",
+                "TOTAL_DISTANCE": "72 km",
+                "TOTAL_ASCENT": "4.015 m",
+                "TOTAL_DESCENT": "3.310 m",
+                "ROUTE_TYPE": "Punt tot punt",
+                "PHYSICAL_DIFFICULTY": "B - C",
+                "TECHNICAL_DIFFICULTY": "B",
+
+                 "INCLUDED": {
+                    "TITLE": "Inbegrepen",
+                    "TEXT_1": "Gekwalificeerde berggids",
+                    "TEXT_2": "Aansprakelijkheidsverzekering en assistentie",
+                    "TEXT_3": "Luchthaventransfer",
+                    "TEXT_4": "Dagelijks bagagetransport",
+                    "TEXT_5": "Accommodatie: 7 nachten",
+                    "TEXT_6": "Ontbijt: 7 dagen",
+                    "TEXT_7": "Wandelshirt"
+                },
+                "NOT_INCLUDED": {
+                    "TITLE": "Niet inbegrepen",
+                    "TEXT_1": "Vlucht",
+                    "TEXT_2": "Reis- & assistentieverzekering",
+                    "TEXT_3": "Annuleringsverzekering",
+                    "TEXT_4": "Lunch en diner",
+                    "TEXT_5": "Extra maaltijden",
+                    "TEXT_6": "Extra nachten",
+                    "TEXT_7": "Extra excursies of activiteiten",
+                    "TEXT_8": "Persoonlijke uitgaven",
+                    "TEXT_9": "Fooien",
+                    "TEXT_10": "Privévervoer voor of na de tour"
+                },
+
+                "EXTRA": {
+                    "TITLE": "Extra",
+                    "TEXT_1": "Bezoek en proef de beroemde ham van Trevélez in het hoogste dorp van de Sierra Nevada."
+                },
+
+                "AVAILABILITY": "Beschikbaarheid",
+                "AVAILABILITY_TEXT_1": "2025",
+                "AVAILABILITY_TEXT_2": "20-09 / 27-09",
+                "AVAILABILITY_TEXT_3": "2026",
+                "AVAILABILITY_TEXT_4": "11-04 / 18-04",
+                "AVAILABILITY_TEXT_5": "05-09 / 12-09",
+
+                "HIGHLIGHT": "Hoogtepunten",
+                "HIGHLIGHT_TEXT_1": "Sierra Nevada Natuurpark",
+                "HIGHLIGHT_TEXT_2": "Witgekalkte bergdorpen",
+                "HIGHLIGHT_TEXT_3": "Prachtige landschappen tijdens het wandelen",
+                "HIGHLIGHT_TEXT_4": "Berg-ecosysteem",
+                "HIGHLIGHT_TEXT_5": "De geselecteerde landelijke hotels",
+                "HIGHLIGHT_TEXT_6": "Overnachten in het hoogste dorp van de Sierra Nevada",
+
+                "WHAT_TO_BRING" : "Wat mee te nemen voor wandelen",
+                "WHAT_TO_BRING_TEXT_1" : "Het weer is belangrijk om rekening mee te houden bij het inpakken voor je buitenactiviteit. Je paklijst is gebaseerd op je comfort en gevoeligheid. Het dragen van laagjes kleding is de beste manier om te reizen en buiten te zijn. Het wordt sterk aanbevolen als de beste manier om warm en koel te blijven, aangezien het weer in de bergen onvoorspelbaar kan veranderen.",
+                "WHAT_TO_BRING_TEXT_2" : "Waterfles min. 1,5 L",
+                "WHAT_TO_BRING_TEXT_3" : "Picknick",
+                "WHAT_TO_BRING_TEXT_4" : "Lichte dagrugzak 20 l – 35 L",
+                "WHAT_TO_BRING_TEXT_5" : "Waterdichte regenhoes voor rugzak",
+                "WHAT_TO_BRING_TEXT_6" : "Weersgeschikte en comfortabele kleding",
+                "WHAT_TO_BRING_TEXT_7" : "Wandeljas",
+                "WHAT_TO_BRING_TEXT_8" : "Sneldrogende broek/short",
+                "WHAT_TO_BRING_TEXT_9" : "Lange mouwen shirt",
+                "WHAT_TO_BRING_TEXT_10" : "Wandelsokken",
+                "WHAT_TO_BRING_TEXT_11" : "Regenkleding (jas en broek)",
+                "WHAT_TO_BRING_TEXT_12" : "Wandelschoenen, geen open schoenen!",
+                "WHAT_TO_BRING_TEXT_13" : "Wandelstokken.",
+                "WHAT_TO_BRING_TEXT_14" : "Zonnebescherming",
+                "WHAT_TO_BRING_TEXT_15" : "Fleece of softshell jas",
+                "WHAT_TO_BRING_TEXT_16" : "Handschoenen",
+                "WHAT_TO_BRING_TEXT_17" : "Warme muts",
+                "WHAT_TO_BRING_TEXT_18" : "Nekwarmer",
+                "WHAT_TO_BRING_TEXT_19" : "Heb je vragen over de materiaalaanbevelingen, neem dan contact met ons op of bekijk onze blog, “Wat mee te nemen voor wandelen.”",
+
+                "REQUIEREMENTS":"Vereisten",
+                "REQUIEREMENTS_TEXT_1":"Goede fysieke conditie, gewend aan wandelen",
+                "REQUIEREMENTS_TEXT_2":"Gesloten schoenen, geen open schoenen!",
+                "REQUIEREMENTS_TEXT_3":"Materiaal: Basis wandeluitrusting vereist. Goede wandelschoenen en wandelstokken aanbevolen.",
+                "REQUIEREMENTS_TEXT_4":"Boekingsvoorwaarden. Zie algemene voorwaarden.",
+                "REQUIEREMENTS_TEXT_5":"Reisverzekering. Zie algemene voorwaarden.",
+                "REQUIEREMENTS_TEXT_6":"Vrijwaringsformulier. Zie algemene voorwaarden.",
+
+                "CANCELLATION":"Annuleringsbeleid",
+                "CANCELLATION_TEXT":"Zie algemene voorwaarden.",
+
+                "WHAT_TO_EXPECT": "Wat te verwachten",
+                "WHAT_TO_EXPECT_TEXT_1": "Wandelen in de rijke Andalusische cultuur en geschiedenis met de natuurlijke schoonheid van schilderachtige landschappen, charmante dorpen en iconische bezienswaardigheden.",
+                "WHAT_TO_EXPECT_TEXT_2": "Je hoofdbagage wordt tussen de dorpen langs de route vervoerd. Zo kun je met een lichte tas wandelen met alleen de benodigdheden voor overdag. Wandelen met een lichte rugzak is veel aangenamer dan een zware rugzak meeslepen, zodat je van het landschap kunt genieten zonder zware last. De trekking voert je door de schilderachtige Alpujarra-regio op de zuidelijke hellingen van de Sierra Nevada, het hoogste berggebied van Spanje. Het lijkt een reis terug in de tijd, want het gebied heeft een unieke cultuur van vroeger tot nu, zichtbaar in de eetcultuur, architectuur en tradities. Het opvallendste kenmerk van het landschap zijn de dorpen, meestal boven de 1.000 m, bestaande uit witte, vierkante huizen met platte daken verspreid over de valleien. Het avontuur begint in het dorp Laroles, gelegen bij de pas van La Ragua, de enige verbinding tussen het noorden en zuiden van de Sierra Nevada, en gaat richting het westen.",
+                "WHAT_TO_EXPECT_TEXT_3": "Tijdens de reis ontdek je vele dorpen en hun terrasvormige velden die tegen de hellingen opklimmen en prachtige uitzichten en dramatische landschappen van het berggebied bieden. De bloesem in de lente en de kleuren van de herfst zijn de ideale tijd om mee te doen aan de trekking en maken het tot een unieke ervaring.",
+                "WHAT_TO_EXPECT_TEXT_4": "Ga met ons mee en ontdek de verborgen schoonheid van de Alpujarra-regio, een schat om te ontdekken!",
+
+                 "DAY_1": {
+                    "TITLE": "Dag 1",
+                    "TEXT_1": "Bij aankomst in Málaga of Granada brengt onze transfer ons naar ons landelijke hotel in de regio Guadix, gelegen tussen het noorden van de Sierra Nevada en de Gorafe-woestijn, een van de unieke landschappen van de provincie Granada. De reisleider organiseert het diner om de eerste dag van de reis te vieren."
+                 },
+
+                 "DAY_2": {
+                    "TITLE": "Dag 2",
+                    "SUBTITLE": "Route 1 Laroles – Válor",
+                    "TEXT_1": "Na het ontbijt rijden we over de bergpas “Puerto La Ragua” naar het beginpunt van de trekking in het dorp Laroles. De route start in het bovenste deel van het dorp, op 1.000 meter hoogte, vanwaar je de platte daken van de huizen ziet. Een van de bepalende elementen van het gebied, die zijn maximale betekenis krijgt in de Alpujarra, is de architectuur met invloeden van andere culturen en beschavingen. De orografie en het reliëf van het terrein bepalen het profiel van de dorpen. Deze dorpen zijn op het zuiden georiënteerd zodat de zon ze zo lang mogelijk verwarmt in de koude winters. De meeste dorpen liggen halverwege de hellingen die vanaf de top van de Sierra Nevada afdalen in een trapsgewijze opbouw die ze charme geeft.",
+                    "TEXT_2": "Diner: De reisleider organiseert een diner."
+                 },
+
+                 "DAY_3": {
+                    "TITLE": "Dag 3",
+                    "SUBTITLE": "Route 2 Válor – Mecina Bombarón",
+                    "TEXT_1": "We verlaten het dorp Válor, de geboorteplaats van de Alpujarra-held Aben Humeya, een afstammeling van de Omajjaden, die tot koning van de Alpujarra werd uitgeroepen na de Moorse opstand tegen de christenen onder Filips II in 1568. De tweede wandeling brengt ons naar Yegen, een rustig dorp waar de romantische reiziger Gerald Brenan woonde, bekend als auteur van “Al Sur de Granada”, een van de bekendste boeken over de Alpujarra. Na het oversteken van de rivier de Mecina en een steile klim bereiken we het dorp Mecina Bombarón. Daarna nemen we de auto naar ons volgende hotel in het nabijgelegen dorp Cádiar, gelegen tussen de Sierra Nevada en de Contraviesa.",
+                    "TEXT_2": "Diner: De reisleider organiseert een diner."
+                 },
+
+                 "DAY_4": {
+                    "TITLE": "Dag 4",
+                    "SUBTITLE": "Route 3 Cádiar - Trevélez",
+                    "TEXT_1": "De etappe van vandaag is zwaarder. We gaan van het zuidelijkste punt van de Alpujarra-route (800 meter) naar het hoogste punt, ongeveer 1.500 meter, in het dorp Trevélez. Behalve dat het het hoogste dorp van de Sierra Nevada is, staat Trevélez bekend om zijn natuurlijk gerijpte hammen, dankzij de gezonde berglucht. In de 19e eeuw kreeg de ham van Trevélez erkenning toen koningin Isabel II het de status van hofleverancier gaf. Het heeft nu een beschermde oorsprongsbenaming en wereldwijde erkenning.",
+                    "TEXT_2": "Diner: De reisleider organiseert een diner."
+                 },
+
+                 "DAY_5": {
+                    "TITLE": "Dag 5",
+                    "SUBTITLE": "Route 4 Trevélez – La Taha",
+                    "TEXT_1": "Vandaag voert de route je door een steeneikenbos dat in de herfst een kleurrijke en indrukwekkende vallei biedt. In de lente bloeien de gaspeldoorn en brem, wat een zee van gele bloemen oplevert. De panoramische uitzichten tonen het ruige landschap met diepe valleien en grote hoogteverschillen van de Alpujarra. Afgelegen plekken zoals ravijnen zijn het thuis van veel soorten flora en fauna door microklimaten met koude winters en milde zomers. Na het oversteken van twee ravijnen en een lange afdaling komen we aan in het dorp Busquístar, vlakbij onze bestemming “La Taha”, een gemeente die uit verschillende mooie kleine dorpen bestaat. De naam komt van de administratieve indeling van het oude koninkrijk Granada in de Nasridenperiode. Het is een rustige plek met prachtig uitzicht en goed bewaarde traditionele buurten.",
+                    "TEXT_2": "Diner: De reisleider organiseert een diner."
+                 },
+
+                 "DAY_6": {
+                    "TITLE": "Dag 6",
+                    "SUBTITLE": "Route 5 La Taha – Capileira",
+                    "TEXT_1": "De laatste etappe van vandaag is een klim in de ochtend die ons naar onze eindbestemming brengt, het dorp Capileira, het hoogste van de drie dorpen op 1.435 meter in de Poqueira-kloof. De Poqueira-kloof en de drie dorpen op de hellingen zijn een van de meest iconische plekken van de Alpujarras. Het ligt aan de voet van de hoogste toppen en bevat een van de meest verrassende landschappen van het Sierra Nevada Natuurpark. Hier verblijven we de laatste twee nachten van de trekking.",
+                    "TEXT_2": "Vrij diner"
+                 },
+
+                 "DAY_7": {
+                    "TITLE": "Dag 7",
+                    "SUBTITLE": "Vrije dag Capileira",
+                    "TEXT_1": "Ontdek het Historisch-Artistiek gebied van de Poqueira-vallei en de drie dorpen: Pampaneira, Bubión en Capileira.",
+                    "TEXT_2": "Hoewel de oorsprong teruggaat tot de Feniciërs, Romeinen en Visigoten, is de sterkste erfenis die van de Arabieren. De traditionele architectuur met witte huizen en platte daken langs steile en kronkelende straten, irrigatiesystemen, landbouw en taalkundige wortels zijn de nalatenschap van een cultuur die er acht eeuwen aanwezig was.",
+                    "TEXT_3": "Voor de liefhebbers is er de optie om met de gids een extra wandeling in de omgeving te maken.",
+                    "TEXT_4": "De gids organiseert een plek om samen te dineren om de laatste avond van de reis te vieren."
+                 },
+                    "DAY_8": {
+                        "TITLE": "Dag 8",
+                        "TEXT_1": "De reis eindigt na het ontbijt in ons hotel. Er is een privétransfer van het hotel naar de luchthaven van Málaga of Granada."
+                    }
+            },
+
+            "THE_OLD_MINE_TRAIL": {
+
+                "TITLE": "Het Oude Mijnpad",
+                "LOCATION": "Nationaal Park Sierra Nevada",
+                "PRICE": "40 (6 pers.)",
+                "PRE_BOOKING": "100%",
+                "DURATION_1": "Route 1: 7-8 uur",
+                "DURATION_2": "Route 2: 6-7 uur",
+                "MINUMUM_OF_PERSONS": "2",
+                "TOUR_TYPE": "Geleid",
+                "SEASON": "Het hele jaar door",
+
+                "TOTAL_DISTANCE_1": "Route 1: 22 km",
+                "TOTAL_DISTANCE_2": "Route 2: 15 km",
+
+                "TOTAL_ASCENT_1": "Route 1: 1.000 m",
+                "TOTAL_ASCENT_2": "Route 2: 800 m",
+
+                "TOTAL_DESCENT_1": "Route 1: 1.000 m",
+                "TOTAL_DESCENT_2": "Route 2: 800 m",
+
+                "ROUTE_TYPE": "Lusroute",               
+
+                "PHYSICAL_DIFFICULTY_1": "Route 1: C",
+                "PHYSICAL_DIFFICULTY_2": "Route 2: B",
+
+                "TECHNICAL_DIFFICULTY_1": "Route 1: B",
+                "TECHNICAL_DIFFICULTY_2": "Route 2: B",
+
+                "INCLUDED": {
+                    "TITLE": "Inbegrepen",
+                    "TEXT_1": "Professionele gekwalificeerde berggids",
+                    "TEXT_2": "Aansprakelijkheidsverzekering en assistentie",
+                    "TEXT_3": "Transfer"                                    
+                },
+                "NOT_INCLUDED": {
+                    "TITLE": "Niet inbegrepen",
+                    "TEXT_1": "Snack",
+                    "TEXT_2": "Minibus eerste dag (optioneel)",
+                    "TEXT_3": "Zomer skilift eerste dag (optioneel)"                        
+                },
+
+                "AVAILABILITY": "Beschikbaarheid",
+                "AVAILABILITY_TEXT_1": "Het hele jaar door",
+
+                "HIGHLIGHT": "Hoogtepunten",
+                "HIGHLIGHT_TEXT_1": "Nationaal Park Sierra Nevada",
+                "HIGHLIGHT_TEXT_2": "Spectaculair uitzicht vanaf de noordflank van de Sierra Nevada",
+                "HIGHLIGHT_TEXT_3": "De oude mijnen",
+                "HIGHLIGHT_TEXT_4": "De iconische kastanjeboom",
+                "HIGHLIGHT_TEXT_5": "Grote diversiteit aan flora", 
+                "HIGHLIGHT_TEXT_6": "Picknick in de buitenlucht",
+
+                "WHAT_TO_BRING" : "Wat mee te nemen voor wandelen",
+                "WHAT_TO_BRING_TEXT_1" : "Het weer is belangrijk om rekening mee te houden bij het inpakken voor je buitenactiviteit. Je paklijst is gebaseerd op je comfort en gevoeligheid. Het dragen van laagjes kleding is de beste manier om te reizen en buiten te zijn. Het wordt sterk aanbevolen als de beste manier om warm en koel te blijven, aangezien het weer in de bergen onvoorspelbaar kan veranderen.",
+                "WHAT_TO_BRING_TEXT_2" : "Waterfles minimaal 1,5 L",
+                "WHAT_TO_BRING_TEXT_3" : "Picknick",
+                "WHAT_TO_BRING_TEXT_4" : "Lichte rugzak",                
+                "WHAT_TO_BRING_TEXT_5" : "Weersgeschikte en comfortabele kleding",                
+                "WHAT_TO_BRING_TEXT_6" : "Wandeljas",                
+                "WHAT_TO_BRING_TEXT_7" : "Wandelschoenen, geen open schoenen!",                
+                "WHAT_TO_BRING_TEXT_8" : "Zonnebescherming",                
+                "WHAT_TO_BRING_TEXT_9" : "Handschoenen",                
+                "WHAT_TO_BRING_TEXT_10" : "Warme muts",                
+                "WHAT_TO_BRING_TEXT_11" : "Nekwarmer",             
+                "WHAT_TO_BRING_TEXT_12" : "Wandelstokken",             
+                "WHAT_TO_BRING_TEXT_13" : "Regenkleding",             
+                "WHAT_TO_BRING_TEXT_14" : "Waterdichte regenhoes voor rugzak",             
+                "WHAT_TO_BRING_TEXT_15" : "Heb je vragen over de materiaalaanbevelingen, neem dan contact met ons op of bekijk onze blog, “Wat mee te nemen voor wandelen.”",
+
+                "REQUIEREMENTS":"Vereisten",
+                "REQUIEREMENTS_TEXT_1":"Goede fysieke conditie",
+                "REQUIEREMENTS_TEXT_2":"Minimumleeftijd: 16 jaar, gewend aan wandelen",
+                "REQUIEREMENTS_TEXT_3":"Gesloten schoenen, geen open schoenen!",
+                "REQUIEREMENTS_TEXT_4":"Basis wandeluitrusting vereist (Bekijk onze blog voor meer informatie over wandeluitrusting)",
+
+                "PRICES": "Prijs:",
+                "PRICES_TEXT_1": "2 - 4 personen - 70 € p.p.",
+                "PRICES_TEXT_2": "5 personen - 50 € p.p.",
+                "PRICES_TEXT_3": "6 personen - 45 € p.p.",
+                "PRICES_TEXT_4": "7 personen - 40 € p.p.",
+
+                "WHAT_TO_EXPECT": "Wat te verwachten",
+
+                "DAY_1": {
+
+                    "TITLE": "Dag 1",
+                    "TEXT_1": "Een van de mooiste routes in het Nationaal Park Sierra Nevada is het Oude Mijnpad. Dit historische pad, aangelegd eind 19e eeuw om toegang te krijgen tot de mijnen, volgt de rivier de Genil richting de samenvloeiing van verschillende rivieren aan het einde van de vallei. De vallei onthult zijn prachtige landschap, waaronder de ruige noordflanken van de hoogste toppen van de Sierra Nevada: Mulhacén, Veleta en Alcazaba. Gedurende de dag kom je ruïnes van stenen gebouwen, oude mijnschachten en de typische Iberische steenbok of de steenarend tegen. Om bij het beginpunt van het pad te komen rijden we ongeveer 30 minuten naar het mooie dorp Güéjar Sierra, een bergdorp gelegen op 1.000 meter aan de noordwestelijke helling van het Nationaal Park Sierra Nevada.",
+                    "TEXT_2": "We hebben twee varianten met verschillende niveaus van wandelmoeilijkheid.",
+                    "TEXT_3": "(Bekijk onze blog voor meer informatie over onze wandelgraden)"
+                }
+            },
+
+            "SUNRISE_SIERRA_NEVADA": {
+                "TITLE": "Zonsopgang Sierra Nevada",
+                "LOCATION": "Nationaal Park Sierra Nevada",
+                "PRICE": "90 (4 pers.)",
+                "PRE_BOOKING": "100%",
+                "MINIMUM_OF_PERSONS": "2",
+                "DURATION": "7 Uur",
+                "TOUR_TYPE": "Geleid",
+                "SEASON": "Zomer",
+
+                "TOTAL_DISTANCE": "12 km",
+                "TOTAL_ASCENT": "900 m",
+                "TOTAL_DESCENT": "900 m",
+                "ROUTE_TYPE": "Heen en terug",
+                "PHYSICAL_DIFFICULTY": "C",
+                "TECHNICAL_DIFFICULTY": "B",
+
+                "INCLUDED": {
+                    "TITLE": "Inbegrepen",
+                    "TEXT_1": "Gekwalificeerde berggids",
+                    "TEXT_2": "Aansprakelijkheidsverzekering en assistentie",
+                    "TEXT_3": "Transfer",
+                    "TEXT_4": "Water",
+                    "TEXT_5": "Materiaal: hoofdlamp, handschoenen, muts, wandelstokken",
+                    "TEXT_6": "Een warme drank op de top"
+                },
+
+                "NOT_INCLUDED": {
+                    "TITLE": "Niet inbegrepen",
+                    "TEXT_1": "Ontbijt",
+                    "TEXT_2": "Snack"
+                },
+                "EXTRA": {
+                    "TITLE": "Extra",
+                    "TEXT_1": "Ontbijt in een berghut aan het einde van de wandeling"
+                },
+
+                "AVAILABILITY": "Beschikbaarheid",
+                "AVAILABILITY_SUMMER": "Zomer",
+
+                "HIGHLIGHT": "Hoogtepunten",
+                "HIGHLIGHT_TEXT_1": "Nationaal Park Sierra Nevada",
+                "HIGHLIGHT_TEXT_2": "Nachtwandeling",
+                "HIGHLIGHT_TEXT_3": "Ontbijt in de berghut",
+                "HIGHLIGHT_TEXT_4": "Zonsopgang vanaf de top van Veleta op 3.392 meter",
+
+                "PRICES": "Prijs:",
+                "PRICES_TEXT_1": "1 persoon - 200 €",
+                "PRICES_TEXT_2": "2 personen – 120 € p.p.",
+                "PRICES_TEXT_3": "3 personen – 100 € p.p.",
+                "PRICES_TEXT_4": "4-5 personen – 90 € p.p.",
+                "PRICES_TEXT_5": "6-7 personen – 80 € p.p.",
+
+                "WHAT_TO_BRING": "Wat mee te nemen voor wandelen",
+                "WHAT_TO_BRING_TEXT_1": "Het weer is belangrijk om rekening mee te houden bij het inpakken voor je buitenactiviteit. Je paklijst is gebaseerd op je comfort en gevoeligheid. Het dragen van laagjes kleding is de beste manier om te reizen en buiten te zijn. Het wordt sterk aanbevolen als de beste manier om warm en koel te blijven, aangezien het weer in de bergen onvoorspelbaar kan veranderen.",
+                "WHAT_TO_BRING_TEXT_2": "Waterfles minimaal 1 L",
+                "WHAT_TO_BRING_TEXT_3": "Picknick / snack",
+                "WHAT_TO_BRING_TEXT_4": "Lichte rugzak",
+                "WHAT_TO_BRING_TEXT_5": "Weersgeschikte en comfortabele kleding",
+                "WHAT_TO_BRING_TEXT_6": "Wandeljas",
+                "WHAT_TO_BRING_TEXT_7": "Wandelschoenen",
+                "WHAT_TO_BRING_TEXT_8": "Zonnebescherming",
+                "WHAT_TO_BRING_TEXT_9": "Handschoenen",
+                "WHAT_TO_BRING_TEXT_10": "Warme muts",
+                "WHAT_TO_BRING_TEXT_11": "Nekwarmer",
+                "WHAT_TO_BRING_TEXT_12": "Wandelstokken",
+                "WHAT_TO_BRING_TEXT_13": "Heb je vragen over de materiaalaanbevelingen, neem dan gerust contact met ons op.",
+
+                "REQUIEREMENTS": "Vereisten",
+                "REQUIEREMENTS_TEXT_1": "Fysieke conditie: Goed, gewend aan aerobe sporten.",
+                "REQUIEREMENTS_TEXT_2": "Basis wandeluitrusting vereist. Goede wandelschoenen en wandelstokken aanbevolen.",
+                "REQUIEREMENTS_TEXT_3": "Minimumleeftijd: 14 jaar, gewend aan wandelen",
+
+                "WHAT_TO_EXPECT": "Wat te verwachten",
+
+                "DAY_1": {
+                    "TITLE": "Dag 1",
+                    "TEXT_1": "Onder de donkere hemel, op een hoogte van 2.500 meter, beginnen we de beklimming geleid door de belofte van een spectaculaire zonsopgang die ons wacht op de top van Veleta op 3.392 meter, de op één na hoogste piek van de Sierra Nevada. Bij het bereiken van de laatste bergkam verschijnen de eerste lichtstralen aan de horizon en kleuren de lucht in prachtige schemerkleuren van geelrood. Bovenop de top worden we begroet door de zonsopgang, een bijzonder moment van bezinning. Daarna beginnen we aan de afdaling en volgen we het pad terug dat we omhoog zijn gekomen. We stappen binnen in de berghut voor een verse koffie en ontbijt.",
+                    "TEXT_2": "Op de terugweg kunnen we genieten van een heerlijke lunch bij een typisch Andalusisch landhuis."
+                }
+            },
+
+            "KING_OF_THE_LOW_MOUNTAINS": {
+
+                "TITLE": "Koning van de Lage Bergen",
+                "LOCATION": "Nationaal Park Sierra Nevada",
+                "PRICE": "70 (4 pers.)",
+                "PRE_BOOKING": "100%",
+                "MINIMUM_OF_PERSONS": "2",
+                "DURATION": "6 Uur",
+                "TOUR_TYPE": "Geleid",
+                "SEASON": "Winter Lente Herfst",
+
+                "TOTAL_DISTANCE": "11 km",
+                "TOTAL_ASCENT": "750 m",
+                "TOTAL_DESCENT": "750 m",
+                "ROUTE_TYPE": "Lusroute",
+                "PHYSICAL_DIFFICULTY": "B",
+                "TECHNICAL_DIFFICULTY": "B",
+
+                "INCLUDED": {
+                    "TITLE": "Inbegrepen",
+                    "TEXT_1": "Gekwalificeerde berggids",
+                    "TEXT_2": "Aansprakelijkheidsverzekering en assistentie",
+                    "TEXT_3": "Transfer",
+                    "TEXT_4": "Water"
+                },
+                "NOT_INCLUDED": {
+                    "TITLE": "Niet inbegrepen",                                                                  
+                    "TEXT_1": "Lunch",
+                    "TEXT_2": "Snack"
+                },
+                "EXTRA": {
+                    "TITLE": "Extra",
+                    "TEXT_1": "Lunch bij een lokaal Andalusisch landhuis"                 
+                },
+
+                "AVAILABILITY": "Beschikbaarheid",
+                "AVAILABILITY_SPRING": "Lente",                
+                "AVAILABILITY_AUTUMN": "Herfst",
+                "AVAILABILITY_WINTER": "Winter",
+
+                "HIGHLIGHT": "Hoogtepunten",
+                "HIGHLIGHT_TEXT_1": "Wandelen in Nationaal Park Sierra Nevada",
+                "HIGHLIGHT_TEXT_2": "Dolomietlandschap",
+                "HIGHLIGHT_TEXT_3": "360º uitzichtpunt op 2.080 m",
+
+                "PRICES": "Prijs:",
+                "PRICES_TEXT_1": "2 - 4 personen: 70 € p.p.",
+                "PRICES_TEXT_2": "5 personen – 50 € p.p.",
+                "PRICES_TEXT_3": "6 personen – 45 € p.p.",
+                "PRICES_TEXT_4": "7 personen – 40 € p.p.",
+
+                "WHAT_TO_BRING" : "Wat mee te nemen voor wandelen",
+                "WHAT_TO_BRING_TEXT_1" : "Het weer is belangrijk om rekening mee te houden bij het inpakken voor je buitenactiviteit. Je paklijst is gebaseerd op je comfort en gevoeligheid. Het dragen van laagjes kleding is de beste manier om te reizen en buiten te zijn. Het wordt sterk aanbevolen als de beste manier om warm en koel te blijven, aangezien het weer in de bergen onvoorspelbaar kan veranderen.",
+                "WHAT_TO_BRING_TEXT_2" : "Waterfles minimaal 1,5 L",
+                "WHAT_TO_BRING_TEXT_3" : "Picknick / snack",
+                "WHAT_TO_BRING_TEXT_4" : "Lichte rugzak",                
+                "WHAT_TO_BRING_TEXT_5" : "Weersgeschikte en comfortabele kleding",                
+                "WHAT_TO_BRING_TEXT_6" : "Wandeljas",                
+                "WHAT_TO_BRING_TEXT_7" : "Wandelschoenen",                
+                "WHAT_TO_BRING_TEXT_8" : "Zonnebescherming",                
+                "WHAT_TO_BRING_TEXT_9" : "Handschoenen",                
+                "WHAT_TO_BRING_TEXT_10" : "Warme muts",                
+                "WHAT_TO_BRING_TEXT_11" : "Nekwarmer",             
+                "WHAT_TO_BRING_TEXT_12" : "Wandelstokken",             
+                "WHAT_TO_BRING_TEXT_13" : "Heb je vragen over de materiaalaanbevelingen, neem dan gerust contact met ons op.",
+
+                "REQUIEREMENTS":"Vereisten",
+                "REQUIEREMENTS_TEXT_1":"Fysieke conditie: normaal, gewend aan wandelen.",
+                "REQUIEREMENTS_TEXT_2":"Basis wandeluitrusting vereist. Goede wandelschoenen en wandelstokken aanbevolen.",
+                "REQUIEREMENTS_TEXT_3":"Minimumleeftijd: 12 jaar, gewend aan wandelen",
+
+                "WHAT_TO_EXPECT": "Wat te verwachten",
+
+                 "DAY_1": {
+
+                    "TITLE": "Dag 1",
+                    "TEXT_1": "Wandeling door het spectaculaire maanlandschap van dolomiet in het Nationaal Park Sierra Nevada. Op de top word je beloond met een 360º uitzicht over de Sierra Nevada en de omgeving van de stad Granada. Een geweldige ontsnapping uit de stad en een perfecte dag in de bergen!",
+                    "TEXT_2": "Op de terugweg kunnen we genieten van een heerlijke lunch bij een typisch Andalusisch landhuis."
+                    
+                }
+
+            },
+
+            "FAMILY_HIKE_GORGE_SIERRA_NEVADA": {
+
+                "TITLE": "Familiewandeling - De Kloof van Sierra Nevada",
+                "LOCATION": "Monachil Sierra Nevada",
+                "PRICE": "70 (4 pers.)",
+                "PRE_BOOKING": "100%",
+                "MINIMUM_OF_PERSONS": "2",
+                "DURATION": "6 Uur",
+                "TOUR_TYPE": "Geleid",
+                "SEASON": "Het hele jaar door",
+
+                "TOTAL_DISTANCE": "11 km",
+                "TOTAL_ASCENT": "400 m",
+                "TOTAL_DESCENT": "400 m",
+                "ROUTE_TYPE": "Lusroute",
+                "PHYSICAL_DIFFICULTY": "B",
+                "TECHNICAL_DIFFICULTY": "B",
+
+                 "INCLUDED": {
+                    "TITLE": "Inbegrepen",
+                    "TEXT_1": "Gekwalificeerde berggids",
+                    "TEXT_2": "Aansprakelijkheidsverzekering en assistentie",
+                    "TEXT_3": "Transfer",
+                    "TEXT_4": "Water"
+                },
+                "NOT_INCLUDED": {
+                    "TITLE": "Niet inbegrepen",
+                    "TEXT_1": "Lunch"
+                },
+                "EXTRA": {
+                    "TITLE": "Extra"
+                },
+
+                "AVAILABILITY": "Beschikbaarheid",
+                "AVAILABILITY_SPRING": "Lente",
+                "AVAILABILITY_SUMMER": "Zomer",
+                "AVAILABILITY_AUTUMN": "Herfst",
+                "AVAILABILITY_WINTER": "Winter",
+
+                "HIGHLIGHT": "Hoogtepunten",
+                "HIGHLIGHT_TEXT_1": "Nationaal Park Sierra Nevada",
+                "HIGHLIGHT_TEXT_2": "Hangbruggen",
+                "HIGHLIGHT_TEXT_3": "De Kloof",
+                "HIGHLIGHT_TEXT_4": "De rivier Monachil",
+                "HIGHLIGHT_TEXT_5": "Prachtige uitzichten",
+
+                "PRICES": "Prijs:",
+                "PRICES_TEXT_1": "2 - 4 personen: 70 € p.p.",
+                "PRICES_TEXT_2": "5 personen – 50 € p.p.",
+                "PRICES_TEXT_3": "6 personen – 45 € p.p.",
+                "PRICES_TEXT_4": "7 personen – 40 € p.p.",
+                "PRICES_TEXT_5": "Voor gezinnen is er een korting.",
+
+                "WHAT_TO_BRING" : "Wat mee te nemen voor wandelen",
+                "WHAT_TO_BRING_TEXT_1" : "Het weer is belangrijk om rekening mee te houden bij het inpakken voor je buitenactiviteit. Je paklijst is gebaseerd op je comfort en gevoeligheid. Het dragen van laagjes kleding is de beste manier om te reizen en buiten te zijn. Het wordt sterk aanbevolen als de beste manier om warm en koel te blijven, aangezien het weer in de bergen onvoorspelbaar kan veranderen.",
+                "WHAT_TO_BRING_TEXT_2" : "Waterfles minimaal 1,5 L",
+                "WHAT_TO_BRING_TEXT_3" : "Picknick / snack",
+                "WHAT_TO_BRING_TEXT_4" : "Lichte rugzak",                
+                "WHAT_TO_BRING_TEXT_5" : "Weersgeschikte en comfortabele kleding",                
+                "WHAT_TO_BRING_TEXT_6" : "Wandeljas",                
+                "WHAT_TO_BRING_TEXT_7" : "Wandelschoenen",                
+                "WHAT_TO_BRING_TEXT_8" : "Zonnebescherming",                
+                "WHAT_TO_BRING_TEXT_9" : "Handschoenen",                
+                "WHAT_TO_BRING_TEXT_10" : "Warme muts",                
+                "WHAT_TO_BRING_TEXT_11" : "Nekwarmer",             
+                "WHAT_TO_BRING_TEXT_12" : "Heb je vragen over de materiaalaanbevelingen, neem dan gerust contact met ons op.",
+
+                "REQUIEREMENTS":"Vereisten",
+                "REQUIEREMENTS_TEXT_1":"Fysieke conditie: normaal, gewend aan wandelen.",
+                "REQUIEREMENTS_TEXT_2":"Basis wandeluitrusting vereist. Goede wandelschoenen.",
+                "REQUIEREMENTS_TEXT_3":"Minimumleeftijd: 8 jaar, gewend aan wandelen.",
+
+                "WHAT_TO_EXPECT": "Wat te verwachten",
+
+                 "DAY_1": {
+
+                    "TITLE": "Dag 1",
+                    "TEXT_1": "We rijden naar het dorp Monachil, gelegen in een vruchtbare vallei van de Sierra Nevada op 800 meter hoogte, net buiten Granada. Het wandelpad, genaamd Cahorros Trail, is een wandelroute in de lagere heuvels van het Nationaal Park Sierra Nevada. De route begint in het dorp en volgt de rivier omhoog naar de ingang van de smalle kloof. Het pad wordt een aaneenschakeling van trappen, kruipen onder uitstekende rotsen en het oversteken van hangbruggen langs een kabbelende rivier door de kloof, die poelen en grotten vormt en de wandeling tot een avontuur maakt voor het hele gezin. Aan het einde van de kloof keren we terug via een hoger gelegen route, vanwaar je een prachtig uitzicht hebt over de groene Monachil-vallei. Een geweldige ontsnapping uit de stad en een perfecte familiedag in de bergen!"
+                }
+            },
+
+            "TWO_DAY_SUMMIT_MULHACEN": {
+
+                "TITLE": "2-Daagse Beklimming Mulhacén",
+                "LOCATION": "Nationaal Park Sierra Nevada",
+                "PRICE": "160 (6 pers.)",
+                "PRE_BOOKING": "100%",
+                "DURATION_1": "Dag 1: 6 uur",
+                "DURATION_2": "Dag 2: 6 uur",
+                "MINUMUM_OF_PERSONS": "1",
+                "TOUR_TYPE": "Geleid",
+                "SEASON": "Zomer",
+
+                "TOTAL_DISTANCE_1": "Dag 1: 14 km",
+                "TOTAL_DISTANCE_2": "Dag 2: 11 km",
+
+                "TOTAL_ASCENT_1": "Dag 1: 850 m",
+                "TOTAL_ASCENT_2": "Dag 2: 1000 m",
+
+                "TOTAL_DESCENT_1": "Dag 1: 885 m",
+                "TOTAL_DESCENT_2": "Dag 2: 800 m",
+
+                "ROUTE_TYPE": "Punt-tot-punt",               
+
+                "PHYSICAL_DIFFICULTY_1": "Dag 1: C",
+                "PHYSICAL_DIFFICULTY_2": "Dag 2: C",
+
+                "TECHNICAL_DIFFICULTY_1": "Dag 1: C",
+                "TECHNICAL_DIFFICULTY_2": "Dag 2: C",
+
+                 "INCLUDED": {
+                    "TITLE": "Inbegrepen",
+                    "TEXT_1": "Gekwalificeerde berggids",
+                    "TEXT_2": "Aansprakelijkheidsverzekering en assistentie",
+                    "TEXT_3": "Transfer",                                           
+                    "TEXT_4": "1 nacht in de berghut",                                          
+                    "TEXT_5": "Picknick: eerste en tweede dag",                                          
+                    "TEXT_6": "Ontbijt: tweede dag",                                         
+                    "TEXT_7": "Diner: eerste dag",                                        
+                    "TEXT_8": "Minibus tweede dag"                                       
+                },
+                "NOT_INCLUDED": {
+                    "TITLE": "Niet inbegrepen",
+                    "TEXT_1": "Snack",
+                    "TEXT_2": "Minibus eerste dag (optioneel)",
+                    "TEXT_3": "Zomer skilift eerste dag (optioneel)"                        
+                },
+                "EXTRA": {
+                    "TITLE": "Extra",
+                    "TEXT_1": "Je kunt op de eerste dag gebruik maken van een minibus of zomer skilift, die ons op ongeveer 3.000 meter afzet, wat de stijging, afstand en de eisen van de route aanzienlijk vermindert. Vraag om meer informatie.",
+                    "TEXT_2": "Acclimatiseer en overnacht de nacht ervoor in de berghut op 2.500 meter, het startpunt van de beklimming."
+                              
+                },
+                "AVAILABILITY":"Beschikbaarheid",
+                "AVAILABILITY_SUMMER":"Zomer",
+
+                "HIGHLIGHT":"Hoogtepunten",
+                "HIGHLIGHT_TEXT_1":"Beklim de hoogste top van het vasteland van Spanje, Mulhacén 3.480 m.",
+                "HIGHLIGHT_TEXT_2":"Adembenemend berglandschap en gletsjermeren",
+                "HIGHLIGHT_TEXT_3":"Overnachten in de berghut",
+
+                "WHAT_TO_BRING" : "Wat mee te nemen voor wandelen",
+                "WHAT_TO_BRING_TEXT_1" : "Het weer is belangrijk om rekening mee te houden bij het inpakken voor je buitenactiviteit. Je paklijst is gebaseerd op je comfort en gevoeligheid. Het dragen van laagjes kleding is de beste manier om te reizen en buiten te zijn. Het wordt sterk aanbevolen als de beste manier om warm en koel te blijven, aangezien het weer in de bergen onvoorspelbaar kan veranderen.",
+                "WHAT_TO_BRING_TEXT_2" : "Waterfles minimaal 2 L",
+                "WHAT_TO_BRING_TEXT_3" : "Picknick (boterham, chocolade, gedroogd fruit, etc.)",
+                "WHAT_TO_BRING_TEXT_4" : "Lichte rugzak (20-30L)",                
+                "WHAT_TO_BRING_TEXT_5" : "Weersgeschikte en technische kleding",                
+                "WHAT_TO_BRING_TEXT_6" : "Wandeljas",                
+                "WHAT_TO_BRING_TEXT_7" : "Wandelschoenen",                
+                "WHAT_TO_BRING_TEXT_8" : "Zonnebescherming",                
+                "WHAT_TO_BRING_TEXT_9" : "Zonnebril",                
+                "WHAT_TO_BRING_TEXT_10" : "Zomerhoed of pet voor wandelen",                
+                "WHAT_TO_BRING_TEXT_11" : "Wandelhandschoenen",                
+                "WHAT_TO_BRING_TEXT_12" : "Warme muts en nekwarmer",                
+                "WHAT_TO_BRING_TEXT_13" : "Wandelstokken (aanbevolen)",                
+                "WHAT_TO_BRING_TEXT_14" : "Hoofdlamp",                
+                "WHAT_TO_BRING_TEXT_15" : "Heb je vragen over de materiaalaanbevelingen, neem dan contact met ons op of bekijk onze blog, “Wat mee te nemen voor wandelen.”",
+
+                "WHAT_TO_EXPECT": "Wat te verwachten",
+                "WHAT_TO_EXPECT_TEXT_1": "Een uitzonderlijk avontuur, de beklimming naar de 3.480 meter hoge top van de Mulhacén, het dak van het schiereiland",
+                "WHAT_TO_EXPECT_TEXT_2": "We bieden twee variaties aan, elk met een andere fysieke moeilijkheidsgraad, om de top van de Mulhacén te beklimmen.",
+
+                "REQUIEREMENTS":"Vereisten",
+                "REQUIEREMENTS_TEXT_1":"Fysieke conditie: Goed, gewend aan aerobe sporten.",
+                "REQUIEREMENTS_TEXT_2":"Goede wandeluitrusting vereist. Wandelstokken aanbevolen. Enkelhoge wandelschoenen sterk aanbevolen.",
+                "REQUIEREMENTS_TEXT_3":"Eerdere ervaring met bergwandelen: aanbevolen.",
+                
+
+                "RECOMMENDATIONS":"Aanbevelingen",
+                "RECOMMENDATIONS_TEXT_1":"We raden aan om goed uit te rusten en beter te acclimatiseren in de berghut de nacht ervoor om symptomen van hoogteziekte te voorkomen.",
+
+                "PREPARATION":"Voorbereiding",
+                "PREPARATION_TEXT_1":"- Evalueer je conditie.",
+                "PREPARATION_TEXT_2":"- De beste manier om je voor te bereiden is wandelen en een rugzak met wat gewicht dragen.",
+                "PREPARATION_TEXT_3":"Voor meer informatie bekijk onze blog en zoek naar “Hoe je je fysiek voorbereidt op een wandeling”",
+
+                "SIERRA_NEVADA_IN_SUMMER": "Sierra Nevada in de zomer",
+                "SIERRA_NEVADA_IN_SUMMER_TEXT_1": "Het weer in de Sierra Nevada tijdens de zomer heeft een gemiddelde temperatuur van 24ºC en vrij warme dagen. Op 3.000 meter kan de temperatuur variëren tussen 15ºC en 20ºC, en 's nachts daalt de temperatuur tot 10ºC.",
+
+                "TRANSPORT": "Vervoer",
+                "TRANSPORT_TEXT_1": "We rijden vanuit de stad Granada naar de berghut op 2.500 meter. (ongeveer 1 uur rijden)",
+                
+
+                "PRICES": "Prijs:",
+                "PRICES_TEXT_1": "1 persoon - 340 €",
+                "PRICES_TEXT_2": "2 personen - 240 € p.p.",
+                "PRICES_TEXT_3": "3 personen - 200 € p.p.", 
+                "PRICES_TEXT_4": "4 personen - 180 € p.p.",
+                "PRICES_TEXT_5": "4 personen - 168 € p.p.",
+                "PRICES_TEXT_6": "6 personen - 160 € p.p.",
+                "PRICES_TEXT_7": "7 personen - 154 € p.p.",
+
+                "DAY_1": {
+
+                    "TITLE": "Dag 1",
+                    "TEXT_1": "De route start bij het meest zuidelijke skigebied van Europa en volgt een mooie klim langs de San Juan-vallei richting de op één na hoogste top van het gebergte, Veleta 3.392 meter. Het pad brengt je naar de Carihuela-hut gelegen in de bergpas “Collado de la Veleta” op de zuidelijke helling op een hoogte van 3.200 meter waar je de overblijfselen van de loopgraven uit de burgeroorlog kunt zien.",
+                    "TEXT_2": "Voor ons ontvouwt zich een weids landschap van het mediterrane berggebied en de top van de Mulhacén rijst majestueus op. De route gaat verder naar de “Caldera-lagune” van gletsjeroorsprong en een van de meest emblematische meren van de Sierra Nevada. Vanaf de berghut wacht ons de iconische steile klim naar de top van de Mulhacén. We nemen hetzelfde pad terug naar het bergdorp.",
+                    "TEXT_3": "We classificeren de noordzijde als een uitdagende route met veel afstand en kenmerken van hoogtelopen. De wandeling omvat een aanzienlijk hoogteverschil met een lange klim en afdaling verdeeld in twee delen gedurende de hele tocht. Een steile topbeklimming op rotsachtig en losliggend terrein. De afdaling is minder zwaar maar kan belastend zijn voor de knieën. De route heeft geen technische obstakels. Voor meer informatie bekijk onze blog en zoek naar “Wandelgraden”.",
+                    "TEXT_4": "Optioneel: er is een minibus of de zomer skilift beschikbaar, die ons op ongeveer 3.000 meter afzet, een aanzienlijke vermindering van stijging, afstand en de eisen van de route. Vraag om meer informatie."
+                   
+                     },
+
+                "DAY_2": {
+
+                    "TITLE": "Dag 2",
+                    "TEXT_1": "Na het ontbijt in de berghut beginnen we aan de emblematische beklimming naar de top van de Mulhacén.",
+                    "TEXT_2": "Vanaf de berghut wandelen we geleidelijk omhoog richting de Caldera-lagune, langs de Mulhacén-rivier door alpenweiden en rotsachtig terrein, met panoramisch uitzicht op de omliggende bergen en valleien.",
+                    "TEXT_3": "Een van de meest emblematische lagunes van de Sierra Nevada, de Caldera-lagune, ligt onder de bergkammen van de Mulhacén. Na een pauze bij de berghut wacht ons de iconische steile klim naar de top van de Mulhacén. Eenmaal op de top word je beloond met een adembenemend uitzicht op de omliggende toppen en valleien.",
+                    "TEXT_4": "Na te hebben genoten van je tijd op de top, beginnen we aan de afdaling langs de zuidflank van de Mulhacén tot 2.700 meter hoogte, waar we de pendelbus terug nemen naar het dorp Capileira in de Alpujarra-regio.",
+                    "TEXT_5": "Na te hebben ontspannen met een drankje en een tapa in het witte dorp rijden we terug naar Granada.",
+                    "TEXT_6": "We classificeren de route als een gemiddelde wandeling met kenmerken van hoogtelopen. De wandeling omvat een aanzienlijk hoogteverschil met een klim aan het begin en later een steile topbeklimming over rotsachtig en losliggend terrein. De afdaling is minder zwaar maar kan belastend zijn voor de knieën. De route heeft geen moeilijke obstakels. Voor meer informatie bekijk onze blog en zoek naar “Wandelgraden”."
+                }
+
+
+            },
+
+            "ONE_DAY_SUMMIT_MULHACEN": {
+
+            "TITLE": "1-Daagse Beklimming Mulhacén",
+            "LOCATION": "Nationaal Park Sierra Nevada",
+            "PRICE": "80 (6 pers.)",
+            "PRE_BOOKING": "100%",
+            "DURATION_1": "Route 1: 9-10 uur",
+            "DURATION_2": "Route 2: 6 uur",
+            "MINUMUM_OF_PERSONS": "1",
+            "MAXIMUM_OF_PERSONS": "2",
+            "TOUR_TYPE": "Geleid",
+            "SEASON": "Zomer",
+
+            "TOTAL_DISTANCE_1": "Route 1: 28 km",
+            "TOTAL_DISTANCE_2": "Route 2: 13 km",
+
+            "TOTAL_ASCENT_1": "Route 1: 1.500 m",
+            "TOTAL_ASCENT_2": "Route 2: 800 m",
+
+            "TOTAL_DESCENT_1": "Route 1: 1.500 m",
+            "TOTAL_DESCENT_2": "Route 2: 800 m",
+
+            "ROUTE_TYPE": "Heen en terug",               
+
+            "PHYSICAL_DIFFICULTY_1": "Route 1: D",
+            "PHYSICAL_DIFFICULTY_2": "Route 2: C",
+
+            "TECHNICAL_DIFFICULTY_1": "Route 1: C",
+            "TECHNICAL_DIFFICULTY_2": "Route 2: C",
+
+             "INCLUDED": {
+                "TITLE": "Inbegrepen",
+                "TEXT_1": "Professionele gekwalificeerde berggids",
+                "TEXT_2": "Aansprakelijkheidsverzekering en assistentie",
+                "TEXT_3": "Transfer"                                           
+            },
+            "NOT_INCLUDED": {
+                "TITLE": "Niet inbegrepen",
+                "TEXT_1": "Snack en lunch",
+                "TEXT_2": "Minibus (optioneel)",
+                "TEXT_3": "Zomer skilift (optioneel)"                        
+            },
+            "EXTRA": {
+                "TITLE": "Extra",
+                "TEXT_1": "Route 1 Noordzijde (Uitdagend):",
+                "TEXT_2": "- Je kunt gebruik maken van een minibus of zomer skilift, die ons op ongeveer 3.000 meter afzet. Dit betekent een aanzienlijke vermindering van de stijging, afstand en de eisen van de route. Vraag om meer informatie.",
+                "TEXT_3": "- Acclimatiseer en overnacht de nacht ervoor in de berghut op 2.500 meter, het startpunt van de beklimming.",                 
+                "TEXT_4": "Route 2 Zuidzijde (Gemiddeld):",                 
+                "TEXT_5": "- Acclimatiseer en overnacht de nacht ervoor in het dorp Capileira, het startpunt van de beklimming."                
+            },
+
+            "AVAILABILITY":"Beschikbaarheid",
+            "AVAILABILITY_SUMMER":"Zomer",
+
+            "HIGHLIGHT":"Hoogtepunten",
+            "HIGHLIGHT_TEXT_1":"Beklim de hoogste top van het vasteland van Spanje, Mulhacén 3.480 m.",
+            "HIGHLIGHT_TEXT_2":"Adembenemend berglandschap en gletsjermeren",
+
+            "WHAT_TO_BRING" : "Wat mee te nemen voor wandelen",
+            "WHAT_TO_BRING_TEXT_1" : "Het weer is belangrijk om rekening mee te houden bij het inpakken voor je buitenactiviteit. Je paklijst is gebaseerd op je comfort en gevoeligheid. Het dragen van laagjes kleding is de beste manier om te reizen en buiten te zijn. Het wordt sterk aanbevolen als de beste manier om warm en koel te blijven, aangezien het weer in de bergen onvoorspelbaar kan veranderen.",
+            "WHAT_TO_BRING_TEXT_2" : "Minimaal 2 L water",
+            "WHAT_TO_BRING_TEXT_3" : "Picknick (boterham, chocolade, gedroogd fruit, etc.)",
+            "WHAT_TO_BRING_TEXT_4" : "Weersgeschikte en technische kleding",                
+            "WHAT_TO_BRING_TEXT_5" : "Weersgeschikte en technische kleding",                
+            "WHAT_TO_BRING_TEXT_6" : "Wandeljas",                
+            "WHAT_TO_BRING_TEXT_7" : "Wandelschoenen",                
+            "WHAT_TO_BRING_TEXT_8" : "Zonnebescherming",                
+            "WHAT_TO_BRING_TEXT_9" : "Zonnebril",                
+            "WHAT_TO_BRING_TEXT_10" : "Zomerhoed of pet voor wandelen",                
+            "WHAT_TO_BRING_TEXT_11" : "Wandelhandschoenen",                
+            "WHAT_TO_BRING_TEXT_12" : "Warme muts en nekwarmer",                
+            "WHAT_TO_BRING_TEXT_13" : "Wandelstokken (aanbevolen)",                
+            "WHAT_TO_BRING_TEXT_14" : "Hoofdlamp",                
+            "WHAT_TO_BRING_TEXT_15" : "Heb je vragen over de materiaalaanbevelingen, neem dan contact met ons op of bekijk onze blog, “Wat mee te nemen voor wandelen.”",
+
+            "WHAT_TO_EXPECT": "Wat te verwachten",
+            "WHAT_TO_EXPECT_TEXT_1": "Een uitzonderlijk avontuur, de beklimming naar de 3.480 meter hoge top van de Mulhacén, het dak van het Iberisch schiereiland",
+            "WHAT_TO_EXPECT_TEXT_2": "We bieden twee variaties aan, elk met een andere fysieke moeilijkheidsgraad, om de top van de Mulhacén te beklimmen.",
+            
+
+            "REQUIEREMENTS":"Vereisten",
+            "REQUIEREMENTS_TEXT_1":"Fysieke conditie:",
+            "REQUIEREMENTS_TEXT_2":"- Route 1: Zeer goed.",
+            "REQUIEREMENTS_TEXT_3":"- Route 2: Goed, gewend aan aerobe sporten.",
+            "REQUIEREMENTS_TEXT_4":"Goede wandeluitrusting vereist. Wandelstokken aanbevolen. Enkelhoge wandelschoenen verplicht.",
+            "REQUIEREMENTS_TEXT_5":"Eerdere ervaring met bergwandelen:",
+            "REQUIEREMENTS_TEXT_6":"- Route 1: Vereist.",
+            "REQUIEREMENTS_TEXT_7":"- Route 2: Aanbevolen.",
+
+            "RECOMMENDATIONS":"Aanbevelingen",
+            "RECOMMENDATIONS_TEXT_1":"We raden aan om goed uit te rusten en beter te acclimatiseren, in de berghut of het dorp Capileira voor de gemakkelijke optie, de nacht ervoor om symptomen van hoogteziekte te voorkomen.",
+
+            "PREPARATION":"Voorbereiding",
+            "PREPARATION_TEXT_1":"- Evalueer je conditie.",
+            "PREPARATION_TEXT_2":"- De beste manier om je voor te bereiden is wandelen en een rugzak met wat gewicht dragen.",
+            "PREPARATION_TEXT_3":"Voor meer informatie bekijk onze blog en zoek naar “Hoe je je fysiek voorbereidt op een wandeling”",
+
+            "SIERRA_NEVADA_IN_SUMMER": "Sierra Nevada in de zomer",
+            "SIERRA_NEVADA_IN_SUMMER_TEXT_1": "Het weer in de Sierra Nevada tijdens de zomer heeft een gemiddelde temperatuur van 24ºC en vrij warme dagen. Op 3.000 meter kan de temperatuur variëren tussen 15ºC en 20ºC, en 's nachts daalt de temperatuur tot 10ºC.",
+
+            "TRANSPORT": "Vervoer",
+            "TRANSPORT_TEXT_1": "Voor de eerste route rijden we vanuit de stad Granada naar de berghut op 2.500 meter. (ongeveer 1 uur rijden)",
+            "TRANSPORT_TEXT_2": "Voor de tweede route rijden we vanuit de stad Granada naar het dorp Capileira. (ongeveer 1,5 uur rijden)",
+
+            "PRICES": "Prijs:",
+            "PRICES_TEXT_1": "1 persoon - 200 €",
+            "PRICES_TEXT_2": "2 personen - 120 € p.p.",
+            "PRICES_TEXT_3": "3 personen - 100 € p.p.", 
+            "PRICES_TEXT_4": "4 personen - 90 € p.p.",
+            "PRICES_TEXT_5": "6 personen - 80 € p.p.",
+            "PRICES_TEXT_6": "7 personen - 80 € p.p.",
+
+            "DAY_1": {
+
+                "TITLE": "Route 1 Noordzijde (Uitdagend):",
+                "TEXT_1": "De route start bij het meest zuidelijke skigebied van Europa en volgt een mooie klim langs de San Juan-vallei richting de op één na hoogste top van het gebergte, Veleta 3.392 meter. Het pad brengt je naar de Carihuela-hut gelegen in de bergpas “Collado de la Veleta” op de zuidelijke helling op een hoogte van 3.200 meter waar je de overblijfselen van de loopgraven uit de burgeroorlog kunt zien.",
+                "TEXT_2": "Voor ons ontvouwt zich een weids landschap van het mediterrane berggebied en de top van de Mulhacén rijst majestueus op. De route gaat verder naar de “Caldera-lagune” van gletsjeroorsprong en een van de meest emblematische meren van de Sierra Nevada. Vanaf de berghut wacht ons de iconische steile klim naar de top van de Mulhacén. We nemen hetzelfde pad terug naar het bergdorp.",
+                "TEXT_3": "We classificeren de noordzijde als een uitdagende route met veel afstand en kenmerken van hoogtelopen. De wandeling omvat een aanzienlijk hoogteverschil met een lange klim en afdaling verdeeld in twee delen gedurende de hele tocht. Een steile topbeklimming op rotsachtig en losliggend terrein. De afdaling is minder zwaar maar kan belastend zijn voor de knieën. De route heeft geen technische obstakels. Voor meer informatie bekijk onze blog en zoek naar “Wandelgraden”.",
+                "TEXT_4": "Optioneel: er is een minibus of de zomer skilift beschikbaar, die ons op ongeveer 3.000 meter afzet, een aanzienlijke vermindering van stijging, afstand en de eisen van de route. Vraag om meer informatie."
+               
+                 },
+
+            "DAY_2": {
+
+                "TITLE": "Route 2 Zuidzijde (Gemiddeld):",
+                "TEXT_1": "De zuidzijde start bij het “Mirador de Trevélez” op 2.700 meter, dat we bereiken met de pendelbus vanuit het dorp Capileira. Vanaf het startpunt heb je een prachtig uitzicht op het Sierra Nevada-gebergte en de kust van Granada.",
+                "TEXT_2": "Het pad stijgt geleidelijk om de eerste helling “Loma del Tanto” te overwinnen en laat het uitzichtpunt achter ons. Verderop wandelen we richting het geodetisch punt Mulhacén II op 3.362 meter, omringd door een ander landschap van losse stenen en weinig vegetatie.",
+                "TEXT_3": "Het laatste stuk naar de top biedt een magnifiek panoramisch uitzicht op de Caldera-lagune, een van de meest emblematische meren van de Sierra Nevada.",
+                "TEXT_4": "Na het laatste stuk wandelen bereiken we ons doel, de top van de Mulhacén op 3.380 meter. We nemen hetzelfde pad terug waar de bus wacht om ons naar het dorp Capileira te brengen.",
+                "TEXT_5": "We classificeren de zuidzijde als een gemiddelde route met kenmerken van hoogtelopen. De wandeling omvat een aanzienlijk hoogteverschil met op sommige delen een passage over keien zonder technische obstakels. Voor meer informatie bekijk onze blog en zoek naar “Wandelgraden”."
+                
+
+                }
+
+
+            }
+     
+        },
+
+        
 
         "GRAVEL_BIKE" : {
             "SIERRA_NEVADA":{
