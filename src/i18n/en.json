@@ -9,8 +9,98 @@
         "CONTACT_US": "Contact Us",
         "CYCLE_TRAVELS": "Cycle Tours",
         "HIKING_TREKKING": "Hiking & Trekking",
-        "CULTURAL_TRAVELS": "Cultural Travels Tours",
-        "MULTI_ADVENTURE_ACTIVITIES": "Multi-Adventures Tours"
+        "ROAD_TRIPS": "Road Trips",
+        "MULTI_ADVENTURE_ACTIVITIES": "Multi-Adventures Tours",
+        "TAILOR_MADE_TRAVELS": "Tailor-Made Travels"
+    },
+
+    "CARDS_HOME":{
+
+        "CARD_1":{
+            "TITLE": "Welcome to Montaraz Outdoors & Culture",
+            "TEXT_1": "At Montaraz Outdoors & Culture, we organize active and cultural holidays. Our trips bring you closer to nature, local culture, and the people, always with personal guidance and a deep love for the land. Whether you choose a relaxing bike tour, a challenging mountain hike, or an adventurous family trip, we create unforgettable experiences, fully tailored to your wishes."
+        },
+
+         "CARD_2":{
+            "TITLE": "Family Holidays",
+            "SUBTITLE": "Adventure for young and old — explore nature together!",
+            "TEXT_1": "Our family holidays are specially designed to give both children and parents an unforgettable time in nature. Think about adventurous hikes, safe cycling trips, discovering local culture, and above all, lots of outdoor fun!",
+            "TEXT_2": "We ensure a perfect balance between activity and relaxation, always adapted to the children's ages. Everything happens at an easy-going pace, with plenty of room for spontaneous moments, play, and free time.",
+
+            "EXP_TITLE": "What can you expect?",
+            "EXP_TEXT_1": "Short and playful hikes in the mountains or along rivers ",
+            "EXP_TEXT_2": "Safe cycling tours, with options for child seats or children's e-bikes ",
+            "EXP_TEXT_3": "Educational stops: olive oil tastings, local crafts, nature workshops ",
+            "EXP_TEXT_4": "Animal experiences: visiting a goat farm ",
+            "EXP_TEXT_5": "Fun overnight stays in child-friendly accommodations with pools or gardens ",
+            "EXP_TEXT_6": "Option for rest days and flexibility according to the family's pace and preferences ",
+           
+
+            "PRACTICAL_INFO":" Practical Information",
+            "PRACTICAL_INFO_TEXT_1": "Suitable for families with children from around 5 years old",
+            "PRACTICAL_INFO_TEXT_2": "All trips are guided or supported with clear daily programs",
+            "PRACTICAL_INFO_TEXT_3": "You can choose to stay in one comfortable location or travel through several regions"
+        },
+
+        "CARD_3": {
+            "TITLE": "Cycling Holidays & Excursions",
+            "SUBTITLE": "For leisure riders, athletes, and cycling enthusiasts",
+            "TEXT_1": "Spain and its surroundings are a true paradise for cyclists. Whether you prefer leisurely rides through scenic valleys or the thrill of tackling iconic mountain passes, Montaraz Outdoors & Culture is your perfect partner.",
+            "TEXT_2": "Our cycling holidays are carefully designed and fully customizable to match your level, interests, and preferred type of bike.",
+            "TEXT_3": "We offer a wide range of routes for e-bikes, touring bikes, mountain bikes, and road bikes. Ride with or without electric assistance, always with the freedom to explore the region your way.",
+
+
+            "WHAT_DO_WE_OFFER": "What do we offer?",
+            "WHAT_DO_WE_OFFER_1": "Organized cycling holidays: from 'flower tours' (staying in one location) to round trips",
+            "WHAT_DO_WE_OFFER_2": "Daily guided excursions or self-guided tours with GPX tracks",
+            "WHAT_DO_WE_OFFER_3": "Individual or group options",
+            "WHAT_DO_WE_OFFER_4": "Accommodation in bike-friendly hotels with excellent facilities",
+
+            "BIKE_RENTAL": "Bike Rental",
+            "RENTAL_1": "No bike of your own? No problem! We offer a wide selection of high-quality rental bikes, including:",             
+            "RENTAL_2": "E-bikes with long battery life",             
+            "RENTAL_3": "Comfortable touring bikes",             
+            "RENTAL_4": "Full-suspension mountain bikes",
+            "RENTAL_5": "Lightweight carbon road bikes",
+            "RENTAL_6": "Children's bikes or bikes with trailers",
+            "RENTAL_7": "All bikes are carefully adjusted to your size, and we provide accessories such as helmets and panniers."
+        },
+
+        "CARD_4":{
+            "TITLE": "Hiking Holidays & Treks",
+            "SUBTITLE": "On foot – discover, experience, breathe",
+            "TEXT_1": "Our hiking holidays take you deep into Spain’s most breathtaking landscapes — from snow-capped peaks to picturesque villages. Whether you prefer gentle walks through whitewashed towns or challenging mountain routes, we guide you step by step. At Montaraz Outdoors & Culture, personal service and tailor-made experiences are at the heart of everything we do. All our hikes are adapted to the traveler’s level — you set the pace, and we take care of the rest.",
+
+            "WHAT_DO_WE_EXPECT": "What can you expect?",
+            "WHAT_DO_WE_EXPECT_1": "- Day hikes with easy to moderate intensity, combining nature and culture",
+            "WHAT_DO_WE_EXPECT_2": "- Multi-day treks, with or without luggage transport",
+            "WHAT_DO_WE_EXPECT_3": "- Nature and culture routes: hiking through mountains, gorges, villages, and olive groves",
+            "WHAT_DO_WE_EXPECT_4": "- Local stops: time to enjoy a drink, taste tapas, or explore a charming village",
+            "WHAT_DO_WE_EXPECT_5": "- Professional guidance throughout your journey",
+
+            "TYPE_OF_HIKES": "Type of hikes",
+            "TYPE_OF_HIKES_1": "- \"Flower routes\": stay in one hotel and explore a different region each day",
+            "TYPE_OF_HIKES_2": "- Linear treks: multi-day journeys, sleeping in a new place each night",
+            "TYPE_OF_HIKES_3": "- Cultural hiking routes: through Moorish villages and along ancient trade paths",
+            "TYPE_OF_HIKES_4": "- Family-friendly walks: shorter, more relaxed, with educational elements along the way",  
+
+            "LUGGAGE": "Luggage & Comfort - During treks, you can choose:",
+            "LUGGAGE_1": "- Luggage transport between accommodations (only carry a daypack)",
+            "LUGGAGE_2": "- Or carry your gear for a more adventurous experience",
+            "LUGGAGE_3": "- We always ensure comfortable overnight stays, ranging from cozy mountain lodges to charming village hotels."
+        },
+
+        "CARD_5":{
+            "TITLE": "Tailor-Made Trips",
+            "SUBTITLE": "Your holiday, your way",
+            "TEXT_1": "Would you like a perfect mix of hiking, cycling, culture, and relaxation? We design a completely customized trip with you, from accommodation and activities to transfers and cultural excursions.",
+            "TEXT_2": "- Private transport and local guides",
+            "TEXT_3": "- Flexible planning: you choose the pace and style",
+            "TEXT_4": "- Ideal for couples, families, friends, or solo travelers",
+            "TEXT_5": "Interested?",
+            "TEXT_6": "Get in touch for a personalized offer — we are happy to plan your perfect active holiday!"
+
+        }
     },
 
     "CANCELLATION":{

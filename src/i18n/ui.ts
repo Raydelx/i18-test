@@ -74,6 +74,7 @@ export const routes = {
 		'the-old-mine-trail': 'the-old-mine-trail',
 		'trekking-alpujarras': 'trekking-alpujarras',
 		'book-my-tour': 'book-my-tour',
+		'road-trips': 'road-trips',
 	},
 	en: {
 		blog: 'blog',
@@ -81,6 +82,7 @@ export const routes = {
 		about: 'about',
 		contact: 'contact',
 		faq: 'faq',
+		
 		'rock-climbing-products': 'rock-climbing-products',
 		'multi-adventure': 'multi-adventure',
 		'tailor-made-travel': 'tailor-made-travel',
@@ -108,5 +110,6 @@ export const routes = {
 		'the-old-mine-trail': 'the-old-mine-trail',
 		'trekking-alpujarras': 'trekking-alpujarras',
 		'book-my-tour': 'book-my-tour',
+		'road-trips': 'road-trips',
 	},
 } 

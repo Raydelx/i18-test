@@ -7,7 +7,6 @@ import SliderReactHome from "@/hooks/SliderReactHome";
 import CardHome from "@/components/cardHome.astro";
 import Gallery from "@/components/gallery.astro";
 import Hero from "@/components/hero.astro";
-import Reviews from "@/components/reviews.astro";
 
 import { getI18N } from "@/i18n/";
 
@@ -63,10 +62,9 @@ const IMG = [
     </section>
 
     <section class="mt-10 w-auto flex justify-center">
-      <NewFaq title="Frequently<br />asked questions" faqs={faqs} />
+      <NewFaq title="What our clients<br />said about us?" faqs={faqs} />
     </section>
 
-    <Reviews />
     <Gallery />
   </Container>
 </Layout>

@@ -479,7 +479,7 @@ const ClientForm = () => {
             id='name'
               type="text"
               name="name"
-              placeholder="Nombre"
+              placeholder="Name"
               className='w-full px-4 py-3 border-2 placeholder:text-gray-400 rounded-md outline-none focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100'
               value={client.name}
               onChange={(e) => handleChange(index, e)}

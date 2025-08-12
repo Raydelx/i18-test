@@ -1,17 +1,106 @@
 {
-    "NAV":{
+    "NAV": {
         "HOME": "Thuis",
         "TAILOR_MADE": "Op maat gemaakte reizen",
-        "EXPERIENCE": " Ervaring",
-        "BLOG": " Blog",
-        "GALLERY": " Galerij",
-        "ABOUT": "  Over",
-        "CONTACT_US": " Neem contact met ons op",
-        "CYCLE_TRAVELS": " Fietstochten",
+        "EXPERIENCE": "Ervaring",
+        "BLOG": "Blog",
+        "GALLERY": "Galerij",
+        "ABOUT": "Over",
+        "CONTACT_US": "Neem contact met ons op",
+        "CYCLE_TRAVELS": "Fietstochten",
         "HIKING_TREKKING": "Wandelen & Trekking",
-        "CULTURAL_TRAVELS": "Culturele reizen",
-        "MULTI_ADVENTURE_ACTIVITIES": "Multi-avonturen"
+        "ROAD_TRIPS": "Roadtrips",
+        "MULTI_ADVENTURE_ACTIVITIES": "Multi-avonturen",
+        "TAILOR_MADE_TRAVELS": "Op maat gemaakte reizen"
     },   
+
+    "CARDS_HOME":{
+
+       "CARD_1":{
+          "TITLE": "Welkom bij Montaraz Outdoors & Culture",
+          "TEXT_1": "Bij Montaraz Outdoors &amp; Culture organiseren we actieve en culturele vakanties. Onze reizen brengen je dichter bij de natuur, de lokale cultuur en de mensen – altijd met persoonlijke begeleiding en liefde voor het landschap. Of je nu kiest voor een ontspannen fietstocht, een stevige bergwandeling of een avontuurlijke gezinsvakantie: wij zorgen voor een onvergetelijke ervaring, helemaal op maat."
+       },
+
+        "CARD_2":{
+          "TITLE": "Gezinsvakanties",
+          "SUBTITLE": "Avontuur voor jong en oud — samen de natuur ontdekken!",
+          "TEXT_1": "Onze gezinsvakanties zijn speciaal ontworpen om zowel kinderen als ouders een onvergetelijke tijd in de natuur te bezorgen. Denk aan avontuurlijke wandelingen, veilige fietstochten, het ontdekken van lokale cultuur en vooral veel plezier in de buitenlucht!",
+          "TEXT_2": "Wij zorgen voor een perfecte balans tussen activiteit en ontspanning, altijd aangepast aan de leeftijden van de kinderen. Alles gebeurt in een rustig tempo, met veel ruimte voor spontane momenten, spel en vrije tijd.",
+
+          "EXP_TITLE": "Wat kun je verwachten?",
+          "EXP_TEXT_1": "Korte en speelse wandelingen in de bergen of langs riviertjes",
+          "EXP_TEXT_2": "Fietstochten op veilige routes, eventueel met kinderzitjes of kindere-bikes",
+          "EXP_TEXT_3": "Educatieve stops: olijfolieproeverijen, lokale ambachten, natuurworkshops",
+          "EXP_TEXT_4": "Dierenervaringen: bezoek aan een geitenboerderij",
+          "EXP_TEXT_5": "Leuke overnachtingen in kindvriendelijke accommodaties met zwembad of tuin",
+          "EXP_TEXT_6": "Mogelijkheid tot rustdagen, aanpassing op tempo en voorkeur van het gezin",
+         
+          "PRACTICAL_INFO":"Praktische",
+          "PRACTICAL_INFO_TEXT_1": "Geschikt voor gezinnen met kinderen vanaf ca. 5 jaar",
+          "PRACTICAL_INFO_TEXT_2": "Alle reizen zijn begeleid of ondersteund met duidelijke dagprogramma's",
+          "PRACTICAL_INFO_TEXT_3": "Je kunt kiezen voor verblijf op één plek (comfortabel!) of rondreizen in meerdere regio’s"
+       },
+
+       "CARD_3": {
+          "TITLE": "Fietsvakanties &amp; Fietsexcursies",
+            "SUBTITLE": "Voor recreanten, sportievelingen én fietsfanaten",
+            "TEXT_1": "Spanje en haar omgeving zijn een waar paradijs voor fietsers. Of je nu ontspannen door de valleien fietst of de uitdaging zoekt van iconische bergpassen – bij Montaraz Outdoors &amp; Culture ben je aan het juiste adres.",
+            "TEXT_2": "Onze fietsvakanties zijn zorgvuldig opgebouwd en volledig aanpasbaar aan jouw niveau, interesse en type fiets.",
+            "TEXT_3": "We bieden een brede waaier aan routes voor e-bikes, tourfietsen, mountainbikes en racefietsen. Je fietst met of zonder ondersteuning, altijd met de vrijheid om de streek op jouw manier te ontdekken.",
+
+
+            "WHAT_DO_WE_OFFER": "Wat bieden we?",
+            "WHAT_DO_WE_OFFER_1": "Georganiseerde fietsvakanties: van bloemroutes (verblijven op 1 plek) tot rondreizen",
+            "WHAT_DO_WE_OFFER_2": "Dagelijkse fietsexcursies met begeleiding of GPX-tracks",
+            "WHAT_DO_WE_OFFER_3": "Individuele of groepsformules",
+            "WHAT_DO_WE_OFFER_4": "Verblijf in fietsvriendelijke hotels met goede voorzieningen",
+
+            "BIKE_RENTAL": "Fietsverhuur:",
+            "RENTAL_1": "Geen eigen fiets? Geen probleem! Wij bieden een ruime selectie kwaliteitsfietsen, waaronder:",             
+            "RENTAL_2": "E-bikes met lange batterijduur",             
+            "RENTAL_3": "Comfortabele tourfietsen",             
+            "RENTAL_4": "Full-suspension mountainbikes",
+            "RENTAL_5": "Lichtgewicht carbon racefietsen",
+            "RENTAL_6": "Kinderfietsen of fietsen met aanhangwagen",
+            "RENTAL_7": "Alle fietsen worden correct afgesteld en wij leveren accessoires zoals helmen en fietstassen."
+       },
+
+       "CARD_4":{
+          "TITLE": "Wandelvakanties & Trekkings",
+          "SUBTITLE": "Te voet – ontdek, beleef, adem",
+          "TEXT_1": "Onze wandelvakanties brengen je diep in het landschap van Spanje: van besneeuwde toppen tot de schilderachtige dorpen. Of je nu houdt van rustige wandelingen langs witgekalkte dorpjes of stevige bergroutes zoekt – wij begeleiden je stap voor stap. Bij Montaraz Outdoors &amp; Culture staan persoonlijke aanpak en maatwerk centraal. Al onze wandelingen worden afgestemd op het niveau van de reiziger. Jij kiest je ritme, wij zorgen voor de rest.",
+
+          "WHAT_DO_WE_EXPECT": "Wat kun je verwachten?",
+            "WHAT_DO_WE_EXPECT_1": "- Dagwandelingen van lichte tot matige intensiteit, met cultuur en natuur onderweg.",
+            "WHAT_DO_WE_EXPECT_2": "- Trektochten van meerdere dagen, met of zonder bagagevervoer",
+            "WHAT_DO_WE_EXPECT_3": "- Natuur- én cultuurroutes: wandelen door berglandschappen, ravijnen, dorpjes en olijfgaarden",
+            "WHAT_DO_WE_EXPECT_4": "- Lokale stops: tijd om iets te drinken, tapas te proeven of een dorpje te verkennen",
+            "WHAT_DO_WE_EXPECT_5": "- Professionele begeleiding",
+
+          "TYPE_OF_HIKES": "Soorten wandelingen:",
+          "TYPE_OF_HIKES_1": "- Bloemroutes: verblijven in één hotel en van daaruit elke dag een andere regio verkennen",
+          "TYPE_OF_HIKES_2": "- Lineaire trektochten: meerdaagse wandelingen waarbij je telkens op een nieuwe plek slaapt",  
+          "TYPE_OF_HIKES_3": "- Culturele wandelroutes: door Moorse dorpjes en langs oude handelsroutes",
+          "TYPE_OF_HIKES_4": "- Familievriendelijke wandelingen: korter, rustiger, met educatieve elementen onderweg",
+
+          "LUGGAGE": "Bagage & Comfort - Tijdens trekkings kun je kiezen:",
+          "LUGGAGE_1": "- Bagagetransport tussen accommodaties (alleen een dagrugzak dragen)",
+          "LUGGAGE_2": "- Of je draagt je eigen spullen voor een avontuurlijkere ervaring",
+          "LUGGAGE_3": "- We zorgen altijd voor comfortabele overnachtingen, van gezellige berghutten tot charmante dorpshotels."
+       },
+
+       "CARD_5":{
+          "TITLE": "Op Maat Gemaakte Reizen",
+          "SUBTITLE": "Jouw reis, helemaal zoals jij het wil",
+          "TEXT_1": "Een combinatie van wandelen, fietsen, cultuur en rust? Wij ontwerpen samen met jou een volledig gepersonaliseerde reis. lles is mogelijk: van verblijf tot activiteiten, inclusief bouwstenen en extra’s.",
+          "TEXT_2": "- Privévervoer, lokale gidsen, unieke uitstappen",
+          "TEXT_3": "- Geschikt voor koppels, vriendengroepen of solo-reizigers",
+          "TEXT_4": "- Flexibele opbouw: jij kiest het ritme",
+          "TEXT_5": "Interesse?",
+          "TEXT_6": "Neem contact op voor een persoonlijk aanbod — wij plannen graag jouw perfecte actieve vakantie!"
+
+       }
+    },
 
     "CANCELLATION":{
         "TITLE": "Annuleringsbeleid",

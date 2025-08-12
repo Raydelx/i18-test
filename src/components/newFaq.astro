@@ -7,8 +7,9 @@ const { title, faqs } = Astro.props;
 
 // Define TypeScript interface for props
 interface Faq {
-  question: string;
-  answer: string;
+  name: string;
+  review: string;
+  valoration: string;
 }
 
 interface FaqGroup {
@@ -43,7 +44,7 @@ const makeId = (base: any, index: any) => `${base}${index + 1}`;
     <div class="md:col-span-3">
       <div class="hs-accordion-group divide-y divide-neutral-200">
         {
-          faqs.faqs.map((question, i) => {
+          faqs.faqs.map((name, i) => {
             // Generate ids dynamically for each FAQ accordion item.
             let id = makeId(
               "hs-basic-with-title-and-arrow-stretched-heading-",
@@ -56,7 +57,7 @@ const makeId = (base: any, index: any) => `${base}${index + 1}`;
 
             return (
               <AccordionItem
-                {...question}
+                {...name}
                 id={id}
                 collapseId={collapseId}
                 first={i === 0}

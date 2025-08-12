@@ -2,33 +2,41 @@
     
     "faqs": [
       {
-        "question": "How do I book my tour?",
-        "answer": "Click  \"Book my tour \" on the homepage and answer the following questions. Fill out the form that will appear below. You receive a confirmation by email with the payment - and tour details. "
+        "name": "Vicky Haworth",
+        "valoration": "⭐⭐⭐⭐⭐",
+        "review": "This was my second cycling trip with Michael and Jose, alongside a group of 7 people, most of whom had joined a previous trip from Granada. We were picked up at the airport and taken to Ronda, where our 180-mile route began. The hotels were excellent, and Jose accompanied us in a van, providing water and snacks along the way, as well as organizing delicious lunches. The e-bikes were of high quality, making the steep hills easier to manage, and the scenery was beautiful. Michael also organized activities such as olive oil tastings and a guided tour in Córdoba. The experience was personalized and more affordable than other companies, and I will definitely be returning."
       },
       {
-        "question": "What methods of payment are accepted?",
-        "answer": "Bank transfer payment. After booking a tour you will receive a proforma invoice with your tour- and payment details. We reserve the right to cancel your reservation if the final payment is not received when due."
+        "name": "Audrey",
+        "valoration": "⭐⭐⭐⭐⭐",
+        "review": "Thank you for another fantastic trip! Having had an incredible cycling experience with Michael and Jose last year in the Sierra Nevada, my expectations for the Ronda to Cordoba trip were high, and they exceeded them once again. The route through beautiful countryside and charming villages was superb, with smooth Spanish roads. Even with e-bikes, we felt we earned the delicious lunches Jose prepared daily. The accommodations were comfortable, with plenty of pools for post-ride relaxation. This year’s olive oil tasting was a highlight, showcasing their attention to creating memorable experiences. They truly care about making our holiday the best, and I highly recommend them."
       },
       {
-        "question": "What languages are available for guided tours?",
-        "answer": "Spanish, English, Dutch and French."
+        "name": "Lisa Terry",
+        "valoration": "⭐⭐⭐⭐⭐",
+        "review": "Michael and Jose are the perfect duo, providing an unparalleled experience on every bike trip. From delicious breakfasts and Jose’s spectacular lunches to fabulous dinners and thoughtfully chosen hotel stays, their attention to detail is flawless. Michael showcases exceptional talent in planning safe and exciting routes with breathtaking views, while both stand out for their kindness, professionalism, and ability to anticipate our needs. After three unforgettable trips with them, I can confidently say these journeys have been incredible experiences and opportunities to form lasting friendships. We look forward to more miles and smiles together!"
       },
       {
-        "question": "Do I need travel insurance?",
-        "answer": "The company Montaraz Outdoors & Culture does not offer insurance. To ensure the safety and security of our clients we recommend arranging appropriate travel insurance during your trip. On multi-day or 8-day tours, it is obligatory and your responsibility to arrange travel insurance. Ensure you have read and understood the full terms and conditions of your travel insurance policy and that you are covered for all activities you intend to undertake whilst on the tour. Your Insurance Policy must fully cover you for medical expenses and emergency repatriation to your home country. "
+        "name": "Caroline Frank",
+        "valoration": "⭐⭐⭐⭐⭐",
+        "review": "I joined my friends on a cycling trip from Ronda to Cordoba (Sept/Oct 2024), opting for a road bike instead of an eBike to enjoy the challenge of the hills. Michael was incredibly helpful in sourcing the perfect road bike with the right specifications. The trip was a wonderful mix of charming white villages, olive groves, stunning views, delicious food, and comfortable hotels. Highlights included walking the breathtaking Caminito del Rey, a fascinating olive oil tasting, and visiting Cordoba’s incredible Mesquita. Throughout, Jose’s support vehicle and amazing lunches added to the experience, and Michael’s knowledge of the region enriched every moment. I’d love to book another trip with them—whether a tour or a hotel-based adventure. Thanks for the unforgettable memories, Michael and Jose!"
       },
       {
-        "question": "Is my deposit refundable?",
-        "answer": "The client has the right to cancel the tour in writing and sign if the cancellation takes place more than the given date. (See Terms and Conditions - Cancellation Policy for each activity) Once, we have received your notice, the cancellation will take effect."
+        "name": "Mel Grant",
+        "valoration": "⭐⭐⭐⭐⭐",
+        "review": "I had the pleasure of joining one of Mike's (Montaraz owner's) tours, cycling from Ronda to Cordoba in southern Spain during June. Mike is incredibly knowledgeable and plans his tours meticulously. I hired a high-end gravel bike for the tour as an experienced cyclist and enjoyed the variety in riding, including hairpin descents and fun climbs in impressive scenery. Mike worked seamlessly with Jose to provide refreshing snacks, meals and chilled drinks en route, store and maintain the equipment we used (having customised the bike fit and fitted my saddle), and show us the sites at each destination. The hotels were all different, supremely comfortable and many had swimming pools for a dip after a day of riding. Owing to the interesting route, Mike's info and the optional excursions, I feel I've seen the best of the area and hope to see more in the future. I'd be excited to join another Montaraz tour in the future: Very good value for money, a personalised product and just a lot of fun. Thanks Mike & Jose!"
       },
       {
-        "question": "When will I receive more detailed information about my tour so I can star planning my travel?",
-        "answer": "General information about each activity you find in the trip notes. Detailed information about the activity will be sent after making a pre-reservation."
+        "name": "Vanessa Grant",
+        "valoration": "⭐⭐⭐⭐⭐",
+        "review": "Ronda to Cordaba biking..Such a varied and enjoyable bike tour. The terrain was stunningly beautiful, each day bringing different views and experiences. Mike and Jose did a great job of guiding us whilst providing copious cold drinks, snacks and picnics. I was amazed that they could provide us with fresh fruit, coffee, lots of salads, etc whilst we were travelling the small trails. Mikes in-depth knowledge of the culture and history of each area demonstrated his careful research and both Mike and Jose were good company. Each had a great sense of humour. The handpicked hotels showed off the very best of Spain. The cuisine was very authentic and tasty. What more can I say … I will be booking again."
       },
       {
-        "question": "Price private tour?",
-        "answer": "The price for private tours is not mentioned in the tour information. If you are interested in one of our private tours send us a message by Email, WhatsApp, or click  \"book my tour\". The price depends on the number of people and the optional complementaries."
+        "name": "Angela Fergusson",
+        "valoration": "⭐⭐⭐⭐⭐",
+        "review": "Just back from a week with Montaraz. A holiday with huge attention to detail and consideration for individual needs. Michael and Jose work closely together to provide a great experience and good company, which makes for wonderful holiday. Add all that to great bikes, wonderfully individual hotels and lovely Spanish countryside, we couldn’t have asked for more. No hesitation in going again and recommending to others."
       }
+      
       
     ]
   }
