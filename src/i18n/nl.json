@@ -42,9 +42,9 @@
        },
 
        "CARD_3": {
-          "TITLE": "Fietsvakanties &amp; Fietsexcursies",
+          "TITLE": "Fietsvakanties & Fietsexcursies",
             "SUBTITLE": "Voor recreanten, sportievelingen én fietsfanaten",
-            "TEXT_1": "Spanje en haar omgeving zijn een waar paradijs voor fietsers. Of je nu ontspannen door de valleien fietst of de uitdaging zoekt van iconische bergpassen – bij Montaraz Outdoors &amp; Culture ben je aan het juiste adres.",
+            "TEXT_1": "Spanje en haar omgeving zijn een waar paradijs voor fietsers. Of je nu ontspannen door de valleien fietst of de uitdaging zoekt van iconische bergpassen – bij Montaraz Outdoors & Culture ben je aan het juiste adres.",
             "TEXT_2": "Onze fietsvakanties zijn zorgvuldig opgebouwd en volledig aanpasbaar aan jouw niveau, interesse en type fiets.",
             "TEXT_3": "We bieden een brede waaier aan routes voor e-bikes, tourfietsen, mountainbikes en racefietsen. Je fietst met of zonder ondersteuning, altijd met de vrijheid om de streek op jouw manier te ontdekken.",
 
@@ -673,6 +673,7 @@
         
 
         "HIKING_TREKKING" : {
+            
 
             "TREKKING_ALPUJARRAS":{
 

@@ -9,7 +9,7 @@ const i18n = getI18N({ currentLocale });
 
 <div class="relative overflow-hidden">
   <div
-    class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8">
+    class="lg:mx-auto grid lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8">
     <div class="mx-auto max-w-xl lg:mx-0 lg:max-w-none lg:py-16 lg:px-0">
       <div>
         <div class="mt-6">
@@ -24,7 +24,7 @@ const i18n = getI18N({ currentLocale });
         </div>
       </div>
     </div>
-    <div class="mt-12 sm:mt-16 lg:mt-0">
+    <div class="mt-12 sm:mt-2 lg:mt-0 order-first lg:order-none">
       <div class="-mr-48 pl-6 md:-mr-16 lg:relative lg:m-0 lg:h-full lg:px-0">
         <img
           loading="lazy"
@@ -37,11 +37,10 @@ const i18n = getI18N({ currentLocale });
       </div>
     </div>
   </div>
-
-  <div class="relative overflow-hidden pt-8 pb-8 space-y-24">
+  <div class="relative overflow-hidden lg:mt-16">
     <div class="relative">
       <div
-        class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8">
+        class="lg:mx-auto grid lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8">
         <div
           class="mx-auto max-w-xl lg:mx-0 lg:max-w-none lg:py-16 lg:px-0 lg:col-start-2">
           <div>
@@ -68,8 +67,13 @@ const i18n = getI18N({ currentLocale });
               </p>
             </div>
           </div>
+          <button
+            type="button"
+            class="showMoreBtn mb-6 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
+            Mostrar más
+          </button>
         </div>
-        <div class="mt-12 sm:mt-16 lg:mt-0">
+        <div class="mt-12 sm:mt-2 lg:mt-0 order-first lg:order-none">
           <div
             class="-ml-48 pr-6 md:-ml-16 lg:relative lg:m-0 lg:h-full lg:px-0">
             <img
@@ -77,7 +81,7 @@ const i18n = getI18N({ currentLocale });
               loading="lazy"
               width="800"
               height="486"
-              class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-[540px] lg:max-w-none hover:scale-105 duration-200 object-cover"
+              class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-[540px] lg:max-w-none hover:scale-105 duration-200 object-cover mb-6"
               style="color:transparent"
               src="/home/familia.webp"
             />
@@ -86,7 +90,7 @@ const i18n = getI18N({ currentLocale });
       </div>
 
       <div
-        class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-30 mt-16 lg:px-34">
+        class="showMoreContent border-blue-400 grid lg:grid-cols-2 gap-8 lg:gap-30 lg:mt-16 lg:px-34 transition-all duration-500 ease-in-out overflow-hidden max-h-0 opacity-0 bg-gradient-to-r from-slate-200 to-blue-300 rounded-2xl py-6 px-2">
         <div>
           <h2 class="text-3xl font-bold tracking-tight mb-2">
             {i18n.CARDS_HOME.CARD_2.EXP_TITLE}
@@ -136,9 +140,9 @@ const i18n = getI18N({ currentLocale });
       </div>
     </div>
     <!-- ------------------------------- -->
-    <div class="relative">
+    <div class="relative mt-4 lg:mt-16">
       <div
-        class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8">
+        class="lg:mx-auto grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8">
         <div class="mx-auto max-w-xl lg:mx-0 lg:max-w-none lg:py-16 lg:px-0">
           <div>
             <div>
@@ -167,11 +171,16 @@ const i18n = getI18N({ currentLocale });
                 {i18n.CARDS_HOME.CARD_3.TEXT_3}
               </p>
             </div>
+            <button
+              type="button"
+              class="showMoreBtn mb-6 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
+              Mostrar más
+            </button>
           </div>
         </div>
-        <div class="mt-12 sm:mt-16 lg:mt-0">
+        <div class="mt-12 sm:mt-16 lg:mt-0 order-first lg:order-none">
           <div
-            class="-mr-48 pl-6 md:-mr-16 lg:relative lg:m-0 lg:h-full lg:px-0">
+            class="-mr-48 pl-6 md:-mr-16 lg:relative lg:m-0 lg:h-full lg:px-0 order-first lg:order-none mb-6">
             <img
               loading="lazy"
               width="647"
@@ -184,7 +193,7 @@ const i18n = getI18N({ currentLocale });
         </div>
       </div>
       <div
-        class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-30 mt-16 lg:px-34">
+        class="showMoreContent border-blue-400 grid lg:grid-cols-2 gap-8 lg:gap-30 lg:mt-16 lg:px-34 transition-all duration-500 ease-in-out overflow-hidden max-h-0 opacity-0 bg-gradient-to-r from-slate-200 to-blue-300 rounded-2xl py-6 px-2 mb-6">
         <div>
           <h2 class="text-3xl font-bold tracking-tight mb-2">
             {i18n.CARDS_HOME.CARD_3.WHAT_DO_WE_OFFER}
@@ -243,9 +252,9 @@ const i18n = getI18N({ currentLocale });
     </div>
   </div>
 
-  <div class="relative overflow-hidden">
+  <div class="relative lg:mt-8">
     <div
-      class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8">
+      class="lg:mx-auto grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8">
       <div
         class="mx-auto max-w-xl lg:mx-0 lg:max-w-none lg:py-16 lg:px-0 lg:col-start-2">
         <div>
@@ -268,9 +277,15 @@ const i18n = getI18N({ currentLocale });
             </p>
           </div>
         </div>
+        <button
+          type="button"
+          class="showMoreBtn mb-6 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
+          Mostrar más
+        </button>
       </div>
-      <div class="mt-12 sm:mt-16 lg:mt-0">
-        <div class="-ml-48 pr-6 md:-ml-16 lg:relative lg:m-0 lg:h-full lg:px-0">
+      <div class="mt-12 sm:mt-16 lg:mt-0 order-first lg:order-none">
+        <div
+          class="-ml-48 pr-6 md:-ml-16 lg:relative lg:m-0 lg:h-full lg:px-0 order-first lg:order-none">
           <img
             alt="Inbox user interface"
             loading="lazy"
@@ -283,7 +298,8 @@ const i18n = getI18N({ currentLocale });
         </div>
       </div>
     </div>
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-30 mt-16 lg:px-34">
+    <div
+      class="showMoreContent grid lg:grid-cols-3 gap-8 lg:gap-30 mt-16 lg:px-34 transition-all duration-500 ease-in-out overflow-hidden max-h-0 opacity-0 bg-gradient-to-r from-slate-200 to-blue-300 rounded-2xl py-6 px-2">
       <div>
         <h2 class="text-3xl font-bold tracking-tight mb-2">
           {i18n.CARDS_HOME.CARD_4.WHAT_DO_WE_EXPECT}
@@ -331,83 +347,104 @@ const i18n = getI18N({ currentLocale });
           {i18n.CARDS_HOME.CARD_4.TYPE_OF_HIKES_4}
         </p>
       </div>
-    </div>
-    <div class="lg:px-34 mt-16">
-      <h2 class="text-3xl font-bold tracking-tight mb-2">
-        {i18n.CARDS_HOME.CARD_4.LUGGAGE}
-      </h2>
-      <p
-        class="max-w-2xl mb-4 font-light text-gray-500 lg:mb-2 md:text-lg lg:text-xl">
-        {i18n.CARDS_HOME.CARD_4.LUGGAGE_1}
-      </p>
-      <p
-        class="max-w-2xl mb-4 font-light text-gray-500 lg:mb-2 md:text-lg lg:text-xl">
-        {i18n.CARDS_HOME.CARD_4.LUGGAGE_2}
-      </p>
-      <p
-        class="max-w-2xl mb-4 font-light text-gray-500 lg:mb-2 md:text-lg lg:text-xl">
-        {i18n.CARDS_HOME.CARD_4.LUGGAGE_3}
-      </p>
-    </div>
-  </div>
-</div>
-<div class="relative overflow-hidden">
-  <div
-    class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8">
-    <div class="mx-auto max-w-xl lg:mx-0 lg:max-w-none lg:py-16 lg:px-0">
       <div>
-        <div>
-          <span
-            class="flex h-12 w-12 items-center justify-center rounded-xl bg-slate-200">
-            <Icon icon="cultural-logo" size="2.5rem" color="#0E46A3" />
-          </span>
-        </div>
-
-        <div class="mt-6">
-          <h2 class="text-3xl font-bold tracking-tight mb-2">
-            {i18n.CARDS_HOME.CARD_5.TITLE}
-          </h2>
-          <h2 class="text-3xl font-bold tracking-tight mb-2">
-            {i18n.CARDS_HOME.CARD_5.SUBTITLE}
-          </h2>
-          <p
-            class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl">
-            {i18n.CARDS_HOME.CARD_5.TEXT_1}
-          </p>
-          <p
-            class="max-w-2xl mb-4 font-light text-gray-500 lg:mb-2 md:text-lg lg:text-xl">
-            {i18n.CARDS_HOME.CARD_5.TEXT_2}
-          </p>
-          <p
-            class="max-w-2xl mb-4 font-light text-gray-500 lg:mb-2 md:text-lg lg:text-xl">
-            {i18n.CARDS_HOME.CARD_5.TEXT_3}
-          </p>
-          <p
-            class="max-w-2xl mb-4 font-light text-gray-500 lg:mb-2 md:text-lg lg:text-xl">
-            {i18n.CARDS_HOME.CARD_5.TEXT_4}
-          </p>
-          <p
-            class="max-w-2xl mb-4 mt-8 font-semibold text-gray-500 lg:mb-2 md:text-lg lg:text-xl">
-            {i18n.CARDS_HOME.CARD_5.TEXT_5}
-          </p>
-          <p
-            class="max-w-2xl mb-4 font-light text-gray-500 lg:mb-2 md:text-lg lg:text-xl">
-            {i18n.CARDS_HOME.CARD_5.TEXT_6}
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="mt-12 sm:mt-16 lg:mt-16">
-      <div class="-mr-48 pl-6 md:-mr-16 lg:relative lg:m-0 lg:h-full lg:px-0">
-        <img
-          loading="lazy"
-          width="647"
-          height="300"
-          class="w-full rounded-xl shadow-2xl ring-1 object-cover ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-[540px] lg:max-w-none hover:scale-105 duration-200"
-          style="color:transparent"
-          src="/home/tailor-made.webp"
-        />
+        <h2 class="text-3xl font-bold tracking-tight mb-2">
+          {i18n.CARDS_HOME.CARD_4.LUGGAGE}
+        </h2>
+        <p
+          class="max-w-2xl mb-4 font-light text-gray-500 lg:mb-2 md:text-lg lg:text-xl">
+          {i18n.CARDS_HOME.CARD_4.LUGGAGE_1}
+        </p>
+        <p
+          class="max-w-2xl mb-4 font-light text-gray-500 lg:mb-2 md:text-lg lg:text-xl">
+          {i18n.CARDS_HOME.CARD_4.LUGGAGE_2}
+        </p>
+        <p
+          class="max-w-2xl mb-4 font-light text-gray-500 lg:mb-2 md:text-lg lg:text-xl">
+          {i18n.CARDS_HOME.CARD_4.LUGGAGE_3}
+        </p>
       </div>
     </div>
   </div>
+
+  <div class="relative overflow-hidden mt-6 lg:mt-16">
+    <div
+      class="lg:mx-auto grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8">
+      <div class="mx-auto max-w-xl lg:mx-0 lg:max-w-none lg:py-16 lg:px-0">
+        <div>
+          <div>
+            <span
+              class="flex h-12 w-12 items-center justify-center rounded-xl bg-slate-200">
+              <Icon icon="cultural-logo" size="2.5rem" color="#0E46A3" />
+            </span>
+          </div>
+
+          <div class="mt-6">
+            <h2 class="text-3xl font-bold tracking-tight mb-2">
+              {i18n.CARDS_HOME.CARD_5.TITLE}
+            </h2>
+            <h2 class="text-3xl font-bold tracking-tight mb-2">
+              {i18n.CARDS_HOME.CARD_5.SUBTITLE}
+            </h2>
+            <p
+              class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl">
+              {i18n.CARDS_HOME.CARD_5.TEXT_1}
+            </p>
+            <p
+              class="max-w-2xl mb-4 font-light text-gray-500 lg:mb-2 md:text-lg lg:text-xl">
+              {i18n.CARDS_HOME.CARD_5.TEXT_2}
+            </p>
+            <p
+              class="max-w-2xl mb-4 font-light text-gray-500 lg:mb-2 md:text-lg lg:text-xl">
+              {i18n.CARDS_HOME.CARD_5.TEXT_3}
+            </p>
+            <p
+              class="max-w-2xl mb-4 font-light text-gray-500 lg:mb-2 md:text-lg lg:text-xl">
+              {i18n.CARDS_HOME.CARD_5.TEXT_4}
+            </p>
+            <p
+              class="max-w-2xl mb-4 mt-8 font-semibold text-gray-500 lg:mb-2 md:text-lg lg:text-xl">
+              {i18n.CARDS_HOME.CARD_5.TEXT_5}
+            </p>
+            <p
+              class="max-w-2xl mb-4 font-light text-gray-500 lg:mb-2 md:text-lg lg:text-xl">
+              {i18n.CARDS_HOME.CARD_5.TEXT_6}
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="mt-12 sm:mt-16 lg:mt-16">
+        <div class="-mr-48 pl-6 md:-mr-16 lg:relative lg:m-0 lg:h-full lg:px-0">
+          <img
+            loading="lazy"
+            width="647"
+            height="300"
+            class="w-full rounded-xl shadow-2xl ring-1 object-cover ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-[540px] lg:max-w-none hover:scale-105 duration-200"
+            style="color:transparent"
+            src="/home/tailor-made.webp"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <script is:inline>
+    const buttons = document.querySelectorAll(".showMoreBtn");
+    const contents = document.querySelectorAll(".showMoreContent");
+    buttons.forEach((btn, idx) => {
+      let show = false;
+      btn.addEventListener("click", () => {
+        show = !show;
+        const content = contents[idx];
+        if (show) {
+          content.classList.remove("max-h-0", "opacity-0");
+          content.classList.add("max-h-[2000px]", "opacity-100");
+          btn.textContent = "Mostrar menos";
+        } else {
+          content.classList.remove("max-h-[2000px]", "opacity-100");
+          content.classList.add("max-h-0", "opacity-0");
+          btn.textContent = "Mostrar más";
+        }
+      });
+    });
+  </script>
 </div>
