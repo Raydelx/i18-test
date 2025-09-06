@@ -77,7 +77,8 @@ export const routes = {
 		'road-trips': 'road-trips',
 		'legal-notice': 'legal-notice',
 		'personal-data-protection': 'personal-data-protection',
-		'financial-protection-guarantee': 'financial-protection-guarantee'
+		'financial-protection-guarantee': 'financial-protection-guarantee',
+		'cookies-policy': 'cookies-policy'
 	},
 	en: {
 		blog: 'blog',
@@ -116,6 +117,7 @@ export const routes = {
 		'road-trips': 'road-trips',
 		'legal-notice': 'legal-notice',
 		'personal-data-protection': 'personal-data-protection',
-		'financial-protection-guarantee': 'financial-protection-guarantee'
+		'financial-protection-guarantee': 'financial-protection-guarantee',
+		'cookies-policy': 'cookies-policy'
 	},
 } 
