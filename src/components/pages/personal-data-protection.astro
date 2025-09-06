@@ -1,0 +1,43 @@
+---
+import Sectionhead from "@/components/sectionhead.astro";
+import Container from "@/components/containerInfo.astro";
+import Layout from "@/layouts/Layout.astro";
+
+import { getI18N } from "@/i18n/";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+---
+
+<Layout title="Personal Data Protection">
+  <Sectionhead>
+    <Fragment slot="title"> {i18n.PERSONAL_DATA.TITLE}</Fragment>
+    <Fragment slot="desc"></Fragment>
+  </Sectionhead>
+  <Container class="w-full mt-16">
+    <p class="mb-4">{i18n.PERSONAL_DATA.TEXT_1}</p>
+    <p class="mb-4">{i18n.PERSONAL_DATA.TEXT_2}</p>
+    <p class="mb-4">{i18n.PERSONAL_DATA.TEXT_3}</p>
+    <p class="mb-4">{i18n.PERSONAL_DATA.TEXT_4}</p>
+    <p class="mb-4">{i18n.PERSONAL_DATA.TEXT_5}</p>
+    <p class="mb-4">{i18n.PERSONAL_DATA.TEXT_6}</p>
+    <p class="mb-4">{i18n.PERSONAL_DATA.TEXT_7}</p>
+    <p class="mb-4">{i18n.PERSONAL_DATA.TEXT_8}</p>
+    <p class="mb-4">{i18n.PERSONAL_DATA.TEXT_9}</p>
+    <p class="mb-4">{i18n.PERSONAL_DATA.TEXT_10}</p>
+    <p class="mb-4">{i18n.PERSONAL_DATA.TEXT_11}</p>
+    <p class="mb-4">{i18n.PERSONAL_DATA.TEXT_12}</p>
+    <p class="mb-4">{i18n.PERSONAL_DATA.TEXT_13}</p>
+    <p class="mb-4">{i18n.PERSONAL_DATA.TEXT_14}</p>
+    <p class="mb-4">{i18n.PERSONAL_DATA.TEXT_15}</p>
+    <p class="mb-4">{i18n.PERSONAL_DATA.TEXT_16}</p>
+    <p class="mb-4">{i18n.PERSONAL_DATA.TEXT_17}</p>
+    <p class="mb-4">{i18n.PERSONAL_DATA.TEXT_18}</p>
+    <p class="mb-4">{i18n.PERSONAL_DATA.TEXT_19}</p>
+    <p class="mb-4">{i18n.PERSONAL_DATA.TEXT_20}</p>
+    <p class="mb-4">{i18n.PERSONAL_DATA.TEXT_21}</p>
+    <p class="mb-4">{i18n.PERSONAL_DATA.TEXT_22}</p>
+    <p class="mb-4">{i18n.PERSONAL_DATA.TEXT_23}</p>
+    <p class="mb-4">{i18n.PERSONAL_DATA.TEXT_24}</p>
+  </Container>
+</Layout>

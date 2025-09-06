@@ -1,0 +1,21 @@
+---
+import Sectionhead from "@/components/sectionhead.astro";
+import Container from "@/components/containerInfo.astro";
+import Layout from "@/layouts/Layout.astro";
+
+import { getI18N } from "@/i18n/";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+---
+
+<Layout title="Financial Protection Guarantee">
+  <Sectionhead>
+    <Fragment slot="title"> {i18n.FINANCIAL_PROTECTION.TITLE}</Fragment>
+    <Fragment slot="desc"></Fragment>
+  </Sectionhead>
+  <Container class="w-full mt-16">
+    <p class="mb-4">{i18n.FINANCIAL_PROTECTION.TEXT_1}</p>
+    <p class="mb-4">{i18n.FINANCIAL_PROTECTION.TEXT_2}</p>
+  </Container>
+</Layout>

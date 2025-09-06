@@ -1,0 +1,81 @@
+---
+import Sectionhead from "@/components/sectionhead.astro";
+import Container from "@/components/containerInfo.astro";
+import Layout from "@/layouts/Layout.astro";
+
+import { getI18N } from "@/i18n/";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+---
+
+<Layout title="Legal Notice">
+  <Sectionhead>
+    <Fragment slot="title"> {i18n.LEGAL_NOTICE.TITLE} </Fragment>
+    <Fragment slot="desc"></Fragment>
+  </Sectionhead>
+  <Container class="mt-16 max-w-screen-xl">
+    <p class="mb-4">{i18n.LEGAL_NOTICE.INTRO}</p>
+
+    <p class="mb-4">
+      {i18n.LEGAL_NOTICE.ENTITY}
+    </p>
+    <p class="mb-4">
+      {i18n.LEGAL_NOTICE.TAX}
+    </p>
+    <p class="mb-4">
+      {i18n.LEGAL_NOTICE.ADDRESS}
+    </p>
+    <p class="mb-4">
+      {i18n.LEGAL_NOTICE.PHONE}
+    </p>
+    <p class="mb-8">
+      {i18n.LEGAL_NOTICE.EMAIL}
+    </p>
+
+    <div>
+      <h2 class="text-xl font-bold mb-4">
+        {i18n.LEGAL_NOTICE.TEXT_1}
+      </h2>
+      <p class="mb-4">
+        {i18n.LEGAL_NOTICE.TEXT_2}
+      </p>
+      <p class="mb-4">
+        {i18n.LEGAL_NOTICE.TEXT_3}
+      </p>
+    </div>
+
+    <div>
+      <h2 class="text-xl font-bold mb-4">
+        {i18n.LEGAL_NOTICE.TEXT_4}
+      </h2>
+      <p class="mb-4">
+        {i18n.LEGAL_NOTICE.TEXT_5}
+      </p>
+      <p class="mb-4">
+        {i18n.LEGAL_NOTICE.TEXT_6}
+      </p>
+    </div>
+
+    <div>
+      <h2 class="text-xl font-bold mb-4">
+        {i18n.LEGAL_NOTICE.TEXT_7}
+      </h2>
+      <p class="mb-4">
+        {i18n.LEGAL_NOTICE.TEXT_8}
+      </p>
+      <p class="mb-4">
+        {i18n.LEGAL_NOTICE.TEXT_9}
+      </p>
+    </div>
+
+    <div>
+      <h2 class="text-xl font-bold mb-4">
+        {i18n.LEGAL_NOTICE.TEXT_10}
+      </h2>
+      <p class="mb-4">
+        {i18n.LEGAL_NOTICE.TEXT_11}
+      </p>
+    </div>
+  </Container>
+</Layout>

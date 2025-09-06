@@ -1,0 +1,189 @@
+---
+import Sectionhead from "@/components/sectionhead.astro";
+import Container from "@/components/containerInfo.astro";
+import Layout from "@/layouts/Layout.astro";
+
+import { getI18N } from "@/i18n/";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+---
+
+<Layout title="Cookies Policy">
+  <Sectionhead>
+    <Fragment slot="title"> {i18n.COOKIES_POLICY.TITLE} </Fragment>
+    <Fragment slot="desc"></Fragment>
+  </Sectionhead>
+  <Container class="mt-16 max-w-screen-xl">
+    <div>
+      <h2 class="text-xl font-bold mb-4">
+        {i18n.COOKIES_POLICY.TEXT_1}
+      </h2>
+      <p class="mb-4">
+        {i18n.COOKIES_POLICY.TEXT_2}
+      </p>
+      <p class="mb-4">
+        {i18n.COOKIES_POLICY.TEXT_3}
+      </p>
+      <p class="mb-4">
+        {i18n.COOKIES_POLICY.TEXT_4}
+      </p>
+      <p class="mb-4">
+        {i18n.COOKIES_POLICY.TEXT_5}
+      </p>
+    </div>
+
+    <div>
+      <h2 class="text-xl font-bold mb-4">
+        {i18n.COOKIES_POLICY.RESPONSIBLE_1}
+      </h2>
+      <p class="mb-4">
+        {i18n.COOKIES_POLICY.RESPONSIBLE_2}
+      </p>
+    </div>
+
+    <div>
+      <h2 class="text-xl font-bold mb-4">
+        {i18n.COOKIES_POLICY.WHAT_1}
+      </h2>
+      <p class="mb-4">
+        {i18n.COOKIES_POLICY.WHAT_2}
+      </p>
+      <p class="mb-4">
+        {i18n.COOKIES_POLICY.WHAT_3}
+      </p>
+    </div>
+
+    <div>
+      <h2 class="text-xl font-bold mb-4">
+        {i18n.COOKIES_POLICY.TYPES_1}
+      </h2>
+      <p class="mb-4">
+        {i18n.COOKIES_POLICY.TYPES_2}
+      </p>
+      <p class="mb-4">
+        {i18n.COOKIES_POLICY.TYPES_3}
+      </p>
+      <p class="mb-4">
+        {i18n.COOKIES_POLICY.TYPES_4}
+      </p>
+      <p class="mb-4">
+        {i18n.COOKIES_POLICY.TYPES_5}
+      </p>
+    </div>
+
+    <div>
+      <h2 class="text-xl font-bold mb-4">
+        {i18n.COOKIES_POLICY.PERFORMANCE_1}
+      </h2>
+      <p class="mb-4">
+        {i18n.COOKIES_POLICY.PERFORMANCE_2}
+      </p>
+      <p class="mb-4">
+        {i18n.COOKIES_POLICY.PERFORMANCE_3}
+      </p>
+      <p class="mb-4">
+        {i18n.COOKIES_POLICY.PERFORMANCE_4}
+      </p>
+      <p class="mb-4">
+        {i18n.COOKIES_POLICY.PERFORMANCE_5}
+      </p>
+    </div>
+
+    <div>
+      <h2 class="text-xl font-bold mb-4">
+        {i18n.COOKIES_POLICY.GEOLOCATION_1}
+      </h2>
+      <p class="mb-4">
+        {i18n.COOKIES_POLICY.GEOLOCATION_2}
+      </p>
+    </div>
+
+    <div>
+      <h2 class="text-xl font-bold mb-4">
+        {i18n.COOKIES_POLICY.LOGIN_1}
+      </h2>
+      <p class="mb-4">
+        {i18n.COOKIES_POLICY.LOGIN_2}
+      </p>
+      <p class="mb-4">
+        {i18n.COOKIES_POLICY.LOGIN_3}
+      </p>
+      <p class="mb-4">
+        {i18n.COOKIES_POLICY.LOGIN_4}
+      </p>
+      <p class="mb-4">
+        {i18n.COOKIES_POLICY.LOGIN_5}
+      </p>
+      <p class="mb-4">
+        {i18n.COOKIES_POLICY.LOGIN_6}
+      </p>
+    </div>
+
+    <div>
+      <h2 class="text-xl font-bold mb-4">
+        {i18n.COOKIES_POLICY.ANALITICS_1}
+      </h2>
+      <p class="mb-4">
+        {i18n.COOKIES_POLICY.ANALITICS_2}
+      </p>
+      <p class="mb-4">
+        {i18n.COOKIES_POLICY.ANALITICS_3}
+      </p>
+      <p class="mb-4">
+        {i18n.COOKIES_POLICY.ANALITICS_4}
+      </p>
+      <p class="mb-4">
+        {i18n.COOKIES_POLICY.ANALITICS_5}
+      </p>
+      <p class="mb-4">
+        {i18n.COOKIES_POLICY.ANALITICS_6}
+      </p>
+      <p class="mb-4">
+        {i18n.COOKIES_POLICY.ANALITICS_7}
+      </p>
+    </div>
+
+    <div>
+      <h2 class="text-xl font-bold mb-4">
+        {i18n.COOKIES_POLICY.ADVERTISING_1}
+      </h2>
+      <p class="mb-4">
+        {i18n.COOKIES_POLICY.ADVERTISING_2}
+      </p>
+      <p class="mb-4">
+        {i18n.COOKIES_POLICY.ADVERTISING_3}
+      </p>
+      <p class="mb-4">
+        {i18n.COOKIES_POLICY.ADVERTISING_4}
+      </p>
+      <p class="mb-4">
+        {i18n.COOKIES_POLICY.ADVERTISING_5}
+      </p>
+      <p class="mb-4">
+        {i18n.COOKIES_POLICY.ADVERTISING_6}
+      </p>
+    </div>
+
+    <div>
+      <h2 class="text-xl font-bold mb-4">
+        {i18n.COOKIES_POLICY.THIRD_PARTY_1}
+      </h2>
+      <p class="mb-4">
+        {i18n.COOKIES_POLICY.THIRD_PARTY_2}
+      </p>
+    </div>
+
+    <div>
+      <h2 class="text-xl font-bold mb-4">
+        {i18n.COOKIES_POLICY.DISABLE_1}
+      </h2>
+      <p class="mb-4">
+        {i18n.COOKIES_POLICY.DISABLE_2}
+      </p>
+      <p class="mb-4">
+        {i18n.COOKIES_POLICY.DISABLE_3}
+      </p>
+    </div>
+  </Container>
+</Layout>
