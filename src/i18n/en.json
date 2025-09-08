@@ -243,55 +243,70 @@
         "PERSONAL_INFO": "Personal Information",
 
         "TRAVEL_INFO": "Travel information",
-        "TRAVEL_INFO_AIRPORT": "Arrival Airport Name",
-        "TRAVEL_INFO_DATE": "Arrival Date",
-        "TRAVEL_INFO_LENGTH": "Length of your trip in days",
-        "TRAVEL_INFO_EXPERIENCE": "Which experience are you looking for?",
-        "TRAVEL_INFO_TRAVELERS": "How many travelers and age?",
-        "TRAVEL_INFO_ROOM": "Room preference",
-        "TRAVEL_INFO_PLACES": "Which places would you like to explore?",
-        "TRAVEL_INFO_SPECIAL": "Special interests?",
-        "TRAVEL_INFO_IMPORTANT": "What are the most important things you look in a vacation?",
-        "TRAVEL_INFO_COMMENTS": "Do you have any comments or special requests?",
+        "TRAVEL_INFO_DESTINATIONS": "Destination(s) of Interest.",
+        "TRAVEL_INFO_DATE": "Preferred Travel Dates.",
+        "TRAVEL_INFO_DATE_1": " (Start and End)",
+        "TRAVEL_INFO_DATE_FLEXIBLE": "Are your dates flexible?",
+        "TRAVEL_INFO_DATE_FLEXIBLE_1": "(Yes / No)",
+        "TRAVEL_INFO_DEPARTURE": "Departure airport and Arrival City / Country. ",
+        "TRAVEL_INFO_AIRPORT": "Airport Transfers Needed?",
+        "TRAVEL_INFO_AIRPORT_1": "(Yes / No / Not Sure)",
+        "TRAVEL_INFO_NUMBER": "Number of Travelers ",
+        "TRAVEL_INFO_NUMBER_1": "Adults (and ages) and Children (and ages)",
+
+        "ACCOMMODATION_INFO": "Accommodation Preferences",
+        "ACCOMMODATION_PREFERRED": "Preferred Accommodation Type",
+        "ACCOMMODATION_PREFERRED_1": "(Budget / Mid-range / Luxury / Boutique / Other)",
+        "ACCOMMODATION_ROOM": "Room Type ",
+        "ACCOMMODATION_ROOM_1": "(Single / Double / Twin / Family Suite / Other)",
+
+        "INTERESTS_INFO_TITLE": "Interests & Activities.",
+        "INTERESTS_INFO": "What type of experiences are you looking for? (check all that apply)",
+        "INTERESTS_INFO_1": "Hiking / Trekking / Tourbike / Mountainbike / Gravelbike / Roadbike / Other outdoor activities / Adventure / Cultural & Historical Tours / Food & Wine / Relaxation & Wellness / Beach / Family-friendly activities / Other ",
+
+        "PERSONALIZATION_INFO": "Personalization & Expectations",
+        "PERSONALIZATION_INFO_1": "What are the main goals of your trip?",
+        "PERSONALIZATION_INFO_2": "Would you happen to know if there are any specific places or activities you would like to include?",
+        "PERSONALIZATION_INFO_3": "How involved would you like to be in the planning process?",
+
         
-        "BOOKING_STEPS": "Booking Steps",
-
-        "BOOKING_STEPS_1": "Step 1 Request",
-        "BOOKING_STEPS_1_TEXT": "We will answer you within 3 weekdays by email to confirm availability.",
         
-        "BOOKING_STEPS_2": "Step 2 Travel & Tour Proposal",
-        "BOOKING_STEPS_2_TEXT": "We will send you a Travel & Tour Proposal outlining your Private Tour with the price per person and information like travel itineraries, accommodation details, range of activities, necessary documents, and more. Any Travel & Tour Proposal can be modified to meet all your interests and to create your personalized holiday",
+        "BOOKING_STEPS": "Steps to Confirm Your Trip",
 
-        "BOOKING_STEPS_3": "Step 3 Hold your date",
-        "BOOKING_STEPS_3_TEXT": "After creating your private tour we hold the Travel & Tour Proposal for 15 days with no obligation.",
+        "BOOKING_STEPS_1": "1. Review Your Custom Itinerary",
+        "BOOKING_STEPS_1_TEXT": "Take a moment to carefully review the personalized itinerary we’ve prepared for you, including destinations, accommodations, activities, and services.",
+        
+        "BOOKING_STEPS_2": "2. Request Any Final Changes",
+        "BOOKING_STEPS_2_TEXT": "Let us know if you’d like to make any adjustments to the itinerary. We’ll fine-tune everything until it’s exactly how you want it.",
 
-        "BOOKING_STEPS_4": "Step 4 Release of liability form",
-        "BOOKING_STEPS_4_TEXT": "The clients are required to complete and sign our release of liability form and understand the full terms and conditions of the provided tours. Signatures are required before pre-reservation. We're unable to allow travelers to participate in any aspect of Montaraz Outdoors & Culture tours without a signed release form.",
+        "BOOKING_STEPS_3": "3. Confirm Your Tour Package",
+        "BOOKING_STEPS_3_TEXT": "Once you're happy with the proposal, send us a confirmation via email or through our booking platform. We hold the Travel & Tour Proposal for 15 days with no obligation.",
 
-        "BOOKING_STEPS_5": "Step 5 Deposit & Pre-reservation",
-        "BOOKING_STEPS_5_TEXT": "The tour is officially reserved when the client deposits 20% of the total tour price per person before the 15-day hold period ends. If no deposit is received, your Travel & Tour Poposal will be canceled. We’ll officially confirm your pre-reservation after the deposit of 20% of the total tour price per person. Any adjustments and modifications requested from the client after the pre-reservation will have a final adjusted price added to the total price",
+        "BOOKING_STEPS_4": "4. Detailed Information on Payment and Cancellation Terms",
+        "BOOKING_STEPS_4_TEXT": "The cancellation conditions are not standard but are individually agreed upon between Montaraz and the client. This agreement becomes legally binding only once both parties have confirmed and signed it in writing. The agreed cancellation terms are established in accordance with applicable legal provisions, in particular:",
+        "BOOKING_STEPS_4_TEXT_2": "Royal Legislative Decree 1/2007 (Spanish legislation on consumer rights related to package travel)",
+        "BOOKING_STEPS_4_TEXT_3": "Directive (EU) 2015/2302 on package travel and linked travel arrangements",
 
-        "BOOKING_STEPS_6": "Step 6 The remaining balance",
-        "BOOKING_STEPS_6_TEXT": "We send the client an email with the remaining balance.",
+        "BOOKING_STEPS_5": "5. Pre-reservation",
+        "BOOKING_STEPS_5_TEXT": "Upon acceptance of the travel proposal, you will receive a pro forma invoice with all the details of the trip and the payment terms. This pro forma invoice serves as a preliminary confirmation of your booking.To make your booking final, we require a deposit of 20% of the total amount, to be paid within 15 days of receiving the pro forma invoice. If the deposit is not received on time, the travel proposal will be automatically canceled without further notice. After receiving the deposit, you will receive a final booking confirmation by email. At that point, your holiday is officially booked.",
 
-        "BOOKING_STEPS_7": "Step 7 Final Payment + Travel insurance",
-        "BOOKING_STEPS_7_TEXT": "The total trip price must be received by us no later than the final total payment due date (see booking conditions and cancel policy). If the balance is not paid by the due date, we treat your booking as canceled and cancellation charges apply. We’ll officially confirm your final payment after the deposit of the rest of the total price per person. The client needs to take adequate valid travel insurance at their own cost to book the tour and ensure they have read and understood the full terms and conditions of your travel insurance policy to ensure that they are covered for all activities you intend to take during the trip. Montaraz Outdoors & Culture won't be able to help you obtain any insurance",
+        "BOOKING_STEPS_6": "6. Make Your Initial Payment",
+        "BOOKING_STEPS_6_TEXT": "The remaining balance must be received in our account (depending on the terms) no later than X weeks before departure.You will receive a reminder with the payment details in due time.",
 
-        "IMPORTANT_STEPS": "Important",
+        "BOOKING_STEPS_7": "7. Receive Booking Confirmation",
+        "BOOKING_STEPS_7_TEXT": "Once we receive your payment, we’ll confirm all bookings (accommodation, transport, guides, etc.) and send you a confirmation email with the finalized details.",
 
-        "IMPORTANT_1": "It is your responsibility to arrange appropriate travel insurance",
-        "IMPORTANT_2": "It is your responsibility to arrange your flights",
-        "IMPORTANT_3": "¡Double Check! Ensure you have read and understood the full terms and conditions of your travel insurance policy to ensure that you are covered for all activities you intend to undertake whilst on the tour. Your Insurance Policy must fully cover you for medical expenses and emergency repatriation to your home country",
-        "IMPORTANT_4": "I confirm that I understand this planning service",
-        "IMPORTANT_5": "I understand that I can stop the planning process without any cost",
-        "IMPORTANT_6": "I also understand and agree that the client has the right to cancel the tour in writing and sign to us. Once we receive your notice, the cancellation will take effect. Your deposit will be returned to the same account that you have made the payment. The returned amount depends on the cancellation charges. Bank charges to make the transaction may apply and will be deducted from the returned amount",
+        "BOOKING_STEPS_8": "8. Prepare for Your Trip",
+        "BOOKING_STEPS_8_TEXT": "We’ll provide you with a pre-departure travel pack, including helpful tips, documents, and contact details. You're all set to enjoy your adventure!",
 
-        "CHECK_1":"I have read and understood the booking steps.",
-        "CHECK_2":"I have read and understood the important information",
-        "CHECK_3":"I have read and accept the ",
-        "CHECK_A":"Privacy Policy ",
-        "CHECK_BUTTON":"Send Message"
-
+        "LIABILITY_1":"Liability Waiver Form",
+        "LIABILITY_2":"Each traveler must return the signed liability waiver form before departure. This form confirms participation at one's own risk and releases the organization from liability in the event of accidents or damage caused by the traveler's own actions.",
+        "LIABILITY_3":"Recommended: Travel and Cancellation Insurance",
+        "LIABILITY_4":"We recommend taking out travel and cancellation insurance with a reputable insurer. This covers unforeseen circumstances that may require you to cancel or interrupt your trip.",
+        "LIABILITY_5":"Informative Clause",
+        "LIABILITY_6":"In accordance with the provisions of the GDPR and the LOPDGDD, we inform you that MONTARAZ OUTDOORS & CULTURE, S.L. collects and processes your personal data, applying the technical and organizational measures necessary to ensure its confidentiality, for the purpose of managing the services contracted in accordance with the relationship that binds us.",
+        "LIABILITY_7":"To this end, you give your consent and authorization for such processing. We will retain your personal data for the time strictly necessary to manage our relationship.",
+        "LIABILITY_8":"You may exercise your rights of access, rectification, erasure, restriction, data portability, and objection by contacting the Data Controller at: C/ Santa Teresa, 21, Churriana de la Vega, 18194, Granada, or by sending an email to: montarazoutdoors@gmail.com."
     },
 
 

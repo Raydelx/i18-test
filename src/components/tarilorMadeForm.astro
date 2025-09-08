@@ -23,6 +23,8 @@ const i18n = getI18N({ currentLocale });
     name="access_key"
     value="e851d321-0271-42c5-a243-3d405050de0f"
   />
+  <!-- value="e851d321-0271-42c5-a243-3d405050de0f" Montaraz -->
+
   <!-- Create your free access key from https://web3forms.com/ -->
   <input type="checkbox" class="hidden" style="display:none" name="botcheck" />
   <h2 class="text-3xl mb-4 ml-1 font-semibold">
@@ -76,7 +78,7 @@ const i18n = getI18N({ currentLocale });
   </div>
   <div class="mb-3">
     <textarea
-      name="message"
+      name="How did you hear about us?"
       required
       placeholder="How did you hear about us?"
       class="w-full px-4 py-3 border-2 placeholder:text-gray-400 rounded-md outline-none h-36 focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
@@ -91,180 +93,222 @@ const i18n = getI18N({ currentLocale });
   <div class="grid md:grid-cols-2 md:gap-4">
     <div class="mb-5">
       <label for="Arrival Airport" class="ml-1"
-        >{i18n.FORM_TAILOR.TRAVEL_INFO_AIRPORT}</label
+        >{i18n.FORM_TAILOR.TRAVEL_INFO_DESTINATIONS}</label
       >
       <input
         type="text"
-        placeholder="Arrival Airport"
+        placeholder="Andalucía"
         required
         class="w-full px-4 py-3 border-2 placeholder:text-gray-400 rounded-md outline-none focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
-        name="Arrival Airport"
+        name="Destination"
       />
       <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
-        Please provide your arrival airport.
+        Please provide a destination.
       </div>
     </div>
+
     <div class="mb-5">
       <label for="Arrival Airport" class="ml-1"
         >{i18n.FORM_TAILOR.TRAVEL_INFO_DATE}</label
       >
       <input
-        type="date"
-        placeholder="date of arrival"
+        type="text"
+        placeholder="From 21th August to 5th September"
         required
         class="w-full px-4 py-3 border-2 placeholder:text-gray-400 rounded-md outline-none focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
-        name="date of arrival"
+        name="Date of arrival"
       />
       <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
         Please provide date of arrival.
       </div>
     </div>
   </div>
+
   <!-- Length of your trip in days -->
   <div class="grid md:grid-cols-2 md:gap-2">
     <div class="mb-5">
       <label for="Arrival Airport" class="ml-1"
-        >{i18n.FORM_TAILOR.TRAVEL_INFO_LENGTH}</label
+        >{i18n.FORM_TAILOR.TRAVEL_INFO_DATE_FLEXIBLE}</label
       >
       <input
-        id="Arrival Airport"
-        type="number"
-        placeholder="Days"
+        type="text"
+        placeholder={i18n.FORM_TAILOR.TRAVEL_INFO_DATE_FLEXIBLE_1}
         required
         class="w-full px-4 py-3 border-2 placeholder:text-gray-400 rounded-md outline-none focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
-        name="Length of travels in days"
+        name="Flexible dates"
       />
       <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
-        Length of travels in days
+        Please provide flexible dates or not?.
       </div>
     </div>
+
     <div class="mb-5">
-      <label for="Experience" class="ml-1"
-        >{i18n.FORM_TAILOR.TRAVEL_INFO_EXPERIENCE}</label
+      <label for="Departure city" class="ml-1"
+        >{i18n.FORM_TAILOR.TRAVEL_INFO_DEPARTURE}</label
       >
       <input
-        id="Experience"
-        list="Experiences"
-        name="Which experience are you looking for?"
-        placeholder="Select an option"
+        type="text"
+        placeholder="Madrid"
+        required
         class="w-full px-4 py-3 border-2 placeholder:text-gray-400 rounded-md outline-none focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
+        name="Departure city"
       />
-      <datalist id="Experiences">
-        <option value="Cycling Tours"></option>
-        <option value="Hiking & Trekking"></option>
-        <option value="Cultural Travel Tours"></option>
-        <option value="Multi-Adventure Tours"></option>
-        <option value="Other"></option>
-      </datalist>
+      <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+        Please provide a departure city.
+      </div>
+    </div>
+
+    <div class="mb-5">
+      <label for="Airport transfer needed?" class="ml-1"
+        >{i18n.FORM_TAILOR.TRAVEL_INFO_AIRPORT}</label
+      >
+      <input
+        type="text"
+        placeholder={i18n.FORM_TAILOR.TRAVEL_INFO_AIRPORT_1}
+        required
+        class="w-full px-4 py-3 border-2 placeholder:text-gray-400 rounded-md outline-none focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
+        name="Airport transfer needed?"
+      />
+      <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+        Did you need an airport transfer?
+      </div>
     </div>
   </div>
+
   <!-- How many travelers and age? -->
-  <div class="mb-3">
-    <label for="Travelers and Ages" class="ml-1"
-      >{i18n.FORM_TAILOR.TRAVEL_INFO_TRAVELERS}</label
-    >
-    <label for="Travelers and Ages" class="ml-1"></label>
-    <textarea
-      id="Travelers and Ages"
-      name="Travelers and Ages"
-      required
-      placeholder="Jhon Doe 36
-Raquel Doret 24"
-      class="w-full px-4 py-3 border-2 placeholder:text-gray-400 rounded-md outline-none h-36 focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
-    ></textarea>
-    <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
-      Introduce travelers please.
-    </div>
-  </div>
   <!-- Room preference -->
   <div class="mb-3">
-    <label for="Room preference" class="ml-1"
-      >{i18n.FORM_TAILOR.TRAVEL_INFO_ROOM}</label
-    >
-
-    <textarea
-      id="Room preference"
-      name="Room preference"
-      required
-      placeholder="Single room, Twin or double room, etc..."
-      class="w-full px-4 py-3 border-2 placeholder:text-gray-400 rounded-md outline-none h-36 focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
-    ></textarea>
-    <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
-      Introduce room preference.
-    </div>
-  </div>
-  <!-- Which places would you like to explore? -->
-  <div class="mb-3">
     <label for="destinations" class="ml-1"
-      >{i18n.FORM_TAILOR.TRAVEL_INFO_PLACES}</label
+      >{i18n.FORM_TAILOR.TRAVEL_INFO_NUMBER}</label
     >
     <label for="destinations" class="ml-1"></label>
     <textarea
       id="destinations"
-      name="Destinations"
-      placeholder="Islas Canarias"
+      name="Number of Travelers and Age"
+      placeholder={i18n.FORM_TAILOR.TRAVEL_INFO_NUMBER_1}
       class="w-full px-4 py-3 border-2 placeholder:text-gray-400 rounded-md outline-none h-36 focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
     ></textarea>
     <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
-      How did you hear about us?
+      Number of Travelers and Age
     </div>
   </div>
-  <!-- Special interests? -->
-  <div class="mb-3">
-    <label for="special" class="ml-1"
-      >{i18n.FORM_TAILOR.TRAVEL_INFO_SPECIAL}</label
-    >
 
-    <textarea
-      id="special"
-      name="Spescial Interest for this tour"
-      required
-      placeholder="Sunset at Islas canarias north."
-      class="w-full px-4 py-3 border-2 placeholder:text-gray-400 rounded-md outline-none h-36 focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
-    ></textarea>
-    <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
-      Do you have any special interests?
+  <h2 class="text-3xl mb-4 ml-1 font-bold">
+    {i18n.FORM_TAILOR.ACCOMMODATION_INFO}
+  </h2>
+  <div class="grid md:grid-cols-2 md:gap-4">
+    <div class="mb-5">
+      <label for="Arrival Airport" class="ml-1"
+        >{i18n.FORM_TAILOR.ACCOMMODATION_PREFERRED}</label
+      >
+      <input
+        type="text"
+        placeholder={i18n.FORM_TAILOR.ACCOMMODATION_PREFERRED_1}
+        required
+        class="w-full px-4 py-3 border-2 placeholder:text-gray-400 rounded-md outline-none focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
+        name="Preferred Accommodation Type"
+      />
+      <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+        Please provide a Preferred Accommodation Type.
+      </div>
+    </div>
+
+    <div class="mb-5">
+      <label for="Arrival Airport" class="ml-1"
+        >{i18n.FORM_TAILOR.ACCOMMODATION_ROOM}</label
+      >
+      <input
+        type="text"
+        placeholder={i18n.FORM_TAILOR.ACCOMMODATION_ROOM_1}
+        required
+        class="w-full px-4 py-3 border-2 placeholder:text-gray-400 rounded-md outline-none focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
+        name="Room Type"
+      />
+      <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+        Please provide a room type.
+      </div>
     </div>
   </div>
-  <!-- What is the most important thing you look in a vacation? -->
+
+  <h2 class="text-3xl mb-4 ml-1 font-bold">
+    {i18n.FORM_TAILOR.INTERESTS_INFO_TITLE}
+  </h2>
+
   <div class="mb-3">
-    <label for="important" class="ml-1"
-      >{i18n.FORM_TAILOR.TRAVEL_INFO_IMPORTANT}</label
+    <label for="destinations" class="ml-1"
+      >{i18n.FORM_TAILOR.INTERESTS_INFO}</label
     >
-    <label for="important" class="ml-1"></label>
+    <label for="destinations" class="ml-1"></label>
     <textarea
-      id="important"
-      name="What is the most important thing you look in a vacation?"
-      required
-      placeholder="Beach vacation, city tour, hiking, etc..."
+      id="destinations"
+      name="What type of experiences are you looking for?"
+      placeholder={i18n.FORM_TAILOR.INTERESTS_INFO_1}
       class="w-full px-4 py-3 border-2 placeholder:text-gray-400 rounded-md outline-none h-36 focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
     ></textarea>
     <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
-      What is the most important thing you look in a vacation?
+      What type of experiences are you looking for?
     </div>
   </div>
-  <!-- Specials request or comments -->
+
+  <h2 class="text-3xl mb-4 ml-1 font-bold">
+    {i18n.FORM_TAILOR.PERSONALIZATION_INFO}
+  </h2>
+
   <div class="mb-3">
-    <label for="Travelers and Ages" class="ml-1"
-      >{i18n.FORM_TAILOR.TRAVEL_INFO_COMMENTS}</label
+    <label for="destinations" class="ml-1"
+      >{i18n.FORM_TAILOR.PERSONALIZATION_INFO_1}</label
     >
-    <label for="Travelers and Ages" class="ml-1"></label>
+    <label for="destinations" class="ml-1"></label>
     <textarea
-      id="comments_requests"
-      name="Do you have any comments or specials request?"
-      placeholder="I need 3 beds in in one room"
+      id="destinations"
+      name="What are the main goals of your trip?"
+      placeholder="Exploring Andalusian cities, enjoying the coast, wine & tapas, family vacation"
       class="w-full px-4 py-3 border-2 placeholder:text-gray-400 rounded-md outline-none h-36 focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
     ></textarea>
     <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
-      Do you have any comments or specials request?
+      What are the main goals of your trip?
     </div>
   </div>
+
+  <div class="mb-3">
+    <label for="destinations" class="ml-1"
+      >{i18n.FORM_TAILOR.PERSONALIZATION_INFO_2}</label
+    >
+    <label for="destinations" class="ml-1"></label>
+    <textarea
+      id="destinations"
+      name="Would you happen to know if there are any specific places or activities you would like to include?"
+      placeholder="e.g., Alhambra in Granada, flamenco show in Seville, hiking in Sierra Nevada, Costa del Sol beaches"
+      class="w-full px-4 py-3 border-2 placeholder:text-gray-400 rounded-md outline-none h-36 focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
+    ></textarea>
+    <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+      Would you happen to know if there are any specific places or activities
+      you would like to include?
+    </div>
+  </div>
+
+  <div class="mb-3">
+    <label for="destinations" class="ml-1"
+      >{i18n.FORM_TAILOR.PERSONALIZATION_INFO_3}</label
+    >
+    <label for="destinations" class="ml-1"></label>
+    <textarea
+      id="destinations"
+      name="How involved would you like to be in the planning process?"
+      placeholder="Tell us if you’d like a fully guided trip, a mix of suggestions, or just basic arrangements"
+      class="w-full px-4 py-3 border-2 placeholder:text-gray-400 rounded-md outline-none h-36 focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
+    ></textarea>
+    <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+      How involved would you like to be in the planning process?
+    </div>
+  </div>
+
   <!-- Booking Steps -->
   <div class="grip">
     <h2 class="text-2xl font-bold mb-2">{i18n.FORM_TAILOR.BOOKING_STEPS}</h2>
     <div>
       <div class="flex flex-row items-center gap-1">
-        <spam class="text-sm">🔵</spam>
+        <spam class="text-sm"></spam>
         <h3 class="font-semibold text-lg">
           {i18n.FORM_TAILOR.BOOKING_STEPS_1}
         </h3>
@@ -275,7 +319,7 @@ Raquel Doret 24"
     </div>
     <div>
       <div class="flex flex-row items-center gap-1">
-        <spam class="text-sm">🔵</spam>
+        <spam class="text-sm"></spam>
         <h3 class="font-semibold text-lg">
           {i18n.FORM_TAILOR.BOOKING_STEPS_2}
         </h3>1
@@ -286,7 +330,7 @@ Raquel Doret 24"
     </div>
     <div>
       <div class="flex flex-row items-center gap-1">
-        <spam class="text-sm">🔵</spam>
+        <spam class="text-sm"></spam>
         <h3 class="font-semibold text-lg">
           {i18n.FORM_TAILOR.BOOKING_STEPS_3}
         </h3>
@@ -297,7 +341,7 @@ Raquel Doret 24"
     </div>
     <div>
       <div class="flex flex-row items-center gap-1">
-        <spam class="text-sm">🔵</spam>
+        <spam class="text-sm"></spam>
         <h3 class="font-semibold text-lg">
           {i18n.FORM_TAILOR.BOOKING_STEPS_4}
         </h3>
@@ -305,10 +349,14 @@ Raquel Doret 24"
       <p class="mb-3">
         {i18n.FORM_TAILOR.BOOKING_STEPS_4_TEXT}
       </p>
+      <div class="ml-5">
+        <p class="mb-3">- {i18n.FORM_TAILOR.BOOKING_STEPS_4_TEXT_2}</p>
+        <p class="mb-3">- {i18n.FORM_TAILOR.BOOKING_STEPS_4_TEXT_3}</p>
+      </div>
     </div>
     <div>
       <div class="flex flex-row items-center gap-1">
-        <spam class="text-sm">🔵</spam>
+        <spam class="text-sm"></spam>
         <h3 class="font-semibold text-lg">
           {i18n.FORM_TAILOR.BOOKING_STEPS_5}
         </h3>
@@ -319,7 +367,7 @@ Raquel Doret 24"
     </div>
     <div>
       <div class="flex flex-row items-center gap-1">
-        <spam class="text-sm">🔵</spam>
+        <spam class="text-sm"></spam>
         <h3 class="font-semibold text-lg">
           {i18n.FORM_TAILOR.BOOKING_STEPS_6}
         </h3>
@@ -330,7 +378,7 @@ Raquel Doret 24"
     </div>
     <div>
       <div class="flex flex-row items-center gap-1">
-        <spam class="text-sm">🔵</spam>
+        <spam class="text-sm"></spam>
         <h3 class="font-semibold text-lg">
           {i18n.FORM_TAILOR.BOOKING_STEPS_7}
         </h3>
@@ -339,105 +387,42 @@ Raquel Doret 24"
         {i18n.FORM_TAILOR.BOOKING_STEPS_7_TEXT}
       </p>
     </div>
-  </div>
+    <div>
+      <div class="flex flex-row items-center gap-1">
+        <spam class="text-sm"></spam>
+        <h3 class="font-semibold text-lg">
+          {i18n.FORM_TAILOR.BOOKING_STEPS_8}
+        </h3>
+      </div>
+      <p class="mb-8">
+        {i18n.FORM_TAILOR.BOOKING_STEPS_8_TEXT}
+      </p>
+    </div>
 
-  <h2 class="text-2xl font-bold mb-2">{i18n.FORM_TAILOR.IMPORTANT_STEPS}</h2>
-  <div class="grip">
-    <div class="flex">
-      <h3 class="flex-none w-5">1.</h3>
-      <p class="mb-3 flex-1">
-        {i18n.FORM_TAILOR.IMPORTANT_1}
-      </p>
-    </div>
-    <div class="flex">
-      <h3 class="flex-none w-5">2.</h3>
-      <p class="mb-3 flex-1">
-        {i18n.FORM_TAILOR.IMPORTANT_2}
-      </p>
-    </div>
-    <div class="flex">
-      <h3 class="flex-none w-5">3.</h3>
-      <p class="mb-3 flex-1">
-        {i18n.FORM_TAILOR.IMPORTANT_3}
-      </p>
-    </div>
-    <div class="flex">
-      <h3 class="flex-none w-5">4.</h3>
-      <p class="mb-3 flex-1">
-        {i18n.FORM_TAILOR.IMPORTANT_4}
-      </p>
-    </div>
-    <div class="flex">
-      <h3 class="flex-none w-5">5.</h3>
-      <p class="mb-3 flex-1">
-        {i18n.FORM_TAILOR.IMPORTANT_5}
-      </p>
-    </div>
-    <div class="flex">
-      <h3 class="flex-none w-5">6.</h3>
-      <p class="mb-3 flex-1">
-        {i18n.FORM_TAILOR.IMPORTANT_6}
-      </p>
-    </div>
-  </div>
-
-  <div class="mb-5">
-    <div class="flex items-center">
-      <input
-        id="understad-checkbox"
-        type="checkbox"
-        required
-        value="I understad"
-        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-      />
-      <label for="understad-checkbox" class="ms-2 text-md"
-        >{i18n.FORM_TAILOR.CHECK_1}</label
-      >
-    </div>
-    <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
-      We need to know that you read all the steps for booking a tour.
-    </div>
-  </div>
-
-  <div class="mb-5">
-    <div class="flex items-center">
-      <input
-        id="agreed-checkbox"
-        type="checkbox"
-        required
-        value="I agreed"
-        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-      />
-      <label for="agreed-checkbox" class="ms-2 text-md"
-        >{i18n.FORM_TAILOR.CHECK_2}</label
-      >
-    </div>
-    <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
-      We need to know that agreed the information above.
-    </div>
-  </div>
-  <div class="mb-5">
-    <div class="flex items-center">
-      <input
-        id="policy-checkbox"
-        type="checkbox"
-        required
-        value="Privacy policy"
-        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-      />
-      <label for="policy-checkbox" class="ms-2 text-md"
-        >{i18n.FORM_TAILOR.CHECK_A}
-        <a
-          target="_blank"
-          class="text-blue-600"
-          href={translatePath("privacy-policy")}
-          >{i18n.FORM_TAILOR.CHECK_BUTTON}</a
-        >.</label
-      >
-    </div>
-    <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
-      We need to know that agreed the information above.
-    </div>
+    <p class="mb-3 font-bold">
+      {i18n.FORM_TAILOR.LIABILITY_1}
+    </p>
+    <p class="mb-3">
+      {i18n.FORM_TAILOR.LIABILITY_2}
+    </p>
+    <p class="mb-3 font-bold">
+      {i18n.FORM_TAILOR.LIABILITY_3}
+    </p>
+    <p class="mb-3">
+      {i18n.FORM_TAILOR.LIABILITY_4}
+    </p>
+    <p class="mb-3 font-bold">
+      {i18n.FORM_TAILOR.LIABILITY_5}
+    </p>
+    <p class="mb-3">
+      {i18n.FORM_TAILOR.LIABILITY_6}
+    </p>
+    <p class="mb-3">
+      {i18n.FORM_TAILOR.LIABILITY_7}
+    </p>
+    <p class="mb-3">
+      {i18n.FORM_TAILOR.LIABILITY_8}
+    </p>
   </div>
 
   <Button type="submit" size="lg" block>Send Message</Button>

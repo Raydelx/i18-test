@@ -232,61 +232,75 @@
         "SEND": "Verzenden"
     },
 
-    "FORM_TAILOR":{
-        "TITLE": "Op Maat Gemaakte Reizen Aanvraagformulier",
-        "SUBTITLE": "Montaraz Outdoor & Culture neemt contact met u op na het beoordelen van uw reisaanvraag. We antwoorden u binnen 3 werkdagen per e-mail.",
+    "FORM_TAILOR": {
+        "TITLE": "Aanvraagformulier Op Maat Gemaakte Reis",
+        "SUBTITLE": "Montaraz Outdoor & Culture neemt contact met u op na het beoordelen van uw reisaanvraag. U ontvangt binnen 3 werkdagen een antwoord per e-mail.",
         
-        "PERSONAL_INFO": "Persoonlijke Informatie",
+        "PERSONAL_INFO": "Persoonlijke gegevens",
 
         "TRAVEL_INFO": "Reisinformatie",
-        "TRAVEL_INFO_AIRPORT": "Naam van de aankomstluchthaven",
-        "TRAVEL_INFO_DATE": "Aankomstdatum",
-        "TRAVEL_INFO_LENGTH": "Duur van uw reis in dagen",
-        "TRAVEL_INFO_EXPERIENCE": "Welke ervaring zoekt u?",
-        "TRAVEL_INFO_TRAVELERS": "Hoeveel reizigers en leeftijden?",
-        "TRAVEL_INFO_ROOM": "Voorkeur voor kamer",
-        "TRAVEL_INFO_PLACES": "Welke plaatsen wilt u verkennen?",
-        "TRAVEL_INFO_SPECIAL": "Speciale interesses?",
-        "TRAVEL_INFO_IMPORTANT": "Wat zijn de belangrijkste dingen die u zoekt in een vakantie?",
-        "TRAVEL_INFO_COMMENTS": "Heeft u opmerkingen of speciale verzoeken?",
+        "TRAVEL_INFO_DESTINATIONS": "Gewenste bestemming(en).",
+        "TRAVEL_INFO_DATE": "Gewenste reisdata.",
+        "TRAVEL_INFO_DATE_1": "(Begin en einde)",
+        "TRAVEL_INFO_DATE_FLEXIBLE": "Zijn uw data flexibel?",
+        "TRAVEL_INFO_DATE_FLEXIBLE_1": "(Ja / Nee)",
+        "TRAVEL_INFO_DEPARTURE": "Vertrek luchthaven en aankomststad / land.",
+        "TRAVEL_INFO_AIRPORT": "Luchthaventransfers nodig?",
+        "TRAVEL_INFO_AIRPORT_1": "(Ja / Nee / Niet zeker)",
+        "TRAVEL_INFO_NUMBER": "Aantal reizigers",
+        "TRAVEL_INFO_NUMBER_1": "Volwassenen (en leeftijden) en kinderen (en leeftijden)",
 
-        "BOOKING_STEPS": "Boekingsstappen",
+        "ACCOMMODATION_INFO": "Accommodatievoorkeuren",
+        "ACCOMMODATION_PREFERRED": "Gewenst type accommodatie",
+        "ACCOMMODATION_PREFERRED_1": "(Budget / Middenklasse / Luxe / Boetiek / Anders)",
+        "ACCOMMODATION_ROOM": "Kamertype",
+        "ACCOMMODATION_ROOM_1": "(Single / Double / Twin / Familiekamer / Anders)",
 
-        "BOOKING_STEPS_1": "Stap 1 Aanvraag",
-        "BOOKING_STEPS_1_TEXT": "We antwoorden u binnen 3 werkdagen per e-mail om beschikbaarheid te bevestigen.",
+        "INTERESTS_INFO_TITLE": "Interesses & Activiteiten.",
+        "INTERESTS_INFO": "Welke ervaringen zoekt u? (meerdere opties mogelijk)",
+        "INTERESTS_INFO_1": "Wandelen / Trekking / Tourfiets / Mountainbike / Gravelbike / Racefiets / Andere buitenactiviteiten / Avontuur / Culturele & Historische tours / Eten & Wijn / Ontspanning & Wellness / Strand / Gezinsvriendelijke activiteiten / Anders",
+
+        "PERSONALIZATION_INFO": "Personalisatie & Verwachtingen",
+        "PERSONALIZATION_INFO_1": "Wat zijn de belangrijkste doelen van uw reis?",
+        "PERSONALIZATION_INFO_2": "Zijn er specifieke plaatsen of activiteiten die u wilt opnemen?",
+        "PERSONALIZATION_INFO_3": "Hoe betrokken wilt u zijn bij het planningsproces?",
+
+        "BOOKING_STEPS": "Stappen om uw reis te bevestigen",
+
+        "BOOKING_STEPS_1": "1. Bekijk uw gepersonaliseerde reisvoorstel",
+        "BOOKING_STEPS_1_TEXT": "Neem de tijd om het gepersonaliseerde reisvoorstel dat we voor u hebben opgesteld zorgvuldig te bekijken, inclusief bestemmingen, accommodaties, activiteiten en diensten.",
         
-        "BOOKING_STEPS_2": "Stap 2 Reis- & Tourvoorstel",
-        "BOOKING_STEPS_2_TEXT": "We sturen u een Reis- & Tourvoorstel met daarin uw Privétour, de prijs per persoon en informatie zoals reisroutes, accommodatiegegevens, activiteitenaanbod, benodigde documenten en meer. Elk Reis- & Tourvoorstel kan worden aangepast om volledig aan uw interesses te voldoen en uw gepersonaliseerde vakantie te creëren.",
+        "BOOKING_STEPS_2": "2. Vraag eventuele laatste wijzigingen aan",
+        "BOOKING_STEPS_2_TEXT": "Laat ons weten of u aanpassingen wilt aan het reisvoorstel. We passen alles aan tot het precies is zoals u wilt.",
 
-        "BOOKING_STEPS_3": "Stap 3 Behoud uw datum",
-        "BOOKING_STEPS_3_TEXT": "Na het creëren van uw privétour houden we het Reis- & Tourvoorstel 15 dagen vast zonder verplichting.",
+        "BOOKING_STEPS_3": "3. Bevestig uw tourpakket",
+        "BOOKING_STEPS_3_TEXT": "Als u tevreden bent met het voorstel, stuur ons een bevestiging per e-mail of via ons boekingsplatform. We houden het Reis- & Tourvoorstel 15 dagen vast zonder verplichting.",
 
-        "BOOKING_STEPS_4": "Stap 4 Vrijwaringsformulier",
-        "BOOKING_STEPS_4_TEXT": "Klanten zijn verplicht ons vrijwaringsformulier in te vullen en te ondertekenen en de volledige voorwaarden van de aangeboden tours te begrijpen. Handtekeningen zijn vereist vóór de voorlopige reservering. We kunnen reizigers niet toestaan deel te nemen aan enig aspect van Montaraz Outdoors & Culture tours zonder een ondertekend vrijwaringsformulier.",
+        "BOOKING_STEPS_4": "4. Gedetailleerde informatie over betaling en annuleringsvoorwaarden",
+        "BOOKING_STEPS_4_TEXT": "De annuleringsvoorwaarden zijn niet standaard, maar worden individueel overeengekomen tussen Montaraz en de klant. Deze overeenkomst wordt juridisch bindend zodra beide partijen deze schriftelijk hebben bevestigd en ondertekend. De overeengekomen annuleringsvoorwaarden worden vastgesteld in overeenstemming met de toepasselijke wettelijke bepalingen, in het bijzonder:",
+        "BOOKING_STEPS_4_TEXT_2": "Real Decreto Legislativo 1/2007 (Spaanse wetgeving inzake consumentenrechten bij pakketreisovereenkomsten)",
+        "BOOKING_STEPS_4_TEXT_3": "Richtlijn (EU) 2015/2302 betreffende pakketreisovereenkomsten en gekoppelde reisarrangementen",
 
-        "BOOKING_STEPS_5": "Stap 5 Aanbetaling & Voorlopige Reservering",
-        "BOOKING_STEPS_5_TEXT": "De tour is officieel gereserveerd wanneer de klant 20% van de totale tourprijs per persoon stort vóór het einde van de 15-daagse reserveringsperiode. Als er geen aanbetaling wordt ontvangen, wordt uw Reis- & Tourvoorstel geannuleerd. We bevestigen officieel uw voorlopige reservering na de storting van 20% van de totale tourprijs per persoon. Eventuele aanpassingen en wijzigingen die door de klant worden aangevraagd na de voorlopige reservering, zullen een aangepaste prijs hebben die wordt toegevoegd aan de totale prijs.",
+        "BOOKING_STEPS_5": "5. Voorreservering",
+        "BOOKING_STEPS_5_TEXT": "Na acceptatie van het reisvoorstel ontvangt u een proforma factuur met alle details van de reis en de betalingsvoorwaarden. Deze proforma factuur geldt als voorlopige bevestiging van uw boeking. Om uw boeking definitief te maken, vragen wij een aanbetaling van 20% van het totale bedrag binnen 15 dagen na ontvangst van de proforma factuur. Indien de aanbetaling niet op tijd wordt ontvangen, wordt het reisvoorstel automatisch geannuleerd zonder verdere kennisgeving. Na ontvangst van de aanbetaling ontvangt u een definitieve boekingsbevestiging per e-mail. Op dat moment is uw vakantie officieel geboekt.",
 
-        "BOOKING_STEPS_6": "Stap 6 Het resterende saldo",
-        "BOOKING_STEPS_6_TEXT": "We sturen de klant een e-mail met het resterende saldo.",
+        "BOOKING_STEPS_6": "6. Doe uw eerste betaling",
+        "BOOKING_STEPS_6_TEXT": "Het resterende saldo moet (afhankelijk van de voorwaarden) uiterlijk X weken voor vertrek op onze rekening staan. U ontvangt tijdig een herinnering met de betalingsgegevens.",
 
-        "BOOKING_STEPS_7": "Stap 7 Eindbetaling + Reisverzekering",
-        "BOOKING_STEPS_7_TEXT": "De totale reissom moet uiterlijk op de eindbetalingsdatum door ons zijn ontvangen (zie boekingsvoorwaarden en annuleringsbeleid). Als het saldo niet op de vervaldatum is betaald, beschouwen we uw boeking als geannuleerd en zijn annuleringskosten van toepassing. We bevestigen officieel uw eindbetaling na de storting van de rest van de totale prijs per persoon. De klant dient op eigen kosten een adequate en geldige reisverzekering af te sluiten om de tour te boeken en ervoor te zorgen dat hij/zij de volledige voorwaarden van de reisverzekering begrijpt en heeft gelezen om ervoor te zorgen dat hij/zij gedekt is voor alle activiteiten die hij/zij tijdens de reis wil ondernemen. Montaraz Outdoors & Culture kan u niet helpen bij het verkrijgen van een verzekering.",
+        "BOOKING_STEPS_7": "7. Ontvang boekingsbevestiging",
+        "BOOKING_STEPS_7_TEXT": "Zodra wij uw betaling ontvangen, bevestigen wij alle boekingen (accommodatie, vervoer, gidsen, enz.) en sturen u een bevestigingsmail met de definitieve details.",
 
-        "IMPORTANT_STEPS": "Belangrijk",
+        "BOOKING_STEPS_8": "8. Bereid u voor op uw reis",
+        "BOOKING_STEPS_8_TEXT": "Wij voorzien u van een reisdocument vóór vertrek, inclusief handige tips, documenten en contactgegevens. U bent klaar om van uw avontuur te genieten!",
 
-        "IMPORTANT_1": "Het is uw verantwoordelijkheid om een passende reisverzekering te regelen.",
-        "IMPORTANT_2": "Het is uw verantwoordelijkheid om uw vluchten te regelen.",
-        "IMPORTANT_3": "¡Dubbel Check! Zorg ervoor dat u de volledige voorwaarden van uw reisverzekering heeft gelezen en begrepen om ervoor te zorgen dat u gedekt bent voor alle activiteiten die u wilt ondernemen tijdens de tour. Uw verzekeringspolis moet u volledig dekken voor medische kosten en noodrepatriëring naar uw thuisland.",
-        "IMPORTANT_4": "Ik bevestig dat ik deze planningsservice begrijp.",
-        "IMPORTANT_5": "Ik begrijp dat ik het planningsproces zonder kosten kan stoppen.",
-        "IMPORTANT_6": "Ik begrijp en accepteer ook dat de klant het recht heeft om de tour schriftelijk en ondertekend te annuleren. Zodra we uw kennisgeving ontvangen, wordt de annulering van kracht. Uw aanbetaling wordt teruggestort op dezelfde rekening waarmee u de betaling heeft gedaan. Het teruggestorte bedrag is afhankelijk van de annuleringskosten. Bankkosten voor de transactie kunnen van toepassing zijn en worden in mindering gebracht op het teruggestorte bedrag.",
-
-        "CHECK_1": "Ik heb de boekingsstappen gelezen en begrepen.",
-        "CHECK_2": "Ik heb de belangrijke informatie gelezen en begrepen.",
-        "CHECK_3": "Ik heb gelezen en accepteer het ",
-        "CHECK_A": "Privacybeleid ",
-        "CHECK_BUTTON": "Bericht Verzenden"
+        "LIABILITY_1": "Vrijwaringsformulier",
+        "LIABILITY_2": "Elke reiziger dient het ondertekende vrijwaringsformulier vóór vertrek te retourneren. Dit formulier bevestigt deelname op eigen risico en vrijwaart de organisatie van aansprakelijkheid bij ongevallen of schade veroorzaakt door eigen handelen van de reiziger.",
+        "LIABILITY_3": "Aanbevolen: Reis- en annuleringsverzekering",
+        "LIABILITY_4": "Wij raden aan een reis- en annuleringsverzekering af te sluiten bij een gerenommeerde verzekeraar. Dit dekt onvoorziene omstandigheden waardoor u uw reis moet annuleren of onderbreken.",
+        "LIABILITY_5": "Informatieve clausule",
+        "LIABILITY_6": "In overeenstemming met de bepalingen van de AVG en de LOPDGDD informeren wij u dat MONTARAZ OUTDOORS & CULTURE, S.L. uw persoonsgegevens verzamelt en verwerkt, waarbij de technische en organisatorische maatregelen worden toegepast die nodig zijn om de vertrouwelijkheid te waarborgen, met als doel het beheer van de gecontracteerde diensten volgens de relatie die ons bindt.",
+        "LIABILITY_7": "Hiervoor geeft u uw toestemming en autorisatie voor deze verwerking. Wij bewaren uw persoonsgegevens gedurende de strikt noodzakelijke tijd om onze relatie te beheren.",
+        "LIABILITY_8": "U kunt uw rechten op inzage, rectificatie, verwijdering, beperking, overdraagbaarheid en bezwaar uitoefenen door contact op te nemen met de Gegevensbeheerder op: C/ Santa Teresa, 21, Churriana de la Vega, 18194, Granada, of door een e-mail te sturen naar: montarazoutdoors@gmail.com."
     },
     
     "ABOUT": {
