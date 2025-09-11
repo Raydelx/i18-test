@@ -1,0 +1,52 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Container from "../../components/container.astro";
+import Sectionhead from "../../components/sectionhead.astro";
+import Bento from "../../components/bento.astro";
+
+import {
+  getLangFromUrl,
+  useTranslations,
+  useTranslatedPath,
+} from "../../i18n/utils.js";
+import { getI18N } from "@/i18n/";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+---
+
+<Layout title="About">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">{i18n.MTB_DESTINATIONS}</Fragment>
+      <Fragment slot="desc"></Fragment>
+    </Sectionhead>
+
+    <div class="grid lg:grid-cols-2 gap-12 mt-16">
+      <div class="grid grid-cols-1 content-center">
+        <a href="">
+          <img
+            class="duration-300 ease-in-out hover:scale-105 m-auto text-center"
+            src="/destinations/spain.png"
+            alt="Spain map 3D"
+          />
+          <p class="text-center text-3xl font-bold">Spain</p>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 content-center">
+        <a href={translatePath("gravel-bike-mtb-andalucia")}>
+          <img
+            class="duration-300 ease-in-out hover:scale-105 m-auto text-center"
+            src="/destinations/andalucia.png"
+            alt="Andalucia map 3D"
+          />
+          <p class="text-center text-3xl font-bold">Andalucia</p>
+        </a>
+      </div>
+    </div>
+  </Container>
+</Layout>

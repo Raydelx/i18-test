@@ -56,7 +56,7 @@ export const routes = {
 		'a-breathtaking-road-trip-through-the-alpujarras': 'a-breathtaking-road-trip-through-the-alpujarras',
 		'rock-climbing': 'rock-climbing',
 		'rock-climbing-courses': 'rock-climbing-courses',
-		'leisure-cycling': 'leisure-cycling',
+		'leisure-cycling-andalucia': 'leisure-cycling-andalucia',
 		cycling: 'cycling',
 		'trekking-hikking': 'trekking-hikking',
 		'cycle-ronda-cordoba': 'cycle-ronda-cordoba',
@@ -78,7 +78,11 @@ export const routes = {
 		'legal-notice': 'legal-notice',
 		'personal-data-protection': 'personal-data-protection',
 		'financial-protection-guarantee': 'financial-protection-guarantee',
-		'cookies-policy': 'cookies-policy'
+		'cookies-policy': 'cookies-policy',
+		'mtb-destinations':'mtb-destinations',
+		'tour-bike-destinations': 'tour-bike-destinations',
+		'gravel-bike-mtb-andalucia': 'gravel-bike-mtb-andalucia',
+		'sierra-nevada-desert': 'sierra-nevada-desert',
 	},
 	en: {
 		blog: 'blog',
@@ -96,7 +100,7 @@ export const routes = {
 		'a-breathtaking-road-trip-through-the-alpujarras': 'a-breathtaking-road-trip-through-the-alpujarras',
 		'rock-climbing': 'rock-climbing',
 		'rock-climbing-courses': 'rock-climbing-courses',
-		'leisure-cycling': 'leisure-cycling',
+		'leisure-cycling-andalucia': 'leisure-cycling-andalucia',
 		cycling: 'cycling',
 		'trekking-hikking': 'trekking-hikking',
 		'cycle-ronda-cordoba': 'cycle-ronda-cordoba',
@@ -118,6 +122,10 @@ export const routes = {
 		'legal-notice': 'legal-notice',
 		'personal-data-protection': 'personal-data-protection',
 		'financial-protection-guarantee': 'financial-protection-guarantee',
-		'cookies-policy': 'cookies-policy'
+		'cookies-policy': 'cookies-policy',
+		'mtb-destinations': 'mtb-destinations',
+		'tour-bike-destinations': 'tour-bike-destinations',
+		'gravel-bike-mtb-andalucia': 'gravel-bike-mtb-andalucia',
+		'sierra-nevada-desert': 'sierra-nevada-desert',
 	},
 } 

@@ -18,16 +18,16 @@ const i18n = getI18N({ currentLocale });
 
 const ROADBIKEPRODUCTS = [
   {
-    name: "From Mountains to Coastline",
+    name: i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE.TITLE,
     description: "",
     href: translatePath("from-mountains-to-coastline"),
     href_img:
-      "/cycle-tour/leisure-cycling/from-montains-to-coastline/from-montains-to-coastline.webp/",
+      "/cycle-tour/leisure-cycling/from-montains-to-coastline/from-montains-to-coastline.webp",
     alt_img: "string",
   },
 
   {
-    name: "Cycle Ronda - Córdoba E-bike Tour 8 Days",
+    name: i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.TITLE,
     description: "",
     href: translatePath("cycle-ronda-cordoba"),
     href_img:
@@ -40,6 +40,13 @@ const ROADBIKEPRODUCTS = [
     href: translatePath("epic-landscape-e-bike-tour-granada"),
     href_img:
       "/cycle-tour/leisure-cycling/epic-landscape-e-bike-tour-granada/els-product.webp",
+    alt_img: "img2",
+  },
+  {
+    name: "Cycle Tour Sierra Nevada - Cabo de Gata E-bike Tour 8 days ",
+    description: "(COMING SOON)",
+    href: translatePath("epic-landscape-e-bike-tour-granada"),
+    href_img: "/cycle-tour/leisure-cycling/cabo/cabo-product.webp",
     alt_img: "img2",
   },
 ];

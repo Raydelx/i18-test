@@ -14,6 +14,11 @@
         "TAILOR_MADE_TRAVELS": "Tailor-Made Travels"
     },
 
+    "MORE_INFO": "More Info",
+
+    "MTB_DESTINATIONS": "MTB Destinations",
+    "TOUR_DESTINATIONS": "Tour Bike Destinations",
+
     "CARDS_HOME":{
 
         "SHOW_MORE": "More Info ⬇",
@@ -136,7 +141,7 @@
         "PRICE": "Price",
         "PRE_BOOKING": "Pre-booking",
         "MINIMUM_OF_PERSONS": "Minimum of persons",
-        "DURATION": "Duration",
+        "DURATION": "Duration Trail",
         "TOUR_TYPE": "Tour Type",
         "SEASON": "Season",
         "TOTAL_DISTANCE": "Total Distance",
@@ -1620,15 +1625,21 @@
 
         "GRAVEL_BIKE" : {
 
+
+            "GRAVEL_ADVENTURE_SUTH_SPAIN":{ 
+                "TITLE": "Gravel Adventure South Spain"
+
+            },
+
             "SIERRA_NEVADA":{
 
-                "TITLE": "Sierra Nevada E-bike Tour",
+                "TITLE": "Sierra Nevada Mountains E-bike Tour",
                 "LOCATION": "Sierra Nevada",
 
                 "PRICE": "98",
                 "PRE_BOOKING": "98",
                 "MINUMUM_OF_PERSONS": "1",                
-                "DURATION": "6 Hours",
+                "DURATION": "5 Hours",
                 "TOUR_TYPE": "Guided",
                 "SEASON": "Spring  Summer  Autumn",
 
@@ -1653,6 +1664,17 @@
                     
                 },
 
+                "LEVEL": {
+                    "TITLE": "Level",
+                    "TEXT_1": "Level: S0 Easy ",
+                    "TEXT_2": "TRAIL CONDITIONS: Double track with compact terrain",
+                    "TEXT_3": "OBSTACLES: none",
+                    "TEXT_4": "GRADIENT: mild to moderate",
+                    "TEXT_5": "CURVES: wide",
+                    "TEXT_6": "MTB TECH SKILLS: no special skills required",
+                    "TEXT_7": " Want to know more about the MTB level? Visit our blog: Cycle Grades"
+                },
+
                 "AVAILABILITY":"Availability",
                 "AVAILABILITY_SPRING":"Spring",
                 "AVAILABILITY_SUMMER":"Summer",
@@ -1670,7 +1692,7 @@
                 "REQUIEREMENTS_TEXT_5":"Height min. 1.50 meters",
                 "REQUIEREMENTS_TEXT_6":"Closed shoes, no sandals!",
 
-                "WHAT_TO_BRING" : "What to bring for Hiking",
+                "WHAT_TO_BRING" : "What to bring for Cycling",
                 "WHAT_TO_BRING_TEXT_1" : "Weather is important to consider while packing for your outdoor activity. Your packing list is based on your comfort and sensitivity. The best way to travel and to be outdoors is to layer your clothes. Highly recommended as best way to stay warm and keep cool, as the weather is bound to change in the mountains.",
                 "WHAT_TO_BRING_TEXT_2" : "Comfortable clothing and shoes.",
                 "WHAT_TO_BRING_TEXT_3" : "Sunglasses",
@@ -1685,6 +1707,81 @@
                 "WHAT_TO_EXPECT_TEXT_5": "We provide helmets, gloves, and extra clothes. The backup vehicle will accompany us during the entire tour to ensure safety."
                 
 
+            },
+
+            "MTB_SIERRA_NEVADA_DESERT": {
+                "TITLE": "MTB Sierra Nevada Desert",
+                "LOCATION": "Sierra Nevada",
+
+                "PRICE": "110",
+                "PRE_BOOKING": "110",
+                "MINUMUM_OF_PERSONS": "4",
+                "DURATION": "4 Hours",
+                "TOUR_TYPE": "Guided Tour",
+                "SEASON": "Spring Autumn Winter",
+
+                "TOTAL_DISTANCE": "45 km",
+                "TOTAL_ASCENT": "650 m",
+                "TOTAL_DESCENT": "550 m",
+                "ROUTE_TYPE": "Point to point",
+                "DIFFICULTY": "S1 Easy",
+                "E_BIKE": "Yes",
+
+                "INCLUDED": {
+                    "TITLE": "Included",
+                    "TEXT_1": "Liability insurance and assistance",
+                    "TEXT_2": "Transfer",
+                    "TEXT_3": "E-bike",
+                    "TEXT_4": "Helmet and gloves",
+                    "TEXT_5": "Snack and water",
+                    "TEXT_7": "Professional guide"
+                },
+
+                "AVAILABILITY": "Availability",
+                "AVAILABILITY_TEXT_1": "Spring",
+                "AVAILABILITY_TEXT_2": "Autumn",
+                "AVAILABILITY_TEXT_3": "Winter",
+
+                "HIGHLIGHT": "Highlights",
+                "HIGHLIGHT_TEXT_1": "Spectacular desert landscape",
+                "HIGHLIGHT_TEXT_2": "Impressive viewpoints",
+                "HIGHLIGHT_TEXT_3": "Adventure E-bike Tour in Gorafe Geopark",
+
+                
+                "REQUIEREMENTS":"Requirements",
+                "REQUIEREMENTS_TEXT_1":"Level S1",
+                "REQUIEREMENTS_TEXT_2":"Good physical health",
+                "REQUIEREMENTS_TEXT_3":"You are able to control the speed and direction of the bike well",
+                "REQUIEREMENTS_TEXT_4":"You can brake and shift gears with confidence",
+                "REQUIEREMENTS_TEXT_5":"Minimum age: 11 years",
+                "REQUIEREMENTS_TEXT_6":"Minimum height: 1.50 meters",
+                "REQUIEREMENTS_TEXT_7":"Closed shoes required – no sandals!",
+
+                "LEVEL": {
+                    "TITLE": "Level",
+                    "TEXT_1": "Level S1:",
+                    "TEXT_2": "SURFACE: possible loose sections with small stones and roots",
+                    "TEXT_3": "OBSTACLES: unevenness due to erosion",
+                    "TEXT_4": "GRADIENTS: up to 40% (short sections)",
+                    "TEXT_5": "CURVES: sometimes narrow and technical",
+                    "TEXT_6": "BIKE SKILLS: basic control of the bike required (braking, shifting, steering)",
+                    "TEXT_7": "Want to know more about MTB level? Visit our blog: Cycle Grades"
+                },
+
+                "CANCELLATION": "Cancellation Policy",
+                "CANCELLATION_TEXT_1": "Free cancellation:",
+                "CANCELLATION_TEXT_2": "Cancel up to 48 hours before the start of the activity and you will receive a full refund.",
+
+                "WHAT_TO_BRING": "What to bring for the excursion?",
+                "WHAT_TO_BRING_TEXT_1": "Weather is an important factor to consider when packing for your outdoor activity. Your packing list depends on your personal comfort and sensitivity. Wearing layers is the best way to travel and be outdoors. It is highly recommended, as it allows you to stay warm and cool, since the weather can change quickly.",
+                "WHAT_TO_BRING_TEXT_2": "Comfortable clothing and closed shoes",
+                "WHAT_TO_BRING_TEXT_3": "Sunglasses",
+                "WHAT_TO_BRING_TEXT_4": "Sun protection",
+                "WHAT_TO_BRING_TEXT_5": "Any questions? Feel free to contact us.",
+
+                "WHAT_TO_EXPECT": "What to expect",
+                "WHAT_TO_EXPECT_TEXT_1": "Discover a surprising side of Andalusia, a journey through a desert-like area that feels like you've landed on another planet. This excursion takes us to the Gorafe desert, one of the most surprising landscapes in southern Spain, located in the heart of the Granada Geopark (UNESCO), a desert area with ravines, dried-up rivers, and rugged mountain landscapes in badlands and high plateaus. The route winds over dusty gravel roads, alternated with singletracks and dry plateaus, along cliffs, erosion gullies, and dry riverbeds formed millions of years ago.",
+                "WHAT_TO_EXPECT_TEXT_2": "We drive about 1 hour and 15 minutes from Granada to the starting point of the tour. After the bike ride, we organize a small snack break on location before returning to Granada. The total activity lasts about 8 hours, including transport, cycling, breaks, and guidance."
             },
 
 
@@ -1866,13 +1963,13 @@
         "LEISURE_CYCLING": {
 
             "FROM_MOUNTAINS_TO_COASTLINE": {
-                "TITLE": "From Mountains to Coastline E-Bike Tour",
+                "TITLE": "Cycle tour Sierra Nevada - Mediterranean Sea. E-bike tour 1/2 day",
                 "LOCATION": "Granada",
 
                 "PRICE": "110",
                 "PRE_BOOKING": "100%",
                 "MINUMUM_OF_PERSONS": "4",
-                "DURATION": "8 Hours",
+                "DURATION": "3 Hours",
                 "TOUR_TYPE": "Guided",
                 "SEASON": "All Year",
 
@@ -1880,7 +1977,7 @@
                  "TOTAL_ASCENT": "450 m",
                  "TOTAL_DESCENT": "1350 m",
                  "ROUTE_TYPE": "Point to point",
-                 "DIFFICULTY": "Easy",
+                 "DIFFICULTY": "Level 2",
 
                 "INCLUDED": {
                     "TITLE": "Included",
@@ -1937,7 +2034,10 @@
                     
                     "TEXT_2": "Any questions about the recommendations of the material do not hesitate to contact us."
                 },
-            
+                
+                "LEVEL": "Level",
+                "LEVEL_TEXT_1": "Tour E-bike Level 2",
+                "LEVEL_TEXT_2": "Would you like to know more about the level? Visit our blog: Cycle Grades Tour E-bike ",
             
                 "WHAT_TO_EXPECT":"What to expect",
 

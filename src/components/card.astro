@@ -9,6 +9,19 @@ interface Props {
 }
 
 const { name, description, href_img, alt_img, href } = Astro.props;
+
+import {
+  getLangFromUrl,
+  useTranslations,
+  useTranslatedPath,
+} from "../i18n/utils.js";
+import { getI18N } from "@/i18n/";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
 ---
 
 <div
@@ -35,7 +48,7 @@ const { name, description, href_img, alt_img, href } = Astro.props;
         rel="noopener"
         href={href}
         class="flex gap-1 items-center justify-center">
-        More info
+        {i18n.MORE_INFO}
       </Link>
     </div>
   </div>

@@ -19,30 +19,29 @@ const i18n = getI18N({ currentLocale });
 
 const IMG = [
   {
-    src: "/cycle-tour/montainbike/sierra-nevada/sn1.webp",
+    src: "/cycle-tour/montainbike/sierra-nevada-desert/snd-1.webp",
   },
   {
-    src: "/cycle-tour/montainbike/sierra-nevada/sn2.webp",
+    src: "/cycle-tour/montainbike/sierra-nevada-desert/snd-2.webp",
   },
   {
-    src: "/cycle-tour/montainbike/sierra-nevada/sn3.webp",
+    src: "/cycle-tour/montainbike/sierra-nevada-desert/snd-3.webp",
   },
   {
-    src: "/cycle-tour/montainbike/sierra-nevada/sn4.webp",
+    src: "/cycle-tour/montainbike/sierra-nevada-desert/snd-4.webp",
   },
   {
-    src: "/cycle-tour/montainbike/sierra-nevada/sn5.webp",
+    src: "/cycle-tour/montainbike/sierra-nevada-desert/snd-5.webp",
   },
 ];
 const DAYS = [
   {
     day: "1",
     tecnicalInfo: true,
-    description: i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.WHAT_TO_EXPECT_TEXT_1,
-    description2: i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.WHAT_TO_EXPECT_TEXT_2,
-    description3: i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.WHAT_TO_EXPECT_TEXT_3,
-    description4: i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.WHAT_TO_EXPECT_TEXT_4,
-    description5: i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.WHAT_TO_EXPECT_TEXT_5,
+    description:
+      i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT.WHAT_TO_EXPECT_TEXT_1,
+    description2:
+      i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT.WHAT_TO_EXPECT_TEXT_2,
     totalDistance: "58 km",
     totalAscent: "500 m",
     totalDescent: "1700 m",
@@ -69,19 +68,19 @@ const brings = [
       <!-- Foto, nombre y destino -->
 
       <div
-        class="bg-center bg-no-repeat bg-[url('/public/cycle-tour/montainbike/sierra-nevada/info-sierranevada.webp')] bg-cover h-[30rem] rounded-2xl">
+        class="bg-center bg-no-repeat bg-[url('/public/cycle-tour/montainbike/sierra-nevada-desert/snd-principal.webp')] bg-cover h-[30rem] rounded-2xl">
         <div class="flex flex-col justify-end h-full p-6 w-auto">
           <div class="flex gap-2">
             <Icon icon="destiny-logo" size="1.6rem" color="white" />
             <p
               class="text-xl font-normal text-white lg:text-2xl flex flex-col justify-end h-full [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
-              {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.LOCATION}
+              {i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT.LOCATION}
             </p>
           </div>
 
           <h1
             class="text-3xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-5xl [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
-            {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.TITLE}
+            {i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT.TITLE}
           </h1>
         </div>
       </div>
@@ -92,42 +91,46 @@ const brings = [
         class="grid grid-cols-2 md:grid-cols-6 h-auto mt-3 gap-3 place-content-start md:px-6">
         <InformationProducts
           title={i18n.INFO_PRODUCTS.PRICE}
-          subtitle={i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.PRICE}>
+          subtitle={i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT.PRICE}>
           <div slot="icon">
             <Icon icon="price-logo" size="1.6rem" color="#0E46A3" />
           </div>
         </InformationProducts>
         <InformationProducts
           title={i18n.INFO_PRODUCTS.PRE_BOOKING}
-          subtitle={i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.PRE_BOOKING}>
+          subtitle={i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT
+            .PRE_BOOKING}>
           <div slot="icon">
             <Icon icon="price-logo" size="1.6rem" color="#0E46A3" />
           </div>
         </InformationProducts>
         <InformationProducts
           title={i18n.INFO_PRODUCTS.MINIMUM_OF_PERSONS}
-          subtitle={i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.MINUMUM_OF_PERSONS}>
+          subtitle={i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT
+            .MINUMUM_OF_PERSONS}>
           <div slot="icon">
             <Icon icon="group-logo" size="1.6rem" color="#0E46A3" />
           </div>
         </InformationProducts>
         <InformationProducts
           title={i18n.INFO_PRODUCTS.DURATION}
-          subtitle={i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.DURATION}>
+          subtitle={i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT
+            .DURATION}>
           <div slot="icon">
             <Icon icon="timer-logo" size="1.6rem" color="#0E46A3" />
           </div>
         </InformationProducts>
         <InformationProducts
           title={i18n.INFO_PRODUCTS.TOUR_TYPE}
-          subtitle={i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.TOUR_TYPE}>
+          subtitle={i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT
+            .TOUR_TYPE}>
           <div slot="icon">
             <Icon icon="guide-logo" size="1.6rem" color="#0E46A3" />
           </div>
         </InformationProducts>
         <InformationProducts
           title={i18n.INFO_PRODUCTS.SEASON}
-          subtitle2={i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.SEASON}>
+          subtitle2={i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT.SEASON}>
           <!-- <div slot="icon">
             <Icon icon="autumn-logo" size="1.6rem" color="#0E46A3" />
           </div> -->
@@ -141,7 +144,8 @@ const brings = [
           class="grid grid-cols-2 justify-between md:grid-cols-6 h-auto mt-3 gap-3 md:px-6">
           <InformationProducts
             title={i18n.INFO_PRODUCTS.TOTAL_DISTANCE}
-            subtitle={i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.TOTAL_DISTANCE}>
+            subtitle={i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT
+              .TOTAL_DISTANCE}>
             <div slot="icon">
               <Icon icon="distance-logo" size="1.6rem" color="#0E46A3" />
             </div>
@@ -149,31 +153,38 @@ const brings = [
 
           <InformationProducts
             title={i18n.INFO_PRODUCTS.TOTAL_ASCENT}
-            subtitle={i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.TOTAL_ASCENT}>
+            subtitle={i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT
+              .TOTAL_ASCENT}>
             <div slot="icon">
               <Icon icon="up-logo" size="1.6rem" color="#0E46A3" />
             </div>
           </InformationProducts>
           <InformationProducts
             title={i18n.INFO_PRODUCTS.TOTAL_DESCENT}
-            subtitle={i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.TOTAL_DESCENT}>
+            subtitle={i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT
+              .TOTAL_DESCENT}>
             <div slot="icon">
               <Icon icon="down-logo" size="1.6rem" color="#0E46A3" />
             </div>
           </InformationProducts>
           <InformationProducts
             title={i18n.INFO_PRODUCTS.ROUTE_TYPE}
-            subtitle={i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.ROUTE_TYPE}>
+            subtitle={i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT
+              .ROUTE_TYPE}>
             <div slot="icon">
               <Route />
             </div>
           </InformationProducts>
           <InformationProducts
             title={i18n.INFO_PRODUCTS.DIFFICULTY}
-            subtitle={i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.DIFFICULTY}>
+            subtitle={i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT
+              .DIFFICULTY}>
             <div slot="icon"></div>
           </InformationProducts>
-          <InformationProducts title="E-Bike" subtitle="Yes">
+          <InformationProducts
+            title="E-Bike"
+            subtitle={i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT
+              .E_BIKE}>
             <div slot="icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -194,51 +205,64 @@ const brings = [
 
       <!--  Include, exclude, complementaries  -->
       <div
-        class="grid md:grid-cols-2 lg:grid-cols-1 mt-20 md:mt-26 md:mb-36 gap-16 md:gap-4">
+        class="grid md:grid-cols-2 lg:grid-cols-3 mt-20 md:mt-26 md:mb-36 gap-16 md:gap-20">
         <!-- Include -->
         <Includes
-          title={i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.INCLUDED.TITLE}>
+          title={i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT.INCLUDED
+            .TITLE}>
           <ul slot="description" class="mt-4 flex flex-col gap-2">
             <li class="flex flex-wrap gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
               <p class="max-w-[320px] text-md">
-                {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.INCLUDED.TEXT_1}
+                {
+                  i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT.INCLUDED
+                    .TEXT_7
+                }
               </p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
               <p class="max-w-[320px] text-md">
-                {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.INCLUDED.TEXT_2}
+                {
+                  i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT.INCLUDED
+                    .TEXT_1
+                }
               </p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
               <p class="max-w-[320px] text-md">
-                {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.INCLUDED.TEXT_3}
+                {
+                  i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT.INCLUDED
+                    .TEXT_2
+                }
               </p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
               <p class="max-w-[320px] text-md">
-                {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.INCLUDED.TEXT_4}
+                {
+                  i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT.INCLUDED
+                    .TEXT_3
+                }
               </p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
               <p class="max-w-[320px] text-md">
-                {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.INCLUDED.TEXT_5}
+                {
+                  i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT.INCLUDED
+                    .TEXT_4
+                }
               </p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
               <p class="max-w-[320px] text-md">
-                {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.INCLUDED.TEXT_6}
-              </p>
-            </li>
-            <li class="flex flex-wrap gap-2">
-              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
-              <p class="max-w-[320px] text-md">
-                {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.INCLUDED.TEXT_7}
+                {
+                  i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT.INCLUDED
+                    .TEXT_5
+                }
               </p>
             </li>
           </ul>
@@ -272,26 +296,35 @@ const brings = [
         <div class="">
           <h2
             class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
-            {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.AVAILABILITY}
+            {i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT.AVAILABILITY}
           </h2>
 
           <ul class="grid gap-2 text-lg">
             <li class="flex flex-wrap gap-2">
               <Icon icon="spring-logo" size="1.6rem" color="#0E46A3" />
               <p>
-                {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.AVAILABILITY_SPRING}
-              </p>
-            </li>
-            <li class="flex flex-wrap gap-2">
-              <Icon icon="summer-logo" size="1.6rem" color="#0E46A3" />
-              <p>
-                {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.AVAILABILITY_SUMMER}
+                {
+                  i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT
+                    .AVAILABILITY_TEXT_1
+                }
               </p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="autumn-logo" size="1.6rem" color="#0E46A3" />
               <p>
-                {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.AVAILABILITY_AUTUMN}
+                {
+                  i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT
+                    .AVAILABILITY_TEXT_2
+                }
+              </p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="winter-logo" size="1.6rem" color="#0E46A3" />
+              <p>
+                {
+                  i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT
+                    .AVAILABILITY_TEXT_3
+                }
               </p>
             </li>
           </ul>
@@ -300,17 +333,27 @@ const brings = [
         <div class="">
           <h2
             class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
-            {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.HIGHLIGHT}
+            {i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT.HIGHLIGHT}
           </h2>
           <p class="text-lg text-gray-900 mb-1">
             <span class="text-xl">🔹</span>
-            {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.HIGHLIGHT_TEXT_1}
+            {
+              i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT
+                .HIGHLIGHT_TEXT_1
+            }
           </p>
           <p class="text-lg text-gray-900">
             <span class="text-xl">🔹</span>
-            {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.HIGHLIGHT_TEXT_2}
+            {
+              i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT
+                .HIGHLIGHT_TEXT_2
+            }
           </p>
         </div>
+        <p class="text-lg text-gray-900">
+          <span class="text-xl">🔹</span>
+          {i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT.HIGHLIGHT_TEXT_3}
+        </p>
       </div>
     </div>
 
@@ -319,31 +362,56 @@ const brings = [
       <div class="">
         <h2
           class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
-          {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.REQUIEREMENTS}
+          {i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT.REQUIEREMENTS}
         </h2>
         <p class="text-lg text-gray-900 mb-1">
           <span class="text-xl strong">🔹</span>
-          {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.REQUIEREMENTS_TEXT_1}
+          {
+            i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT
+              .REQUIEREMENTS_TEXT_1
+          }
         </p>
         <p class="text-lg text-gray-900 mb-1">
           <span class="text-xl strong">🔹</span>
-          {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.REQUIEREMENTS_TEXT_2}
+          {
+            i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT
+              .REQUIEREMENTS_TEXT_2
+          }
         </p>
         <p class="text-lg text-gray-900 mb-1">
           <span class="text-xl strong">🔹</span>
-          {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.REQUIEREMENTS_TEXT_3}
+          {
+            i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT
+              .REQUIEREMENTS_TEXT_3
+          }
         </p>
         <p class="text-lg text-gray-900 mb-1">
           <span class="text-xl strong">🔹</span>
-          {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.REQUIEREMENTS_TEXT_4}
+          {
+            i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT
+              .REQUIEREMENTS_TEXT_4
+          }
         </p>
         <p class="text-lg text-gray-900 mb-1">
           <span class="text-xl strong">🔹</span>
-          {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.REQUIEREMENTS_TEXT_5}
+          {
+            i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT
+              .REQUIEREMENTS_TEXT_5
+          }
         </p>
         <p class="text-lg text-gray-900 mb-1">
           <span class="text-xl strong">🔹</span>
-          {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.REQUIEREMENTS_TEXT_6}
+          {
+            i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT
+              .REQUIEREMENTS_TEXT_6
+          }
+        </p>
+        <p class="text-lg text-gray-900 mb-1">
+          <span class="text-xl strong">🔹</span>
+          {
+            i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT
+              .REQUIEREMENTS_TEXT_7
+          }
         </p>
       </div>
       <Cancellation />
@@ -352,7 +420,7 @@ const brings = [
     <Widget
       title={i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.WHAT_TO_BRING}
       description={i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.WHAT_TO_BRING_TEXT_1}
-      img="/public/cycle-tour/montainbike.webp"
+      img="/public/cycle-tour/montainbike/sierra-nevada-desert/snd-2.webp"
       text={i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.WHAT_TO_BRING_TEXT_5}
       brings={brings}
     />
@@ -360,33 +428,33 @@ const brings = [
     <div>
       <h2
         class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
-        {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.LEVEL.TITLE}
+        {i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT.LEVEL.TITLE}
       </h2>
       <p class="text-lg text-gray-900 mb-1">
-        {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.LEVEL.TEXT_1}
+        {i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT.LEVEL.TEXT_1}
       </p>
       <p class="text-lg text-gray-900 mb-1">
         <span class="text-xl strong">🔹</span>
-        {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.LEVEL.TEXT_2}
+        {i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT.LEVEL.TEXT_2}
       </p>
       <p class="text-lg text-gray-900 mb-1">
         <span class="text-xl strong">🔹</span>
-        {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.LEVEL.TEXT_3}
+        {i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT.LEVEL.TEXT_3}
       </p>
       <p class="text-lg text-gray-900 mb-1">
         <span class="text-xl strong">🔹</span>
-        {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.LEVEL.TEXT_4}
+        {i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT.LEVEL.TEXT_4}
       </p>
       <p class="text-lg text-gray-900 mb-1">
         <span class="text-xl strong">🔹</span>
-        {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.LEVEL.TEXT_5}
+        {i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT.LEVEL.TEXT_5}
       </p>
       <p class="text-lg text-gray-900 mb-1">
         <span class="text-xl strong">🔹</span>
-        {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.LEVEL.TEXT_6}
+        {i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT.LEVEL.TEXT_6}
       </p>
       <p class="text-lg text-gray-900 mb-1">
-        {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.LEVEL.TEXT_7}
+        {i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT.LEVEL.TEXT_7}
       </p>
     </div>
 

@@ -48,7 +48,7 @@ const DAYS = [
     totalDistance: "50 km",
     totalAscent: "450 m",
     totalDescent: "1350 m",
-    duration: "3-4 hours",
+    duration: "3 hours",
   },
 ];
 
@@ -83,13 +83,16 @@ const brings = [
             <Icon icon="destiny-logo" size="1.6rem" color="white" />
             <p
               class="text-xl font-normal text-white lg:text-2xl flex flex-col justify-end h-full [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
-              {i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE.TITLE}
+              {
+                i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE
+                  .LOCATION
+              }
             </p>
           </div>
 
           <h1
             class="text-3xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-5xl [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
-            {i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE.LOCATION}
+            {i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE.TITLE}
           </h1>
         </div>
       </div>
@@ -213,7 +216,7 @@ const brings = [
 
       <!--  Include, exclude, complementaries  -->
       <div
-        class="grid md:grid-cols-2 lg:grid-cols-3 mt-20 md:mt-26 md:mb-36 gap-16 md:gap-4">
+        class="grid md:grid-cols-2 lg:grid-cols-3 mt-20 md:mt-26 md:mb-36 gap-16 md:gap-20">
         <!-- Include -->
         <Includes
           title={i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE
@@ -454,10 +457,13 @@ const brings = [
     </div>
 
     <Widget
-      title="What to bring for Cycling"
-      description="Weather is important to consider while packing for your outdoor activity. Your packing list is based on your comfort and sensitivity. Layering your clothes is the best way to travel and be outdoors. It is highly recommended as the best way to stay warm and cool, as the weather is bound to change in the mountains."
-      img="/hiking-and-trekking/trekking-alpujarras/bring.webp"
-      text="Any questions about the recommendations of the material do not hesitate to contact us."
+      title={i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE
+        .WHAT_TO_BRING.TITLE}
+      description={i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE
+        .WHAT_TO_BRING.TEXT_1}
+      img="/public/cycle-tour/leisure-cycling/from-montains-to-coastline/fmtc-2.webp"
+      text={i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE
+        .WHAT_TO_BRING.TEXT_2}
       brings={brings}
     />
 
@@ -509,6 +515,19 @@ const brings = [
       </div>
       <Cancellation />
     </section>
+
+    <div class="mt-20 md:mt-36 mb-10 md:mb-36">
+      <h2
+        class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+        {i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE.LEVEL}
+      </h2>
+      <p class="text-lg text-gray-900 mb-1">
+        {i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE.LEVEL_TEXT_1}
+      </p>
+      <p class="text-lg text-gray-900">
+        {i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE.LEVEL_TEXT_2}
+      </p>
+    </div>
 
     <!-- Slider Photos -->
     <section class="m-auto md:w-full rounded-xl md:px-8 md:py-20">

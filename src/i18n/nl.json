@@ -12,7 +12,12 @@
         "ROAD_TRIPS": "Roadtrips",
         "MULTI_ADVENTURE_ACTIVITIES": "Multi-avonturen",
         "TAILOR_MADE_TRAVELS": "Op maat gemaakte reizen"
-    },   
+    }, 
+
+    "MORE_INFO": "Meer info",
+
+    "MTB_DESTINATIONS": "MTB Bestemmingen",
+    "TOUR_DESTINATIONS": "Tourfiets Bestemmingen",
 
     "CARDS_HOME":{
 
@@ -128,25 +133,25 @@
         "TOTAL_DESCENT": "Totale Daling",
         "ROUTE_TYPE": "Routetype",
         "DURATION": "Duur Proef",
-        "DIFFICULTY": "Moeilijkheidsgraad",
-        "PHYSICAL_DIFFICULTY": "Fysieke Moeilijkheidsgraad",
-        "TECHNICAL_DIFFICULTY": "Technische Moeilijkheidsgraad"    
+        "DIFFICULTY": "Niveau",
+        "PHYSICAL_DIFFICULTY": "Fysieke Niveau",
+        "TECHNICAL_DIFFICULTY": "Technische Niveau"    
     },
 
     "INFO_PRODUCTS" :{
         "PRICE": "Prijs",
         "PRE_BOOKING": "Vooraf boeken",
         "MINIMUM_OF_PERSONS": "Minimum aantal personen",
-        "DURATION": "Duur",
+        "DURATION": "Route Duur",
         "TOUR_TYPE": "Tour type",
         "SEASON": "Seizoen",
         "TOTAL_DISTANCE": "Totale afstand",
         "TOTAL_ASCENT": "Totale stijging",
         "TOTAL_DESCENT": "Totale daling",
         "ROUTE_TYPE": "Routetype",
-        "DIFFICULTY": "Moeilijkheidsgraad",
-        "PHYSICAL_DIFFICULTY": "Fysieke moeilijkheidsgraad",
-        "TECHNICAL_DIFFICULTY": "Technische moeilijkheidsgraad"
+        "DIFFICULTY": "Niveau",
+        "PHYSICAL_DIFFICULTY": "Fysieke Niveau",
+        "TECHNICAL_DIFFICULTY": "Technische Niveau"
     },
 
     "TAILOR_MADE": { 
@@ -1598,9 +1603,17 @@
         
 
         "GRAVEL_BIKE" : {
+
+
+            "GRAVEL_ADVENTURE_SUTH_SPAIN":{ 
+                "TITLE": "Gravel Avontuur Zuid Spanje "
+
+            },
+
+
             "SIERRA_NEVADA":{
 
-                "TITLE": "Sierra Nevada E-bike Tour",
+                "TITLE": "Sierra Nevada Bergen E-bike Tour",
                 "LOCATION": "Sierra Nevada",
 
                 "PRICE": "98",
@@ -1630,6 +1643,17 @@
                     "TITLE": "Niet inbegrepen"
                 },
 
+                "LEVEL": {
+                    "TITLE": "Niveau",
+                    "TEXT_1": "Niveau: S0 Makkelijk",
+                    "TEXT_2": "PADCONDITIES: Dubbelspoor met compact terrein",
+                    "TEXT_3": "OBSTAKELS: geen",
+                    "TEXT_4": "HELLING: mild tot matig",
+                    "TEXT_5": "BOCHTEN: breed",
+                    "TEXT_6": "MTB TECHNISCHE VAARDIGHEDEN: geen speciale vaardigheden vereist",
+                    "TEXT_7": "Wil je meer weten over het MTB-niveau? Bekijk onze blog: Fietsgraden"
+                },
+
                 "AVAILABILITY": "Beschikbaarheid",
                 "AVAILABILITY_SPRING": "Lente",
                 "AVAILABILITY_SUMMER": "Zomer",
@@ -1647,7 +1671,7 @@
                 "REQUIEREMENTS_TEXT_5": "Minimale lengte 1,50 meter",
                 "REQUIEREMENTS_TEXT_6": "Gesloten schoenen, geen sandalen!",
 
-                "WHAT_TO_BRING": "Wat mee te nemen voor fietsen",
+                "WHAT_TO_BRING": "Wat mee te nemen voor Fietsen",
                 "WHAT_TO_BRING_TEXT_1": "Het weer is belangrijk om rekening mee te houden bij het inpakken voor je buitenactiviteit. Je paklijst is gebaseerd op je comfort en gevoeligheid. Het dragen van laagjes kleding is de beste manier om te reizen en buiten te zijn. Het wordt sterk aanbevolen als de beste manier om warm en koel te blijven, aangezien het weer in de bergen onvoorspelbaar kan veranderen.",
                 "WHAT_TO_BRING_TEXT_2": "Comfortabele kleding en schoenen.",
                 "WHAT_TO_BRING_TEXT_3": "Zonnebril",
@@ -1660,6 +1684,82 @@
                 "WHAT_TO_EXPECT_TEXT_3": "Halverwege de tour bieden we een heerlijke snack met verse koffie aan bij een prachtig uitkijkpunt.",
                 "WHAT_TO_EXPECT_TEXT_4": "Het laatste deel brengt het Alhambra-paleis in zicht, waar we door de smalle straatjes van Sacromonte en Albayzín fietsen voordat we eindigen op het plein, het ontmoetingspunt van de tour.",
                 "WHAT_TO_EXPECT_TEXT_5": "We voorzien in helmen, handschoenen en extra kleding. Het volgvoertuig begeleidt ons tijdens de hele tour voor de veiligheid."
+            },
+
+            "MTB_SIERRA_NEVADA_DESERT" :{
+                "TITLE": "MTB Sierra Nevada Desert",
+                "LOCATION": "Sierra Nevada",
+
+                "PRICE": "110",
+                "PRE_BOOKING": "110",
+                "MINUMUM_OF_PERSONS": "4",                
+                "DURATION": "4 Uur",
+                "TOUR_TYPE": "Begeleide Tour",
+                "SEASON": "Lente herfst winter",
+
+                "TOTAL_DISTANCE": "45 km",
+                "TOTAL_ASCENT": "650 m",
+                "TOTAL_DESCENT": "550 m",
+                "ROUTE_TYPE": "Punt tot punt",
+                "DIFFICULTY": "S1 Easy",
+                "E_BIKE": "Ja",
+
+                "INCLUDED": {
+                    "TITLE": "Inclusief",
+                    "TEXT_1": "Aansprakelijkheidsverzekering en bijstand",
+                    "TEXT_2": "Liability insurance and assistance",
+                    "TEXT_3": "Transfer",
+                    "TEXT_4": "E-bikee",
+                    "TEXT_5": "Helm en  handschoenen",
+                    "TEXT_6": "Snack en water",                                 
+                    "TEXT_7": "Professionele gids"                              
+                },
+
+                "AVAILABILITY":"Beschikbaarheid",
+                "AVAILABILITY_TEXT_1":"Lente",
+                "AVAILABILITY_TEXT_2":"Herfst",
+                "AVAILABILITY_TEXT_3":"Winter",
+                
+                "HIGHLIGHT":"Hoogtepunten",
+                "HIGHLIGHT_TEXT_1":"Spectaculair woestijnlandschap",
+                "HIGHLIGHT_TEXT_2":"Indrukwekkende uitzichtpunten",
+                "HIGHLIGHT_TEXT_3":"Avontuurlijke E-bike Tour in Geopark Gorafe",
+
+                "REQUIEREMENTS":"Vereisten",
+                "REQUIEREMENTS_TEXT_1":"Niveau S1 ",
+                "REQUIEREMENTS_TEXT_2":"Goede fysieke gezondheid",
+                "REQUIEREMENTS_TEXT_3":"Je bent in staat om de snelheid en richting van de fiets goed te beheersen",
+                "REQUIEREMENTS_TEXT_4":"Je kunt met vertrouwen remmen en schakelen",
+                "REQUIEREMENTS_TEXT_5":"Minimum Leeftijd: 11 jaar",
+                "REQUIEREMENTS_TEXT_6":"Minimum Lengte: 1,50 meter",
+                "REQUIEREMENTS_TEXT_7":"Gesloten schoenen verplicht – geen sandalen!",
+
+                "LEVEL": {
+                    "TITLE": "Niveau",
+                    "TEXT_1": "Niveau S1:",
+                    "TEXT_2": "ONDERGROND: mogelijk losse stukken met kleine steentjes en wortels",
+                    "TEXT_3": "HINDERNISSEN: oneffenheden door erosie",
+                    "TEXT_4": "HELLINGEN: tot maximaal 40% (korte stukken)",
+                    "TEXT_5": "BOCHTEN: soms smal en technisch",
+                    "TEXT_6": "FIETSVAARDIGHEDEN: basiscontrole over de fiets is vereist (remmen, schakelen, sturen)",
+                    "TEXT_7": "Wil je meer weten over het MTB-niveau? Bekijk onze blog: Fietsgraden"
+                },
+
+                "CANCELLATION":"Annuleringsbeleid",
+                "CANCELLATION_TEXT_1":"Gratis annuleren:",
+                "CANCELLATION_TEXT_2":"Annuleer tot 48 uur voor de start van de activiteit en je ontvangt het volledige bedrag terug.",
+
+                "WHAT_TO_BRING": "Wat neem ik mee op de excursie?",
+                "WHAT_TO_BRING_TEXT_1": "Het weer is een belangrijke factor om rekening mee te houden bij het inpakken voor je buitenactiviteit. Je inpaklijst hangt af van jouw persoonlijke comfort en gevoeligheid. Kleding in laagjes dragen is de beste manier om comfortabel te reizen en buiten te zijn. Het wordt sterk aanbevolen, omdat je zo warm én koel kunt blijven, aangezien het weer snel kan veranderen.",
+                "WHAT_TO_BRING_TEXT_2": "Comfortabele kleding en gesloten schoenen",
+                "WHAT_TO_BRING_TEXT_3": "Zonnebril",
+                "WHAT_TO_BRING_TEXT_4": "Zonnebescherming",                
+                "WHAT_TO_BRING_TEXT_5": "Heb je vragen? Neem dan gerust contact met ons op.",
+
+                "WHAT_TO_EXPECT": "Wat te verwachten",
+                "WHAT_TO_EXPECT_TEXT_1": "Ontdek een verrassende kant van Andalusië, een tocht door een woestijnachtig gebied dat voelt alsof je op een andere planeet bent beland. Deze excursie voert ons naar de Gorafe-woestijn, een van de meest verrassende landschappen van Zuid-Spanje, gelegen in het hart van de Geoparque van Granada (UNESCO), een woestijnachtig gebied met ravijnen, opgedroogde rivieren en ruwe berglandschappen in badlands en hoogvlakten. De route slingert over stoffi ge gravelwegen, afgewisseld met singletracks en droge plateaus, langs kliff en, erosiegeulen, en droge rivierbeddingen die miljoenen jaren geleden gevormd zijn.",
+                "WHAT_TO_EXPECT_TEXT_2": "We rijden ongeveer 1 uur en 15 minuten van Granada naar het beginpunt van de tour. Na afloop van de fietstocht organiseren we een kleine snackpauze op locatie, voordat we terugkeren naar Granada. De totale activiteit duurt ongeveer 8 uur, inclusief transport, fietsen, pauzes en begeleiding."
+                
             },
 
             "MTB_TRAILS_BIKE": {
@@ -1834,13 +1934,13 @@
         "LEISURE_CYCLING": {
 
             "FROM_MOUNTAINS_TO_COASTLINE": {
-                "TITLE": "Van Bergen tot Kustlijn E-bike Tour",
+                "TITLE": "Fietstocht Sierra Nevada - Middellandse Zee. E-bike Tour 1/2 dag",
                 "LOCATION": "Granada",
 
                 "PRICE": "110",
                 "PRE_BOOKING": "100%",
                 "MINUMUM_OF_PERSONS": "4",
-                "DURATION": "8 Uur",
+                "DURATION": "3 Uur",
                 "TOUR_TYPE": "Geleid",
                 "SEASON": "Het hele jaar door",
 
@@ -1901,6 +2001,10 @@
 
                     "TEXT_2": "Heeft u vragen over de aanbevelingen van het materiaal, aarzel dan niet om contact met ons op te nemen."
                 },
+
+                "LEVEL": "Niveau",
+                "LEVEL_TEXT_1": "Tour E-bike Niveau 2",
+                "LEVEL_TEXT_2": "Wil je meer weten over het niveau? Bekijk onze blog: Fietsgraden Tour E-bike",
 
                 "WHAT_TO_EXPECT": "Wat te verwachten",
 
