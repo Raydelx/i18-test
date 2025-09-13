@@ -2,7 +2,6 @@
     {
         "header": {
             "name": "Vicky Haworth",
-            "productName":"Cycle Journey Andalusia part 1 Ronda to Córdoba",
             "valoration": "⭐⭐⭐⭐⭐ "
         },
         "body":{
@@ -13,7 +12,6 @@
     {
         "header": {
             "name": "Audrey",
-            "productName":"Cycle Journey Andalusia part 1 Ronda to Córdoba",
             "valoration": "⭐⭐⭐⭐⭐"
 
         },
@@ -25,7 +23,6 @@
     {
         "header": {
             "name": "Lisa Terry",
-            "productName":"Cycle Journey Andalusia part 1 Ronda to Córdoba",
             "valoration": "⭐⭐⭐⭐⭐ "
         },
         "body":{
@@ -34,12 +31,38 @@
     },
     {
         "header": {
-            "name": "Caroline Frank",
-            "productName":"Cycle Journey Andalusia part 1 Ronda to Córdoba",
+            "name": "Caroline Frank",            
             "valoration": "⭐⭐⭐⭐⭐ "
         },
         "body":{
             "text": "I joined my friends on a cycling trip from Ronda to Cordoba (Sept/Oct 2024), opting for a road bike instead of an eBike to enjoy the challenge of the hills. Michael was incredibly helpful in sourcing the perfect road bike with the right specifications. The trip was a wonderful mix of charming white villages, olive groves, stunning views, delicious food, and comfortable hotels. Highlights included walking the breathtaking Caminito del Rey, a fascinating olive oil tasting, and visiting Cordoba’s incredible Mesquita. Throughout, Jose’s support vehicle and amazing lunches added to the experience, and Michael’s knowledge of the region enriched every moment. I’d love to book another trip with them—whether a tour or a hotel-based adventure. Thanks for the unforgettable memories, Michael and Jose!"
+        }
+    },
+    {
+        "header": {
+            "name": "Mel Grant",            
+            "valoration": "⭐⭐⭐⭐⭐ "
+        },
+        "body":{
+            "text": "I had the pleasure of joining one of Mike's (Montaraz owner's) tours, cycling from Ronda to Cordoba in southern Spain during June. Mike is incredibly knowledgeable and plans his tours meticulously. I hired a high-end gravel bike for the tour as an experienced cyclist and enjoyed the variety in riding, including hairpin descents and fun climbs in impressive scenery. Mike worked seamlessly with Jose to provide refreshing snacks, meals and chilled drinks en route, store and maintain the equipment we used (having customised the bike fit and fitted my saddle), and show us the sites at each destination. The hotels were all different, supremely comfortable and many had swimming pools for a dip after a day of riding. Owing to the interesting route, Mike's info and the optional excursions, I feel I've seen the best of the area and hope to see more in the future. I'd be excited to join another Montaraz tour in the future: Very good value for money, a personalised product and just a lot of fun. Thanks Mike & Jose!"
+        }
+    },
+    {
+        "header": {
+            "name": "Vanessa Grant",            
+            "valoration": "⭐⭐⭐⭐⭐ "
+        },
+        "body":{
+            "text": "Ronda to Cordaba biking..Such a varied and enjoyable bike tour. The terrain was stunningly beautiful, each day bringing different views and experiences. Mike and Jose did a great job of guiding us whilst providing copious cold drinks, snacks and picnics. I was amazed that they could provide us with fresh fruit, coffee, lots of salads, etc whilst we were travelling the small trails. Mikes in-depth knowledge of the culture and history of each area demonstrated his careful research and both Mike and Jose were good company. Each had a great sense of humour. The handpicked hotels showed off the very best of Spain. The cuisine was very authentic and tasty. What more can I say … I will be booking again."
+        }
+    },
+    {
+        "header": {
+            "name": "Angela Fergusson",            
+            "valoration": "⭐⭐⭐⭐⭐ "
+        },
+        "body":{
+            "text": "Just back from a week with Montaraz. A holiday with huge attention to detail and consideration for individual needs. Michael and Jose work closely together to provide a great experience and good company, which makes for wonderful holiday. Add all that to great bikes, wonderfully individual hotels and lovely Spanish countryside, we couldn’t have asked for more. No hesitation in going again and recommending to others."
         }
     }
 ]

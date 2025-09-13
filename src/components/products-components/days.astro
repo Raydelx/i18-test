@@ -12,6 +12,7 @@ interface Props {
   strong?: string;
   strong2?: string;
   strong3?: string;
+  strong4?: string;
   description: string;
   description2?: string;
   description3?: string;
@@ -45,6 +46,7 @@ const {
   strong,
   strong2,
   strong3,
+  strong4,
   description,
   description2,
   description3,
@@ -106,6 +108,9 @@ const {
         )}
         {strong3 && (
           <p class="text-gray-500 text-xl mt-2 font-bold">{strong3}</p>
+        )}
+        {strong4 && (
+          <p class="text-gray-500 text-xl mt-2 font-bold">{strong4}</p>
         )}
         {description5 && (
           <p class="text-gray-500 text-md mt-2">{description5}</p>
@@ -369,6 +374,9 @@ const {
         )}
         {strong3 && (
           <p class="text-gray-500 text-xl mt-2 font-bold">{strong3}</p>
+        )}
+        {strong4 && (
+          <p class="text-gray-500 text-xl mt-2 font-bold">{strong4}</p>
         )}
         {description5 && (
           <p class="text-gray-500 text-md mt-2">{description5}</p>

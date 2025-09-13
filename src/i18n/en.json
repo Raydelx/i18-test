@@ -31,7 +31,7 @@
 
          "CARD_2":{
             "TITLE": "Family Holidays",
-            "SUBTITLE": "Adventure for young and old — explore nature together!",
+            "SUBTITLE": "",
             "TEXT_1": "Our family holidays are specially designed to give both children and parents an unforgettable time in nature. Think about adventurous hikes, safe cycling trips, discovering local culture, and above all, lots of outdoor fun!",
             "TEXT_2": "We ensure a perfect balance between activity and relaxation, always adapted to the children's ages. Everything happens at an easy-going pace, with plenty of room for spontaneous moments, play, and free time.",
 
@@ -52,7 +52,7 @@
 
         "CARD_3": {
             "TITLE": "Cycling Holidays & Excursions",
-            "SUBTITLE": "For leisure riders, athletes, and cycling enthusiasts",
+            "SUBTITLE": "",
             "TEXT_1": "Spain and its surroundings are a true paradise for cyclists. Whether you prefer leisurely rides through scenic valleys or the thrill of tackling iconic mountain passes, Montaraz Outdoors & Culture is your perfect partner.",
             "TEXT_2": "Our cycling holidays are carefully designed and fully customizable to match your level, interests, and preferred type of bike.",
             "TEXT_3": "We offer a wide range of routes for e-bikes, touring bikes, mountain bikes, and road bikes. Ride with or without electric assistance, always with the freedom to explore the region your way.",
@@ -76,7 +76,7 @@
 
         "CARD_4":{
             "TITLE": "Hiking Holidays & Treks",
-            "SUBTITLE": "On foot – discover, experience, breathe",
+            "SUBTITLE": "",
             "TEXT_1": "Our hiking holidays take you deep into Spain’s most breathtaking landscapes — from snow-capped peaks to picturesque villages. Whether you prefer gentle walks through whitewashed towns or challenging mountain routes, we guide you step by step. At Montaraz Outdoors & Culture, personal service and tailor-made experiences are at the heart of everything we do. All our hikes are adapted to the traveler’s level — you set the pace, and we take care of the rest.",
 
             "WHAT_DO_WE_EXPECT": "What can you expect?",
@@ -1963,7 +1963,8 @@
         "LEISURE_CYCLING": {
 
             "FROM_MOUNTAINS_TO_COASTLINE": {
-                "TITLE": "Cycle tour Sierra Nevada - Mediterranean Sea. E-bike tour 1/2 day",
+                "TITLE": "Cycle tour Sierra Nevada - Mediterranean Sea",
+                "SUBTITLE": "E-bike tour 1/2 day",
                 "LOCATION": "Granada",
 
                 "PRICE": "110",
@@ -2185,7 +2186,8 @@
             },
 
              "CYCLE_RONDA_CORDOBA":{
-                 "TITLE": "Cycle Ronda - Córdoba E-bike Tour 8 Days",
+                 "TITLE": "Cycle Ronda - Córdoba",
+                 "SUBTITLE": "E-bike Tour 8 Days",
                  "LOCATION": "Andalusia",
 
                  "PRICE": "1.550",
@@ -2208,6 +2210,7 @@
                         "TITLE": "Included",
                         "TEXT_1": "2 Professionals guides",
                         "TEXT_2": "Liability insurance and assistance",
+                        "TEXT_13": "Financial Protection Guarantee",
                         "TEXT_3": "Backup vehicle",
                         "TEXT_4": "Luggage transport",
                         "TEXT_5": "Airport Transfer",
@@ -2222,9 +2225,9 @@
                     },
                     "NOT_INCLUDED": {
                         "TITLE": "Not included",
-                        "TEXT_1": "Flight",
-                        "TEXT_2": "Travel & assistance insurance",
-                        "TEXT_3": "Cancellation insurance",
+                        "TEXT_1": "Travel & cancellation insurance",
+                        "TEXT_2": "(It is recommended to take out travel insurance before departure.)",
+                        "TEXT_3": "Flight",
                         "TEXT_4": "Dinner",
                         "TEXT_5": "Extra meals",
                         "TEXT_6": "Extra excursions",
@@ -2232,33 +2235,34 @@
                         "TEXT_8": "Tips",
                         "TEXT_9": "Extra nights",
                         "TEXT_10": "Private transport after or before the tour"
-                    },
+                    },  
                     "EXTRA": {
                         "TITLE": "Extra",
                         "SUBTITLE": "Need to be booked in Advance",
-                        "TEXT_1": "Private room: 300 € (7nights)",
+                        "TEXT_1": "Private room: (7nights)",
                         "TEXT_2": "Road bike or Gravel bike.",
                         "TEXT_3": "Ride for everyone. For those who have a good level of physical condition can join the tour on a Road bike or Gravel bike at extra cost.",
-                        "TEXT_4": "Caminito del Rey: 30 €",
+                        "TEXT_4": "Caminito del Rey",
                         "TEXT_5": "An aerial path that runs along the Gaitanes Gorge, an impressive canyon opened by the Guadalhorce River. (5 km, 2hours)",
-                        "TEXT_6": "Private guided tour of the Mosque of Córdoba: 40 €",
-                        "TEXT_7": "Olive Oil tasting: 15 €",
+                        "TEXT_6": "Private guided tour of the Mosque of Córdoba",
+                        "TEXT_7": "Olive Oil tasting",
                         "TEXT_8": "In the heart of Andalucía, we offer you the possibility to learn how to taste and appreciate olive oil through our senses."
                     },
 
                     "AVAILABILITY": "Availability",
+                    "AVAILABILITY_SUBTITLE": "Don't see a suitable date in the schedule? Contact us to let us know your availability. For private tours, we are happy to offer a tailor-made solution.",
                     "AVAILABILITY_TEXT_1": "Spring",
                     "AVAILABILITY_TEXT_2": "Autumn",
 
                     "HIGHLIGHT": "Highlight",
-                    "HIGHLIGHT_TEXT_1": "City of Ronda",
-                    "HIGHLIGHT_TEXT_2": "Caminito del Rey",
-                    "HIGHLIGHT_TEXT_3": "City of Antequera",
-                    "HIGHLIGHT_TEXT_4": "Sierras Subbéticas Natural Park and Geopark UNESCO",
-                    "HIGHLIGHT_TEXT_5": "Olive Oil tasting",    
-                    "HIGHLIGHT_TEXT_6": "City of Córdoba",    
-                    "HIGHLIGHT_TEXT_7": "Private tour of the Mosque of Córdoba",    
-                    "HIGHLIGHT_TEXT_8": "The selected rural hotels",    
+                    "HIGHLIGHT_TEXT_1": "Discover the heart of Andalusia by bike, from the dramatic cliffs of Ronda to the Moorish splendor of Córdoba. This unique route takes you through white villages, olive hills, and cultural gems — with overnight stays in carefully selected, peaceful hotels.",
+                    "HIGHLIGHT_TEXT_2": "Ronda, the spectacular location atop a deep gorge (El Tajo)",
+                    "HIGHLIGHT_TEXT_3": "Authentic Andalusian atmosphere",
+                    "HIGHLIGHT_TEXT_4": "Scenic roads and quiet cycling routes",
+                    "HIGHLIGHT_TEXT_5": "Cycling through the Sierra Subbética",
+                    "HIGHLIGHT_TEXT_6": "Olive groves, limestone hills, and flower fields",
+                    "HIGHLIGHT_TEXT_7": "The olive oil route",
+                    "HIGHLIGHT_TEXT_8": "Córdoba – Grand cultural finale",
 
                     "REQUIEREMENTS": "Requirements",
                     "REQUIEREMENTS_TEXT_1": "Booking Conditions. See terms and conditions.",
@@ -2272,62 +2276,77 @@
                     "NOTES_TEXT_1": "View trip notes",
 
                  "WHAT_TO_EXPECT": {
-                        "TITLE": "What to expect",
-                     "TEXT_1": "Uncover the hidden beauty of Andalusia, a treasure to discover!",
-                     "TEXT_2": "8 days immersing in the rich Andalusian culture, natural beauty, and history as you cycle through picturesque landscapes, charming villages, and iconic landmarks",
-                     "TEXT_3": "The South of Spain has so much to offer, from the charming city of Ronda to the historic city of Córdoba, an unforgettable cycling adventure through the heart of Andalusia",
+                     "TITLE": "What to expect",
+                     "TEXT_1": "A cycling journey from Ronda to Córdoba is an unforgettable exploration through the heart of Andalusia. You’ll ride through a landscape full of contrasts: rugged mountains, quiet olive groves, charming white villages, and impressive historic cities. This trip is ideal for those who want to combine tranquility, culture, and nature, without rushing.",
+                     "TEXT_2": "You cycle on quiet country roads with little traffic. The route is hilly, with a few challenging climbs and a flat stage on the last day, suitable for recreational cyclists on an E-bike with a good basic fitness level. (See E-bike difficulty level in BLOG) Along the way, mountain panoramas, olive fields, and authentic villages alternate.",
+                     "TEXT_3": "Each evening you arrive at a carefully selected hotel, usually small-scale and peacefully located.",
+                     "TEXT_4": "Daily luggage transport included.",
+                     "TEXT_5": "General daily schedule",
+                     "TEXT_6": "Breakfast at the hotel",
+                     "TEXT_7": "Average 40–80 km cycling per day (4–6 hours including breaks)",
+                     "TEXT_8": "Time for a terrace, lunch, photos, and sightseeing along the way",
+                     "TEXT_9": "Arrival in the afternoon, time to relax or explore the surroundings",
+                     "TEXT_10": "Finish your journey in the impressive city of Córdoba, with its famous Mezquita and atmospheric old town",
 
                      "DAY_1": {
 
                         "STRONG_1": "Welcome",
-                        "TEXT_1": "Upon arrival in Málaga, our pick-up will drive us to our rural hotel in Ronda located above a deep gorge that separates the city in half. The tour guide will organize an introductory briefing about the trip the same day followed by a safety briefing.",
-                        "STRONG_2": "Free day Ronda",
-                        "TEXT_2": "Start the day exploring Ronda’s famous sights such as the iconic bridge or the Plaza de Toros, the oldest bullring in Spain. Or take a side trip to one of the many vineyards, an excellent way to deepen your knowledge about local wines.",
-                        "TEXT_3": "The tour leader will organize dinner to celebrate the first day of the journey."
+                        "TEXT_1": "Upon arrival in Málaga, our transfer will take us to our rural hotel in Ronda, located above a deep gorge that divides the city in two. The tour leader will organize an introductory meeting about the trip, followed by a safety briefing.",
+                        "STRONG_2": "Free afternoon in Ronda",
+                        "TEXT_2": "Start the day by exploring Ronda’s famous sights, such as the iconic bridge or the Plaza de Toros, Spain’s oldest bullring. Or take a trip to one of the many local vineyards, an excellent way to deepen your knowledge of local wines.",
+                        "TEXT_3": "The tour leader will organize dinner to celebrate the first day of the journey.",
+                        "STRONG_3": "Relaxation at the hotel",
+                        "TEXT_4": "The hotel features a quietly located swimming pool"
                      },
                      "DAY_2": {
 
-                        "STRONG_1": "Track 1 Mountain Range Sierra de las Nieves",
+                        "STRONG_1": "Track 1 Sierra de las Nieves Mountain Range",
                         "TEXT_1": "Off we go to the breathtaking Gaitanes Gorge, one of the most spectacular landscapes in the Malaga mountains where we stay the second night of the trip.",
-                        "TEXT_2": "We leave our hotel along meandering country roads, passing through the Ronda Mountain Range and the National Park Sierra de las Nieves, a 100 % stunning landscape. After a picnic lunch at a panoramic viewpoint, we continue toward our hotel nestled in the heart of the Natural Park.",
+                        "TEXT_2": "We leave our hotel along meandering country roads, passing through the Ronda Mountain Range and the Sierra de las Nieves National Park, a 100% stunning landscape. After a picnic lunch at a panoramic viewpoint, we continue toward our hotel nestled in the heart of the Natural Park.",
                         "STRONG_2": "Free day Ronda",
                         "TEXT_3": "Swimming pool and breathtaking views",
-                        "TEXT_4": "Optional walk “Caminito del Rey”"
+                        "TEXT_4": "Optional walk 'Caminito del Rey'",
+                        "STRONG_3": "Relaxation at the hotel",
+                        "TEXT_5": "The hotel features a quietly located swimming pool",
+                        "TEXT_6": "DIFFICULTY LEVEL: Level 2"
                      },
-                     "DAY_3": {
+                    "DAY_3": {
 
-                        "STRONG_1": "Track 2 Andalusia’s Countryside",
-                        "TEXT_1": "After breakfast, we drive the first kilometers with our backup vehicle to skip the steep part and to bring us back higher up where we start our second track.",
-                        "TEXT_2": "Today, we will cycle through Andalusia’s countryside, a mountainous and colorful landscape where Mediterranean crops alternate with pastureland. After the picnic lunch, we continue towards the village of Antequera with its rich historic center that claims to have the most churches per inhabitant in Spain. From Monasteries, palaces, and the Moorish fortress to prehistoric dolmens are some of the many places to see."                      
+                        "STRONG_1": "Stage 2 Rural Andalusia",
+                        "TEXT_1": "After breakfast, we drive the first kilometers with our support vehicle to skip the steep part and bring us higher where we start our second stage.",
+                        "TEXT_2": "Today we cycle through rural Andalusia, a mountainous and colorful landscape where Mediterranean crops alternate with pastureland. After the picnic lunch, we continue to the village of Antequera with its rich historical center that claims to have the most churches per inhabitant in Spain. Monasteries, palaces, the Moorish fortress, and prehistoric dolmens are some of the many sights.",
+                        "STRONG_2": "Free afternoon Antequera",
+                        "STRONG_3": "Relaxation at the hotel",
+                        "TEXT_3": "Hotel features a quietly located swimming pool",
+                        "TEXT_4": "DIFFICULTY LEVEL: Level 3"
                      },
                      "DAY_4": {
 
-                        "STRONG_1": "Track 3 Mountainous Olive Groves",
-                        "TEXT_1": "Today is the only time we drive to our new starting point, a village built on the ruins of an old Moorish castle that tops a rocky outcrop overlooking the beautiful valley and lake below.",
-                        "TEXT_2": "The route takes us through the Olive Grove Landscapes of Andalusia in the Sierras Subbéticas Natural Park and Geopark. Spain has olive groves scattered over almost all the country. Still, their biggest concentration is in Andalusia, with locations where olive trees were used from when the Hispania Baetica region used to supply olive oil to the Roman capital at the very least.",       
-                        "TEXT_3": "Our destination today is the village Priego de Córdoba in the heart of the Natural Park. Before dinner, we offer you the possibility to learn how to taste and appreciate olive oil through our senses through an olive oil master where you will discover the smell, aroma, and flavor of each sample of olive oil",       
+                        "STRONG_1": "Stage 3 Mountainous Olive Groves",
+                        "TEXT_1": "Today is the only time we drive to our new starting point, a village built on the ruins of an old Moorish castle that overlooks the beautiful valley and lake below.",
+                        "TEXT_2": "The route takes us through the olive groves of Andalusia in the Sierras Subbéticas Natural Park and Geopark. Spain has olive groves spread throughout almost the entire country, but the largest concentration is in Andalusia, with locations where olive trees were already used when the region Hispania Baetica supplied olive oil to the Roman capital.",
+                        "TEXT_3": "Our destination today is the village of Priego de Córdoba in the heart of the natural park. For dinner, we offer you the opportunity to learn how to taste and appreciate olive oil with all your senses through an olive oil master, discovering the smell, aroma, and taste of each olive oil.",
                         "STRONG_2": "Free afternoon",
-                        "TEXT_4": "Discover the old part of the village"                
+                        "TEXT_4": "Discover the old part of the village",
+                        "TEXT_5": "DIFFICULTY LEVEL: Level 2"
                      },
                      "DAY_5": {
 
-                        "STRONG_1": "Track 4 The Route of the Old Oil Train",
-                        "TEXT_1": "Today we continue cycling through the beautiful landscapes of the Sierras Subbéticas mountains which take us into picturesque villages.",
-                        "TEXT_2": "After another outdoor picnic, we follow the traces of the old train track called “Vía Verde” that runs between olive trees and vineyards. These Green Roads across Spain have been recovered for cyclists and hikers",       
-                        "TEXT_3": "The route of the old oil train leads us to our next accommodation, a traditional Andalusian farmhouse converted into a hotel",       
+                        "STRONG_1": "Stage 4 The Route of the Old Olive Oil Train",
+                        "TEXT_1": "Today we continue cycling through the beautiful landscapes of the Sierras Subbéticas that take us to picturesque villages.",
+                        "TEXT_2": "After another outdoor picnic, we follow the track of the old train route called “Vía Verde” that runs between olive trees and vineyards. These Greenways in Spain have been restored for cyclists and walkers.",
+                        "TEXT_3": "The route of the old oil train brings us to our next accommodation, a traditional Andalusian farmhouse converted into a hotel.",
                         "STRONG_2": "Free afternoon",
-                        "TEXT_4": "Swimming pool and breathtaking views",                
-                        "STRONG_3": "Dinner",
-                        "TEXT_5": "The tour leader will organize a panoramic walk and dinner in the village of Zuheros."              
+                        "TEXT_4": "Swimming pool and breathtaking views",
+                        "TEXT_5": "DIFFICULTY LEVEL: Level 2"
                      },
                      "DAY_6": {
 
-                        "STRONG_1": "Track 5 The Caliphate and the Mozarabic Route",
-                        "TEXT_1": "On your last cycling day, we follow two historic routes that guide us to the city of Córdoba, our final destination. The Route of the Caliphate is the Andalusian Legacy that connects Cordoba and Granada, the capital cities of the Caliphate and Nasrid al-Andalus. It was one of the busiest paths of the Iberian Peninsula during the Middle Ages because it was used by traders from all around the known world, who supplied and traded in these important population centers; it was also the route of knowledge, sciences, and arts",
-                        "TEXT_2": "The other historic route is the Mozarabic Way to Santiago de Compostela. An ancient trail that pays tribute to all those Christians called Mozarabs who stayed in the territories of Al-Andalus. A journey that reminds us of that time when, despite being repressed, these Christians maintained their belief and devotion.",       
-                        "TEXT_3": "The last part of the longest cycle track will reveal our destination of the journey with views of the city of Córdoba located in the Guadalquivir depression formed by the Guadalquivir River.",       
-                        "STRONG_2": "Dinner",
-                        "TEXT_4": "The Tour leader will organize a dinner to celebrate our final destination."                                                    
+                        "STRONG_1": "Stage 5 The Caliphate and Mozarabic Route",
+                        "TEXT_1": "On your last cycling day, we follow two historic routes that lead us to the city of Córdoba, our final destination. The Caliphate Route is the Andalusian heritage that connects Córdoba and Granada, the capitals of the Caliphate and Nasrid al-Andalus. It was one of the busiest paths of the Iberian Peninsula in the Middle Ages, used by merchants from all over the known world, who supplied and traded with these important population centers; it was also the route of knowledge, science, and art.",
+                        "TEXT_2": "The other historic route is the Mozarabic Way to Santiago de Compostela. An ancient path that pays tribute to all Christians, the Mozarabs, who remained in the areas of Al-Andalus. A journey that reminds us of that time when these Christians, despite oppression, maintained their faith and devotion.",
+                        "TEXT_3": "The last part of the longest cycling route reveals our travel destination with views of the city of Córdoba, located in the Guadalquivir depression formed by the Guadalquivir River.",
+                        "TEXT_4": "DIFFICULTY LEVEL: Level 2"
                      },
                      "DAY_7": {
 

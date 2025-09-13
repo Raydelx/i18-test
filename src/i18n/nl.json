@@ -32,7 +32,7 @@
 
         "CARD_2":{
           "TITLE": "Gezinsvakanties",
-          "SUBTITLE": "Avontuur voor jong en oud — samen de natuur ontdekken!",
+          "SUBTITLE": "",
           "TEXT_1": "Onze gezinsvakanties zijn speciaal ontworpen om zowel kinderen als ouders een onvergetelijke tijd in de natuur te bezorgen. Denk aan avontuurlijke wandelingen, veilige fietstochten, het ontdekken van lokale cultuur en vooral veel plezier in de buitenlucht!",
           "TEXT_2": "Wij zorgen voor een perfecte balans tussen activiteit en ontspanning, altijd aangepast aan de leeftijden van de kinderen. Alles gebeurt in een rustig tempo, met veel ruimte voor spontane momenten, spel en vrije tijd.",
 
@@ -52,7 +52,7 @@
 
        "CARD_3": {
           "TITLE": "Fietsvakanties & Fietsexcursies",
-            "SUBTITLE": "Voor recreanten, sportievelingen én fietsfanaten",
+            "SUBTITLE": "",
             "TEXT_1": "Spanje en haar omgeving zijn een waar paradijs voor fietsers. Of je nu ontspannen door de valleien fietst of de uitdaging zoekt van iconische bergpassen – bij Montaraz Outdoors & Culture ben je aan het juiste adres.",
             "TEXT_2": "Onze fietsvakanties zijn zorgvuldig opgebouwd en volledig aanpasbaar aan jouw niveau, interesse en type fiets.",
             "TEXT_3": "We bieden een brede waaier aan routes voor e-bikes, tourfietsen, mountainbikes en racefietsen. Je fietst met of zonder ondersteuning, altijd met de vrijheid om de streek op jouw manier te ontdekken.",
@@ -76,7 +76,7 @@
 
        "CARD_4":{
           "TITLE": "Wandelvakanties & Trekkings",
-          "SUBTITLE": "Te voet – ontdek, beleef, adem",
+          "SUBTITLE": "",
           "TEXT_1": "Onze wandelvakanties brengen je diep in het landschap van Spanje: van besneeuwde toppen tot de schilderachtige dorpen. Of je nu houdt van rustige wandelingen langs witgekalkte dorpjes of stevige bergroutes zoekt – wij begeleiden je stap voor stap. Bij Montaraz Outdoors &amp; Culture staan persoonlijke aanpak en maatwerk centraal. Al onze wandelingen worden afgestemd op het niveau van de reiziger. Jij kiest je ritme, wij zorgen voor de rest.",
 
           "WHAT_DO_WE_EXPECT": "Wat kun je verwachten?",
@@ -132,7 +132,7 @@
         "TOTAL_ASCENT": "Totale Stijging",
         "TOTAL_DESCENT": "Totale Daling",
         "ROUTE_TYPE": "Routetype",
-        "DURATION": "Duur Proef",
+        "DURATION": "Duur",
         "DIFFICULTY": "Niveau",
         "PHYSICAL_DIFFICULTY": "Fysieke Niveau",
         "TECHNICAL_DIFFICULTY": "Technische Niveau"    
@@ -1934,7 +1934,8 @@
         "LEISURE_CYCLING": {
 
             "FROM_MOUNTAINS_TO_COASTLINE": {
-                "TITLE": "Fietstocht Sierra Nevada - Middellandse Zee. E-bike Tour 1/2 dag",
+                "TITLE": "Fietstocht Sierra Nevada - Middellandse Zee",
+                "SUBTITLE": "E-bike tour 1/2 dag",
                 "LOCATION": "Granada",
 
                 "PRICE": "110",
@@ -2144,7 +2145,8 @@
             },
 
              "CYCLE_RONDA_CORDOBA":{
-             "TITLE": "Fietstocht Ronda - Córdoba E-bike Tour 8 Dagen",
+             "TITLE": "Fietstocht Ronda - Córdoba",
+             "SUBTITLE": "E-bike Route 8 Dagen ",
              "LOCATION": "Andalusië",
 
              "PRICE": "1.550",
@@ -2166,7 +2168,8 @@
                 "TITLE": "Inbegrepen",
                 "TEXT_1": "2 Professionele gidsen",
                 "TEXT_2": "Aansprakelijkheidsverzekering en assistentie",
-                "TEXT_3": "Volgvoertuig",
+                "TEXT_13": "Garantieregeling ",
+                "TEXT_3": "Bezemwagen",
                 "TEXT_4": "Bagagetransport",
                 "TEXT_5": "Luchthaventransfer",
                 "TEXT_6": "Accommodatie: 7 nachten",
@@ -2180,10 +2183,10 @@
                 },
                 "NOT_INCLUDED": {
                 "TITLE": "Niet inbegrepen",
-                "TEXT_1": "Vlucht",
-                "TEXT_2": "Reis- & assistentieverzekering",
-                "TEXT_3": "Annuleringsverzekering",
-                "TEXT_4": "Diner",
+                "TEXT_1": "Reis- en annuleringsverzekering ",
+                "TEXT_2": "(Het wordt aangeraden om een reisverzekering af te sluiten voor je vertrek.)",
+                "TEXT_3": "Vlucht",                
+                "TEXT_4": "Avondmaal",
                 "TEXT_5": "Extra maaltijden",
                 "TEXT_6": "Extra excursies",
                 "TEXT_7": "Persoonlijke uitgaven",
@@ -2194,29 +2197,30 @@
                 "EXTRA": {
                 "TITLE": "Extra",
                 "SUBTITLE": "Moet vooraf worden geboekt",
-                "TEXT_1": "Privékamer: 300 € (7 nachten)",
+                "TEXT_1": "Privékamer: (7 nachten)",
                 "TEXT_2": "Racefiets of Gravelbike.",
                 "TEXT_3": "Rit voor iedereen. Voor wie een goed niveau van fysieke conditie heeft, kan deelnemen aan de tour op een racefiets of gravelbike tegen meerprijs.",
-                "TEXT_4": "Caminito del Rey: 30 €",
-                "TEXT_5": "Een luchtpad dat langs de Gaitanes-kloof loopt, een indrukwekkende kloof uitgesleten door de rivier de Guadalhorce. (5 km, 2 uur)",
-                "TEXT_6": "Privérondleiding door de Moskee van Córdoba: 40 €",
-                "TEXT_7": "Olijfolieproeverij: 15 €",
+                "TEXT_4": "Caminito del Rey:",
+                "TEXT_5": "Een pad dat langs de Gaitanes-kloof loopt, een indrukwekkende kloof uitgesleten door de rivier de Guadalhorce. (5 km, 2 uur)",
+                "TEXT_6": "Moskee Córdoba ",
+                "TEXT_7": "Olijfolieproeverij",
                 "TEXT_8": "In het hart van Andalusië bieden we je de mogelijkheid om te leren hoe je olijfolie kunt proeven en waarderen met al je zintuigen."
                 },
 
                 "AVAILABILITY": "Beschikbaarheid",
+                "AVAILABILITY_SUBTITLE": "Zie je geen geschikte datum in de planning? Neem contact met ons op om jouw beschikbaarheid door te geven. Voor privétours bieden wij graag een oplossing op maat.",
                 "AVAILABILITY_TEXT_1": "Lente",
                 "AVAILABILITY_TEXT_2": "Herfst",
 
                 "HIGHLIGHT": "Hoogtepunten",
-                "HIGHLIGHT_TEXT_1": "Stad Ronda",
-                "HIGHLIGHT_TEXT_2": "Caminito del Rey",
-                "HIGHLIGHT_TEXT_3": "Stad Antequera",
-                "HIGHLIGHT_TEXT_4": "Sierras Subbéticas Natuurpark en Geopark UNESCO",
-                "HIGHLIGHT_TEXT_5": "Olijfolieproeverij",    
-                "HIGHLIGHT_TEXT_6": "Stad Córdoba",    
-                "HIGHLIGHT_TEXT_7": "Privétour door de Moskee van Córdoba",    
-                "HIGHLIGHT_TEXT_8": "De geselecteerde landelijke hotels",
+                "HIGHLIGHT_TEXT_1": "Ontdek het hart van Andalusië per fiets, van de dramatische kliffen van Ronda tot de Moorse pracht van Córdoba. Deze unieke route voert je langs witte dorpen, olijfheuvels en culturele parels — met onderweg overnachtingen in zorgvuldig geselecteerde, rustig gelegen hotels.",
+                "HIGHLIGHT_TEXT_2": "Ronda, de spectaculaire ligging bovenop een diepe kloof (El Tajo)",
+                "HIGHLIGHT_TEXT_3": "Authentieke Andalusische sfeer ",
+                "HIGHLIGHT_TEXT_4": "Schilderachtige wegen en rustige fietsroutes",
+                "HIGHLIGHT_TEXT_5": "Fietsen door de Sierra Subbética",    
+                "HIGHLIGHT_TEXT_6": "Olijfgaarden, kalkstenen heuvels, en bloemenvelden",
+                "HIGHLIGHT_TEXT_7": "De olijfolie-route",
+                "HIGHLIGHT_TEXT_8": "Córdoba – Groots cultureel eindpunt",
 
                 "REQUIEREMENTS": "Vereisten",
                 "REQUIEREMENTS_TEXT_1": "Boekingsvoorwaarden. Zie algemene voorwaarden.",
@@ -2231,17 +2235,26 @@
 
                  "WHAT_TO_EXPECT": {
                     "TITLE": "Wat te verwachten",
-                     "TEXT_1": "Ontdek de verborgen schoonheid van Andalusië, een schat om te ontdekken!",
-                     "TEXT_2": "8 dagen onderdompeling in de rijke Andalusische cultuur, natuurlijke schoonheid en geschiedenis terwijl je fietst door schilderachtige landschappen, charmante dorpjes en iconische bezienswaardigheden",
-                     "TEXT_3": "Het zuiden van Spanje heeft zoveel te bieden, van de charmante stad Ronda tot de historische stad Córdoba, een onvergetelijk fietsavontuur door het hart van Andalusië",
+                     "TEXT_1": "Een fietsreis van Ronda naar Córdoba is een onvergetelijke ontdekkingstocht door het hart van Andalusië. Je fietst door een landschap vol contrasten: van ruige bergen en stille olijfgaarden tot charmante witte dorpen en indrukwekkende historische steden. Deze reis is ideaal voor wie rust, cultuur en natuur wil combineren, zonder haast.  ",
+                     "TEXT_2": "Je fietst over rustige, landelijke wegen met weinig verkeer. De route is heuvelachtig, met een paar stevige klimmen tot een vlakke etappe op de laatste dag, en geschikt voor recreatieve fietsers op een E-bike met een goede basisconditie. (Zie moeilijkheidsgraad van E-bike in BLOG) Onderweg wisselen berg panorama's, olijfvelden en authentieke dorpjes elkaar af.",
+                     "TEXT_3": "Elke avond kom je aan in een zorgvuldig geselecteerd hotel, meestal kleinschalig en rustig gelegen. ",
+                     "TEXT_4": "Dagelijks bagagetransport inbegrepen.",
+                     "TEXT_5": "Dagindeling in grote lijnen",
+                     "TEXT_6": "Ontbijt in het hotel",
+                     "TEXT_7": "Gemiddeld 40–80 km fietsen per dag (4–6 uur inclusief pauzes)",
+                     "TEXT_8": "Onderweg tijd voor een terras, lunch, foto’s en bezienswaardigheden",
+                     "TEXT_9": "Aankomst in de namiddag, tijd voor rust of een korte verkenning van de omgeving",
+                     "TEXT_10": "Eindig je reis in de indrukwekkende stad Córdoba, met haar beroemde Mezquita en sfeervolle binnenstad  ",
 
                      "DAY_1": {
 
                         "STRONG_1": "Welkom",
                         "TEXT_1": "Bij aankomst in Málaga brengt onze transfer ons naar ons landelijke hotel in Ronda, gelegen boven een diepe kloof die de stad in tweeën deelt. De reisleider organiseert dezelfde dag een introductiebijeenkomst over de reis, gevolgd door een veiligheidsinstructie.",
-                        "STRONG_2": "Vrije dag Ronda",
+                        "STRONG_2": "Vrije namiddag Ronda ",
                         "TEXT_2": "Begin de dag met het verkennen van de beroemde bezienswaardigheden van Ronda, zoals de iconische brug of de Plaza de Toros, de oudste stierenvechtersarena van Spanje. Of maak een uitstapje naar een van de vele wijngaarden, een uitstekende manier om je kennis van lokale wijnen te verdiepen.",
-                        "TEXT_3": "De reisleider organiseert het diner om de eerste dag van de reis te vieren."
+                        "TEXT_3": "De reisleider organiseert het diner om de eerste dag van de reis te vieren.",
+                        "STRONG_3": "Ontspanning bij het hotel",
+                        "TEXT_4": "Hotel beschikt over een rustig gelegen zwembad"
                      },
                      "DAY_2": {
 
@@ -2250,13 +2263,20 @@
                         "TEXT_2": "We verlaten ons hotel via kronkelende landweggetjes, door de Ronda-bergketen en het Nationaal Park Sierra de las Nieves, een 100% indrukwekkend landschap. Na een picknicklunch bij een panoramisch uitzichtpunt gaan we verder naar ons hotel in het hart van het natuurpark.",
                         "STRONG_2": "Vrije dag Ronda",
                         "TEXT_3": "Zwembad en adembenemende uitzichten",
-                        "TEXT_4": "Optionele wandeling “Caminito del Rey”"
+                        "TEXT_4": "Optionele wandeling “Caminito del Rey”",
+                        "STRONG_3": "Ontspanning bij het hotel",
+                        "TEXT_5": "Hotel beschikt over een rustig gelegen zwembad",
+                        "TEXT_6": "MOEILIJKHEIDGRAAD: Niveau 2"
                      },
                      "DAY_3": {
 
-                        "STRONG_1": "Etappe 2 Andalusisch Platteland",
+                        "STRONG_1": "Etappe 2 Het landelijke Andalusië",
                         "TEXT_1": "Na het ontbijt rijden we de eerste kilometers met onze volgwagen om het steile deel over te slaan en ons hoger te brengen waar we onze tweede etappe starten.",
-                        "TEXT_2": "Vandaag fietsen we door het Andalusische platteland, een bergachtig en kleurrijk landschap waar mediterrane gewassen afwisselen met weidegrond. Na de picknicklunch gaan we verder naar het dorp Antequera met zijn rijke historische centrum dat beweert de meeste kerken per inwoner van Spanje te hebben. Van kloosters, paleizen en het Moorse fort tot prehistorische dolmens zijn enkele van de vele bezienswaardigheden."
+                        "TEXT_2": "Vandaag fietsen we door het landelijke Andalusië, een bergachtig en kleurrijk landschap waar mediterrane gewassen afwisselen met weidegrond. Na de picknicklunch gaan we verder naar het dorp Antequera met zijn rijke historische centrum dat beweert de meeste kerken per inwoner van Spanje te hebben. Van kloosters, paleizen en het Moorse fort tot prehistorische dolmens zijn enkele van de vele bezienswaardigheden.",
+                        "STRONG_2": "Vrije namiddag Antequera ",
+                        "STRONG_3": "Ontspanning bij het hotel",
+                        "TEXT_3": "Hotel beschikt over een rustig gelegen zwembad",
+                        "TEXT_4": "MOEILIJKHEIDSGRAAD: Niveau 3"
                      },
                      "DAY_4": {
 
@@ -2265,18 +2285,18 @@
                         "TEXT_2": "De route voert ons door de olijfgaarden van Andalusië in het natuurpark en geopark Sierras Subbéticas. Spanje heeft olijfgaarden verspreid over bijna het hele land, maar de grootste concentratie is in Andalusië, met locaties waar olijfbomen al werden gebruikt toen de regio Hispania Baetica olijfolie leverde aan de Romeinse hoofdstad.",
                         "TEXT_3": "Onze bestemming vandaag is het dorp Priego de Córdoba in het hart van het natuurpark. Voor het diner bieden we je de mogelijkheid om te leren hoe je olijfolie kunt proeven en waarderen met al je zintuigen via een olijfoliemeester, waarbij je de geur, het aroma en de smaak van elke olijfolie ontdekt.",
                         "STRONG_2": "Vrije namiddag",
-                        "TEXT_4": "Ontdek het oude deel van het dorp"
+                        "TEXT_4": "Ontdek het oude deel van het dorp",
+                        "TEXT_5": "MOEILIJKHEIDSGRAAD: Niveau 2"
                      },
                      "DAY_5": {
 
-                        "STRONG_1": "Etappe 4 De Route van de Oude Olietrein",
-                        "TEXT_1": "Vandaag fietsen we verder door de prachtige landschappen van de bergen van de Sierras Subbéticas die ons naar pittoreske dorpjes brengen.",
+                        "STRONG_1": "Etappe 4 De Route van de Oude Olijfolietrein",
+                        "TEXT_1": "Vandaag fietsen we verder door de prachtige landschappen van de Sierras Subbéticas die ons naar pittoreske dorpjes brengen.",
                         "TEXT_2": "Na opnieuw een picknick in de buitenlucht volgen we het spoor van het oude treintraject genaamd “Vía Verde” dat loopt tussen olijfbomen en wijngaarden. Deze Groene Wegen in Spanje zijn hersteld voor fietsers en wandelaars.",
                         "TEXT_3": "De route van de oude olietrein brengt ons naar onze volgende accommodatie, een traditionele Andalusische boerderij omgebouwd tot hotel.",
                         "STRONG_2": "Vrije namiddag",
-                        "TEXT_4": "Zwembad en adembenemende uitzichten",
-                        "STRONG_3": "Diner",
-                        "TEXT_5": "De reisleider organiseert een panoramische wandeling en diner in het dorp Zuheros."
+                        "TEXT_4": "Zwembad en adembenemende uitzichten",                        
+                        "TEXT_5": "MOEILIJKHEIDSGRAAD: Niveau 2"
                      },
                      "DAY_6": {
 
@@ -2284,8 +2304,7 @@
                         "TEXT_1": "Op je laatste fietsdag volgen we twee historische routes die ons naar de stad Córdoba leiden, onze eindbestemming. De Route van het Kalifaat is het Andalusische erfgoed dat Córdoba en Granada verbindt, de hoofdsteden van het Kalifaat en Nasrid al-Andalus. Het was een van de drukste paden van het Iberisch schiereiland in de middeleeuwen, gebruikt door handelaren uit de hele bekende wereld, die deze belangrijke bevolkingscentra bevoorraadden en er handel dreven; het was ook de route van kennis, wetenschap en kunst.",
                         "TEXT_2": "De andere historische route is de Mozarabische Weg naar Santiago de Compostela. Een oud pad dat hulde brengt aan alle christenen, de Mozaraben, die in de gebieden van Al-Andalus bleven. Een reis die ons herinnert aan die tijd waarin deze christenen, ondanks onderdrukking, hun geloof en toewijding behielden.",
                         "TEXT_3": "Het laatste deel van de langste fietsroute onthult onze reisbestemming met uitzicht op de stad Córdoba, gelegen in de Guadalquivir-depressie gevormd door de rivier de Guadalquivir.",
-                        "STRONG_2": "Diner",
-                        "TEXT_4": "De reisleider organiseert een diner om onze eindbestemming te vieren."
+                        "TEXT_4": "MOEILIJKHEIDSGRAAD: Niveau 2"
                      },
                      "DAY_7": {
 
@@ -2302,7 +2321,7 @@
                  },
 
                  "CLIENTS" :{
-                    "TITLE": "Wat zeggen onze klanten over ons?"
+                    "TITLE": "Klantbeoordelingen"
                  }
              },
 
