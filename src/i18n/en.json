@@ -14,6 +14,10 @@
         "TAILOR_MADE_TRAVELS": "Tailor-Made Travels"
     },
 
+    "DESTINATIONS_SPAIN": "Spain",
+    "DESTINATIONS_ANDALUSIA": "Andalusia",
+    "DESTINATIONS_ITALY": "Italy",
+
     "MORE_INFO": "More Info",
 
     "MTB_DESTINATIONS": "MTB Destinations",
@@ -2186,7 +2190,7 @@
             },
 
              "CYCLE_RONDA_CORDOBA":{
-                 "TITLE": "Cycle Ronda - Córdoba",
+                 "TITLE": "Cycle Tour Ronda - Córdoba",
                  "SUBTITLE": "E-bike Tour 8 Days",
                  "LOCATION": "Andalusia",
 
@@ -2307,8 +2311,8 @@
                         "TEXT_3": "Swimming pool and breathtaking views",
                         "TEXT_4": "Optional walk 'Caminito del Rey'",
                         "STRONG_3": "Relaxation at the hotel",
-                        "TEXT_5": "The hotel features a quietly located swimming pool",
-                        "TEXT_6": "DIFFICULTY LEVEL: Level 2"
+                        "TEXT_5": "The hotel features a quietly located swimming pool"
+                       
                      },
                     "DAY_3": {
 
@@ -2317,8 +2321,8 @@
                         "TEXT_2": "Today we cycle through rural Andalusia, a mountainous and colorful landscape where Mediterranean crops alternate with pastureland. After the picnic lunch, we continue to the village of Antequera with its rich historical center that claims to have the most churches per inhabitant in Spain. Monasteries, palaces, the Moorish fortress, and prehistoric dolmens are some of the many sights.",
                         "STRONG_2": "Free afternoon Antequera",
                         "STRONG_3": "Relaxation at the hotel",
-                        "TEXT_3": "Hotel features a quietly located swimming pool",
-                        "TEXT_4": "DIFFICULTY LEVEL: Level 3"
+                        "TEXT_3": "Hotel features a quietly located swimming pool"
+                        
                      },
                      "DAY_4": {
 
@@ -2327,8 +2331,8 @@
                         "TEXT_2": "The route takes us through the olive groves of Andalusia in the Sierras Subbéticas Natural Park and Geopark. Spain has olive groves spread throughout almost the entire country, but the largest concentration is in Andalusia, with locations where olive trees were already used when the region Hispania Baetica supplied olive oil to the Roman capital.",
                         "TEXT_3": "Our destination today is the village of Priego de Córdoba in the heart of the natural park. For dinner, we offer you the opportunity to learn how to taste and appreciate olive oil with all your senses through an olive oil master, discovering the smell, aroma, and taste of each olive oil.",
                         "STRONG_2": "Free afternoon",
-                        "TEXT_4": "Discover the old part of the village",
-                        "TEXT_5": "DIFFICULTY LEVEL: Level 2"
+                        "TEXT_4": "Discover the old part of the village"
+                        
                      },
                      "DAY_5": {
 
@@ -2337,16 +2341,16 @@
                         "TEXT_2": "After another outdoor picnic, we follow the track of the old train route called “Vía Verde” that runs between olive trees and vineyards. These Greenways in Spain have been restored for cyclists and walkers.",
                         "TEXT_3": "The route of the old oil train brings us to our next accommodation, a traditional Andalusian farmhouse converted into a hotel.",
                         "STRONG_2": "Free afternoon",
-                        "TEXT_4": "Swimming pool and breathtaking views",
-                        "TEXT_5": "DIFFICULTY LEVEL: Level 2"
+                        "TEXT_4": "Swimming pool and breathtaking views"
+                        
                      },
                      "DAY_6": {
 
                         "STRONG_1": "Stage 5 The Caliphate and Mozarabic Route",
                         "TEXT_1": "On your last cycling day, we follow two historic routes that lead us to the city of Córdoba, our final destination. The Caliphate Route is the Andalusian heritage that connects Córdoba and Granada, the capitals of the Caliphate and Nasrid al-Andalus. It was one of the busiest paths of the Iberian Peninsula in the Middle Ages, used by merchants from all over the known world, who supplied and traded with these important population centers; it was also the route of knowledge, science, and art.",
                         "TEXT_2": "The other historic route is the Mozarabic Way to Santiago de Compostela. An ancient path that pays tribute to all Christians, the Mozarabs, who remained in the areas of Al-Andalus. A journey that reminds us of that time when these Christians, despite oppression, maintained their faith and devotion.",
-                        "TEXT_3": "The last part of the longest cycling route reveals our travel destination with views of the city of Córdoba, located in the Guadalquivir depression formed by the Guadalquivir River.",
-                        "TEXT_4": "DIFFICULTY LEVEL: Level 2"
+                        "TEXT_3": "The last part of the longest cycling route reveals our travel destination with views of the city of Córdoba, located in the Guadalquivir depression formed by the Guadalquivir River."
+                        
                      },
                      "DAY_7": {
 
@@ -2368,6 +2372,23 @@
                     "TITLE": "What our clients said about us?"
                  }
              },
+
+             "CYCLE_TOUR_CABO_DE_GATA" :{
+
+                "TITLE": "Cycle Tour Sierra Nevada - Cabo de Gata",
+                "SUBTITLE": "E-bike Tour 8 days"
+             },
+
+             
+            "CAMINO_SANTIAGO" : {
+                "TITLE": "Cycle Tour Camino de Santiago",
+                "SUBTITLE": "8 Days"
+            },
+
+            "CYCLE_TOUR_SARDINIA" : {
+                "TITLE": "Cycle Tour Sardinia",
+                "SUBTITLE": "E-Bike Tour 10 Days"
+            },
 
               "E_BIKE_SIGHTSEEN_GRANADA": {
                 "TITLE": "Sightseeing Granada E-bike Tour",

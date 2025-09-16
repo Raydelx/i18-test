@@ -4,11 +4,13 @@ interface Props {
   name: string;
   href: string;
   description: string;
+  description2?: string;
   href_img: string;
   alt_img: string;
 }
 
-const { name, description, href_img, alt_img, href } = Astro.props;
+const { name, description, description2, href_img, alt_img, href } =
+  Astro.props;
 
 import {
   getLangFromUrl,
@@ -40,6 +42,7 @@ const i18n = getI18N({ currentLocale });
       <p class="mb-6">
         {description}
       </p>
+      {description2 && <p class="mb-6">{description2}</p>}
     </div>
     <div class="content-end mb-8">
       <Link

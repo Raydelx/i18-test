@@ -14,6 +14,10 @@
         "TAILOR_MADE_TRAVELS": "Op maat gemaakte reizen"
     }, 
 
+    "DESTINATIONS_SPAIN": "Spanje",
+    "DESTINATIONS_ANDALUSIA": "Andalusië",
+    "DESTINATIONS_ITALY": "Italië",
+
     "MORE_INFO": "Meer info",
 
     "MTB_DESTINATIONS": "MTB Bestemmingen",
@@ -2160,7 +2164,7 @@
              "TOTAL_ASCENT": "4000 m",
              "TOTAL_DESCENT": "4760 m",
              "ROUTE_TYPE": "Punt tot punt",
-             "DIFFICULTY": "Moeilijkheidsgraad",
+             "DIFFICULTY": "2",
              "PHYSICAL_DIFFICULTY": "Fysieke Moeilijkheidsgraad",
              "TECHNICAL_DIFFICULTY": "Technische Moeilijkheidsgraad",
 
@@ -2265,8 +2269,7 @@
                         "TEXT_3": "Zwembad en adembenemende uitzichten",
                         "TEXT_4": "Optionele wandeling “Caminito del Rey”",
                         "STRONG_3": "Ontspanning bij het hotel",
-                        "TEXT_5": "Hotel beschikt over een rustig gelegen zwembad",
-                        "TEXT_6": "MOEILIJKHEIDGRAAD: Niveau 2"
+                        "TEXT_5": "Hotel beschikt over een rustig gelegen zwembad"
                      },
                      "DAY_3": {
 
@@ -2275,8 +2278,7 @@
                         "TEXT_2": "Vandaag fietsen we door het landelijke Andalusië, een bergachtig en kleurrijk landschap waar mediterrane gewassen afwisselen met weidegrond. Na de picknicklunch gaan we verder naar het dorp Antequera met zijn rijke historische centrum dat beweert de meeste kerken per inwoner van Spanje te hebben. Van kloosters, paleizen en het Moorse fort tot prehistorische dolmens zijn enkele van de vele bezienswaardigheden.",
                         "STRONG_2": "Vrije namiddag Antequera ",
                         "STRONG_3": "Ontspanning bij het hotel",
-                        "TEXT_3": "Hotel beschikt over een rustig gelegen zwembad",
-                        "TEXT_4": "MOEILIJKHEIDSGRAAD: Niveau 3"
+                        "TEXT_3": "Hotel beschikt over een rustig gelegen zwembad"
                      },
                      "DAY_4": {
 
@@ -2285,8 +2287,7 @@
                         "TEXT_2": "De route voert ons door de olijfgaarden van Andalusië in het natuurpark en geopark Sierras Subbéticas. Spanje heeft olijfgaarden verspreid over bijna het hele land, maar de grootste concentratie is in Andalusië, met locaties waar olijfbomen al werden gebruikt toen de regio Hispania Baetica olijfolie leverde aan de Romeinse hoofdstad.",
                         "TEXT_3": "Onze bestemming vandaag is het dorp Priego de Córdoba in het hart van het natuurpark. Voor het diner bieden we je de mogelijkheid om te leren hoe je olijfolie kunt proeven en waarderen met al je zintuigen via een olijfoliemeester, waarbij je de geur, het aroma en de smaak van elke olijfolie ontdekt.",
                         "STRONG_2": "Vrije namiddag",
-                        "TEXT_4": "Ontdek het oude deel van het dorp",
-                        "TEXT_5": "MOEILIJKHEIDSGRAAD: Niveau 2"
+                        "TEXT_4": "Ontdek het oude deel van het dorp"
                      },
                      "DAY_5": {
 
@@ -2295,16 +2296,14 @@
                         "TEXT_2": "Na opnieuw een picknick in de buitenlucht volgen we het spoor van het oude treintraject genaamd “Vía Verde” dat loopt tussen olijfbomen en wijngaarden. Deze Groene Wegen in Spanje zijn hersteld voor fietsers en wandelaars.",
                         "TEXT_3": "De route van de oude olietrein brengt ons naar onze volgende accommodatie, een traditionele Andalusische boerderij omgebouwd tot hotel.",
                         "STRONG_2": "Vrije namiddag",
-                        "TEXT_4": "Zwembad en adembenemende uitzichten",                        
-                        "TEXT_5": "MOEILIJKHEIDSGRAAD: Niveau 2"
+                        "TEXT_4": "Zwembad en adembenemende uitzichten"
                      },
                      "DAY_6": {
 
                         "STRONG_1": "Etappe 5 De Kalifaat- en Mozarabische Route",
                         "TEXT_1": "Op je laatste fietsdag volgen we twee historische routes die ons naar de stad Córdoba leiden, onze eindbestemming. De Route van het Kalifaat is het Andalusische erfgoed dat Córdoba en Granada verbindt, de hoofdsteden van het Kalifaat en Nasrid al-Andalus. Het was een van de drukste paden van het Iberisch schiereiland in de middeleeuwen, gebruikt door handelaren uit de hele bekende wereld, die deze belangrijke bevolkingscentra bevoorraadden en er handel dreven; het was ook de route van kennis, wetenschap en kunst.",
                         "TEXT_2": "De andere historische route is de Mozarabische Weg naar Santiago de Compostela. Een oud pad dat hulde brengt aan alle christenen, de Mozaraben, die in de gebieden van Al-Andalus bleven. Een reis die ons herinnert aan die tijd waarin deze christenen, ondanks onderdrukking, hun geloof en toewijding behielden.",
-                        "TEXT_3": "Het laatste deel van de langste fietsroute onthult onze reisbestemming met uitzicht op de stad Córdoba, gelegen in de Guadalquivir-depressie gevormd door de rivier de Guadalquivir.",
-                        "TEXT_4": "MOEILIJKHEIDSGRAAD: Niveau 2"
+                        "TEXT_3": "Het laatste deel van de langste fietsroute onthult onze reisbestemming met uitzicht op de stad Córdoba, gelegen in de Guadalquivir-depressie gevormd door de rivier de Guadalquivir."
                      },
                      "DAY_7": {
 
@@ -2324,6 +2323,22 @@
                     "TITLE": "Klantbeoordelingen"
                  }
              },
+
+              "CYCLE_TOUR_CABO_DE_GATA" :{
+                "TITLE": "Fietstocht Sierra Nevada - Cabo de Gata",
+                "SUBTITLE": "E-bike Tour 8 dagen"
+              },
+
+            "CAMINO_SANTIAGO" : {
+                "TITLE": "Fieststocht Camino de Santiago",
+                "SUBTITLE": "8 dagen"
+            },
+
+             "CYCLE_TOUR_SARDINIA" : {
+                "TITLE": "Fietstocht Sardinië",
+                "SUBTITLE": "E-Bike Tour 10 Days"
+            },
+
 
             "E_BIKE_SIGHTSEEN_GRANADA": {
                 "TITLE": "Sightseeing Granada E-bike Tour",

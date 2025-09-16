@@ -83,6 +83,8 @@ export const routes = {
 		'tour-bike-destinations': 'tour-bike-destinations',
 		'gravel-bike-mtb-andalucia': 'gravel-bike-mtb-andalucia',
 		'sierra-nevada-desert': 'sierra-nevada-desert',
+		'leisure-cycling-italia': 'leisure-cycling-italia',
+		'leisure-cycling-spain': 'leisure-cycling-spain',
 	},
 	en: {
 		blog: 'blog',
@@ -127,5 +129,7 @@ export const routes = {
 		'tour-bike-destinations': 'tour-bike-destinations',
 		'gravel-bike-mtb-andalucia': 'gravel-bike-mtb-andalucia',
 		'sierra-nevada-desert': 'sierra-nevada-desert',
+		'leisure-cycling-italia': 'leisure-cycling-italia',
+		'leisure-cycling-spain': 'leisure-cycling-spain',
 	},
 } 

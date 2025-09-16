@@ -25,26 +25,42 @@ const i18n = getI18N({ currentLocale });
       <Fragment slot="desc"></Fragment>
     </Sectionhead>
 
-    <div class="grid lg:grid-cols-2 gap-12 mt-8">
+    <div class="grid lg:grid-cols-3 gap-6 mt-8">
       <div class="grid grid-cols-1 content-center">
-        <a href="">
+        <a href={translatePath("leisure-cycling-spain")}>
           <img
-            class="duration-300 ease-in-out hover:scale-105"
+            class="duration-300 ob-cover ease-in-out hover:scale-105 text-center m-auto"
             src="/destinations/spain.png"
             alt="Spain map 3D"
           />
-          <p class="text-center text-3xl font-bold">Spain</p>
+          <p class="text-center text-3xl font-bold">
+            {i18n.DESTINATIONS_SPAIN}
+          </p>
         </a>
       </div>
 
       <div class="grid grid-cols-1 content-center">
         <a href={translatePath("leisure-cycling-andalucia")}>
           <img
-            class="duration-300 ease-in-out hover:scale-105"
+            class="duration-300 ob-cover ease-in-out hover:scale-105 text-center m-auto"
             src="/destinations/andalucia.png"
             alt="Andalucia map 3D"
           />
-          <p class="text-center text-3xl font-bold">Andalucia</p>
+          <p class="text-center text-3xl font-bold">
+            {i18n.DESTINATIONS_ANDALUSIA}
+          </p>
+        </a>
+      </div>
+      <div class="grid grid-cols-1 content-center">
+        <a href={translatePath("leisure-cycling-italia")}>
+          <img
+            class="duration-300 h-80 ob-cover p-6 ease-in-out hover:scale-105 text-center m-auto mb-4"
+            src="/destinations/italia.webp"
+            alt="Italia map 3D"
+          />
+          <p class="text-center text-3xl font-bold">
+            {i18n.DESTINATIONS_ITALY}
+          </p>
         </a>
       </div>
     </div>
