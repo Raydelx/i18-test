@@ -37,11 +37,11 @@ const { title, img, description, brings, text } = Astro.props;
       }
       <p class="mt-4 text-gray text-lg">{text}</p>
     </div>
-    <div class="w-full lg:w-1/2 h-90 rounded-xl overflow-hidden">
+    <div class="w-full lg:w-1/2 h-auto rounded-xl overflow-hidden">
       <img
         src={img}
         alt={title}
-        class="rounded-xl hidden md:block overflow-hidden w-full h-full object-cover hover:scale-110 transition-transform duration-1000"
+        class="rounded-xl hidden h-auto md:block w-full object-cover hover:scale-110 transition-transform duration-1000"
       />
     </div>
   </div>

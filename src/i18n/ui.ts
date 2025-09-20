@@ -85,6 +85,7 @@ export const routes = {
 		'sierra-nevada-desert': 'sierra-nevada-desert',
 		'leisure-cycling-italia': 'leisure-cycling-italia',
 		'leisure-cycling-spain': 'leisure-cycling-spain',
+		'gravel-bike-mtb-italia': 'gravel-bike-mtb-italia',
 	},
 	en: {
 		blog: 'blog',
@@ -131,5 +132,6 @@ export const routes = {
 		'sierra-nevada-desert': 'sierra-nevada-desert',
 		'leisure-cycling-italia': 'leisure-cycling-italia',
 		'leisure-cycling-spain': 'leisure-cycling-spain',
+		'gravel-bike-mtb-italia': 'gravel-bike-mtb-italia',
 	},
 } 

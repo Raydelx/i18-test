@@ -136,7 +136,7 @@
         "TOTAL_ASCENT": "Totale Stijging",
         "TOTAL_DESCENT": "Totale Daling",
         "ROUTE_TYPE": "Routetype",
-        "DURATION": "Duur",
+        "DURATION": "Route Duur",
         "DIFFICULTY": "Niveau",
         "PHYSICAL_DIFFICULTY": "Fysieke Niveau",
         "TECHNICAL_DIFFICULTY": "Technische Niveau"    
@@ -1617,13 +1617,14 @@
 
             "SIERRA_NEVADA":{
 
-                "TITLE": "Sierra Nevada Bergen E-bike Tour",
+                "TITLE": "MTB Sierra Nevada Bergen",
+                "SUBTITLE": "E-Bike Tour 1/2 dag",
                 "LOCATION": "Sierra Nevada",
 
                 "PRICE": "98",
                 "PRE_BOOKING": "98",
                 "MINUMUM_OF_PERSONS": "1",                
-                "DURATION": "6 Uur",
+                "DURATION": "5 Uur",
                 "TOUR_TYPE": "Geleid",
                 "SEASON": "Lente  Zomer  Herfst",
 
@@ -1691,7 +1692,8 @@
             },
 
             "MTB_SIERRA_NEVADA_DESERT" :{
-                "TITLE": "MTB Sierra Nevada Desert",
+                "TITLE": "MTB Sierra Nevada Woestijn",
+                "SUBTITLE": "E-Bike Tour 1 dag",
                 "LOCATION": "Sierra Nevada",
 
                 "PRICE": "110",
@@ -1711,12 +1713,11 @@
                 "INCLUDED": {
                     "TITLE": "Inclusief",
                     "TEXT_1": "Aansprakelijkheidsverzekering en bijstand",
-                    "TEXT_2": "Liability insurance and assistance",
-                    "TEXT_3": "Transfer",
-                    "TEXT_4": "E-bikee",
-                    "TEXT_5": "Helm en  handschoenen",
-                    "TEXT_6": "Snack en water",                                 
-                    "TEXT_7": "Professionele gids"                              
+                    "TEXT_2": "Transfer",
+                    "TEXT_3": "E-bike",
+                    "TEXT_4": "Helm en  handschoenen",
+                    "TEXT_5": "Snack en water",                                 
+                    "TEXT_6": "Professionele gids"                              
                 },
 
                 "AVAILABILITY":"Beschikbaarheid",
@@ -1931,6 +1932,11 @@
 
                 "WHAT_TO_EXPECT": "Wat te verwachten",
                 "WHAT_TO_EXPECT_TEXT_1": "Granada is een perfecte bestemming voor een fietsuitje, uitstekend voor een fietsvakantie. Er is een oneindigheid aan MTB-routes voor alle niveaus, van beginners tot gevorderde fietsers, met verschillende hellingen van uiteenlopende lengtes en een enorme variatie aan hoogteprofielen door een gebied met een grote diversiteit aan landschappen, van glooiende heuvels, dennenbossen, woestijnen en bergen tot de tropische kust. De MTB Escape Granada Tour neemt je mee op 3 gevarieerde routes. Behalve op de eerste dag worden de ritten 's ochtends georganiseerd, zodat je 's middags kunt ontspannen in je landelijke accommodatie. Op de eerste dag organiseren we een route in de middag. Er is de optie om de stad Granada te bezoeken en de vele culturele bezienswaardigheden en talloze tapasbars en restaurants te verkennen. Voor wie het Alhambra-paleis wil bezoeken, is er de mogelijkheid om de tour op de laatste dag in de ochtend te organiseren. Omdat het een tour van 4 dagen is, is de MTB Escape Granada ontworpen voor wie een pauze nodig heeft en een paar dagen vrij wil nemen voor mooie ritten. Voor niet-fietsende partners organiseren we extra activiteiten tijdens uw verblijf. Gemakkelijk te bereiken in Granada met ons georganiseerde vervoer, zowel vanaf de luchthaven Málaga als Granada. We hebben uitgebreide kennis van alle routes en stemmen elke rit af op de gasten om u een geweldige ervaring te garanderen. Doe mee en verken onze routes met uw vrienden of familie in de prachtige natuur van Granada."
+            },
+
+
+            "MTB_SARDINIA" : {
+                "TITLE": "MTB Tour Sardiníë 8 Dagen"
             }
 
         },

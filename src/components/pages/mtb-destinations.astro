@@ -25,7 +25,7 @@ const i18n = getI18N({ currentLocale });
       <Fragment slot="desc"></Fragment>
     </Sectionhead>
 
-    <div class="grid lg:grid-cols-2 gap-12 mt-16">
+    <div class="grid lg:grid-cols-3 gap-12 mt-16">
       <div class="grid grid-cols-1 content-center">
         <a href="">
           <img
@@ -48,6 +48,19 @@ const i18n = getI18N({ currentLocale });
           />
           <p class="text-center text-3xl font-bold">
             {i18n.DESTINATIONS_ANDALUSIA}
+          </p>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 content-center">
+        <a href={translatePath("gravel-bike-mtb-italia")}>
+          <img
+            class="duration-300 h-80 ob-cover p-6 ease-in-out hover:scale-105 text-center m-auto mb-4"
+            src="/destinations/italia.webp"
+            alt="Italia map 3D"
+          />
+          <p class="text-center text-3xl font-bold">
+            {i18n.DESTINATIONS_ITALY}
           </p>
         </a>
       </div>

@@ -1637,7 +1637,8 @@
 
             "SIERRA_NEVADA":{
 
-                "TITLE": "Sierra Nevada Mountains E-bike Tour",
+                "TITLE": "MTB Sierra Nevada Mountains",
+                "SUBTITLE":"E-Bike Tour 1/2 day",
                 "LOCATION": "Sierra Nevada",
 
                 "PRICE": "98",
@@ -1715,6 +1716,7 @@
 
             "MTB_SIERRA_NEVADA_DESERT": {
                 "TITLE": "MTB Sierra Nevada Desert",
+                "SUBTITLE":"E-Bike Tour 1 Day",
                 "LOCATION": "Sierra Nevada",
 
                 "PRICE": "110",
@@ -1738,7 +1740,7 @@
                     "TEXT_3": "E-bike",
                     "TEXT_4": "Helmet and gloves",
                     "TEXT_5": "Snack and water",
-                    "TEXT_7": "Professional guide"
+                    "TEXT_6": "Professional guide"
                 },
 
                 "AVAILABILITY": "Availability",
@@ -1960,6 +1962,10 @@
                 
 
                 
+            },
+
+            "MTB_SARDINIA" : {
+                "TITLE": "MTB Tour Sardinia 8 Days"
             }
 
         },
@@ -2205,7 +2211,7 @@
                  "TOTAL_ASCENT": "4000 m",
                  "TOTAL_DESCENT": "4760 m",
                  "ROUTE_TYPE": "Point to point",
-                 "DIFFICULTY": "3 - 4",
+                 "DIFFICULTY": "2",
 
                  "PHYSICAL_DIFFICULTY": "Physical Difficulty",
                  "TECHNICAL_DIFFICULTY": "Technical Difficulty",
