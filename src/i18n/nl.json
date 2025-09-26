@@ -293,7 +293,7 @@
         "BOOKING_STEPS_5": "5. Voorreservering",
         "BOOKING_STEPS_5_TEXT": "Na acceptatie van het reisvoorstel ontvangt u een proforma factuur met alle details van de reis en de betalingsvoorwaarden. Deze proforma factuur geldt als voorlopige bevestiging van uw boeking. Om uw boeking definitief te maken, vragen wij een aanbetaling van 20% van het totale bedrag binnen 15 dagen na ontvangst van de proforma factuur. Indien de aanbetaling niet op tijd wordt ontvangen, wordt het reisvoorstel automatisch geannuleerd zonder verdere kennisgeving. Na ontvangst van de aanbetaling ontvangt u een definitieve boekingsbevestiging per e-mail. Op dat moment is uw vakantie officieel geboekt.",
 
-        "BOOKING_STEPS_6": "6. Doe uw eerste betaling",
+        "BOOKING_STEPS_6": "6. Resterende saldo ",
         "BOOKING_STEPS_6_TEXT": "Het resterende saldo moet (afhankelijk van de voorwaarden) uiterlijk X weken voor vertrek op onze rekening staan. U ontvangt tijdig een herinnering met de betalingsgegevens.",
 
         "BOOKING_STEPS_7": "7. Ontvang boekingsbevestiging",
@@ -313,11 +313,11 @@
     },
     
     "ABOUT": {
-        "ABOUT": "Over",
+        "ABOUT": "Over ons",
         "TITLE": "Montaraz",
         "TITLE_1": "Buiten & Cultuur",
-        "SUBTITLE": "Montaraz Outdoors & Culture, gevestigd in Granada, in het zuiden van Spanje, is een Adventure Travel Company die gespecialiseerd is in Actieve Vakanties.",
-        "HERO_1": "De Grote Buitenlucht",
+        "SUBTITLE": "Montaraz Outdoors & Culture, gevestigd in Granada, in het zuiden van Spanje, is een Reisorganisatie gespecialiseerd in Actieve Vakanties",
+        "HERO_1": "The Great Outdoors",
         "HERO_1_TEXT": "Neem de tijd om te reizen",
         "HERO_2": "Nieuwe Ervaringen",
         "HERO_2_TEXT": "Ontdek onze echte outdoor reiservaringen geschikt voor iedereen die geniet van een actieve manier van reizen",
@@ -2417,10 +2417,10 @@
 
         "CULTURAL_TRAVELS": {
             "BREATHTAKING_ROAD_TRIP_ALPUJARRAS": {
-                "TITLE": "Een adembenemende roadtrip door de Alpujarras",
+                "TITLE": "Roadtrip Alpujarras",
                 "LOCATION": "Alpujarras Sierra Nevada",
 
-                "PRICE": "125 (4pax.)",
+                "PRICE": "125",
                 "PRE_BOOKING": "100%",
                 "MINUMUM_OF_PERSONS": "2",
                 "DURATION": "8 - 10 Uur",
@@ -2459,11 +2459,7 @@
                 "HIGHLIGHT_TEXT_6": "De brug van Tablate",
 
                 "PRICES": "Prijs:",
-                "PRICES_TEXT_1": "2 - 3 personen: 150 € p.p.",
-                "PRICES_TEXT_2": "4 - 5 personen: 125 € p.p.",
-                "PRICES_TEXT_3": "6 personen: 120 € p.p.",
-                "PRICES_TEXT_4": "7 personen: 110 € p.p.",
-                "PRICES_TEXT_5": "Voor gezinnen is er een korting.",
+                "PRICES_TEXT_1": "De prijs varieert afhankelijk van het aantal personen. We hanteren bovendien aangepaste tarieven voor families",
 
                 "WHAT_TO_EXPECT": "Wat te verwachten",
 

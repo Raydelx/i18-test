@@ -299,7 +299,7 @@
         "BOOKING_STEPS_5": "5. Pre-reservation",
         "BOOKING_STEPS_5_TEXT": "Upon acceptance of the travel proposal, you will receive a pro forma invoice with all the details of the trip and the payment terms. This pro forma invoice serves as a preliminary confirmation of your booking.To make your booking final, we require a deposit of 20% of the total amount, to be paid within 15 days of receiving the pro forma invoice. If the deposit is not received on time, the travel proposal will be automatically canceled without further notice. After receiving the deposit, you will receive a final booking confirmation by email. At that point, your holiday is officially booked.",
 
-        "BOOKING_STEPS_6": "6. Make Your Initial Payment",
+        "BOOKING_STEPS_6": "6. Remaining balance ",
         "BOOKING_STEPS_6_TEXT": "The remaining balance must be received in our account (depending on the terms) no later than X weeks before departure.You will receive a reminder with the payment details in due time.",
 
         "BOOKING_STEPS_7": "7. Receive Booking Confirmation",
@@ -323,7 +323,7 @@
         "ABOUT": "About",
         "TITLE": "Montaraz",
         "TITLE_1": "Outdoors & Culture",
-        "SUBTITLE": "Montaraz Outdoors & Culture, based in Granada, in southern Spain, is an Adventure Travel Company specializing in Active Holidays.",
+        "SUBTITLE": "Montaraz Outdoors & Culture, based in Granada, in southern Spain, is an Travel Agency specialized in Active Holidays",
         "HERO_1": "The Great Outdoors",
         "HERO_1_TEXT": "Take time to travel",
         "HERO_2": "New Experiences",
@@ -2468,10 +2468,10 @@
         "CULTURAL_TRAVELS": {
 
             "BREATHTAKING_ROAD_TRIP_ALPUJARRAS": {
-                "TITLE": "A breathtaking road trip through the Alpujarras",
+                "TITLE": "Roadtrip Alpujarras",
                 "LOCATION": "Alpujarras Sierra Nevada",
 
-                "PRICE": "125 (4pax.)",
+                "PRICE": "125",
                 "PRE_BOOKING": "100%",
                 "MINUMUM_OF_PERSONS": "2",
                 "DURATION": "8 - 10 Hours",
@@ -2510,11 +2510,7 @@
                 "HIGHLIGHT_TEXT_6": "The bridge of Tablate",
 
                 "PRICES": "Price:",
-                "PRICES_TEXT_1": "2 - 3 people: 150 € p.p.",
-                "PRICES_TEXT_2": "4 - 5 people: 125 € p.p.",
-                "PRICES_TEXT_3": "6 people: 120 € p.p.",
-                "PRICES_TEXT_4": "7 people: 110 € p.p.",
-                "PRICES_TEXT_5": "For families, there is a discount.",
+                "PRICES_TEXT_1": "Pricing depends on the number of people, with special consideration for families",
 
                 "WHAT_TO_EXPECT": "What to expect",
 
