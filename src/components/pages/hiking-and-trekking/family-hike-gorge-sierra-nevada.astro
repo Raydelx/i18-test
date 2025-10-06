@@ -233,11 +233,6 @@ const brings = [
             subtitle={i18n.PRODUCTS.HIKING_TREKKING
               .FAMILY_HIKE_GORGE_SIERRA_NEVADA.PHYSICAL_DIFFICULTY}
           />
-          <InformationProducts
-            title={i18n.INFO_PRODUCTS.TECHNICAL_DIFFICULTY}
-            subtitle={i18n.PRODUCTS.HIKING_TREKKING
-              .FAMILY_HIKE_GORGE_SIERRA_NEVADA.TECHNICAL_DIFFICULTY}
-          />
         </div>
       </div>
 
@@ -425,47 +420,6 @@ const brings = [
             }
           </p>
         </div>
-        <div class="flex flex-col gap-2 md:p-4">
-          <div>
-            <h3 class="text-4xl md:text-5xl xl:text-6xl font-bold">
-              {
-                i18n.PRODUCTS.HIKING_TREKKING.FAMILY_HIKE_GORGE_SIERRA_NEVADA
-                  .PRICES
-              }
-            </h3>
-            <Dots class="mb-4" />
-          </div>
-          <p class="text-gray-700">
-            {
-              i18n.PRODUCTS.HIKING_TREKKING.FAMILY_HIKE_GORGE_SIERRA_NEVADA
-                .PRICES_TEXT_1
-            }
-          </p>
-          <p class="text-gray-700">
-            {
-              i18n.PRODUCTS.HIKING_TREKKING.FAMILY_HIKE_GORGE_SIERRA_NEVADA
-                .PRICES_TEXT_2
-            }
-          </p>
-          <p class="text-gray-700">
-            {
-              i18n.PRODUCTS.HIKING_TREKKING.FAMILY_HIKE_GORGE_SIERRA_NEVADA
-                .PRICES_TEXT_3
-            }
-          </p>
-          <p class="text-gray-700">
-            {
-              i18n.PRODUCTS.HIKING_TREKKING.FAMILY_HIKE_GORGE_SIERRA_NEVADA
-                .PRICES_TEXT_4
-            }
-          </p>
-          <p class="text-gray-700">
-            {
-              i18n.PRODUCTS.HIKING_TREKKING.FAMILY_HIKE_GORGE_SIERRA_NEVADA
-                .PRICES_TEXT_5
-            }
-          </p>
-        </div>
       </div>
     </div>
 
@@ -482,6 +436,31 @@ const brings = [
 
     <!-- Button to download PDF -->
     <section class="grid md:grid-cols-2 gap-10">
+      <div>
+        <div class="flex flex-col gap-2 md:p-4">
+          <div>
+            <h3 class="text-4xl md:text-5xl xl:text-6xl font-bold">
+              {
+                i18n.PRODUCTS.HIKING_TREKKING.FAMILY_HIKE_GORGE_SIERRA_NEVADA
+                  .PRICES
+              }
+            </h3>
+          </div>
+          <p class="text-gray-700 text-lg">
+            {
+              i18n.PRODUCTS.HIKING_TREKKING.FAMILY_HIKE_GORGE_SIERRA_NEVADA
+                .PRICES_TEXT_1
+            }
+          </p>
+          <p class="text-gray-700 text-lg">
+            {
+              i18n.PRODUCTS.HIKING_TREKKING.FAMILY_HIKE_GORGE_SIERRA_NEVADA
+                .PRICES_TEXT_2
+            }
+          </p>
+        </div>
+      </div>
+      <Cancellation />
       <div class="">
         <h2
           class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
@@ -512,7 +491,32 @@ const brings = [
           }
         </p>
       </div>
-      <Cancellation />
+      <div>
+        <h2 class="text-4xl md:text-5xl xl:text-6xl font-bold mb-6">
+          {
+            i18n.PRODUCTS.HIKING_TREKKING.FAMILY_HIKE_GORGE_SIERRA_NEVADA
+              .DIFFICULTY
+          }
+        </h2>
+        <p class="text-gray-700 text-lg">
+          {
+            i18n.PRODUCTS.HIKING_TREKKING.FAMILY_HIKE_GORGE_SIERRA_NEVADA
+              .DIFFICULTY_1
+          }
+        </p>
+        <p class="text-gray-700 text-lg">
+          {
+            i18n.PRODUCTS.HIKING_TREKKING.FAMILY_HIKE_GORGE_SIERRA_NEVADA
+              .DIFFICULTY_2
+          }
+        </p>
+        <p class="text-gray-700 text-lg">
+          {
+            i18n.PRODUCTS.HIKING_TREKKING.FAMILY_HIKE_GORGE_SIERRA_NEVADA
+              .DIFFICULTY_3
+          }
+        </p>
+      </div>
     </section>
     <!-- Slider Photos -->
     <section class="m-auto md:w-full rounded-xl md:px-8 md:py-20">

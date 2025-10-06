@@ -1171,10 +1171,10 @@
 
                 "TITLE": "Koning van de Lage Bergen",
                 "LOCATION": "Nationaal Park Sierra Nevada",
-                "PRICE": "70 (4 pers.)",
+                "PRICE": "40 (7 pers.)",
                 "PRE_BOOKING": "100%",
                 "MINIMUM_OF_PERSONS": "2",
-                "DURATION": "6 Uur",
+                "DURATION": "5 Uur",
                 "TOUR_TYPE": "Geleid",
                 "SEASON": "Winter Lente Herfst",
 
@@ -1212,11 +1212,11 @@
                 "HIGHLIGHT_TEXT_2": "Dolomietlandschap",
                 "HIGHLIGHT_TEXT_3": "360º uitzichtpunt op 2.080 m",
 
-                "PRICES": "Prijs:",
-                "PRICES_TEXT_1": "2 - 4 personen: 70 € p.p.",
-                "PRICES_TEXT_2": "5 personen – 50 € p.p.",
-                "PRICES_TEXT_3": "6 personen – 45 € p.p.",
-                "PRICES_TEXT_4": "7 personen – 40 € p.p.",
+                "PRIJZEN": "Prijs:",
+                "PRIJZEN_TEXT_1": "2 - 4 personen - 70 € p.p.",
+                "PRIJZEN_TEXT_2": "5 personen - 50 € p.p.",
+                "PRIJZEN_TEXT_3": "6 personen - 45 € p.p.",
+                "PRIJZEN_TEXT_4": "7 personen - 40 € p.p.",
 
                 "WHAT_TO_BRING" : "Wat mee te nemen voor wandelen",
                 "WHAT_TO_BRING_TEXT_1" : "Het weer is belangrijk om rekening mee te houden bij het inpakken voor je buitenactiviteit. Je paklijst is gebaseerd op je comfort en gevoeligheid. Het dragen van laagjes kleding is de beste manier om te reizen en buiten te zijn. Het wordt sterk aanbevolen als de beste manier om warm en koel te blijven, aangezien het weer in de bergen onvoorspelbaar kan veranderen.",
@@ -1238,6 +1238,8 @@
                 "REQUIEREMENTS_TEXT_2":"Basis wandeluitrusting vereist. Goede wandelschoenen en wandelstokken aanbevolen.",
                 "REQUIEREMENTS_TEXT_3":"Minimumleeftijd: 12 jaar, gewend aan wandelen",
 
+                           
+
                 "WHAT_TO_EXPECT": "Wat te verwachten",
 
                  "DAY_1": {
@@ -1254,7 +1256,7 @@
 
                 "TITLE": "Familiewandeling - De Kloof van Sierra Nevada",
                 "LOCATION": "Monachil Sierra Nevada",
-                "PRICE": "70 (4 pers.)",
+                "PRICE": "40 (7 pers.)",
                 "PRE_BOOKING": "100%",
                 "MINIMUM_OF_PERSONS": "2",
                 "DURATION": "6 Uur",
@@ -1266,7 +1268,6 @@
                 "TOTAL_DESCENT": "400 m",
                 "ROUTE_TYPE": "Lusroute",
                 "PHYSICAL_DIFFICULTY": "B",
-                "TECHNICAL_DIFFICULTY": "B",
 
                  "INCLUDED": {
                     "TITLE": "Inbegrepen",
@@ -1296,12 +1297,7 @@
                 "HIGHLIGHT_TEXT_4": "De rivier Monachil",
                 "HIGHLIGHT_TEXT_5": "Prachtige uitzichten",
 
-                "PRICES": "Prijs:",
-                "PRICES_TEXT_1": "2 - 4 personen: 70 € p.p.",
-                "PRICES_TEXT_2": "5 personen – 50 € p.p.",
-                "PRICES_TEXT_3": "6 personen – 45 € p.p.",
-                "PRICES_TEXT_4": "7 personen – 40 € p.p.",
-                "PRICES_TEXT_5": "Voor gezinnen is er een korting.",
+                
 
                 "WHAT_TO_BRING" : "Wat mee te nemen voor wandelen",
                 "WHAT_TO_BRING_TEXT_1" : "Het weer is belangrijk om rekening mee te houden bij het inpakken voor je buitenactiviteit. Je paklijst is gebaseerd op je comfort en gevoeligheid. Het dragen van laagjes kleding is de beste manier om te reizen en buiten te zijn. Het wordt sterk aanbevolen als de beste manier om warm en koel te blijven, aangezien het weer in de bergen onvoorspelbaar kan veranderen.",
@@ -1321,6 +1317,16 @@
                 "REQUIEREMENTS_TEXT_1":"Fysieke conditie: normaal, gewend aan wandelen.",
                 "REQUIEREMENTS_TEXT_2":"Basis wandeluitrusting vereist. Goede wandelschoenen.",
                 "REQUIEREMENTS_TEXT_3":"Minimumleeftijd: 8 jaar, gewend aan wandelen.",
+
+                "DIFFICULTY":"Moeilijkheid - Basis",
+                "DIFFICULTY_1":"Dit pad is geschikt voor mensen die gewend zijn aan wandelen.",
+                "DIFFICULTY_2":"Terrein: Wandelen op paden met treden en oneffen terrein met stukken waar je onder uitstekende rotsen moet kruipen langs de rand van de kloof, en metalen handgrepen in de rots om je te helpen passeren.",
+                "DIFFICULTY_3":"Als je vragen hebt over de moeilijkheidsgraad, neem dan gerust contact met ons op.",
+
+
+                "PRICES": "Prijs:",
+                "PRICES_TEXT_1": "Onze prijzen voor wandeltochten variëren afhankelijk van het aantal deelnemers. Dit helpt ons eerlijke en flexibele prijzen aan te bieden, terwijl we een hoogwaardige, persoonlijke ervaring voor elke groep garanderen.",
+                "PRICES_TEXT_2": "Speciale tarieven zijn beschikbaar voor families en grotere groepen. Neem contact met ons op voor meer informatie.",
 
                 "WHAT_TO_EXPECT": "Wat te verwachten",
 

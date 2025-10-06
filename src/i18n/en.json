@@ -1195,10 +1195,10 @@
 
                 "TITLE": "King of The Low Mountains",
                 "LOCATION": "Sierra Nevada National Park",
-                "PRICE": "70 (4 pax.)",
+                "PRICE": "40 (7 pax.)",
                 "PRE_BOOKING": "100%",
                 "MINIMUM_OF_PERSONS": "2",
-                "DURATION": "6 Hours",
+                "DURATION": "5 Hours",
                 "TOUR_TYPE": "Guided",
                 "SEASON": "Winter Spring Autumn",
 
@@ -1278,10 +1278,10 @@
 
                 "TITLE": "Family Hike - The Gorge of Sierra Nevada",
                 "LOCATION": "Monachil Sierra Nevada",
-                "PRICE": "70 (4 pax.)",
+                "PRICE": "40 (7 pax.)",
                 "PRE_BOOKING": "100%",
                 "MINIMUM_OF_PERSONS": "2",
-                "DURATION": "6 Hours",
+                "DURATION": "5 Hours",
                 "TOUR_TYPE": "Guided",
                 "SEASON": "All Year",
 
@@ -1290,9 +1290,8 @@
                 "TOTAL_DESCENT": "400 m",
                 "ROUTE_TYPE": "Loop Trial",
                 "PHYSICAL_DIFFICULTY": "B",
-                "TECHNICAL_DIFFICULTY": "B",
 
-                 "INCLUDED": {
+                "INCLUDED": {
                     "TITLE": "Included",
                     "TEXT_1": "Qualified Mountain Leader",
                     "TEXT_2": "Liability insurance and assistance",
@@ -1321,12 +1320,7 @@
                 "HIGHLIGHT_TEXT_4": "The river Monachil",
                 "HIGHLIGHT_TEXT_5": "Excellent views",
                 
-                "PRICES": "Price:",
-                "PRICES_TEXT_1": "2 - 4 people - 70 € p.p.",
-                "PRICES_TEXT_2": "5 people - 50 € p.p",
-                "PRICES_TEXT_3": "6 people - 45 € p.p",
-                "PRICES_TEXT_4": "7 people - 40 € p.p",
-                "PRICES_TEXT_5": "For families, there is a discount.",
+              
 
                 "WHAT_TO_BRING" : "What to bring for Hiking",
                 "WHAT_TO_BRING_TEXT_1" : "Weather is important to consider while packing for your outdoor activity. Your packing list is based on your comfort and sensitivity. Layering your clothes is the best way to travel and be outdoors. It is highly recommended as the best way to stay warm and cool, as the weather is bound to change in the mountains.",
@@ -1347,11 +1341,22 @@
                 "REQUIEREMENTS_TEXT_2":"Basic hiking gear is required. Good hiking boots",
                 "REQUIEREMENTS_TEXT_3":"Minimum age: 8 years old with the habit of walking",
 
+                "DIFFICULTY":"Difficulty - Basic ",
+                "DIFFICULTY_1":"This trail is suitable for people who are used to walking.",
+                "DIFFICULTY_2":"Terrain: Walking on stepped paths and uneven terrain with sections where you need to scramble under overhanging rocks along the side of the gorge, and metal handles set into the rock to help you pass. ",
+                "DIFFICULTY_3":"If you have any questions about the difficulty, do not hesitate to contact us. ",
+
+                "PRICES": "Price:",
+                "PRICES_TEXT_1": "Our hiking tour prices vary depending on the number of participants. This helps us offer fair and flexible pricing, while ensuring a high-quality, personalized experience for every group.  ",
+                "PRICES_TEXT_2": "Special pricing is available for families and larger groups. Contact us for more information.  ",
+               
+                
+
                 "WHAT_TO_EXPECT": "What to expect",
 
                  "DAY_1": {
 
-                    "TITLE": "Day 1",
+                    "TITLE": " 1",
                     "TEXT_1": "We drive to the village Monachil, located in a fertile valley of the Sierra Nevada Mountain Range at 800 meters above sea level, just outside Granada. The walking path, called Cahorros Trail, is a hiking path in the lower hills of Sierra Nevada National Park. The trail starts in the village following the river up toward the entrance of the narrow gorge. The way becomes a succession of stairs, crawling under overhanging rocks, and crossing hanging bridges along a cascading river through the canyon that creates rockpools and caves, making the walk an adventure for the whole family. At the end of the gorge, we return by a higher route, from which you get stunning views of the lush Monachil Valley. A great escape from the city and a perfect family day out in the mountains!"
                     
                 }
