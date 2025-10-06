@@ -22,6 +22,7 @@
 
     "MTB_DESTINATIONS": "MTB Bestemmingen",
     "TOUR_DESTINATIONS": "Tourfiets Bestemmingen",
+    "ROAD_DESTINATIONS": "Roadtrip Bestemmingen",
 
     "CARDS_HOME":{
 
@@ -2415,7 +2416,117 @@
         },
 
 
-        "CULTURAL_TRAVELS": {
+        "ROAD_TRIPS": {
+
+            
+
+            "ROADTRIP_ANDALUSIA": {
+                "TITLE": "Roadtrip Andalusië",
+                "LOCATION": "Andalusië",
+
+                "WHAT_TO_EXPECT_1": "Wat te verwachten",
+                "WHAT_TO_EXPECT_2": "Ontdek de ziel van Zuid-Spanje – van bruisende steden tot landelijke charme. Een reis vol cultuur, gastronomie en ontdekking – jouw Andalusië-avontuur begint hier.",
+                "WHAT_TO_EXPECT_3": "Deze op maat gemaakte roadtrip is ontworpen met slow travel in gedachten, zodat je echt de tijd kunt nemen, de omgeving kunt ervaren en Andalusië op een ontspannen tempo kunt beleven. In plaats van te haasten van hoogtepunt naar hoogtepunt, moedigt het reisschema langere verblijven, ongedwongen verkenning en diepere verbindingen met de lokale cultuur en landschappen aan.",
+                "WHAT_TO_EXPECT_4": "Ga op een boeiende reis door Andalusië, waar eeuwenoude geschiedenis, rijke tradities en adembenemende landschappen samenkomen. Je hebt de vrijheid om de regio in je eigen tempo te verkennen — van majestueuze Moorse steden tot witgekalkte dorpen in de heuvels.",
+                "WHAT_TO_EXPECT_5": "Of je nu wordt aangetrokken door iconische bezienswaardigheden zoals het Alhambra en de Mezquita, of liever rustige plattelandswegen en authentieke lokale smaken ontdekt, deze roadtrip combineert cultuur, gastronomie en actieve reizen tot één onvergetelijke ervaring.",
+                "WHAT_TO_EXPECT_6": "Wij plannen de essentie, maar alles is flexibel: kies je tempo, bepaal je stops en geniet van de reis op jouw manier tijdens je self-drive avontuur.",
+                "WHAT_TO_EXPECT_7": "Beginnend in Málaga en doorlopend via Granada, Córdoba en Ronda is deze route volledig aanpasbaar. Voeg extra dagen toe, ontdek verborgen parels en vorm de reis naar jouw persoonlijke stijl — met het comfort van zorgvuldig geselecteerde accommodaties en lokale tips.",
+                "WHAT_TO_EXPECT_8": "Om je gemakkelijk te laten navigeren, bieden we een gepersonaliseerd digitaal roadbook met GPS-tracks en lokale inzichten, met unieke stops en uitleg over het landschap, de cultuur en de geschiedenis van de regio. De route volgt authentieke, lokale paden — ver weg van de toeristische drukte — zodat je het echte Andalusië proeft.",
+                "WHAT_TO_EXPECT_9": "Deze op maat gemaakte roadtrip is ontworpen met slow travel in gedachten.",
+                "WHAT_TO_EXPECT_10": "Deze reis is een mix van cultuur, gastronomie en actieve ervaringen — perfect voor nieuwsgierige reizigers die meer willen dan alleen sightseeing.",
+                "WHAT_TO_EXPECT_11": "De roadtrip is inclusief huurauto, zodat je volledig flexibel bent om in je eigen tempo te reizen, met gedetailleerde routes, zorgvuldig geselecteerde accommodaties en lokale aanbevelingen van ons.",
+                "WHAT_TO_EXPECT_12": "Of je nu 8, 10 of zelfs 15 dagen hebt, wij ontwerpen het reisschema op maat van jouw reistijd en interesses.",
+                "WHAT_TO_EXPECT_13": "Flexibiliteit om de reis te starten in Málaga of een andere locatie.",
+                "WHAT_TO_EXPECT_14": "Voeg optionele activiteiten toe zoals begeleide tours, flamencoshows, wijnproeverijen, olijfolie-ervaringen, wandelingen of fietsexcursies om je reis te verrijken.",
+                "WHAT_TO_EXPECT_15": "Een gepersonaliseerd digitaal roadbook met GPS-tracks en lokale tips, met unieke stops en uitleg over het landschap, de cultuur en de geschiedenis van de regio.",
+
+                "TAILORED_1": "Op maat voor elk type reiziger",
+                "TAILORED_2": "🔹Honeymooners op zoek naar romantische landschappen, charmante dorpen en onvergetelijke zonsondergangen",
+                "TAILORED_3": "🔹Stellen die een balans zoeken tussen cultuur, natuur en slow travel",
+                "TAILORED_4": "🔹Vrienden die samen memorabele avonturen en verborgen parels willen ontdekken",
+                "TAILORED_5": "🔹Gezinnen die flexibiliteit, variatie en authentieke lokale ervaringen willen",
+
+                "BEST_TIME_1": "Beste reistijd voor Andalusië",
+                "BEST_TIME_2": "De beste tijd voor een roadtrip door Andalusië is in de lente en herfst, wanneer de temperaturen zeer aangenaam zijn (18–25 °C). In juli en augustus kan het erg heet worden, van 35 °C aan de kust tot 40 °C in het binnenland. De wintermaanden zijn ook een goede tijd om te bezoeken. Je hebt meer kans op regen, maar het weer blijft meestal aangenaam, vooral overdag. Ochtenden en avonden kunnen fris zijn, maar steden als Málaga en Sevilla genieten nog steeds van dagtemperaturen rond de 18–20 °C.",
+
+                "INCLUDED_1": "Inbegrepen",
+                "INCLUDED_2": "Aansprakelijkheidsverzekering en assistentie",
+                "INCLUDED_3": "Persoonlijke service voor en tijdens de reis – 24/7 ondersteuning",
+                "INCLUDED_4": "Huurauto voor de hele reis (na bevestiging)",
+                "INCLUDED_5": "Zorgvuldig geselecteerde landelijke accommodaties",
+                "INCLUDED_6": "Dagelijks ontbijt",
+                "INCLUDED_7": "Flexibiliteit om de reis te starten in Málaga of een andere locatie",
+                "INCLUDED_8": "Reisbrochure met gepersonaliseerde routevoorstellen met culturele, culinaire en natuurhoogtepunten",
+                "INCLUDED_9": "Een gepersonaliseerd digitaal roadbook met GPS-tracks en lokale tips",
+
+                "NOT_INCLUDED_1": "Niet inbegrepen",
+                "NOT_INCLUDED_2": "Vlucht",
+                "NOT_INCLUDED_3": "Reis- & assistentieverzekering",
+                "NOT_INCLUDED_4": "Annuleringsverzekering",
+                "NOT_INCLUDED_5": "Diner",
+                "NOT_INCLUDED_6": "Extra maaltijden",
+                "NOT_INCLUDED_7": "Extra excursies",
+                "NOT_INCLUDED_8": "Extra nachten",
+                "NOT_INCLUDED_9": "Persoonlijke uitgaven",
+                "NOT_INCLUDED_10": "Fooien",
+                "NOT_INCLUDED_11": "Privévervoer",
+
+                "BUILDING_BLOCK_1": "Bouwstenen",
+                "BUILDING_BLOCK_2": "Op maat gemaakte extra’s voor jouw reis",
+                "BUILDING_BLOCK_3": "Tijdens je vakantie kun je bouwstenen toevoegen — optionele activiteiten die je reis nog persoonlijker maken. Wat zijn bouwstenen? Dit zijn op maat gemaakte ervaringen die je kunt toevoegen op basis van je interesses, zoals:",
+                "BUILDING_BLOCK_4": "Culturele excursies",
+                "BUILDING_BLOCK_5": "Extra wandel- of fietstochten",
+                "BUILDING_BLOCK_6": "Wellnessmomenten zoals een hammambezoek of massage",
+                "BUILDING_BLOCK_7": "Restaurantreserveringen of een flamencoshow",
+                "BUILDING_BLOCK_8": "Deze bouwstenen kunnen tijdens je verblijf besproken en geregeld worden, afhankelijk van beschikbaarheid en jouw voorkeuren.",
+
+                "RENTAL_CAR_1": "Huurauto",
+                "RENTAL_CAR_2": "De beste manier om Spanje te ervaren is door er zelf doorheen te rijden. De wegen zijn goed, het is veilig en je hebt de vrijheid om te bepalen waar je stopt en welke route je neemt. Het is makkelijk om van de gebaande paden af te wijken en je bent van niemand afhankelijk.",
+                "RENTAL_CAR_3": "Inbegrepen na bevestiging. Een huurauto is inbegrepen in je Andalusië Roadtrip-pakket zodra we je bevestiging ontvangen. Voor je roadtrip door Andalusië is een huurauto essentieel — en wij regelen deze graag voor je. Wij verzorgen de huur op basis van jouw voorkeuren. De prijs varieert afhankelijk van het type auto. Je kunt er ook voor kiezen om zelf je huur te regelen.",
+
+                "CHARMING_1": "Charmante landelijke accommodaties",
+                "CHARMING_2": "Onze geselecteerde accommodaties voor deze roadtrip zijn authentieke landelijke verblijven, net buiten de grote steden. Deze zorgvuldig gekozen locaties bieden rust, lokale charme en een diepere verbinding met het Andalusische landschap en cultuur.",
+                "CHARMING_3": "We begrijpen echter dat elke reiziger anders is. Als je liever in het stadscentrum verblijft — bijvoorbeeld om te genieten van de levendige sfeer van Sevilla vanuit een centraal gelegen hotel — adviseren en regelen we graag alternatieve accommodaties die beter bij jouw wensen passen.",
+                "CHARMING_4": "Jouw comfort en ervaring staan voorop, en we zijn flexibel in het creëren van het perfecte verblijf voor jouw reis.",
+
+                "SUGGESTED_ROUTE_1": "Voorgestelde route & hoogtepunten",
+                "SUGGESTED_ROUTE_2": "Flexibel reisschema – op maat van jouw reistijd",
+                "SUGGESTED_ROUTE_3": "Een van de voorgestelde routes is een 15-daagse roadtrip voor de meest complete Andalusië-ervaring, met iconische steden en prachtige landelijke landschappen. Het reisschema kan eenvoudig worden aangepast voor kortere reizen, zoals 8 of 10 dagen, afhankelijk van jouw beschikbaarheid en interesses.",
+                "SUGGESTED_ROUTE_4": "In het hele reisschema vind je ook een lijst met optionele activiteiten — van culturele bezoeken tot outdoor excursies — die je kunt toevoegen om je reis nog persoonlijker te maken.",
+
+                "EXAMPLE_1": "Voorbeeldprogramma",
+                "EXAMPLE_2": "Dit programma is een suggestie en kan eenvoudig worden aangepast aan jouw voorkeuren. Wil je bijvoorbeeld een rustiger tempo, dan kunnen we twee nachten op één locatie regelen zodat je meer tijd hebt om te ontspannen en op je eigen ritme te verkennen.",
+                "EXAMPLE_3": "Dag 1 – Aankomst in Málaga & rit naar Granada via het witte dorp Frigiliana",
+                "EXAMPLE_4": "Dag 2 – Ontdek Granada: Het Alhambra, Moorse wijken & het lokale leven",
+                "EXAMPLE_5": "Dag 3 – Verken de omgeving van Granada: Bergen, kloven en olijfgaarden",
+                "EXAMPLE_6": "Dag 4 – Door de Alpujarras en overnachten in de Sierra Nevada",
+                "EXAMPLE_7": "Dag 5 – Guadix grotwoningen en de Gorafe-woestijn",
+                "EXAMPLE_8": "Dag 6 – Úbeda: Renaissancepracht",
+                "EXAMPLE_9": "Dag 7 – De Mezquita van Córdoba",
+                "EXAMPLE_10": "Dag 8 – Scenic Drive Natuurpark Subbética",
+                "EXAMPLE_11": "Dag 9 – Iznájar – Priego de Córdoba – Antequera",
+                "EXAMPLE_12": "Dag 10 – Antequera: Megalithische monumenten & natuurwonderen",
+                "EXAMPLE_13": "Dag 11 – Door de kloof van el Caminito del Rey",
+                "EXAMPLE_14": "Dag 12 – Ontdek Ronda – geschiedenis, uitzicht & wijngaardvalleien",
+                "EXAMPLE_15": "Dag 13 – Málaga – van bergen naar de Middellandse Zee",
+                "EXAMPLE_16": "Dag 14: Málaga",
+                "EXAMPLE_17": "Dag 15: Vertrek vanuit Málaga",
+
+                "TRAVELING_1": "Reis je met een groep?",
+                "TRAVELING_2": "Roadtrip biedt ook groepsarrangementen met een professionele gids die lokale cultuur en verhalen tot leven brengt."
+            },
+
+        "ROADTRIP_SARDINIA": {
+            "TITLE": "Roadtrip Sardinië",
+            "LOCATION": "Sardinïe"
+        },
+
+        "ROADTRIP_NORTHERN_SPAIN": {
+            "TITLE": "Roadtrip Noord-Spanje",
+            "LOCATION": "Noord-Spanje"
+        },
+
+
             "BREATHTAKING_ROAD_TRIP_ALPUJARRAS": {
                 "TITLE": "Roadtrip Alpujarras",
                 "LOCATION": "Alpujarras Sierra Nevada",

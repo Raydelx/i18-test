@@ -22,6 +22,7 @@
 
     "MTB_DESTINATIONS": "MTB Destinations",
     "TOUR_DESTINATIONS": "Tour Bike Destinations",
+    "ROAD_DESTINATIONS": "Road Trips Destinations",
 
     "CARDS_HOME":{
 
@@ -2465,7 +2466,116 @@
              }
         },
 
-        "CULTURAL_TRAVELS": {
+        "ROAD_TRIPS": {
+
+            
+
+            "ROADTRIP_ANDALUSIA":{
+                "TITLE": "Roadtrip Andalusia",
+                "LOCATION": "Andalusia",
+
+                "WHAT_TO_EXPECT_1": "What to expect",
+                "WHAT_TO_EXPECT_2": "Discover the soul of Southern Spain – from vibrant cities to rural charm. A journey of culture, cuisine, and discovery – your Andalusian  adventure starts here",
+                "WHAT_TO_EXPECT_3": "This tailor-made road trip is designed with slow travel in mind, allowing you to truly take your time, soak in the surroundings, and experience Andalusia at a relaxed pace. Instead of rushing from one highlight to the next, the itinerary encourages longer stays, unhurried exploration, and deeper connections with local culture and landscapes.",
+                "WHAT_TO_EXPECT_4": "Embark on a captivating journey through Andalusia, where centuries of history, rich traditions, and breathtaking landscapes come together. you the freedom to explore the region at your own pace — from majestic Moorish cities to whitewashed villages nestled in the hills.",
+                "WHAT_TO_EXPECT_5": "Whether you're drawn to iconic sites like the Alhambra and the Mezquita, or prefer quiet countryside roads and authentic local flavors, this road trip blends culture, gastronomy, and active travel into one unforgettable experience.",
+                "WHAT_TO_EXPECT_6": "We’ve planned the essentials, but everything is flexible: choose your pace, pick your stops, and enjoy the journey your way on your self-drive adventure.",
+                "WHAT_TO_EXPECT_7": "Starting in Málaga and stretching across Granada, Córdoba, and Ronda, this itinerary is entirely customizable. Add extra days, explore hidden gems, and shape the journey to reflect your personal travel style — with the comfort of hand-picked accommodations and local insights to guide you.",
+                "WHAT_TO_EXPECT_8": "To help you navigate with ease, we provide a personalized digital roadbook with GPS tracks and local insights, highlighting unique stops and explaining the landscape, culture, and history of the region. The route follows authentic, local trails — far from the tourist crowds — offering you a real taste of Andalusia.",
+                "WHAT_TO_EXPECT_9": "This tailor-made road trip is designed with slow travel in mind",
+                "WHAT_TO_EXPECT_10": "This trip is a blend of culture, gastronomy, and active experiences — perfect for curious travelers who want more than just sightseeing.",
+                "WHAT_TO_EXPECT_11": "The road trip includes a rental car, giving you full flexibility to travel at your own pace, with detailed routes, handpicked accommodations, and local recommendations provided by us.",
+                "WHAT_TO_EXPECT_12": "Whether you have 8, 10, or even 15 days, we design the itinerary to suit your travel time and interests.",
+                "WHAT_TO_EXPECT_13": "Flexibility to start the trip in Málaga or another location.",
+                "WHAT_TO_EXPECT_14": "Add optional activities like guided tours, flamenco shows, wine tastings, olive oil experiences, hikes, or bike excursions to enrich your trip.",
+                "WHAT_TO_EXPECT_15": "A personalized digital roadbook with GPS tracks and local insights, highlighting unique stops and explaining the landscape, culture, and history of the region.",
+
+                "TAILORED_1" : "Tailored for every kind of traveler",
+                "TAILORED_2" : "🔹Honeymooners looking for romantic landscapes, charming villages, and unforgettable sunsets",
+                "TAILORED_3" : "🔹 Couples seeking a balance of culture, nature, and slow travel",
+                "TAILORED_4" : "🔹Friends eager to share memorable adventures and hidden gems",
+                "TAILORED_5" : "🔹Families who want flexibility, variety, and authentic local experiences",
+
+                "BEST_TIME_1": "Best time to travel to Andalusia",
+                "BEST_TIME_2": "The best time for a road trip through Andalusia is during spring and autumn, when temperatures are very pleasant (18–25 °C). In July and August, it can get very hot, from 35 °C along the coast to 40 °C inland. The winter months are also a great time to visit. You may have a higher chance of rain, but the weather generally remains pleasant, especially during the day. Mornings and evenings can be quite chilly, but cities like Málaga and Seville still enjoy daytime temperatures of around 18–20 °C.",
+
+                "INCLUDED_1": "Included",
+                "INCLUDED_2": "Liability insurance and assistance",
+                "INCLUDED_3": "Personal service before and during the trip – 24/7 support",
+                "INCLUDED_4": "Rental car for the entire journey (upon confirmation)",
+                "INCLUDED_5": "Carefully selected rural accommodations",
+                "INCLUDED_6": "Daily breakfast",
+                "INCLUDED_7": "Flexibility to start the trip in Málaga or another location",
+                "INCLUDED_8": "Travel brochure with personalized route suggestions with cultural, culinary, and nature highlights",
+                "INCLUDED_9": "A personalized digital roadbook with GPS tracks and local insights",
+
+                "NOT_INCLUDED_1": "Not included",
+                "NOT_INCLUDED_2": "Flights",
+                "NOT_INCLUDED_3": "Travel & assistance insurance",
+                "NOT_INCLUDED_4": "Cancellation insurance",
+                "NOT_INCLUDED_5": "Dinner",
+                "NOT_INCLUDED_6": "Extra meals",
+                "NOT_INCLUDED_7": "Extra excursions",
+                "NOT_INCLUDED_8": "Extra nights",
+                "NOT_INCLUDED_9": "Personal expenses",
+                "NOT_INCLUDED_10": "Tips",
+                "NOT_INCLUDED_11": "Private transport",
+
+                "BUILDING_BLOCK_1": "Building Blocks",
+                "BUILDING_BLOCK_2": "Tailored Extras for Your Trip",
+                "BUILDING_BLOCK_3": "During your holiday, there’s room to add building blocks — optional activities that you can choose to make your trip even more personal. What are building blocks? These are customized experiences you can add based on your interests, such as:",
+                "BUILDING_BLOCK_4": "Cultural excursions",
+                "BUILDING_BLOCK_5": "Additional hiking or cycling trips",
+                "BUILDING_BLOCK_6": "Wellness moments like a hammam visit or massage",
+                "BUILDING_BLOCK_7": "Restaurant bookings or a flamenco show",
+                "BUILDING_BLOCK_8": "These building blocks can be discussed and arranged during your stay, depending on availability and your preferences.",
+
+                "RENTAL_CAR_1": "Rental Car",
+                "RENTAL_CAR_2": "The best way to experience Spain is by driving through it yourself. The roads are in good condition, it's safe, and you have the freedom to decide where to stop and which route to take. It’s easy to venture off the beaten path, and you’re not dependent on anyone.",
+                "RENTAL_CAR_3": "Included Upon Confirmation. A rental car is included in your Andalusia Road Trip package after we receive your confirmation. For your road trip through Andalusia, a rental car is essential—and we’re happy to organize it for you. We take care of organizing the rental for you, based on your preferences. The rental price varies depending on the type of car. If you prefer, you also have the option to arrange your rental independently.",
+
+                "CHARMING_1" : "Charming Rural Accommodations",
+                "CHARMING_2" : "Our selected accommodations for this road trip are authentic rural stays, located just outside the main cities. These handpicked lodgings offer peace, local charm, and a deeper connection with the Andalusian landscape and culture.",
+                "CHARMING_3" : "However, we understand that every traveler is different. If you prefer to stay within the city center—for example, enjoying the vibrant atmosphere of Seville from a centrally located hotel—we’re happy to recommend and arrange alternative accommodations that better suit your preferences.",
+                "CHARMING_4" : "Your comfort and experience come first, and we’re flexible in creating the perfect stay for your journey.",
+                
+                "SUGGESTED_ROUTE_1" : "Suggested Route & Highlights",
+                "SUGGESTED_ROUTE_2" : "Flexible Itinerary – Tailored to Your Travel Time",
+                "SUGGESTED_ROUTE_3" : "One of the suggested route is a 15-day road trip to give you the most complete experience of Andalusia, combining iconic cities and stunning rural landscapes. However, the itinerary can be easily adjusted for shorter trips, such as 8 or 10 days, depending on your availability and interests.",
+                "SUGGESTED_ROUTE_4" : "Throughout the itinerary, we also include a list of optional activities—from cultural visits to outdoor excursions—that you can add to personalize your journey even further.",
+                
+                "EXAMPLE_1" : "Example Program",
+                "EXAMPLE_2" : "This program is a suggested outline and can be easily adjusted to suit your preferenses. For example, if you'd like a more relaxed pace, we can arrange to stay two nights in one location, giving you more time to relax and explore at your own rhythm.",
+                "EXAMPLE_3" : "Day 1 – Arrival in Málaga & Drive to Granada via the white village Frigiliana",
+                "EXAMPLE_4" : "Day 2 – Explore Granada: The Alhambra, Moorish Quarters & Local Life",
+                "EXAMPLE_5" : "Day 3 – Explore Granada’s Surroundings: Mountains, Canyons, and Olive Groves",
+                "EXAMPLE_6" : "Day 4 – Across the Alpujarras and stay the night in the Sierra Nevada mountains",
+                "EXAMPLE_7" : "Day 5 – Guadix Caves and The Gorafe Desert",
+                "EXAMPLE_8" : "Day 6 – Úbeda: Renaissance Splendor",
+                "EXAMPLE_9" : "Day 7 – The Mezquita of Córdoba",
+                "EXAMPLE_10" : "Day 8 – Scenic Drive Natural Park Subbética",
+                "EXAMPLE_11" : "Day 9 – Iznájar – Priego de Córdoba – Antequera",
+                "EXAMPLE_12" : "Day 10 – Antequera: Megalithic Monuments & Natural Wonders",
+                "EXAMPLE_13" : "Day 11 – Through the Gorge of el Caminito del Rey",
+                "EXAMPLE_14" : "Day 12 – Explore Ronda – History, Views & Vineyard Valleys",
+                "EXAMPLE_15" : "Day 13 – Málaga – From Mountains to the Mediterranean",
+                "EXAMPLE_16" : "Day 14: Málaga",
+                "EXAMPLE_17" : "Day 15: Departure from Málaga",
+
+                "TRAVELING_1" : "Traveling as a Group?",
+                "TRAVELING_2" : "RoadTrip also offers group packages complete with a professional tour guide who brings local culture and stories to life."
+
+            },
+
+            "ROADTRIP_SARDINIA": {
+                "TITLE": "Roadtrip Sardinia",
+                "LOCATION": "Sardinia"
+            },
+
+            "ROADTRIP_NORTHERN_SPAIN": {
+                "TITLE": "Roadtrip Northern Spain",
+                "LOCATION": "Northern Spain"
+            },
 
             "BREATHTAKING_ROAD_TRIP_ALPUJARRAS": {
                 "TITLE": "Roadtrip Alpujarras",

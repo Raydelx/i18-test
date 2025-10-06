@@ -1,0 +1,452 @@
+---
+import Container from "@/components/container.astro";
+import InformationProducts from "@/components/ui/informationProducts.astro";
+import Icon from "@/components/Icon.astro";
+import Layout from "@/layouts/Layout.astro";
+import SliderReact from "@/hooks/SliderReact";
+import Days from "@/components/products-components/days.astro";
+import Includes from "@/components/products-components/includes.astro";
+import Cancellation from "@/components/products-components/cancellation.astro";
+import Dots from "@/components/ui/dots.astro";
+
+import { getI18N } from "@/i18n/";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+
+// Duplica y cambia las rutas para añadir o modificar las fotos
+
+const IMG = [
+  {
+    src: "/roadtrips/andalucia/roadtrip-andalucia/rta-1.webp",
+  },
+  {
+    src: "/roadtrips/andalucia/roadtrip-andalucia/rta-2.webp",
+  },
+  {
+    src: "/roadtrips/andalucia/roadtrip-andalucia/rta-3.webp",
+  },
+  {
+    src: "/roadtrips/andalucia/roadtrip-andalucia/rta-4.webp",
+  },
+  {
+    src: "/roadtrips/andalucia/roadtrip-andalucia/rta-5.webp",
+  },
+  {
+    src: "/roadtrips/andalucia/roadtrip-andalucia/rta-6.webp",
+  },
+  {
+    src: "/roadtrips/andalucia/roadtrip-andalucia/rta-7.webp",
+  },
+];
+const DAYS = [
+  {
+    day: "1",
+    description:
+      i18n.PRODUCTS.ROAD_TRIPS.BREATHTAKING_ROAD_TRIP_ALPUJARRAS.DAYS.DAY_1
+        .TEXT_1,
+    description2:
+      i18n.PRODUCTS.ROAD_TRIPS.BREATHTAKING_ROAD_TRIP_ALPUJARRAS.DAYS.DAY_1
+        .TEXT_2,
+    description3:
+      i18n.PRODUCTS.ROAD_TRIPS.BREATHTAKING_ROAD_TRIP_ALPUJARRAS.DAYS.DAY_1
+        .TEXT_3,
+    description4:
+      i18n.PRODUCTS.ROAD_TRIPS.BREATHTAKING_ROAD_TRIP_ALPUJARRAS.DAYS.DAY_1
+        .TEXT_4,
+    description5:
+      i18n.PRODUCTS.ROAD_TRIPS.BREATHTAKING_ROAD_TRIP_ALPUJARRAS.DAYS.DAY_1
+        .TEXT_5,
+    description6:
+      i18n.PRODUCTS.ROAD_TRIPS.BREATHTAKING_ROAD_TRIP_ALPUJARRAS.DAYS.DAY_1
+        .TEXT_6,
+    tecnicalInfo: false,
+  },
+];
+---
+
+<Layout title="Gravel Bike / MTB">
+  <Container>
+    <main class="mt-16">
+      <!-- Foto, nombre y destino -->
+
+      <div
+        class="bg-bottom bg-no-repeat bg-[url('/roadtrips/andalucia/roadtrip-andalucia/rta-principal.webp')] bg-cover h-[25rem] rounded-2xl">
+        <div class="flex flex-col justify-end h-full p-6 w-auto">
+          <div class="flex gap-2">
+            <Icon icon="destiny-logo" size="1.6rem" color="white" />
+            <p
+              class="text-xl font-normal text-white lg:text-2xl flex flex-col justify-end h-full [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
+              {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.LOCATION}
+            </p>
+          </div>
+
+          <h1
+            class="text-3xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-5xl [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
+            {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.TITLE}
+          </h1>
+        </div>
+      </div>
+
+      <div class="mt-10 md:mt-16 mb-8 md:mb-12">
+        <h2 class="text-3xl md:text-4xl xl:text-5xl font-bold">
+          {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.WHAT_TO_EXPECT_1}
+        </h2>
+        <h3 class="mt-4 text-xl font-bold text-gray-700 max-w-3xl">
+          {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.WHAT_TO_EXPECT_2}
+        </h3>
+
+        <p class="mt-4 text-gray-700">
+          {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.WHAT_TO_EXPECT_3}
+        </p>
+        <p class="mt-4 text-gray-700">
+          {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.WHAT_TO_EXPECT_4}
+        </p>
+        <p class="mt-4 text-gray-700">
+          {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.WHAT_TO_EXPECT_5}
+        </p>
+        <p class="mt-4 text-gray-700">
+          {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.WHAT_TO_EXPECT_6}
+        </p>
+        <p class="mt-4 text-gray-700">
+          {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.WHAT_TO_EXPECT_7}
+        </p>
+        <p class="mt-4 text-gray-700">
+          {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.WHAT_TO_EXPECT_8}
+        </p>
+
+        <div class="ml-4">
+          <p class="text-gray-700 mt-4">
+            🔹{i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.WHAT_TO_EXPECT_9}
+          </p>
+          <p class="text-gray-700 mt-4">
+            🔹{i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.WHAT_TO_EXPECT_10}
+          </p>
+          <p class="text-gray-700 mt-4">
+            🔹 {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.WHAT_TO_EXPECT_11}
+          </p>
+          <p class="text-gray-700 mt-4">
+            🔹{i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.WHAT_TO_EXPECT_12}
+          </p>
+          <p class="text-gray-700 mt-4">
+            🔹{i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.WHAT_TO_EXPECT_13}
+          </p>
+          <p class="text-gray-700 mt-4">
+            🔹{i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.WHAT_TO_EXPECT_14}
+          </p>
+          <p class="text-gray-700 mt-4">
+            🔹{i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.WHAT_TO_EXPECT_15}
+          </p>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 md:gap-16 mb-8 md:mb-12 z-2 md:p-3">
+        <div
+          class="bg-white/30 backdrop-blur-lg rounded-2xl shadow-lg border border-white/40 p-8">
+          <h2 class="text-3xl md:text-4xl xl:text-4xl font-bold">
+            {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.TAILORED_1}
+          </h2>
+
+          <div class="">
+            <p class="text-gray-700 mt-4">
+              {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.TAILORED_2}
+            </p>
+            <p class="text-gray-700 mt-4">
+              {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.TAILORED_3}
+            </p>
+            <p class="text-gray-700 mt-4">
+              🔹{i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.TAILORED_4}
+            </p>
+            <p class="text-gray-700 mt-4">
+              🔹{i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.TAILORED_5}
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="bg-white/30 backdrop-blur-lg rounded-2xl shadow-lg border border-white/40 p-8">
+          <h2 class="text-3xl md:text-4xl xl:text-4xl font-bold">
+            {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.BEST_TIME_1}
+          </h2>
+          <p class="text-gray-700 mt-4">
+            {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.BEST_TIME_2}
+          </p>
+        </div>
+      </div>
+
+      <!--  Include, exclude, complementaries  -->
+      <div
+        class="grid md:grid-cols-2 lg:grid-cols-3 mt-20 md:mt-26 mb-20 gap-16 md:gap-20">
+        <!-- Include -->
+        <Includes title={i18n.INCLUDES.INCLUDED}>
+          <div slot="description" class="mt-4 flex flex-col gap-2">
+            <li class="flex gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.INCLUDED_2}
+              </p>
+            </li>
+            <li class="flex gap-2">
+              <div>
+                <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              </div>
+
+              <p class="max-w-[320px] text-md">
+                {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.INCLUDED_3}
+              </p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.INCLUDED_4}
+              </p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.INCLUDED_5}
+              </p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.INCLUDED_6}
+              </p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.INCLUDED_7}
+              </p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.INCLUDED_8}
+              </p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.INCLUDED_9}
+              </p>
+            </li>
+          </div>
+        </Includes>
+        <!-- Exclude -->
+        <Includes title={i18n.INCLUDES.NOT_INCLUDED}>
+          <div slot="description" class="flex flex-col gap-2 mt-4">
+            <li class="flex gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.NOT_INCLUDED_2}
+              </p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.NOT_INCLUDED_3}
+              </p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.NOT_INCLUDED_4}
+              </p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.NOT_INCLUDED_5}
+              </p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.NOT_INCLUDED_6}
+              </p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.NOT_INCLUDED_7}
+              </p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.NOT_INCLUDED_8}
+              </p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.NOT_INCLUDED_9}
+              </p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.NOT_INCLUDED_10}
+              </p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.NOT_INCLUDED_11}
+              </p>
+            </li>
+          </div>
+        </Includes>
+        <!-- Complementaries -->
+      </div>
+
+      <div>
+        <h2 class="text-3xl md:text-4xl xl:text-5xl font-bold">
+          {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.BUILDING_BLOCK_1}
+        </h2>
+        <p class="text-gray-700 mt-4">
+          {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.BUILDING_BLOCK_2}
+        </p>
+        <p class="text-gray-700 mt-4">
+          {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.BUILDING_BLOCK_3}
+        </p>
+        <p class="text-gray-700 mt-4">
+          🔹 {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.BUILDING_BLOCK_4}
+        </p>
+        <p class="text-gray-700 mt-4">
+          🔹 {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.BUILDING_BLOCK_5}
+        </p>
+        <p class="text-gray-700 mt-4">
+          🔹 {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.BUILDING_BLOCK_6}
+        </p>
+        <p class="text-gray-700 mt-4">
+          🔹 {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.BUILDING_BLOCK_7}
+        </p>
+        <p class="text-gray-700 mt-4">
+          {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.BUILDING_BLOCK_8}
+        </p>
+      </div>
+
+      <div
+        class="grid md:grid-cols-2 lg:grid-cols-3 text-center mt-10 md:mt-20 gap-8 md:gap-16 mb-8 md:mb-12 z-2 md:p-3">
+        <div
+          class="bg-white/30 backdrop-blur-lg rounded-2xl shadow-lg border border-white/40 p-8">
+          <h2 class="text-3xl md:text-4xl xl:text-4xl font-bold">
+            {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.RENTAL_CAR_1}
+          </h2>
+
+          <div class="">
+            <p class="text-gray-700 mt-4">
+              {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.RENTAL_CAR_2}
+            </p>
+            <p class="text-gray-700 mt-4">
+              {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.RENTAL_CAR_3}
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="bg-white/30 backdrop-blur-lg rounded-2xl shadow-lg border border-white/40 p-8">
+          <h2 class="text-3xl md:text-4xl xl:text-4xl font-bold">
+            {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.CHARMING_1}
+          </h2>
+          <p class="text-gray-700 mt-4">
+            {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.CHARMING_2}
+          </p>
+          <p class="text-gray-700 mt-4">
+            {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.CHARMING_3}
+          </p>
+          <p class="text-gray-700 mt-4">
+            {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.CHARMING_4}
+          </p>
+        </div>
+        <div
+          class="bg-white/30 backdrop-blur-lg rounded-2xl shadow-lg border border-white/40 p-8">
+          <h2 class="text-3xl md:text-4xl xl:text-4xl font-bold">
+            {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.SUGGESTED_ROUTE_1}
+          </h2>
+          <h3 class="text-xl mt-2 font-bold">
+            {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.SUGGESTED_ROUTE_2}
+          </h3>
+          <p class="text-gray-700 mt-4">
+            {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.SUGGESTED_ROUTE_3}
+          </p>
+          <p class="text-gray-700 mt-4">
+            {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.SUGGESTED_ROUTE_4}
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <h2 class="text-3xl md:text-4xl xl:text-5xl font-bold">
+          {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.EXAMPLE_1}
+        </h2>
+        <p class="text-gray-700 text-xl mt-4 font-bold">
+          {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.EXAMPLE_2}
+        </p>
+        <p class="text-gray-700 mt-4">
+          {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.EXAMPLE_3}
+        </p>
+        <p class="text-gray-700 mt-4">
+          {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.EXAMPLE_4}
+        </p>
+        <p class="text-gray-700 mt-4">
+          {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.EXAMPLE_5}
+        </p>
+        <p class="text-gray-700 mt-4">
+          {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.EXAMPLE_6}
+        </p>
+        <p class="text-gray-700 mt-4">
+          {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.EXAMPLE_7}
+        </p>
+        <p class="text-gray-700 mt-4">
+          {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.EXAMPLE_8}
+        </p>
+        <p class="text-gray-700 mt-4">
+          {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.EXAMPLE_9}
+        </p>
+        <p class="text-gray-700 mt-4">
+          {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.EXAMPLE_10}
+        </p>
+        <p class="text-gray-700 mt-4">
+          {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.EXAMPLE_11}
+        </p>
+        <p class="text-gray-700 mt-4">
+          {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.EXAMPLE_12}
+        </p>
+        <p class="text-gray-700 mt-4">
+          {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.EXAMPLE_13}
+        </p>
+        <p class="text-gray-700 mt-4">
+          {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.EXAMPLE_14}
+        </p>
+        <p class="text-gray-700 mt-4">
+          {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.EXAMPLE_15}
+        </p>
+        <p class="text-gray-700 mt-4">
+          {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.EXAMPLE_16}
+        </p>
+        <p class="text-gray-700 mt-4">
+          {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.EXAMPLE_17}
+        </p>
+      </div>
+
+      <div class="mt-10 md:mt-16 mb-8 md:mb-12">
+        <h2 class="text-3xl md:text-4xl xl:text-5xl font-bold">
+          {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.TRAVELING_1}
+        </h2>
+        <p class="text-gray-700 mt-4">
+          {i18n.PRODUCTS.ROAD_TRIPS.ROADTRIP_ANDALUSIA.TRAVELING_2}
+        </p>
+      </div>
+
+      <!-- Slider Photos -->
+      <section class="m-auto md:w-full rounded-xl md:px-8 md:py-20">
+        <ol class="relative mt-16">
+          {(<SliderReact IMG={IMG} client:visible client:only="react" />)}
+        </ol>
+      </section>
+    </main>
+  </Container>
+</Layout>
