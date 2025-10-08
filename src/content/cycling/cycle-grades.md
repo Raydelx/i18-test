@@ -33,6 +33,6 @@ On some of our cycling tours in mountainous areas, we include e-bikes, which all
 
 Below are the trail grades for Tour, Road, and Mountain bike:
 
-- <a href="/cycle-grades-tour-bike" target="_blank">Cycle Grades Tour Bike</a>
-- <a href="/cycle-grades-road-bike" target="_blank">Cycle Grades Road Bike</a>
-- <a href="/cycle-grades-mountain-bike" target="_blank">Cycle Grades Mountain Bike</a>
+- <a href="/cycle-grades-tour-bike.pdf" target="_blank">Cycle Grades Tour Bike</a>
+- <a href="/cycle-grades-road-bike.pdf" target="_blank">Cycle Grades Road Bike</a>
+- <a href="/cycle-grades-mountain-bike.pdf" target="_blank">Cycle Grades Mountain Bike</a>
