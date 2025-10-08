@@ -96,6 +96,7 @@ export const routes = {
 		'trekking-destinations': 'trekking-destinations',
 		'trekking-hikking-andalucia': 'trekking-hikking-andalucia',
 		'trekking-hikking-spain': 'trekking-hikking-spain',
+		'cookie-policy': 'cookie-policy',
 	},
 	en: {
 		blog: 'blog',
@@ -152,6 +153,7 @@ export const routes = {
 		'trekking-destinations': 'trekking-destinations',
 		'trekking-hikking-andalucia': 'trekking-hikking-andalucia',
 		'trekking-hikking-spain': 'trekking-hikking-spain',
+		'cookie-policy': 'cookie-policy',
 		
 	},
 } 

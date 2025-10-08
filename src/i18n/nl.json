@@ -1005,7 +1005,7 @@
                 "LOCATION": "Nationaal Park Sierra Nevada",
                 "PRICE": "40 (6 pers.)",
                 "PRE_BOOKING": "100%",
-                "DURATION_1": "Route 1: 5 uur",
+                "DURATION_1": "Route 1: 7 uur",
                 "DURATION_2": "Route 2: 5 uur",
                 "MINUMUM_OF_PERSONS": "2",
                 "TOUR_TYPE": "Geleid",
@@ -1023,7 +1023,7 @@
                 "ROUTE_TYPE": "Lusroute",               
 
                 "PHYSICAL_DIFFICULTY_1": "Route 1: C+",
-                "PHYSICAL_DIFFICULTY_2": "Route 2: C",
+                "PHYSICAL_DIFFICULTY_2": "Route 2: B+",
 
                 "INCLUDED": {
                     "TITLE": "Inbegrepen",
@@ -1072,7 +1072,7 @@
                 "REQUIEREMENTS_TEXT_3":"Gesloten schoenen, geen open schoenen!",
                 "REQUIEREMENTS_TEXT_4":"Basis wandeluitrusting vereist (Bekijk onze blog voor meer informatie over wandeluitrusting)",
 
-                "DIFFICULTY_1": "Moeilijkheid route 1 - Gemiddeld +",
+                "DIFFICULTY_1": "Moeilijkheid route 1 - Uitdagend",
                 "DIFFICULTY_2": "Deze route is geschikt voor mensen met een zeer goede fysieke conditie die ervaring hebben met het wandelen van langere afstanden en zich comfortabel voelen bij aanhoudende fysieke inspanning over gevarieerd terrein.",
                 "DIFFICULTY_3": "Goede wandeluitrusting is vereist. Wandelstokken worden aanbevolen en enkelhoge wandelschoenen zijn sterk aanbevolen.",
                 "DIFFICULTY_4": "Moeilijkheid route 2 - Gemiddeld",
@@ -1140,7 +1140,7 @@
                 "PRICES_TEXT_1": "Onze prijzen voor wandeltochten variëren afhankelijk van het aantal deelnemers. Dit helpt ons eerlijke en flexibele prijzen aan te bieden, terwijl we een hoogwaardige, persoonlijke ervaring voor elke groep garanderen.",
                 "PRICES_TEXT_2": "Speciale tarieven zijn beschikbaar voor families en grotere groepen. Neem contact met ons op voor meer informatie.",
 
-                "DIFFICULTY": "Moeilijkheid - Gemiddeld",
+                "DIFFICULTY": "Moeilijkheid - Uitdagend",
                 "DIFFICULTY_1": "Dit pad is geschikt voor mensen met een goede fysieke conditie die gewend zijn aan aerobe sporten.",
                 "DIFFICULTY_2": "Terrein: Wandelen op oneffen, losliggend terrein met een klim naar de top en een afdaling terug.",
                 "DIFFICULTY_3": "Goede wandeluitrusting is vereist. Wandelstokken worden aanbevolen en enkelhoge wandelschoenen zijn sterk aanbevolen.",
@@ -1224,7 +1224,7 @@
                 "PRICES_TEXT_1": "Onze prijzen voor wandeltochten variëren afhankelijk van het aantal deelnemers. Dit helpt ons eerlijke en flexibele prijzen aan te bieden, terwijl we een hoogwaardige, persoonlijke ervaring voor elke groep garanderen.",
                 "PRICES_TEXT_2": "Speciale tarieven zijn beschikbaar voor families en grotere groepen. Neem contact met ons op voor meer informatie.",
 
-                "DIFFICULTY": "Moeilijkheidsgraad  - Basis +",
+                "DIFFICULTY": "Moeilijkheid - Gemiddeld",
                 "DIFFICULTY_1": "Dit pad is geschikt voor mensen met een basisconditie die comfortabel een halve dag kunnen wandelen.",
                 "DIFFICULTY_2": "Voor wie een minder veeleisende route wil, is er een optie om de klim naar de top over te slaan. Je kunt nog steeds genieten van het pad en de prachtige omgeving zonder de volledige klim te doen.",
                 "DIFFICULTY_3": "Daarnaast raden we aan om geschikt materiaal te gebruiken, zoals wandelschoenen, wandelstokken, enz.",
@@ -1279,7 +1279,7 @@
                 "TOTAL_ASCENT": "400 m",
                 "TOTAL_DESCENT": "400 m",
                 "ROUTE_TYPE": "Lusroute",
-                "PHYSICAL_DIFFICULTY": "B",
+                "PHYSICAL_DIFFICULTY": "A",
 
                  "INCLUDED": {
                     "TITLE": "Inbegrepen",
@@ -1594,25 +1594,24 @@
 
             "DAY_1": {
 
-                "TITLE": "Route 1 Noordzijde (Uitdagend):",
-                "TEXT_1": "De route start bij het meest zuidelijke skigebied van Europa en volgt een mooie klim langs de San Juan-vallei richting de op één na hoogste top van het gebergte, Veleta 3.392 meter. Het pad brengt je naar de Carihuela-hut gelegen in de bergpas “Collado de la Veleta” op de zuidelijke helling op een hoogte van 3.200 meter waar je de overblijfselen van de loopgraven uit de burgeroorlog kunt zien.",
-                "TEXT_2": "Voor ons ontvouwt zich een weids landschap van het mediterrane berggebied en de top van de Mulhacén rijst majestueus op. De route gaat verder naar de “Caldera-lagune” van gletsjeroorsprong en een van de meest emblematische meren van de Sierra Nevada. Vanaf de berghut wacht ons de iconische steile klim naar de top van de Mulhacén. We nemen hetzelfde pad terug naar het bergdorp.",
-                "TEXT_3": "We classificeren de noordzijde als een uitdagende route met veel afstand en kenmerken van hoogtelopen. De wandeling omvat een aanzienlijk hoogteverschil met een lange klim en afdaling verdeeld in twee delen gedurende de hele tocht. Een steile topbeklimming op rotsachtig en losliggend terrein. De afdaling is minder zwaar maar kan belastend zijn voor de knieën. De route heeft geen technische obstakels. Voor meer informatie bekijk onze blog en zoek naar “Wandelgraden”.",
-                "TEXT_4": "Optioneel: er is een minibus of de zomer skilift beschikbaar, die ons op ongeveer 3.000 meter afzet, een aanzienlijke vermindering van stijging, afstand en de eisen van de route. Vraag om meer informatie."
-               
-                 },
+                    "TITLE": "Dag 1",
+                    "TEXT_1": "De route start bij het meest zuidelijke skigebied van Europa en volgt een mooie klim langs de San Juan-vallei richting de op één na hoogste top van het gebergte, Veleta 3.392 meter. Het pad brengt je naar de Carihuela-hut gelegen in de bergpas “Collado de la Veleta” op de zuidelijke helling op een hoogte van 3.200 meter waar je de overblijfselen van de loopgraven uit de burgeroorlog kunt zien.",
+                    "TEXT_2": "Voor ons ontvouwt zich een weids landschap van het mediterrane berggebied en de top van de Mulhacén rijst majestueus op. De route gaat verder naar de “Caldera-lagune” van gletsjeroorsprong en een van de meest emblematische meren van de Sierra Nevada. Vanaf de berghut wacht ons de iconische steile klim naar de top van de Mulhacén. We nemen hetzelfde pad terug naar het bergdorp.",
+                    "TEXT_3": "We classificeren de noordzijde als een uitdagende route met veel afstand en kenmerken van hoogtelopen. De wandeling omvat een aanzienlijk hoogteverschil met een lange klim en afdaling verdeeld in twee delen gedurende de hele tocht. Een steile topbeklimming op rotsachtig en losliggend terrein. De afdaling is minder zwaar maar kan belastend zijn voor de knieën. De route heeft geen technische obstakels. Voor meer informatie bekijk onze blog en zoek naar “Wandelgraden”.",
+                    "TEXT_4": "Optioneel: er is een minibus of de zomer skilift beschikbaar, die ons op ongeveer 3.000 meter afzet, een aanzienlijke vermindering van stijging, afstand en de eisen van de route. Vraag om meer informatie."
+                   
+                     },
 
-            "DAY_2": {
+                "DAY_2": {
 
-                "TITLE": "Route 2 Zuidzijde (Gemiddeld):",
-                "TEXT_1": "De zuidzijde start bij het “Mirador de Trevélez” op 2.700 meter, dat we bereiken met de pendelbus vanuit het dorp Capileira. Vanaf het startpunt heb je een prachtig uitzicht op het Sierra Nevada-gebergte en de kust van Granada.",
-                "TEXT_2": "Het pad stijgt geleidelijk om de eerste helling “Loma del Tanto” te overwinnen en laat het uitzichtpunt achter ons. Verderop wandelen we richting het geodetisch punt Mulhacén II op 3.362 meter, omringd door een ander landschap van losse stenen en weinig vegetatie.",
-                "TEXT_3": "Het laatste stuk naar de top biedt een magnifiek panoramisch uitzicht op de Caldera-lagune, een van de meest emblematische meren van de Sierra Nevada.",
-                "TEXT_4": "Na het laatste stuk wandelen bereiken we ons doel, de top van de Mulhacén op 3.380 meter. We nemen hetzelfde pad terug waar de bus wacht om ons naar het dorp Capileira te brengen.",
-                "TEXT_5": "We classificeren de zuidzijde als een gemiddelde route met kenmerken van hoogtelopen. De wandeling omvat een aanzienlijk hoogteverschil met op sommige delen een passage over keien zonder technische obstakels. Voor meer informatie bekijk onze blog en zoek naar “Wandelgraden”."
-                
-
-                }
+                    "TITLE": "Dag 2",
+                    "TEXT_1": "Na het ontbijt in de berghut beginnen we aan de emblematische beklimming naar de top van de Mulhacén.",
+                    "TEXT_2": "Vanaf de berghut wandelen we geleidelijk omhoog richting de Caldera-lagune, langs de Mulhacén-rivier door alpenweiden en rotsachtig terrein, met panoramisch uitzicht op de omliggende bergen en valleien.",
+                    "TEXT_3": "Een van de meest emblematische lagunes van de Sierra Nevada, de Caldera-lagune, ligt onder de bergkammen van de Mulhacén. Na een pauze bij de berghut wacht ons de iconische steile klim naar de top van de Mulhacén. Eenmaal op de top word je beloond met een adembenemend uitzicht op de omliggende toppen en valleien.",
+                    "TEXT_4": "Na te hebben genoten van je tijd op de top, beginnen we aan de afdaling langs de zuidflank van de Mulhacén tot 2.700 meter hoogte, waar we de pendelbus terug nemen naar het dorp Capileira in de Alpujarra-regio.",
+                    "TEXT_5": "Na te hebben ontspannen met een drankje en een tapa in het witte dorp rijden we terug naar Granada.",
+                    "TEXT_6": "We classificeren de route als een gemiddelde wandeling met kenmerken van hoogtelopen. De wandeling omvat een aanzienlijk hoogteverschil met een klim aan het begin en later een steile topbeklimming over rotsachtig en losliggend terrein. De afdaling is minder zwaar maar kan belastend zijn voor de knieën. De route heeft geen moeilijke obstakels. Voor meer informatie bekijk onze blog en zoek naar “Wandelgraden”."
+                    }
 
 
             }

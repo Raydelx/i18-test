@@ -34,7 +34,7 @@ This is a level for people who do not do physical exercise daily (normal physica
 * **Requirements:** Suitable for beginners, families with children, or anyone looking for a relaxed nature walk.
 * **Notes:** Perfect for first-time hikers or a short outing to enjoy the scenery.
 
-## 🟡 Level 1 – Basic
+## 🟡 Level A – Basic
 
 * **Distance:** approx. 10 km
 * **Elevation gain:** Up to 300 m
@@ -42,7 +42,7 @@ This is a level for people who do not do physical exercise daily (normal physica
 * **Requirements:** Basic fitness and comfortable walking for 3 hours
 * **Notes:** Ideal for casual walkers who enjoy a bit more distance but without major effort.
 
-## 🟠 Level 2 – Moderate
+## 🟠 Level B – Moderate
 
 * **Distance:** 8–15 km
 * **Elevation gain:** 300–600 m
@@ -51,7 +51,7 @@ This is a level for people who do not do physical exercise daily (normal physica
 * **Notes:** Expect 3–5 hours of walking with some moderate climbs.
 * **Physical fitness:** with the habit of doing aerobic sports.
 
-## 🔴 Level 3 – Advanced
+## 🔴 Level C – Advanced
 
 * **Distance:** 12 – 20+ km
 * **Elevation gain:** 600 – 1,000 m+
@@ -60,7 +60,7 @@ This is a level for people who do not do physical exercise daily (normal physica
 * **Notes:** For experienced hikers who enjoy longer days and elevation changes.
 * **Material:** Proper hiking equipment is required. Walking sticks are recommended. Ankle-high hiking boots are required.
 
-## ⚫ Level 4 – Difficult/Advanced
+## ⚫ Level D – Difficult/Advanced
 
 * **Distance:** 15–25+ km
 * **Elevation gain:** 1,000 m or more

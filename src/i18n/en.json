@@ -1023,7 +1023,7 @@
                 "LOCATION": "Sierra Nevada National Park",
                 "PRICE": "50 (7 pax.)",
                 "PRE_BOOKING": "100%",
-                "DURATION_1": "Trail 1: 5 hours",
+                "DURATION_1": "Trail 1: 7 hours",
                 "DURATION_2": "Trail 2: 5 hours",
                 "MINUMUM_OF_PERSONS": "2",
                 "TOUR_TYPE": "Guided",
@@ -1040,11 +1040,9 @@
 
                 "ROUTE_TYPE": "Loop Trail",               
 
-                "PHYSICAL_DIFFICULTY_1": "Trail 1: C+",
-                "PHYSICAL_DIFFICULTY_2": "Trail 2: C",
+                "PHYSICAL_DIFFICULTY_1": "Trail 1: C",
+                "PHYSICAL_DIFFICULTY_2": "Trail 2: B+",
 
-                "TECHNICAL_DIFFICULTY_1": "Trail 1: B",
-                "TECHNICAL_DIFFICULTY_2": "Trail 2: B",
 
                  "INCLUDED": {
                     "TITLE": "Included",
@@ -1091,7 +1089,7 @@
                 "REQUIEREMENTS_TEXT_3":"Closed shoes, no open shoes!",
                 "REQUIEREMENTS_TEXT_4":"Basic hiking gear is required (Check our blog for more information about hiking gear)",
 
-                "DIFFICULTY_1": "Difficulty trail 1 - Moderate +",
+                "DIFFICULTY_1": "Difficulty trail 1 - Challenging",
                 "DIFFICULTY_2": "This trail is suitable for individuals with very good physical fitness who are experienced in walking longer distances and comfortable with sustained physical activity over varied terrain. ",
                 "DIFFICULTY_3": "Proper hiking equipment is required. Walking sticks are recommended, and ankle-high hiking boots are strongly recommended.",
                 "DIFFICULTY_4": "Difficulty trail 2 - Moderate",
@@ -1184,7 +1182,7 @@
                 "REQUIEREMENTS_TEXT_2":"Basic hiking gear is required. Good hiking boots and walking sticks are recommended.",
                 "REQUIEREMENTS_TEXT_3":"Minimum age: 14 years old with the habit of walking",
 
-                "DIFFICULTY": "Difficulty - Moderate",
+                "DIFFICULTY": "Difficulty - Challenging",
                 "DIFFICULTY_1": "This trail is suitable for people with good physical fitness who have a habit of doing aerobic sports.",
                 "DIFFICULTY_2": "Terrain: Walking on uneven, loose terrain with an ascent to the summit and a descent back.",
                 "DIFFICULTY_3": "Proper hiking equipment is required. Walking sticks are recommended, and ankle-high hiking boots are strongly recommended.",
@@ -1252,7 +1250,7 @@
                 "PRICES_TEXT_1": "Our hiking tour prices vary depending on the number of participants. This helps us offer fair and flexible pricing, while ensuring a high-quality, personalized experience for every group.  ",
                 "PRICES_TEXT_2": "Special pricing is available for families and larger groups. Contact us for more information.  ",
 
-                "DIFFICULTY": "Difficulty - Basic +",
+                "DIFFICULTY": "Difficulty - Moderate",
                 "DIFFICULTY_1": "This trail is suitable for people with a basic level of physical fitness who are comfortable with walking for half a day.",
                 "DIFFICULTY_2": "For those who prefer a less demanding route, there is an option to skip the ascent to the peak. You can still enjoy the trail and its beautiful surroundings without doing the full climb.",
                 "DIFFICULTY_3": "In addition, we recommend using suitable materials such as hiking boots, walking poles, etc.",
@@ -1305,7 +1303,7 @@
                 "TOTAL_ASCENT": "400 m",
                 "TOTAL_DESCENT": "400 m",
                 "ROUTE_TYPE": "Loop Trial",
-                "PHYSICAL_DIFFICULTY": "B",
+                "PHYSICAL_DIFFICULTY": "A",
 
                 "INCLUDED": {
                     "TITLE": "Included",
@@ -1401,7 +1399,7 @@
 
                 "ROUTE_TYPE": "Point-to-point",               
 
-                "PHYSICAL_DIFFICULTY_1": "Day 1: C",
+                "PHYSICAL_DIFFICULTY_1": "Day 1: B+",
                 "PHYSICAL_DIFFICULTY_2": "Day 2: C+",
 
 
@@ -1492,7 +1490,7 @@
                     "TITLE": "Day 1",
                     "TEXT_1": "The route starts at Europe’s southernmost ski resort and follows a great ascent along the San Juan Valley towards the second-highest peak of the mountain range, Veleta 3.392 meters. The trail brings you to the Carihuela Refuge located in the mountain pass “Collado de la Veleta” on its southern slope at an altitude of 3.200 meters where you can see the remains of the trenches from the Civil War.",
                     "TEXT_2": "Before our eyes, a wide landscape of the Mediterranean mountain range opens, and the peak Mulhacén rises majestically. The trails continue to the “Caldera Lagoon” of glacial origin and one of the most emblematic lagoons in the Sierra Nevada. From the mountain refuge, the iconic steep climb awaits us up to the peak of Mulhacén. We take the same path to return to the mountain village.",
-                     "TEXT_3": "We classify the north-face route as a challenging trail with a lot of distance and has characteristics of altitude hiking. The hike involves a significant height difference with a long ascent and descent divided into two parts during the entire hike. A steep summit climb on rocky and loose terrain. The descent is less strenuous but can be tough on the knees. The trail doesn’t have any technical obstacles. For more information check our blog and look for “Trail grades”",
+                     "TEXT_3": "We classify the north-face route as a moderate + trail and has characteristics of altitude hiking. The hike involves a significant height difference with a long ascent and descent divided into two parts during the entire hike. A steep summit climb on rocky and loose terrain. The descent is less strenuous but can be tough on the knees. The trail doesn’t have any technical obstacles. For more information check our blog and look for “Trail grades”",
                     "TEXT_4": "Optional: there is a minibus or the summer ski lift at your disposal, which leaves us at around 3.000 meters, a significant reduction of ascent, distance, and the demands of the route. Ask for more information."
                    
                      },
@@ -1505,7 +1503,7 @@
                     "TEXT_3": "One of the most emblematic lagoons in the Sierra Nevada, Caldera Lagoon, sits below the ridges of Mulhacén. After having a rest at the mountain refuge, the iconic steep climb awaits us up to the peak of Mulhacén. Once at the summit, you’ll be rewarded with breathtaking views of the surrounding peaks and valleys.",
                     "TEXT_4": "After enjoying your time at the summit, we begin the descent back along the south slope of Mulhacén to 2.700 meters altitude where we take the shuttle bus back to the village of Capileira in the Alpujarra region.",
                     "TEXT_5": "After relaxing with a drink and a tapa in the white village we drive back to Granada.",
-                    "TEXT_6": "We classify the route as a moderate trail with characteristics of altitude hiking. The hike involves a considerable height difference with an ascent at the beginning and later a steep summit climb on rocky and loose terrain. The descent is less strenuous but can be tough on the knees. The trail doesn’t have any difficult obstacles. For more information check our blog and look for “Trail grades”"
+                    "TEXT_6": "We classify the route as a challenging trail with characteristics of altitude hiking. The hike involves a considerable height difference with an ascent at the beginning and later a steep summit climb on rocky and loose terrain. The descent is less strenuous but can be tough on the knees. The trail doesn’t have any difficult obstacles. For more information check our blog and look for “Trail grades”"
                     }
 
 
@@ -1536,7 +1534,7 @@
                 "ROUTE_TYPE": "Out-and-Back",               
 
                 "PHYSICAL_DIFFICULTY_1": "Trail 1: D",
-                "PHYSICAL_DIFFICULTY_2": "Trail 2: C",
+                "PHYSICAL_DIFFICULTY_2": "Trail 2: B+",
 
 
                  "INCLUDED": {
@@ -1622,7 +1620,7 @@
 
                 "DAY_1": {
 
-                    "TITLE": "Track 1 Nort-face (Challenging):",
+                    "TITLE": "Track 1 Nort-face (Difficult):",
                     "TEXT_1": "The route starts at Europe’s southernmost ski resort and follows a great ascent along the San Juan Valley towards the second-highest peak of the mountain range, Veleta 3.392 meters. The trail brings you to the Carihuela Refuge located in the mountain pass “Collado de la Veleta” on its southern slope at an altitude of 3.200 meters where you can see the remains of the trenches from the Civil War.",
                     "TEXT_2": "Before our eyes, a wide landscape of the Mediterranean mountain range opens, and the peak Mulhacén rises majestically. The trails continue to the “Caldera Lagoon” of glacial origin and one of the most emblematic lagoons in the Sierra Nevada. From the mountain refuge, the iconic steep climb awaits us up to the peak of Mulhacén. We take the same path to return to the mountain village.",
                      "TEXT_3": "We classify the north-face route as a challenging trail with a lot of distance and has characteristics of altitude hiking. The hike involves a significant height difference with a long ascent and descent divided into two parts during the entire hike. A steep summit climb on rocky and loose terrain. The descent is less strenuous but can be tough on the knees. The trail doesn’t have any technical obstacles. For more information check our blog and look for “Trail grades”",
