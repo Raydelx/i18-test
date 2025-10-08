@@ -5,6 +5,20 @@ import Layout from "../../layouts/Layout.astro";
 import Container from "../../components/containerBlog.astro";
 import Sectionhead from "../../components/sectionhead.astro";
 
+import { getI18N } from "@/i18n/";
+import {
+  getLangFromUrl,
+  useTranslations,
+  useTranslatedPath,
+} from "../../i18n/utils.js";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+
 // Filter blog entries with 'draft: false' & date before current date
 const publishedBlogEntries = await getCollection("montaraz", ({ data }) => {
   return !data.draft && data.publishDate < new Date();
@@ -50,7 +64,9 @@ publishedBlogEntries2.sort(function (a, b) {
           {
             publishedBlogEntries.map((blogPostEntry, index) => (
               <li>
-                <a class="rounded-xl" href={`/blog/${blogPostEntry.slug}`}>
+                <a
+                  class="rounded-xl"
+                  href={translatePath(`/blog/${blogPostEntry.slug}`)}>
                   <div
                     class="grid items-center  transition-all duration-300
                            lg:hover:shadow-[21px_20px_20px_10px_#cbd5e0] lg:shadow-xl lg:shadow-gray-300 rounded-xl 
@@ -98,7 +114,9 @@ publishedBlogEntries2.sort(function (a, b) {
           {
             publishedBlogEntries2.map((blogPostEntry, index) => (
               <li>
-                <a class="rounded-xl" href={`/blog/${blogPostEntry.slug}`}>
+                <a
+                  class="rounded-xl"
+                  href={translatePath(`/blog/${blogPostEntry.slug}`)}>
                   <div
                     class="grid items-center  transition-all duration-300
                  lg:hover:shadow-[21px_20px_20px_10px_#cbd5e0] lg:shadow-xl lg:shadow-gray-300 rounded-xl 
@@ -146,7 +164,9 @@ publishedBlogEntries2.sort(function (a, b) {
           {
             publishedBlogEntries3.map((blogPostEntry, index) => (
               <li>
-                <a class="rounded-xl" href={`/blog/${blogPostEntry.slug}`}>
+                <a
+                  class="rounded-xl"
+                  href={translatePath(`/blog/${blogPostEntry.slug}`)}>
                   <div
                     class="grid items-center  transition-all duration-300
                  lg:hover:shadow-[21px_20px_20px_10px_#cbd5e0] lg:shadow-xl lg:shadow-gray-300 rounded-xl 
@@ -194,7 +214,9 @@ publishedBlogEntries2.sort(function (a, b) {
           {
             publishedBlogEntries4.map((blogPostEntry, index) => (
               <li>
-                <a class="rounded-xl" href={`/blog/${blogPostEntry.slug}`}>
+                <a
+                  class="rounded-xl"
+                  href={translatePath(`/blog/${blogPostEntry.slug}`)}>
                   <div
                     class="grid items-center  transition-all duration-300
                  lg:hover:shadow-[21px_20px_20px_10px_#cbd5e0] lg:shadow-xl lg:shadow-gray-300 rounded-xl 

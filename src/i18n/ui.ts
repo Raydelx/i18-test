@@ -93,6 +93,9 @@ export const routes = {
 		'roadtrip-andalucia': 'roadtrip-andalucia',
 		'road-trips-spain': 'road-trips-spain',
 		'road-trips-italia': 'road-trips-italia',
+		'trekking-destinations': 'trekking-destinations',
+		'trekking-hikking-andalucia': 'trekking-hikking-andalucia',
+		'trekking-hikking-spain': 'trekking-hikking-spain',
 	},
 	en: {
 		blog: 'blog',
@@ -111,8 +114,7 @@ export const routes = {
 		'rock-climbing': 'rock-climbing',
 		'rock-climbing-courses': 'rock-climbing-courses',
 		'leisure-cycling-andalucia': 'leisure-cycling-andalucia',
-		cycling: 'cycling',
-		'trekking-hikking': 'trekking-hikking',
+		cycling: 'cycling',		
 		'cycle-ronda-cordoba': 'cycle-ronda-cordoba',
 		'e-bike-sightseen-granada': 'e-bike-sightseen-granada',
 		'epic-landscape-e-bike-tour-granada': 'epic-landscape-e-bike-tour-granada',
@@ -147,5 +149,9 @@ export const routes = {
 		'roadtrip-andalucia': 'roadtrip-andalucia',
 		'road-trips-spain': 'road-trips-spain',
 		'road-trips-italia': 'road-trips-italia',
+		'trekking-destinations': 'trekking-destinations',
+		'trekking-hikking-andalucia': 'trekking-hikking-andalucia',
+		'trekking-hikking-spain': 'trekking-hikking-spain',
+		
 	},
 } 

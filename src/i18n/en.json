@@ -14,6 +14,10 @@
         "TAILOR_MADE_TRAVELS": "Tailor-Made Travels"
     },
 
+    "PRICE_TREKKING": "Price:",
+    "PRICE_TREKKING_1": "Our hiking tour prices vary depending on the number of participants. This helps us offer fair and flexible pricing, while ensuring a high-quality, personalized experience for every group.",
+    "PRICE_TREKKING_2": "Special pricing is available for families and larger groups. Contact us for more information.",
+
     "DESTINATIONS_SPAIN": "Spain",
     "DESTINATIONS_ANDALUSIA": "Andalusia",
     "DESTINATIONS_ITALY": "Italy",
@@ -23,6 +27,7 @@
     "MTB_DESTINATIONS": "MTB Destinations",
     "TOUR_DESTINATIONS": "Tour Bike Destinations",
     "ROAD_DESTINATIONS": "Road Trips Destinations",
+    "TREKKING_DESTINATIONS": "Hiking & Trekking Destinations",
 
     "CARDS_HOME":{
 
@@ -369,12 +374,13 @@
     "CONTACT":{
         "TITLE": "Contact",
         "SUBTITLE": "Get Ready To Create New Experiences",
-        "TEXT": "Contact Monataraz Outdoors & Culture",
+        "TEXT": "Contact Montaraz Outdoors & Culture",
         "DIRECTION": "Spain, Granada",
         "NAME": "Full Name",
         "EMAIL":"Email Address",
         "TEXT_1": "Your Message",
-        "SEND": "Send Message"
+        "SEND": "Send Message",
+        "AGENCY": "Agencia de Viajes - Nº C.I.AN-188135-3"
     },
 
     "LEGAL_NOTICE": {
@@ -869,7 +875,6 @@
                 "TOTAL_DESCENT": "3.310 m",
                 "ROUTE_TYPE": "Point to point",
                 "PHYSICAL_DIFFICULTY": "B - C", 
-                "TECHNICAL_DIFFICULTY": "B",
 
                  "INCLUDED": {
                     "TITLE": "Included",
@@ -902,11 +907,7 @@
                 },
 
                 "AVAILABILITY": "Availability",
-                "AVAILABILITY_TEXT_1": "2025",
-                "AVAILABILITY_TEXT_2": "20-09 / 27-09",
-                "AVAILABILITY_TEXT_3": "2026",
-                "AVAILABILITY_TEXT_4": "11-04 / 18-04",
-                "AVAILABILITY_TEXT_5": "05-09 / 12-09",
+                "AVAILABILITY_TEXT_1": "Spring / Autumn ",
 
                 "HIGHLIGHT": "Highlight",
                 "HIGHLIGHT_TEXT_1": "Sierra Nevada Natural Park",
@@ -945,6 +946,11 @@
                 "REQUIEREMENTS_TEXT_5":"Travel insurance. Please take a look at the terms and conditions.",
                 "REQUIEREMENTS_TEXT_6":"Release of liability form. Please take a look at the terms and conditions.",
 
+                "DIFFICULTY_1": "Difficulty - Moderate",
+                "DIFFICULTY_2": "This trail is suitable for people with good physical fitness who have a habit of doing aerobic sports or have already done multi-day walks. ",
+                "DIFFICULTY_3": "Proper hiking equipment is required. Walking sticks are recommended, and ankle-high hiking boots are strongly recommended.",
+                "DIFFICULTY_4": "If you're unsure whether this trail is right for you or your group, feel free to contact us — we're happy to help you choose the best option!",
+
                 "CANCELLATION":"Cancellation Policy",
                 "CANCELLATION_TEXT":"See Terms and Conditions.",
 
@@ -955,47 +961,48 @@
                 "WHAT_TO_EXPECT_TEXT_4": "Join us and uncover the hidden beauty of the Alpujarra region a treasure to discover!",
 
                  "DAY_1": {
-                    "TITLE": "Day 1",
+                    "TITLE": "1",
                     "TEXT_1": "Upon arrival in Málaga or Granada, our pick-up will drive us to our rural hotel in the Guadix region located between the north of the Sierra Nevada Mountain Range and the Gorafe desert, one of the unique landscapes of the province of Granada. Upon arrival in Málaga or Granada, our pick-up will drive us to our rural hotel in the Guadix region located between the north of the Sierra Nevada Mountain Range and the Gorafe desert, one of the unique landscapes of the province of Granada. The tour leader will organize dinner to celebrate the first day of the journey."
                  },
 
                  "DAY_2": {
-                    "TITLE": "Day 2",
+                    "TITLE": "2",
                     "SUBTITLE": "Trail 1 Laroles – Válor",
                     "TEXT_1": "After breakfast, we drive over the mountain pass “Puerto La Ragua” to the trekking starting point in the Laroles village. The trail starts at the upper part of the village, at 1000 meters above sea level, from where you can see the flat roofs of the town's houses. One of the defining elements of the territory that reaches its maximum significance in the Alpujarra region is the architecture with values from other cultures and civilizations. The orography and relief of the terrain influence the profile of the towns. These villages are distributed and oriented towards the south so that the sun offers them its luminosity and keeps them warm for as long as possible in the cold winters. Most of these towns are located in the middle of the slopes that descend from the top of the Sierra Nevada in a stepped composition that gives them a charm.",
                     "TEXT_2": "Dinner: The tour leader will organize a dinner."
                  },
 
                  "DAY_3": {
-                    "TITLE": "Day 3",
+                    "TITLE": "3",
                     "SUBTITLE": "Trail 2 Válor – Mecina Bombarón",
                     "TEXT_1": "We leave the village of Válor which was the homeland of the Alpujarra hero Aben Humeya, a descendant of the Umayyad caliphs, who was proclaimed King of the Alpujarra after the Moorish uprising against the Christians in the reign of Philip II, back in 1568. The second hike will take us to Yegen, a peaceful village where the romantic traveler Gerald Brenan lived known as the author of “Al Sur de Granada”, one of the best-known books about the Alpujarra. After crossing the Mecina River and a steep climb we reach the village of Mecina Bombarón. After we take the car that brings us to our next hotel nearby in the village of Cádiar located between the Sierra Nevada and the Contraviesa mountain range.",
                     "TEXT_2": "Dinner: The tour leader will organize a dinner."
                  },
 
                  "DAY_4": {
-                    "TITLE": "Day 4",
+                    "TITLE": "4",
                     "SUBTITLE": "Trail 3 Cádiar - Trevélez",
                     "TEXT_1": "Today's stage will be more demanding. It will take us from the southernmost point of the Alpujarra trail (800 meters) to the highest trekking point, about 1.500 meters above sea level, in the village of Trevélez. Besides being the highest village in the Sierra Nevada, Trevélez is renowned for its naturally cured hams, benefiting from the healthy air of Sierra Nevada. In the 19th century, the ham of Trevélez gained recognition when Queen Isabel II granted it the distinction of being a supplier to the Royal House. It currently holds the Denomination of Origin and has attained worldwide recognition.",
-                    "TEXT_2": "Dinner: The tour leader will organize a dinner."
+                    "TEXT_2": "Shortened Route Available: There is also the option to shorten the trail, making it more accessible for those who want a lighter version of the hike to meet the same level as the other days.",
+                    "TEXT_3": "Dinner: The tour leader will organize a dinner."
                  },
 
                  "DAY_5": {
-                    "TITLE": "Day 5",
+                    "TITLE": "5",
                     "SUBTITLE": "Trail 4 Trevélez – La Taha",
                     "TEXT_1": "Today, the trail takes you through a forest of holm oaks which in autumn offers a colorful and impressive valley. In spring the gorse and broom come into bloom, producing a sea of bright yellow flowers. The panoramic views we pass expose the rugged landscapes with deep valleys and large slopes of the Alpujarra region. Isolated places like ravines are home to many species of fauna and flora due to microclimates characterized by freezing temperatures in winter and mild temperatures in summer. After crossing two ravines and a long descent the path arrives at the village of Busquístar near our destination for today called “La Taha”, a municipality that consists of several beautiful small towns. The name derives from the administrative divisions of the ancient Kingdom of Granada during the Nasrid era. It is a peaceful place with stunning views, preserving well-maintained traditional neighborhoods in the Alpujarra.",
                     "TEXT_2": "Dinner: The tour leader will organize a dinner."
                  },
 
                  "DAY_6": {
-                    "TITLE": "Day 6",
+                    "TITLE": "6",
                     "SUBTITLE": "Trail 5 La Taha – Capileira ",
                     "TEXT_1": "Today's last stage is an upward trail with a long ascent in the morning that brings us to our last destination, the village of Capileira, the highest of the three small towns located at 1.435 meters in the gorge of the Poqueira River. The Poqueira Gorge and the three villages on its slopes have become one of the most iconic sights of the Alpujarra Mountains. It is located at the foot of the highest peaks and contains one of the most surprising landscapes of the Sierra Nevada Natural Park. Here we stay for the last two nights of the trekking.",
                     "TEXT_2": "Free Dinner"
                  },
 
                  "DAY_7": {
-                    "TITLE": "Day 7",
+                    "TITLE": "7",
                     "SUBTITLE": "Free day Capileira",
                     "TEXT_1": "Explore the Historic-Artistic site of Poqueira River Valley and the three villages; Pampaneira, Bubión, and Capileira.",
                     "TEXT_2": "Although its origins date back to the Phoenicians, Romans, and Visigoths, the strongest legacy is left by the Arabs. The traditional architecture with typical white houses and flat roofs built along steep and winding streets, irrigation systems, agriculture, and linguistic roots are the inheritance left by a culture that was present for eight hundred years.",
@@ -1003,7 +1010,7 @@
                     "TEXT_4": "The guide will organize a place to have dinner together to celebrate the last evening of the journey."
                  },
                     "DAY_8": {
-                        "TITLE": "Day 8",
+                        "TITLE": "8",
                         "TEXT_1": "The journey ends after breakfast at our hotel. There will be a private transfer from the hotel to the airport in Málaga or Granada."
                     }
 
@@ -1014,10 +1021,10 @@
 
                 "TITLE": "The Old Mine Trail",
                 "LOCATION": "Sierra Nevada National Park",
-                "PRICE": "40 (6 pax.)",
+                "PRICE": "50 (7 pax.)",
                 "PRE_BOOKING": "100%",
-                "DURATION_1": "Trail 1: 7-8 hours",
-                "DURATION_2": "Trail 2: 6-7 hours",
+                "DURATION_1": "Trail 1: 5 hours",
+                "DURATION_2": "Trail 2: 5 hours",
                 "MINUMUM_OF_PERSONS": "2",
                 "TOUR_TYPE": "Guided",
                 "SEASON": "All year",
@@ -1033,8 +1040,8 @@
 
                 "ROUTE_TYPE": "Loop Trail",               
 
-                "PHYSICAL_DIFFICULTY_1": "Trail 1: C",
-                "PHYSICAL_DIFFICULTY_2": "Trail 2: B",
+                "PHYSICAL_DIFFICULTY_1": "Trail 1: C+",
+                "PHYSICAL_DIFFICULTY_2": "Trail 2: C",
 
                 "TECHNICAL_DIFFICULTY_1": "Trail 1: B",
                 "TECHNICAL_DIFFICULTY_2": "Trail 2: B",
@@ -1084,17 +1091,19 @@
                 "REQUIEREMENTS_TEXT_3":"Closed shoes, no open shoes!",
                 "REQUIEREMENTS_TEXT_4":"Basic hiking gear is required (Check our blog for more information about hiking gear)",
 
-                "PRICES": "Price:",
-                "PRICES_TEXT_1": "2 - 4 people - 70 € p.p",
-                "PRICES_TEXT_2": "5 people - 50 € p.p",
-                "PRICES_TEXT_3": "6 people - 45 € p.p",
-                "PRICES_TEXT_4": "7 people - 40 € p.p",
+                "DIFFICULTY_1": "Difficulty trail 1 - Moderate +",
+                "DIFFICULTY_2": "This trail is suitable for individuals with very good physical fitness who are experienced in walking longer distances and comfortable with sustained physical activity over varied terrain. ",
+                "DIFFICULTY_3": "Proper hiking equipment is required. Walking sticks are recommended, and ankle-high hiking boots are strongly recommended.",
+                "DIFFICULTY_4": "Difficulty trail 2 - Moderate",
+                "DIFFICULTY_5": "This trail is suitable for people with good physical fitness who have a habit of doing aerobic sports.",
+                "DIFFICULTY_6": "Proper hiking equipment is required. Walking sticks are recommended, and ankle-high hiking boots are strongly recommended.",
+                "DIFFICULTY_7": "If you're unsure whether this trail is right for you or your group, feel free to contact us — we're happy to help you choose the best option!",
 
                 "WHAT_TO_EXPECT": "What to expect",
 
                  "DAY_1": {
 
-                    "TITLE": "Day 1",
+                    "TITLE": "1",
                     "TEXT_1": "One of the most beautiful routes in Sierra Nevada National Park is the Old Mine Trail. This historic path, built at the end of the 19th century to access the mines, follows the Genil River toward the confluence of several rivers at the very end of the valley. The valley reveals its stunning scenery, including the rugged north faces of the highest peaks in the Sierra Nevada: Mulhacén, Veleta, and Alcazaba. Throughout the day you come across ruins of stone buildings, old mine tunnels, and the typical Iberian Ibex or the golden eagles are common to see. To get to the starting point of the trail we drive approx. 30 min. to the beautiful village of Güéjar Sierra, a mountain town located at 1.000 meters on the northwestern slope of the Sierra Nevada National Park.",
                     "TEXT_2": "We have two variants with different levels of hiking difficulty.",
                     "TEXT_3": "(Check out our blog for more information about our hiking grades)"
@@ -1107,10 +1116,10 @@
             "SUNRISE_SIERRA_NEVADA": {
                 "TITLE": "Sunrise Sierra Nevada",
                 "LOCATION": "Sierra Nevada National Park",
-                "PRICE": "90 (4 Pax)",
+                "PRICE": "60 (7 Pax)",
                 "PRE_BOOKING": "100%",
                 "MINIMUM_OF_PERSONS": "2",
-                "DURATION": "7 Hours",
+                "DURATION": "5 Hours",
                 "TOUR_TYPE": "Guided",
                 "SEASON": "Summer",
 
@@ -1119,7 +1128,7 @@
                 "TOTAL_DESCENT": "900 m",
                 "ROUTE_TYPE": "Out-and-back",
                 "PHYSICAL_DIFFICULTY": "C",
-                "TECHNICAL_DIFFICULTY": "B",
+
 
                  "INCLUDED": {
                     "TITLE": "Included",
@@ -1152,11 +1161,8 @@
                 "HIGHLIGHT_TEXT_4": "Sunrise from the Peak Veleta at 3.392 meters",
 
                 "PRICES": "Price:",
-                "PRICES_TEXT_1": "1 person - 200 €",
-                "PRICES_TEXT_2": "2 people – 120 € p.p",
-                "PRICES_TEXT_3": "3 people – 100 € p.p",
-                "PRICES_TEXT_4": "4-5 people – 90 € p.p",
-                "PRICES_TEXT_5": "6-7 people – 80 € p.p",
+                "PRICES_TEXT_1": "Our hiking tour prices vary depending on the number of participants. This helps us offer fair and flexible pricing, while ensuring a high-quality, personalized experience for every group.  ",
+                "PRICES_TEXT_2": "Special pricing is available for families and larger groups. Contact us for more information.  ",
 
                 "WHAT_TO_BRING" : "What to bring for Hiking",
                 "WHAT_TO_BRING_TEXT_1" : "Weather is important to consider while packing for your outdoor activity. Your packing list is based on your comfort and sensitivity. Layering your clothes is the best way to travel and be outdoors. It is highly recommended as the best way to stay warm and cool, as the weather is bound to change in the mountains.",
@@ -1178,11 +1184,17 @@
                 "REQUIEREMENTS_TEXT_2":"Basic hiking gear is required. Good hiking boots and walking sticks are recommended.",
                 "REQUIEREMENTS_TEXT_3":"Minimum age: 14 years old with the habit of walking",
 
+                "DIFFICULTY": "Difficulty - Moderate",
+                "DIFFICULTY_1": "This trail is suitable for people with good physical fitness who have a habit of doing aerobic sports.",
+                "DIFFICULTY_2": "Terrain: Walking on uneven, loose terrain with an ascent to the summit and a descent back.",
+                "DIFFICULTY_3": "Proper hiking equipment is required. Walking sticks are recommended, and ankle-high hiking boots are strongly recommended.",
+                "DIFFICULTY_4": "If you're unsure whether this trail is right for you or your group, feel free to contact us — we're happy to help you choose the best option!",
+
                 "WHAT_TO_EXPECT": "What to expect",
 
                  "DAY_1": {
 
-                    "TITLE": "Day 1",
+                    "TITLE": "1",
                     "TEXT_1": "Under the dark sky, at an elevation of 2.500 meters, we start the ascent guided by the promise of the spectacular sunrise awaiting us at the summit of Veleta at 3.392 meters, the second-highest peak of the Sierra Nevada. As we crest the final ridge, the first hints of light emerge on the horizon, painting the sky in beautiful twilight colors of yellowish-red. Finally, atop the peak, we are greeted by the sunrise, a special moment of contemplation. After, we begin our descent retracing our steps along the trail we climbed. Let’s step inside the mountain refuge for a fresh coffee and breakfast.",
                     "TEXT_2": "On the way back we can have a great lunch at a typical rural Andalusian farmhouse."
                     
@@ -1237,10 +1249,14 @@
                 "HIGHLIGHT_TEXT_3": "360º viewpoint at 2.080 m",
 
                 "PRICES": "Price:",
-                "PRICES_TEXT_1": "2 - 4 people: 70 € p.p.",
-                "PRICES_TEXT_2": "5 people – 50 € p.p",
-                "PRICES_TEXT_3": "6 people – 45 € p.p",
-                "PRICES_TEXT_4": "7 people – 40 € p.p",
+                "PRICES_TEXT_1": "Our hiking tour prices vary depending on the number of participants. This helps us offer fair and flexible pricing, while ensuring a high-quality, personalized experience for every group.  ",
+                "PRICES_TEXT_2": "Special pricing is available for families and larger groups. Contact us for more information.  ",
+
+                "DIFFICULTY": "Difficulty - Basic +",
+                "DIFFICULTY_1": "This trail is suitable for people with a basic level of physical fitness who are comfortable with walking for half a day.",
+                "DIFFICULTY_2": "For those who prefer a less demanding route, there is an option to skip the ascent to the peak. You can still enjoy the trail and its beautiful surroundings without doing the full climb.",
+                "DIFFICULTY_3": "In addition, we recommend using suitable materials such as hiking boots, walking poles, etc.",
+                "DIFFICULTY_4": "If you're unsure whether this trail is right for you or your group, feel free to contact us — we're happy to help you choose the best option!",
 
                 "WHAT_TO_BRING" : "What to bring for Hiking",
                 "WHAT_TO_BRING_TEXT_1" : "Weather is important to consider while packing for your outdoor activity. Your packing list is based on your comfort and sensitivity. Layering your clothes is the best way to travel and be outdoors. It is highly recommended as the best way to stay warm and cool, as the weather is bound to change in the mountains.",
@@ -1386,10 +1402,8 @@
                 "ROUTE_TYPE": "Point-to-point",               
 
                 "PHYSICAL_DIFFICULTY_1": "Day 1: C",
-                "PHYSICAL_DIFFICULTY_2": "Day 2: C",
+                "PHYSICAL_DIFFICULTY_2": "Day 2: C+",
 
-                "TECHNICAL_DIFFICULTY_1": "Day 1: C",
-                "TECHNICAL_DIFFICULTY_2": "Day 2: C",
 
                  "INCLUDED": {
                     "TITLE": "Included",
@@ -1524,8 +1538,6 @@
                 "PHYSICAL_DIFFICULTY_1": "Trail 1: D",
                 "PHYSICAL_DIFFICULTY_2": "Trail 2: C",
 
-                "TECHNICAL_DIFFICULTY_1": "Trail 1: C",
-                "TECHNICAL_DIFFICULTY_2": "Trail 2: C",
 
                  "INCLUDED": {
                     "TITLE": "Included",

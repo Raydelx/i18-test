@@ -14,6 +14,10 @@
         "TAILOR_MADE_TRAVELS": "Op maat gemaakte reizen"
     }, 
 
+    "PRICE_TREKKING": "Prijs:",
+    "PRICE_TREKKING_1": "Onze prijzen voor wandeltochten variëren afhankelijk van het aantal deelnemers. Dit helpt ons eerlijke en flexibele prijzen aan te bieden, terwijl we een hoogwaardige, persoonlijke ervaring voor elke groep garanderen.",
+    "PRICE_TREKKING_2": "Speciale tarieven zijn beschikbaar voor families en grotere groepen. Neem contact met ons op voor meer informatie.",
+
     "DESTINATIONS_SPAIN": "Spanje",
     "DESTINATIONS_ANDALUSIA": "Andalusië",
     "DESTINATIONS_ITALY": "Italië",
@@ -23,6 +27,7 @@
     "MTB_DESTINATIONS": "MTB Bestemmingen",
     "TOUR_DESTINATIONS": "Tourfiets Bestemmingen",
     "ROAD_DESTINATIONS": "Roadtrip Bestemmingen",
+    "TREKKING_DESTINATIONS": "Wandel- & Trekkingbestemmingen",
 
     "CARDS_HOME":{
 
@@ -367,7 +372,8 @@
         "NAME": "Volledige Naam",
         "EMAIL":"E-mailadres",
         "TEXT_1": "Uw Bericht",
-        "SEND": "Bericht Versturen"
+        "SEND": "Bericht Versturen",
+        "AGENCY": "Agencia de Viajes - Nº C.I.AN-188135-3"
     },
 
     "LEGAL_NOTICE": {
@@ -854,7 +860,6 @@
                 "TOTAL_DESCENT": "3.310 m",
                 "ROUTE_TYPE": "Punt tot punt",
                 "PHYSICAL_DIFFICULTY": "B - C",
-                "TECHNICAL_DIFFICULTY": "B",
 
                  "INCLUDED": {
                     "TITLE": "Inbegrepen",
@@ -886,11 +891,7 @@
                 },
 
                 "AVAILABILITY": "Beschikbaarheid",
-                "AVAILABILITY_TEXT_1": "2025",
-                "AVAILABILITY_TEXT_2": "20-09 / 27-09",
-                "AVAILABILITY_TEXT_3": "2026",
-                "AVAILABILITY_TEXT_4": "11-04 / 18-04",
-                "AVAILABILITY_TEXT_5": "05-09 / 12-09",
+               "AVAILABILITY_TEXT_1": "Lente / Herfst ",
 
                 "HIGHLIGHT": "Hoogtepunten",
                 "HIGHLIGHT_TEXT_1": "Sierra Nevada Natuurpark",
@@ -929,6 +930,11 @@
                 "REQUIEREMENTS_TEXT_5":"Reisverzekering. Zie algemene voorwaarden.",
                 "REQUIEREMENTS_TEXT_6":"Vrijwaringsformulier. Zie algemene voorwaarden.",
 
+                "DIFFICULTY_1": "Moeilijkheid - Gemiddeld",
+                "DIFFICULTY_2": "Dit pad is geschikt voor mensen met een goede fysieke conditie die gewend zijn aan aerobe sporten of al meerdaagse wandelingen hebben gedaan.",
+                "DIFFICULTY_3": "Goede wandeluitrusting is vereist. Wandelstokken worden aanbevolen en enkelhoge wandelschoenen zijn sterk aanbevolen.",
+                "DIFFICULTY_4": "Als je niet zeker weet of dit pad geschikt is voor jou of je groep, neem gerust contact met ons op — we helpen je graag bij het kiezen van de beste optie!",
+
                 "CANCELLATION":"Annuleringsbeleid",
                 "CANCELLATION_TEXT":"Zie algemene voorwaarden.",
 
@@ -939,47 +945,48 @@
                 "WHAT_TO_EXPECT_TEXT_4": "Ga met ons mee en ontdek de verborgen schoonheid van de Alpujarra-regio, een schat om te ontdekken!",
 
                  "DAY_1": {
-                    "TITLE": "Dag 1",
+                    "TITLE": "1",
                     "TEXT_1": "Bij aankomst in Málaga of Granada brengt onze transfer ons naar ons landelijke hotel in de regio Guadix, gelegen tussen het noorden van de Sierra Nevada en de Gorafe-woestijn, een van de unieke landschappen van de provincie Granada. De reisleider organiseert het diner om de eerste dag van de reis te vieren."
                  },
 
                  "DAY_2": {
-                    "TITLE": "Dag 2",
+                    "TITLE": "2",
                     "SUBTITLE": "Route 1 Laroles – Válor",
                     "TEXT_1": "Na het ontbijt rijden we over de bergpas “Puerto La Ragua” naar het beginpunt van de trekking in het dorp Laroles. De route start in het bovenste deel van het dorp, op 1.000 meter hoogte, vanwaar je de platte daken van de huizen ziet. Een van de bepalende elementen van het gebied, die zijn maximale betekenis krijgt in de Alpujarra, is de architectuur met invloeden van andere culturen en beschavingen. De orografie en het reliëf van het terrein bepalen het profiel van de dorpen. Deze dorpen zijn op het zuiden georiënteerd zodat de zon ze zo lang mogelijk verwarmt in de koude winters. De meeste dorpen liggen halverwege de hellingen die vanaf de top van de Sierra Nevada afdalen in een trapsgewijze opbouw die ze charme geeft.",
                     "TEXT_2": "Diner: De reisleider organiseert een diner."
                  },
 
                  "DAY_3": {
-                    "TITLE": "Dag 3",
+                    "TITLE": "3",
                     "SUBTITLE": "Route 2 Válor – Mecina Bombarón",
                     "TEXT_1": "We verlaten het dorp Válor, de geboorteplaats van de Alpujarra-held Aben Humeya, een afstammeling van de Omajjaden, die tot koning van de Alpujarra werd uitgeroepen na de Moorse opstand tegen de christenen onder Filips II in 1568. De tweede wandeling brengt ons naar Yegen, een rustig dorp waar de romantische reiziger Gerald Brenan woonde, bekend als auteur van “Al Sur de Granada”, een van de bekendste boeken over de Alpujarra. Na het oversteken van de rivier de Mecina en een steile klim bereiken we het dorp Mecina Bombarón. Daarna nemen we de auto naar ons volgende hotel in het nabijgelegen dorp Cádiar, gelegen tussen de Sierra Nevada en de Contraviesa.",
                     "TEXT_2": "Diner: De reisleider organiseert een diner."
                  },
 
                  "DAY_4": {
-                    "TITLE": "Dag 4",
+                    "TITLE": "4",
                     "SUBTITLE": "Route 3 Cádiar - Trevélez",
                     "TEXT_1": "De etappe van vandaag is zwaarder. We gaan van het zuidelijkste punt van de Alpujarra-route (800 meter) naar het hoogste punt, ongeveer 1.500 meter, in het dorp Trevélez. Behalve dat het het hoogste dorp van de Sierra Nevada is, staat Trevélez bekend om zijn natuurlijk gerijpte hammen, dankzij de gezonde berglucht. In de 19e eeuw kreeg de ham van Trevélez erkenning toen koningin Isabel II het de status van hofleverancier gaf. Het heeft nu een beschermde oorsprongsbenaming en wereldwijde erkenning.",
-                    "TEXT_2": "Diner: De reisleider organiseert een diner."
+                    "TEXT_2": "Verkorte route mogelijk: Er is ook de optie om de route in te korten, waardoor deze toegankelijker wordt voor wie een lichtere versie van de wandeling wil, zodat het niveau gelijk is aan de andere dagen.",
+                    "TEXT_3": "Diner: De reisleider organiseert een diner."
                  },
 
                  "DAY_5": {
-                    "TITLE": "Dag 5",
+                    "TITLE": "5",
                     "SUBTITLE": "Route 4 Trevélez – La Taha",
                     "TEXT_1": "Vandaag voert de route je door een steeneikenbos dat in de herfst een kleurrijke en indrukwekkende vallei biedt. In de lente bloeien de gaspeldoorn en brem, wat een zee van gele bloemen oplevert. De panoramische uitzichten tonen het ruige landschap met diepe valleien en grote hoogteverschillen van de Alpujarra. Afgelegen plekken zoals ravijnen zijn het thuis van veel soorten flora en fauna door microklimaten met koude winters en milde zomers. Na het oversteken van twee ravijnen en een lange afdaling komen we aan in het dorp Busquístar, vlakbij onze bestemming “La Taha”, een gemeente die uit verschillende mooie kleine dorpen bestaat. De naam komt van de administratieve indeling van het oude koninkrijk Granada in de Nasridenperiode. Het is een rustige plek met prachtig uitzicht en goed bewaarde traditionele buurten.",
                     "TEXT_2": "Diner: De reisleider organiseert een diner."
                  },
 
                  "DAY_6": {
-                    "TITLE": "Dag 6",
+                    "TITLE": "6",
                     "SUBTITLE": "Route 5 La Taha – Capileira",
                     "TEXT_1": "De laatste etappe van vandaag is een klim in de ochtend die ons naar onze eindbestemming brengt, het dorp Capileira, het hoogste van de drie dorpen op 1.435 meter in de Poqueira-kloof. De Poqueira-kloof en de drie dorpen op de hellingen zijn een van de meest iconische plekken van de Alpujarras. Het ligt aan de voet van de hoogste toppen en bevat een van de meest verrassende landschappen van het Sierra Nevada Natuurpark. Hier verblijven we de laatste twee nachten van de trekking.",
                     "TEXT_2": "Vrij diner"
                  },
 
                  "DAY_7": {
-                    "TITLE": "Dag 7",
+                    "TITLE": "7",
                     "SUBTITLE": "Vrije dag Capileira",
                     "TEXT_1": "Ontdek het Historisch-Artistiek gebied van de Poqueira-vallei en de drie dorpen: Pampaneira, Bubión en Capileira.",
                     "TEXT_2": "Hoewel de oorsprong teruggaat tot de Feniciërs, Romeinen en Visigoten, is de sterkste erfenis die van de Arabieren. De traditionele architectuur met witte huizen en platte daken langs steile en kronkelende straten, irrigatiesystemen, landbouw en taalkundige wortels zijn de nalatenschap van een cultuur die er acht eeuwen aanwezig was.",
@@ -987,7 +994,7 @@
                     "TEXT_4": "De gids organiseert een plek om samen te dineren om de laatste avond van de reis te vieren."
                  },
                     "DAY_8": {
-                        "TITLE": "Dag 8",
+                        "TITLE": "8",
                         "TEXT_1": "De reis eindigt na het ontbijt in ons hotel. Er is een privétransfer van het hotel naar de luchthaven van Málaga of Granada."
                     }
             },
@@ -998,8 +1005,8 @@
                 "LOCATION": "Nationaal Park Sierra Nevada",
                 "PRICE": "40 (6 pers.)",
                 "PRE_BOOKING": "100%",
-                "DURATION_1": "Route 1: 7-8 uur",
-                "DURATION_2": "Route 2: 6-7 uur",
+                "DURATION_1": "Route 1: 5 uur",
+                "DURATION_2": "Route 2: 5 uur",
                 "MINUMUM_OF_PERSONS": "2",
                 "TOUR_TYPE": "Geleid",
                 "SEASON": "Het hele jaar door",
@@ -1015,11 +1022,8 @@
 
                 "ROUTE_TYPE": "Lusroute",               
 
-                "PHYSICAL_DIFFICULTY_1": "Route 1: C",
-                "PHYSICAL_DIFFICULTY_2": "Route 2: B",
-
-                "TECHNICAL_DIFFICULTY_1": "Route 1: B",
-                "TECHNICAL_DIFFICULTY_2": "Route 2: B",
+                "PHYSICAL_DIFFICULTY_1": "Route 1: C+",
+                "PHYSICAL_DIFFICULTY_2": "Route 2: C",
 
                 "INCLUDED": {
                     "TITLE": "Inbegrepen",
@@ -1068,17 +1072,19 @@
                 "REQUIEREMENTS_TEXT_3":"Gesloten schoenen, geen open schoenen!",
                 "REQUIEREMENTS_TEXT_4":"Basis wandeluitrusting vereist (Bekijk onze blog voor meer informatie over wandeluitrusting)",
 
-                "PRICES": "Prijs:",
-                "PRICES_TEXT_1": "2 - 4 personen - 70 € p.p.",
-                "PRICES_TEXT_2": "5 personen - 50 € p.p.",
-                "PRICES_TEXT_3": "6 personen - 45 € p.p.",
-                "PRICES_TEXT_4": "7 personen - 40 € p.p.",
+                "DIFFICULTY_1": "Moeilijkheid route 1 - Gemiddeld +",
+                "DIFFICULTY_2": "Deze route is geschikt voor mensen met een zeer goede fysieke conditie die ervaring hebben met het wandelen van langere afstanden en zich comfortabel voelen bij aanhoudende fysieke inspanning over gevarieerd terrein.",
+                "DIFFICULTY_3": "Goede wandeluitrusting is vereist. Wandelstokken worden aanbevolen en enkelhoge wandelschoenen zijn sterk aanbevolen.",
+                "DIFFICULTY_4": "Moeilijkheid route 2 - Gemiddeld",
+                "DIFFICULTY_5": "Deze route is geschikt voor mensen met een goede fysieke conditie die gewend zijn aan aerobe sporten.",
+                "DIFFICULTY_6": "Goede wandeluitrusting is vereist. Wandelstokken worden aanbevolen en enkelhoge wandelschoenen zijn sterk aanbevolen.",
+                "DIFFICULTY_7": "Als je twijfelt of deze route geschikt is voor jou of je groep, neem gerust contact met ons op — we helpen je graag bij het kiezen van de beste optie!",
 
                 "WHAT_TO_EXPECT": "Wat te verwachten",
 
                 "DAY_1": {
 
-                    "TITLE": "Dag 1",
+                    "TITLE": "1",
                     "TEXT_1": "Een van de mooiste routes in het Nationaal Park Sierra Nevada is het Oude Mijnpad. Dit historische pad, aangelegd eind 19e eeuw om toegang te krijgen tot de mijnen, volgt de rivier de Genil richting de samenvloeiing van verschillende rivieren aan het einde van de vallei. De vallei onthult zijn prachtige landschap, waaronder de ruige noordflanken van de hoogste toppen van de Sierra Nevada: Mulhacén, Veleta en Alcazaba. Gedurende de dag kom je ruïnes van stenen gebouwen, oude mijnschachten en de typische Iberische steenbok of de steenarend tegen. Om bij het beginpunt van het pad te komen rijden we ongeveer 30 minuten naar het mooie dorp Güéjar Sierra, een bergdorp gelegen op 1.000 meter aan de noordwestelijke helling van het Nationaal Park Sierra Nevada.",
                     "TEXT_2": "We hebben twee varianten met verschillende niveaus van wandelmoeilijkheid.",
                     "TEXT_3": "(Bekijk onze blog voor meer informatie over onze wandelgraden)"
@@ -1088,10 +1094,10 @@
             "SUNRISE_SIERRA_NEVADA": {
                 "TITLE": "Zonsopgang Sierra Nevada",
                 "LOCATION": "Nationaal Park Sierra Nevada",
-                "PRICE": "90 (4 pers.)",
+                "PRICE": "60 (7 pers.)",
                 "PRE_BOOKING": "100%",
                 "MINIMUM_OF_PERSONS": "2",
-                "DURATION": "7 Uur",
+                "DURATION": "5 Uur",
                 "TOUR_TYPE": "Geleid",
                 "SEASON": "Zomer",
 
@@ -1100,7 +1106,6 @@
                 "TOTAL_DESCENT": "900 m",
                 "ROUTE_TYPE": "Heen en terug",
                 "PHYSICAL_DIFFICULTY": "C",
-                "TECHNICAL_DIFFICULTY": "B",
 
                 "INCLUDED": {
                     "TITLE": "Inbegrepen",
@@ -1132,11 +1137,14 @@
                 "HIGHLIGHT_TEXT_4": "Zonsopgang vanaf de top van Veleta op 3.392 meter",
 
                 "PRICES": "Prijs:",
-                "PRICES_TEXT_1": "1 persoon - 200 €",
-                "PRICES_TEXT_2": "2 personen – 120 € p.p.",
-                "PRICES_TEXT_3": "3 personen – 100 € p.p.",
-                "PRICES_TEXT_4": "4-5 personen – 90 € p.p.",
-                "PRICES_TEXT_5": "6-7 personen – 80 € p.p.",
+                "PRICES_TEXT_1": "Onze prijzen voor wandeltochten variëren afhankelijk van het aantal deelnemers. Dit helpt ons eerlijke en flexibele prijzen aan te bieden, terwijl we een hoogwaardige, persoonlijke ervaring voor elke groep garanderen.",
+                "PRICES_TEXT_2": "Speciale tarieven zijn beschikbaar voor families en grotere groepen. Neem contact met ons op voor meer informatie.",
+
+                "DIFFICULTY": "Moeilijkheid - Gemiddeld",
+                "DIFFICULTY_1": "Dit pad is geschikt voor mensen met een goede fysieke conditie die gewend zijn aan aerobe sporten.",
+                "DIFFICULTY_2": "Terrein: Wandelen op oneffen, losliggend terrein met een klim naar de top en een afdaling terug.",
+                "DIFFICULTY_3": "Goede wandeluitrusting is vereist. Wandelstokken worden aanbevolen en enkelhoge wandelschoenen zijn sterk aanbevolen.",
+                "DIFFICULTY_4": "Als je twijfelt of deze route geschikt is voor jou of je groep, neem gerust contact met ons op — we helpen je graag bij het kiezen van de beste optie!",
 
                 "WHAT_TO_BRING": "Wat mee te nemen voor wandelen",
                 "WHAT_TO_BRING_TEXT_1": "Het weer is belangrijk om rekening mee te houden bij het inpakken voor je buitenactiviteit. Je paklijst is gebaseerd op je comfort en gevoeligheid. Het dragen van laagjes kleding is de beste manier om te reizen en buiten te zijn. Het wordt sterk aanbevolen als de beste manier om warm en koel te blijven, aangezien het weer in de bergen onvoorspelbaar kan veranderen.",
@@ -1161,7 +1169,7 @@
                 "WHAT_TO_EXPECT": "Wat te verwachten",
 
                 "DAY_1": {
-                    "TITLE": "Dag 1",
+                    "TITLE": "1",
                     "TEXT_1": "Onder de donkere hemel, op een hoogte van 2.500 meter, beginnen we de beklimming geleid door de belofte van een spectaculaire zonsopgang die ons wacht op de top van Veleta op 3.392 meter, de op één na hoogste piek van de Sierra Nevada. Bij het bereiken van de laatste bergkam verschijnen de eerste lichtstralen aan de horizon en kleuren de lucht in prachtige schemerkleuren van geelrood. Bovenop de top worden we begroet door de zonsopgang, een bijzonder moment van bezinning. Daarna beginnen we aan de afdaling en volgen we het pad terug dat we omhoog zijn gekomen. We stappen binnen in de berghut voor een verse koffie en ontbijt.",
                     "TEXT_2": "Op de terugweg kunnen we genieten van een heerlijke lunch bij een typisch Andalusisch landhuis."
                 }
@@ -1212,11 +1220,15 @@
                 "HIGHLIGHT_TEXT_2": "Dolomietlandschap",
                 "HIGHLIGHT_TEXT_3": "360º uitzichtpunt op 2.080 m",
 
-                "PRIJZEN": "Prijs:",
-                "PRIJZEN_TEXT_1": "2 - 4 personen - 70 € p.p.",
-                "PRIJZEN_TEXT_2": "5 personen - 50 € p.p.",
-                "PRIJZEN_TEXT_3": "6 personen - 45 € p.p.",
-                "PRIJZEN_TEXT_4": "7 personen - 40 € p.p.",
+                "PRICES": "Prijs:",
+                "PRICES_TEXT_1": "Onze prijzen voor wandeltochten variëren afhankelijk van het aantal deelnemers. Dit helpt ons eerlijke en flexibele prijzen aan te bieden, terwijl we een hoogwaardige, persoonlijke ervaring voor elke groep garanderen.",
+                "PRICES_TEXT_2": "Speciale tarieven zijn beschikbaar voor families en grotere groepen. Neem contact met ons op voor meer informatie.",
+
+                "DIFFICULTY": "Moeilijkheidsgraad  - Basis +",
+                "DIFFICULTY_1": "Dit pad is geschikt voor mensen met een basisconditie die comfortabel een halve dag kunnen wandelen.",
+                "DIFFICULTY_2": "Voor wie een minder veeleisende route wil, is er een optie om de klim naar de top over te slaan. Je kunt nog steeds genieten van het pad en de prachtige omgeving zonder de volledige klim te doen.",
+                "DIFFICULTY_3": "Daarnaast raden we aan om geschikt materiaal te gebruiken, zoals wandelschoenen, wandelstokken, enz.",
+                "DIFFICULTY_4": "Als je niet zeker weet of dit pad geschikt is voor jou of je groep, neem gerust contact met ons op — we helpen je graag bij het kiezen van de beste optie!",
 
                 "WHAT_TO_BRING" : "Wat mee te nemen voor wandelen",
                 "WHAT_TO_BRING_TEXT_1" : "Het weer is belangrijk om rekening mee te houden bij het inpakken voor je buitenactiviteit. Je paklijst is gebaseerd op je comfort en gevoeligheid. Het dragen van laagjes kleding is de beste manier om te reizen en buiten te zijn. Het wordt sterk aanbevolen als de beste manier om warm en koel te blijven, aangezien het weer in de bergen onvoorspelbaar kan veranderen.",
@@ -1361,10 +1373,8 @@
                 "ROUTE_TYPE": "Punt-tot-punt",               
 
                 "PHYSICAL_DIFFICULTY_1": "Dag 1: C",
-                "PHYSICAL_DIFFICULTY_2": "Dag 2: C",
+                "PHYSICAL_DIFFICULTY_2": "Dag 2: C+",
 
-                "TECHNICAL_DIFFICULTY_1": "Dag 1: C",
-                "TECHNICAL_DIFFICULTY_2": "Dag 2: C",
 
                  "INCLUDED": {
                     "TITLE": "Inbegrepen",
@@ -1499,8 +1509,6 @@
             "PHYSICAL_DIFFICULTY_1": "Route 1: D",
             "PHYSICAL_DIFFICULTY_2": "Route 2: C",
 
-            "TECHNICAL_DIFFICULTY_1": "Route 1: C",
-            "TECHNICAL_DIFFICULTY_2": "Route 2: C",
 
              "INCLUDED": {
                 "TITLE": "Inbegrepen",

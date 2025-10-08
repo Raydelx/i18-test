@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import Layout from "../../../layouts/Layout.astro";
 import Container from "../../../components/container.astro";
+import "../../../styles/article.css";
 
 // Generate a new path for every collection entry
 export async function getStaticPaths() {
@@ -49,7 +50,7 @@ const { Content } = await entry.render();
       </div>
     </div>
 
-    <div class="mx-auto prose prose-lg mt-6 max-w-3xl">
+    <div class="mx-auto prose prose-lg mt-6 max-w-3xl markdown-body">
       <Content />
     </div>
     <div class="text-center mt-8">

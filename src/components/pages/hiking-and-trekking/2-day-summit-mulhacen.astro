@@ -12,6 +12,7 @@ import Widget from "@/components/products-components/widget.astro";
 import Cancellation from "@/components/products-components/cancellation.astro";
 
 import { getI18N } from "@/i18n/";
+import PricesTrekking from "@/components/products-components/prices-trekking.astro";
 
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
@@ -49,7 +50,6 @@ const DAYS = [
     totalDescent: "885 m",
     routeType: "Point-to-point",
     physical_difficulty: "C",
-    technical_difficulty: "C",
   },
   {
     title2: i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN.DAY_2.TITLE,
@@ -70,8 +70,7 @@ const DAYS = [
     totalAscent: "1000 m",
     totalDescent: "800 m",
     routeType: "Point-to-point",
-    physical_difficulty: "C",
-    technical_difficulty: "C",
+    physical_difficulty: "C +",
   },
 ];
 
@@ -275,13 +274,6 @@ const brings = [
             .PHYSICAL_DIFFICULTY_1}
           subtitle3={i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN
             .PHYSICAL_DIFFICULTY_2}
-        />
-        <InformationProducts
-          title={i18n.INFO_PRODUCTS.TECHNICAL_DIFFICULTY}
-          subtitle={i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN
-            .TECHNICAL_DIFFICULTY_1}
-          subtitle3={i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN
-            .TECHNICAL_DIFFICULTY_2}
         />
       </div>
     </div>
@@ -611,35 +603,7 @@ const brings = [
 
     <section class="grid md:grid-cols-2 mt-10 gap-6 items-center">
       <Cancellation />
-      <div class="flex flex-col gap-2 md:p-4">
-        <div>
-          <h3 class="text-4xl md:text-5xl xl:text-6xl font-bold">
-            {i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN.PRICES}:
-          </h3>
-          <Dots class="mb-4" />
-        </div>
-        <p class="text-gray-700">
-          {i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN.PRICES_TEXT_1}
-        </p>
-        <p class="text-gray-700">
-          {i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN.PRICES_TEXT_2}
-        </p>
-        <p class="text-gray-700">
-          {i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN.PRICES_TEXT_3}
-        </p>
-        <p class="text-gray-700">
-          {i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN.PRICES_TEXT_4}
-        </p>
-        <p class="text-gray-700">
-          {i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN.PRICES_TEXT_5}
-        </p>
-        <p class="text-gray-700">
-          {i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN.PRICES_TEXT_6}
-        </p>
-        <p class="text-gray-700">
-          {i18n.PRODUCTS.HIKING_TREKKING.TWO_DAY_SUMMIT_MULHACEN.PRICES_TEXT_7}
-        </p>
-      </div>
+      <PricesTrekking />
     </section>
 
     <!-- Slider Photos -->

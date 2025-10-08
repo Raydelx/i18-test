@@ -1,0 +1,56 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Container from "../../components/container.astro";
+import Sectionhead from "../../components/sectionhead.astro";
+import Bento from "../../components/bento.astro";
+
+import {
+  getLangFromUrl,
+  useTranslations,
+  useTranslatedPath,
+} from "../../i18n/utils.js";
+import { getI18N } from "@/i18n/";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+---
+
+<Layout title="Hiking & Trekking Destinations">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">{i18n.TREKKING_DESTINATIONS}</Fragment>
+      <Fragment slot="desc"></Fragment>
+    </Sectionhead>
+
+    <div class="grid lg:grid-cols-3 gap-6 mt-8">
+      <div class="grid grid-cols-1 content-center">
+        <a href={translatePath("trekking-hikking-spain")}>
+          <img
+            class="duration-300 ob-cover ease-in-out hover:scale-105 text-center m-auto"
+            src="/destinations/spain.png"
+            alt="Spain map 3D"
+          />
+          <p class="text-center text-3xl font-bold">
+            {i18n.DESTINATIONS_SPAIN}
+          </p>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 content-center">
+        <a href={translatePath("trekking-hikking-andalucia")}>
+          <img
+            class="duration-300 ob-cover ease-in-out hover:scale-105 text-center m-auto"
+            src="/destinations/andalucia.png"
+            alt="Andalucia map 3D"
+          />
+          <p class="text-center text-3xl font-bold">
+            {i18n.DESTINATIONS_ANDALUSIA}
+          </p>
+        </a>
+      </div>
+    </div>
+  </Container>
+</Layout>

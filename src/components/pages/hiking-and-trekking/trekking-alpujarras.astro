@@ -12,6 +12,7 @@ import Dots from "@/components/ui/dots.astro";
 import Widget from "@/components/products-components/widget.astro";
 
 import { getI18N } from "@/i18n/";
+import PricesTrekking from "@/components/products-components/prices-trekking.astro";
 
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
@@ -54,7 +55,6 @@ const DAYS = [
     totalDescent: "650 M",
     duration: "5 hours",
     physical_difficulty: "B",
-    technical_difficulty: "B",
   },
   {
     day: i18n.PRODUCTS.HIKING_TREKKING.TREKKING_ALPUJARRAS.DAY_3.TITLE,
@@ -67,8 +67,7 @@ const DAYS = [
     totalAscent: "700 M",
     totalDescent: "400 M",
     duration: "5 hours",
-    physical_difficulty: "B",
-    technical_difficulty: "B",
+    physical_difficulty: "B+",
   },
   {
     day: i18n.PRODUCTS.HIKING_TREKKING.TREKKING_ALPUJARRAS.DAY_4.TITLE,
@@ -77,12 +76,13 @@ const DAYS = [
     description: i18n.PRODUCTS.HIKING_TREKKING.TREKKING_ALPUJARRAS.DAY_4.TEXT_1,
     description2:
       i18n.PRODUCTS.HIKING_TREKKING.TREKKING_ALPUJARRAS.DAY_4.TEXT_2,
+    description3:
+      i18n.PRODUCTS.HIKING_TREKKING.TREKKING_ALPUJARRAS.DAY_4.TEXT_3,
     totalDistance: "20 KM",
     totalAscent: "1.300 M",
     totalDescent: "900 M",
     duration: "8 hours",
-    physical_difficulty: "C",
-    technical_difficulty: "B",
+    physical_difficulty: "C+",
   },
   {
     day: i18n.PRODUCTS.HIKING_TREKKING.TREKKING_ALPUJARRAS.DAY_5.TITLE,
@@ -95,8 +95,7 @@ const DAYS = [
     totalAscent: "650 M",
     totalDescent: "950 M",
     duration: "6 hours",
-    physical_difficulty: "B",
-    technical_difficulty: "B",
+    physical_difficulty: "C",
   },
   {
     day: i18n.PRODUCTS.HIKING_TREKKING.TREKKING_ALPUJARRAS.DAY_6.TITLE,
@@ -110,7 +109,6 @@ const DAYS = [
     totalDescent: "410 M",
     duration: "5 hours",
     physical_difficulty: "C",
-    technical_difficulty: "B",
   },
   {
     day: i18n.PRODUCTS.HIKING_TREKKING.TREKKING_ALPUJARRAS.DAY_7.TITLE,
@@ -319,11 +317,6 @@ const brings = [
             title={i18n.INFO_PRODUCTS.PHYSICAL_DIFFICULTY}
             subtitle={i18n.PRODUCTS.HIKING_TREKKING.TREKKING_ALPUJARRAS
               .PHYSICAL_DIFFICULTY}
-          />
-          <InformationProducts
-            title={i18n.INFO_PRODUCTS.TECHNICAL_DIFFICULTY}
-            subtitle={i18n.PRODUCTS.HIKING_TREKKING.TREKKING_ALPUJARRAS
-              .TECHNICAL_DIFFICULTY}
           />
         </div>
       </div>
@@ -541,50 +534,12 @@ const brings = [
             class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
             {i18n.PRODUCTS.HIKING_TREKKING.TREKKING_ALPUJARRAS.AVAILABILITY}
           </h2>
-          <h2 class="max-w-2xl mb-2 md:px-0 font-bold text-xl md:text-2xl">
+          <h2 class="max-w-2xl mb-2 md:px-0 text-xl md:text-xl">
             {
               i18n.PRODUCTS.HIKING_TREKKING.TREKKING_ALPUJARRAS
                 .AVAILABILITY_TEXT_1
             }
           </h2>
-
-          <ul class="grid gap-2 text-lg">
-            <li class="flex flex-wrap gap-2">
-              <div>
-                <p>
-                  {
-                    i18n.PRODUCTS.HIKING_TREKKING.TREKKING_ALPUJARRAS
-                      .AVAILABILITY_TEXT_2
-                  }
-                </p>
-              </div>
-            </li>
-          </ul>
-          <h2 class="max-w-2xl mt-4 mb-2 md:px-0 font-bold text-xl md:text-2xl">
-            {
-              i18n.PRODUCTS.HIKING_TREKKING.TREKKING_ALPUJARRAS
-                .AVAILABILITY_TEXT_3
-            }
-          </h2>
-
-          <ul class="grid gap-2 text-lg">
-            <li class="flex flex-wrap gap-2">
-              <div>
-                <p>
-                  {
-                    i18n.PRODUCTS.HIKING_TREKKING.TREKKING_ALPUJARRAS
-                      .AVAILABILITY_TEXT_4
-                  }
-                </p>
-                <p>
-                  {
-                    i18n.PRODUCTS.HIKING_TREKKING.TREKKING_ALPUJARRAS
-                      .AVAILABILITY_TEXT_5
-                  }
-                </p>
-              </div>
-            </li>
-          </ul>
         </div>
 
         <div class="mt-4">
@@ -685,17 +640,31 @@ const brings = [
           <h2 class="md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
             {i18n.PRODUCTS.HIKING_TREKKING.TREKKING_ALPUJARRAS.CANCELLATION}
           </h2>
-          <Dots class="mb-4" />
         </div>
 
         <div>
-          <p class="text-lg text-gray-700 mt-1">
+          <p class="text-lg text-gray-900 mt-6">
             {
               i18n.PRODUCTS.HIKING_TREKKING.TREKKING_ALPUJARRAS
                 .CANCELLATION_TEXT
             }
           </p>
         </div>
+      </div>
+      <PricesTrekking />
+      <div>
+        <h2 class="text-4xl md:text-4xl xl:text-4xl font-bold mb-6">
+          {i18n.PRODUCTS.HIKING_TREKKING.TREKKING_ALPUJARRAS.DIFFICULTY_1}
+        </h2>
+        <p class="text-gray-700 text-lg">
+          {i18n.PRODUCTS.HIKING_TREKKING.TREKKING_ALPUJARRAS.DIFFICULTY_2}
+        </p>
+        <p class="text-gray-700 text-lg">
+          {i18n.PRODUCTS.HIKING_TREKKING.TREKKING_ALPUJARRAS.DIFFICULTY_3}
+        </p>
+        <p class="text-gray-700 text-lg">
+          {i18n.PRODUCTS.HIKING_TREKKING.TREKKING_ALPUJARRAS.DIFFICULTY_4}
+        </p>
       </div>
     </section>
 

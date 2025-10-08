@@ -12,6 +12,7 @@ import Widget from "@/components/products-components/widget.astro";
 import Cancellation from "@/components/products-components/cancellation.astro";
 
 import { getI18N } from "@/i18n/";
+import PricesTrekking from "@/components/products-components/prices-trekking.astro";
 
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
@@ -46,12 +47,12 @@ const DAYS = [
     totalDistance: "22 KM",
     totalAscent: "1000 M",
     totalDescent: "1000 M",
-    duration: "7 - 8 hours",
+    duration: "5 hours",
 
     totalDistance2: "15 KM",
     totalAscent2: "800 M",
     totalDescent2: "800 M",
-    duration2: "6 hours",
+    duration2: "5 hours",
     physical_difficulty: "C",
     technical_difficulty: "B",
     techical_optional2: "Second  loop",
@@ -239,19 +240,12 @@ const brings = [
             subtitle3={i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL
               .PHYSICAL_DIFFICULTY_2}
           />
-          <InformationProducts
-            title={i18n.INFO_PRODUCTS.TECHNICAL_DIFFICULTY}
-            subtitle={i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL
-              .TECHNICAL_DIFFICULTY_1}
-            subtitle3={i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL
-              .TECHNICAL_DIFFICULTY_2}
-          />
         </div>
       </div>
 
       <!--  Include, exclude, complementaries  -->
       <div
-        class="grid md:grid-cols-2 lg:grid-cols-2 mt-20 md:mt-26 md:mb-36 gap-16 md:gap-4">
+        class="grid md:grid-cols-2 lg:grid-cols-3 mt-20 md:mt-26 md:mb-36 gap-16 md:gap-4">
         <!-- Include -->
         <Includes
           title={i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.INCLUDED
@@ -388,9 +382,35 @@ const brings = [
 
     <!-- Button to download PDF -->
     <section class="grid md:grid-cols-2 gap-10">
+      <PricesTrekking />
+      <Cancellation />
+
+      <div>
+        <h2 class="text-4xl md:text-4xl xl:text-4xl font-bold mb-6">
+          {i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.DIFFICULTY_1}
+        </h2>
+        <p class="text-gray-700 text-lg">
+          {i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.DIFFICULTY_2}
+        </p>
+        <p class="text-gray-700 text-lg">
+          {i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.DIFFICULTY_3}
+        </p>
+        <h2 class="text-4xl md:text-4xl xl:text-4xl font-bold mb-6 mt-8">
+          {i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.DIFFICULTY_4}
+        </h2>
+        <p class="text-gray-700 text-lg">
+          {i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.DIFFICULTY_5}
+        </p>
+        <p class="text-gray-700 text-lg">
+          {i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.DIFFICULTY_6}
+        </p>
+        <p class="text-gray-700 text-lg">
+          {i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.DIFFICULTY_7}
+        </p>
+      </div>
       <div class="">
         <h2
-          class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+          class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-4xl xl:text-4xl">
           {i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.REQUIEREMENTS}
         </h2>
         <p class="text-lg text-gray-900 mb-1">
@@ -414,29 +434,6 @@ const brings = [
               .REQUIEREMENTS_TEXT_3
           }
         </p>
-        <p class="text-lg text-gray-900">
-          <span class="text-xl">🔹</span>
-          {
-            i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL
-              .REQUIEREMENTS_TEXT_4
-          }
-        </p>
-      </div>
-    </section>
-    <section class="grid md:grid-cols-2 gap-6 items-center">
-      <Cancellation />
-      <div class="flex flex-col gap-2 md:p-4">
-        <div>
-          <h3 class="text-4xl md:text-5xl xl:text-6xl font-bold">
-            {i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.PRICES}:
-          </h3>
-          <Dots class="mb-4" />
-        </div>
-
-        <p>{i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.PRICES_TEXT_1}</p>
-        <p>{i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.PRICES_TEXT_2}</p>
-        <p>{i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.PRICES_TEXT_3}</p>
-        <p>{i18n.PRODUCTS.HIKING_TREKKING.THE_OLD_MINE_TRAIL.PRICES_TEXT_4}</p>
       </div>
     </section>
 

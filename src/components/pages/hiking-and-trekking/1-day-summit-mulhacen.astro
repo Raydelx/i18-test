@@ -12,6 +12,7 @@ import Widget from "@/components/products-components/widget.astro";
 import Cancellation from "@/components/products-components/cancellation.astro";
 
 import { getI18N } from "@/i18n/";
+import PricesTrekking from "@/components/products-components/prices-trekking.astro";
 
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
@@ -64,7 +65,6 @@ const DAYS = [
     totalDescent: "1500 m",
     routeType: "Out-and-Back",
     physical_difficulty: "D",
-    technical_difficulty: "C",
   },
   {
     title2: i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN.DAY_2.TITLE,
@@ -84,7 +84,6 @@ const DAYS = [
     totalDescent: "800 m",
     routeType: "Out-and-Back",
     physical_difficulty: "C",
-    technical_difficulty: "C",
   },
 ];
 
@@ -288,13 +287,6 @@ const brings = [
             subtitle3={i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
               .PHYSICAL_DIFFICULTY_2}
           />
-          <InformationProducts
-            title={i18n.INFO_PRODUCTS.TECHNICAL_DIFFICULTY}
-            subtitle={i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
-              .TECHNICAL_DIFFICULTY_1}
-            subtitle3={i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN
-              .TECHNICAL_DIFFICULTY_2}
-          />
         </div>
       </div>
 
@@ -306,7 +298,7 @@ const brings = [
           title={i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN.INCLUDED
             .TITLE}>
           <ul slot="description" class="mt-4 flex flex-col gap-2">
-            <li class="flex flex-wrap gap-2">
+            <li class="flex gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
               <p class="max-w-[320px] text-md">
                 {
@@ -315,7 +307,7 @@ const brings = [
                 }
               </p>
             </li>
-            <li class="flex flex-wrap gap-2">
+            <li class="flex gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
               <p class="max-w-[320px] text-md">
                 {
@@ -324,7 +316,7 @@ const brings = [
                 }
               </p>
             </li>
-            <li class="flex flex-wrap gap-2">
+            <li class="flex gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
               <p class="max-w-[320px] text-md">
                 {
@@ -618,32 +610,7 @@ const brings = [
 
     <section class="grid md:grid-cols-2 mt-10 gap-6 items-center">
       <Cancellation />
-      <div class="flex flex-col gap-2 md:p-4">
-        <div>
-          <h3 class="text-4xl md:text-5xl xl:text-6xl font-bold">
-            {i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN.PRICES}:
-          </h3>
-          <Dots class="mb-4" />
-        </div>
-        <p class="text-gray-700">
-          {i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN.PRICES_TEXT_1}
-        </p>
-        <p class="text-gray-700">
-          {i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN.PRICES_TEXT_2}
-        </p>
-        <p class="text-gray-700">
-          {i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN.PRICES_TEXT_3}
-        </p>
-        <p class="text-gray-700">
-          {i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN.PRICES_TEXT_4}
-        </p>
-        <p class="text-gray-700">
-          {i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN.PRICES_TEXT_5}
-        </p>
-        <p class="text-gray-700">
-          {i18n.PRODUCTS.HIKING_TREKKING.ONE_DAY_SUMMIT_MULHACEN.PRICES_TEXT_6}
-        </p>
-      </div>
+      <PricesTrekking />
     </section>
 
     <!-- Slider Photos -->
