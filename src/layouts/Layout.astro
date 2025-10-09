@@ -23,7 +23,7 @@ const lang = getLangFromUrl(Astro.url);
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
 
-const resolvedImageWithDomain = new URL("/montaraz.jpg", Astro.site).toString();
+const resolvedImageWithDomain = new URL("/logo.svg", Astro.site).toString();
 
 const { title } = Astro.props;
 
@@ -43,7 +43,7 @@ const makeTitle = title
     <!-- <link rel="preload" as="image" href={src} alt="Hero" /> -->
     <SEO
       title={makeTitle}
-      description="Montaraz Outdoor & Culture oficial website, travels, tours, tripis, hikking, bikes. "
+      description="Montaraz Outdoor & Culture oficial website, travels, tours, tripis, hikking, bikes, cycling andalusia and spain, treking. "
       canonical={canonicalURL}
       twitter={{
         creator: "Raydel Conesa Perez",
