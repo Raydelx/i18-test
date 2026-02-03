@@ -97,6 +97,7 @@ export const routes = {
 		'trekking-hikking-andalucia': 'trekking-hikking-andalucia',
 		'trekking-hikking-spain': 'trekking-hikking-spain',
 		'cookie-policy': 'cookie-policy',
+		'cycle-tour-sardinia': 'cycle-tour-sardinia',
 	},
 	en: {
 		blog: 'blog',
@@ -154,6 +155,7 @@ export const routes = {
 		'trekking-hikking-andalucia': 'trekking-hikking-andalucia',
 		'trekking-hikking-spain': 'trekking-hikking-spain',
 		'cookie-policy': 'cookie-policy',
+		'cycle-tour-sardinia': 'cycle-tour-sardinia',
 		
 	},
 } 
