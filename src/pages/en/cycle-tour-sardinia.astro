@@ -1,0 +1,794 @@
+---
+import Container from "@/components/container.astro";
+import InformationProducts from "@/components/ui/informationProducts.astro";
+import Icon from "@/components/Icon.astro";
+import Layout from "@/layouts/Layout.astro";
+import SliderReact from "@/hooks/SliderReact";
+import Days from "@/components/products-components/days.astro";
+import Includes from "@/components/products-components/includes.astro";
+import Route from "@/components/ui/icons/route.astro";
+import Link from "@/components/ui/link.astro";
+import cycleSardiniaEs from "@/data_files/cycleSardiniaEs.json";
+
+import ReviewsCompt from "@/components/ui/reviewsCompt.astro";
+
+import { getI18N } from "@/i18n/";
+import NewFaq from "@/components/newFaq.astro";
+import AccordionProducts from "@/components/accordionProducts.astro";
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+
+// Duplica y cambia las rutas para añadir o modificar las fotos
+
+const BIKES = [
+  {
+    src: "/cycle-tour/leisure-cycling/italia/sardinia/bike-1.png",
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/italia/sardinia/bike-2.png",
+  },
+];
+
+const IMG = [
+  {
+    src: "/cycle-tour/leisure-cycling/italia/sardinia/sardinia-1.webp",
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/italia/sardinia/sardinia-2.webp",
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/italia/sardinia/sardinia-3.webp",
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/italia/sardinia/sardinia-4.webp",
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/italia/sardinia/sardinia-5.webp",
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/italia/sardinia/sardinia-6.webp",
+  },
+];
+
+type ReviewsProps = {
+  header: {
+    name: string;
+    productName: string;
+    valoration: string;
+  };
+  body: {
+    text: string;
+  };
+};
+
+const DAYS = [
+  {
+    day: "1",
+    tecnicalInfo: false,
+    title: "Arrival Olbia ",
+    description:
+      "Upon arrival at Olbia Airport, a transfer will be waiting to take you to the hotel. Depending on your arrival time, the rest of the day is free. You may choose to spend the afternoon exploring Olbia’s old town, which offers a pleasant atmosphere for a relaxed stroll, as well as plenty of cafés and restaurants where you can enjoy lunch or a coffee.",
+    description3:
+      "In the afternoon, at the agreed meeting time, the tour leader will meet the group at the hotel reception to provide a briefing about the tour and the days ahead. In the evening, a table is reserved at a local restaurant, where we come together for our first dinner and the official start of the trip.",
+  },
+  {
+    day: "2",
+    tecnicalInfo: true,
+    title: "Gallura Cork Forest",
+    description:
+      "Our first cycling day in Sardinia begins with a short transfer from Olbia, driving about 30 minutes north to reach the starting point of today’s ride. From here, the route leads us through Gallura, a region with a strong local identity and traditional countryside, known for its granite hills and vast cork oak forests—some of the most important in Europe. Cork has been harvested here for centuries, shaping both the local economy and the landscape.",
+    description2:
+      "Along the way, we ride through small villages like Sant’Antonio di Gallura, stopping for coffee and a break, giving us time to enjoy the easygoing pace of daily life in Sardinia at its most genuine: simple, peaceful, and deeply connected to the land.",
+
+    description3:
+      "The stage concludes in Tempio Pausania, set at the foot of Mount Limbara. A charming and characteristic town, Tempio Pausania has long been considered the cradle of Gallura culture. Its historic centre, built almost entirely from exposed local granite, creates a distinctive and harmonious atmosphere, offering enchanting views and a perfect setting to end our first day of cycling in Sardinia.",
+
+    totalDistance: "39 km",
+    totalAscent: "826 m",
+    totalDescent: "414 m",
+    duration: "5 hours",
+    difficulty: "Level 2",
+  },
+
+  {
+    day: "3",
+    tecnicalInfo: true,
+    title: "Monte Limbara. ",
+    description:
+      "Waking up above the Gallurese plain and surrounded by dense cork woods is a memorable start to the day, with Monte Limbara (1,395 m) dominating the rugged landscape.",
+    description2:
+      "Today’s ride circles the Monte Limbara massif on a scenic route towards the village of Berchidda. The road skirts the western side of the mountain, passing through extensive cork oak and pine forests. Gradually, the deep greens of the woodland give way to straw-coloured fields and the blue mirror of Lago di Coghinas.",
+    description3:
+      "Just before crossing the bridge over the lake, the route turns east towards the farming town of Berchidda, a village with a long viticultural tradition. The area is a well-known wine region, famous for the production of Vermentino di Gallura, Sardinia’s only DOCG-rated wine",
+    description4:
+      "The stage continues with a ride to a family-owned vineyard, where there is the option to join a wine tasting accompanied by a typical Sardinian lunch, offering a relaxed and authentic experience of local flavours and traditions.",
+    description5: "After the visit, we return to our hotel by car.",
+
+    totalDistance: "46 km",
+    totalAscent: "500 m",
+    totalDescent: "795 m",
+    duration: "4 hours",
+    difficulty: "Level 2",
+  },
+  {
+    day: "4",
+    tecnicalInfo: true,
+    title: "Castelsardo.",
+    description:
+      "Today’s cycling route leads from Tempio Pausania towards the coast through farmland where the landscape characterised by rolling green hills, grazing cows, and the distinctive granite outcrops. ",
+    description2:
+      "At the end of the stage the sea comes into sight and Castelsardo appears ahead, a picturesque, fortified medieval town and one of the most charming destinations in northern Sardinia overlooking the Gulf of Asinara.",
+
+    totalDistance: "46 km",
+    totalAscent: "429 m",
+    totalDescent: "945 m",
+    duration: "5 hours",
+    difficulty: "Level 2",
+  },
+  {
+    day: "5",
+    tecnicalInfo: false,
+    title: "Rest Day Alghero.",
+    description:
+      "Today we slow the pace and enjoy a well-deserved rest day — no cycling planned. After breakfast, we transfer to Alghero, a beautiful medieval city set right on the seafront. One of Sardinia’s most beloved summer destinations, Alghero is the perfect place to wander, relax, and soak up the atmosphere.",
+    description2:
+      "Alghero has a strong and proud identity — shaped by its Aragonese past — and still today you’ll hear a local dialect of Catalan a reminder of the deep historical roots from 14th-century Catalan colonization.",
+    description3:
+      "For those who feel like adding a special experience to the day, two optional activities are available:",
+    description4:
+      "• Dolphin watching & snorkeling, guided by marine biologists and environmental experts, for an unforgettable encounter with Sardinia’s marine life.",
+    description5:
+      "• A boat trip to Neptune’s Cave, one of the most fascinating natural wonders of Sardinia, accessible by sea and famous for its spectacular stalactites and underground chambers.",
+    description6:
+      "For more information about these activities, visit our blog: Cycle Tour Sardinia.",
+  },
+  {
+    day: "6",
+    tecnicalInfo: true,
+    title: "Coastal Road.",
+    description:
+      "Today we’re back on the bikes for a spectacular coastal road toward Bosa, widely considered one of the most scenic routes in all of Sardinia.",
+    description2:
+      "The road winds along dramatic cliffs high above the sea, offering breathtaking views over deep blue waters and hidden coves below. It’s a ride that perfectly captures the essence of the island where il Mare and il Monte meet, blending the Mediterranean landscapes.",
+    description3:
+      "Our destination is Bosa, one of Sardinia’s most charming towns, with its colorful houses climbing the hillside along the river.",
+
+    totalDistance: "45 km",
+    totalAscent: "630 m",
+    totalDescent: "640 m",
+    duration: "5 hours",
+    difficulty: "Level 2",
+  },
+  {
+    day: "7",
+    tecnicalInfo: true,
+    title: "Montiferru & Sinis Peninsula",
+    description:
+      "In the morning, we leave Bosa by transfer and head inland to the village of Santu Lussurgiu, a fascinating historic town set on the slopes of Montiferru. This area is part of a vast volcanic complex, known for its rich geological history and an impressive variety of landscapes. Before getting on the bikes, we take time to visit the old centre of Santu Lussurgiu, a tight-knit huddle of Stone houses banked up around a natural amphitheatre.",
+    description2:
+      "From here, we begin our cycling stage, riding downhill across changing scenery and little towns and gradually make our way toward the coast. The route leads us to the Sinis Peninsula, a protected natural area celebrated for its wild beauty, lagoons, and exceptional quartz-sand beaches. ",
+
+    description3:
+      "After completing the final stretch of the ride, we reach the remarkable archaeological site of Tharros, once a major city in ancient times and located at the southernmost tip of the Sinis Peninsula. ",
+    description4:
+      "After we transfer to our hotel in Oristano, a lovely and relaxed town that makes an ideal base for the final days of the holiday. ",
+
+    totalDistance: "55 km",
+    totalAscent: "183 m",
+    totalDescent: "703 m",
+    duration: "6 hours",
+    difficulty: "Level 2",
+  },
+  {
+    day: "8",
+    tecnicalInfo: true,
+    title: "Costa Verde ",
+    description:
+      "On our final cycling day, we begin with a transfer to the starting point: a tiny fishing village, Marceddi, stretched along the edge of a beautiful lagoon. This small settlement has long been known throughout Sardinia for the exceptional quality of its fish products.",
+    description2:
+      "From here, we get back on the bikes and cross a narrow bridge, leaving the lagoon behind as we head toward the Green Coast — one of Sardinia’s great untamed shorelines. Wild, remote, and largely unspoiled, this stretch of coast reveals a raw and powerful landscape, far removed from mass tourism.",
+    description3:
+      "The route leads us to the spectacular Spiaggia di Piscinas, a magnificent golden beach where the deep blue sea meets an immense system of sand dunes. These dunes, are dotted with macchia mediterránea scrub. This extraordinary environment has earned the area the nickname “the Sardinian desert.”",
+    description4:
+      "After enjoying this extraordinary place, we begin our return ride, heading back toward the fishing village along an epic mountain road that climbs into the hills. This inland section offers a completely different perspective. Last part of the stage follows the same stretch we rode in the morning, bringing the journey full circle. ",
+    description5: "We return by transfer to our hotel. ",
+
+    totalDistance: "70 km",
+    totalAscent: "904 m",
+    totalDescent: "904 m",
+    duration: "6-7 hours",
+    difficulty: "Level 2-3",
+  },
+  {
+    day: "9",
+    tecnicalInfo: false,
+    title: "Rest Day Oristano",
+    description:
+      "With no cycling planned, the pace slows down completely, leaving you free to relax and enjoy Sardinia in your own way.",
+    description2:
+      "For those who wish to stay active or explore a little more, a range of optional activities is available. ",
+    description3:
+      "One option is to return to the coast, either by bicycle (approximately 18 km) or by transfer, combined with a visit to the extraordinary archaeological site of Tharros. ",
+    description4:
+      "Alternatively, you can join a guided tour of the Giara Park, a unique natural plateau best known as the refuge of the Giara horses — one of the very few wild horse populations in Europe — roaming freely in an unspoiled and fascinating landscape. ",
+    description5:
+      "For more information about these activities, visit our blog: Cycle Tour Sardinia.",
+  },
+  {
+    day: "10",
+    tecnicalInfo: false,
+    title: "Departure Day",
+    description:
+      "Today marks the end of our Sardinian adventure. Depending on your flight schedule, you will be transferred to the airport for your departure.",
+  },
+];
+---
+
+<Layout title="">
+  <Container>
+    <main class="mt-16">
+      <!-- Foto, nombre y destino -->
+
+      <div
+        class="bg-center bg-cover bg-no-repeat bg-[url('/public/cycle-tour/leisure-cycling/italia/sardinia/sardinia-principal.webp')] h-[25rem] lg:h-[45rem] rounded-2xl">
+        <div class="flex flex-col justify-end h-full p-6 w-auto">
+          <div class="flex gap-2">
+            <Icon icon="destiny-logo" size="1.6rem" color="white" />
+            <p
+              class="text-xl font-normal text-white lg:text-2xl flex flex-col justify-end h-full [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
+              Italy
+            </p>
+          </div>
+          <div>
+            <h1
+              class="text-3xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-5xl [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
+              Cycle Tour Sardinia
+            </h1>
+            <p
+              class="text-xl font-normal text-white lg:text-2xl flex flex-col h-full [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
+              E-bike Tour 10 Days
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Informacion general de los viajes -->
+
+      <div
+        class="grid grid-cols-2 md:grid-cols-6 h-auto mt-3 gap-3 place-content-start md:px-6">
+        <InformationProducts title={i18n.INFO_PRODUCTS.PRICE} subtitle="2.500">
+          <div slot="icon">
+            <Icon icon="price-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts
+          title={i18n.INFO_PRODUCTS.PRE_BOOKING}
+          subtitle="20%">
+          <div slot="icon">
+            <Icon icon="price-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts
+          title={i18n.INFO_PRODUCTS.MINIMUM_OF_PERSONS}
+          subtitle="10">
+          <div slot="icon">
+            <Icon icon="group-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts
+          title={i18n.INFO_PRODUCTS.DURATION}
+          subtitle="10 Days">
+          <div slot="icon">
+            <Icon icon="timer-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts
+          title={i18n.INFO_PRODUCTS.TOUR_TYPE}
+          subtitle="Guided">
+          <div slot="icon">
+            <Icon icon="guide-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+        <InformationProducts
+          title={i18n.INFO_PRODUCTS.SEASON}
+          subtitle2="Spring Autumn">
+          <div slot="icon">
+            <Icon icon="spring-logo" size="1.6rem" color="#0E46A3" />
+            <Icon icon="autumn-logo" size="1.6rem" color="#0E46A3" />
+          </div>
+        </InformationProducts>
+      </div>
+
+      <!-- Informacion tecnica -->
+
+      <div class="">
+        <div
+          class="grid grid-cols-2 justify-between md:grid-cols-6 h-auto mt-3 gap-3 md:px-6">
+          <InformationProducts
+            title={i18n.INFO_PRODUCTS.TOTAL_DISTANCE}
+            subtitle="300 km">
+            <div slot="icon">
+              <Icon icon="distance-logo" size="1.6rem" color="#0E46A3" />
+            </div>
+          </InformationProducts>
+
+          <InformationProducts
+            title={i18n.INFO_PRODUCTS.TOTAL_ASCENT}
+            subtitle="3.471 m">
+            <div slot="icon">
+              <Icon icon="up-logo" size="1.6rem" color="#0E46A3" />
+            </div>
+          </InformationProducts>
+          <InformationProducts
+            title={i18n.INFO_PRODUCTS.TOTAL_DESCENT}
+            subtitle="4.401 m">
+            <div slot="icon">
+              <Icon icon="down-logo" size="1.6rem" color="#0E46A3" />
+            </div>
+          </InformationProducts>
+          <InformationProducts
+            title={i18n.INFO_PRODUCTS.ROUTE_TYPE}
+            subtitle="Point to point">
+            <div slot="icon">
+              <Route />
+            </div>
+          </InformationProducts>
+          <InformationProducts
+            title={i18n.INFO_PRODUCTS.DIFFICULTY}
+            subtitle="2">
+            <div class="flex gap-1" slot="icon"></div>
+          </InformationProducts>
+          <InformationProducts title="E-Bike" subtitle="Yes">
+            <div slot="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="45"
+                height="30"
+                fill="#0E46A3"
+                viewBox="80 90 330 330"
+                ><path
+                  d="M83.172,319.817Q85.646,320,88.1,320A64,64,0,0,0,136.544,214.29a64.376,64.376,0,0,0-11.981-10.841l9.59-17.982,46.293,46.293A31.986,31.986,0,1,0,235.7,264h20.823a64.023,64.023,0,1,0,42.47-68.439l-10.025-19.605L300.944,152H316a20,20,0,0,0,0-40H276a20,20,0,0,0,0,40h7.053l-8,16H143.469l16.49-30.918L160,137l4.8-9H200a8,8,0,0,0,0-16H166.624A24.039,24.039,0,0,0,144,96H120a8,8,0,0,0-8,8v32a8,8,0,0,0,8,8h18.136l-27.748,52.028a64.045,64.045,0,0,0-86.2,55.141h0A64.072,64.072,0,0,0,83.172,319.817ZM312,256a8,8,0,1,1,8,8A8.009,8.009,0,0,1,312,256Zm-20-38.953L303.183,238.9a24.037,24.037,0,0,0-5.8,9.1h-24.7A48.052,48.052,0,0,1,292.007,217.047Zm-14.122-27.618,6.775,13.25A64.062,64.062,0,0,0,256.521,248H240a31.8,31.8,0,0,0-4.446-16.244ZM260.686,184l-36.443,36.443a31.9,31.9,0,0,0-32.483,0L155.314,184ZM96,256a8,8,0,1,1-8-8A8.009,8.009,0,0,1,96,256Z"
+                ></path><path
+                  d="M380,168H344v16h36a92,92,0,0,1,0,184H327.324a47.991,47.991,0,0,0-94.642,0H190.99A32.057,32.057,0,0,0,160,344H120a8,8,0,0,0-8,8H96a8,8,0,1,0,0,16h16v16H96a8,8,0,1,0,0,16h16a8,8,0,0,0,8,8h40a32.057,32.057,0,0,0,30.987-24h41.692a47.991,47.991,0,0,0,94.642,0H380a108,108,0,0,0,0-216ZM294.659,380.438l-16,24-13.312-8.876L273.055,384H272a8,8,0,0,1-6.653-12.438l16-24,13.312,8.876L286.951,368H288a8,8,0,0,1,6.656,12.438Z"
+                ></path></svg
+              >
+            </div>
+          </InformationProducts>
+        </div>
+      </div>
+
+      <!--  Include, exclude, complementaries  -->
+      <div
+        class="grid md:grid-cols-2 lg:grid-cols-2 mt-20 md:mt-26 md:mb-36 gap-16 md:gap-20 wrap">
+        <!-- Include -->
+        <Includes
+          title={i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.INCLUDED
+            .TITLE}>
+          <ul slot="description" class="mt-4 flex flex-col gap-2">
+            <li class="flex gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">2 Professional guides</p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                Liability insurance and assistance
+              </p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                Financial Protection Guarantee
+              </p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Backup vehicle</p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Luggage transport</p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Airport Transfer</p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Hotel 3 & 4 sta</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Private room 9 nights</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Breakfast: 9 days</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Lunch: 6 picnics</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">E-bike</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Helmet</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Water bottle</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Cycle t-shirt</p>
+            </li>
+          </ul>
+        </Includes>
+        <!-- Exclude -->
+        <Includes
+          title={i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.NOT_INCLUDED
+            .TITLE}>
+          <div slot="description" class="flex flex-col gap-2 mt-4">
+            <li class="flex gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                Travel & cancellation insurance (It is obligatory to take out
+                travel insurance before departure)
+              </p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Flight</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Dinner</p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                Lunch (picnic) on the two free cycling days
+              </p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Extra meals</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Extra excursions</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Personal expenses</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Tips</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">Extra nights</p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <p class="max-w-[320px] text-md">
+                Private transport after or before the tour
+              </p>
+            </li>
+          </div>
+        </Includes>
+        <!-- Complementaries -->
+      </div>
+    </main>
+
+    <div class="grid md:grid-cols-2 h-auto gap-10 md:gap-20 md:py-36 py-10">
+      <div class="static h-[385px] hidden md:block">
+        <img
+          class="rounded-xl absolute md:w-[20rem] lg:w-[25rem] hover:z-40 transition-all duration-300 ease-out hover:scale-105"
+          src="/cycle-tour/leisure-cycling/italia/sardinia/sardinia-3.webp"
+          alt="ciclista mirando la sierra con cicicleta a su lado"
+        />
+        <img
+          class="rounded-xl absolute md:w-[10rem] lg:w-[12rem] md:mt-48 lg:mt-30 ml-6 z-10 grayscale-[60%] hover:grayscale-0 transition-all duration-300 ease-out hover:scale-105"
+          src="/cycle-tour/leisure-cycling/italia/sardinia/sardinia-1.webp"
+          alt="ciclista mirando la sierra con cicicleta a su lado"
+        />
+        <img
+          class="rounded-xl absolute md:w-[10rem] lg:w-[15em] ml-64 md:-mt-24 lg:-mt-32 grayscale-[60%] hover:grayscale-0 transition-all duration-300 ease-out hover:scale-105"
+          src="/cycle-tour/leisure-cycling/italia/sardinia/sardinia-5.webp"
+          alt="ciclista mirando la sierra con cicicleta a su lado"
+        />
+      </div>
+
+      <div class="grid gap-5 md:-mt-20">
+        <div>
+          <h2
+            class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+            {i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.AVAILABILITY}
+          </h2>
+          <p>
+            Can’t find any suitable dates in the schedule? Contact us to let us
+            know your availability. For private tours, we are happy to offer a
+            tailor-made solution.
+          </p>
+          <div class="gap-4 mt-6">
+            <ul class="text-lg">
+              <div class="grid lg:grid-cols-2 gap-2 mt-4">
+                <div class="flex">
+                  <Icon icon="autumn-logo" size="1.6rem" color="#0E46A3" />
+                  <p>Autumn 2026</p>
+                </div>
+
+                <div class="grid">
+                  <li>14.09.26 – 23.09.26 (Fully booked)</li>
+                  <li>25.09.26 – 04.10.26</li>
+                </div>
+              </div>
+              <div class="grid lg:grid-cols-2 gap-2 mt-4">
+                <div class="flex">
+                  <Icon icon="spring-logo" size="1.6rem" color="#0E46A3" />
+                  <p>Spring 2027</p>
+                </div>
+
+                <div class="grid">
+                  <li>02.04.27 – 11.04.27</li>
+                  <li>16.04.27 – 25.04.27</li>
+                  <li>07.05.27 – 16.05.27</li>
+                </div>
+              </div>
+              <div class="grid lg:grid-cols-2 gap-2 mt-4">
+                <div class="flex">
+                  <Icon icon="autumn-logo" size="1.6rem" color="#0E46A3" />
+                  <p>Autumn 2027</p>
+                </div>
+
+                <div class="grid">
+                  <li>10.09.27 – 19.09.27</li>
+                  <li>24.09.27 – 03.10.27</li>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 mt-10 items-center">
+      <div>
+        <h2
+          class="max-w-2xl mb-6 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+          Bicycle
+        </h2>
+        <p>• Scott</p>
+        <p>• Aluminium frame</p>
+        <p>• 625ah Battery</p>
+        <p>• Powered By Bosch</p>
+        <p>• Shimano Hydraulic Disk Brake & Equipment</p>
+        <p>• Schwalbe AntiPuncture 700x50 Tyre</p>
+        <p>• Weight: 22kg</p>
+      </div>
+      <div class="w-full overflow-x-auto">
+        <ol class="w-full">
+          {(<SliderReact IMG={BIKES} client:visible />)}
+        </ol>
+      </div>
+    </div>
+
+    <AccordionProducts
+      title="Travel<br />Information"
+      cycleSardiniaEs={cycleSardiniaEs}
+    />
+
+    <div class="grid lg:grid-cols-2 gap-4 items-center">
+      <div>
+        <h2
+          class="max-w-2xl mb-6 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+          What to Pack for Your Cycling Holiday
+        </h2>
+        <p class="mb-2">
+          A well-packed bag makes a smoother ride! Here’s what we recommend for
+          your cycle tour through Sardinia.
+        </p>
+        <p class="font-bold mb-2">Checklist</p>
+        <p class="font-bold">Cycling clothing:</p>
+        <p>
+          • Cycling (padded) shorts and jerseys – 2–3 sets (long and short
+          sleeves)
+        </p>
+        <p>• Lightweight windproof and/or waterproof jacket (rain jacket)</p>
+        <p>• Sweater or fleece (extra layers for cooler conditions)</p>
+        <p>
+          • Padded cycling gloves (spring and autumn mornings can be chilly)
+        </p>
+        <p>• Arm and leg warmers (optional but very useful)</p>
+        <p class="mb-2">• Sports socks (quick-dry) shrts</p>
+        <p class="font-bold">Sun & weather protection:</p>
+        <p>• Sunhat</p>
+        <p>• Neck warmer (buff)</p>
+        <p>• Sunglasses</p>
+        <p>• Cycling cap or buff (sun protection under the helmet)</p>
+        <p>• Sunscreen (high SPF)</p>
+        <p class="mb-2">• Lip balm with SPF (recommended)</p>
+        <p class="font-bold">Equipment & accessories:</p>
+        <p>• Water bottle (provided by us)</p>
+        <p>
+          • Bike helmet (provided by us) ¡Please give note if you need a helmet!
+        </p>
+        <p>• Gel seat cover for added comfort (optional)</p>
+        <p>• Small rucksack</p>
+        <p class="mb-2">• Pannier (provided by us)</p>
+        <p class="font-bold">Footwear & casual wear:</p>
+        <p>• Comfortable shoes (not recommended to cycle with sandals)</p>
+        <p>• Casual clothes and an extra pair of shoes for evenings</p>
+        <p class="mb-2">• Swimsuit</p>
+        <p class="font-bold">Documents & health:</p>
+        <p>• Passport</p>
+        <p>• Travel insurance</p>
+        <p>• Personal first-aid kit</p>
+        <p>• Insect repellent</p>
+        <p class="mb-2">• Personal medications (if applicable)</p>
+        <p>
+          If you have any questions about the recommended equipment or are
+          unsure what to bring, please do not hesitate to contact us.
+        </p>
+      </div>
+      <div>
+        <img
+          class="rounded-2xl"
+          src="/cycle-tour/leisure-cycling/italia/sardinia/sardinia-map.webp"
+          alt="Sardinia map tour"
+        />
+      </div>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-4 lg:mt-20 mt-10 mb-10">
+      <div>
+        <h2
+          class="max-w-2xl mb-6 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+          Requirements
+        </h2>
+        <p>• Valid travel insurance</p>
+        <p>
+          • Signed release of liability form, to be completed before the start
+          of the tour
+        </p>
+        <p>• Adequate physical condition.</p>
+        <p>• Experience with longer rides.</p>
+        <p>• Confident gear shifting is important and managing descents</p>
+        <p>• Helmet, mandatory during all rides</p>
+        <p>
+          • Personal responsibility for health, fitness, and any pre-existing
+          medical conditions
+        </p>
+        <p>• Emergency contact details, provided before departure</p>
+      </div>
+
+      <div>
+        <h2
+          class="max-w-2xl mb-6 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+          Welcome to SARDINIA
+        </h2>
+        <p class="max-w-2xl mb-6 md:px-0 font-bold">
+          Between Culture and Landscapes. Sardinia is the Mediterranean dream!
+        </p>
+        <p class="mb-2">
+          Discover Sardinia on two wheels by a stunning itinerary that brings
+          together island´s most pristine coastlines, culture and flavours in
+          one cycle route.
+        </p>
+        <p>
+          • Explore Ancient Civilisations. From the mysterious Nuraghe towers to
+          Phoenician, Carthaginian, Roman, Aragonese, and Pisan influences, each
+          has left an indelible mark on Sardinia’s identity.
+        </p>
+        <p>
+          • Nature has worked wonders in Sardinia — soaring cliffs and a
+          coastline dotted with world-famous beaches and bays create an
+          outstanding landscape.
+        </p>
+        <p>
+          • Visit hidden mountain villages in the rural heart of Sardinia to
+          beautiful medieval towns such as Alghero and Castelsardo, or Bosa—one
+          of Sardinia’s most beautiful towns, with colorful houses stacked along
+          a steep hillside rising up to a majestic castle.
+        </p>
+        <p>
+          • Discover the Sardinian way of life. This island holds the secret to
+          longetivity, ask the Sardinians.
+        </p>
+        <p>
+          • The Sardinian cuisine – locally produced ricotta, pecorino, and goat
+          cheese; taste traditional Sardinian wines and specialties such as
+          culurgiones, porcetto, and seadas al miele, and much more.
+        </p>
+        <p>
+          • Enjoy your free days with optional activities such as a boat trip, a
+          visit to the Grotta di Nettuno (one of the largest marine caves in
+          Italy), discovering the island’s mining heritage or the Vermentino
+          wine tasting experience – all in one cycle tour.
+        </p>
+      </div>
+    </div>
+
+    <!-- Slider Photos -->
+    <section class="m-auto md:w-full rounded-xl md:px-8 md:py-20">
+      <ol class="relative mt-16">
+        {(<SliderReact IMG={IMG} client:visible />)}
+      </ol>
+    </section>
+
+    <section>
+      <!--  TimeLine per days  -->
+      <div class="md:p-8">
+        <h2
+          class="max-w-2xl md:p-8 mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+          {
+            i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.WHAT_TO_EXPECT
+              .TITLE
+          }
+        </h2>
+
+        <p class="text-lg text-gray-900 mb-1">
+          <span class="text-xl strong">🔹</span>Fully supported guided tour with
+          e-bike
+        </p>
+        <p class="text-lg text-gray-900 mb-1">
+          <span class="text-xl strong">🔹</span>Private romos in 3-4 star hotels
+        </p>
+        <p class="text-lg text-gray-900 mb-1">
+          <span class="text-xl strong">🔹</span>Riding pace: relaxed and social,
+          with regular stops for photos, coffee, viewpoints, and cultural visits
+        </p>
+        <p class="text-lg text-gray-900 mb-1">
+          <span class="text-xl strong">🔹</span>Average daily distance: 50 km of
+          cycling per day (approximately 4–6 hours including breaks)
+        </p>
+        <p class="text-lg text-gray-900 mb-1">
+          <span class="text-xl strong">🔹</span>Terrain: countryside roads with
+          little traffic.
+        </p>
+        <p class="text-lg text-gray-900 mb-1">
+          <span class="text-xl strong">🔹</span>Daily schedule: arrivals
+          typically in the afternoon, leaving time to relax, enjoy the hotel, or
+          explore the surroundings
+        </p>
+        <p class="text-lg text-gray-900 mb-1">
+          <span class="text-xl strong">🔹</span>Extra optional activities
+        </p>
+
+        {
+          DAYS.map((tour) => (
+            <ol class="mb-10">
+              <Days {...tour} />
+            </ol>
+          ))
+        }
+      </div>
+    </section>
+
+    <script is:inline>
+      const buttons = document.querySelectorAll(".showMoreBtn");
+      const contents = document.querySelectorAll(".showMoreContent");
+      buttons.forEach((btn, idx) => {
+        let show = false;
+        btn.addEventListener("click", () => {
+          show = !show;
+          const content = contents[idx];
+          if (show) {
+            content.classList.remove("max-h-0", "opacity-0");
+            content.classList.add("max-h-[2000px]", "opacity-100");
+            btn.textContent = "Less info ⬆";
+          } else {
+            content.classList.remove("max-h-[2000px]", "opacity-100");
+            content.classList.add("max-h-0", "opacity-0");
+            btn.textContent = "More info ⬇";
+          }
+        });
+      });
+    </script>
+  </Container>
+</Layout>

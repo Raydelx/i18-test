@@ -1,0 +1,85 @@
+{
+    
+    "cycleSardiniaEs": [
+      {
+        "name": "Dificulty",
+        "text1": "Our e-bike tours are specially designed for recreational cyclists who enjoy discovering the region at a relaxed pace. These tours focus on enjoying the landscape, cultural heritage, and history of the area. Thanks to electric assistance, these routes are accessible to almost everyone with a basic level of fitness. However, it's important to note that we divide the tours into three difficulty levels, based on distance and elevation gain. While the e-bike takes much of the physical effort out of cycling, longer distances or greater elevation can still make for a more challenging ride.", 
+        "text2": "To participate in these cycling holidays, it’s important that you have a good basic fitness",
+        "text3": "level, cycle regularly, and are comfortable shifting gears efficiently when climbing, this will greatly enhance your enjoyment on the road.",
+        "text4": "See Blog for more information “Cycle Grades Tour E-Bike”"
+      },
+      
+      {
+        "name": "Group size",
+        "text1": "Our tours are designed for small groups to ensure a safe, enjoyable, and high-quality experience. A minimum of 10 participants is required to organize the tour. The maximum number of participants is 14, which allows us to provide attentive service, maintain safety on the road, and ensure a personalized experience throughout the tour."
+      },
+      {
+        "name": "Tailor-made version",
+        "text1": "For private groups, our tours can be fully tailored to your needs and preferences. Whether you want to adjust the itinerary, choose specific accommodations, or select the tour dates, we can create a personalized experience just for your group.",
+        "text2": "To get started, we will send you a simple form to fill out with your preferences and requirements. Once we receive it, we will work with you to design a tour that perfectly matches your group’s interests, pace, and style."
+      },
+      {
+        "name": "Self-Guided Tours",
+        "text1": "Our tour can also be organized as a self-guided experience, allowing you to explore Sardinia at your own pace. In this case, we will provide you with all the necessary information, including detailed route notes, accommodation details, and any additional guidance to ensure a smooth trip.",
+        "text2": "We will also send you the pricing for the self-guided version when you inquire. "
+      },
+      {
+        "name": "Accommodations ",
+        "text1": "The hotels included in our tours have been carefully selected with great attention to their location, comfort, and quality, to ensure a pleasant and relaxing stay throughout your cycling holiday. In each destination, we work with more than one carefully chosen hotel. This allows us to guarantee a consistently high standard of accommodation and to remain flexible. The final hotel allocation is determined according to the number of participants and availability at the time of booking, while always maintaining the same level of comfort and service. All accommodations used on our tours are rated between 3 and 4 stars, offering a good balance of quality and comfort. For smaller groups, we often choose rural hotels and agriturismo (farm stays). These accommodations are particularly popular in Sardinia as they support sustainable tourism, help preserve rural traditions, and contribute to the local economy. ",
+        "text2": "The accommodations include breakfast and provide attentive service, often with facilities such as a restaurant, bar, garden, and swimming pool.",
+        "text3": "The hotel rooms are private standard single or double rooms, depending on the hotel, and each comes with a private bathroom.",
+        "text4": "If you wish to share a room with a friend, family member, or partner, please indicate this when making your pre-reservation so we can prepare the appropriate rooming list.",
+        "text5": "The cost will be adjusted accordingly and communicated at the time of pre-reservation.",
+        "text6": "Please note: ",
+        "text7": "- We do not pair single travelers with other participants they do not know, in order to respect privacy and ensure comfort.",
+        "text8": "- Adding extra days at our selected accommodations can be arranged, but must be requested in advance."
+      },
+      {
+        "name": "Transport ",
+        "text1": "On this tour, we provide private transport to ensure smooth transfers and maximum flexibility. Montaraz uses its own 8-seat passenger car together with a private transport company to bring participants to their next destination.",
+        "text2": "Some days, the route allows us to cycle directly from one hotel to the next, while on other days, transport is provided to take you to the start of the itinerary or to pick you up at the end of the ride.",
+        "text3": "The Montaraz 8-seat passenger car also serves as a support vehicle for safety and comfort. It is available if someone needs a rest, experiences fatigue, or requires assistance along the route. ",
+        "text4": "Additionally, we arrange airport transfers at the start and end of the tour, as well as luggage transport between hotels."
+      },
+      {
+        "name": "Flight information ",
+        "text1": "For the start of the tour, participants arrive at Olbia Airport, where a private transfer will take you to your hotel in the city of Olbia.",
+        "text2": "For the last day a group transfer to Olbia Airport is scheduled for your departure. If your return flight is significantly more convenient from Cagliari Airport, please let us know in advance. A transfer to Cagliari can be arranged only if no other suitable flight options are available from Olbia, and subject to scheduling.",
+        "text3": "The transfer will take early in the mornig and will be confirmed after having all the flight details from the particpants. The Transfer from Oristano to Olbia Airport takes approximately 2 hours."
+      },
+      {
+        "name": "Optional Activities ",
+        "text1": "Some extra experiences need to be booked in advance, while others can be decided on the day, depending on how you feel. For more information about these activities, visit our blog: Cycle Tour Sardinia.",
+        "text2": "Berchidda",
+         "text3": "- Winetasting at a family-owned vineyard",
+        "text4": "Alghero",
+        "text5": "- Dolphin watching & snorkeling, guided by marine biologists and environmental experts, for an unforgettable encounter with Sardinia’s marine life.",
+        "text6": "- A boat trip to Neptune’s Cave, one of the most fascinating natural wonders of Sardinia, accessible by sea and famous for its spectacular stalactites and underground chambers.",
+        "text7": "Oristano",
+        "text8": "A guided tour of the Giara Park - one of the very few wild horse populations in Europe."
+      },
+      {
+        "name": "The Sardinian Kitchen ",
+        "text1": "Sweet, buttery ricotta, lobster, red prawns and mullet from the Med., wild thyme, rosemary, myrtle and juniper, sun-ripened olives and citrus fruits, farm-raised Lamb and suckling pig cooked – nowhere does slow food like Sardinia. Throw in mountain and sea views, fine home-produced wines, fresh pasta and local cheese and you are looking at a great culinary experience. ",
+        "text2": "A Day at Sardinia`s Table.",
+        "text3": "Like most Italians, Sardinians rarely eat a sit-down colazione (breakfast), preferring a Swift cappuccino and cornetto (croissant) standing at a bar. Out in the wilds, shepherds would start the day with a handful of bread and a slice of hard pecorino (sheep´s milk cheese). Pranzo (lunch) remains a ritual observed by many Sardinians and is still considered the most important meal of the day. A full meal will consist of an antipasto (starter) followed by a primo – usually a thick soup, pasta or risotto – and a segundo of meat or fish. To finish go for cheese and a digestivo, perhaps a shot of grappa. Cena (evening meal) was traditionally a simpler affair, but as work habits change and fewer people eat lunch at home, it increasingly becomes the main meal of the day. "
+      },
+      {
+        "name": "Dietary Requirements",
+        "text1": "There are no problems accommodating vegetarian or vegan diets on this tour. Please let us know in advance if you have specific dietary requirements, so that our accommodations and restaurants can prepare accordingly."
+      },
+      {
+        "name": "Weather in Sardinia",
+        "text1": "The climate in Sardinia is Mediterranean, with mild, short, and fairly wet winters, and hot, dry summers. In winter, temperatures can drop to around 0°C in January, while in summer they can reach up to 35°C in August.",
+        "text2": "Spring and autumn offer excellent conditions for cycling in Sardinia.",
+        "text3": "Spring features mild temperatures, fresh mornings, and comfortably warm daytime conditions. Rainy days become less frequent, although occasional showers and light winds may occur. The sea begins to warm up, the days grow longer, and nature displays its most vibrant colours—making this the season of the first swims.",
+        "text4": "Autumn arrives late in Sardinia; temperatures often exceed 20°C, and the sea retains heat from the summer months. Days become shorter, but rainfall is limited and sunshine remains abundant. Along the coast, it is still warm enough to swim, although evenings are cooler.",
+        "text5": "We recommend packing light layers, a windproof or rain jacket, and appropriate cycling gear to adapt to changing conditions."
+      }
+        
+      
+      
+    ]
+  }
+
+  

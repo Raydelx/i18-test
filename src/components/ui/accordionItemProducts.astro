@@ -1,0 +1,103 @@
+---
+import Icon from "../../components/ui/icons/Icon.astro";
+// Define props from Astro
+const {
+  id,
+  collapseId,
+  name,
+  text1,
+  text2,
+  text3,
+  text4,
+  text5,
+  text6,
+  text7,
+  text8,
+  text9,
+  text10,
+  first,
+} = Astro.props;
+// Define TypeScript interface for props
+interface Props {
+  id: string;
+  collapseId: string;
+  name: string;
+  text1: string;
+  text2?: string;
+  text3?: string;
+  text4?: string;
+  text5?: string;
+  text6?: string;
+  text7?: string;
+  text8?: string;
+  text9?: string;
+  text10?: string;
+
+  first?: boolean;
+}
+// Define class names for the accordion and its content
+const ACCORDION_CLASS_DEFAULT = "hs-accordion pb-3 active";
+const ACCORDION_CLASS_COLLAPSED = "hs-accordion pt-6 pb-3";
+const ACCORDION_CONTENT_CLASS =
+  "hs-accordion-content w-full overflow-hidden transition-[height] duration-300";
+// Helper function to return the correct class for the accordion
+function getAccordionClass(first: boolean = false) {
+  return first ? ACCORDION_CLASS_DEFAULT : ACCORDION_CLASS_COLLAPSED;
+}
+---
+
+<!-- The main container for the accordion item -->
+<div class={getAccordionClass(first)} id={id}>
+  <!-- The accordion button, which toggles the expanded/collapsed state -->
+  <button
+    class="hs-accordion-toggle group inline-flex w-full items-center justify-between gap-x-3 text-balance rounded-lg pb-3 text-start font-bold text-neutral-800 outline-none ring-zinc-500 transition hover:text-neutral-500 focus-visible:ring md:text-lg"
+    aria-controls={collapseId}>
+    <div class="flex items-center gap-x-4">
+      {name}
+    </div>
+
+    <!-- SVG Icon that is shown when the accordion is NOT active -->
+    <Icon name="accordionNotActive" />
+
+    <!-- SVG Icon that is shown when the accordion is active -->
+    <Icon name="accordionActive" />
+  </button>
+  <!-- The collapsible content of the accordion -->
+  <div
+    aria-labelledby={id}
+    class={`${first ? ACCORDION_CONTENT_CLASS : "hidden " + ACCORDION_CONTENT_CLASS}`}
+    id={collapseId}>
+    <!-- The content paragraph -->
+
+    <p class="text-pretty text-neutral-00 dark:text-neutral-600">
+      {text1}
+    </p>
+    <p class="text-pretty text-neutral-00 dark:text-neutral-600">
+      {text2}
+    </p>
+    <p class="text-pretty text-neutral-00 dark:text-neutral-600">
+      {text3}
+    </p>
+    <p class="text-pretty text-neutral-00 dark:text-neutral-600">
+      {text4}
+    </p>
+    <p class="text-pretty text-neutral-00 dark:text-neutral-600">
+      {text5}
+    </p>
+    <p class="text-pretty text-neutral-00 dark:text-neutral-600">
+      {text6}
+    </p>
+    <p class="text-pretty text-neutral-00 dark:text-neutral-600">
+      {text7}
+    </p>
+    <p class="text-pretty text-neutral-00 dark:text-neutral-600">
+      {text8}
+    </p>
+    <p class="text-pretty text-neutral-00 dark:text-neutral-600">
+      {text9}
+    </p>
+    <p class="text-pretty text-neutral-00 dark:text-neutral-600">
+      {text10}
+    </p>
+  </div>
+</div>
