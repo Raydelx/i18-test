@@ -16,10 +16,14 @@ const i18n = getI18N({ currentLocale });
 ---
 
 <div>
-  <h2
-    class="text-3xl lg:p-8 lg:text-4xl font-bold lg:tracking-tight xl:tracking-tighter mb-10">
-    Gallery
-  </h2>
+  <div class="flex items-center gap-2 mb-10">
+    <img class="h-18 lg:h-26" src="/galery.webp" alt="family photo" />
+    <h2
+      class="text-3xl lg:p-8 lg:text-4xl font-bold lg:tracking-tight xl:tracking-tighter mb-0">
+      Gallery
+    </h2>
+  </div>
+
   <div
     class="pswp-gallery grid grid-cols-3 md:grid-cols-5 gap-5 object-fill"
     id="gallery">
@@ -95,7 +99,7 @@ const i18n = getI18N({ currentLocale });
         href={translatePath("gallery")}
         title=""
         role="button"
-        class="relative items-center justify-center px-5 py-2 text-base font-bold text-white transition-all duration-200 bg-gray-900 border-2 border-transparent focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 hover:bg-gray-800 rounded">
+        class="relative items-center justify-center px-5 py-2 text-base font-bold text-white transition-all duration-200 bg-[#3c5546] border-2 border-transparent focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 hover:bg-[#4f6658] rounded">
         Go to Gallery
       </a>
     </div>

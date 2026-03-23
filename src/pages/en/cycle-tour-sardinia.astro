@@ -15,6 +15,7 @@ import ReviewsCompt from "@/components/ui/reviewsCompt.astro";
 import { getI18N } from "@/i18n/";
 import NewFaq from "@/components/newFaq.astro";
 import AccordionProducts from "@/components/accordionProducts.astro";
+import BookButton from "@/components/book-button.astro";
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
 
@@ -263,7 +264,7 @@ const DAYS = [
         </InformationProducts>
         <InformationProducts
           title={i18n.INFO_PRODUCTS.PRE_BOOKING}
-          subtitle="20%">
+          subtitle="30%">
           <div slot="icon">
             <Icon icon="price-logo" size="1.6rem" color="#0E46A3" />
           </div>
@@ -357,9 +358,13 @@ const DAYS = [
         </div>
       </div>
 
+      <div class="mt-10 max-w-[320px]">
+        <BookButton />
+      </div>
+
       <!--  Include, exclude, complementaries  -->
       <div
-        class="grid md:grid-cols-2 lg:grid-cols-2 mt-20 md:mt-26 md:mb-36 gap-16 md:gap-20 wrap">
+        class="grid md:grid-cols-2 lg:grid-cols-2 mt-10 md:mt-16 md:mb-26 gap-16 md:gap-20 wrap">
         <!-- Include -->
         <Includes
           title={i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.INCLUDED
@@ -525,7 +530,7 @@ const DAYS = [
 
                 <div class="grid">
                   <li>14.09.26 – 23.09.26 (Fully booked)</li>
-                  <li>25.09.26 – 04.10.26</li>
+                  <li>25.09.26 – 04.10.26 (Fully booked)</li>
                 </div>
               </div>
               <div class="grid lg:grid-cols-2 gap-2 mt-4">

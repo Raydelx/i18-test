@@ -8,35 +8,6 @@ const i18n = getI18N({ currentLocale });
 ---
 
 <div class="relative overflow-hidden">
-  <div
-    class="lg:mx-auto grid lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8">
-    <div class="mx-auto max-w-xl lg:mx-0 lg:max-w-none lg:py-16 lg:px-0">
-      <div>
-        <div class="mt-6">
-          <h2 class="text-3xl font-bold tracking-tight mb-2">
-            {i18n.CARDS_HOME.CARD_1.TITLE}
-          </h2>
-
-          <p
-            class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl">
-            {i18n.CARDS_HOME.CARD_1.TEXT_1}
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="mt-12 sm:mt-2 lg:mt-0 order-first lg:order-none">
-      <div class="-mr-48 pl-6 md:-mr-16 lg:relative lg:m-0 lg:h-full lg:px-0">
-        <img
-          loading="lazy"
-          width="647"
-          height="300"
-          class="w-full rounded-xl shadow-2xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-[540px] lg:max-w-none hover:scale-105 duration-200 object-cover"
-          style="color:transparent"
-          src="/home/montaraz.webp"
-        />
-      </div>
-    </div>
-  </div>
   <div class="relative overflow-hidden lg:mt-16">
     <div class="relative">
       <div
@@ -45,12 +16,13 @@ const i18n = getI18N({ currentLocale });
           class="mx-auto max-w-xl lg:mx-0 lg:max-w-none lg:py-16 lg:px-0 lg:col-start-2">
           <div>
             <div>
-              <span
-                class="flex h-12 w-12 items-center justify-center rounded-xl bg-slate-200">
-                <Icon icon="cultural-logo" size="2.5rem" color="#0E46A3" />
-              </span>
+              <img
+                class="h-36 -ml-6 object-cover"
+                src="/family.webp"
+                alt="family photo"
+              />
             </div>
-            <div class="mt-6">
+            <div class="mt-2">
               <h2 class="text-3xl font-bold tracking-tight mb-2">
                 {i18n.CARDS_HOME.CARD_2.TITLE}
               </h2>
@@ -69,7 +41,7 @@ const i18n = getI18N({ currentLocale });
           </div>
           <button
             type="button"
-            class="showMoreBtn mb-6 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
+            class="showMoreBtn mb-6 px-4 py-2 bg-[#3c5546] text-white rounded hover:bg-[#4f6658] transition cursor-pointer">
             {i18n.CARDS_HOME.SHOW_MORE}
           </button>
         </div>
@@ -90,7 +62,7 @@ const i18n = getI18N({ currentLocale });
       </div>
 
       <div
-        class="showMoreContent border-blue-400 grid lg:grid-cols-2 gap-8 lg:gap-30 lg:mt-16 lg:px-34 transition-all duration-500 ease-in-out overflow-hidden max-h-0 opacity-0 bg-gradient-to-r from-slate-200 to-blue-300 rounded-2xl py-6 px-2">
+        class="showMoreContent border-blue-400 grid lg:grid-cols-2 gap-8 lg:gap-30 lg:mt-16 lg:px-34 transition-all duration-500 ease-in-out overflow-hidden max-h-0 opacity-0 bg-gradient-to-r from-slate-200 to-[#B1BBB5] rounded-2xl py-6 px-2">
         <div>
           <h2 class="text-3xl font-bold tracking-tight mb-2">
             {i18n.CARDS_HOME.CARD_2.EXP_TITLE}
@@ -146,12 +118,13 @@ const i18n = getI18N({ currentLocale });
         <div class="mx-auto max-w-xl lg:mx-0 lg:max-w-none lg:py-16 lg:px-0">
           <div>
             <div>
-              <span
-                class="flex h-12 w-12 items-center justify-center rounded-xl bg-slate-200">
-                <Icon icon="bicycle-logo" size="2.5rem" color="#0E46A3" />
-              </span>
+              <img
+                class="h-36 object-cover"
+                src="/cycling.webp"
+                alt="cycling photo"
+              />
             </div>
-            <div class="mt-6">
+            <div class="mt-2">
               <h2 class="text-3xl font-bold tracking-tight mb-2">
                 {i18n.CARDS_HOME.CARD_3.TITLE}
               </h2>
@@ -173,7 +146,7 @@ const i18n = getI18N({ currentLocale });
             </div>
             <button
               type="button"
-              class="showMoreBtn mb-6 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
+              class="showMoreBtn mb-6 px-4 py-2 bg-[#3c5546] text-white rounded hover:bg-[#4f6658] transition cursor-pointer">
               {i18n.CARDS_HOME.SHOW_MORE}
             </button>
           </div>
@@ -193,7 +166,7 @@ const i18n = getI18N({ currentLocale });
         </div>
       </div>
       <div
-        class="showMoreContent border-blue-400 grid lg:grid-cols-2 gap-8 lg:gap-30 lg:mt-16 lg:px-34 transition-all duration-500 ease-in-out overflow-hidden max-h-0 opacity-0 bg-gradient-to-r from-slate-200 to-blue-300 rounded-2xl py-6 px-2 mb-6">
+        class="showMoreContent border-blue-400 grid lg:grid-cols-2 gap-8 lg:gap-30 lg:mt-16 lg:px-34 transition-all duration-500 ease-in-out overflow-hidden max-h-0 opacity-0 bg-gradient-to-r from-slate-200 to-[#B1BBB5] rounded-2xl py-6 px-2 mb-6">
         <div>
           <h2 class="text-3xl font-bold tracking-tight mb-2">
             {i18n.CARDS_HOME.CARD_3.WHAT_DO_WE_OFFER}
@@ -259,12 +232,13 @@ const i18n = getI18N({ currentLocale });
         class="mx-auto max-w-xl lg:mx-0 lg:max-w-none lg:py-16 lg:px-0 lg:col-start-2">
         <div>
           <div>
-            <span
-              class="flex h-12 w-12 items-center justify-center rounded-xl bg-slate-200">
-              <Icon icon="hike-logo" size="2.5rem" color="#0E46A3" />
-            </span>
+            <img
+              class="h-36 object-cover"
+              src="/hiking.webp"
+              alt="hiking photo"
+            />
           </div>
-          <div class="mt-6">
+          <div class="mt-2">
             <h2 class="text-3xl font-bold tracking-tight mb-2">
               {i18n.CARDS_HOME.CARD_4.TITLE}
             </h2>
@@ -279,7 +253,7 @@ const i18n = getI18N({ currentLocale });
         </div>
         <button
           type="button"
-          class="showMoreBtn mb-6 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
+          class="showMoreBtn mb-6 px-4 py-2 bg-[#3c5546] text-white rounded hover:bg-[#4f6658] transition">
           {i18n.CARDS_HOME.SHOW_MORE}
         </button>
       </div>
@@ -299,7 +273,7 @@ const i18n = getI18N({ currentLocale });
       </div>
     </div>
     <div
-      class="showMoreContent grid lg:grid-cols-3 gap-8 lg:gap-30 mt-16 lg:px-34 transition-all duration-500 ease-in-out overflow-hidden max-h-0 opacity-0 bg-gradient-to-r from-slate-200 to-blue-300 rounded-2xl py-6 px-2">
+      class="showMoreContent grid lg:grid-cols-3 gap-8 lg:gap-30 mt-16 lg:px-34 transition-all duration-500 ease-in-out overflow-hidden max-h-0 opacity-0 bg-gradient-to-r from-slate-200 to-[#B1BBB5] rounded-2xl py-6 px-2">
       <div>
         <h2 class="text-3xl font-bold tracking-tight mb-2">
           {i18n.CARDS_HOME.CARD_4.WHAT_DO_WE_EXPECT}
@@ -373,10 +347,11 @@ const i18n = getI18N({ currentLocale });
       <div class="mx-auto max-w-xl lg:mx-0 lg:max-w-none lg:py-16 lg:px-0">
         <div>
           <div>
-            <span
-              class="flex h-12 w-12 items-center justify-center rounded-xl bg-slate-200">
-              <Icon icon="cultural-logo" size="2.5rem" color="#0E46A3" />
-            </span>
+            <img
+              class="h-36 object-cover"
+              src="/tailor.webp"
+              alt="tailor photo"
+            />
           </div>
 
           <div class="mt-6">

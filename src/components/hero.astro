@@ -11,6 +11,7 @@ import {
   useTranslations,
   useTranslatedPath,
 } from "../i18n/utils.js";
+import BookButton from "./book-button.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -22,42 +23,29 @@ const translatePath = useTranslatedPath(lang);
     <h1
       class="text-4xl lg:text-5xl xl:text-6xl font-bold lg:tracking-tight xl:tracking-tighter md:pt-16 pb-5 md:pb-10">
       {i18n.HERO_H1_1}
-      <spam class="text-[#0E46A3]">{i18n.HERO_H1_COLOR} </spam>
+      <spam class="text-[#ff5e00]">{i18n.HERO_H1_COLOR} </spam>
       {i18n.HERO_H1_2}
     </h1>
-    <div class="flex justify-center md:w-auto">
-      <div class="relative inline-flex w-full group mb-5 md:mb-10">
-        <div
-          class="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg filter group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200">
-        </div>
-        <a
-          href={translatePath("book-my-tour")}
-          title=""
-          role="button"
-          class="relative w-full px-14 py-4 font-bold text-white transition-all duration-200 bg-gray-900 text-center text-xl border-2 border-transparent focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 hover:bg-gray-800 rounded">
-          {i18n.HERO_A}
-        </a>
-      </div>
-    </div>
+    <BookButton />
+
     <div class="flex gap-3">
       <a
-        class="bg-slate-200 grid justify-center content-center rounded-full size-12 hover:scale-110 duration-200 active:scale-90"
+        class="bg-[#3c5546] grid justify-center content-center rounded-full size-12 hover:scale-110 duration-200 active:scale-90"
         href="https://wa.me/34665311314?text=Hello, welcome to Montaraz Outdoors and Culture! How can we help you?"
-        target="_blank"
-        ><Icon icon="whatsap-logo" size="2rem" color="#25d366" /></a
+        target="_blank"><Icon icon="whatsap-logo" size="2rem" color="#fff" /></a
       >
 
       <a
-        class="bg-slate-200 grid justify-center content-center rounded-full size-12 hover:scale-110 duration-200"
+        class="bg-[#3c5546] grid justify-center content-center rounded-full size-12 hover:scale-110 duration-200"
         href="https://www.instagram.com/montaraz_outdoors_culture/"
         target="_blank"
-        ><Icon icon="instagram-logo" size="2rem" color="#F7098B" /></a
+        ><Icon icon="instagram-logo" size="2rem" color="#fff" /></a
       >
 
       <a
-        class="bg-slate-200 grid justify-center content-center rounded-full size-12 hover:scale-110 duration-200"
+        class="bg-[#3c5546] grid justify-center content-center rounded-full size-12 hover:scale-110 duration-200"
         href="mailto:montarazoutdoors@gmail.com"
-        ><Icon icon="mail-logo" size="2rem" color="#0E46A3" /></a
+        ><Icon icon="mail-logo" size="2rem" color="#fff" /></a
       >
     </div>
   </div>

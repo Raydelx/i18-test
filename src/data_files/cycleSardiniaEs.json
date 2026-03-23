@@ -11,7 +11,7 @@
       
       {
         "name": "Group size",
-        "text1": "Our tours are designed for small groups to ensure a safe, enjoyable, and high-quality experience. A minimum of 10 participants is required to organize the tour. The maximum number of participants is 14, which allows us to provide attentive service, maintain safety on the road, and ensure a personalized experience throughout the tour."
+        "text1": "Our tours are designed for small groups to ensure a safe, enjoyable, and high-quality experience. A minimum of 10 participants is required to organize the tour. The maximum number of participants is 14, which allows us to provide attentive service, maintain safety on the road, and ensure a personalized experience throughout the tour. If the minimum number of participants is not reached, we can still organize the tour; however, the price will be adjusted accordingly."
       },
       {
         "name": "Tailor-made version",
@@ -25,10 +25,7 @@
       },
       {
         "name": "Accommodations ",
-        "text1": "The hotels included in our tours have been carefully selected with great attention to their location, comfort, and quality, to ensure a pleasant and relaxing stay throughout your cycling holiday. In each destination, we work with more than one carefully chosen hotel. This allows us to guarantee a consistently high standard of accommodation and to remain flexible. The final hotel allocation is determined according to the number of participants and availability at the time of booking, while always maintaining the same level of comfort and service. All accommodations used on our tours are rated between 3 and 4 stars, offering a good balance of quality and comfort. For smaller groups, we often choose rural hotels and agriturismo (farm stays). These accommodations are particularly popular in Sardinia as they support sustainable tourism, help preserve rural traditions, and contribute to the local economy. The accommodations include breakfast and provide attentive service, often with facilities such as a restaurant, bar, garden, and swimming pool. The hotel rooms are private standard single or double rooms, depending on the hotel, and each comes with a private bathroom. If you wish to share a room with a friend, family member, or partner, please indicate this when making your pre-reservation so we can prepare the appropriate rooming list. The cost will be adjusted accordingly and communicated at the time of pre-reservation.",
-       
-        
-        
+        "text1": "The hotels included in our tours have been carefully selected with great attention to their location, comfort, and quality, to ensure a pleasant and relaxing stay throughout your cycling holiday. In each destination, we work with more than one carefully chosen hotel. This allows us to guarantee a consistently high standard of accommodation and to remain flexible. The final hotel allocation is determined according to the number of participants and availability at the time of booking, while always maintaining the same level of comfort and service. All accommodations used on our tours are rated between 3 and 4 stars, offering a good balance of quality and comfort. For smaller groups, we often choose rural hotels and agriturismo (farm stays). These accommodations are particularly popular in Sardinia as they support sustainable tourism, help preserve rural traditions, and contribute to the local economy. The accommodations include breakfast and provide attentive service, often with facilities such as a restaurant, bar, garden, and swimming pool. The hotel rooms are private standard single or double rooms, depending on the hotel, and each comes with a private bathroom. If you wish to share a room with a friend, family member, or partner, please indicate this when making your pre-reservation so we can prepare the appropriate rooming list.",
         "text6": "Please note: ",
         "text7": "• We do not pair single travelers with other participants they do not know, in order to respect privacy and ensure comfort.",
         "text8": "• Adding extra days at our selected accommodations can be arranged, but must be requested in advance."
@@ -48,14 +45,8 @@
       },
       {
         "name": "Optional Activities ",
-        "text1": "Some extra experiences need to be booked in advance, while others can be decided on the day, depending on how you feel. For more information about these activities, visit our blog: Cycle Tour Sardinia.",
-        "text2": "Village Berchidda",
-        "text3": "• Winetasting at a family-owned vineyard",
-        "text4": "Village Alghero",
-        "text5": "• Dolphin watching & snorkeling, guided by marine biologists and environmental experts, for an unforgettable encounter with Sardinia’s marine life.",
-        "text6": "• A boat trip to Neptune’s Cave, one of the most fascinating natural wonders of Sardinia, accessible by sea and famous for its spectacular stalactites and underground chambers.",
-        "text7": "Village Oristano",
-        "text8": "A guided tour of the Giara Park - one of the very few wild horse populations in Europe."
+        "text1": "Some extra experiences need to be booked in advance, while others can be decided on the day, depending on how you feel. For more information about these activities, visit our blog: Cycle Tour Sardinia."  
+        
       },
       {
         "name": "The Sardinian Kitchen ",

@@ -9,6 +9,7 @@ import Gallery from "@/components/gallery.astro";
 import Hero from "@/components/hero.astro";
 
 import { getI18N } from "@/i18n/";
+import WelcomeCard from "../welcome-card.astro";
 
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
@@ -41,11 +42,12 @@ const IMG = [
       {(<SliderReactHome IMG={IMG} client:visible />)}
     </ol>
   </section>
-  <Container class="w-full">
-    <section class="mb-10 md:mb-28">
-      <Hero />
-    </section>
+  <section class="mb-10 md:mb-28 lg:px-40 px-4">
+    <Hero />
+  </section>
+  <section class="lg:p-"><WelcomeCard /></section>
 
+  <Container class="w-full">
     <section>
       <CardHome />
     </section>
