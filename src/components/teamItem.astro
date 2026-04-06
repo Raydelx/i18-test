@@ -22,10 +22,9 @@ const { name, charge, nationality, idioms, skills, src, alt, cualification } =
       ${Astro.props.class} 
       h-full 
       mt-28 
-      rounded-xl 
-      border 
+      rounded-xl      
       grid md:grid-cols-2 
-      bg-gradient-to-r from-blue-200 to-cyan-200
+      bg-[#3c5546]
       `}>
       <div class="grid place-content-center">
         <img
@@ -36,29 +35,29 @@ const { name, charge, nationality, idioms, skills, src, alt, cualification } =
         />
       </div>
 
-      <div class="flex flex-col p-4 h-full justify-end gap-2">
+      <div class="flex flex-col p-10 h-full justify-end gap-2">
         <h2
-          class="max-w-2xl text-3xl font-bold text-black tracking-tight leading-none">
+          class="max-w-2xl text-3xl font-bold text-[#f7eee0] tracking-tight leading-none">
           {name}
         </h2>
-        <p class="max-w-2xl font-medium text-gray-700 md:text-lg">
+        <p class="max-w-2xl font-medium text-[#f7eee0] md:text-lg">
           {charge}
         </p>
         <div>
           <h2
-            class="max-w-2xl mt-2 text-xl font-bold text-black tracking-tight leading-none">
+            class="max-w-2xl mt-2 text-xl font-bold text-[#f7eee0] tracking-tight leading-none">
             Nationality:
           </h2>
-          <p class="max-w-2xl font-medium text-gray-700 md:text-lg">
+          <p class="max-w-2xl font-medium text-[#f7eee0] md:text-lg">
             {nationality}
           </p>
         </div>
         <div>
           <h2
-            class="max-w-xl text-xl font-bold text-black tracking-tight leading-none">
+            class="max-w-xl text-xl font-bold text-[#f7eee0] tracking-tight leading-none mb-2">
             Languages:
           </h2>
-          <ul class="max-w-2xl font-medium text-gray-700 md:text-lg">
+          <ul class="max-w-2xl font-medium text-[#f7eee0] md:text-lg">
             {idioms}
           </ul>
         </div>
@@ -66,7 +65,7 @@ const { name, charge, nationality, idioms, skills, src, alt, cualification } =
           skills && (
             <div>
               <div>
-                <h3 class="max-w-xl text-xl font-bold text-black tracking-tight leading-none mb-2">
+                <h3 class="max-w-xl text-xl font-bold text-[#f7eee0] tracking-tight leading-none mb-2">
                   {skills}
                 </h3>
               </div>
@@ -79,10 +78,10 @@ const { name, charge, nationality, idioms, skills, src, alt, cualification } =
             <div class="grid md:grid-cols-3 gap-4">
               <div class="md:col-span-2">
                 <div>
-                  <h3 class="max-w-xl text-xl font-bold text-black tracking-tight leading-none ">
+                  <h3 class="max-w-xl text-xl font-bold text-[#f7eee0] tracking-tight leading-none ">
                     Qualification:
                   </h3>
-                  <ul class="max-w-2xl font-medium text-gray-700 md:text-lg ">
+                  <ul class="max-w-2xl font-medium text-[#f7eee0] md:text-lg ">
                     {cualification}
                   </ul>
                 </div>

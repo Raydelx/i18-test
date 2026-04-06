@@ -103,7 +103,11 @@ const menuitems = [
         </ul>
         <div class="lg:hidden flex items-center mt-3 gap-4">
           <LanguageSelector />
-          <Link href={translatePath("tailor-made-travel")} size="md" block
+          <Link
+            href={translatePath("tailor-made-travel")}
+            size="md"
+            style="orange"
+            block
             >{i18n.NAV.TAILOR_MADE}
             <slot name="icon">
               <svg
@@ -128,6 +132,7 @@ const menuitems = [
           class="font-semibold"
           href={translatePath("tailor-made-travel")}
           size="md"
+          style="orange"
           icon="click-logo">
           {i18n.NAV.TAILOR_MADE}
           <slot name="icon">

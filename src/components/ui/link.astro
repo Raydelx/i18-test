@@ -5,7 +5,7 @@ interface Props {
   href: string;
   size?: "md" | "lg";
   block?: boolean;
-  style?: "outline" | "primary" | "inverted" | "muted";
+  style?: "outline" | "primary" | "inverted" | "muted" | "orange";
 
   icon?: string;
   [x: string]: any;
@@ -30,6 +30,8 @@ const styles = {
   outline: "bg-white border-2 border-black hover:bg-gray-100 text-black ",
   primary:
     "bg-[#3c5546] text-white hover:bg-[#4f6658]  border-2 border-transparent",
+  orange:
+    "bg-[#ff5e00] text-white hover:bg-[#4f6658]  border-2 border-transparent",
   inverted:
     "bg-white text-black hover:bg-[#9AC8CD] hover:text-[#074173]   border-2 hever:border-[#074173]",
   muted: "bg-gray-100 hover:bg-gray-200   border-2 border-transparent",
