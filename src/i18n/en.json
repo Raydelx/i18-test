@@ -5,7 +5,7 @@
         "EXPERIENCE": "Experience",
         "BLOG": "Blog",
         "GALLERY": "Gallery",
-        "ABOUT": "About",
+        "ABOUT": "About Us",
         "CONTACT_US": "Contact Us",
         "CYCLE_TRAVELS": "Cycle Tours",
         "HIKING_TREKKING": "Hiking & Trekking",
@@ -326,7 +326,7 @@
 
 
     "ABOUT": {
-        "ABOUT": "About",
+        "ABOUT": "About Us",
         "TITLE": "Montaraz",
         "TITLE_1": "Outdoors & Culture",
         "SUBTITLE": "Montaraz Outdoors & Culture, based in Granada, in southern Spain, is an Travel Agency specialized in Active Holidays",
@@ -852,7 +852,7 @@
     "HERO_H1_1": "Explore our",
     "HERO_H1_COLOR": "True Outdoor Travel Experiences",
     "HERO_H1_2": "suitable for anyone who enjoys an active way of traveling",
-    "HERO_A": "Book my Tour",
+    "HERO_A": "Click here to Book my Tour",
     "CARD_HOME_1": "Guided Tours",
 
     "PRODUCTS": {
