@@ -16,6 +16,7 @@ const ClientForm = () => {
   const [activityEmail, setActivityEmail] = useState('');
   const [activityPhone, setActivityPhone] = useState('');
   const [activityNationality, setActivityNationality] = useState('');
+  const [AccommodationPreference, setAccommodationPreference] = useState('');
   const [activityPersonName, setActivityPersonName] = useState('');
   const [activityTotal, setActivityTotal] = useState('');
   const [language, setLanguage] = useState('');
@@ -73,6 +74,7 @@ const ClientForm = () => {
       Email: ${activityEmail}\n
       Phone Number: ${activityPhone}\n
       Nationality: ${activityNationality}\n
+      AccommodationPreference: ${AccommodationPreference}\n
       Activity Name: ${activityName}\n
       Date of Joining: ${activityDate}\n
       How many persons: ${activityTotal}\n
@@ -92,6 +94,7 @@ const ClientForm = () => {
       setActivityDate(''); // Resetear fecha de actividad
       setActivityEmail('');
       setActivityNationality('');
+      setAccommodationPreference('');
       setActivityPhone('');
       setActivityPersonName('');
       setActivityTotal('');
@@ -401,6 +404,8 @@ const ClientForm = () => {
               <option value="Zimbabwe">Zimbabwe</option>
             </datalist>
           </div>
+
+          
           
           <div className='mb-2'>
             <label htmlFor="language">What language do you speak?</label>
@@ -457,7 +462,26 @@ const ClientForm = () => {
             onChange={(e) => setActivityTotal(e.target.value)}
             required
           />
-        </div></div>
+        </div>
+        
+        <div className='mb-2'>
+            <label htmlFor="Accommodation Preference">Accommodation Preference</label>   
+            <input
+              id="Accommodation"
+              list="AccommodationPreference"
+              name="Which experience are you looking for?"
+              placeholder="Please indicate your preferred room type:"
+              className="w-full px-4 py-3 border-2 placeholder:text-gray-400 rounded-md outline-none focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
+              value={AccommodationPreference}
+              onChange={(e) => setAccommodationPreference(e.target.value)}
+            />
+            <datalist id="AccommodationPreference">
+              <option value="Single Room">Single Room</option>
+              <option value="Double Room (shared double bed)">Double Room (shared double bed)</option>
+              <option value="Twin Room (separate beds)">Twin Room (separate beds)</option>              
+            </datalist>
+          </div></div>
+        
         
 
 
