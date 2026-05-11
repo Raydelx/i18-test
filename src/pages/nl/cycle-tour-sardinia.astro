@@ -1,0 +1,822 @@
+---
+import Container from "@/components/container.astro";
+import InformationProducts from "@/components/ui/informationProducts.astro";
+import Icon from "@/components/Icon.astro";
+import Layout from "@/layouts/Layout.astro";
+import SliderReact from "@/hooks/SliderReact";
+import Days from "@/components/products-components/days.astro";
+import Includes from "@/components/products-components/includes.astro";
+import Route from "@/components/ui/icons/route.astro";
+import Link from "@/components/ui/link.astro";
+import cycleSardiniaNl from "@/data_files/cycleSardiniaNl.json";
+
+import ReviewsCompt from "@/components/ui/reviewsCompt.astro";
+
+import { getI18N } from "@/i18n/";
+import NewFaq from "@/components/newFaq.astro";
+import AccordionProducts from "@/components/accordionProducts.astro";
+import BookButton from "@/components/book-button.astro";
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+
+// Duplica y cambia las rutas para añadir o modificar las fotos
+
+const BIKES = [
+  {
+    src: "/cycle-tour/leisure-cycling/italia/sardinia/bike-1.png",
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/italia/sardinia/bike-2.png",
+  },
+];
+
+const IMG = [
+  {
+    src: "/cycle-tour/leisure-cycling/italia/sardinia/sardinia-1.webp",
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/italia/sardinia/sardinia-2.webp",
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/italia/sardinia/sardinia-3.webp",
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/italia/sardinia/sardinia-4.webp",
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/italia/sardinia/sardinia-5.webp",
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/italia/sardinia/sardinia-6.webp",
+  },
+];
+
+type ReviewsProps = {
+  header: {
+    name: string;
+    productName: string;
+    valoration: string;
+  };
+  body: {
+    text: string;
+  };
+};
+
+const DAYS = [
+  {
+    day: "1",
+    tecnicalInfo: false,
+    title: "Aankomst Olbia",
+    description:
+      "Bij aankomst op de luchthaven van Olbia wacht er een transfer om je naar het hotel te brengen. Afhankelijk van je aankomsttijd is de rest van de dag vrij. Je kunt ervoor kiezen om de middag door te brengen met het verkennen van de oude stad van Olbia, die een aangename sfeer biedt voor een ontspannen wandeling, evenals talrijke cafés en restaurants waar je kunt lunchen of een kop koffie kunt genieten.",
+    description3:
+      "In de middag, op de afgesproken vergadertijd, ontmoet de tourleider de groep bij de hotelreceptie om een briefing te geven over de tour en de komende dagen. In de avond is er een tafel gereserveerd in een lokaal restaurant, waar we samen komen voor ons eerste diner en de officiële start van de reis.",
+  },
+  {
+    day: "2",
+    tecnicalInfo: true,
+    title: "Gallura Kurk Bos",
+    description:
+      "Onze eerste fietsdag in Sardinië begint met een korte transfer vanuit Olbia, ongeveer 30 minuten naar het noorden rijdend om het startpunt van de rit van vandaag te bereiken. Vanaf hier leidt de route ons door Gallura, een regio met een sterke lokale identiteit en traditioneel platteland, bekend om zijn granieten heuvels en uitgestrekte kurkeikenbossen—sommige van de belangrijkste in Europa. Kurk wordt hier al eeuwen geoogst, waardoor zowel de lokale economie als het landschap worden gevormd.",
+    description2:
+      "Onderweg fietsen we door kleine dorpjes zoals Sant’Antonio di Gallura, waar we stoppen voor koffie en een pauze, waardoor we tijd hebben om te genieten van het ontspannen tempo van het dagelijks leven in Sardinië op zijn meest authentieke: eenvoudig, vredig en diep verbonden met het land.",
+
+    description3:
+      "De etappe eindigt in Tempio Pausania, gelegen aan de voet van Mount Limbara. Een charmant en karakteristiek stadje, Tempio Pausania wordt al lang beschouwd als de wieg van de Gallurese cultuur. Het historische centrum, gebouwd bijna volledig uit blootgestelde lokale graniet, creëert een onderscheidende en harmonieuze sfeer, met betoverende uitzichten en een perfecte setting om onze eerste fietsdag in Sardinië te eindigen.",
+
+    totalDistance: "39 km",
+    totalAscent: "826 m",
+    totalDescent: "414 m",
+    duration: "5 uur",
+    difficulty: "Niveau 2",
+  },
+
+  {
+    day: "3",
+    tecnicalInfo: true,
+    title: "Monte Limbara.",
+    description:
+      "Ontwaken boven de Gallurese vlakte en omgeven door dichte kurkbossen is een memorabele start van de dag, met Monte Limbara (1.395 m) die het ruige landschap domineert.",
+    description2:
+      "Vandaag cirkelt onze rit rond het Monte Limbara-massief op een schilderachtige route naar het dorp Berchidda. De weg loopt langs de westelijke zijde van de berg, door uitgestrekte kurkeiken- en pijnbossen. Geleidelijk aan maken de diepe groenen van het bos plaats voor strogele velden en de blauwe spiegel van Lago di Coghinas.",
+    description3:
+      "Net voordat we de brug over het meer oversteken, draait de route naar het oosten richting het agrarische stadje Berchidda, een dorp met een lange wijnbouwtraditie. Het gebied is een bekende wijnregio, beroemd om de productie van Vermentino di Gallura, Sardinië's enige DOCG-geclassificeerde wijn",
+    description4:
+      "De etappe gaat verder met een rit naar een familiebedrijf wijngaard, waar de optie bestaat om deel te nemen aan een wijnproeverij vergezeld van een typische Sardijnse lunch, voor een ontspannen en authentieke ervaring van lokale smaken en tradities.",
+    description5: "Na het bezoek keren we per auto terug naar ons hotel.",
+
+    totalDistance: "46 km",
+    totalAscent: "500 m",
+    totalDescent: "795 m",
+    duration: "4 uur",
+    difficulty: "Niveau 2",
+  },
+  {
+    day: "4",
+    tecnicalInfo: true,
+    title: "Castelsardo.",
+    description:
+      "Vandaag leidt de fietsroute vanuit Tempio Pausania naar de kust door landbouwgrond waar het landschap wordt gekenmerkt door glooiende groene heuvels, grazende koeien en de onderscheidende granieten uitsteeksels.",
+    description2:
+      "Aan het einde van de etappe komt de zee in zicht en verschijnt Castelsardo voor ons, een pittoresk, versterkt middeleeuws stadje en een van de charmantste bestemmingen in Noord-Sardinië met uitzicht op de Golf van Asinara.",
+
+    totalDistance: "46 km",
+    totalAscent: "429 m",
+    totalDescent: "945 m",
+    duration: "5 uur",
+    difficulty: "Niveau 2",
+  },
+  {
+    day: "5",
+    tecnicalInfo: false,
+    title: "Rustdag Alghero.",
+    description:
+      "Vandaag vertragen we het tempo en genieten we van een welverdiende rustdag — geen fietsen gepland. Na het ontbijt transferen we naar Alghero, een prachtige middeleeuwse stad direct aan de zeekant. Een van Sardinië's meest geliefde zomerdestinations, Alghero is de perfecte plek om rond te dwalen, te ontspannen en de sfeer op te snuiven.",
+    description2:
+      "Alghero heeft een sterke en trotse identiteit — gevormd door zijn Aragonese verleden — en vandaag hoor je nog steeds een lokale dialect van het Catalaans, een herinnering aan de diepe historische wortels van de 14e-eeuwse Catalaanse kolonisatie.",
+    description3:
+      "Voor degenen die een speciale ervaring aan de dag willen toevoegen, zijn twee optionele activiteiten beschikbaar:",
+    description4:
+      "• Dolfijn kijken & snorkelen, geleid door mariene biologen en milieu-experts, voor een onvergetelijke ontmoeting met Sardinië's mariene leven.",
+    description5:
+      "• Een boottocht naar de Grot van Neptunus, een van de meest fascinerende natuurlijke wonderen van Sardinië, toegankelijk per zee en beroemd om zijn spectaculaire stalactieten en ondergrondse kamers.",
+    description6:
+      "Voor meer informatie over deze activiteiten, bezoek onze blog: Cycle Tour Sardinia.",
+  },
+  {
+    day: "6",
+    tecnicalInfo: true,
+    title: "Kustweg.",
+    description:
+      "Vandaag zijn we terug op de fietsen voor een spectaculaire kustweg richting Bosa, algemeen beschouwd als een van de meest schilderachtige routes in heel Sardinië.",
+    description2:
+      "De weg slingert langs dramatische kliffen hoog boven de zee, met adembenemende uitzichten over diepblauwe wateren en verborgen inhammen eronder. Het is een rit die perfect de essentie van het eiland vastlegt waar il Mare en il Monte elkaar ontmoeten, met een mix van mediterrane landschappen.",
+    description3:
+      "Onze bestemming is Bosa, een van Sardinië's charmantste stadjes, met zijn kleurrijke huizen die de heuvelhelling beklimmen langs de rivier.",
+
+    totalDistance: "45 km",
+    totalAscent: "630 m",
+    totalDescent: "640 m",
+    duration: "5 uur",
+    difficulty: "Niveau 2",
+  },
+  {
+    day: "7",
+    tecnicalInfo: true,
+    title: "Montiferru & Sinis Schiereiland",
+    description:
+      "In de ochtend verlaten we Bosa per transfer en gaan we landinwaarts naar het dorp Santu Lussurgiu, een fascinerend historisch stadje gelegen op de hellingen van Montiferru. Dit gebied maakt deel uit van een groot vulkanisch complex, bekend om zijn rijke geologische geschiedenis en een indrukwekkende verscheidenheid aan landschappen. Voordat we op de fietsen stappen, nemen we tijd om het oude centrum van Santu Lussurgiu te bezoeken, een dicht opeengepakte groep stenen huizen rond een natuurlijk amfitheater.",
+    description2:
+      "Vanaf hier beginnen we onze fiets-etappe, rijdend heuvelafwaarts door veranderende landschappen en kleine stadjes en geleidelijk aan richting de kust. De route leidt ons naar het Sinis-schiereiland, een beschermd natuurgebied gevierd om zijn wilde schoonheid, lagunes en uitzonderlijke kwartszandstranden.",
+
+    description3:
+      "Na het voltooien van het laatste deel van de rit bereiken we de opmerkelijke archeologische site van Tharros, ooit een belangrijke stad in de oudheid en gelegen aan de zuidelijkste punt van het Sinis-schiereiland.",
+    description4:
+      "Daarna transferen we naar ons hotel in Oristano, een lieflijk en ontspannen stadje dat een ideale basis vormt voor de laatste dagen van de vakantie.",
+
+    totalDistance: "55 km",
+    totalAscent: "183 m",
+    totalDescent: "703 m",
+    duration: "6 uur",
+    difficulty: "Niveau 2",
+  },
+  {
+    day: "8",
+    tecnicalInfo: true,
+    title: "Costa Verde",
+    description:
+      "Op onze laatste fietsdag beginnen we met een transfer naar het startpunt: een piepklein vissersdorpje, Marceddi, uitgestrekt langs de rand van een mooie lagune. Dit kleine dorp is al lang bekend in heel Sardinië om de uitzonderlijke kwaliteit van zijn visproducten.",
+    description2:
+      "Vanaf hier stappen we weer op de fietsen en steken een smalle brug over, de lagune achter ons latend terwijl we richting de Groene Kust gaan — een van Sardinië's grote ongetemde kustlijnen. Wild, afgelegen en grotendeels ongerept, onthult deze kuststrook een ruw en krachtig landschap, ver verwijderd van massatoerisme.",
+    description3:
+      "De route leidt ons naar de spectaculaire Spiaggia di Piscinas, een magnifiek gouden strand waar de diepblauwe zee ontmoet een immens systeem van duinen. Deze duinen zijn bezaaid met macchia mediterránea struikgewas. Deze buitengewone omgeving heeft het gebied de bijnaam “de Sardijnse woestijn” opgeleverd.",
+    description4:
+      "Na het genieten van deze buitengewone plek beginnen we onze terugreis, richting het vissersdorp langs een epische bergweg die de heuvels in klimt. Dit binnenlandse deel biedt een volledig ander perspectief. Het laatste deel van de etappe volgt dezelfde strook die we vanochtend reden, waardoor de reis volledig rond is.",
+    description5: "We keren per transfer terug naar ons hotel.",
+
+    totalDistance: "70 km",
+    totalAscent: "904 m",
+    totalDescent: "904 m",
+    duration: "6-7 uur",
+    difficulty: "Niveau 2-3",
+  },
+  {
+    day: "9",
+    tecnicalInfo: false,
+    title: "Rustdag Oristano",
+    description:
+      "Met geen fietsen gepland, vertraagt het tempo volledig, waardoor je vrij bent om Sardinië op je eigen manier te genieten.",
+    description2:
+      "Voor degenen die actief willen blijven of een beetje meer willen verkennen, is een reeks optionele activiteiten beschikbaar.",
+    description3:
+      "Een optie is om terug te keren naar de kust, hetzij per fiets (ongeveer 18 km) of per transfer, gecombineerd met een bezoek aan de buitengewone archeologische site van Tharros.",
+    description4:
+      "Als alternatief kun je deelnemen aan een begeleide tour van het Giara Park, een uniek natuurlijk plateau het best bekend als de toevluchtsoord van de Giara-paarden — een van de zeer weinige wilde paardpopulaties in Europa — die vrij rondzwerven in een ongerept en fascinerend landschap.",
+    description5:
+      "Voor meer informatie over deze activiteiten, bezoek onze blog: Cycle Tour Sardinia.",
+  },
+  {
+    day: "10",
+    tecnicalInfo: false,
+    title: "Vertrekdag",
+    description:
+      "Vandaag markeert het einde van ons Sardijnse avontuur. Afhankelijk van je vluchtschema word je getransporteerd naar de luchthaven voor je vertrek.",
+  },
+];
+---
+
+<Layout title="">
+  <Container>
+    <main class="mt-16">
+      <!-- Foto, nombre y destino -->
+
+      <div
+        class="bg-center bg-cover bg-no-repeat bg-[url('/public/cycle-tour/leisure-cycling/italia/sardinia/sardinia-principal.webp')] h-[25rem] lg:h-[45rem] rounded-2xl">
+        <div class="flex flex-col justify-end h-full p-6 w-auto">
+          <div class="flex gap-2">
+            <Icon icon="destiny-logo" size="1.6rem" color="white" />
+            <p
+              class="text-xl font-normal text-white lg:text-2xl flex flex-col justify-end h-full [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
+              Italië
+            </p>
+          </div>
+          <div>
+            <h1
+              class="text-3xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-5xl [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
+              Fietstocht Sardinië
+            </h1>
+            <p
+              class="text-xl font-normal text-white lg:text-2xl flex flex-col h-full [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
+              E-bike Tour 10 Dagen
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Informacion general de los viajes -->
+
+      <div
+        class="grid grid-cols-2 md:grid-cols-6 h-auto mt-3 gap-3 place-content-start md:px-6">
+        <InformationProducts title={i18n.INFO_PRODUCTS.PRICE} subtitle="2.500">
+          <div slot="icon">
+            <Icon icon="price-logo" size="1.6rem" color="#ff5e00" />
+          </div>
+        </InformationProducts>
+        <InformationProducts
+          title={i18n.INFO_PRODUCTS.PRE_BOOKING}
+          subtitle="30%">
+          <div slot="icon">
+            <Icon icon="price-logo" size="1.6rem" color="#ff5e00" />
+          </div>
+        </InformationProducts>
+        <InformationProducts
+          title={i18n.INFO_PRODUCTS.MINIMUM_OF_PERSONS}
+          subtitle="10">
+          <div slot="icon">
+            <Icon icon="group-logo" size="1.6rem" color="#ff5e00" />
+          </div>
+        </InformationProducts>
+        <InformationProducts
+          title={i18n.INFO_PRODUCTS.DURATION}
+          subtitle="10 Days">
+          <div slot="icon">
+            <Icon icon="timer-logo" size="1.6rem" color="#ff5e00" />
+          </div>
+        </InformationProducts>
+        <InformationProducts
+          title={i18n.INFO_PRODUCTS.TOUR_TYPE}
+          subtitle="Guided">
+          <div slot="icon">
+            <Icon icon="guide-logo" size="1.6rem" color="#ff5e00" />
+          </div>
+        </InformationProducts>
+        <InformationProducts
+          title={i18n.INFO_PRODUCTS.SEASON}
+          subtitle2="Spring Autumn">
+          <div slot="icon">
+            <Icon icon="spring-logo" size="1.6rem" color="#ff5e00" />
+            <Icon icon="autumn-logo" size="1.6rem" color="#ff5e00" />
+          </div>
+        </InformationProducts>
+      </div>
+
+      <!-- Informacion tecnica -->
+
+      <div class="">
+        <div
+          class="grid grid-cols-2 justify-between md:grid-cols-6 h-auto mt-3 gap-3 md:px-6">
+          <InformationProducts
+            title={i18n.INFO_PRODUCTS.TOTAL_DISTANCE}
+            subtitle="300 km">
+            <div slot="icon">
+              <Icon icon="distance-logo" size="1.6rem" color="#ff5e00" />
+            </div>
+          </InformationProducts>
+
+          <InformationProducts
+            title={i18n.INFO_PRODUCTS.TOTAL_ASCENT}
+            subtitle="3.471 m">
+            <div slot="icon">
+              <Icon icon="up-logo" size="1.6rem" color="#ff5e00" />
+            </div>
+          </InformationProducts>
+          <InformationProducts
+            title={i18n.INFO_PRODUCTS.TOTAL_DESCENT}
+            subtitle="4.401 m">
+            <div slot="icon">
+              <Icon icon="down-logo" size="1.6rem" color="#ff5e00" />
+            </div>
+          </InformationProducts>
+          <InformationProducts
+            title={i18n.INFO_PRODUCTS.ROUTE_TYPE}
+            subtitle="Point to point">
+            <div slot="icon">
+              <Route />
+            </div>
+          </InformationProducts>
+          <InformationProducts
+            title={i18n.INFO_PRODUCTS.DIFFICULTY}
+            subtitle="2">
+            <div class="flex gap-1" slot="icon"></div>
+          </InformationProducts>
+          <InformationProducts title="E-Bike" subtitle="Yes">
+            <div slot="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="45"
+                height="30"
+                fill="#ff5e00"
+                viewBox="80 90 330 330"
+                ><path
+                  d="M83.172,319.817Q85.646,320,88.1,320A64,64,0,0,0,136.544,214.29a64.376,64.376,0,0,0-11.981-10.841l9.59-17.982,46.293,46.293A31.986,31.986,0,1,0,235.7,264h20.823a64.023,64.023,0,1,0,42.47-68.439l-10.025-19.605L300.944,152H316a20,20,0,0,0,0-40H276a20,20,0,0,0,0,40h7.053l-8,16H143.469l16.49-30.918L160,137l4.8-9H200a8,8,0,0,0,0-16H166.624A24.039,24.039,0,0,0,144,96H120a8,8,0,0,0-8,8v32a8,8,0,0,0,8,8h18.136l-27.748,52.028a64.045,64.045,0,0,0-86.2,55.141h0A64.072,64.072,0,0,0,83.172,319.817ZM312,256a8,8,0,1,1,8,8A8.009,8.009,0,0,1,312,256Zm-20-38.953L303.183,238.9a24.037,24.037,0,0,0-5.8,9.1h-24.7A48.052,48.052,0,0,1,292.007,217.047Zm-14.122-27.618,6.775,13.25A64.062,64.062,0,0,0,256.521,248H240a31.8,31.8,0,0,0-4.446-16.244ZM260.686,184l-36.443,36.443a31.9,31.9,0,0,0-32.483,0L155.314,184ZM96,256a8,8,0,1,1-8-8A8.009,8.009,0,0,1,96,256Z"
+                ></path><path
+                  d="M380,168H344v16h36a92,92,0,0,1,0,184H327.324a47.991,47.991,0,0,0-94.642,0H190.99A32.057,32.057,0,0,0,160,344H120a8,8,0,0,0-8,8H96a8,8,0,1,0,0,16h16v16H96a8,8,0,1,0,0,16h16a8,8,0,0,0,8,8h40a32.057,32.057,0,0,0,30.987-24h41.692a47.991,47.991,0,0,0,94.642,0H380a108,108,0,0,0,0-216ZM294.659,380.438l-16,24-13.312-8.876L273.055,384H272a8,8,0,0,1-6.653-12.438l16-24,13.312,8.876L286.951,368H288a8,8,0,0,1,6.656,12.438Z"
+                ></path></svg
+              >
+            </div>
+          </InformationProducts>
+        </div>
+      </div>
+
+      <div class="mt-10 max-w-[320px]">
+        <BookButton />
+      </div>
+
+      <!--  Include, exclude, complementaries  -->
+      <div
+        class="grid md:grid-cols-2 lg:grid-cols-2 mt-10 md:mt-16 md:mb-26 gap-16 md:gap-20 wrap">
+        <!-- Include -->
+        <Includes
+          title={i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.INCLUDED
+            .TITLE}>
+          <ul slot="description" class="mt-4 flex flex-col gap-2">
+            <li class="flex gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">2 Professionele gidsen</p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">
+                Aansprakelijkheidsverzekering en assistentie
+              </p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">
+                Garantie voor financiële bescherming
+              </p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Reservevoertuig</p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Bagagetransport</p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Luchthaventransfer</p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Hotel 3 & 4 sterren</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Privé kamer 9 nachten</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Ontbijt: 9 dagen</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Lunch: 6 picknicks</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">E-bike</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Helm</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Waterfles</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Fiets T-shirt</p>
+            </li>
+          </ul>
+        </Includes>
+        <!-- Exclude -->
+        <Includes
+          title={i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.NOT_INCLUDED
+            .TITLE}>
+          <div slot="description" class="flex flex-col gap-2 mt-4">
+            <li class="flex gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">
+                Reis- en annuleringsverzekering (Het is verplicht om vóór
+                vertrek een reisverzekering af te sluiten)
+              </p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Vlucht</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Diner</p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">
+                Lunch (picknick) op de twee vrije fietsdagen
+              </p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Extra maaltijden</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Extra excursies</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Persoonlijke uitgaven</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Fooien</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Extra nachten</p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">
+                Privévervoer voor of na de tour
+              </p>
+            </li>
+          </div>
+        </Includes>
+        <!-- Complementaries -->
+      </div>
+    </main>
+
+    <div class="grid md:grid-cols-2 h-auto gap-10 md:gap-20 md:py-36 py-10">
+      <div class="static h-[385px] hidden md:block">
+        <img
+          class="rounded-xl absolute md:w-[20rem] lg:w-[25rem] hover:z-40 transition-all duration-300 ease-out hover:scale-105"
+          src="/cycle-tour/leisure-cycling/italia/sardinia/sardinia-3.webp"
+          alt="ciclista mirando la sierra con cicicleta a su lado"
+        />
+        <img
+          class="rounded-xl absolute md:w-[10rem] lg:w-[12rem] md:mt-48 lg:mt-30 ml-6 z-10 grayscale-[60%] hover:grayscale-0 transition-all duration-300 ease-out hover:scale-105"
+          src="/cycle-tour/leisure-cycling/italia/sardinia/sardinia-1.webp"
+          alt="ciclista mirando la sierra con cicicleta a su lado"
+        />
+        <img
+          class="rounded-xl absolute md:w-[10rem] lg:w-[15em] ml-64 md:-mt-24 lg:-mt-32 grayscale-[60%] hover:grayscale-0 transition-all duration-300 ease-out hover:scale-105"
+          src="/cycle-tour/leisure-cycling/italia/sardinia/sardinia-5.webp"
+          alt="ciclista mirando la sierra con cicicleta a su lado"
+        />
+      </div>
+
+      <div class="grid gap-5 md:-mt-20">
+        <div>
+          <h2
+            class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+            {i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.AVAILABILITY}
+          </h2>
+          <p>
+            Kun je geen geschikte data in de planning vinden? Neem contact met
+            ons op om je beschikbaarheid door te geven. Voor privétours bieden
+            wij graag een op maat gemaakte oplossing aan.
+          </p>
+          <div class="gap-4 mt-6">
+            <ul class="text-lg">
+              <div class="grid lg:grid-cols-2 gap-2 mt-4">
+                <div class="flex gap-2">
+                  <Icon icon="autumn-logo" size="1.6rem" color="#ff5e00" />
+                  <p>Herfst 2026</p>
+                </div>
+
+                <div class="grid">
+                  <li>14.09.26 – 23.09.26 (Volgeboekt)</li>
+                  <li>25.09.26 – 04.10.26 (Volgeboekt)</li>
+                </div>
+              </div>
+              <div class="grid lg:grid-cols-2 gap-2 mt-4">
+                <div class="flex gap-2">
+                  <Icon icon="spring-logo" size="1.6rem" color="#ff5e00" />
+                  <p>Lente 2027</p>
+                </div>
+
+                <div class="grid">
+                  <li>02.04.27 – 11.04.27</li>
+                  <li>16.04.27 – 25.04.27</li>
+                  <li>07.05.27 – 16.05.27</li>
+                </div>
+              </div>
+              <div class="grid lg:grid-cols-2 gap-2 mt-4">
+                <div class="flex gap-2">
+                  <Icon icon="autumn-logo" size="1.6rem" color="#ff5e00" />
+                  <p>Herfst 2027</p>
+                </div>
+
+                <div class="grid">
+                  <li>10.09.27 – 19.09.27</li>
+                  <li>24.09.27 – 03.10.27</li>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 mt-10 items-center">
+      <div>
+        <h2
+          class="max-w-2xl mb-6 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+          Fiets
+        </h2>
+        <p>🔶 Scott</p>
+        <p>🔶 Aluminium frame</p>
+        <p>🔶 625ah Accu</p>
+        <p>🔶 Aangedreven door Bosch</p>
+        <p>🔶 Shimano hydraulische schijfrem & apparatuur</p>
+        <p>🔶 Schwalbe anti-lek 700x50 band</p>
+        <p>🔶 Gewicht: 22 kg</p>
+      </div>
+      <div class="w-full overflow-x-auto">
+        <ol class="w-full">
+          {(<SliderReact IMG={BIKES} client:visible />)}
+        </ol>
+      </div>
+    </div>
+
+    <AccordionProducts
+      title="Reis<br />informatie"
+      cycleSardiniaEs={cycleSardiniaNl}
+    />
+
+    <div class="grid lg:grid-cols-2 gap-4 items-center">
+      <div>
+        <h2
+          class="max-w-2xl mb-6 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+          Wat mee te nemen voor je fietsvakantie
+        </h2>
+        <p class="mb-2">
+          Een goed ingepakte tas zorgt voor een soepelere rit! Dit is wat wij
+          aanraden voor je fietstour door Sardinië.
+        </p>
+        <p class="font-bold mb-2">Inpaklijst</p>
+        <p class="font-bold">Fietskleding:</p>
+        <p>
+          🔶 Fietsbroek (met pad) en fietsshirts – 2–3 sets (lange en korte
+          mouwen)
+        </p>
+        <p>🔶 Lichtgewicht wind- en/of waterdichte jas (regenjas)</p>
+        <p>🔶 Trui of fleece (extra lagen voor koelere omstandigheden)</p>
+        <p>
+          🔶 Gewatteerde fietshandschoenen (voorjaars- en herfstochtenden kunnen
+          fris zijn)
+        </p>
+        <p>🔶 Armbeschermers en beenstukken (optioneel maar zeer nuttig)</p>
+        <p class="mb-2">🔶 Sportsokken (sneldrogend)</p>
+        <p class="font-bold">Zon- en weerbescherming:</p>
+        <p>🔶 Zonnehoed</p>
+        <p>🔶 Nekwarmer (buff)</p>
+        <p>🔶 Zonnebril</p>
+        <p>🔶 Fietspet of buff (zonbescherming onder de helm)</p>
+        <p>🔶 Zonnebrandcrème (hoge SPF)</p>
+        <p class="mb-2">🔶 Lippenbalsem met SPF (aanbevolen)</p>
+        <p class="font-bold">Uitrusting & accessoires:</p>
+        <p>🔶 Waterfles (door ons verzorgd)</p>
+        <p>
+          🔶 Fietshelm (door ons verzorgd) Laat het ons weten als je een helm
+          nodig hebt!
+        </p>
+        <p>🔶 Gelzadelhoes voor extra comfort (optioneel)</p>
+        <p>🔶 Kleine rugzak</p>
+        <p class="mb-2">🔶 Fietstas (door ons verzorgd)</p>
+        <p class="font-bold">Schoenen & vrijetijdskleding:</p>
+        <p>
+          🔶 Comfortabele schoenen (niet aanbevolen om mee te fietsen met
+          sandalen)
+        </p>
+        <p>🔶 Vrijetijdskleding en een extra paar schoenen voor de avonden</p>
+        <p class="mb-2">🔶 Badkleding</p>
+        <p class="font-bold">Documenten & gezondheid:</p>
+        <p>🔶 Paspoort</p>
+        <p>🔶 Reisverzekering</p>
+        <p>🔶 Persoonlijke EHBO-set</p>
+        <p>🔶 Insectenwerend middel</p>
+        <p class="mb-2">🔶 Persoonlijke medicatie (indien van toepassing)</p>
+        <p>
+          Als je vragen hebt over de aanbevolen uitrusting of niet zeker weet
+          wat je mee moet nemen, neem dan gerust contact met ons op.
+        </p>
+      </div>
+      <div>
+        <img
+          class="rounded-2xl"
+          src="/cycle-tour/leisure-cycling/italia/sardinia/sardinia-map.webp"
+          alt="Kaart van Sardinië-tour"
+        />
+      </div>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-4 lg:mt-20 mt-10 mb-10">
+      <div>
+        <h2
+          class="max-w-2xl mb-6 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+          Vereisten
+        </h2>
+        <p>🔶 Geldige reisverzekering</p>
+        <p>
+          🔶 Ondertekend vrijwaringsformulier, in te vullen vóór de start van de
+          tour
+        </p>
+        <p>🔶 Voldoende lichamelijke conditie.</p>
+        <p>🔶 Ervaring met langere ritten.</p>
+        <p>
+          🔶 Zelfverzekerd schakelen is belangrijk en het beheersen van
+          afdalingen
+        </p>
+        <p>🔶 Helm verplicht tijdens alle ritten</p>
+        <p>
+          🔶 Persoonlijke verantwoordelijkheid voor gezondheid, fitheid en
+          eventuele bestaande medische aandoeningen
+        </p>
+        <p>🔶 Noodcontactgegevens, te verstrekken vóór vertrek</p>
+      </div>
+
+      <div>
+        <h2
+          class="max-w-2xl mb-6 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+          Welkom op SARDINIË
+        </h2>
+        <p class="max-w-2xl mb-6 md:px-0 font-bold">
+          Tussen cultuur en landschappen. Sardinië is de mediterrane droom!
+        </p>
+        <p class="mb-2">
+          Ontdek Sardinië op twee wielen met een prachtig traject dat de meest
+          ongerepte kusten, cultuur en smaken van het eiland samenbrengt in één
+          fietsroute.
+        </p>
+        <p>
+          🔶 Verken oude beschavingen. Van de mysterieuze Nuraghe-torens tot
+          Fenicische, Carthaagse, Romeinse, Aragonese en Pisanaanse invloeden,
+          elk heeft een onuitwisbare stempel gedrukt op de identiteit van
+          Sardinië.
+        </p>
+        <p>
+          🔶 De natuur heeft wonderen verricht in Sardinië — torenhoge kliffen
+          en een kustlijn bezaaid met wereldberoemde stranden en baaien vormen
+          een uitzonderlijk landschap.
+        </p>
+        <p>
+          🔶 Bezoek verborgen bergdorpjes in het landelijke hart van Sardinië
+          tot prachtige middeleeuwse steden zoals Alghero en Castelsardo, of
+          Bosa — een van de mooiste steden van Sardinië, met kleurrijke huizen
+          die tegen een steile heuvel zijn aangebouwd en omhoog leiden naar een
+          majestueus kasteel.
+        </p>
+        <p>
+          🔶 Ontdek de Sardijnse levenswijze. Dit eiland bewaart het geheim van
+          een lang leven, vraag het de Sardijnen.
+        </p>
+        <p>
+          🔶 De Sardijnse keuken – lokaal geproduceerde ricotta, pecorino en
+          geitenkaas; proef traditionele Sardijnse wijnen en specialiteiten
+          zoals culurgiones, porcetto en seadas al miele, en nog veel meer.
+        </p>
+        <p>
+          🔶 Geniet van je vrije dagen met optionele activiteiten zoals een
+          boottocht, een bezoek aan de Grotta di Nettuno (een van de grootste
+          zeegrotten van Italië), het ontdekken van het mijnbouwverleden van het
+          eiland of de Vermentino-wijnproeverij – allemaal in één fietstocht.
+        </p>
+      </div>
+      <div>
+        <h2
+          class="max-w-2xl mb-6 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+          Algemene Voorwaarden
+        </h2>
+        <p class="max-w-2xl mb-6 md:px-0">
+          Lees onze Algemene Voorwaarden voordat je je boeking afrondt. Door je
+          reservering te bevestigen ga je akkoord met alle regels met betrekking
+          tot betalingen, annuleringen en deelnamevereisten. Zie blog Cycle Tour
+          Sardinia.
+        </p>
+      </div>
+    </div>
+
+    <!-- Slider Photos -->
+    <section class="m-auto md:w-full rounded-xl md:px-8 md:py-20">
+      <ol class="relative mt-16">
+        {(<SliderReact IMG={IMG} client:visible />)}
+      </ol>
+    </section>
+
+    <section>
+      <!--  TimeLine per days  -->
+      <div class="md:p-8">
+        <h2
+          class="max-w-2xl md:p-8 mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+          {
+            i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.WHAT_TO_EXPECT
+              .TITLE
+          }
+        </h2>
+
+        <p class="text-lg text-gray-900 mb-1">
+          <span class="text-xl strong">🔶</span>Volledig ondersteunde begeleide
+          tour met e-bike
+        </p>
+        <p class="text-lg text-gray-900 mb-1">
+          <span class="text-xl strong">🔶</span>Privékamers in 3-4-sterrenhotels
+        </p>
+        <p class="text-lg text-gray-900 mb-1">
+          <span class="text-xl strong">🔶</span>Fietsritme: ontspannen en
+          sociaal, met regelmatige stops voor foto’s, koffie, uitzichtpunten en
+          culturele bezoeken
+        </p>
+        <p class="text-lg text-gray-900 mb-1">
+          <span class="text-xl strong">🔶</span>Gemiddelde dagelijkse afstand:
+          50 km fietsen per dag (ongeveer 4–6 uur inclusief pauzes)
+        </p>
+        <p class="text-lg text-gray-900 mb-1">
+          <span class="text-xl strong">🔶</span>Terrein: landelijke wegen met
+          weinig verkeer.
+        </p>
+        <p class="text-lg text-gray-900 mb-1">
+          <span class="text-xl strong">🔶</span>Dagelijks schema: aankomsten
+          meestal in de middag, met tijd om te ontspannen, van het hotel te
+          genieten of de omgeving te verkennen
+        </p>
+        <p class="text-lg text-gray-900 mb-1">
+          <span class="text-xl strong">🔶</span>Extra optionele activiteiten
+        </p>
+
+        {
+          DAYS.map((tour) => (
+            <ol class="mb-10">
+              <Days {...tour} />
+            </ol>
+          ))
+        }
+      </div>
+    </section>
+
+    <script is:inline>
+      const buttons = document.querySelectorAll(".showMoreBtn");
+      const contents = document.querySelectorAll(".showMoreContent");
+      buttons.forEach((btn, idx) => {
+        let show = false;
+        btn.addEventListener("click", () => {
+          show = !show;
+          const content = contents[idx];
+          if (show) {
+            content.classList.remove("max-h-0", "opacity-0");
+            content.classList.add("max-h-[2000px]", "opacity-100");
+            btn.textContent = "Less info ⬆";
+          } else {
+            content.classList.remove("max-h-[2000px]", "opacity-100");
+            content.classList.add("max-h-0", "opacity-0");
+            btn.textContent = "More info ⬇";
+          }
+        });
+      });
+    </script>
+  </Container>
+</Layout>
