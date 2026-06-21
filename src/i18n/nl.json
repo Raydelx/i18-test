@@ -1957,6 +1957,12 @@
 
         "LEISURE_CYCLING": {
 
+             "CYCLE_TOUR_GRANADA": {
+                "TITLE": "Fietstocht Granada",
+                "SUBTITLE": "E-bike Tour 8 Dagen",
+                "LOCATION": "Granada"
+            },
+
             "FROM_MOUNTAINS_TO_COASTLINE": {
                 "TITLE": "Fietstocht Sierra Nevada - Middellandse Zee",
                 "SUBTITLE": "E-bike tour 1/2 dag",

@@ -1,0 +1,735 @@
+---
+import Container from "@/components/container.astro";
+import InformationProducts from "@/components/ui/informationProducts.astro";
+import Icon from "@/components/Icon.astro";
+import Layout from "@/layouts/Layout.astro";
+import SliderReact from "@/hooks/SliderReact";
+import Days from "@/components/products-components/days.astro";
+import Includes from "@/components/products-components/includes.astro";
+import Route from "@/components/ui/icons/route.astro";
+import Link from "@/components/ui/link.astro";
+import cycleSardiniaNl from "@/data_files/cycleGranadaEs.json";
+
+import ReviewsCompt from "@/components/ui/reviewsCompt.astro";
+
+import { getI18N } from "@/i18n/";
+import NewFaq from "@/components/newFaq.astro";
+import AccordionProducts from "@/components/accordionProducts.astro";
+import BookButton from "@/components/book-button.astro";
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+
+// Duplica y cambia las rutas para añadir o modificar las fotos
+
+const BIKES = [
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-tour-granada/bike-1.webp",
+  },
+];
+
+const IMG = [
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-tour-granada/ctg-1.webp",
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/italia/sardinia/ctg-2.webp",
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/italia/sardinia/ctg-3.webp",
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/italia/sardinia/ctg-4.webp",
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/italia/sardinia/ctg-5.webp",
+  },
+];
+
+type ReviewsProps = {
+  header: {
+    name: string;
+    productName: string;
+    valoration: string;
+  };
+  body: {
+    text: string;
+  };
+};
+
+const DAYS = [
+  {
+    day: "1",
+    tecnicalInfo: false,
+    title: "Arrival & Welcome to Andalusia",
+    description:
+      "Upon arrival, you will be met and transferred by private vehicle to your hotel in Granada. Depending on your arrival time, the remainder of the day is free for you to relax or explore at your leisure.",
+    description3:
+      "In the afternoon, at the agreed meeting time, the tour leader will meet the group at the hotel reception to provide a briefing about the tour and the days ahead. In the evening, a table is reserved at a local restaurant, where we come together for our first dinner and the official start of the trip",
+  },
+  {
+    day: "2",
+    tecnicalInfo: true,
+    title: "Excursion 1 – Cycling Through La Vega and the Mountains",
+    description:
+      "We begin our cycling holiday with a ride through the rural heartland of La Vega de Granada, a vast and fertile agricultural plain that surrounds the city of Granada. ",
+    description2:
+      "We cycle along peaceful roads bordered by rolling fields of grain, olive groves, fruit orchards, and almond trees, all set against the spectacular backdrop of the Sierra Nevada mountains. Along the way, we pass through small traditional villages where the authentic rhythm of Andalusian rural life can still be felt.",
+
+    description3:
+      "Our destination is a beautiful lake located within the Natural Park of Tejeda, Almijara and Alhama, where a picnic lunch will be waiting for us in a scenic setting. For those who feel adventurous, don't forget to bring a towel—the crystal-clear emerald waters provide the perfect opportunity for a refreshing swim after the ride.",
+
+    totalDistance: "45 km",
+    totalAscent: "540 m",
+    totalDescent: "425 m",
+    duration: "4 hours",
+    difficulty: "1",
+  },
+
+  {
+    day: "3",
+    tecnicalInfo: true,
+    title:
+      "Excursion 2 – From the Sierra Nevada Mountains to the Badlands of Guadix",
+    description:
+      "After breakfast, we transfer to a traditional mountain village near Granada, where today's cycling adventure begins. From here, we ride along the northern slopes of the Sierra Nevada, following quiet roads that wind through forests, mountain valleys, and spectacular natural scenery.",
+    description2:
+      "The route follows the course of a mountain river towards the famous Puerto de los Blancares, one of the classic mountain passes of the region. Along the way, we stop at an impressive dam. Continuing through the mountains, we enjoy a well-deserved coffee break before reaching our picnic spot at a panoramic viewpoint, where we can relax and take in the scenery",
+    description3:
+      "During the second part of the ride, the landscape gradually transforms. The green mountain forests begin to disappear, giving way to a much drier and more rugged environment. Eroded hills, dramatic rock formations, and wide-open spaces announce our arrival in the unique Badlands of Granada, one of the most striking landscapes in southern Spain.",
+    description4:
+      "Our route eventually leads us into the Guadix region, famous for its extraordinary cave dwellings. For centuries, local inhabitants have lived in homes carved directly into the soft rock, creating one of the most distinctive architectural landscapes in Europe. ",
+
+    totalDistance: "66 km",
+    totalAscent: "1150 m",
+    totalDescent: "1015 m",
+    duration: "6 hours",
+    difficulty: "3",
+  },
+  {
+    day: "4",
+    tecnicalInfo: true,
+    title:
+      "Excursion 3 – Cycling Through the Alpujarras: Between the Southern Slopes of the Sierra Nevada and the Mediterranean Sea",
+    description:
+      "Today we explore one of the most authentic and captivating regions of Andalusia: Las Alpujarras, a land of rich history, rugged natural beauty, and distinctive architecture. This excursion takes us along the southern slopes of the Sierra Nevada, through landscapes that have remained largely unchanged for centuries.",
+    description2:
+      "The day begins with a transfer to Puerto de la Ragua, a mountain pass situated at an altitude of 2,000 metres on the border between the provinces of Granada and Almería. From here, we embark on a spectacular mostly downhill ride, enjoying breathtaking views over deep valleys, terraced farmland, and, on clear days, even glimpses of the Mediterranean Sea and the distant outline of Africa on the horizon.",
+    description3:
+      "Las Alpujarras is a region where time seems to stand still. Following the Reconquista, it became the last refuge of the Moriscos, the Muslim inhabitants of Spain. Their legacy remains visible today in the harmonious relationship between people and nature, reflected in the ancient irrigation channels, agricultural terraces, and traditional architecture that characterise the area.",
+    description4:
+      "Along the route, we pass through several picturesque villages of Berber influence, whose appearance evokes the landscapes of North Africa. Clinging to the mountainsides, these villages are composed of whitewashed cubic houses with flat roofs and distinctive chimney pots, connected by narrow, winding streets that invite exploration and offer a glimpse into a unique cultural heritage.",
+
+    totalDistance: "65 km",
+    totalAscent: "1150 m",
+    totalDescent: "1700 m",
+    duration: "5 hours",
+    difficulty: "3",
+  },
+  {
+    day: "5",
+    tecnicalInfo: false,
+    title: "Free Day – Explore Granada at Your Own Pace",
+    description:
+      "Today has been left free for you to relax and enjoy Granada at your own pace. After several days of cycling through the region's diverse landscapes, this is the perfect opportunity to discover one of Spain's most fascinating cities or simply take some time to unwind.",
+    description2:
+      "Wander through Granada's historic centre, with its charming streets, lively squares, and inviting cafés and terraces. Sample local tapas, browse the markets, or explore the enchanting Albaicín, the city's historic Arab quarter, famous for its whitewashed houses, narrow winding streets, and spectacular viewpoints overlooking Granada and the Sierra Nevada.",
+    description3:
+      "A highlight of any visit to Granada is the world-famous Alhambra, the magnificent Moorish palace and fortress complex that dominates the city skyline. Its stunning architecture, beautiful gardens, and rich history make it one of Spain's most treasured landmarks. Please note: Entrance tickets for the Alhambra are in very high demand and often need to be booked several months in advance.",
+    strong4: "Optional Suggestions",
+
+    description5:
+      "Relax in a traditional Arab hammam and enjoy a soothing spa experience inspired by Andalusia's Moorish heritage.",
+    description6:
+      "Attend an authentic flamenco performance, perhaps in one of the atmospheric cave venues of the historic Sacromonte district.",
+    description7:
+      "Visit one of Granada's museums, churches, or hidden courtyards.",
+    description8:
+      "Simply enjoy a leisurely day soaking up the unique atmosphere of this historic city.",
+  },
+  {
+    day: "6",
+    tecnicalInfo: true,
+    title: "Excursion 4 – Cycling Through the Gorafe Desert.",
+    description:
+      "Today we discover one of Andalusia's most unexpected landscapes: the spectacular Gorafe Desert. Located in the heart of the Granada UNESCO Global Geopark, this extraordinary region feels more like another continent than southern Spain. Vast open spaces, dramatic canyons, dry riverbeds, rugged badlands, and high plateaus create a landscape unlike anything else on this tour.",
+    description2:
+      "Our route follows quiet roads through an ever-changing scenery of red and ochre-coloured cliffs, striking rock formations, deep ravines, and panoramic viewpoints. The landscape, sculpted by millions of years of erosion, is often compared to the canyon country of the American Southwest and offers some of the most spectacular cycling terrain in Spain.",
+    description3:
+      "As we ride through this remarkable environment, we gain an appreciation not only for its geological significance but also for its rich human history. The Gorafe area is home to more than 200 dolmens—prehistoric megalithic tombs dating back over 5,000 years—making it one of the largest concentrations of prehistoric monuments in Europe.",
+    description4:
+      "This unique combination of dramatic scenery, geological wonders, and ancient history makes today's ride a true highlight of the tour. ",
+
+    totalDistance: "60 km",
+    totalAscent: "530 m",
+    totalDescent: "475 m",
+    duration: "5 hours",
+    difficulty: "2",
+  },
+  {
+    day: "7",
+    tecnicalInfo: true,
+    title: "Excursion 5 – From the Sierra Nevada to the Costa Tropical",
+    description:
+      "Our final day on the bike takes us on a memorable journey from the foothills of the Sierra Nevada to the shores of the Mediterranean Sea. Starting in the mountains, we gradually descend through a landscape that changes dramatically throughout the day, from rugged mountain scenery to lush valleys and subtropical coastline.",
+    description2:
+      "The route leads us into the beautiful Lecrín Valley, a fertile region nestled between the Sierra Nevada and the Mediterranean. Known for its citrus orchards, olive groves, and almond trees, the valley offers a striking contrast to the mountain landscapes we have explored earlier in the week.",
+
+    description3:
+      "Soon the Mediterranean comes into view, and we arrive in the picturesque coastal town of Salobreña. There is time to relax by the beach, enjoy a swim in the sea, or simply savour the atmosphere from a seaside terrace.",
+    description4:
+      "To celebrate the end of a wonderful week of cycling and discovery, we gather in the evening for a farewell dinner in Granada—a perfect opportunity to share memories and reflect on the unforgettable landscapes, culture, and experiences that have made this journey through Granada so special.",
+
+    totalDistance: "50 km",
+    totalAscent: "450 m",
+    totalDescent: "1350 m",
+    duration: "6 hours",
+    difficulty: "2",
+  },
+
+  {
+    day: "8",
+    tecnicalInfo: false,
+    title: "Departure Day – Farewell and Transfer",
+    description:
+      "After breakfast, a private transfer will take you to the Airport for your onward journey home.",
+  },
+];
+---
+
+<Layout title="">
+  <Container>
+    <main class="mt-16">
+      <!-- Foto, nombre y destino -->
+
+      <div
+        class="bg-center bg-cover bg-no-repeat bg-[url('/public/cycle-tour/leisure-cycling/cycle-tour-granada/ctg-principal.webp')] h-[25rem] lg:h-[45rem] rounded-2xl">
+        <div class="flex flex-col justify-end h-full p-6 w-auto">
+          <div class="flex gap-2">
+            <Icon icon="destiny-logo" size="1.6rem" color="white" />
+            <p
+              class="text-xl font-normal text-white lg:text-2xl flex flex-col justify-end h-full [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
+              Granada
+            </p>
+          </div>
+          <div>
+            <h1
+              class="text-3xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-5xl [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
+              Cycle Tour Granada
+            </h1>
+            <p
+              class="text-xl font-normal text-white lg:text-2xl flex flex-col h-full [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
+              E-Bike Tour 8 Days
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Informacion general de los viajes -->
+
+      <div
+        class="grid grid-cols-2 md:grid-cols-6 h-auto mt-3 gap-3 place-content-start md:px-6">
+        <InformationProducts title={i18n.INFO_PRODUCTS.PRICE} subtitle="">
+          <div slot="icon">
+            <Icon icon="price-logo" size="1.6rem" color="#ff5e00" />
+          </div>
+        </InformationProducts>
+        <InformationProducts
+          title={i18n.INFO_PRODUCTS.PRE_BOOKING}
+          subtitle="30%">
+          <div slot="icon">
+            <Icon icon="price-logo" size="1.6rem" color="#ff5e00" />
+          </div>
+        </InformationProducts>
+        <InformationProducts
+          title={i18n.INFO_PRODUCTS.MINIMUM_OF_PERSONS}
+          subtitle="4">
+          <div slot="icon">
+            <Icon icon="group-logo" size="1.6rem" color="#ff5e00" />
+          </div>
+        </InformationProducts>
+        <InformationProducts
+          title={i18n.INFO_PRODUCTS.DURATION}
+          subtitle="8 Days">
+          <div slot="icon">
+            <Icon icon="timer-logo" size="1.6rem" color="#ff5e00" />
+          </div>
+        </InformationProducts>
+        <InformationProducts
+          title={i18n.INFO_PRODUCTS.TOUR_TYPE}
+          subtitle="Guided">
+          <div slot="icon">
+            <Icon icon="guide-logo" size="1.6rem" color="#ff5e00" />
+          </div>
+        </InformationProducts>
+        <InformationProducts
+          title={i18n.INFO_PRODUCTS.SEASON}
+          subtitle2="Spring Autumn">
+          <div slot="icon">
+            <Icon icon="spring-logo" size="1.6rem" color="#ff5e00" />
+            <Icon icon="autumn-logo" size="1.6rem" color="#ff5e00" />
+          </div>
+        </InformationProducts>
+      </div>
+
+      <!-- Informacion tecnica -->
+
+      <div class="">
+        <div
+          class="grid grid-cols-2 justify-between md:grid-cols-6 h-auto mt-3 gap-3 md:px-6">
+          <InformationProducts
+            title={i18n.INFO_PRODUCTS.TOTAL_DISTANCE}
+            subtitle="286 km">
+            <div slot="icon">
+              <Icon icon="distance-logo" size="1.6rem" color="#ff5e00" />
+            </div>
+          </InformationProducts>
+
+          <InformationProducts
+            title={i18n.INFO_PRODUCTS.TOTAL_ASCENT}
+            subtitle="3.820 m">
+            <div slot="icon">
+              <Icon icon="up-logo" size="1.6rem" color="#ff5e00" />
+            </div>
+          </InformationProducts>
+          <InformationProducts
+            title={i18n.INFO_PRODUCTS.TOTAL_DESCENT}
+            subtitle="4.965 m">
+            <div slot="icon">
+              <Icon icon="down-logo" size="1.6rem" color="#ff5e00" />
+            </div>
+          </InformationProducts>
+          <InformationProducts
+            title={i18n.INFO_PRODUCTS.ROUTE_TYPE}
+            subtitle="Flower">
+            <div slot="icon">
+              <Route />
+            </div>
+          </InformationProducts>
+          <InformationProducts
+            title={i18n.INFO_PRODUCTS.DIFFICULTY}
+            subtitle="2 - 3">
+            <div class="flex gap-1" slot="icon"></div>
+          </InformationProducts>
+          <InformationProducts title="E-Bike" subtitle="Yes">
+            <div slot="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="45"
+                height="30"
+                fill="#ff5e00"
+                viewBox="80 90 330 330"
+                ><path
+                  d="M83.172,319.817Q85.646,320,88.1,320A64,64,0,0,0,136.544,214.29a64.376,64.376,0,0,0-11.981-10.841l9.59-17.982,46.293,46.293A31.986,31.986,0,1,0,235.7,264h20.823a64.023,64.023,0,1,0,42.47-68.439l-10.025-19.605L300.944,152H316a20,20,0,0,0,0-40H276a20,20,0,0,0,0,40h7.053l-8,16H143.469l16.49-30.918L160,137l4.8-9H200a8,8,0,0,0,0-16H166.624A24.039,24.039,0,0,0,144,96H120a8,8,0,0,0-8,8v32a8,8,0,0,0,8,8h18.136l-27.748,52.028a64.045,64.045,0,0,0-86.2,55.141h0A64.072,64.072,0,0,0,83.172,319.817ZM312,256a8,8,0,1,1,8,8A8.009,8.009,0,0,1,312,256Zm-20-38.953L303.183,238.9a24.037,24.037,0,0,0-5.8,9.1h-24.7A48.052,48.052,0,0,1,292.007,217.047Zm-14.122-27.618,6.775,13.25A64.062,64.062,0,0,0,256.521,248H240a31.8,31.8,0,0,0-4.446-16.244ZM260.686,184l-36.443,36.443a31.9,31.9,0,0,0-32.483,0L155.314,184ZM96,256a8,8,0,1,1-8-8A8.009,8.009,0,0,1,96,256Z"
+                ></path><path
+                  d="M380,168H344v16h36a92,92,0,0,1,0,184H327.324a47.991,47.991,0,0,0-94.642,0H190.99A32.057,32.057,0,0,0,160,344H120a8,8,0,0,0-8,8H96a8,8,0,1,0,0,16h16v16H96a8,8,0,1,0,0,16h16a8,8,0,0,0,8,8h40a32.057,32.057,0,0,0,30.987-24h41.692a47.991,47.991,0,0,0,94.642,0H380a108,108,0,0,0,0-216ZM294.659,380.438l-16,24-13.312-8.876L273.055,384H272a8,8,0,0,1-6.653-12.438l16-24,13.312,8.876L286.951,368H288a8,8,0,0,1,6.656,12.438Z"
+                ></path></svg
+              >
+            </div>
+          </InformationProducts>
+        </div>
+      </div>
+
+      <div class="mt-10 max-w-[320px]">
+        <BookButton />
+      </div>
+
+      <!--  Include, exclude, complementaries  -->
+      <div
+        class="grid md:grid-cols-2 lg:grid-cols-2 mt-10 md:mt-16 md:mb-26 gap-16 md:gap-20 wrap">
+        <!-- Include -->
+        <Includes
+          title={i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.INCLUDED
+            .TITLE}>
+          <ul slot="description" class="mt-4 flex flex-col gap-2">
+            <li class="flex gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Professional guides</p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">
+                Liability insurance and assistance
+              </p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">
+                Financial Protection Guarantee
+              </p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Backup vehicle</p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Luggage transport</p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Airport Transfer</p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Private room 7 nights</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Breakfast: 7 days</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Lunch: 5 picnics</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">E-bike</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Helmet</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Water bottle</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Cycle t-shirt</p>
+            </li>
+          </ul>
+        </Includes>
+        <!-- Exclude -->
+        <Includes
+          title={i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.NOT_INCLUDED
+            .TITLE}>
+          <div slot="description" class="flex flex-col gap-2 mt-4">
+            <li class="flex gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">
+                Travel & cancellation insurance (It is obligatory to take out
+                travel insurance before departure)
+              </p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Flight</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Dinner</p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Extra meals</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Extra excursions</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Personal expenses</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Tips</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Extra nights</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">
+                Private transport after or before the tour
+              </p>
+            </li>
+          </div>
+        </Includes>
+        <!-- Complementaries -->
+      </div>
+    </main>
+
+    <div class="grid md:grid-cols-2 h-auto gap-10 md:gap-20 md:py-36 py-10">
+      <div class="static h-[385px] hidden md:block">
+        <img
+          class="rounded-xl absolute md:w-[20rem] lg:w-[25rem] hover:z-40 transition-all duration-300 ease-out hover:scale-105"
+          src="/cycle-tour/leisure-cycling/cycle-tour-granada/ctg-1.webp"
+          alt="ciclista mirando la sierra con cicicleta a su lado"
+        />
+        <img
+          class="rounded-xl absolute md:w-[10rem] lg:w-[12rem] md:mt-48 lg:mt-40 ml-6 z-10 grayscale-[60%] hover:grayscale-0 transition-all duration-300 ease-out hover:scale-105"
+          src="/cycle-tour/leisure-cycling/cycle-tour-granada/ctg-3.webp"
+          alt="ciclista mirando la sierra con cicicleta a su lado"
+        />
+        <img
+          class="rounded-xl absolute md:w-[10rem] lg:w-[15em] ml-64 md:-mt-24 lg:-mt-32 grayscale-[60%] hover:grayscale-0 transition-all duration-300 ease-out hover:scale-105"
+          src="/cycle-tour/leisure-cycling/cycle-tour-granada/ctg-4.webp"
+          alt="ciclista mirando la sierra con cicicleta a su lado"
+        />
+      </div>
+
+      <div class="grid gap-5 md:-mt-20">
+        <div>
+          <h2
+            class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+            {i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.AVAILABILITY}
+          </h2>
+          <p>
+            Can’t find any suitable dates in the schedule? Contact us to let us
+            know your availability. For private tours, we are happy to offer a
+            tailor-made solution.
+          </p>
+          <div class="gap-4 mt-6">
+            <ul class="text-lg">
+              <div class="grid lg:grid-cols-2 gap-2 mt-4">
+                <div class="flex gap-2">
+                  <Icon icon="spring-logo" size="1.6rem" color="#ff5e00" />
+                  <p>Spring 2027</p>
+                </div>
+              </div>
+              <div class='mt-4"'>
+                <p>🔶 24.04.27 - 01.05.27</p>
+                <p>🔶 08.05.27 - 15.05.27</p>
+                <p>🔶 29.05.27 - 05.06.27</p>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 mt-10 items-center">
+      <div>
+        <h2
+          class="max-w-2xl mb-6 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+          Bicycle
+        </h2>
+        <p>🔶 E-Bike Bergamont E REVOX SPORT</p>
+      </div>
+      <div class="w-full overflow-x-auto">
+        <ol class="w-full">
+          {(<SliderReact IMG={BIKES} client:visible />)}
+        </ol>
+      </div>
+    </div>
+
+    <AccordionProducts
+      title="Travel<br />Information"
+      cycleSardiniaEs={cycleSardiniaNl}
+    />
+
+    <div class="grid lg:grid-cols-2 gap-4 items-center">
+      <div>
+        <h2
+          class="max-w-2xl mb-6 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+          What to Pack for Your Cycling Holiday
+        </h2>
+        <p class="mb-2">
+          A well-packed bag makes a smoother ride! Here’s what we recommend for
+          your cycle tour through Granada.
+        </p>
+        <p class="font-bold mb-2">Checklist</p>
+        <p class="font-bold">Cycling clothing:</p>
+        <p>
+          🔶 Cycling (padded) shorts and jerseys – 2–3 sets (long and short
+          sleeves)
+        </p>
+        <p>🔶 Lightweight windproof and/or waterproof jacket (rain jacket)</p>
+        <p>🔶 Sweater or fleece (extra layers for cooler conditions)</p>
+        <p>
+          🔶 Padded cycling gloves (spring and autumn mornings can be chilly)
+        </p>
+        <p>🔶 Arm and leg warmers (optional but very useful)</p>
+        <p>🔶 Sports socks (quick-dry) shirts</p>
+        <p class="mb-2">🔶 Sportsokken (sneldrogend)</p>
+
+        <p class="font-bold">Sun & weather protection:</p>
+        <p>🔶 Sunhat</p>
+        <p>🔶 Neck warmer (buff)</p>
+        <p>🔶 Sunglasses</p>
+        <p>🔶 Cycling cap or buff (sun protection under the helmet)</p>
+        <p>🔶 Sunscreen (high SPF)</p>
+        <p class="mb-2">🔶 Lip balm with SPF (recommended)</p>
+
+        <p class="font-bold">Equipment & accessories:</p>
+        <p>🔶 Water bottle (provided by us))</p>
+        <p>
+          🔶 Bike helmet (provided by us) ¡Please give note if you need a
+          helmet!
+        </p>
+        <p>🔶 Gel seat cover for added comfort (optional)</p>
+        <p>🔶 Small rucksack</p>
+        <p class="mb-2">🔶 Pannier (provided by us)</p>
+
+        <p class="font-bold">Footwear & casual wear:</p>
+        <p>🔶 Comfortable shoes (not recommended to cycle with sandals)</p>
+        <p>🔶 Casual clothes and an extra pair of shoes for evenings</p>
+        <p class="mb-2">🔶 Swimsuit and towel</p>
+
+        <p class="font-bold">Documents & health:</p>
+        <p>🔶 Passport</p>
+        <p>🔶 Travel insurance</p>
+        <p>🔶 Personal first aid kit</p>
+        <p>🔶 Insect repellent</p>
+        <p class="mb-2">🔶 Personal medication (if applicable)</p>
+        <p>
+          If you have any questions about the recommended equipment or are
+          unsure what to bring, please do not hesitate to contact us.
+        </p>
+      </div>
+      <div>
+        <img
+          class="rounded-2xl"
+          src="/cycle-tour/leisure-cycling/cycle-tour-granada/ctg-map.webp"
+          alt="Kaart van Sardinië-tour"
+        />
+      </div>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-4 lg:mt-20 mt-10 mb-10">
+      <div>
+        <h2
+          class="max-w-2xl mb-6 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+          Requirements
+        </h2>
+        <p>🔶 Valid travel insurance</p>
+        <p>
+          🔶 Signed release of liability form, to be completed before the start
+          of the tour
+        </p>
+        <p>🔶 Adequate physical condition</p>
+        <p>🔶 Experience with longer rides.</p>
+        <p>🔶 Confident gear shifting is important and managing descents</p>
+        <p>🔶 Helmet, mandatory during all rides</p>
+        <p>
+          🔶 Personal responsibility for health, fitness and any existing
+          medical conditions
+        </p>
+        <p>🔶 Emergency contact information, to be provided before departure</p>
+      </div>
+
+      <div>
+        <h2
+          class="max-w-2xl mb-6 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+          WELCOME TO GRANADA
+        </h2>
+        <p class="max-w-2xl mb-6 md:px-0 font-bold">
+          Sun and Snow, Land and Sea, History and Legend
+        </p>
+        <p class="mb-2">
+          The Province of Granada offers an extraordinary diversity of
+          landscapes, cultures, and experiences. From the legendary city that
+          witnessed the fall of the last Moorish kingdom of Al-Andalus to some
+          of Spain's most unspoilt natural areas, this is a region of remarkable
+          contrasts and enduring beauty.
+        </p>
+        <p>
+          The land that once inspired generations of romantic travellers
+          continues to captivate visitors today. Throughout this cycling
+          journey, you will ride through an ever-changing landscape: from vast
+          high plateaus and dramatic desert scenery to the spectacular mountains
+          of the Sierra Nevada, dotted with traditional white villages.
+        </p>
+      </div>
+      <div>
+        <h2
+          class="max-w-2xl mb-6 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+          Terms & Conditions
+        </h2>
+        <p class="max-w-2xl mb-6 md:px-0">
+          Please review our <a
+            href="terms-and-conditions"
+            class="text-[#ff5e00] hover:text-[#ff863f] visited:text-purple-600 font-bold"
+            target="_blank"
+            rel="noopener noreferrer">Terms & Conditions</a
+          > before completing your booking. By confirming your reservation, you agree
+          to all policies regarding payments, cancellations, and participation requirements.
+          See Blog Cycle Tour Granada.
+        </p>
+      </div>
+    </div>
+
+    <!-- Slider Photos -->
+    <section class="m-auto md:w-full rounded-xl md:px-8 md:py-20">
+      <ol class="relative mt-16">
+        {(<SliderReact IMG={IMG} client:visible />)}
+      </ol>
+    </section>
+
+    <section>
+      <!--  TimeLine per days  -->
+      <div class="md:p-8">
+        <h2
+          class="max-w-2xl md:p-8 mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+          {
+            i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.WHAT_TO_EXPECT
+              .TITLE
+          }
+        </h2>
+
+        <p class="text-lg text-gray-900 mb-1">
+          <span class="text-xl strong">🔶</span>Fully supported guided tour with
+          E-bike
+        </p>
+        <p class="text-lg text-gray-900 mb-1">
+          <span class="text-xl strong">🔶</span>Private rooms in 3-4 star hotels
+        </p>
+        <p class="text-lg text-gray-900 mb-1">
+          <span class="text-xl strong">🔶</span>Riding pace: Relaxed and social,
+          with regular stops for potos and coffee. Everyone is encouraged to
+          ride at their own comfortable pace, allowing each participant to fully
+          enjoy the scenery. Re-grouping points are arranged throughout the day
+          to ensure the group stays connected while maintaining flexibility for
+          individual riders.
+        </p>
+        <p class="text-lg text-gray-900 mb-1">
+          <span class="text-xl strong">🔶</span>Average daily distance: 60 km of
+          cycling per day (approximately 5–6 hours including breaks)
+        </p>
+        <p class="text-lg text-gray-900 mb-1">
+          <span class="text-xl strong">🔶</span>Terrain: countryside roads with
+          little traffic.
+        </p>
+        <p class="text-lg text-gray-900 mb-1">
+          <span class="text-xl strong">🔶</span>Daily schedule: arrivals
+          typically in the afternoon, leaving time to relax, enjoy the hotel, or
+          explore the surroundings
+        </p>
+        <p class="text-lg text-gray-900 mb-1">
+          <span class="text-xl strong">🔶</span>Extra optional activities
+        </p>
+
+        {
+          DAYS.map((tour) => (
+            <ol class="mb-10">
+              <Days {...tour} />
+            </ol>
+          ))
+        }
+      </div>
+    </section>
+
+    <script is:inline>
+      const buttons = document.querySelectorAll(".showMoreBtn");
+      const contents = document.querySelectorAll(".showMoreContent");
+      buttons.forEach((btn, idx) => {
+        let show = false;
+        btn.addEventListener("click", () => {
+          show = !show;
+          const content = contents[idx];
+          if (show) {
+            content.classList.remove("max-h-0", "opacity-0");
+            content.classList.add("max-h-[2000px]", "opacity-100");
+            btn.textContent = "Less info ⬆";
+          } else {
+            content.classList.remove("max-h-[2000px]", "opacity-100");
+            content.classList.add("max-h-0", "opacity-0");
+            btn.textContent = "More info ⬇";
+          }
+        });
+      });
+    </script>
+  </Container>
+</Layout>

@@ -1988,6 +1988,13 @@
 
         "LEISURE_CYCLING": {
 
+            
+            "CYCLE_TOUR_GRANADA": {
+                "TITLE": "Cycle Tour Granada",
+                "SUBTITLE": "E-Bike Tour 8 Days",
+                "LOCATION": "Granada"
+            },
+
             "FROM_MOUNTAINS_TO_COASTLINE": {
                 "TITLE": "Cycle tour Sierra Nevada - Mediterranean Sea",
                 "SUBTITLE": "E-bike tour 1/2 day",

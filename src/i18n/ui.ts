@@ -98,6 +98,7 @@ export const routes = {
 		'trekking-hikking-spain': 'trekking-hikking-spain',
 		'cookie-policy': 'cookie-policy',
 		'cycle-tour-sardinia': 'cycle-tour-sardinia',
+		'cycle-ronda-granada': 'cycle-ronda-granada'
 	},
 	en: {
 		blog: 'blog',
@@ -156,6 +157,7 @@ export const routes = {
 		'trekking-hikking-spain': 'trekking-hikking-spain',
 		'cookie-policy': 'cookie-policy',
 		'cycle-tour-sardinia': 'cycle-tour-sardinia',
+		'cycle-ronda-granada': 'cycle-ronda-granada'
 		
 	},
 } 

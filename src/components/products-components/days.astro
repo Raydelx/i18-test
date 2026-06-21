@@ -19,6 +19,8 @@ interface Props {
   description4?: string;
   description5?: string;
   description6?: string;
+  description7?: string;
+  description8?: string;
   totalDistance?: string;
   totalAscent?: string;
   totalDescent?: string;
@@ -53,6 +55,8 @@ const {
   description4,
   description5,
   description6,
+  description7,
+  description8,
   totalDistance,
   totalAscent,
   totalDescent,
@@ -117,6 +121,12 @@ const {
         )}
         {description6 && (
           <p class="text-gray-500 text-md mt-2">{description6}</p>
+        )}
+        {description7 && (
+          <p class="text-gray-500 text-md mt-2">{description7}</p>
+        )}
+        {description8 && (
+          <p class="text-gray-500 text-md mt-2">{description8}</p>
         )}
         {optional1 && (
           <p class="text-gray-500 text-md">
@@ -383,6 +393,12 @@ const {
         )}
         {description6 && (
           <p class="text-gray-500 text-md mt-2">{description6}</p>
+        )}
+        {description7 && (
+          <p class="text-gray-500 text-md mt-2">{description7}</p>
+        )}
+        {description8 && (
+          <p class="text-gray-500 text-md mt-2">{description8}</p>
         )}
         {optional1 && (
           <p class="text-gray-500 text-md">
