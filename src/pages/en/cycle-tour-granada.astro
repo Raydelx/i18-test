@@ -32,16 +32,16 @@ const IMG = [
     src: "/cycle-tour/leisure-cycling/cycle-tour-granada/ctg-1.webp",
   },
   {
-    src: "/cycle-tour/leisure-cycling/italia/sardinia/ctg-2.webp",
+    src: "/cycle-tour/leisure-cycling/cycle-tour-granada/ctg-2.webp",
   },
   {
-    src: "/cycle-tour/leisure-cycling/italia/sardinia/ctg-3.webp",
+    src: "/cycle-tour/leisure-cycling/cycle-tour-granada/ctg-3.webp",
   },
   {
-    src: "/cycle-tour/leisure-cycling/italia/sardinia/ctg-4.webp",
+    src: "/cycle-tour/leisure-cycling/cycle-tour-granada/ctg-4.webp",
   },
   {
-    src: "/cycle-tour/leisure-cycling/italia/sardinia/ctg-5.webp",
+    src: "/cycle-tour/leisure-cycling/cycle-tour-granada/ctg-5.webp",
   },
 ];
 
@@ -218,7 +218,7 @@ const DAYS = [
             </h1>
             <p
               class="text-xl font-normal text-white lg:text-2xl flex flex-col h-full [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
-              E-Bike Tour 8 Days
+              Granada E-BikeTour 8 Days
             </p>
           </div>
         </div>
@@ -228,7 +228,7 @@ const DAYS = [
 
       <div
         class="grid grid-cols-2 md:grid-cols-6 h-auto mt-3 gap-3 place-content-start md:px-6">
-        <InformationProducts title={i18n.INFO_PRODUCTS.PRICE} subtitle="">
+        <InformationProducts title={i18n.INFO_PRODUCTS.PRICE} subtitle="1390">
           <div slot="icon">
             <Icon icon="price-logo" size="1.6rem" color="#ff5e00" />
           </div>
@@ -242,7 +242,7 @@ const DAYS = [
         </InformationProducts>
         <InformationProducts
           title={i18n.INFO_PRODUCTS.MINIMUM_OF_PERSONS}
-          subtitle="4">
+          subtitle="6">
           <div slot="icon">
             <Icon icon="group-logo" size="1.6rem" color="#ff5e00" />
           </div>
@@ -308,7 +308,9 @@ const DAYS = [
           <InformationProducts
             title={i18n.INFO_PRODUCTS.DIFFICULTY}
             subtitle="2 - 3">
-            <div class="flex gap-1" slot="icon"></div>
+            <div class="flex gap-1" slot="icon">
+              <Icon icon="difficulty-logo" size="2rem" color="#ff5e00" />
+            </div>
           </InformationProducts>
           <InformationProducts title="E-Bike" subtitle="Yes">
             <div slot="icon">
@@ -404,7 +406,7 @@ const DAYS = [
           title={i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.NOT_INCLUDED
             .TITLE}>
           <div slot="description" class="flex flex-col gap-2 mt-4">
-            <li class="flex gap-2">
+            <li class="flex flex-wrap gap-2">
               <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
               <p class="max-w-[320px] text-md">
                 Travel & cancellation insurance (It is obligatory to take out
@@ -473,7 +475,7 @@ const DAYS = [
       <div class="grid gap-5 md:-mt-20">
         <div>
           <h2
-            class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+            class="max-w-2xl mb-4 font-bold text-2xl md:text-4xl xl:text-5xl bg-[#3c5546] inline-block text-white px-6 py-2 rounded-lg">
             {i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.AVAILABILITY}
           </h2>
           <p>
@@ -503,7 +505,7 @@ const DAYS = [
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 mt-10 items-center">
       <div>
         <h2
-          class="max-w-2xl mb-6 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+          class="max-w-2xl mb-4 font-bold text-2xl md:text-4xl xl:text-5xl bg-[#3c5546] inline-block text-white px-6 py-2 rounded-lg">
           Bicycle
         </h2>
         <p>🔶 E-Bike Bergamont E REVOX SPORT</p>
@@ -523,7 +525,7 @@ const DAYS = [
     <div class="grid lg:grid-cols-2 gap-4 items-center">
       <div>
         <h2
-          class="max-w-2xl mb-6 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+          class="mb-4 font-bold text-2xl md:text-4xl xl:text-5xl bg-[#3c5546] inline-block text-white px-6 py-2 rounded-lg">
           What to Pack for Your Cycling Holiday
         </h2>
         <p class="mb-2">
@@ -590,10 +592,10 @@ const DAYS = [
 
     <div class="grid lg:grid-cols-2 gap-4 lg:mt-20 mt-10 mb-10">
       <div>
-        <h2
-          class="max-w-2xl mb-6 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+        <p
+          class="max-w-2xl mb-4 font-bold text-2xl md:text-4xl xl:text-5xl bg-[#3c5546] inline-block text-white px-6 py-2 rounded-lg">
           Requirements
-        </h2>
+        </p>
         <p>🔶 Valid travel insurance</p>
         <p>
           🔶 Signed release of liability form, to be completed before the start
@@ -612,30 +614,7 @@ const DAYS = [
 
       <div>
         <h2
-          class="max-w-2xl mb-6 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
-          WELCOME TO GRANADA
-        </h2>
-        <p class="max-w-2xl mb-6 md:px-0 font-bold">
-          Sun and Snow, Land and Sea, History and Legend
-        </p>
-        <p class="mb-2">
-          The Province of Granada offers an extraordinary diversity of
-          landscapes, cultures, and experiences. From the legendary city that
-          witnessed the fall of the last Moorish kingdom of Al-Andalus to some
-          of Spain's most unspoilt natural areas, this is a region of remarkable
-          contrasts and enduring beauty.
-        </p>
-        <p>
-          The land that once inspired generations of romantic travellers
-          continues to captivate visitors today. Throughout this cycling
-          journey, you will ride through an ever-changing landscape: from vast
-          high plateaus and dramatic desert scenery to the spectacular mountains
-          of the Sierra Nevada, dotted with traditional white villages.
-        </p>
-      </div>
-      <div>
-        <h2
-          class="max-w-2xl mb-6 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+          class="max-w-2xl mb-4 font-bold text-2xl md:text-4xl xl:text-5xl bg-[#3c5546] inline-block text-white px-6 py-2 rounded-lg">
           Terms & Conditions
         </h2>
         <p class="max-w-2xl mb-6 md:px-0">
@@ -658,11 +637,35 @@ const DAYS = [
       </ol>
     </section>
 
+    <div class="mt-8 mb-8">
+      <h2
+        class="max-w-2xl mb-4 font-bold text-2xl md:text-4xl xl:text-5xl bg-[#3c5546] inline-block text-white px-6 py-2 rounded-lg">
+        Welcome To Granada
+      </h2>
+      <p class="max-w-2xl mb-6 md:px-0 font-bold">
+        Sun and Snow, Land and Sea, History and Legend
+      </p>
+      <p class="mb-2">
+        The Province of Granada offers an extraordinary diversity of landscapes,
+        cultures, and experiences. From the legendary city that witnessed the
+        fall of the last Moorish kingdom of Al-Andalus to some of Spain's most
+        unspoilt natural areas, this is a region of remarkable contrasts and
+        enduring beauty.
+      </p>
+      <p>
+        The land that once inspired generations of romantic travellers continues
+        to captivate visitors today. Throughout this cycling journey, you will
+        ride through an ever-changing landscape: from vast high plateaus and
+        dramatic desert scenery to the spectacular mountains of the Sierra
+        Nevada, dotted with traditional white villages.
+      </p>
+    </div>
+
     <section>
       <!--  TimeLine per days  -->
-      <div class="md:p-8">
+      <div class="">
         <h2
-          class="max-w-2xl md:p-8 mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+          class="max-w-2xl mb-4 font-bold text-2xl md:text-4xl xl:text-4xl bg-[#3c5546] inline-block text-white px-6 py-2 rounded-lg">
           {
             i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.WHAT_TO_EXPECT
               .TITLE
@@ -710,6 +713,33 @@ const DAYS = [
         }
       </div>
     </section>
+
+    <div>
+      <h2
+        class="max-w-2xl mb-4 font-bold text-2xl md:text-4xl xl:text-4xl bg-[#3c5546] inline-block text-white px-6 py-2 rounded-lg">
+        What our clients said about us?
+      </h2>
+
+      <div class="md:p-8 divide-y-2 divide-slate-600">
+        <div class="grid mb-4">
+          <h3 class="font-bold text-xl">Desirée, Elly, Cock, Yvon en Wil</h3>
+
+          <p class="mb-2">⭐⭐⭐⭐⭐</p>
+        </div>
+
+        <div>
+          <p class="mt-4">
+            "Geweldige week gehad in de bergen rondom Granada op de mountainbike
+            met Mike en Pieter van Montaraz Outdoors. Mike was onze gids, hij
+            stippelde de routes uit, kwam ons halen en brengen, verzorgde de
+            mountainbikes, de heerlijke lunches, gaf ons tips voor restaurants
+            in Granada en Pieter was in de 'veegwagen' altijd dichtbij voor
+            degene die sommige bergpassen liever in de auto omhoog klom. Wij
+            hebben zo genoten, fantastisch!!!"
+          </p>
+        </div>
+      </div>
+    </div>
 
     <script is:inline>
       const buttons = document.querySelectorAll(".showMoreBtn");

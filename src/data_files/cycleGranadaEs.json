@@ -3,25 +3,24 @@
     "cycleSardiniaEs": [
       {
         "name": "Price",
-        "text1": "As this tour requires a minimum of 4 participants and accommodates a maximum of 14 participants, there is no fixed price. The final cost depends on the size of the group."
+        "text1": "As this tour requires a minimum of 4 participants and accommodates a maximum of 6 participants, there is no fixed price. The final cost depends on the size of the group."
         
       },
       
       {
-        "name": "Dificulty",
-        "text1": "Our e-bike tours are specially designed for recreational cyclists who enjoy discovering the region at a relaxed pace. These tours focus on enjoying the landscape, cultural heritage, and history of the area. Thanks to electric assistance, these routes are accessible to almost everyone with a basic  evel of fitness. However, it's important to note that we divide the tours into three difficulty levels, based on distance and elevation gain. While the e-bike takes much of the physical effort out of cycling, longer distances or greater elevation can still make for a more challenging ride. ",
+        "name": "Difficulty",
+        "text1": "Our e-bike tours are specially designed for recreational cyclists who enjoy discovering the region at a relaxed pace. These tours focus on enjoying the landscape, cultural heritage, and history of the area. Thanks to electric assistance, these routes are accessible to almost everyone with a basic  level of fitness. However, it's important to note that we divide the tours into three difficulty levels, based on distance and elevation gain. While the e-bike takes much of the physical effort out of cycling, longer distances or greater elevation can still make for a more challenging ride. ",
         "text2": "To participate in these cycling holidays, it’s important that you have a good basic fitness level, cycle regularly, and are comfortable shifting gears efficiently when climbing, this will greatly enhance your enjoyment on the road.",
         "text3": "See Blog for more information “Cycle Grades Tour E-Bike”"
       },
       {
         "name": "Group size",
-        "text1": "Our tours are designed for small groups to ensure a safe, enjoyable, and high-quality experience. A minimum of 4 participants is required to organize the tour. The maximum number of participants is 14, which allows us to provide attentive service, maintain safety on the road, and ensure a ersonalized experience throughou tour."
+        "text1": "Our tours are designed for small groups to ensure a safe, enjoyable, and high-quality experience. A minimum of 4 participants is required to organize the tour. The maximum number of participants is 14, which allows us to provide attentive service, maintain safety on the road, and ensure a personalized experience throughout the tour."
         
       },
       {
         "name": "Tailor-made version ",
-        "text1": "For private groups, our tours can be fully tailored to your needs and preferences. Whether you want to adjust the itinerary, choose specific accommodations, or select the tour dates, we can create a personalized experience just for your group.",
-        "text2": "To get started, we will send you a simple form to fill out with your preferences and requirements. Once we receive it, we will work with you to design a tour that perfectly matches your group’s interests, pace, and style."
+        "text1": "For private groups, our tours can be fully tailored to your needs and preferences. Whether you want to adjust the itinerary, choose specific accommodations, or select the tour dates, we can create a personalized experience just for your group. To get started, we will send you a simple form to fill out with your preferences and requirements. Once we receive it, we will work with you to design a tour that perfectly matches your group’s interests, pace, and style."
       },
       {
         "name": "Self-Guided Tours",
