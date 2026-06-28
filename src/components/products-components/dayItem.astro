@@ -1,0 +1,24 @@
+---
+import Icon from "@/components/ui/icons/icon.astro";
+
+interface Props {
+  text1: string;
+  logo: string;
+  text2: string;
+}
+const { text1, text2, logo } = Astro.props;
+---
+
+
+
+<div class="grid grid-cols-6 gap-14 md:gap-2">
+    <div class="col-span-1">
+        <Icon icon={logo} size="3rem" color="#ff5e00" />
+    </div>
+    <div class="grid col-span-5">
+        <h2 class="text-pretty text-gray-900 text-xl font-bold">
+            {text1}
+        </h2>
+        <p class="text-pretty text-gray-500 text-md">{text2}</p>
+    </div>
+</div>
