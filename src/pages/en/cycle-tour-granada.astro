@@ -53,8 +53,6 @@ type ReviewsProps = {
     text: string;
   };
 };
-
-
 ---
 
 <Layout title="">
@@ -77,7 +75,6 @@ type ReviewsProps = {
               class="text-3xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-5xl [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
               Granada E-BikeTour 8 Days
             </h1>
-           
           </div>
         </div>
       </div>
@@ -423,7 +420,7 @@ type ReviewsProps = {
         <p>🔶 Small rucksack</p>
         <p class="mb-2">🔶 Pannier (provided by us)</p>
 
-        <p class="font-bold">Footwear & casual wear:</p>1111
+        <p class="font-bold">Footwear & casual wear:</p>
         <p>🔶 Comfortable shoes (not recommended to cycle with sandals)</p>
         <p>🔶 Casual clothes and an extra pair of shoes for evenings</p>
         <p class="mb-2">🔶 Swimsuit and towel</p>
@@ -562,427 +559,595 @@ type ReviewsProps = {
           <span class="text-xl strong">🔶</span>Extra optional activities
         </p>
 
-<Accordion class="mt-6 mb-10" variant="splitted">
+        <Accordion class="mt-6 mb-10" variant="splitted">
+          <AccordionItem title="Day 1">
+            <p class="font-bold text-xl">Arrival & Welcome to Andalusia</p>
+            <p class="">
+              Upon arrival, you will be met and transferred by private vehicle
+              to your hotel in Granada. Depending on your arrival time, the
+              remainder of the day is free for you to relax or explore at your
+              leisure.
+            </p>
+            <p class="">
+              In the afternoon, at the agreed meeting time, the tour leader will
+              meet the group at the hotel reception to provide a briefing about
+              the tour and the days ahead. In the evening, a table is reserved
+              at a local restaurant, where we come together for our first dinner
+              and the official start of the trip
+            </p>
+          </AccordionItem>
 
-      <AccordionItem title="Day 1">
-        <p class="font-bold  text-xl">
-          Arrival & Welcome to Andalusia
-        </p>
-        <p class="">
-          Upon arrival, you will be met and transferred by private vehicle to your hotel in Granada. Depending on your arrival time, the remainder of the day is free for you to relax or explore at your leisure.
-        </p>
-        <p class="">
-          In the afternoon, at the agreed meeting time, the tour leader will meet the group at the hotel reception to provide a briefing about the tour and the days ahead. In the evening, a table is reserved at a local restaurant, where we come together for our first dinner and the official start of the trip
-        </p>
-       
-      </AccordionItem>
-   
-      <AccordionItem title="Day 2">  
-        <div class = "grid md:grid-cols-2 gap-8 md:gap-32">
-          <div class="">
-            <p class="font-bold">Excursion 1 – Cycling Through La Vega and the Mountains</p>
-            <p class="">We begin our cycling holiday with a ride through the rural heartland of La Vega de Granada, a vast and fertile agricultural plain that surrounds the city of Granada.</p>
-            <p class="">We cycle along peaceful roads bordered by rolling fields of grain, olive groves, fruit orchards, and almond trees, all set against the spectacular backdrop of the Sierra Nevada mountains. Along the way, we pass through small traditional villages where the authentic rhythm of Andalusian rural life can still be felt.</p>
-            <p class="">Our destination is a beautiful lake located within the Natural Park of Tejeda, Almijara and Alhama, where a picnic lunch will be waiting for us in a scenic setting. For those who feel adventurous, don't forget to bring a towel—the crystal-clear emerald waters provide the perfect opportunity for a refreshing swim after the ride.</p>
-          </div>
+          <AccordionItem title="Day 2">
+            <div class="grid md:grid-cols-2 gap-8 md:gap-32">
+              <div class="">
+                <p class="font-bold">
+                  Excursion 1 – Cycling Through La Vega and the Mountains
+                </p>
+                <p class="">
+                  We begin our cycling holiday with a ride through the rural
+                  heartland of La Vega de Granada, a vast and fertile
+                  agricultural plain that surrounds the city of Granada.
+                </p>
+                <p class="">
+                  We cycle along peaceful roads bordered by rolling fields of
+                  grain, olive groves, fruit orchards, and almond trees, all set
+                  against the spectacular backdrop of the Sierra Nevada
+                  mountains. Along the way, we pass through small traditional
+                  villages where the authentic rhythm of Andalusian rural life
+                  can still be felt.
+                </p>
+                <p class="">
+                  Our destination is a beautiful lake located within the Natural
+                  Park of Tejeda, Almijara and Alhama, where a picnic lunch will
+                  be waiting for us in a scenic setting. For those who feel
+                  adventurous, don't forget to bring a towel—the crystal-clear
+                  emerald waters provide the perfect opportunity for a
+                  refreshing swim after the ride.
+                </p>
+              </div>
 
-          <div class="">
-            <div class="grid grid-cols-7 gap-6 md:gap-2">
-              <div class="col-span-1">
-                <Icon icon="distance-logo" size="3rem" color="#ff5e00" />
-              </div>
-              <div class="grid col-span-6">
-                <h2 class="text-pretty text-neutral-900 text-xl font-bold">
-                  Total Distance
-                </h2>
-                  <p class="text-pretty text-gray-500 text-md">45 km</p>
-              </div>
-            </div>
+              <div class="">
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="distance-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-neutral-900 text-xl font-bold">
+                      Total Distance
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">45 km</p>
+                  </div>
+                </div>
 
-            <div class="grid grid-cols-7 gap-6 md:gap-2">
-              <div class="col-span-1">
-                  <Icon icon='up-logo' size="3rem" color="#ff5e00" /> 
-              </div>
-              <div class="grid col-span-6">
-                  <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="up-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
                       Total Ascent
-                  </h2>
-                  <p class="text-pretty text-gray-500 text-md">540 m</p>
-              </div>
-            </div>
-            
-            <div class="grid grid-cols-7 gap-6 md:gap-2">
-              <div class="col-span-1">
-                  <Icon icon='down-logo' size="3rem" color="#ff5e00" /> 
-              </div>
-              <div class="grid col-span-6">
-                  <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">540 m</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="down-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
                       Total Descent
-                  </h2>
-                  <p class="text-pretty text-gray-500 text-md">425 m</p>
-              </div>
-            </div>
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">425 m</p>
+                  </div>
+                </div>
 
-            <div class="grid grid-cols-7 gap-6 md:gap-2">
-              <div class="col-span-1">
-                  <Icon icon='timer-logo' size="3rem" color="#ff5e00" /> 
-              </div>
-              <div class="grid col-span-6">
-                  <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="timer-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
                       Duration Trial
-                  </h2>
-                  <p class="text-pretty text-gray-500 text-md">4 hours</p>
-              </div>
-            </div>
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">4 hours</p>
+                  </div>
+                </div>
 
-            <div class="grid grid-cols-7 gap-6 md:gap-2">
-              <div class="col-span-1">
-                  <Icon icon='difficulty-logo' size="3rem" color="#ff5e00" /> 
-              </div>
-              <div class="grid col-span-6">
-                  <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="difficulty-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
                       Difficulty
-                  </h2>
-                  <p class="text-pretty text-gray-500 text-md">1</p>
-              </div>
-            </div>       
-          </div>
-        </div>
-    </AccordionItem>
-
-      <AccordionItem title="Day 3">  
-        <div class = "grid md:grid-cols-2 gap-8 md:gap-32">
-          <div class="">
-            <p class="font-bold">Excursion 2 – From the Sierra Nevada Mountains to the Badlands of Guadix</p>
-            <p class="">After breakfast, we transfer to a traditional mountain village near Granada, where today's cycling adventure begins. From here, we ride along the northern slopes of the Sierra Nevada, following quiet roads that wind through forests, mountain valleys, and spectacular natural scenery.</p>
-            <p class="">The route follows the course of a mountain river towards the famous Puerto de los Blancares, one of the classic mountain passes of the region. Along the way, we stop at an impressive dam. Continuing through the mountains, we enjoy a well-deserved coffee break before reaching our picnic spot at a panoramic viewpoint, where we can relax and take in the scenery</p>
-            <p class="">During the second part of the ride, the landscape gradually transforms. The green mountain forests begin to disappear, giving way to a much drier and more rugged environment. Eroded hills, dramatic rock formations, and wide-open spaces announce our arrival in the unique Badlands of Granada, one of the most striking landscapes in southern Spain.</p>
-            <p class="">Our route eventually leads us into the Guadix region, famous for its extraordinary cave dwellings. For centuries, local inhabitants have lived in homes carved directly into the soft rock, creating one of the most distinctive architectural landscapes in Europe.</p>
-            
-          </div>
-
-          <div class="">
-            <div class="grid grid-cols-7 gap-6 md:gap-2">
-              <div class="col-span-1">
-                <Icon icon="distance-logo" size="3rem" color="#ff5e00" />
-              </div>
-              <div class="grid col-span-6">
-                <h2 class="text-pretty text-neutral-900 text-xl font-bold">
-                  Total Distance
-                </h2>
-                  <p class="text-pretty text-gray-500 text-md">66 km</p>
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">1</p>
+                  </div>
+                </div>
               </div>
             </div>
+          </AccordionItem>
 
-            <div class="grid grid-cols-7 gap-6 md:gap-2">
-              <div class="col-span-1">
-                  <Icon icon='up-logo' size="3rem" color="#ff5e00" /> 
+          <AccordionItem title="Day 3">
+            <div class="grid md:grid-cols-2 gap-8 md:gap-32">
+              <div class="">
+                <p class="font-bold">
+                  Excursion 2 – From the Sierra Nevada Mountains to the Badlands
+                  of Guadix
+                </p>
+                <p class="">
+                  After breakfast, we transfer to a traditional mountain village
+                  near Granada, where today's cycling adventure begins. From
+                  here, we ride along the northern slopes of the Sierra Nevada,
+                  following quiet roads that wind through forests, mountain
+                  valleys, and spectacular natural scenery.
+                </p>
+                <p class="">
+                  The route follows the course of a mountain river towards the
+                  famous Puerto de los Blancares, one of the classic mountain
+                  passes of the region. Along the way, we stop at an impressive
+                  dam. Continuing through the mountains, we enjoy a
+                  well-deserved coffee break before reaching our picnic spot at
+                  a panoramic viewpoint, where we can relax and take in the
+                  scenery
+                </p>
+                <p class="">
+                  During the second part of the ride, the landscape gradually
+                  transforms. The green mountain forests begin to disappear,
+                  giving way to a much drier and more rugged environment. Eroded
+                  hills, dramatic rock formations, and wide-open spaces announce
+                  our arrival in the unique Badlands of Granada, one of the most
+                  striking landscapes in southern Spain.
+                </p>
+                <p class="">
+                  Our route eventually leads us into the Guadix region, famous
+                  for its extraordinary cave dwellings. For centuries, local
+                  inhabitants have lived in homes carved directly into the soft
+                  rock, creating one of the most distinctive architectural
+                  landscapes in Europe.
+                </p>
               </div>
-              <div class="grid col-span-6">
-                  <h2 class="text-pretty text-gray-900 text-xl font-bold">
+
+              <div class="">
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="distance-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-neutral-900 text-xl font-bold">
+                      Total Distance
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">66 km</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="up-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
                       Total Ascent
-                  </h2>
-                  <p class="text-pretty text-gray-500 text-md">1150 m</p>
-              </div>
-            </div>
-            
-            <div class="grid grid-cols-7 gap-6 md:gap-2">
-              <div class="col-span-1">
-                  <Icon icon='down-logo' size="3rem" color="#ff5e00" /> 
-              </div>
-              <div class="grid col-span-6">
-                  <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">1150 m</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="down-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
                       Total Descent
-                  </h2>
-                  <p class="text-pretty text-gray-500 text-md">1015 m</p>
-              </div>
-            </div>
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">1015 m</p>
+                  </div>
+                </div>
 
-            <div class="grid grid-cols-7 gap-6 md:gap-2">
-              <div class="col-span-1">
-                  <Icon icon='timer-logo' size="3rem" color="#ff5e00" /> 
-              </div>
-              <div class="grid col-span-6">
-                  <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="timer-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
                       Duration Trial
-                  </h2>
-                  <p class="text-pretty text-gray-500 text-md">6 hours</p>
-              </div>
-            </div>
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">6 hours</p>
+                  </div>
+                </div>
 
-            <div class="grid grid-cols-7 gap-6 md:gap-2">
-              <div class="col-span-1">
-                  <Icon icon='difficulty-logo' size="3rem" color="#ff5e00" /> 
-              </div>
-              <div class="grid col-span-6">
-                  <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="difficulty-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
                       Difficulty
-                  </h2>
-                  <p class="text-pretty text-gray-500 text-md">3</p>
-              </div>
-            </div>       
-          </div>
-        </div>
-    </AccordionItem>
-    <AccordionItem title="Day 4">  
-        <div class = "grid md:grid-cols-2 gap-8 md:gap-32">
-          <div class="">
-            <p class="font-bold">Excursion 3 – Cycling Through the Alpujarras: Between the Southern Slopes of the Sierra Nevada and the Mediterranean Sea</p>
-            <p class="">Today we explore one of the most authentic and captivating regions of Andalusia: Las Alpujarras, a land of rich history, rugged natural beauty, and distinctive architecture. This excursion takes us along the southern slopes of the Sierra Nevada, through landscapes that have remained largely unchanged for centuries.</p>
-            <p class="">The day begins with a transfer to Puerto de la Ragua, a mountain pass situated at an altitude of 2,000 metres on the border between the provinces of Granada and Almería. From here, we embark on a spectacular mostly downhill ride, enjoying breathtaking views over deep valleys, terraced farmland, and, on clear days, even glimpses of the Mediterranean Sea and the distant outline of Africa on the horizon.</p>
-            <p class="">Las Alpujarras is a region where time seems to stand still. Following the Reconquista, it became the last refuge of the Moriscos, the Muslim inhabitants of Spain. Their legacy remains visible today in the harmonious relationship between people and nature, reflected in the ancient irrigation channels, agricultural terraces, and traditional architecture that characterise the area.</p>
-            <p class="">Along the route, we pass through several picturesque villages of Berber influence, whose appearance evokes the landscapes of North Africa. Clinging to the mountainsides, these villages are composed of whitewashed cubic houses with flat roofs and distinctive chimney pots, connected by narrow, winding streets that invite exploration and offer a glimpse into a unique cultural heritage.</p>
-            
-            
-          </div>
-
-          <div class="">
-            <div class="grid grid-cols-7 gap-6 md:gap-2">
-              <div class="col-span-1">
-                <Icon icon="distance-logo" size="3rem" color="#ff5e00" />
-              </div>
-              <div class="grid col-span-6">
-                <h2 class="text-pretty text-neutral-900 text-xl font-bold">
-                  Total Distance
-                </h2>
-                  <p class="text-pretty text-gray-500 text-md">65 km</p>
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">3</p>
+                  </div>
+                </div>
               </div>
             </div>
-
-            <div class="grid grid-cols-7 gap-6 md:gap-2">
-              <div class="col-span-1">
-                  <Icon icon='up-logo' size="3rem" color="#ff5e00" /> 
+          </AccordionItem>
+          <AccordionItem title="Day 4">
+            <div class="grid md:grid-cols-2 gap-8 md:gap-32">
+              <div class="">
+                <p class="font-bold">
+                  Excursion 3 – Cycling Through the Alpujarras: Between the
+                  Southern Slopes of the Sierra Nevada and the Mediterranean Sea
+                </p>
+                <p class="">
+                  Today we explore one of the most authentic and captivating
+                  regions of Andalusia: Las Alpujarras, a land of rich history,
+                  rugged natural beauty, and distinctive architecture. This
+                  excursion takes us along the southern slopes of the Sierra
+                  Nevada, through landscapes that have remained largely
+                  unchanged for centuries.
+                </p>
+                <p class="">
+                  The day begins with a transfer to Puerto de la Ragua, a
+                  mountain pass situated at an altitude of 2,000 metres on the
+                  border between the provinces of Granada and Almería. From
+                  here, we embark on a spectacular mostly downhill ride,
+                  enjoying breathtaking views over deep valleys, terraced
+                  farmland, and, on clear days, even glimpses of the
+                  Mediterranean Sea and the distant outline of Africa on the
+                  horizon.
+                </p>
+                <p class="">
+                  Las Alpujarras is a region where time seems to stand still.
+                  Following the Reconquista, it became the last refuge of the
+                  Moriscos, the Muslim inhabitants of Spain. Their legacy
+                  remains visible today in the harmonious relationship between
+                  people and nature, reflected in the ancient irrigation
+                  channels, agricultural terraces, and traditional architecture
+                  that characterise the area.
+                </p>
+                <p class="">
+                  Along the route, we pass through several picturesque villages
+                  of Berber influence, whose appearance evokes the landscapes of
+                  North Africa. Clinging to the mountainsides, these villages
+                  are composed of whitewashed cubic houses with flat roofs and
+                  distinctive chimney pots, connected by narrow, winding streets
+                  that invite exploration and offer a glimpse into a unique
+                  cultural heritage.
+                </p>
               </div>
-              <div class="grid col-span-6">
-                  <h2 class="text-pretty text-gray-900 text-xl font-bold">
+
+              <div class="">
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="distance-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-neutral-900 text-xl font-bold">
+                      Total Distance
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">65 km</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="up-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
                       Total Ascent
-                  </h2>
-                  <p class="text-pretty text-gray-500 text-md">1150 m</p>
-              </div>
-            </div>
-            
-            <div class="grid grid-cols-7 gap-6 md:gap-2">
-              <div class="col-span-1">
-                  <Icon icon='down-logo' size="3rem" color="#ff5e00" /> 
-              </div>
-              <div class="grid col-span-6">
-                  <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">1150 m</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="down-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
                       Total Descent
-                  </h2>
-                  <p class="text-pretty text-gray-500 text-md">1700 m</p>
-              </div>
-            </div>
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">1700 m</p>
+                  </div>
+                </div>
 
-            <div class="grid grid-cols-7 gap-6 md:gap-2">
-              <div class="col-span-1">
-                  <Icon icon='timer-logo' size="3rem" color="#ff5e00" /> 
-              </div>
-              <div class="grid col-span-6">
-                  <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="timer-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
                       Duration Trial
-                  </h2>
-                  <p class="text-pretty text-gray-500 text-md">5 hours</p>
-              </div>
-            </div>
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">5 hours</p>
+                  </div>
+                </div>
 
-            <div class="grid grid-cols-7 gap-6 md:gap-2">
-              <div class="col-span-1">
-                  <Icon icon='difficulty-logo' size="3rem" color="#ff5e00" /> 
-              </div>
-              <div class="grid col-span-6">
-                  <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="difficulty-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
                       Difficulty
-                  </h2>
-                  <p class="text-pretty text-gray-500 text-md">3</p>
-              </div>
-            </div>       
-          </div>
-        </div>
-    </AccordionItem>
-    <AccordionItem title="Day 5">  
-        <div class = "grid  gap-8 md:gap-32">
-          <div class="">
-            <p class="font-bold">Free Day – Explore Granada at Your Own Pace</p>
-            <p class="">Today has been left free for you to relax and enjoy Granada at your own pace. After several days of cycling through the region's diverse landscapes, this is the perfect opportunity to discover one of Spain's most fascinating cities or simply take some time to unwind.</p>     
-            <p class="">Wander through Granada's historic centre, with its charming streets, lively squares, and inviting cafés and terraces. Sample local tapas, browse the markets, or explore the enchanting Albaicín, the city's historic Arab quarter, famous for its whitewashed houses, narrow winding streets, and spectacular viewpoints overlooking Granada and the Sierra Nevada.</p>     
-            <p class="">A highlight of any visit to Granada is the world-famous Alhambra, the magnificent Moorish palace and fortress complex that dominates the city skyline. Its stunning architecture, beautiful gardens, and rich history make it one of Spain's most treasured landmarks. Please note: Entrance tickets for the Alhambra are in very high demand and often need to be booked several months in advance.</p>     
-            <p class="font-bold">Optional Suggestions</p>     
-            <p class="">Relax in a traditional Arab hammam and enjoy a soothing spa experience inspired by Andalusia's Moorish heritage.</p>     
-            <p class="">Attend an authentic flamenco performance, perhaps in one of the atmospheric cave venues of the historic Sacromonte district.</p>     
-            <p class="">Visit one of Granada's museums, churches, or hidden courtyards.</p>     
-            <p class="">Simply enjoy a leisurely day soaking up the unique atmosphere of this historic city.</p>     
-          </div>
-          </div>
-
-          
-    </AccordionItem>
-
-    <AccordionItem title="Day 6">  
-        <div class = "grid md:grid-cols-2 gap-8 md:gap-32">
-          <div class="">
-            <p class="font-bold">Excursion 4 – Cycling Through the Gorafe Desert.</p>
-            <p class="">Today we discover one of Andalusia's most unexpected landscapes: the spectacular Gorafe Desert. Located in the heart of the Granada UNESCO Global Geopark, this extraordinary region feels more like another continent than southern Spain. Vast open spaces, dramatic canyons, dry riverbeds, rugged badlands, and high plateaus create a landscape unlike anything else on this tour. </p>
-            <p class="">Our route follows quiet roads through an ever-changing scenery of red and ochre-coloured cliffs, striking rock formations, deep ravines, and panoramic viewpoints. The landscape, sculpted by millions of years of erosion, is often compared to the canyon country of the American Southwest and offers some of the most spectacular cycling terrain in Spain. </p>
-            <p class="">As we ride through this remarkable environment, we gain an appreciation not only for its geological significance but also for its rich human history. The Gorafe area is home to more than 200 dolmens—prehistoric megalithic tombs dating back over 5,000 years—making it one of the largest concentrations of prehistoric monuments in Europe. </p>
-            <p class="">This unique combination of dramatic scenery, geological wonders, and ancient history makes today's ride a true highlight of the tour. </p>
-            
-            
-            
-          </div>
-
-          <div class="">
-            <div class="grid grid-cols-7 gap-6 md:gap-2">
-              <div class="col-span-1">
-                <Icon icon="distance-logo" size="3rem" color="#ff5e00" />
-              </div>
-              <div class="grid col-span-6">
-                <h2 class="text-pretty text-neutral-900 text-xl font-bold">
-                  Total Distance
-                </h2>
-                  <p class="text-pretty text-gray-500 text-md">60 km</p>
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">3</p>
+                  </div>
+                </div>
               </div>
             </div>
-
-            <div class="grid grid-cols-7 gap-6 md:gap-2">
-              <div class="col-span-1">
-                  <Icon icon='up-logo' size="3rem" color="#ff5e00" /> 
+          </AccordionItem>
+          <AccordionItem title="Day 5">
+            <div class="grid gap-8 md:gap-32">
+              <div class="">
+                <p class="font-bold">
+                  Free Day – Explore Granada at Your Own Pace
+                </p>
+                <p class="">
+                  Today has been left free for you to relax and enjoy Granada at
+                  your own pace. After several days of cycling through the
+                  region's diverse landscapes, this is the perfect opportunity
+                  to discover one of Spain's most fascinating cities or simply
+                  take some time to unwind.
+                </p>
+                <p class="">
+                  Wander through Granada's historic centre, with its charming
+                  streets, lively squares, and inviting cafés and terraces.
+                  Sample local tapas, browse the markets, or explore the
+                  enchanting Albaicín, the city's historic Arab quarter, famous
+                  for its whitewashed houses, narrow winding streets, and
+                  spectacular viewpoints overlooking Granada and the Sierra
+                  Nevada.
+                </p>
+                <p class="">
+                  A highlight of any visit to Granada is the world-famous
+                  Alhambra, the magnificent Moorish palace and fortress complex
+                  that dominates the city skyline. Its stunning architecture,
+                  beautiful gardens, and rich history make it one of Spain's
+                  most treasured landmarks. Please note: Entrance tickets for
+                  the Alhambra are in very high demand and often need to be
+                  booked several months in advance.
+                </p>
+                <p class="font-bold">Optional Suggestions</p>
+                <p class="">
+                  Relax in a traditional Arab hammam and enjoy a soothing spa
+                  experience inspired by Andalusia's Moorish heritage.
+                </p>
+                <p class="">
+                  Attend an authentic flamenco performance, perhaps in one of
+                  the atmospheric cave venues of the historic Sacromonte
+                  district.
+                </p>
+                <p class="">
+                  Visit one of Granada's museums, churches, or hidden
+                  courtyards.
+                </p>
+                <p class="">
+                  Simply enjoy a leisurely day soaking up the unique atmosphere
+                  of this historic city.
+                </p>
               </div>
-              <div class="grid col-span-6">
-                  <h2 class="text-pretty text-gray-900 text-xl font-bold">
+            </div>
+          </AccordionItem>
+
+          <AccordionItem title="Day 6">
+            <div class="grid md:grid-cols-2 gap-8 md:gap-32">
+              <div class="">
+                <p class="font-bold">
+                  Excursion 4 – Cycling Through the Gorafe Desert.
+                </p>
+                <p class="">
+                  Today we discover one of Andalusia's most unexpected
+                  landscapes: the spectacular Gorafe Desert. Located in the
+                  heart of the Granada UNESCO Global Geopark, this extraordinary
+                  region feels more like another continent than southern Spain.
+                  Vast open spaces, dramatic canyons, dry riverbeds, rugged
+                  badlands, and high plateaus create a landscape unlike anything
+                  else on this tour.
+                </p>
+                <p class="">
+                  Our route follows quiet roads through an ever-changing scenery
+                  of red and ochre-coloured cliffs, striking rock formations,
+                  deep ravines, and panoramic viewpoints. The landscape,
+                  sculpted by millions of years of erosion, is often compared to
+                  the canyon country of the American Southwest and offers some
+                  of the most spectacular cycling terrain in Spain.
+                </p>
+                <p class="">
+                  As we ride through this remarkable environment, we gain an
+                  appreciation not only for its geological significance but also
+                  for its rich human history. The Gorafe area is home to more
+                  than 200 dolmens—prehistoric megalithic tombs dating back over
+                  5,000 years—making it one of the largest concentrations of
+                  prehistoric monuments in Europe.
+                </p>
+                <p class="">
+                  This unique combination of dramatic scenery, geological
+                  wonders, and ancient history makes today's ride a true
+                  highlight of the tour.
+                </p>
+              </div>
+
+              <div class="">
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="distance-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-neutral-900 text-xl font-bold">
+                      Total Distance
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">60 km</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="up-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
                       Total Ascent
-                  </h2>
-                  <p class="text-pretty text-gray-500 text-md">530 m</p>
-              </div>
-            </div>
-            
-            <div class="grid grid-cols-7 gap-6 md:gap-2">
-              <div class="col-span-1">
-                  <Icon icon='down-logo' size="3rem" color="#ff5e00" /> 
-              </div>
-              <div class="grid col-span-6">
-                  <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">530 m</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="down-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
                       Total Descent
-                  </h2>
-                  <p class="text-pretty text-gray-500 text-md">475 m</p>
-              </div>
-            </div>
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">475 m</p>
+                  </div>
+                </div>
 
-            <div class="grid grid-cols-7 gap-6 md:gap-2">
-              <div class="col-span-1">
-                  <Icon icon='timer-logo' size="3rem" color="#ff5e00" /> 
-              </div>
-              <div class="grid col-span-6">
-                  <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="timer-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
                       Duration Trial
-                  </h2>
-                  <p class="text-pretty text-gray-500 text-md">5 hours</p>
-              </div>
-            </div>
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">5 hours</p>
+                  </div>
+                </div>
 
-            <div class="grid grid-cols-7 gap-6 md:gap-2">
-              <div class="col-span-1">
-                  <Icon icon='difficulty-logo' size="3rem" color="#ff5e00" /> 
-              </div>
-              <div class="grid col-span-6">
-                  <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="difficulty-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
                       Difficulty
-                  </h2>
-                  <p class="text-pretty text-gray-500 text-md">2</p>
-              </div>
-            </div>       
-          </div>
-        </div>
-    </AccordionItem>
-
-    <AccordionItem title="Day 7">  
-        <div class = "grid md:grid-cols-2 gap-8 md:gap-32">
-          <div class="">
-            <p class="font-bold">Excursion 5 – From the Sierra Nevada to the Costa Tropical</p>
-            <p class="">Our final day on the bike takes us on a memorable journey from the foothills of the Sierra Nevada to the shores of the Mediterranean Sea. Starting in the mountains, we gradually descend through a landscape that changes dramatically throughout the day, from rugged mountain scenery to lush valleys and subtropical coastline. </p>          
-            <p class="">The route leads us into the beautiful Lecrín Valley, a fertile region nestled between the Sierra Nevada and the Mediterranean. Known for its citrus orchards, olive groves, and almond trees, the valley offers a striking contrast to the mountain landscapes we have explored earlier in the week. </p>          
-            <p class="">Soon the Mediterranean comes into view, and we arrive in the picturesque coastal town of Salobreña. There is time to relax by the beach, enjoy a swim in the sea, or simply savour the atmosphere from a seaside terrace. </p>          
-            <p class="">To celebrate the end of a wonderful week of cycling and discovery, we gather in the evening for a farewell dinner in Granada—a perfect opportunity to share memories and reflect on the unforgettable landscapes, culture, and experiences that have made this journey through Granada so special. </p>          
-            
-          </div>
-
-          <div class="">
-            <div class="grid grid-cols-7 gap-6 md:gap-2">
-              <div class="col-span-1">
-                <Icon icon="distance-logo" size="3rem" color="#ff5e00" />
-              </div>
-              <div class="grid col-span-6">
-                <h2 class="text-pretty text-neutral-900 text-xl font-bold">
-                  Total Distance
-                </h2>
-                  <p class="text-pretty text-gray-500 text-md">50 km</p>
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">2</p>
+                  </div>
+                </div>
               </div>
             </div>
+          </AccordionItem>
 
-            <div class="grid grid-cols-7 gap-6 md:gap-2">
-              <div class="col-span-1">
-                  <Icon icon='up-logo' size="3rem" color="#ff5e00" /> 
+          <AccordionItem title="Day 7">
+            <div class="grid md:grid-cols-2 gap-8 md:gap-32">
+              <div class="">
+                <p class="font-bold">
+                  Excursion 5 – From the Sierra Nevada to the Costa Tropical
+                </p>
+                <p class="">
+                  Our final day on the bike takes us on a memorable journey from
+                  the foothills of the Sierra Nevada to the shores of the
+                  Mediterranean Sea. Starting in the mountains, we gradually
+                  descend through a landscape that changes dramatically
+                  throughout the day, from rugged mountain scenery to lush
+                  valleys and subtropical coastline.
+                </p>
+                <p class="">
+                  The route leads us into the beautiful Lecrín Valley, a fertile
+                  region nestled between the Sierra Nevada and the
+                  Mediterranean. Known for its citrus orchards, olive groves,
+                  and almond trees, the valley offers a striking contrast to the
+                  mountain landscapes we have explored earlier in the week.
+                </p>
+                <p class="">
+                  Soon the Mediterranean comes into view, and we arrive in the
+                  picturesque coastal town of Salobreña. There is time to relax
+                  by the beach, enjoy a swim in the sea, or simply savour the
+                  atmosphere from a seaside terrace.
+                </p>
+                <p class="">
+                  To celebrate the end of a wonderful week of cycling and
+                  discovery, we gather in the evening for a farewell dinner in
+                  Granada—a perfect opportunity to share memories and reflect on
+                  the unforgettable landscapes, culture, and experiences that
+                  have made this journey through Granada so special.
+                </p>
               </div>
-              <div class="grid col-span-6">
-                  <h2 class="text-pretty text-gray-900 text-xl font-bold">
+
+              <div class="">
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="distance-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-neutral-900 text-xl font-bold">
+                      Total Distance
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">50 km</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="up-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
                       Total Ascent
-                  </h2>
-                  <p class="text-pretty text-gray-500 text-md">450 m</p>
-              </div>
-            </div>
-            
-            <div class="grid grid-cols-7 gap-6 md:gap-2">
-              <div class="col-span-1">
-                  <Icon icon='down-logo' size="3rem" color="#ff5e00" /> 
-              </div>
-              <div class="grid col-span-6">
-                  <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">450 m</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="down-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
                       Total Descent
-                  </h2>
-                  <p class="text-pretty text-gray-500 text-md">1350 m</p>
-              </div>
-            </div>
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">1350 m</p>
+                  </div>
+                </div>
 
-            <div class="grid grid-cols-7 gap-6 md:gap-2">
-              <div class="col-span-1">
-                  <Icon icon='timer-logo' size="3rem" color="#ff5e00" /> 
-              </div>
-              <div class="grid col-span-6">
-                  <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="timer-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
                       Duration Trial
-                  </h2>
-                  <p class="text-pretty text-gray-500 text-md">6 hours</p>
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">6 hours</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="difficulty-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                      Difficulty
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">2</p>
+                  </div>
+                </div>
               </div>
             </div>
+          </AccordionItem>
 
-            <div class="grid grid-cols-7 gap-6 md:gap-2">
-              <div class="col-span-1">
-                  <Icon icon='difficulty-logo' size="3rem" color="#ff5e00" /> 
+          <AccordionItem title="Day 8">
+            <div class="grid gap-8 md:gap-32">
+              <div class="">
+                <p class="font-bold">Departure Day – Farewell and Transfer</p>
+                <p class="">
+                  After breakfast, a private transfer will take you to the
+                  Airport for your onward journey home.
+                </p>
               </div>
-              <div class="grid col-span-6">
-                  <h2 class="text-pretty text-gray-900 text-xl font-bold">
-                      Difficulty
-                  </h2>
-                  <p class="text-pretty text-gray-500 text-md">2</p>
-              </div>
-            </div>       
-          </div>
-        </div>
-
-
-    </AccordionItem>
-
-    <AccordionItem title="Day 8">  
-        <div class = "grid  gap-8 md:gap-32">
-          <div class="">
-            <p class="font-bold">Departure Day – Farewell and Transfer</p>
-            <p class="">After breakfast, a private transfer will take you to the Airport for your onward journey home.</p>     
-            
-          </div>
-          </div>
-
-          
-    </AccordionItem>
-</Accordion>
+            </div>
+          </AccordionItem>
+        </Accordion>
       </div>
     </section>
 
@@ -1013,29 +1178,26 @@ type ReviewsProps = {
       </div>
     </div>
 
- 
-
-
-  <script is:inline>
-    const buttons = document.querySelectorAll(".showMoreBtn");
-    const contents = document.querySelectorAll(".showMoreContent");
-    buttons.forEach((btn, idx) => {
-      let show = false;
-      btn.addEventListener("click", () => {
-        show = !show;
-        const content = contents[idx];
-        if (show) {
-          content.classList.remove("max-h-0", "opacity-0");
-          content.classList.add("max-h-[2000px]", "opacity-100");
-          btn.textContent = "Less info ⬆";
-        } else {
-          content.classList.remove("max-h-[2000px]", "opacity-100");
-          content.classList.add("max-h-0", "opacity-0");
-          btn.textContent = "More info ⬇";
-        }
+    <script is:inline>
+      const buttons = document.querySelectorAll(".showMoreBtn");
+      const contents = document.querySelectorAll(".showMoreContent");
+      buttons.forEach((btn, idx) => {
+        let show = false;
+        btn.addEventListener("click", () => {
+          show = !show;
+          const content = contents[idx];
+          if (show) {
+            content.classList.remove("max-h-0", "opacity-0");
+            content.classList.add("max-h-[2000px]", "opacity-100");
+            btn.textContent = "Less info ⬆";
+          } else {
+            content.classList.remove("max-h-[2000px]", "opacity-100");
+            content.classList.add("max-h-0", "opacity-0");
+            btn.textContent = "More info ⬇";
+          }
+        });
       });
-    });
-  </script>
+    </script>
   </Container>
 </Layout>
 

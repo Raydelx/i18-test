@@ -8,7 +8,7 @@ const i18n = getI18N({ currentLocale });
 
 <figure class="max-w-screen-md mx-auto text-center px-5 mt-4">
   <svg
-    class="w-10 h-10 mx-auto mb-3 text-gray-400 dark:text-gray-600"
+    class="w-10 h-10 mx-auto mb-3 text-[#ff5e00] dark:text-gray-600"
     aria-hidden="true"
     xmlns="http://www.w3.org/2000/svg"
     fill="currentColor"
@@ -28,7 +28,7 @@ const i18n = getI18N({ currentLocale });
     <div
       class="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-500">
       <cite class="pe-3 font-medium text-gray-900">Michael Hugo</cite>
-      <cite class="ps-3 text-sm text-gray-500">{i18n.ABOUT.QUOTE_1}</cite>
+      <cite class="ps-3 text-sm text-[#ff5e00]">{i18n.ABOUT.QUOTE_1}</cite>
     </div>
   </figcaption>
 </figure>
@@ -38,7 +38,7 @@ const i18n = getI18N({ currentLocale });
   nationality={i18n.ABOUT.MICHAEL_NATIONALITY}
   idioms={i18n.ABOUT.MICHAEL_LENGUAGES}
   cualification={i18n.ABOUT.MICHAEL_QUALIFICATION}
-  src="/michel.png"
+  src="/mikenew.png"
   alt="michael with helmet smiling"
   class="bg-#3c5546"
   ><img class="h-20" slot="logo" src="/asisiacion-guias.png" alt="" />
@@ -66,5 +66,15 @@ const i18n = getI18N({ currentLocale });
   cualification={i18n.ABOUT.MARIA_QUALIFICATION}
   src="/maria2.png"
   alt="Maria Operation Coordinator"
+  class="bg-#3c5546"
+/>
+<TeamItem
+  name="Pieter Nulens"
+  charge={i18n.ABOUT.PIETER_CHARGE}
+  nationality={i18n.ABOUT.PIETER_NATIONALITY}
+  idioms={i18n.ABOUT.PIETER_LENGUAGES}
+  cualification={i18n.ABOUT.PIETER_QUALIFICATION}
+  src="/pieter.png"
+  alt="Pieter Nulens"
   class="bg-#3c5546"
 />

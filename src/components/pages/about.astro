@@ -38,51 +38,170 @@ const i18n = getI18N({ currentLocale });
   </Container>
 
   <Container>
-    <AboutHero title={i18n.ABOUT.HERO_1} subtitle={i18n.ABOUT.HERO_1_TEXT}>
-      <img
-        class="rounded-xl object-cover"
-        slot="picture"
-        src="/photos_about/great_outdoors.webp"
-        alt=""
-      />
-    </AboutHero>
+    <div
+      class="m-auto grid lg:grid w-full lg:grid-flow-col-dense lg:grid-cols-3 lg:gap-16 lg:px-8 bg-center bg-no-repeat bg-[url('/public/bg_montaraz.jpg')] bg-cover rounded-2xl py-10">
+      <div
+        class="mx-auto max-w-xl lg:mx-0 lg:max-w-none lg:py-16 lg:px-10 p-4 flex flex-col justify-center h-full">
+        <div class="p-6 flex flex-col justify-center h-full">
+          <div
+            class="mt-6 flex flex-col justify-center items-center lg:items-center text-center">
+            <p
+              class="mb-4 text-2xl t font-bold tracking-tight leading-none md:text-3xl text-white italic">
+              {i18n.ABOUT.HERO_1}
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sm:mt-2 lg:mt-0 lg:order-none p-6 flex justify-center items-center">
+        <div
+          class="relative w-full max-w-xs sm:max-w-xs md:max-w-sm lg:max-w-none lg:h-full lg:px-0 flex justify-center">
+          <img
+            loading="lazy"
+            class="rounded-xl shadow-2xl ring-1 ring-black ring-opacity-5 border-4 border-white object-cover w-60 h-60 sm:w-64 sm:h-48 md:w-80 md:h-60 lg:h-96 lg:w-96"
+            style="color:transparent"
+            src="/andalucia.webp"
+            alt="Montaraz"
+          />
+        </div>
+      </div>
+      <div
+        class="mx-auto max-w-xl lg:mx-0 lg:max-w-none lg:py-16 lg:px-10 p-4 flex flex-col justify-center h-full">
+        <div class="p-6 flex flex-col justify-center h-full">
+          <div
+            class="mt-6 flex flex-col justify-center items-center lg:items-center text-center">
+            <p
+              class="max-w-2xl mb-4 text-2xl t font-bold tracking-tight leading-none md:text-3xl text-white italic">
+              {i18n.ABOUT.HERO_2}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Container>
 
-    <AboutHeroIzq title={i18n.ABOUT.HERO_2} subtitle={i18n.ABOUT.HERO_2_TEXT}>
-      <img
-        class="rounded-xl object-cover"
-        slot="picture"
-        src="/photos_about/create_new_experiences.webp"
-        alt=""
-      />
-    </AboutHeroIzq>
+  <Container>
+    <div
+      class="m-auto grid lg:grid w-full lg:grid-flow-col-dense lg:grid-cols-3 lg:gap-24 lg:px-8 rounded-2xl lg:mt-16 mt-8 py-10">
+      <div
+        class="mx-auto max-w-xl lg:mx-0 lg:max-w-none lg:py-16 lg:px-10 p-4 flex flex-col justify-center h-full">
+        <div class="p-6 flex flex-col justify-center h-full">
+          <div
+            class="mt-6 flex flex-col justify-center items-center lg:items-center text-center">
+            <p
+              class="max-w-2xl mb-4 text-2xl t font-bold tracking-tight leading-none md:text-3xl text-gray-900 italic">
+              {i18n.ABOUT.HERO_3}
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sm:mt-2 lg:mt-0 lg:order-none p-6 flex justify-center items-center">
+        <div
+          class="relative w-full max-w-xs sm:max-w-xs md:max-w-sm lg:max-w-none lg:h-full lg:px-0 flex justify-center">
+          <img
+            loading="lazy"
+            class="rounded-xl shadow-2xl ring-1 ring-black ring-opacity-5 border-4 border-[#ff5e00] object-cover w-60 h-60 sm:w-64 sm:h-48 md:w-80 md:h-60 lg:h-96 lg:w-96"
+            style="color:transparent"
+            src="/gastronomy.webp"
+            alt="Montaraz"
+          />
+        </div>
+      </div>
+      <div
+        class="mx-auto max-w-xl lg:mx-0 lg:max-w-none lg:py-16 lg:px-10 p-4 flex flex-col justify-center h-full">
+        <div class="p-6 flex flex-col justify-center h-full">
+          <div
+            class="mt-6 flex flex-col justify-center items-center lg:items-center text-center">
+            <p
+              class="max-w-2xl mb-4 text-2xl t font-bold tracking-tight leading-none md:text-3xl text-gray-900 italic">
+              {i18n.ABOUT.HERO_4}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Container>
 
-    <AboutHero title={i18n.ABOUT.HERO_3} subtitle={i18n.ABOUT.HERO_3_TEXT}>
-      <img
-        sizes="h-6"
-        class="rounded-xl object-cover h-[320px]"
-        slot="picture"
-        src="/photos_about/small_group_travel.webp"
-        alt=""
-      />
-    </AboutHero>
-
-    <AboutHeroIzq title={i18n.ABOUT.HERO_4} subtitle={i18n.ABOUT.HERO_4_TEXT}>
-      <img
-        class="rounded-xl object-cover"
-        slot="picture"
-        src="/photos_about/prefesional_guides.webp"
-        alt=""
-      />
-    </AboutHeroIzq>
-
-    <AboutHero title={i18n.ABOUT.HERO_5} subtitle={i18n.ABOUT.HERO_5_TEXT}>
-      <img
-        class="rounded-xl object-cover h-[320px]"
-        slot="picture"
-        src="/photos_about/sustainable_travel.webp"
-        alt=""
-      />
-    </AboutHero>
+  <Container>
+    <div
+      class="m-auto grid w-full lg:grid-flow-col-dense lg:grid-cols-3 lg:grid-rows-2 lg:gap-8 lg:px-8 bg-center bg-no-repeat bg-[url('/public/bg_montaraz.jpg')] bg-cover rounded-2xl lg:mt-16 mt-8 py-10">
+      <div
+        class="mx-auto max-w-xl lg:mx-0 lg:max-w-none lg:py-16 lg:px-10 p-4 flex flex-col justify-center h-full">
+        <div class="p-6 flex flex-col justify-center h-full">
+          <div
+            class="mt-6 flex flex-col justify-center items-center lg:items-center text-center">
+            <p
+              class="mb-4 text-2xl t font-bold tracking-tight leading-none md:text-3xl text-white italic">
+              {i18n.ABOUT.HERO_5}
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sm:mt-2 lg:mt-0 lg:order-none p-6 lg:col-start-2 lg:row-start-1 flex justify-center items-center">
+        <div
+          class="relative w-full max-w-xs sm:max-w-xs md:max-w-sm lg:max-w-none lg:h-full lg:px-0 flex justify-center">
+          <img
+            loading="lazy"
+            class="rounded-xl shadow-2xl ring-1 ring-black ring-opacity-5 border-4 border-white object-cover w-60 h-60 sm:w-64 sm:h-48 md:w-80 md:h-60 lg:h-96 lg:w-96"
+            style="color:transparent"
+            src="/local-experts-guides.webp"
+            alt="Montaraz"
+          />
+        </div>
+      </div>
+      <div
+        class="mx-auto max-w-xl lg:mx-0 lg:max-w-none lg:py-16 lg:px-10 p-4 lg:col-start-3 row-start-1 flex flex-col justify-center h-full">
+        <div class="p-6 flex flex-col justify-center h-full">
+          <div
+            class="mt-6 flex flex-col justify-center items-center lg:items-center text-center">
+            <p
+              class="max-w-2xl mb-4 text-2xl t font-bold tracking-tight leading-none md:text-3xl text-white italic">
+              {i18n.ABOUT.HERO_6}
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="mx-auto max-w-xl lg:mx-0 lg:max-w-none lg:py-16 lg:px-10 p-4 lg:col-start-2 lg:row-start-2 flex flex-col justify-center h-full">
+        <div class="p-6 flex flex-col justify-center h-full">
+          <div
+            class="mt-6 flex flex-col justify-center items-center lg:items-center text-center">
+            <p
+              class="max-w-2xl mb-4 text-2xl t font-bold tracking-tight leading-none md:text-3xl text-white italic">
+              {i18n.ABOUT.HERO_7}
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sm:mt-2 lg:mt-0 lg:order-none p-6 lg:col-start-1 lg:row-start-2 flex justify-center items-center">
+        <div
+          class="relative w-full max-w-xs sm:max-w-xs md:max-w-sm lg:max-w-none lg:h-full lg:px-0 flex justify-center">
+          <img
+            loading="lazy"
+            class="rounded-xl shadow-2xl ring-1 ring-black ring-opacity-5 border-4 border-white object-cover w-60 h-60 sm:w-64 sm:h-48 md:w-80 md:h-60 lg:h-96 lg:w-96"
+            style="color:transparent"
+            src="/small-groups.webp"
+            alt="Montaraz"
+          />
+        </div>
+      </div>
+      <div
+        class="sm:mt-2 lg:mt-0 lg:order-none p-6 lg:col-start-3 lg:row-start-2 flex justify-center items-center">
+        <div
+          class="relative w-full max-w-xs sm:max-w-xs md:max-w-sm lg:max-w-none lg:h-full lg:px-0 flex justify-center">
+          <img
+            loading="lazy"
+            class="rounded-xl shadow-2xl ring-1 ring-black ring-opacity-5 border-4 border-white object-cover w-60 h-60 sm:w-64 sm:h-48 md:w-80 md:h-60 lg:h-96 lg:w-96"
+            style="color:transparent"
+            src="/journeys.webp"
+            alt="Montaraz"
+          />
+        </div>
+      </div>
+    </div>
 
     <div class="grid place-items-center md:mt-24 mt-10">
       <h2
@@ -90,7 +209,6 @@ const i18n = getI18N({ currentLocale });
         {i18n.ABOUT.TEAM}
       </h2>
     </div>
+    <Team />
   </Container>
-
-  <Team />
 </Layout>
