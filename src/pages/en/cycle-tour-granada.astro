@@ -261,8 +261,11 @@ type ReviewsProps = {
           title={i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.NOT_INCLUDED
             .TITLE}>
           <div slot="description" class="flex flex-col gap-2 mt-4">
-            <li class="flex flex-wrap gap-2">
-              <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
+            <li class="flex gap-2">
+              <div>
+                <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
+              </div>
+
               <p class="max-w-[320px] text-md">
                 Travel & cancellation insurance (It is obligatory to take out
                 travel insurance before departure)
@@ -297,7 +300,9 @@ type ReviewsProps = {
               <p class="max-w-[320px] text-md">Extra nights</p>
             </li>
             <li class="flex flex-wrap gap-2">
-              <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
+              <div>
+                <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
+              </div>
               <p class="max-w-[320px] text-md">
                 Private transport after or before the tour
               </p>

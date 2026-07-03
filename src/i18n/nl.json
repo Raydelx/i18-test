@@ -322,7 +322,7 @@
         "ABOUT": "Over ons",
         "TITLE": "Montaraz",
         "TITLE_1": "Buiten & Cultuur",
-        "SUBTITLE": "Montaraz Outdoors & Culture, gevestigd in Granada, in het zuiden van Spanje, is een Reisorganisatie gespecialiseerd in Actieve Vakanties",
+        "SUBTITLE": "Premium actieve reizen in kleine groepen, gericht op slow travel, lokale cultuur en authentieke ervaringen in Zuid-Europa",
         "HERO_1": "\"Authentiek Andalusië\"",
         "HERO_1_1": "Ontdek Andalusië voorbij de hoogtepunten — door landschappen, lokale tradities, gastronomie en het dagelijks leven.",
         "HERO_2": "\"Slow Travel Andalusië\"",
@@ -1966,8 +1966,8 @@
         "LEISURE_CYCLING": {
 
              "CYCLE_TOUR_GRANADA": {
-                "TITLE": "Fietstocht Granada",
-                "SUBTITLE": "E-bike Tour 8 Dagen",
+                "TITLE": "Granada E-Bike Tour 8 Dagen",
+                "SUBTITLE": "",
                 "LOCATION": "Granada"
             },
 

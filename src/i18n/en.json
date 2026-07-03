@@ -329,7 +329,7 @@
         "ABOUT": "About Us",
         "TITLE": "Montaraz",
         "TITLE_1": "Outdoors & Culture",
-        "SUBTITLE": "Montaraz Outdoors & Culture, based in Granada, in southern Spain, is an Travel Agency specialized in Active Holidays",
+        "SUBTITLE": "Premium active small-group trips focused on slow travel, local culture, and authentic experiences in Southern Europe",
         "HERO_1": "\"Authentic Andalusia\"",
         "HERO_1_1": "Discover Andalusia beyond the highlights — through landscapes, local traditions, gastronomy, and everyday life.",
         "HERO_2": "\"Slow Travel Andalusia\"",
@@ -1998,8 +1998,8 @@
 
             
             "CYCLE_TOUR_GRANADA": {
-                "TITLE": "Cycle Tour Granada",
-                "SUBTITLE": "E-Bike Tour 8 Days",
+                "TITLE": "Granada E-Bike Tour 8 Days",
+                "SUBTITLE": "",
                 "LOCATION": "Granada"
             },
 

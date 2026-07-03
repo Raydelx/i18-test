@@ -39,14 +39,14 @@ const i18n = getI18N({ currentLocale });
 
   <Container>
     <div
-      class="m-auto grid lg:grid w-full lg:grid-flow-col-dense lg:grid-cols-3 lg:gap-0 bg-center bg-no-repeat bg-[url('/public/bg_montaraz.jpg')] bg-cover">
+      class="m-auto grid lg:grid w-full lg:grid-flow-col-dense lg:grid-cols-3 lg:gap-0 bg-center bg-no-repeat bg-[url('/public/bg_montaraz.jpg')] bg-cover min-h-[400px] lg:min-h-full">
       <div
         class="sm:mt-2 lg:mt-0 lg:order-none flex justify-center items-center col-span-3 md:col-span-2">
         <div
-          class="relative w-full max-w-xs sm:max-w-xs md:max-w-sm lg:max-w-none lg:h-full lg:px-0 flex justify-center">
+          class="md:max-w-sm lg:max-w-none lg:h-full lg:px-0 flex justify-center">
           <img
             loading="lazy"
-            class="object-cover w-full h-60 sm:w-full sm:h-48 md:w-80 md:h-60 lg:h-full lg:w-full"
+            class="object-cover h-60 w-[1000px] md:w-80 md:h-60 lg:h-full lg:w-full"
             style="color:transparent"
             src="/andalucia.webp"
             alt="andalucia"
@@ -54,7 +54,7 @@ const i18n = getI18N({ currentLocale });
         </div>
       </div>
       <div
-        class="mx-auto max-w-xl lg:mx-0 lg:max-w-none lg:py-16 col-span-3 lg:px-10 p-4 flex flex-col justify-center h-full">
+        class="mx-auto max-w-xl lg:mx-0 lg:max-w-none lg:py-16 col-span-3 lg:px-10 p-4 flex flex-col justify-center h-full overflow-y-auto max-h-[60vh] lg:max-h-none">
         <div class="p-6 flex flex-col justify-center h-full">
           <div
             class="mt-6 flex flex-col justify-center items-center lg:items-center text-center">
@@ -97,7 +97,7 @@ const i18n = getI18N({ currentLocale });
       <div
         class="sm:mt-2 lg:mt-0 justify-center items-center lg:col-start-2 col-span-3 md:col-span-2">
         <div
-          class="w-full max-w-xs sm:max-w-xs md:max-w-sm lg:max-w-none lg:h-full lg:px-0 justify-center">
+          class="w-full md:max-w-sm lg:max-w-none lg:h-full lg:px-0 justify-center">
           <img
             loading="lazy"
             class="object-cover w-full h-60 sm:w-full sm:h-48 md:w-80 md:h-60 lg:h-full lg:w-full"
@@ -116,7 +116,7 @@ const i18n = getI18N({ currentLocale });
       <div
         class="sm:mt-2 lg:mt-0 lg:order-none flex justify-center items-center col-span-3 md:col-span-2">
         <div
-          class="relative w-full max-w-xs sm:max-w-xs md:max-w-sm lg:max-w-none lg:h-full lg:px-0 flex justify-center">
+          class="relative w-full md:max-w-sm lg:max-w-none lg:h-full lg:px-0 flex justify-center">
           <img
             loading="lazy"
             class="object-cover w-full h-60 sm:w-full sm:h-48 md:w-80 md:h-60 lg:h-full lg:w-full"
