@@ -11,6 +11,7 @@ import {
   useTranslations,
   useTranslatedPath,
 } from "../i18n/utils.js";
+
 import BookButton from "./book-button.astro";
 
 const lang = getLangFromUrl(Astro.url);
@@ -21,31 +22,34 @@ const translatePath = useTranslatedPath(lang);
 <div class="grid md:grid-cols-2 md:p-6 mt-10">
   <div>
     <h1
-      class="text-4xl lg:text-5xl xl:text-6xl font-bold lg:tracking-tight xl:tracking-tighter md:pt-16 pb-5 md:pb-10">
+      class="text-3xl lg:text-4xl xl:text-5xl font-bold lg:tracking-tight xl:tracking-tighter md:pt-16 pb-5 md:pb-10">
       {i18n.HERO_H1_1}
-      <spam class="text-[#ff5e00]">{i18n.HERO_H1_COLOR} </spam>
-      {i18n.HERO_H1_2}
     </h1>
     <BookButton />
 
     <div class="flex gap-3">
       <a
-        class="bg-[#3c5546] grid justify-center content-center rounded-full size-12 hover:scale-110 duration-200 active:scale-90"
+        class="bg-[#ff5e00] grid justify-center content-center rounded-full size-12 hover:scale-110 duration-200 active:scale-90"
         href="https://wa.me/34665311314?text=Hello, welcome to Montaraz Outdoors and Culture! How can we help you?"
         target="_blank"><Icon icon="whatsap-logo" size="2rem" color="#fff" /></a
       >
 
       <a
-        class="bg-[#3c5546] grid justify-center content-center rounded-full size-12 hover:scale-110 duration-200"
+        class="bg-[#ff5e00] grid justify-center content-center rounded-full size-12 hover:scale-110 duration-200"
         href="https://www.instagram.com/montaraz_outdoors_culture/"
         target="_blank"
         ><Icon icon="instagram-logo" size="2rem" color="#fff" /></a
       >
 
       <a
-        class="bg-[#3c5546] grid justify-center content-center rounded-full size-12 hover:scale-110 duration-200"
+        class="bg-[#ff5e00] grid justify-center content-center rounded-full size-12 hover:scale-110 duration-200"
         href="mailto:montarazoutdoors@gmail.com"
         ><Icon icon="mail-logo" size="2rem" color="#fff" /></a
+      >
+      <a
+        class="bg-[#ff5e00] grid justify-center content-center rounded-full size-12 hover:scale-110 duration-200"
+        href="https://www.youtube.com/@montarazoutdoors"
+        target="_blank"><Icon icon="youtube-logo" size="2rem" color="#fff" /></a
       >
     </div>
   </div>

@@ -42,8 +42,8 @@
          "CARD_2":{
             "TITLE": "Family Holidays",
             "SUBTITLE": "",
-            "TEXT_1": "Our family holidays are specially designed to give both children and parents an unforgettable time in nature. Think about adventurous hikes, safe cycling trips, discovering local culture, and above all, lots of outdoor fun!",
-            "TEXT_2": "We ensure a perfect balance between activity and relaxation, always adapted to the children's ages. Everything happens at an easy-going pace, with plenty of room for spontaneous moments, play, and free time.",
+            "TEXT_1": "Time outdoors, time together. Our family holidays combine adventure, local culture and the joy of discovering new places together — with the kind of moments families remember long after the trip.",
+            "TEXT_2": "",
 
             "EXP_TITLE": "What can you expect?",
             "EXP_TEXT_1": "Short and playful hikes in the mountains or along rivers ",
@@ -61,11 +61,11 @@
         },
 
         "CARD_3": {
-            "TITLE": "Cycling Holidays & Excursions",
+            "TITLE": "Cycling Holidays",
             "SUBTITLE": "",
-            "TEXT_1": "Spain and its surroundings are a true paradise for cyclists. Whether you prefer leisurely rides through scenic valleys or the thrill of tackling iconic mountain passes, Montaraz Outdoors & Culture is your perfect partner.",
-            "TEXT_2": "Our cycling holidays are carefully designed and fully customizable to match your level, interests, and preferred type of bike.",
-            "TEXT_3": "We offer a wide range of routes for e-bikes, touring bikes, mountain bikes, and road bikes. Ride with or without electric assistance, always with the freedom to explore the region your way.",
+            "TEXT_1": "Discover places at the perfect pace. Our cycling holidays combine scenic routes, local culture and the freedom to explore in your own way. Whether by e-bike, mountain bike or on a relaxed recreational ride, each trip is designed to enjoy the outdoors, connect with the surroundings and create memorable experiences.",
+            "TEXT_2": "",
+            "TEXT_3": "",
 
 
             "WHAT_DO_WE_OFFER": "What do we offer?",
@@ -85,9 +85,9 @@
         },
 
         "CARD_4":{
-            "TITLE": "Hiking Holidays & Treks",
+            "TITLE": "Hiking Holidays",
             "SUBTITLE": "",
-            "TEXT_1": "Our hiking holidays take you deep into Spain’s most breathtaking landscapes — from snow-capped peaks to picturesque villages. Whether you prefer gentle walks through whitewashed towns or challenging mountain routes, we guide you step by step. At Montaraz Outdoors & Culture, personal service and tailor-made experiences are at the heart of everything we do. All our hikes are adapted to the traveler’s level — you set the pace, and we take care of the rest.",
+            "TEXT_1": "Discover Spain step by step, through landscapes that change from mountain peaks to quiet villages and open countryside. Whether it’s an easy walk or a more demanding trek, every journey is tailored to your level and pace, with the freedom to truly experience the outdoors.",
 
             "WHAT_DO_WE_EXPECT": "What can you expect?",
             "WHAT_DO_WE_EXPECT_1": "- Day hikes with easy to moderate intensity, combining nature and culture",
@@ -110,13 +110,13 @@
 
         "CARD_5":{
             "TITLE": "Tailor-Made Trips",
-            "SUBTITLE": "Your holiday, your way",
-            "TEXT_1": "Would you like a perfect mix of hiking, cycling, culture, and relaxation? We design a completely customized trip with you, from accommodation and activities to transfers and cultural excursions.",
-            "TEXT_2": "- Private transport and local guides",
-            "TEXT_3": "- Flexible planning: you choose the pace and style",
-            "TEXT_4": "- Ideal for couples, families, friends, or solo travelers",
-            "TEXT_5": "Interested?",
-            "TEXT_6": "Get in touch for a personalized offer — we are happy to plan your perfect active holiday!"
+            "SUBTITLE": "Your trip, your way.",
+            "TEXT_1": "Do you dream of a combination of hiking, cycling, culture, and relaxation? We create a journey together with you that fits you perfectly — with attention to the pace, the experience, and the small moments along the way.",
+            "TEXT_2": "",
+            "TEXT_3": "",
+            "TEXT_4": "",
+            "TEXT_5": "",
+            "TEXT_6": ""
 
         }
     },
@@ -351,6 +351,12 @@
         "MICHAEL_NATIONALITY":"Belgium",
         "MICHAEL_LENGUAGES":"Dutch / Spanish / French / English",
         "MICHAEL_QUALIFICATION":"Mountain Sport Technician / Socio nº1945 AEGM / UIMLA",
+
+        "ESPERANZA_CHARGE":"Project Manager ",
+        "ESPERANZA_NATIONALITY":"Spain",
+        "ESPERANZA_LENGUAGES":"Spanish / English / Italian ",
+        "ESPERANZA_QUALIFICATION":"International law attorney ",
+
 
         "JOSE_CHARGE":"Bicycle Mechanic",
         "JOSE_NATIONALITY":"Spain",
@@ -857,7 +863,7 @@
         "QUESTION_34": "What can I expect?",
         "TEXT_34": "Group travel gives you the flexibility to explore on your own on our pre-designed tours accompanied by other travelers, a great blend of personal freedom and to meet new people. The average group size is 8 with couples, friends, and individual travelers."
     },
-    "HERO_H1_1": "Explore our",
+    "HERO_H1_1": "Premium active small-group trips focused on slow travel, local culture, and authentic experiences in Southern Europe",
     "HERO_H1_COLOR": "True Outdoor Travel Experiences",
     "HERO_H1_2": "suitable for anyone who enjoys an active way of traveling",
     "HERO_A": "Click here to Book my Tour",

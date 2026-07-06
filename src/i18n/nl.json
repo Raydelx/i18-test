@@ -41,10 +41,10 @@
        },
 
         "CARD_2":{
-          "TITLE": "Gezinsvakanties",
+          "TITLE": "Familie vakanties",
           "SUBTITLE": "",
-          "TEXT_1": "Onze gezinsvakanties zijn speciaal ontworpen om zowel kinderen als ouders een onvergetelijke tijd in de natuur te bezorgen. Denk aan avontuurlijke wandelingen, veilige fietstochten, het ontdekken van lokale cultuur en vooral veel plezier in de buitenlucht!",
-          "TEXT_2": "Wij zorgen voor een perfecte balans tussen activiteit en ontspanning, altijd aangepast aan de leeftijden van de kinderen. Alles gebeurt in een rustig tempo, met veel ruimte voor spontane momenten, spel en vrije tijd.",
+          "TEXT_1": "Tijd buiten, tijd samen. Onze familievakanties combineren avonturen, lokale cultuur en het plezier van samen nieuwe plekken ontdekken — met momenten die nog lang na de reis blijven hangen.",
+          "TEXT_2": "",
 
           "EXP_TITLE": "Wat kun je verwachten?",
           "EXP_TEXT_1": "Korte en speelse wandelingen in de bergen of langs riviertjes",
@@ -61,11 +61,11 @@
        },
 
        "CARD_3": {
-          "TITLE": "Fietsvakanties & Fietsexcursies",
+          "TITLE": "Fietsvakanties",
             "SUBTITLE": "",
-            "TEXT_1": "Spanje en haar omgeving zijn een waar paradijs voor fietsers. Of je nu ontspannen door de valleien fietst of de uitdaging zoekt van iconische bergpassen – bij Montaraz Outdoors & Culture ben je aan het juiste adres.",
-            "TEXT_2": "Onze fietsvakanties zijn zorgvuldig opgebouwd en volledig aanpasbaar aan jouw niveau, interesse en type fiets.",
-            "TEXT_3": "We bieden een brede waaier aan routes voor e-bikes, tourfietsen, mountainbikes en racefietsen. Je fietst met of zonder ondersteuning, altijd met de vrijheid om de streek op jouw manier te ontdekken.",
+            "TEXT_1": "Ontdek nieuwe plekken op het perfecte tempo. Onze fietsvakanties combineren mooie routes, lokale cultuur en de vrijheid om op jouw manier te verkennen. Of je nu kiest voor een e-bike, mountainbike of een ontspannen recreatieve fietstocht, elke reis is ontworpen om van het buiten zijn te genieten, verbinding te maken met de omgeving en herinneringen te creëren die blijven hangen.",
+            "TEXT_2": "",
+            "TEXT_3": "",
 
 
             "WHAT_DO_WE_OFFER": "Wat bieden we?",
@@ -85,9 +85,9 @@
        },
 
        "CARD_4":{
-          "TITLE": "Wandelvakanties & Trekkings",
+          "TITLE": "Wandelvakanties",
           "SUBTITLE": "",
-          "TEXT_1": "Onze wandelvakanties brengen je diep in het landschap van Spanje: van besneeuwde toppen tot de schilderachtige dorpen. Of je nu houdt van rustige wandelingen langs witgekalkte dorpjes of stevige bergroutes zoekt – wij begeleiden je stap voor stap. Bij Montaraz Outdoors &amp; Culture staan persoonlijke aanpak en maatwerk centraal. Al onze wandelingen worden afgestemd op het niveau van de reiziger. Jij kiest je ritme, wij zorgen voor de rest.",
+          "TEXT_1": "Ontdek Spanje stap voor stap, door landschappen die variëren van bergtoppen tot rustige dorpen en open platteland. Of het nu gaat om een ontspannen wandeling of een meer uitdagende trektocht, elke reis wordt afgestemd op jouw niveau en tempo, met de vrijheid om het buitenleven echt te ervaren.",
 
           "WHAT_DO_WE_EXPECT": "Wat kun je verwachten?",
             "WHAT_DO_WE_EXPECT_1": "- Dagwandelingen van lichte tot matige intensiteit, met cultuur en natuur onderweg.",
@@ -109,14 +109,14 @@
        },
 
        "CARD_5":{
-          "TITLE": "Op Maat Gemaakte Reizen",
-          "SUBTITLE": "Jouw reis, helemaal zoals jij het wil",
-          "TEXT_1": "Een combinatie van wandelen, fietsen, cultuur en rust? Wij ontwerpen samen met jou een volledig gepersonaliseerde reis. lles is mogelijk: van verblijf tot activiteiten, inclusief bouwstenen en extra’s.",
-          "TEXT_2": "- Privévervoer, lokale gidsen, unieke uitstappen",
-          "TEXT_3": "- Geschikt voor koppels, vriendengroepen of solo-reizigers",
-          "TEXT_4": "- Flexibele opbouw: jij kiest het ritme",
-          "TEXT_5": "Interesse?",
-          "TEXT_6": "Neem contact op voor een persoonlijk aanbod — wij plannen graag jouw perfecte actieve vakantie!"
+          "TITLE": "Maatwerkreizen",
+          "SUBTITLE": "Jouw reis, jouw manier.",
+          "TEXT_1": "Droom je van een combinatie van wandelen, fietsen, cultuur en ontspanning? Wij creëren samen met jou een reis die helemaal bij je past — met aandacht voor het tempo, de ervaring en de kleine momenten onderweg.",
+          "TEXT_2": "",
+          "TEXT_3": "",
+          "TEXT_4": "",
+          "TEXT_5": "",
+          "TEXT_6": ""
 
        }
     },
@@ -343,6 +343,11 @@
         "MICHAEL_NATIONALITY":"België",
         "MICHAEL_LENGUAGES":"Nederlands / Spaans / Frans / Engels",
         "MICHAEL_QUALIFICATION":"Bergsporttechnicus / Socio nº1945 AEGM / UIMLA",
+
+        "ESPERANZA_CHARGE":"Projectmanager",
+        "ESPERANZA_NATIONALITY":"Spanje",
+        "ESPERANZA_LENGUAGES":"Spaans / Engels / Italiaans",
+        "ESPERANZA_QUALIFICATION":"Advocaat internationaal recht",
 
         "JOSE_CHARGE":"Fietsmonteur",
         "JOSE_NATIONALITY":"Spanje",
@@ -841,7 +846,7 @@
     },
     
 
-    "HERO_H1_1": "Ontdek onze",
+    "HERO_H1_1": "Premium actieve reizen in kleine groepen, gericht op slow travel, lokale cultuur en authentieke ervaringen in Zuid-Europa",
     "HERO_H1_COLOR": "Echte Outdoor Reiservaringen",
     "HERO_H1_2": "Geschikt voor iedereen die geniet van een actieve manier van reizen",
     "HERO_A": "Klik hier om mijn tour te boeken",

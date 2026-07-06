@@ -7,12 +7,51 @@ import SliderReactHome from "@/hooks/SliderReactHome";
 import CardHome from "@/components/cardHome.astro";
 import Gallery from "@/components/gallery.astro";
 import Hero from "@/components/hero.astro";
-
+import Card from "../../components/card.astro";
+import {
+  getLangFromUrl,
+  useTranslations,
+  useTranslatedPath,
+} from "../../i18n/utils.js";
 import { getI18N } from "@/i18n/";
+
 import WelcomeCard from "../welcome-card.astro";
 
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
+
+const ROADBIKEPRODUCTS = [
+  {
+    name: "Granada E-Bike Tour 8 Days",
+    description:
+      "One journey, endless landscapes — the ultimate e-bike adventure around Granada.",
+    description2: "",
+    href: translatePath("cycle-tour-granada"),
+    href_img: "/home/granada-ebike.webp",
+    alt_img: "string",
+  },
+  {
+    name: "Ronda - Córdoba E-Bike Tour 8 Days",
+    description:
+      "Discover the heart of Andalusia by bike, from the dramatic cliffs of Ronda to the Moorish beauty of Córdoba.  ",
+    description2: "",
+    href: translatePath("cycle-ronda-cordoba"),
+    href_img: "/home/ronda-cordoba.webp",
+    alt_img: "string",
+  },
+  {
+    name: "Custom-Made Andalusia Trips",
+    description:
+      "Personalized journeys through Andalusia, designed just for you.",
+    description2: "",
+    href: translatePath("tailor-made-travel"),
+    href_img: "/home/custom-made.webp",
+    alt_img: "string",
+  },
+];
 const IMG = [
   {
     src: "/home/home23.webp",
@@ -56,6 +95,20 @@ const IMG = [
       <NewFaq title="What our clients<br />said about us?" faqs={faqs} />
     </section>
 
-    <Gallery />
+    <h2
+      class="text-2xl font-bold text-neutral-800 md:text-4xl md:leading-tight">
+      Exclusive Trips
+    </h2>
+    <main class="mt-32">
+      <ul class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
+        {
+          ROADBIKEPRODUCTS.map((tour) => (
+            <li class="mb-10">
+              <Card {...tour} />
+            </li>
+          ))
+        }
+      </ul>
+    </main>
   </Container>
 </Layout>
