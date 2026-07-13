@@ -2238,8 +2238,8 @@
                  "LOCATION": "Andalusia",
 
                  "PRICE": "1.550",
-                 "PRE_BOOKING": "20%",
-                 "MINUMUM_OF_PERSONS": "7",
+                 "PRE_BOOKING": "30%",
+                 "MINUMUM_OF_PERSONS": "6",
                  "DURATION": "8 Days",
                  "TOUR_TYPE": "Guided",
                  "SEASON": "Spring Autumn",
@@ -2261,7 +2261,7 @@
                         "TEXT_3": "Backup vehicle",
                         "TEXT_4": "Luggage transport",
                         "TEXT_5": "Airport Transfer",
-                        "TEXT_6": "Accommodation: 7 nights",
+                        "TEXT_6": "Private room 7 nights",
                         "TEXT_7": "Breakfast: 7 days",
                         "TEXT_8": "Lunch: 5 picnics",
                         "TEXT_9": "E-bike",
@@ -2273,7 +2273,7 @@
                     "NOT_INCLUDED": {
                         "TITLE": "Not included",
                         "TEXT_1": "Travel & cancellation insurance",
-                        "TEXT_2": "(It is recommended to take out travel insurance before departure.)",
+                        "TEXT_2": "(It is obligatory to take out travel insurance before departure)",
                         "TEXT_3": "Flight",
                         "TEXT_4": "Dinner",
                         "TEXT_5": "Extra meals",

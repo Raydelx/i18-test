@@ -1,0 +1,29 @@
+---
+interface Props {
+  title: string;
+  href: string;
+  image: string;
+  alt?: string;
+}
+
+const { title, href, image, alt = title } = Astro.props;
+---
+
+<a
+  href={href}
+  class="group block overflow-hidden rounded-[28px] bg-[#3c5546] shadow-xl shadow-slate-900/10 transition-transform duration-300 ease-out hover:-translate-y-1 hover:bg-[#4f6658] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-200">
+  <div class="relative overflow-hidden">
+    <img
+      src={image}
+      alt={alt}
+      loading="lazy"
+      class="h-64 w-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+    />
+  </div>
+  <div class="px-6 py-8 text-center">
+    <h3
+      class="text-2xl font-semibold text-white tracking-tight transition-colors duration-300 group-hover:text-white">
+      {title}
+    </h3>
+  </div>
+</a>

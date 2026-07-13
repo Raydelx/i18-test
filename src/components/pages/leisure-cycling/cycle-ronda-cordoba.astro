@@ -10,8 +10,12 @@ import Route from "@/components/ui/icons/route.astro";
 import Link from "@/components/ui/link.astro";
 import reviewsProps from "../../../data_files/reviewsData.json";
 import ReviewsCompt from "@/components/ui/reviewsCompt.astro";
+import BookButton from "@/components/book-button.astro";
+import AccordionProducts from "@/components/accordionProducts.astro";
+import cycleSardiniaNl from "@/data_files/cycleRondaEs.json";
 
 import { getI18N } from "@/i18n/";
+import { Accordion, AccordionItem } from "free-astro-components";
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
 
@@ -44,6 +48,12 @@ const IMG = [
   },
   {
     src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jrc-9.webp",
+  },
+];
+
+const BIKES = [
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/bike-1.webp",
   },
 ];
 
@@ -293,7 +303,7 @@ const DAYS = [
           title={i18n.INFO_PRODUCTS.PRICE}
           subtitle={i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.PRICE}>
           <div slot="icon">
-            <Icon icon="price-logo" size="1.6rem" color="#0E46A3" />
+            <Icon icon="price-logo" size="1.6rem" color="#ff5e00" />
           </div>
         </InformationProducts>
         <InformationProducts
@@ -301,7 +311,7 @@ const DAYS = [
           subtitle={i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA
             .PRE_BOOKING}>
           <div slot="icon">
-            <Icon icon="price-logo" size="1.6rem" color="#0E46A3" />
+            <Icon icon="price-logo" size="1.6rem" color="#ff5e00" />
           </div>
         </InformationProducts>
         <InformationProducts
@@ -309,14 +319,14 @@ const DAYS = [
           subtitle={i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA
             .MINUMUM_OF_PERSONS}>
           <div slot="icon">
-            <Icon icon="group-logo" size="1.6rem" color="#0E46A3" />
+            <Icon icon="group-logo" size="1.6rem" color="#ff5e00" />
           </div>
         </InformationProducts>
         <InformationProducts
           title={i18n.INFO_PRODUCTS.DURATION}
           subtitle={i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.DURATION}>
           <div slot="icon">
-            <Icon icon="timer-logo" size="1.6rem" color="#0E46A3" />
+            <Icon icon="timer-logo" size="1.6rem" color="#ff5e00" />
           </div>
         </InformationProducts>
         <InformationProducts
@@ -324,15 +334,15 @@ const DAYS = [
           subtitle={i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA
             .TOUR_TYPE}>
           <div slot="icon">
-            <Icon icon="guide-logo" size="1.6rem" color="#0E46A3" />
+            <Icon icon="guide-logo" size="1.6rem" color="#ff5e00" />
           </div>
         </InformationProducts>
         <InformationProducts
           title={i18n.INFO_PRODUCTS.SEASON}
           subtitle2={i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.SEASON}>
           <div slot="icon">
-            <Icon icon="spring-logo" size="1.6rem" color="#0E46A3" />
-            <Icon icon="autumn-logo" size="1.6rem" color="#0E46A3" />
+            <Icon icon="spring-logo" size="1.6rem" color="#ff5e00" />
+            <Icon icon="autumn-logo" size="1.6rem" color="#ff5e00" />
           </div>
         </InformationProducts>
       </div>
@@ -347,7 +357,7 @@ const DAYS = [
             subtitle={i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA
               .TOTAL_DISTANCE}>
             <div slot="icon">
-              <Icon icon="distance-logo" size="1.6rem" color="#0E46A3" />
+              <Icon icon="distance-logo" size="1.6rem" color="#ff5e00" />
             </div>
           </InformationProducts>
 
@@ -356,7 +366,7 @@ const DAYS = [
             subtitle={i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA
               .TOTAL_ASCENT}>
             <div slot="icon">
-              <Icon icon="up-logo" size="1.6rem" color="#0E46A3" />
+              <Icon icon="up-logo" size="1.6rem" color="#ff5e00" />
             </div>
           </InformationProducts>
           <InformationProducts
@@ -364,7 +374,7 @@ const DAYS = [
             subtitle={i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA
               .TOTAL_DESCENT}>
             <div slot="icon">
-              <Icon icon="down-logo" size="1.6rem" color="#0E46A3" />
+              <Icon icon="down-logo" size="1.6rem" color="#ff5e00" />
             </div>
           </InformationProducts>
           <InformationProducts
@@ -379,7 +389,9 @@ const DAYS = [
             title={i18n.INFO_PRODUCTS.DIFFICULTY}
             subtitle={i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA
               .DIFFICULTY}>
-            <div class="flex gap-1" slot="icon"></div>
+            <div class="flex gap-1" slot="icon">
+              <Icon icon="difficulty-logo" size="1.6rem" color="#ff5e00" />
+            </div>
           </InformationProducts>
           <InformationProducts title="E-Bike" subtitle="Yes">
             <div slot="icon">
@@ -387,7 +399,7 @@ const DAYS = [
                 xmlns="http://www.w3.org/2000/svg"
                 width="45"
                 height="30"
-                fill="#0E46A3"
+                fill="#ff5e00"
                 viewBox="80 90 330 330"
                 ><path
                   d="M83.172,319.817Q85.646,320,88.1,320A64,64,0,0,0,136.544,214.29a64.376,64.376,0,0,0-11.981-10.841l9.59-17.982,46.293,46.293A31.986,31.986,0,1,0,235.7,264h20.823a64.023,64.023,0,1,0,42.47-68.439l-10.025-19.605L300.944,152H316a20,20,0,0,0,0-40H276a20,20,0,0,0,0,40h7.053l-8,16H143.469l16.49-30.918L160,137l4.8-9H200a8,8,0,0,0,0-16H166.624A24.039,24.039,0,0,0,144,96H120a8,8,0,0,0-8,8v32a8,8,0,0,0,8,8h18.136l-27.748,52.028a64.045,64.045,0,0,0-86.2,55.141h0A64.072,64.072,0,0,0,83.172,319.817ZM312,256a8,8,0,1,1,8,8A8.009,8.009,0,0,1,312,256Zm-20-38.953L303.183,238.9a24.037,24.037,0,0,0-5.8,9.1h-24.7A48.052,48.052,0,0,1,292.007,217.047Zm-14.122-27.618,6.775,13.25A64.062,64.062,0,0,0,256.521,248H240a31.8,31.8,0,0,0-4.446-16.244ZM260.686,184l-36.443,36.443a31.9,31.9,0,0,0-32.483,0L155.314,184ZM96,256a8,8,0,1,1-8-8A8.009,8.009,0,0,1,96,256Z"
@@ -400,16 +412,20 @@ const DAYS = [
         </div>
       </div>
 
+      <div class="mt-10 max-w-[320px]">
+        <BookButton />
+      </div>
+
       <!--  Include, exclude, complementaries  -->
       <div
-        class="grid md:grid-cols-2 lg:grid-cols-3 mt-20 md:mt-26 md:mb-36 gap-16 md:gap-20">
+        class="grid md:grid-cols-2 lg:grid-cols-2 mt-20 md:mt-24 md:mb-24 gap-16 md:gap-4">
         <!-- Include -->
         <Includes
           title={i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.INCLUDED
             .TITLE}>
           <ul slot="description" class="mt-4 flex flex-col gap-2">
             <li class="flex gap-2">
-              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
               <p class="max-w-[320px] text-md">
                 {
                   i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.INCLUDED
@@ -418,7 +434,7 @@ const DAYS = [
               </p>
             </li>
             <li class="flex gap-2">
-              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
               <p class="max-w-[320px] text-md">
                 {
                   i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.INCLUDED
@@ -427,7 +443,7 @@ const DAYS = [
               </p>
             </li>
             <li class="flex gap-2">
-              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
               <p class="max-w-[320px] text-md">
                 {
                   i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.INCLUDED
@@ -436,7 +452,7 @@ const DAYS = [
               </p>
             </li>
             <li class="flex gap-2">
-              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
               <p class="max-w-[320px] text-md">
                 {
                   i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.INCLUDED
@@ -445,7 +461,7 @@ const DAYS = [
               </p>
             </li>
             <li class="flex gap-2">
-              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
               <p class="max-w-[320px] text-md">
                 {
                   i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.INCLUDED
@@ -454,7 +470,7 @@ const DAYS = [
               </p>
             </li>
             <li class="flex gap-2">
-              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
               <p class="max-w-[320px] text-md">
                 {
                   i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.INCLUDED
@@ -463,7 +479,7 @@ const DAYS = [
               </p>
             </li>
             <li class="flex flex-wrap gap-2">
-              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
               <p class="max-w-[320px] text-md">
                 {
                   i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.INCLUDED
@@ -472,7 +488,7 @@ const DAYS = [
               </p>
             </li>
             <li class="flex flex-wrap gap-2">
-              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
               <p class="max-w-[320px] text-md">
                 {
                   i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.INCLUDED
@@ -481,7 +497,7 @@ const DAYS = [
               </p>
             </li>
             <li class="flex flex-wrap gap-2">
-              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
               <p class="max-w-[320px] text-md">
                 {
                   i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.INCLUDED
@@ -490,7 +506,7 @@ const DAYS = [
               </p>
             </li>
             <li class="flex flex-wrap gap-2">
-              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
               <p class="max-w-[320px] text-md">
                 {
                   i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.INCLUDED
@@ -499,7 +515,7 @@ const DAYS = [
               </p>
             </li>
             <li class="flex flex-wrap gap-2">
-              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
               <p class="max-w-[320px] text-md">
                 {
                   i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.INCLUDED
@@ -508,7 +524,7 @@ const DAYS = [
               </p>
             </li>
             <li class="flex flex-wrap gap-2">
-              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
               <p class="max-w-[320px] text-md">
                 {
                   i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.INCLUDED
@@ -517,7 +533,7 @@ const DAYS = [
               </p>
             </li>
             <li class="flex flex-wrap gap-2">
-              <Icon icon="check-logo" size="1.6rem" color="#0E46A3" />
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
               <p class="max-w-[320px] text-md">
                 {
                   i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.INCLUDED
@@ -533,7 +549,7 @@ const DAYS = [
             .TITLE}>
           <div slot="description" class="flex flex-col gap-2 mt-4">
             <li class="flex flex-wrap gap-2">
-              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
               <p class="max-w-[320px] text-md">
                 {
                   i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.NOT_INCLUDED
@@ -550,7 +566,7 @@ const DAYS = [
               </p>
             </li>
             <li class="flex flex-wrap gap-2">
-              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
               <p class="max-w-[320px] text-md">
                 {
                   i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.NOT_INCLUDED
@@ -559,7 +575,7 @@ const DAYS = [
               </p>
             </li>
             <li class="flex flex-wrap gap-2">
-              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
               <p class="max-w-[320px] text-md">
                 {
                   i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.NOT_INCLUDED
@@ -568,7 +584,7 @@ const DAYS = [
               </p>
             </li>
             <li class="flex flex-wrap gap-2">
-              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
               <p class="max-w-[320px] text-md">
                 {
                   i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.NOT_INCLUDED
@@ -577,7 +593,7 @@ const DAYS = [
               </p>
             </li>
             <li class="flex flex-wrap gap-2">
-              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
               <p class="max-w-[320px] text-md">
                 {
                   i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.NOT_INCLUDED
@@ -586,7 +602,7 @@ const DAYS = [
               </p>
             </li>
             <li class="flex flex-wrap gap-2">
-              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
               <p class="max-w-[320px] text-md">
                 {
                   i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.NOT_INCLUDED
@@ -595,7 +611,7 @@ const DAYS = [
               </p>
             </li>
             <li class="flex flex-wrap gap-2">
-              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
               <p class="max-w-[320px] text-md">
                 {
                   i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.NOT_INCLUDED
@@ -604,7 +620,7 @@ const DAYS = [
               </p>
             </li>
             <li class="flex flex-wrap gap-2">
-              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
               <p class="max-w-[320px] text-md">
                 {
                   i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.NOT_INCLUDED
@@ -613,7 +629,7 @@ const DAYS = [
               </p>
             </li>
             <li class="flex flex-wrap gap-2">
-              <Icon icon="uncheck-logo" size="1.6rem" color="#0E46A3" />
+              <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
               <p class="max-w-[320px] text-md">
                 {
                   i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.NOT_INCLUDED
@@ -624,57 +640,6 @@ const DAYS = [
           </div>
         </Includes>
         <!-- Complementaries -->
-        <Includes
-          title={i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.EXTRA.TITLE}>
-          <div slot="description" class="flex flex-col gap-2 mt-4">
-            <h1 class="font-bold">
-              {i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.EXTRA.SUBTITLE}
-            </h1>
-            <li class="flex flex-wrap gap-2">
-              <Icon icon="complement-logo" size="1.6rem" color="#0E46A3" />
-              <p class="max-w-[320px] text-md">
-                {i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.EXTRA.TEXT_1}
-              </p>
-            </li>
-            <li class="flex flex-wrap gap-2">
-              <div>
-                <Icon icon="complement-logo" size="1.6rem" color="#0E46A3" />
-              </div>
-              <p class="max-w-[320px] text-md">
-                {i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.EXTRA.TEXT_2}
-              </p>
-              <p>
-                {i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.EXTRA.TEXT_3}
-              </p>
-            </li>
-            <li class="flex flex-wrap gap-2">
-              <Icon icon="complement-logo" size="1.6rem" color="#0E46A3" />
-              <p class="max-w-[320px] text-md">
-                {i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.EXTRA.TEXT_4}
-              </p>
-              <p>
-                {i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.EXTRA.TEXT_5}
-              </p>
-            </li>
-            <li class="flex gap-2">
-              <div>
-                <Icon icon="complement-logo" size="1.6rem" color="#0E46A3" />
-              </div>
-              <p class="max-w-[320px] text-md">
-                {i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.EXTRA.TEXT_6}
-              </p>
-            </li>
-            <li class="flex flex-wrap gap-2">
-              <Icon icon="complement-logo" size="1.6rem" color="#0E46A3" />
-              <p class="max-w-[320px] text-md">
-                {i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.EXTRA.TEXT_7}
-              </p>
-              <p>
-                {i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.EXTRA.TEXT_8}
-              </p>
-            </li>
-          </div>
-        </Includes>
       </div>
     </main>
 
@@ -712,16 +677,7 @@ const DAYS = [
           <div class="grid md:grid-cols-2 gap-4 mt-6">
             <ul class="grid gap-2 text-lg">
               <li class="flex flex-wrap gap-2">
-                <Icon icon="spring-logo" size="1.6rem" color="#0E46A3" />
-                <p>
-                  {
-                    i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA
-                      .AVAILABILITY_TEXT_1
-                  }
-                </p>
-              </li>
-              <li class="flex flex-wrap gap-2">
-                <Icon icon="autumn-logo" size="1.6rem" color="#0E46A3" />
+                <Icon icon="autumn-logo" size="1.6rem" color="#ff5e00" />
                 <p>
                   {
                     i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA
@@ -731,111 +687,140 @@ const DAYS = [
               </li>
             </ul>
             <div class="grid">
-              <li>18/10/2025 - 25/10/2025</li>
-              <li>09/05/2026 - 16/05/2026</li>
-              <li>03/10/2026 - 10/10/2026</li>
+              <li>17/09 - 24/09</li>
+              <li>02/10 - 09/10</li>
             </div>
           </div>
-        </div>
-
-        <div class="">
-          <h2
-            class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
-            {i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.HIGHLIGHT}
-          </h2>
-          <p class="text-lg text-gray-900 mb-1">
-            {i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.HIGHLIGHT_TEXT_1}
-          </p>
-          <p class="text-lg text-gray-900 mb-1">
-            <span class="text-xl">🔹</span>
-            {i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.HIGHLIGHT_TEXT_2}
-          </p>
-          <p class="text-lg text-gray-900">
-            <span class="text-xl">🔹</span>
-            {i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.HIGHLIGHT_TEXT_3}
-          </p>
-          <p class="text-lg text-gray-900">
-            <span class="text-xl">🔹</span>
-            {i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.HIGHLIGHT_TEXT_4}
-          </p>
-          <p class="text-lg text-gray-900">
-            <span class="text-xl">🔹</span>
-            {i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.HIGHLIGHT_TEXT_5}
-          </p>
-          <p class="text-lg text-gray-900">
-            <span class="text-xl">🔹</span>
-            {i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.HIGHLIGHT_TEXT_6}
-          </p>
-          <p class="text-lg text-gray-900">
-            <span class="text-xl">🔹</span>
-            {i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.HIGHLIGHT_TEXT_7}
-          </p>
-          <p class="text-lg text-gray-900">
-            <span class="text-xl">🔹</span>
-            {i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.HIGHLIGHT_TEXT_8}
-          </p>
         </div>
       </div>
     </div>
 
-    <!-- Button to download PDF -->
-    <section class="grid md:grid-cols-2 gap-10">
-      <div class="">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 mt-10 items-center">
+      <div>
         <h2
-          class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
-          {i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.REQUIEREMENTS}
+          class="max-w-2xl mb-4 font-bold text-2xl md:text-4xl xl:text-5xl bg-[#3c5546] inline-block text-white px-6 py-2 rounded-lg">
+          Bicycle
         </h2>
-        <p class="text-lg text-gray-900 mb-1">
-          <span class="text-xl strong">🔹</span>
-          {
-            i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA
-              .REQUIEREMENTS_TEXT_1
-          }
-        </p>
-        <p class="text-lg text-gray-900 mb-1">
-          <span class="text-xl strong">🔹</span>
-          {
-            i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA
-              .REQUIEREMENTS_TEXT_2
-          }
-        </p>
-        <p class="text-lg text-gray-900 mb-1">
-          <span class="text-xl strong">🔹</span>
-          {
-            i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA
-              .REQUIEREMENTS_TEXT_3
-          }
-        </p>
+        <p>🔶 E-Bike Bergamont E REVOX SPORT</p>
       </div>
-      <!-- <Cancellation /> -->
+      <div class="w-full overflow-x-auto">
+        <ol class="w-full">
+          {(<SliderReact IMG={BIKES} client:visible />)}
+        </ol>
+      </div>
+    </div>
 
-      <div class="">
-        <h2 class="font-bold text-4xl md:text-5xl xl:text-6xl">
-          {i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.CANCELLATION}
+    <AccordionProducts
+      title="Travel<br />Information"
+      cycleSardiniaEs={cycleSardiniaNl}
+    />
+
+    <div class="grid lg:grid-cols-2 gap-4 items-center">
+      <div>
+        <h2
+          class="mb-4 font-bold text-2xl md:text-4xl xl:text-5xl bg-[#3c5546] inline-block text-white px-6 py-2 rounded-lg">
+          What to Pack for Your Cycling Holiday
         </h2>
-        <div>
-          <p class="text-lg text-gray-700 mt-2">
-            {
-              i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA
-                .CANCELLATION_TEXT
-            }
-          </p>
-        </div>
+        <p class="mb-2">
+          A well-packed bag makes a smoother ride! Here’s what we recommend for
+          your cycle tour through Andalusia.
+        </p>
+        <p class="font-bold mb-2">Checklist</p>
+        <p class="font-bold">Cycling clothing:</p>
+        <p>
+          🔶 Cycling (padded) shorts and jerseys – 2–3 sets (long and short
+          sleeves)
+        </p>
+        <p>🔶 Lightweight windproof and/or waterproof jacket (rain jacket)</p>
+        <p>🔶 Sweater or fleece (extra layers for cooler conditions)</p>
+        <p>
+          🔶 Padded cycling gloves (spring and autumn mornings can be chilly)
+        </p>
+        <p>🔶 Arm and leg warmers (optional but very useful)</p>
+        <p>🔶 Sports socks (quick-dry) shirts</p>
+        <p class="mb-2">🔶 Sportsokken (sneldrogend)</p>
+
+        <p class="font-bold">Sun & weather protection:</p>
+        <p>🔶 Sunhat</p>
+        <p>🔶 Neck warmer (buff)</p>
+        <p>🔶 Sunglasses</p>
+        <p>🔶 Cycling cap or buff (sun protection under the helmet)</p>
+        <p>🔶 Sunscreen (high SPF)</p>
+        <p class="mb-2">🔶 Lip balm with SPF (recommended)</p>
+
+        <p class="font-bold">Equipment & accessories:</p>
+        <p>🔶 Water bottle (provided by us))</p>
+        <p>
+          🔶 Bike helmet (provided by us) ¡Please give note if you need a
+          helmet!
+        </p>
+        <p>🔶 Gel seat cover for added comfort (optional)</p>
+        <p>🔶 Small rucksack</p>
+        <p class="mb-2">🔶 Pannier (provided by us)</p>
+
+        <p class="font-bold">Footwear & casual wear:</p>
+        <p>🔶 Comfortable shoes (not recommended to cycle with sandals)</p>
+        <p>🔶 Casual clothes and an extra pair of shoes for evenings</p>
+        <p class="mb-2">🔶 Swimsuit and towel</p>
+
+        <p class="font-bold">Documents & health:</p>
+        <p>🔶 Passport</p>
+        <p>🔶 Travel insurance</p>
+        <p>🔶 Personal first aid kit</p>
+        <p>🔶 Insect repellent</p>
+        <p class="mb-2">🔶 Personal medication (if applicable)</p>
+        <p>
+          If you have any questions about the recommended equipment or are
+          unsure what to bring, please do not hesitate to contact us.
+        </p>
       </div>
-    </section>
-    <div
-      class="grid bg-[#0E46A3] place-items-center md:mb-20 border-spacing-3 backdrop-blur-sm w-fit m-auto md:px-28 p-10 md:mt-40 mt-12 rounded-xl shadow-[0px_0px_23px_14px_#00000024]">
-      <h2 class="text-2xl md:text-3xl font-bold text-center text-gray-200">
-        {i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.NOTES}
-      </h2>
-      <Link
-        style="muted"
-        href="/cycle-tour/leisure-cycling/cycle-journey-andalusia/TRIP NOTES CYCLE RONDA - CÓRDOBA.pdf"
-        download="Trips Notes Cycle Ronda - Córdoba"
-        class="flex gap-1 items-center justify-center mt-8 font-semibold"
-        rel="noopener">
-        {i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.NOTES_TEXT_1}
-      </Link>
+      <div>
+        <img
+          class="rounded-2xl"
+          src="/cycle-tour/leisure-cycling/cycle-journey-andalusia/jrc-map.webp"
+          alt="Kaart van Sardinië-tour"
+        />
+      </div>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-4 lg:mt-20 mt-10 mb-10">
+      <div>
+        <p
+          class="max-w-2xl mb-4 font-bold text-2xl md:text-4xl xl:text-5xl bg-[#3c5546] inline-block text-white px-6 py-2 rounded-lg">
+          Requirements
+        </p>
+        <p>🔶 Valid travel insurance</p>
+        <p>
+          🔶 Signed release of liability form, to be completed before the start
+          of the tour
+        </p>
+        <p>🔶 Adequate physical condition</p>
+        <p>🔶 Experience with longer rides.</p>
+        <p>🔶 Confident gear shifting is important and managing descents</p>
+        <p>🔶 Helmet, mandatory during all rides</p>
+        <p>
+          🔶 Personal responsibility for health, fitness and any existing
+          medical conditions
+        </p>
+        <p>🔶 Emergency contact information, to be provided before departure</p>
+      </div>
+
+      <div>
+        <h2
+          class="max-w-2xl mb-4 font-bold text-2xl md:text-4xl xl:text-5xl bg-[#3c5546] inline-block text-white px-6 py-2 rounded-lg">
+          Terms & Conditions
+        </h2>
+        <p class="max-w-2xl mb-6 md:px-0">
+          Please review our <a
+            href="terms-and-conditions"
+            class="text-[#ff5e00] hover:text-[#ff863f] visited:text-purple-600 font-bold"
+            target="_blank"
+            rel="noopener noreferrer">Terms & Conditions</a
+          > before completing your booking. By confirming your reservation, you agree
+          to all policies regarding payments, cancellations, and participation requirements.
+          See Blog Cycle Tour Ronda-Córdoba
+        </p>
+      </div>
     </div>
 
     <!-- Slider Photos -->
@@ -845,100 +830,590 @@ const DAYS = [
       </ol>
     </section>
 
-    <!--  TimeLine per days  -->
-    <div class="md:p-8">
+    <div class="mt-8 mb-8">
       <h2
-        class="max-w-2xl md:p-8 mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+        class="max-w-2xl mb-4 font-bold text-2xl md:text-4xl xl:text-5xl bg-[#3c5546] inline-block text-white px-6 py-2 rounded-lg">
+        Welcome To Andalusia
+      </h2>
+      <p class="max-w-2xl mb-6 md:px-0 font-bold">
+        Sun and Snow, Land and Sea, History and Legend
+      </p>
+      <p class="mb-2">
+        Discover the heart of Andalusia by bike, from the dramatic cliffs of
+        Ronda to the Moorish splendor of Córdoba. This unique route takes you
+        through white villages, olive hills, and cultural gems — with overnight
+        stays in carefully selected, peaceful hotels.This trip is ideal for
+        those who want to combine tranquility, culture, and nature, without
+        rushing. You cycle on quiet country roads with little traffic. The route
+        is hilly, with a few challenging climbs and a flat stage on the last
+        day, suitable for recreational cyclists on an E-bike with a good basic
+        fitness level.
+      </p>
+    </div>
+
+    <!--  TimeLine per days  -->
+    <div class="">
+      <h2
+        class="max-w-2xl mb-4 font-bold text-2xl md:text-4xl xl:text-4xl bg-[#3c5546] inline-block text-white px-6 py-2 rounded-lg">
         {i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.WHAT_TO_EXPECT.TITLE}
       </h2>
-      <p class="text-lg text-gray-900 mb-1">
-        {
-          i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.WHAT_TO_EXPECT
-            .TEXT_1
-        }
-      </p>
-      <p class="text-lg text-gray-900 mb-1">
-        {
-          i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.WHAT_TO_EXPECT
-            .TEXT_2
-        }
-      </p>
-      <p class="text-lg text-gray-900 mb-1">
-        {
-          i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.WHAT_TO_EXPECT
-            .TEXT_3
-        }
-      </p>
-      <p class="text-lg text-gray-900 mb-1">
-        {
-          i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.WHAT_TO_EXPECT
-            .TEXT_4
-        }
-        <p class="text-lg text-gray-900 mb-1">
-          {
-            i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.WHAT_TO_EXPECT
-              .TEXT_5
-          }
-        </p>
-        <p class="text-lg text-gray-900 mb-1">
-          <span class="text-xl strong">🔹</span>
-          {
-            i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.WHAT_TO_EXPECT
-              .TEXT_6
-          }
-        </p>
-        <p class="text-lg text-gray-900 mb-1">
-          <span class="text-xl strong">🔹</span>
-          {
-            i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.WHAT_TO_EXPECT
-              .TEXT_7
-          }
-        </p>
-        <p class="text-lg text-gray-900 mb-1">
-          <span class="text-xl strong">🔹</span>
-          {
-            i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.WHAT_TO_EXPECT
-              .TEXT_8
-          }
-        </p>
-        <p class="text-lg text-gray-900">
-          <span class="text-xl">🔹</span>
-          {
-            i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.WHAT_TO_EXPECT
-              .TEXT_9
-          }
-        </p>
-        <p class="text-lg text-gray-900">
-          <span class="text-xl">🔹</span>
-          {
-            i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.WHAT_TO_EXPECT
-              .TEXT_10
-          }
-        </p>
 
-        {
-          DAYS.map((tour) => (
-            <ol class="mb-10">
-              <Days {...tour} />
-            </ol>
-          ))
-        }
-        <section>
-          <h2
-            class="text-4xl md:text-5xl xl:text-6xl md:p-8 mt-10 font-bold mb-4">
-            {i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.CLIENTS.TITLE}
-          </h2>
-          <ul class="grid md:grid-cols-2 md:gap-6">
-            {
-              reviewsData.map((item, key) => (
-                <ol class="mb-4 ">
-                  <ReviewsCompt data={item} id={`review-${key}`} />
-                </ol>
-              ))
-            }
-          </ul>
-        </section>
+      <p class="text-lg text-gray-900 mb-1">
+        <span class="text-xl strong">🔶</span>Fully supported guided tour with
+        E-bike
       </p>
+      <p class="text-lg text-gray-900 mb-1">
+        <span class="text-xl strong">🔶</span>Private rooms in 3-4 star hotels
+      </p>
+      <p class="text-lg text-gray-900 mb-1">
+        <span class="text-xl strong">🔶</span>Riding pace: Relaxed and social,
+        with regular stops for potos and coffee. Everyone is encouraged to ride
+        at their own comfortable pace, allowing each participant to fully enjoy
+        the scenery. Re-grouping points are arranged throughout the day to
+        ensure the group stays connected while maintaining flexibility for
+        individual riders.
+      </p>
+      <p class="text-lg text-gray-900 mb-1">
+        <span class="text-xl strong">🔶</span>Average daily distance: 60 km of
+        cycling per day (approximately 5–6 hours including breaks)
+      </p>
+      <p class="text-lg text-gray-900 mb-1">
+        <span class="text-xl strong">🔶</span>Terrain: countryside roads with
+        little traffic.
+      </p>
+      <p class="text-lg text-gray-900 mb-1">
+        <span class="text-xl strong">🔶</span>Daily schedule: arrivals typically
+        in the afternoon, leaving time to relax, enjoy the hotel, or explore the
+        surroundings
+      </p>
+      <p class="text-lg text-gray-900 mb-1">
+        <span class="text-xl strong">🔶</span>Extra optional activities
+      </p>
+
+      <Accordion class="mt-6 mb-10" variant="splitted">
+        <AccordionItem title="Day 1">
+          <p class="font-bold text-xl">Welcome</p>
+          <p class="">
+            Upon arrival in Málaga, our transfer will take us to our rural hotel
+            in Ronda, located above a deep gorge that divides the city in two.
+            The tour leader will organize an introductory meeting about the
+            trip, followed by a safety briefing.
+          </p>
+          <p class="font-bold text-xl">Free afternoon in Ronda</p>
+          <p class="">
+            Start the day by exploring Ronda’s famous sights, such as the iconic
+            bridge or the Plaza de Toros, Spain’s oldest bullring. Or take a
+            trip to one of the many local vineyards, an excellent way to deepen
+            your knowledge of local wines.
+          </p>
+          <p class="">
+            The tour leader will organize dinner to celebrate the first day of
+            the journey.
+          </p>
+          <p class="font-bold text-xl">Relaxation at the hotel</p>
+          <p class="">The hotel features a quietly located swimming pool</p>
+        </AccordionItem>
+
+        <AccordionItem title="Day 2">
+          <div class="grid md:grid-cols-2 gap-8 md:gap-32">
+            <div class="">
+              <p class="font-bold">
+                Track 1 Sierra de las Nieves Mountain Range
+              </p>
+              <p class="">
+                Off we go to the breathtaking Gaitanes Gorge, one of the most
+                spectacular landscapes in the Malaga mountains where we stay the
+                second night of the trip.
+              </p>
+              <p class="">
+                We leave our hotel along meandering country roads, passing
+                through the Ronda Mountain Range and the Sierra de las Nieves
+                National Park, a 100% stunning landscape. After a picnic lunch
+                at a panoramic viewpoint, we continue toward our hotel nestled
+                in the heart of the Natural Park.
+              </p>
+              <p class="font-bold">Free day Ronda</p>
+              <p class="">Swimming pool and breathtaking views</p>
+              <p class="">Optional walk 'Caminito del Rey'</p>
+              <p class="font-bold">Relaxation at the hotel</p>
+              <p class="">The hotel features a quietly located swimming pool</p>
+            </div>
+
+            <div class="">
+              <div class="grid grid-cols-7 gap-6 md:gap-2">
+                <div class="col-span-1">
+                  <Icon icon="distance-logo" size="3rem" color="#ff5e00" />
+                </div>
+                <div class="grid col-span-6">
+                  <h2 class="text-pretty text-neutral-900 text-xl font-bold">
+                    Total Distance
+                  </h2>
+                  <p class="text-pretty text-gray-500 text-md">57 km</p>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-7 gap-6 md:gap-2">
+                <div class="col-span-1">
+                  <Icon icon="up-logo" size="3rem" color="#ff5e00" />
+                </div>
+                <div class="grid col-span-6">
+                  <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                    Total Ascent
+                  </h2>
+                  <p class="text-pretty text-gray-500 text-md">730 m</p>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-7 gap-6 md:gap-2">
+                <div class="col-span-1">
+                  <Icon icon="down-logo" size="3rem" color="#ff5e00" />
+                </div>
+                <div class="grid col-span-6">
+                  <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                    Total Descent
+                  </h2>
+                  <p class="text-pretty text-gray-500 text-md">1.240 m</p>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-7 gap-6 md:gap-2">
+                <div class="col-span-1">
+                  <Icon icon="timer-logo" size="3rem" color="#ff5e00" />
+                </div>
+                <div class="grid col-span-6">
+                  <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                    Duration Trial
+                  </h2>
+                  <p class="text-pretty text-gray-500 text-md">5 hours</p>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-7 gap-6 md:gap-2">
+                <div class="col-span-1">
+                  <Icon icon="difficulty-logo" size="3rem" color="#ff5e00" />
+                </div>
+                <div class="grid col-span-6">
+                  <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                    Difficulty
+                  </h2>
+                  <p class="text-pretty text-gray-500 text-md">2</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </AccordionItem>
+
+        <AccordionItem title="Day 3">
+          <div class="grid md:grid-cols-2 gap-8 md:gap-32">
+            <div class="">
+              <p class="font-bold">Stage 2 Rural Andalusia</p>
+              <p class="">
+                After breakfast, we drive the first kilometers with our support
+                vehicle to skip the steep part and bring us higher where we
+                start our second stage.
+              </p>
+              <p class="">
+                Today we cycle through rural Andalusia, a mountainous and
+                colorful landscape where Mediterranean crops alternate with
+                pastureland. After the picnic lunch, we continue to the village
+                of Antequera with its rich historical center that claims to have
+                the most churches per inhabitant in Spain. Monasteries, palaces,
+                the Moorish fortress, and prehistoric dolmens are some of the
+                many sights.
+              </p>
+              <p class="font-bold">Free afternoon Antequera</p>
+              <p class="font-bold">Relaxation at the hotel</p>
+              <p class="">Hotel features a quietly located swimming pool</p>
+            </div>
+
+            <div class="">
+              <div class="grid grid-cols-7 gap-6 md:gap-2">
+                <div class="col-span-1">
+                  <Icon icon="distance-logo" size="3rem" color="#ff5e00" />
+                </div>
+                <div class="grid col-span-6">
+                  <h2 class="text-pretty text-neutral-900 text-xl font-bold">
+                    Total Distance
+                  </h2>
+                  <p class="text-pretty text-gray-500 text-md">45 km</p>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-7 gap-6 md:gap-2">
+                <div class="col-span-1">
+                  <Icon icon="up-logo" size="3rem" color="#ff5e00" />
+                </div>
+                <div class="grid col-span-6">
+                  <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                    Total Ascent
+                  </h2>
+                  <p class="text-pretty text-gray-500 text-md">1260 m</p>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-7 gap-6 md:gap-2">
+                <div class="col-span-1">
+                  <Icon icon="down-logo" size="3rem" color="#ff5e00" />
+                </div>
+                <div class="grid col-span-6">
+                  <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                    Total Descent
+                  </h2>
+                  <p class="text-pretty text-gray-500 text-md">920 m</p>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-7 gap-6 md:gap-2">
+                <div class="col-span-1">
+                  <Icon icon="timer-logo" size="3rem" color="#ff5e00" />
+                </div>
+                <div class="grid col-span-6">
+                  <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                    Duration Trial
+                  </h2>
+                  <p class="text-pretty text-gray-500 text-md">5 hours</p>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-7 gap-6 md:gap-2">
+                <div class="col-span-1">
+                  <Icon icon="difficulty-logo" size="3rem" color="#ff5e00" />
+                </div>
+                <div class="grid col-span-6">
+                  <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                    Difficulty
+                  </h2>
+                  <p class="text-pretty text-gray-500 text-md">3</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </AccordionItem>
+        <AccordionItem title="Day 4">
+          <div class="grid md:grid-cols-2 gap-8 md:gap-32">
+            <div class="">
+              <p class="font-bold">Stage 3 Mountainous Olive Groves</p>
+              <p class="">
+                Today is the only time we drive to our new starting point, a
+                village built on the ruins of an old Moorish castle that
+                overlooks the beautiful valley and lake below.
+              </p>
+              <p class="">
+                The route takes us through the olive groves of Andalusia in the
+                Sierras Subbéticas Natural Park and Geopark. Spain has olive
+                groves spread throughout almost the entire country, but the
+                largest concentration is in Andalusia, with locations where
+                olive trees were already used when the region Hispania Baetica
+                supplied olive oil to the Roman capital.
+              </p>
+              <p class="">
+                Our destination today is the village of Priego de Córdoba in the
+                heart of the natural park. For dinner, we offer you the
+                opportunity to learn how to taste and appreciate olive oil with
+                all your senses through an olive oil master, discovering the
+                smell, aroma, and taste of each olive oil.
+              </p>
+              <p class="font-bold">Free afternoon</p>
+              <p class="">Discover the old part of the village</p>
+            </div>
+
+            <div class="">
+              <div class="grid grid-cols-7 gap-6 md:gap-2">
+                <div class="col-span-1">
+                  <Icon icon="distance-logo" size="3rem" color="#ff5e00" />
+                </div>
+                <div class="grid col-span-6">
+                  <h2 class="text-pretty text-neutral-900 text-xl font-bold">
+                    Total Distance
+                  </h2>
+                  <p class="text-pretty text-gray-500 text-md">41 km</p>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-7 gap-6 md:gap-2">
+                <div class="col-span-1">
+                  <Icon icon="up-logo" size="3rem" color="#ff5e00" />
+                </div>
+                <div class="grid col-span-6">
+                  <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                    Total Ascent
+                  </h2>
+                  <p class="text-pretty text-gray-500 text-md">750 m</p>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-7 gap-6 md:gap-2">
+                <div class="col-span-1">
+                  <Icon icon="down-logo" size="3rem" color="#ff5e00" />
+                </div>
+                <div class="grid col-span-6">
+                  <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                    Total Descent
+                  </h2>
+                  <p class="text-pretty text-gray-500 text-md">740 m</p>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-7 gap-6 md:gap-2">
+                <div class="col-span-1">
+                  <Icon icon="timer-logo" size="3rem" color="#ff5e00" />
+                </div>
+                <div class="grid col-span-6">
+                  <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                    Duration Trial
+                  </h2>
+                  <p class="text-pretty text-gray-500 text-md">6 hours</p>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-7 gap-6 md:gap-2">
+                <div class="col-span-1">
+                  <Icon icon="difficulty-logo" size="3rem" color="#ff5e00" />
+                </div>
+                <div class="grid col-span-6">
+                  <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                    Difficulty
+                  </h2>
+                  <p class="text-pretty text-gray-500 text-md">2</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </AccordionItem>
+        <AccordionItem title="Day 5">
+          <div class="grid md:grid-cols-2 gap-8 md:gap-32">
+            <div class="">
+              <p class="font-bold">
+                Stage 4 The Route of the Old Olive Oil Train
+              </p>
+              <p class="">
+                Today we continue cycling through the beautiful landscapes of
+                the Sierras Subbéticas that take us to picturesque villages.
+              </p>
+              <p class="">
+                After another outdoor picnic, we follow the track of the old
+                train route called “Vía Verde” that runs between olive trees and
+                vineyards. These Greenways in Spain have been restored for
+                cyclists and walkers.
+              </p>
+              <p class="">
+                The route of the old oil train brings us to our next
+                accommodation, a traditional Andalusian farmhouse converted into
+                a hotel.
+              </p>
+              <p class="font-bold">Free afternoon</p>
+              <p class="">Swimming pool and breathtaking views</p>
+            </div>
+
+            <div class="">
+              <div class="grid grid-cols-7 gap-6 md:gap-2">
+                <div class="col-span-1">
+                  <Icon icon="distance-logo" size="3rem" color="#ff5e00" />
+                </div>
+                <div class="grid col-span-6">
+                  <h2 class="text-pretty text-neutral-900 text-xl font-bold">
+                    Total Distance
+                  </h2>
+                  <p class="text-pretty text-gray-500 text-md">60 km</p>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-7 gap-6 md:gap-2">
+                <div class="col-span-1">
+                  <Icon icon="up-logo" size="3rem" color="#ff5e00" />
+                </div>
+                <div class="grid col-span-6">
+                  <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                    Total Ascent
+                  </h2>
+                  <p class="text-pretty text-gray-500 text-md">720 m</p>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-7 gap-6 md:gap-2">
+                <div class="col-span-1">
+                  <Icon icon="down-logo" size="3rem" color="#ff5e00" />
+                </div>
+                <div class="grid col-span-6">
+                  <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                    Total Descent
+                  </h2>
+                  <p class="text-pretty text-gray-500 text-md">800 m</p>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-7 gap-6 md:gap-2">
+                <div class="col-span-1">
+                  <Icon icon="timer-logo" size="3rem" color="#ff5e00" />
+                </div>
+                <div class="grid col-span-6">
+                  <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                    Duration Trial
+                  </h2>
+                  <p class="text-pretty text-gray-500 text-md">7 hours</p>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-7 gap-6 md:gap-2">
+                <div class="col-span-1">
+                  <Icon icon="difficulty-logo" size="3rem" color="#ff5e00" />
+                </div>
+                <div class="grid col-span-6">
+                  <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                    Difficulty
+                  </h2>
+                  <p class="text-pretty text-gray-500 text-md">2</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </AccordionItem>
+
+        <AccordionItem title="Day 6">
+          <div class="grid md:grid-cols-2 gap-8 md:gap-32">
+            <div class="">
+              <p class="font-bold">Stage 5 The Caliphate and Mozarabic Route</p>
+              <p class="">
+                On your last cycling day, we follow two historic routes that
+                lead us to the city of Córdoba, our final destination. The
+                Caliphate Route is the Andalusian heritage that connects Córdoba
+                and Granada, the capitals of the Caliphate and Nasrid
+                al-Andalus. It was one of the busiest paths of the Iberian
+                Peninsula in the Middle Ages, used by merchants from all over
+                the known world, who supplied and traded with these important
+                population centers; it was also the route of knowledge, science,
+                and art.
+              </p>
+              <p class="">
+                The other historic route is the Mozarabic Way to Santiago de
+                Compostela. An ancient path that pays tribute to all Christians,
+                the Mozarabs, who remained in the areas of Al-Andalus. A journey
+                that reminds us of that time when these Christians, despite
+                oppression, maintained their faith and devotion.
+              </p>
+              <p class="">
+                The last part of the longest cycling route reveals our travel
+                destination with views of the city of Córdoba, located in the
+                Guadalquivir depression formed by the Guadalquivir River.
+              </p>
+            </div>
+
+            <div class="">
+              <div class="grid grid-cols-7 gap-6 md:gap-2">
+                <div class="col-span-1">
+                  <Icon icon="distance-logo" size="3rem" color="#ff5e00" />
+                </div>
+                <div class="grid col-span-6">
+                  <h2 class="text-pretty text-neutral-900 text-xl font-bold">
+                    Total Distance
+                  </h2>
+                  <p class="text-pretty text-gray-500 text-md">80 km</p>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-7 gap-6 md:gap-2">
+                <div class="col-span-1">
+                  <Icon icon="up-logo" size="3rem" color="#ff5e00" />
+                </div>
+                <div class="grid col-span-6">
+                  <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                    Total Ascent
+                  </h2>
+                  <p class="text-pretty text-gray-500 text-md">550 m</p>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-7 gap-6 md:gap-2">
+                <div class="col-span-1">
+                  <Icon icon="down-logo" size="3rem" color="#ff5e00" />
+                </div>
+                <div class="grid col-span-6">
+                  <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                    Total Descent
+                  </h2>
+                  <p class="text-pretty text-gray-500 text-md">1060 m</p>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-7 gap-6 md:gap-2">
+                <div class="col-span-1">
+                  <Icon icon="timer-logo" size="3rem" color="#ff5e00" />
+                </div>
+                <div class="grid col-span-6">
+                  <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                    Duration Trial
+                  </h2>
+                  <p class="text-pretty text-gray-500 text-md">6 hours</p>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-7 gap-6 md:gap-2">
+                <div class="col-span-1">
+                  <Icon icon="difficulty-logo" size="3rem" color="#ff5e00" />
+                </div>
+                <div class="grid col-span-6">
+                  <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                    Difficulty
+                  </h2>
+                  <p class="text-pretty text-gray-500 text-md">2</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </AccordionItem>
+
+        <AccordionItem title="Day 7">
+          <div class="grid gap-8 md:gap-32">
+            <div class="">
+              <p class="font-bold">Free day Córdoba</p>
+              <p class="">
+                Explore the city’s history and culture known for its unique
+                blend of Roman, Moorish, and Christian influences. The city was
+                once a significant Roman settlement and later became the capital
+                of the Islamic Emirate and then the Caliphate of Córdoba, under
+                which it flourished as one of the largest and most advanced
+                cities in the world during the Middle Ages.
+              </p>
+              <p class="">
+                In the morning there is an optional tour of the Mosque of
+                Córdoba for those who have pre-reserved the activity.
+              </p>
+              <p class="">
+                The tour guide will organize a place to have dinner together to
+                celebrate the last evening of the journey
+              </p>
+            </div>
+          </div>
+        </AccordionItem>
+
+        <AccordionItem title="Day 8">
+          <div class="grid gap-8 md:gap-32">
+            <div class="">
+              <p class="font-bold">Goodbye</p>
+              <p class="">
+                The journey ends after breakfast at our hotel. There will be a
+                private airport transfer from the hotel to the airport in
+                Málaga.
+              </p>
+            </div>
+          </div>
+        </AccordionItem>
+      </Accordion>
+      <section>
+        <h2
+          class="text-4xl md:text-5xl xl:text-6xl md:p-8 mt-10 font-bold mb-4">
+          {i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.CLIENTS.TITLE}
+        </h2>
+        <ul class="grid md:grid-cols-2 md:gap-6">
+          {
+            reviewsData.map((item, key) => (
+              <ol class="mb-4 ">
+                <ReviewsCompt data={item} id={`review-${key}`} />
+              </ol>
+            ))
+          }
+        </ul>
+      </section>
     </div>
   </Container>
 </Layout>

@@ -1,0 +1,70 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Container from "../../components/container.astro";
+import Sectionhead from "../../components/sectionhead.astro";
+import "photoswipe/style.css";
+---
+
+<Layout title="Gallery">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Galleria prueba</Fragment>
+      <Fragment slot="desc"></Fragment>
+    </Sectionhead>
+    <div class="mt-16">
+      <div
+        class="pswp-gallery grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-6 object-fill"
+        id="gallery">
+        <a
+          class="object-cover"
+          href="/gallery/img-1.jpg"
+          data-cropped="true"
+          data-pswp-width="1349"
+          data-pswp-height="607"
+          target="_blank">
+          <img
+            class="w-full md:h-64 md:w-72 md:size-64 object-cover rounded-xl hover:scale-105 duration-200 transition-all"
+            src="/gallery/img-1.webp"
+            alt=""
+          />
+        </a>
+
+        <a
+          href="/gallery/img-61.jpg"
+          data-cropped="true"
+          data-pswp-width="4080"
+          data-pswp-height="1832"
+          target="_blank">
+          <img
+            class="w-full md:h-64 md:w-72 object-cover rounded-xl md:size-64 hover:scale-105 duration-200 transition-all"
+            src="/gallery/img-61.jpg"
+            alt=""
+          />
+        </a>
+        <a
+          href="/gallery/img-62.jpeg"
+          data-cropped="true"
+          data-pswp-width="3213"
+          data-pswp-height="5712"
+          target="_blank">
+          <img
+            class="w-full md:h-64 md:w-72 object-cover rounded-xl md:size-64 hover:scale-105 duration-200 transition-all"
+            src="/gallery/img-62.jpeg"
+            alt="locas"
+          />
+        </a>
+      </div>
+    </div>
+
+    <script>
+      import PhotoSwipeLightbox from "photoswipe/lightbox";
+
+      const lightbox = new PhotoSwipeLightbox({
+        gallery: "#gallery",
+        children: "a",
+        pswpModule: () => import("photoswipe"),
+      });
+      lightbox.init();
+    </script>
+  </Container></Layout
+>

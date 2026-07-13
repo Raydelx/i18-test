@@ -2215,7 +2215,7 @@
                 "TEXT_3": "Bezemwagen",
                 "TEXT_4": "Bagagetransport",
                 "TEXT_5": "Luchthaventransfer",
-                "TEXT_6": "Accommodatie: 7 nachten",
+                "TEXT_6": "Privékamer: 7 nachten",
                 "TEXT_7": "Ontbijt: 7 dagen",
                 "TEXT_8": "Lunch: 5 picknicks",
                 "TEXT_9": "E-bike",
@@ -2227,7 +2227,7 @@
                 "NOT_INCLUDED": {
                 "TITLE": "Niet inbegrepen",
                 "TEXT_1": "Reis- en annuleringsverzekering ",
-                "TEXT_2": "(Het wordt aangeraden om een reisverzekering af te sluiten voor je vertrek.)",
+                "TEXT_2": "(Het is verplicht om vóór vertrek een reisverzekering af te sluiten)",
                 "TEXT_3": "Vlucht",                
                 "TEXT_4": "Avondmaal",
                 "TEXT_5": "Extra maaltijden",
