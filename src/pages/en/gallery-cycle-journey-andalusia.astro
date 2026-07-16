@@ -1,0 +1,369 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Container from "../../components/container.astro";
+import Sectionhead from "../../components/sectionhead.astro";
+import "photoswipe/style.css";
+
+const images = [
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jrc-2.webp",
+    thumb: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jrc-2.webp",
+    alt: "Cycle Journey Andalucia photo 2",
+    width: 3264,
+    height: 1472,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jrc-3.webp",
+    thumb: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jrc-3.webp",
+    alt: "Cycle Journey Andalucia photo 3",
+    width: 4080,
+    height: 1832,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jrc-4.webp",
+    thumb: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jrc-4.webp",
+    alt: "Cycle Journey Andalucia photo 4",
+    width: 5712,
+    height: 3213,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jrc-5.webp",
+    thumb: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jrc-5.webp",
+    alt: "Cycle Journey Andalucia photo 5",
+    width: 4032,
+    height: 2268,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jrc-6.webp",
+    thumb: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jrc-6.webp",
+    alt: "Cycle Journey Andalucia photo 6",
+    width: 4080,
+    height: 1832,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jrc-7.webp",
+    thumb: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jrc-7.webp",
+    alt: "Cycle Journey Andalucia photo 7",
+    width: 3448,
+    height: 1939,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jrc-8.webp",
+    thumb: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jrc-8.webp",
+    alt: "Cycle Journey Andalucia photo 8",
+    width: 4080,
+    height: 1832,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jrc-9.webp",
+    thumb: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jrc-9.webp",
+    alt: "Cycle Journey Andalucia photo 9",
+    width: 5712,
+    height: 3213,
+  },
+
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jrc-11.webp",
+    thumb: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jrc-11.webp",
+    alt: "Cycle Journey Andalucia photo 11",
+    width: 4080,
+    height: 1832,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jrc-12.webp",
+    thumb: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jrc-12.webp",
+    alt: "Cycle Journey Andalucia photo 12",
+    width: 4080,
+    height: 1832,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jrc-13.webp",
+    thumb: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jrc-13.webp",
+    alt: "Cycle Journey Andalucia photo 13",
+    width: 4080,
+    height: 1832,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jrc-14.webp",
+    thumb: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jrc-14.webp",
+    alt: "Cycle Journey Andalucia photo 14",
+    width: 4080,
+    height: 1832,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jrc-15.webp",
+    thumb: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jrc-15.webp",
+    alt: "Cycle Journey Andalucia photo 15",
+    width: 4080,
+    height: 1832,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jrc-16.webp",
+    thumb: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jrc-16.webp",
+    alt: "Cycle Journey Andalucia photo 16",
+    width: 4080,
+    height: 1832,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-17.jpeg",
+    thumb: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-17.jpeg",
+    alt: "Cycle Journey Andalucia photo 17",
+    width: 4032,
+    height: 2268,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-18.jpg",
+    thumb: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-18.jpg",
+    alt: "Cycle Journey Andalucia photo 18",
+    width: 4080,
+    height: 1832,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-19.webp",
+    thumb: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-19.webp",
+    alt: "Cycle Journey Andalucia photo 19",
+    width: 3264,
+    height: 1472,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-20.jpeg",
+    thumb: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-20.jpeg",
+    alt: "Cycle Journey Andalucia photo 20",
+    width: 4032,
+    height: 2268,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-21.jpg",
+    thumb: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-21.jpg",
+    alt: "Cycle Journey Andalucia photo 21",
+    width: 4080,
+    height: 1832,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-22.jpeg",
+    thumb: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-22.jpeg",
+    alt: "Cycle Journey Andalucia photo 22",
+    width: 2268,
+    height: 4032,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-23.jpg",
+    thumb: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-23.jpg",
+    alt: "Cycle Journey Andalucia photo 23",
+    width: 4080,
+    height: 1832,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-24.jpeg",
+    thumb: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-24.jpeg",
+    alt: "Cycle Journey Andalucia photo 24",
+    width: 5712,
+    height: 3213,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-25.jpg",
+    thumb: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-25.jpg",
+    alt: "Cycle Journey Andalucia photo 25",
+    width: 4080,
+    height: 1832,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-26.jpeg",
+    thumb: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-26.jpeg",
+    alt: "Cycle Journey Andalucia photo 26",
+    width: 4032,
+    height: 2268,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-27.jpg",
+    thumb: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-27.jpg",
+    alt: "Cycle Journey Andalucia photo 27",
+    width: 4080,
+    height: 1832,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-28.jpeg",
+    thumb: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-28.jpeg",
+    alt: "Cycle Journey Andalucia photo 28",
+    width: 3213,
+    height: 5712,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-29.jpg",
+    thumb: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-29.jpg",
+    alt: "Cycle Journey Andalucia photo 29",
+    width: 4080,
+    height: 1832,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-30.jpeg",
+    thumb: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-30.jpeg",
+    alt: "Cycle Journey Andalucia photo 30",
+    width: 5814,
+    height: 3270,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-31.jpg",
+    thumb: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-31.jpg",
+    alt: "Cycle Journey Andalucia photo 31",
+    width: 4080,
+    height: 1832,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-32.jpeg",
+    thumb: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-32.jpeg",
+    alt: "Cycle Journey Andalucia photo 32",
+    width: 2298,
+    height: 4086,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-33.jpg",
+    thumb: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-33.jpg",
+    alt: "Cycle Journey Andalucia photo 33",
+    width: 4080,
+    height: 1832,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-34.jpeg",
+    thumb: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-34.jpeg",
+    alt: "Cycle Journey Andalucia photo 34",
+    width: 3213,
+    height: 5712,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-35.jpg",
+    thumb: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-35.jpg",
+    alt: "Cycle Journey Andalucia photo 35",
+    width: 4080,
+    height: 1832,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-36.jpeg",
+    thumb: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-36.jpeg",
+    alt: "Cycle Journey Andalucia photo 36",
+    width: 4032,
+    height: 2268,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-37.jpg",
+    thumb: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-37.jpg",
+    alt: "Cycle Journey Andalucia photo 37",
+    width: 4080,
+    height: 1832,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-38.jpeg",
+    thumb: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-38.jpeg",
+    alt: "Cycle Journey Andalucia photo 38",
+    width: 5559,
+    height: 3127,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-39.jpg",
+    thumb: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-39.jpg",
+    alt: "Cycle Journey Andalucia photo 39",
+    width: 4080,
+    height: 1832,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-40.jpeg",
+    thumb: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-40.jpeg",
+    alt: "Cycle Journey Andalucia photo 40",
+    width: 4032,
+    height: 2268,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-41.jpg",
+    thumb: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-41.jpg",
+    alt: "Cycle Journey Andalucia photo 41",
+    width: 4080,
+    height: 1832,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-42.jpeg",
+    thumb: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-42.jpeg",
+    alt: "Cycle Journey Andalucia photo 42",
+    width: 3448,
+    height: 1939,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-43.jpg",
+    thumb: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-43.jpg",
+    alt: "Cycle Journey Andalucia photo 43",
+    width: 4000,
+    height: 2992,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-44.jpg",
+    thumb: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-44.jpg",
+    alt: "Cycle Journey Andalucia photo 44",
+    width: 2992,
+    height: 2992,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-45.jpg",
+    thumb: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-45.jpg",
+    alt: "Cycle Journey Andalucia photo 45",
+    width: 4080,
+    height: 1832,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-46.jpg",
+    thumb: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-46.jpg",
+    alt: "Cycle Journey Andalucia photo 46",
+    width: 4080,
+    height: 1832,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-47.jpg",
+    thumb: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jcr-47.jpg",
+    alt: "Cycle Journey Andalucia photo 47",
+    width: 4080,
+    height: 1832,
+  },
+];
+---
+
+<Layout title="Gallery">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Cycle Journey Andalucia gallery</Fragment>
+      <Fragment slot="desc"></Fragment>
+    </Sectionhead>
+
+    <div class="mt-16">
+      <div
+        class="pswp-gallery grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-6 object-fill"
+        id="gallery">
+        {
+          images.map((image) => (
+            <a
+              class="object-cover"
+              href={image.src}
+              data-cropped="true"
+              data-pswp-width={image.width}
+              data-pswp-height={image.height}
+              target="_blank">
+              <img
+                class="w-full md:h-64 md:w-72 md:size-64 object-cover rounded-xl hover:scale-105 duration-200 transition-all"
+                src={image.thumb}
+                alt={image.alt}
+              />
+            </a>
+          ))
+        }
+      </div>
+    </div>
+
+    <script>
+      import PhotoSwipeLightbox from "photoswipe/lightbox";
+
+      const lightbox = new PhotoSwipeLightbox({
+        gallery: "#gallery",
+        children: "a",
+        pswpModule: () => import("photoswipe"),
+      });
+      lightbox.init();
+    </script>
+  </Container>
+</Layout>
