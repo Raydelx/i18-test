@@ -100,6 +100,8 @@ export const routes = {
 		'cycle-tour-sardinia': 'cycle-tour-sardinia',
 		'cycle-ronda-granada': 'cycle-ronda-granada',
 		'gallery-cycle-ronda': 'gallery-cycle-ronda',
+		'gallery-cycle-journey-andalusia': 'gallery-cycle-journey-andalusia',
+		'gallery-cycle-tour-granada': 'gallery-cycle-tour-granada',
 	},
 	en: {
 		blog: 'blog',
@@ -160,6 +162,7 @@ export const routes = {
 		'cycle-tour-sardinia': 'cycle-tour-sardinia',
 		'cycle-ronda-granada': 'cycle-ronda-granada',
 		'gallery-cycle-ronda': 'gallery-cycle-ronda',
-		
+		'gallery-cycle-journey-andalusia': 'gallery-cycle-journey-andalusia',
+		'gallery-cycle-tour-granada': 'gallery-cycle-tour-granada',
 	},
 } 

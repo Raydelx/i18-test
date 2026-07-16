@@ -1,0 +1,179 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Container from "../../components/container.astro";
+import Sectionhead from "../../components/sectionhead.astro";
+import "photoswipe/style.css";
+
+const images = [
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-tour-granada/ctg-6.jpeg",
+    thumb: "/cycle-tour/leisure-cycling/cycle-tour-granada/ctg-6.jpeg",
+    alt: "Cycle Tour Granada photo 6",
+    width: 1600,
+    height: 1200,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-tour-granada/ctg-7.jpg",
+    thumb: "/cycle-tour/leisure-cycling/cycle-tour-granada/ctg-7.jpg",
+    alt: "Cycle Tour Granada photo 7",
+    width: 4080,
+    height: 2296,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-tour-granada/ctg-8.jpg",
+    thumb: "/cycle-tour/leisure-cycling/cycle-tour-granada/ctg-8.jpg",
+    alt: "Cycle Tour Granada photo 8",
+    width: 4080,
+    height: 2296,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-tour-granada/ctg-9.jpg",
+    thumb: "/cycle-tour/leisure-cycling/cycle-tour-granada/ctg-9.jpg",
+    alt: "Cycle Tour Granada photo 9",
+    width: 4080,
+    height: 2296,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-tour-granada/ctg-10.jpg",
+    thumb: "/cycle-tour/leisure-cycling/cycle-tour-granada/ctg-10.jpg",
+    alt: "Cycle Tour Granada photo 10",
+    width: 4080,
+    height: 2296,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-tour-granada/ctg-11.jpg",
+    thumb: "/cycle-tour/leisure-cycling/cycle-tour-granada/ctg-11.jpg",
+    alt: "Cycle Tour Granada photo 11",
+    width: 4080,
+    height: 2296,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-tour-granada/ctg-12.jpg",
+    thumb: "/cycle-tour/leisure-cycling/cycle-tour-granada/ctg-12.jpg",
+    alt: "Cycle Tour Granada photo 12",
+    width: 4080,
+    height: 2296,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-tour-granada/ctg-13.jpg",
+    thumb: "/cycle-tour/leisure-cycling/cycle-tour-granada/ctg-13.jpg",
+    alt: "Cycle Tour Granada photo 13",
+    width: 4080,
+    height: 2296,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-tour-granada/ctg-14.jpg",
+    thumb: "/cycle-tour/leisure-cycling/cycle-tour-granada/ctg-14.jpg",
+    alt: "Cycle Tour Granada photo 14",
+    width: 4080,
+    height: 2296,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-tour-granada/ctg-15.jpeg",
+    thumb: "/cycle-tour/leisure-cycling/cycle-tour-granada/ctg-15.jpeg",
+    alt: "Cycle Tour Granada photo 15",
+    width: 1600,
+    height: 1200,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-tour-granada/ctg-16.jpg",
+    thumb: "/cycle-tour/leisure-cycling/cycle-tour-granada/ctg-16.jpg",
+    alt: "Cycle Tour Granada photo 16",
+    width: 2560,
+    height: 1440,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-tour-granada/ctg-17.jpeg",
+    thumb: "/cycle-tour/leisure-cycling/cycle-tour-granada/ctg-17.jpeg",
+    alt: "Cycle Tour Granada photo 17",
+    width: 1600,
+    height: 1200,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-tour-granada/ctg-18.jpg",
+    thumb: "/cycle-tour/leisure-cycling/cycle-tour-granada/ctg-18.jpg",
+    alt: "Cycle Tour Granada photo 18",
+    width: 4080,
+    height: 2296,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-tour-granada/ctg-19.jpeg",
+    thumb: "/cycle-tour/leisure-cycling/cycle-tour-granada/ctg-19.jpeg",
+    alt: "Cycle Tour Granada photo 19",
+    width: 1200,
+    height: 1600,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-tour-granada/ctg-20.jpeg",
+    thumb: "/cycle-tour/leisure-cycling/cycle-tour-granada/ctg-20.jpeg",
+    alt: "Cycle Tour Granada photo 20",
+    width: 1600,
+    height: 1200,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-tour-granada/ctg-21.jpg",
+    thumb: "/cycle-tour/leisure-cycling/cycle-tour-granada/ctg-21.jpg",
+    alt: "Cycle Tour Granada photo 21",
+    width: 4080,
+    height: 2296,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-tour-granada/ctg-22.jpeg",
+    thumb: "/cycle-tour/leisure-cycling/cycle-tour-granada/ctg-22.jpeg",
+    alt: "Cycle Tour Granada photo 22",
+    width: 1600,
+    height: 1200,
+  },
+  {
+    src: "/cycle-tour/leisure-cycling/cycle-tour-granada/ctg-23.jpg",
+    thumb: "/cycle-tour/leisure-cycling/cycle-tour-granada/ctg-23.jpg",
+    alt: "Cycle Tour Granada photo 23",
+    width: 4080,
+    height: 2296,
+  },
+];
+---
+
+<Layout title="Gallery">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Cycle Tour Granada</Fragment>
+      <Fragment slot="desc"></Fragment>
+    </Sectionhead>
+
+    <div class="mt-16">
+      <div
+        class="pswp-gallery grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-6 object-fill"
+        id="gallery">
+        {
+          images.map((image) => (
+            <a
+              class="object-cover"
+              href={image.src}
+              data-cropped="true"
+              data-pswp-width={image.width}
+              data-pswp-height={image.height}
+              target="_blank">
+              <img
+                class="w-full md:h-64 md:w-72 md:size-64 object-cover rounded-xl hover:scale-105 duration-200 transition-all"
+                src={image.thumb}
+                alt={image.alt}
+              />
+            </a>
+          ))
+        }
+      </div>
+    </div>
+
+    <script>
+      import PhotoSwipeLightbox from "photoswipe/lightbox";
+
+      const lightbox = new PhotoSwipeLightbox({
+        gallery: "#gallery",
+        children: "a",
+        pswpModule: () => import("photoswipe"),
+      });
+      lightbox.init();
+    </script>
+  </Container>
+</Layout>
