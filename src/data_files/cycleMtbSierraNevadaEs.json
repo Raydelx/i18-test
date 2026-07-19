@@ -1,0 +1,71 @@
+{
+    
+    "cycleSardiniaEs": [   
+      
+      {
+        "name": "Group size",
+        "text1": "This mountain bike tour is designed for private groups of 6 to 24 riders. It is ideal for MTB clubs, cycling associations, corporate groups, and groups of friends looking to explore the Sierra Nevada together. Whether you're a small group of six or a larger group of up to twenty-four cyclists, the tour can be tailored to suit your group's needs."
+        
+      },
+      {
+        "name": "Price  ",
+        "text1": "The published price is based on a group of 18-24 participants. ",        
+        "text2": "Beetween 6 - 11 participants the price is 2195€ per person",        
+        "text3": "Beetween 12 - 17 participants the price is 2095€ per person",        
+        "text4": "Beetween 18 - 24 participants the price is 1995€ per person",        
+        "text5": "Please contact us for a personalised quotation based on your group size and travel dates."        
+      },
+      {
+        "name": "Tailor-made version ",
+        "text1": "This tour can be tailored to your group's preferences. We can adapt the itinerary, adjust the daily stages where possible, and schedule the tour on your preferred travel dates. Whether you're looking for a more relaxed pace, or a greater challenge, we'll create an experience that best suits your group.  "
+      },
+      {
+        "name": "Bicycle",
+        "text1": "The tour includes the use of a high-quality mountain bike, with the choice of a standard MTB or an e-MTB. If your group prefers to bring its own bicycles, this is also possible. In that case, the bike rental cost will be deducted from the tour price. Please let us know your preference when requesting a quotation. "
+      },
+      {
+        "name": "Accommodations ",
+        "text1": "Accommodation is provided in carefully selected hotels that offer a comfortable and relaxing stay throughout the tour. The accommodations include breakfast and provide attentive service, often with facilities such as a restaurant, bar, garden, and swimming pool.  Rooms are standard single or double rooms with private bathrooms, depending on the hotel. For smaller groups, private rooms are available for all participants. However, for larger groups, room sharing may be necessary due to hotel capacity and availability. In such cases, participants will be accommodated in shared twin or double rooms. Regardless of the room allocation, we always select hotels that meet our standards for comfort, quality, and service"
+        
+      },
+      {
+        "name": "Transport",
+        "text1": "On this tour, we provide private transportation to ensure smooth transfers and maximum flexibility. Montaraz uses its own 8-seat passenger vehicle and, when required for groups larger than seven participants, works with a trusted private transport company. Transportation is provided to take guests to the starting point of each itinerary and to collect them at the end of the ride.",  
+        "text2": "The Montaraz 8-seat passenger car also serves as a support vehicle for safety and comfort. It is available if someone needs a rest, experiences fatigue, or requires assistance along the route.",  
+        "text3": "We also arrange airport transfers at the beginning and end of the tour, allowing you to travel comfortably and enjoy the experience without logistical concerns."  
+        
+      },
+      {
+        "name": "Guided Tour",
+        "text1": "Throughout the tour, a logistics support team with assistance vehicles is available to help ensure the smooth running of each stage and to provide support in the event of unforeseen situations. The support team is stationed at several strategic locations along the route, where designated assistance and checkpoint areas are set up. "
+      },
+      {
+        "name": "Transport  ",
+        "text1": "On this tour, we provide private transportation to ensure smooth transfers and maximum flexibility. Montaraz uses its own 8-seat passenger vehicle and, when required for groups larger than seven participants, works with a trusted private transport company. Transportation is provided to take guests to the starting point of each itinerary and to collect them at the end of the ride.",        
+        "text2": "The Montaraz 8-seat passenger car also serves as a support vehicle for safety and comfort. It is available if someone needs a rest, experiences fatigue, or requires assistance along the route.",        
+        "text3": "We also arrange airport transfers at the beginning and end of the tour, allowing you to travel comfortably and enjoy the experience without logistical concerns."        
+      },
+      
+      
+      {
+        "name": "Flight Information ",
+        "text1": "At the start of the tour, participants arrive either at the airport or trainstation in Málaga or Granada, where a private transfer will be waiting to take them to their hotel."
+      },
+      {
+        "name": "Dietary Requirements",
+        "text1": "There are no problems accommodating vegetarian or vegan diets on this tour. Please let us know in advance if you have specific dietary requirements, so that our accommodations and restaurants can prepare accordingly."
+      },
+      {
+        "name": "Weather in Granada",
+        "text1": "General Weather Conditions in Spring ",
+        "text2": "Spring is an excellent time for mountain biking in the province of Granada, with pleasant temperatures and long daylight hours. However, due to the varying altitudes, weather conditions can differ significantly between regions."
+        
+        
+      }
+        
+      
+      
+    ]
+  }
+
+  

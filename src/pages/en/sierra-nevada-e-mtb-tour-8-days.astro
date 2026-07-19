@@ -1,0 +1,1209 @@
+---
+import Container from "@/components/container.astro";
+import InformationProducts from "@/components/ui/informationProducts.astro";
+import Icon from "@/components/Icon.astro";
+import Layout from "@/layouts/Layout.astro";
+import SliderReact from "@/hooks/SliderReact";
+import Includes from "@/components/products-components/includes.astro";
+import Route from "@/components/ui/icons/route.astro";
+import cycleSardiniaNl from "@/data_files/cycleMtbSierraNevadaEs.json";
+import { getI18N } from "@/i18n/";
+import AccordionProducts from "@/components/accordionProducts.astro";
+import BookButton from "@/components/book-button.astro";
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+
+import { Accordion, AccordionItem } from "free-astro-components";
+
+// Duplica y cambia las rutas para añadir o modificar las fotos
+
+const BIKES = [
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-bike.webp",
+  },
+];
+
+const IMG = [
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-1.webp",
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-2.webp",
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-3.webp",
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-4.webp",
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-5.webp",
+  },
+];
+
+type ReviewsProps = {
+  header: {
+    name: string;
+    productName: string;
+    valoration: string;
+  };
+  body: {
+    text: string;
+  };
+};
+---
+
+<Layout title="">
+  <Container>
+    <main class="mt-16">
+      <!-- Foto, nombre y destino -->
+
+      <div
+        class="bg-center bg-cover bg-no-repeat bg-[url('/public/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-principal.webp')] h-[25rem] lg:h-[45rem] rounded-2xl">
+        <div class="flex flex-col justify-end h-full p-6 w-auto">
+          <div class="flex gap-2">
+            <Icon icon="destiny-logo" size="1.6rem" color="white" />
+            <p
+              class="text-xl font-normal text-white lg:text-2xl flex flex-col justify-end h-full [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
+              Granada
+            </p>
+          </div>
+          <div>
+            <h1
+              class="text-3xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-5xl [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
+              Sierra Nevada E-BikeTour 8 Days
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- Informacion general de los viajes -->
+
+      <div
+        class="grid grid-cols-2 md:grid-cols-6 h-auto mt-3 gap-3 place-content-start md:px-6">
+        <InformationProducts title={i18n.INFO_PRODUCTS.PRICE} subtitle="1995">
+          <div slot="icon">
+            <Icon icon="price-logo" size="1.6rem" color="#ff5e00" />
+          </div>
+        </InformationProducts>
+        <InformationProducts
+          title={i18n.INFO_PRODUCTS.PRE_BOOKING}
+          subtitle="30%">
+          <div slot="icon">
+            <Icon icon="price-logo" size="1.6rem" color="#ff5e00" />
+          </div>
+        </InformationProducts>
+        <InformationProducts
+          title={i18n.INFO_PRODUCTS.MINIMUM_OF_PERSONS}
+          subtitle="">
+          <div slot="icon">
+            <Icon icon="group-logo" size="1.6rem" color="#ff5e00" />
+          </div>
+        </InformationProducts>
+        <InformationProducts
+          title={i18n.INFO_PRODUCTS.DURATION}
+          subtitle="8 Days">
+          <div slot="icon">
+            <Icon icon="timer-logo" size="1.6rem" color="#ff5e00" />
+          </div>
+        </InformationProducts>
+        <InformationProducts
+          title={i18n.INFO_PRODUCTS.TOUR_TYPE}
+          subtitle="Guided">
+          <div slot="icon">
+            <Icon icon="guide-logo" size="1.6rem" color="#ff5e00" />
+          </div>
+        </InformationProducts>
+        <InformationProducts
+          title={i18n.INFO_PRODUCTS.SEASON}
+          subtitle2="Spring Autumn">
+          <div slot="icon">
+            <Icon icon="spring-logo" size="1.6rem" color="#ff5e00" />
+            <Icon icon="autumn-logo" size="1.6rem" color="#ff5e00" />
+          </div>
+        </InformationProducts>
+      </div>
+
+      <!-- Informacion tecnica -->
+
+      <div class="">
+        <div
+          class="grid grid-cols-2 justify-between md:grid-cols-6 h-auto mt-3 gap-3 md:px-6">
+          <InformationProducts
+            title={i18n.INFO_PRODUCTS.TOTAL_DISTANCE}
+            subtitle="324 km">
+            <div slot="icon">
+              <Icon icon="distance-logo" size="1.6rem" color="#ff5e00" />
+            </div>
+          </InformationProducts>
+
+          <InformationProducts
+            title={i18n.INFO_PRODUCTS.TOTAL_ASCENT}
+            subtitle="6.210 m">
+            <div slot="icon">
+              <Icon icon="up-logo" size="1.6rem" color="#ff5e00" />
+            </div>
+          </InformationProducts>
+          <InformationProducts
+            title={i18n.INFO_PRODUCTS.TOTAL_DESCENT}
+            subtitle="7.550 m">
+            <div slot="icon">
+              <Icon icon="down-logo" size="1.6rem" color="#ff5e00" />
+            </div>
+          </InformationProducts>
+          <InformationProducts
+            title={i18n.INFO_PRODUCTS.ROUTE_TYPE}
+            subtitle="Point-to-point">
+            <div slot="icon">
+              <Route />
+            </div>
+          </InformationProducts>
+          <InformationProducts
+            title={i18n.INFO_PRODUCTS.DIFFICULTY}
+            subtitle="S0 - S1">
+            <div class="flex gap-1" slot="icon">
+              <Icon icon="difficulty-logo" size="2rem" color="#ff5e00" />
+            </div>
+          </InformationProducts>
+          <InformationProducts title="E-Bike" subtitle="Yes">
+            <div slot="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="45"
+                height="30"
+                fill="#ff5e00"
+                viewBox="80 90 330 330"
+                ><path
+                  d="M83.172,319.817Q85.646,320,88.1,320A64,64,0,0,0,136.544,214.29a64.376,64.376,0,0,0-11.981-10.841l9.59-17.982,46.293,46.293A31.986,31.986,0,1,0,235.7,264h20.823a64.023,64.023,0,1,0,42.47-68.439l-10.025-19.605L300.944,152H316a20,20,0,0,0,0-40H276a20,20,0,0,0,0,40h7.053l-8,16H143.469l16.49-30.918L160,137l4.8-9H200a8,8,0,0,0,0-16H166.624A24.039,24.039,0,0,0,144,96H120a8,8,0,0,0-8,8v32a8,8,0,0,0,8,8h18.136l-27.748,52.028a64.045,64.045,0,0,0-86.2,55.141h0A64.072,64.072,0,0,0,83.172,319.817ZM312,256a8,8,0,1,1,8,8A8.009,8.009,0,0,1,312,256Zm-20-38.953L303.183,238.9a24.037,24.037,0,0,0-5.8,9.1h-24.7A48.052,48.052,0,0,1,292.007,217.047Zm-14.122-27.618,6.775,13.25A64.062,64.062,0,0,0,256.521,248H240a31.8,31.8,0,0,0-4.446-16.244ZM260.686,184l-36.443,36.443a31.9,31.9,0,0,0-32.483,0L155.314,184ZM96,256a8,8,0,1,1-8-8A8.009,8.009,0,0,1,96,256Z"
+                ></path><path
+                  d="M380,168H344v16h36a92,92,0,0,1,0,184H327.324a47.991,47.991,0,0,0-94.642,0H190.99A32.057,32.057,0,0,0,160,344H120a8,8,0,0,0-8,8H96a8,8,0,1,0,0,16h16v16H96a8,8,0,1,0,0,16h16a8,8,0,0,0,8,8h40a32.057,32.057,0,0,0,30.987-24h41.692a47.991,47.991,0,0,0,94.642,0H380a108,108,0,0,0,0-216ZM294.659,380.438l-16,24-13.312-8.876L273.055,384H272a8,8,0,0,1-6.653-12.438l16-24,13.312,8.876L286.951,368H288a8,8,0,0,1,6.656,12.438Z"
+                ></path></svg
+              >
+            </div>
+          </InformationProducts>
+        </div>
+      </div>
+
+      <div class="mt-10 max-w-[320px]">
+        <BookButton />
+      </div>
+
+      <!--  Include, exclude, complementaries  -->
+      <div
+        class="grid md:grid-cols-2 lg:grid-cols-2 mt-10 md:mt-16 md:mb-26 gap-16 md:gap-20 wrap">
+        <!-- Include -->
+        <Includes
+          title={i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.INCLUDED
+            .TITLE}>
+          <ul slot="description" class="mt-4 flex flex-col gap-2">
+            <li class="flex gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Professional guides</p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">
+                Liability insurance and assistance
+              </p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">
+                Financial Protection Guarantee
+              </p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">
+                Support vehicles and bike trailers
+              </p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Luggage transport</p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Airport transfer</p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">
+                Accommodation including breakfast
+              </p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Breakfast: 7 days</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Lunch: 5 picnics</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">E-bike</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">7 x Dinner</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Water bottle</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Cycle t-shirt</p>
+            </li>
+          </ul>
+        </Includes>
+        <!-- Exclude -->
+        <Includes
+          title={i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.NOT_INCLUDED
+            .TITLE}>
+          <div slot="description" class="flex flex-col gap-2 mt-4">
+            <li class="flex gap-2">
+              <div>
+                <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
+              </div>
+              <p class="max-w-[320px] text-md">
+                Travel & cancellation insurance (It is obligatory to take out
+                travel insurance before departure)
+              </p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Flight</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Lunch free day</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Helmet</p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Extra meals</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Extra excursions</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Personal expenses</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Tips</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Extra nights</p>
+            </li>
+            <li class="flex gap-2">
+              <div>
+                <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
+              </div>
+              <p class="max-w-[320px] text-md">
+                Private transport after or before the tour
+              </p>
+            </li>
+          </div>
+        </Includes>
+        <!-- Complementaries -->
+      </div>
+    </main>
+
+    <div class="grid md:grid-cols-2 h-auto gap-10 md:gap-20 md:py-36 py-10">
+      <div class="static h-[385px] hidden md:block">
+        <img
+          class="rounded-xl absolute md:w-[20rem] lg:w-[25rem] hover:z-40 transition-all duration-300 ease-out hover:scale-105"
+          src="/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-2.webp"
+          alt="ciclista mirando la sierra con cicicleta a su lado"
+        />
+        <img
+          class="rounded-xl absolute md:w-[10rem] lg:w-[20rem] md:mt-48 lg:mt-40 ml-6 z-10 grayscale-[60%] hover:grayscale-0 transition-all duration-300 ease-out hover:scale-105"
+          src="/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-3.webp"
+          alt="ciclista mirando la sierra con cicicleta a su lado"
+        />
+        <img
+          class="rounded-xl absolute md:w-[20rem] lg:w-[15em] ml-64 md:-mt-24 lg:-mt-32 grayscale-[60%] hover:grayscale-0 transition-all duration-300 ease-out hover:scale-105"
+          src="/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-4.webp"
+          alt="ciclista mirando la sierra con cicicleta a su lado"
+        />
+      </div>
+
+      <div class="grid gap-5 md:-mt-20">
+        <div>
+          <h2
+            class="max-w-2xl mb-4 font-bold text-2xl md:text-4xl xl:text-5xl bg-[#3c5546] inline-block text-white px-6 py-4 rounded-lg">
+            {i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.AVAILABILITY}
+          </h2>
+          <p>
+            This tour has no fixed departure dates. Contact us with your
+            preferred travel dates, and we'll be happy to arrange a tour that
+            fits your schedule.
+          </p>
+          <div class="gap-4 mt-6">
+            <ul class="text-lg">
+              <div class="grid lg:grid-cols-2 gap-2 mt-4">
+                <div class="flex gap-2">
+                  <Icon icon="spring-logo" size="1.6rem" color="#ff5e00" />
+                  <p>Spring</p>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 mt-10 items-center">
+      <div>
+        <h2
+          class="max-w-2xl mb-4 font-bold text-2xl md:text-4xl xl:text-5xl bg-[#3c5546] inline-block text-white px-6 py-2 rounded-lg">
+          Bicycle
+        </h2>
+        <p>🔶 e-MTB HARDTAIL T -Tronik X 9.1 800Wh</p>
+      </div>
+      <div class="w-full overflow-x-auto">
+        <ol class="w-full">
+          {(<SliderReact IMG={BIKES} client:visible />)}
+        </ol>
+      </div>
+    </div>
+
+    <AccordionProducts
+      title="Travel<br />Information"
+      cycleSardiniaEs={cycleSardiniaNl}
+    />
+
+    <div
+      class="grid lg:grid-cols-3 lg:grid-rows-2 gap-8 mb-10 lg:mb-30 lg:mt-20 rounded-2xl">
+      <div class="text-center bg-[#3c5546] rounded-xl p-4">
+        <h2
+          class="max-w-2xl font-bold text-2xl md:text-2xl text-white px-6 py-2 rounded-lg">
+          Weather Conditions in Granada (Lower Altitudes)
+        </h2>
+        <p class="mb-4 px-6 py-2 text-white font-bold">
+          Conditions are generally very pleasant, with noticeable temperature
+          differences between day and night.
+        </p>
+        <p class="px-6 py-2 text-white">🔶 Daytime temperatures: 20°C–26°C</p>
+        <p class="px-6 py-2 text-white">
+          🔶 Night-time temperatures: 10°C–13°C
+        </p>
+        <p class="px-6 py-2 text-white">🔶 Climate: Mild and mostly sunny</p>
+        <p class="px-6 py-2 text-white">
+          🔶 Rainfall: Small chance of occasional showers (approximately 5–6
+          rainy days per month)
+        </p>
+      </div>
+
+      <div class="text-center bg-[#3c5546] rounded-xl p-4">
+        <h2
+          class="max-w-2xl font-bold text-2xl md:text-2xl text-white px-6 py-2 rounded-lg">
+          Weather Conditions in Gorafe / Semi-Arid Areas
+        </h2>
+        <p class="mb-4 px-6 py-2 text-white font-bold">
+          The main factors here are heat and strong sun exposure.
+        </p>
+        <p class="px-6 py-2 text-white">
+          🔶 Temperatures are similar to or slightly higher than in Granada.
+        </p>
+        <p class="px-6 py-2 text-white">
+          🔶 The sun makes it feel warmer than the actual temperature.
+        </p>
+        <p class="px-6 py-2 text-white">
+          🔶 Dry climate with very little shade.
+        </p>
+      </div>
+
+      <div class="text-center bg-[#3c5546] rounded-xl p-4">
+        <h2
+          class="max-w-2xl font-bold text-2xl md:text-2xl text-white px-6 py-2 rounded-lg">
+          Weather Conditions in the Sierra Nevada (1,800–2,000 m)
+        </h2>
+        <p class="mb-4 px-6 py-2 text-white font-bold">
+          At higher elevations, temperatures are considerably lower—often up to
+          10°C cooler than in Granada.
+        </p>
+        <p class="mb-4 px-6 py-2 text-white">Typical conditions include:</p>
+        <p class="px-6 py-2 text-white">🔶 Cool mornings</p>
+        <p class="px-6 py-2 text-white">🔶 Mild temperatures around midday</p>
+        <p class="px-6 py-2 text-white">🔶 Cold descents</p>
+        <p class="px-6 py-2 text-white">
+          🔶 Daytime temperatures: approximately 10°C–20°C
+        </p>
+        <p class="px-6 py-2 text-white">🔶 Feels like: Cooler due to wind</p>
+        <p class="px-6 py-2 text-white">
+          🔶 Weather: Rapid weather changes are possible
+        </p>
+      </div>
+      <div class="text-center bg-[#3c5546] rounded-xl p-4 lg:col-start-2">
+        <h2
+          class="max-w-2xl font-bold text-2xl md:text-2xl text-white px-6 py-2 rounded-lg">
+          Important Considerations
+        </h2>
+        <p class="mb-4 px-6 py-2 text-white font-bold">
+          During the tour, riders may experience:
+        </p>
+
+        <p class="px-6 py-2 text-white">
+          🔶 Large temperature variations (up to 15°C in a single day)
+        </p>
+        <p class="px-6 py-2 text-white">
+          🔶 Rapid weather changes in the mountains
+        </p>
+        <p class="px-6 py-2 text-white">🔶 Wind in exposed areas</p>
+        <p class="px-6 py-2 text-white">
+          🔶 Strong UV radiation, even when temperatures are relatively low
+        </p>
+      </div>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-4 items-center">
+      <div>
+        <h2
+          class="mb-4 font-bold text-2xl md:text-4xl xl:text-5xl bg-[#3c5546] inline-block text-white px-6 py-4 rounded-lg">
+          What to Pack for Your Cycling Holidays
+        </h2>
+        <p class="mb-2">
+          A well-packed bag makes a smoother ride! Here’s what we recommend for
+          your cycle tour through Granada.
+        </p>
+        <p class="font-bold mb-2">Checklist</p>
+        <p class="font-bold">Cycling clothing:</p>
+        <p>
+          🔶 Cycling (padded) shorts and jerseys – 2–3 sets (long and short
+          sleeves)
+        </p>
+        <p>🔶 Lightweight windproof and/or waterproof jacket (rain jacket)</p>
+        <p>🔶 Sweater or fleece (extra layers for cooler conditions)</p>
+        <p>
+          🔶 Padded cycling gloves (spring and autumn mornings can be chilly)
+        </p>
+        <p>🔶 Arm and leg warmers (optional but very useful)</p>
+        <p>🔶 Sports socks (quick-dry) shirts</p>
+        <p>🔶 Lightweight thermal base layer</p>
+        <p>🔶 Short-finger cycling gloves</p>
+        <p>🔶 Full-finger cycling gloves (recommended for mountain stages)</p>
+        <p class="mb-2">🔶 Cycling shoes</p>
+
+        <p class="font-bold">Sun & weather protection:</p>
+        <p>🔶 Sunhat</p>
+        <p>🔶 Neck warmer (buff)</p>
+        <p>🔶 Sunglasses</p>
+        <p>🔶 Cycling cap or buff (sun protection under the helmet)</p>
+        <p>🔶 Sunscreen (high SPF)</p>
+        <p class="mb-2">🔶 Lip balm with SPF (recommended)</p>
+
+        <p class="font-bold">Equipment & accessories:</p>
+        <p>🔶 Water bottle (provided by us))</p>
+        <p>🔶 Bike helmet</p>
+        <p>🔶 Gel seat cover for added comfort (optional)</p>
+        <p>🔶 Small rucksack</p>
+        <p class="mb-2">🔶 GPS device with the provided GPX routes</p>
+
+        <p class="font-bold">Bike Essentials</p>
+        <p>🔶 Spare inner tube</p>
+        <p>🔶 Mini pump or CO₂ inflator</p>
+        <p>🔶 Multi-tool</p>
+        <p>🔶 Chain quick link</p>
+        <p class="mb-2">🔶 Tubeless repair kit</p>
+
+        <p class="font-bold">Clothing for After the Ride</p>
+        <p>🔶 Comfortable casual clothing</p>
+        <p>🔶 Warm fleece or jumper for the evenings</p>
+        <p>🔶 Comfortable walking shoes</p>
+        <p class="mb-2">🔶 Swimwear</p>
+
+        <p class="font-bold">Documents & health:</p>
+        <p>🔶 Passport</p>
+        <p>🔶 Travel insurance</p>
+        <p>🔶 Personal first aid kit</p>
+        <p>🔶 Insect repellent</p>
+        <p class="mb-2">🔶 Personal medication (if applicable)</p>
+        <p>
+          If you have any questions about the recommended equipment or are
+          unsure what to bring, please do not hesitate to contact us.
+        </p>
+      </div>
+      <div>
+        <img
+          class="rounded-2xl"
+          src="/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-map.webp"
+          alt="Kaart van Sardinië-tour"
+        />
+      </div>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-4 lg:mt-20 mt-10 mb-10">
+      <div>
+        <p
+          class="max-w-2xl mb-4 font-bold text-2xl md:text-4xl xl:text-5xl bg-[#3c5546] inline-block text-white px-6 py-2 rounded-lg">
+          Requirements
+        </p>
+        <p>🔶 Valid travel insurance</p>
+        <p>
+          🔶 Signed release of liability form, to be completed before the start
+          of the tour
+        </p>
+        <p>🔶 Be in good physical condition</p>
+        <p>
+          🔶 Have previous mountain biking (MTB) experience and be confident
+          riding on forest tracks, gravel roads, and mountain trails.
+        </p>
+
+        <p>🔶 Helmet, mandatory during all rides</p>
+        <p>
+          🔶 Personal responsibility for health, fitness and any existing
+          medical conditions
+        </p>
+        <p>🔶 Emergency contact information, to be provided before departure</p>
+        <p>🔶 Be able to follow GPX routes using a GPS device or smartphone.</p>
+        <p>
+          🔶 Be capable of carrying out basic bike repairs, such as fixing a
+          puncture.
+        </p>
+        <p>
+          🔶 Bring appropriate cycling clothing suitable for changing mountain
+          weather conditions.
+        </p>
+      </div>
+
+      <div>
+        <h2
+          class="max-w-2xl mb-4 font-bold text-2xl md:text-4xl xl:text-5xl bg-[#3c5546] inline-block text-white px-6 py-2 rounded-lg">
+          Terms & Conditions
+        </h2>
+        <p class="max-w-2xl mb-6 md:px-0">
+          Please review our <a
+            href="terms-and-conditions"
+            class="text-[#ff5e00] hover:text-[#ff863f] visited:text-purple-600 font-bold"
+            target="_blank"
+            rel="noopener noreferrer">Terms & Conditions</a
+          > before completing your booking. By confirming your reservation, you agree
+          to all policies regarding payments, cancellations, and participation requirements.
+          See Blog Cycle Tour Granada.
+        </p>
+      </div>
+    </div>
+
+    <!-- Slider Photos -->
+    <section class="m-auto md:w-full rounded-xl md:px-8 md:py-20">
+      <ol class="relative mt-16">
+        {(<SliderReact IMG={IMG} client:visible />)}
+      </ol>
+    </section>
+
+    <div class="mt-8 mb-8">
+      <h2
+        class="max-w-2xl mb-4 font-bold text-2xl md:text-4xl xl:text-5xl bg-[#3c5546] inline-block text-white px-6 py-2 rounded-lg">
+        Welcome To Granada
+      </h2>
+
+      <p class="mb-2">
+        Discover the Sierra Nevada, the highest mountain on the Iberian
+        Peninsula, on an unforgettable mountain bike adventure through one of
+        the country's most diverse natural landscapes. This circular route takes
+        you around the entire mountain range, revealing its many contrasts—from
+        the lush southern slopes of the Alpujarras and the remote northern face
+        of the Sierra Nevada to the spectacular badlands of the Gorafe Desert.
+        Beyond its breathtaking scenery, Granada is also renowned for its rich
+        history and culture. During your free day, you can explore the vibrant
+        city of Granada and visit the world-famous Alhambra, a masterpiece of
+        Moorish architecture and one of Spain's most iconic landmarks. Together,
+        the spectacular landscapes and unique cultural heritage make this tour a
+        truly unforgettable experience.
+      </p>
+    </div>
+
+    <section>
+      <!--  TimeLine per days  -->
+      <div class="">
+        <h2
+          class="max-w-2xl mb-4 font-bold text-2xl md:text-4xl xl:text-4xl bg-[#3c5546] inline-block text-white px-6 py-2 rounded-lg">
+          {
+            i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.WHAT_TO_EXPECT
+              .TITLE
+          }
+        </h2>
+
+        <p class="text-lg text-gray-900 mb-1">
+          <span class="text-xl strong">🔶</span>Guided mountain bike tour with
+          GPS navigation and full logistical support.
+        </p>
+        <p class="text-lg text-gray-900 mb-1">
+          <span class="text-xl strong">🔶</span>Security assistant available to
+          support the group and coordinate in case of emergencies
+        </p>
+        <p class="text-lg text-gray-900 mb-1">
+          <span class="text-xl strong">🔶</span>Safety checkpoints at designated
+          locations throughout the ride to monitor group progress and rider
+          wellbeing
+        </p>
+        <p class="text-lg text-gray-900 mb-1">
+          <span class="text-xl strong">🔶</span>Regular rest stops and
+          refreshment breaks
+        </p>
+        <p class="text-lg text-gray-900 mb-1">
+          <span class="text-xl strong">🔶</span>Bike setup and basic mechanical
+          support
+        </p>
+        <p class="text-lg text-gray-900 mb-1">
+          <span class="text-xl strong">🔶</span>Weather monitoring and route
+          adjustments when necessary
+        </p>
+        <p class="text-lg text-gray-900 mb-1">
+          <span class="text-xl strong">🔶</span>High-quality logistics
+        </p>
+        <p class="text-lg text-gray-900 mb-1">
+          <span class="text-xl strong">🔶</span>Local expertise
+        </p>
+        <p class="text-lg text-gray-900 mb-1">
+          <span class="text-xl strong">🔶</span> Private group experience, ideal for
+          MTB clubs and groups of friends (6–24 riders).
+        </p>
+        <p class="text-lg text-gray-900 mb-1">
+          <span class="text-xl strong">🔶</span>Accommodation in carefully
+          selected hotels, with private standard single or double rooms where
+          available. For larger groups, shared twin rooms may be used.
+        </p>
+        <p class="text-lg text-gray-900 mb-1">
+          <span class="text-xl strong">🔶</span>Ride at your own pace, with
+          support vehicles and refreshment stops at strategic locations along
+          the route.
+        </p>
+        <p class="text-lg text-gray-900 mb-1">
+          <span class="text-xl strong">🔶</span>Average daily distance: Around
+          70 km with 1,000–1,500 metres of climbing.
+        </p>
+        <p class="text-lg text-gray-900 mb-1">
+          <span class="text-xl strong">🔶</span>Terrain: The routes are
+          predominantly off-road, with a high proportion of gravel tracks,
+          complemented by flowing singletracks and occasional technical
+          sections.
+        </p>
+        <p class="text-lg text-gray-900 mb-1">
+          <span class="text-xl strong">🔶</span>A journey through diverse
+          landscapes, including the Sierra Nevada, the Alpujarras, the northern
+          slopes of the mountains, and the unique Gorafe Desert.
+        </p>
+        <p class="text-lg text-gray-900 mb-1">
+          <span class="text-xl strong">🔶</span>Free day in Granada, with the
+          opportunity to explore the historic city and visit the Alhambra.
+        </p>
+
+        <Accordion class="mt-6 mb-10" variant="splitted">
+          <AccordionItem title="Day 1 – Arrival in Níguelas">
+            <p class="">
+              Upon arrival at Málaga Airport, you will be transferred to
+              Níguelas, a charming mountain village nestled on the slopes of the
+              Sierra Nevada in the beautiful Lecrín Valley. Here, you'll stay in
+              a peaceful rural hotel, the perfect base for the adventure ahead.
+            </p>
+            <p class="">
+              We recommend arriving in the morning, allowing plenty of time to
+              settle in and enjoy a relaxed start to your holiday. To celebrate
+              the beginning of the tour, we've arranged a special welcome
+              surprise: a delicious, freshly prepared paella lunch. It's the
+              perfect way to get to know your fellow riders and start your
+              mountain biking adventure in true Andalusian style.
+            </p>
+          </AccordionItem>
+
+          <AccordionItem title="Day 2 – Níguelas to Guadix">
+            <div class="grid md:grid-cols-2 gap-8 md:gap-32">
+              <div class="">
+                <p class="">
+                  After breakfast, we transfer by bus to the starting point of
+                  today's ride. From here, we begin our mountain bike adventure
+                  along the northern slopes of the Sierra Nevada Natural Park,
+                  cycling through spectacular mountain scenery towards the
+                  historic region of Guadix, renowned for its unique cave
+                  dwellings. For the next two nights, we'll stay in a
+                  traditional cave hotel, offering a truly authentic and
+                  unforgettable Andalusian experience.
+                </p>
+              </div>
+
+              <div class="">
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="distance-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-neutral-900 text-xl font-bold">
+                      Total Distance
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">70 km</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="up-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                      Total Ascent
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">1600 m</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="down-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                      Total Descent
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">2000 m</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="timer-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                      Duration Trial
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">6 hours</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="difficulty-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                      Difficulty
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">S0 - S1</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </AccordionItem>
+
+          <AccordionItem title="Day 3 – Gorafe Desert">
+            <div class="grid md:grid-cols-2 gap-8 md:gap-32">
+              <div class="">
+                <p class="">
+                  Today's stage takes us directly from the hotel into one of the
+                  most extraordinary landscapes in southern Spain. We ride
+                  through the spectacular Gorafe Desert, exploring the heart of
+                  the UNESCO Granada Geopark, a unique landscape shaped by
+                  millions of years of erosion. The route winds through dramatic
+                  badlands, colourful canyons, dry riverbeds, and striking rock
+                  formations. After completing the loop through the desert, we
+                  return to our cave hotel by transport in Guadix for a second
+                  overnight stay.
+                </p>
+              </div>
+
+              <div class="">
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="distance-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-neutral-900 text-xl font-bold">
+                      Total Distance
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">80 km</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="up-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                      Total Ascent
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">1300 m</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="down-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                      Total Descent
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">1300 m</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="timer-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                      Duration Trial
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">6 hours</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="difficulty-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                      Difficulty
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">S0</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </AccordionItem>
+          <AccordionItem title="Day 4 – Sierra Nevada North">
+            <div class="grid md:grid-cols-2 gap-8 md:gap-32">
+              <div class="">
+                <p class="">
+                  After breakfast, we continue our journey along the northern
+                  slopes of the Sierra Nevada. Today's route takes us through
+                  the forests of the Sierra Nevada Natural Park, following
+                  scenic mountain bike trails surrounded by pine forests, open
+                  mountain landscapes, and breathtaking views of the highest
+                  peaks on the Iberian Peninsula. Our stage finishes in the
+                  picturesque mountain village of La Calahorra, dominated by its
+                  impressive Renaissance castle. Built in the early 16th
+                  century, La Calahorra Castle was one of the first Renaissance
+                  castles in Spain and remains one of the region's most iconic
+                  landmarks, standing proudly against the backdrop of the Sierra
+                  Nevada.
+                </p>
+              </div>
+
+              <div class="">
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="distance-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-neutral-900 text-xl font-bold">
+                      Total Distance
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">70 km</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="up-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                      Total Ascent
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">1500 m</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="down-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                      Total Descent
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">1200 m</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="timer-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                      Duration Trial
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">6 hours</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="difficulty-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                      Difficulty
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">S0 - S1</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </AccordionItem>
+          <AccordionItem title="Day 5 – The Alpujarras I">
+            <div class="grid gap-8 md:gap-32">
+              <div class="">
+                <p class="">
+                  Today's adventure begins with a transfer to Puerto de la Ragua
+                  (2,000 m), a mountain pass marking the border between the
+                  provinces of Granada and Almería. From here, we descend onto
+                  the southern slopes of the Sierra Nevada, entering the
+                  beautiful region of La Alpujarra. Famous for its whitewashed
+                  Berber villages clinging to the mountainsides, La Alpujarra
+                  has a unique character shaped by its Moorish heritage. As we
+                  ride through this spectacular landscape, we'll pass
+                  traditional villages, terraced hillsides, and chestnut
+                  forests, with magnificent views across the surrounding
+                  mountains. Our destination is a charming, traditional
+                  Andalusian cortijo (country farmhouse), where we'll spend the
+                  night and experience the warm hospitality and rural atmosphere
+                  for which the region is renowned.
+                </p>
+              </div>
+
+              <div class="">
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="distance-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-neutral-900 text-xl font-bold">
+                      Total Distance
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">68 km</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="up-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                      Total Ascent
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">860 m</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="down-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                      Total Descent
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">1700 m</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="timer-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                      Duration Trial
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">5 hours</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="difficulty-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                      Difficulty
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">S0</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </AccordionItem>
+
+          <AccordionItem title="Day 6 – The Alpujarras II">
+            <div class="grid md:grid-cols-2 gap-8 md:gap-32">
+              <div class="">
+                <p class="">
+                  Our final riding stage begins with a transfer from the hotel
+                  to Trevélez, the highest village in the Sierra Nevada,
+                  renowned throughout Spain for its traditionally cured Serrano
+                  ham. From here, we continue to the breathtaking Poqueira
+                  Gorge, home to three of the region's most picturesque and
+                  authentic white villages: Capileira, Bubión, and Pampaneira.
+                  Our stop is the beautiful white village of Capileira, where
+                  you'll have time to wander through its narrow, winding
+                  streets, browse the local craft shops for souvenirs, and enjoy
+                  a coffee on one of the village's charming terraces. We then
+                  continue through La Taha, one of the most authentic areas of
+                  the Alpujarras, where a collection of tiny traditional white
+                  villages is connected by quiet mountain roads and scenic
+                  trails. This peaceful and unspoilt landscape offers a fitting
+                  finale to our journey around the Sierra Nevada. Our ride
+                  concludes at a panoramic viewpoint, where we'll celebrate the
+                  successful completion of all five stages with a well-deserved
+                  toast while taking in the breathtaking views. Afterwards, a
+                  transfer takes us back to our hotel in Níguelas, where our
+                  adventure around the Sierra Nevada comes full circle.
+                </p>
+              </div>
+
+              <div class="">
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="distance-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-neutral-900 text-xl font-bold">
+                      Total Distance
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">36 km</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="up-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                      Total Ascent
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">950 m</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="down-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                      Total Descent
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">1350 m</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="timer-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                      Duration Trial
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">5 hours</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="difficulty-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                      Difficulty
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">S0</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </AccordionItem>
+
+          <AccordionItem title="Day 7 – Free Day in Granada">
+            <div class="grid md:grid-cols-2 gap-8 md:gap-32">
+              <div class="">
+                <p class="">
+                  After several unforgettable days on the trails, today is yours
+                  to enjoy at a more relaxed pace. A private transfer will take
+                  you to the historic city of Granada, where you can spend the
+                  day exploring one of Spain's most fascinating cultural
+                  destinations. Stroll through the charming streets of the old
+                  town, discover lively squares, and soak up the unique
+                  atmosphere created by centuries of Moorish and Spanish
+                  history. You may choose to visit the magnificent Alhambra, the
+                  world-famous palace and fortress complex that overlooks the
+                  city (advance booking is essential). Granada is also renowned
+                  for its vibrant culinary scene. Enjoy authentic Andalusian
+                  cuisine in one of the city's traditional tapas bars, where
+                  complimentary tapas are often served with your drink, or relax
+                  on a sunny terrace in one of the picturesque neighbourhoods.
+                  If you wish, you can end the day with an authentic flamenco
+                  performance, particularly in the historic Sacromonte district,
+                  where this passionate art form has deep cultural roots. At the
+                  end of the day, your private transfer will take you back to
+                  the hotel in Níguelas for your final evening of the tour.
+                </p>
+              </div>
+            </div>
+          </AccordionItem>
+
+          <AccordionItem title="Day 8 – Departure">
+            <div class="grid gap-8 md:gap-32">
+              <div class="">
+                <p class="">
+                  After breakfast, it's time to say farewell to Granada. A
+                  private transfer will take you to Málaga Airport for your
+                  onward journey, bringing an end to an unforgettable mountain
+                  biking adventure around the Sierra Nevada.
+                </p>
+              </div>
+            </div>
+          </AccordionItem>
+        </Accordion>
+      </div>
+    </section>
+
+    <script is:inline>
+      const buttons = document.querySelectorAll(".showMoreBtn");
+      const contents = document.querySelectorAll(".showMoreContent");
+      buttons.forEach((btn, idx) => {
+        let show = false;
+        btn.addEventListener("click", () => {
+          show = !show;
+          const content = contents[idx];
+          if (show) {
+            content.classList.remove("max-h-0", "opacity-0");
+            content.classList.add("max-h-[2000px]", "opacity-100");
+            btn.textContent = "Less info ⬆";
+          } else {
+            content.classList.remove("max-h-[2000px]", "opacity-100");
+            content.classList.add("max-h-0", "opacity-0");
+            btn.textContent = "More info ⬇";
+          }
+        });
+      });
+    </script>
+  </Container>
+</Layout>
+
+<style>
+  /* Example of custom button styles */
+  .ac-accordion-item-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+</style>
