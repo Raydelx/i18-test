@@ -103,6 +103,7 @@ export const routes = {
 		'gallery-cycle-journey-andalusia': 'gallery-cycle-journey-andalusia',
 		'gallery-cycle-tour-granada': 'gallery-cycle-tour-granada',
 		'sierra-nevada-e-mtb-tour-8-days': 'sierra-nevada-e-mtb-tour-8-days',
+		'gallery-mtb-tour-8-days': 'gallery-mtb-tour-8-days',
 	},
 	en: {
 		blog: 'blog',
@@ -166,5 +167,6 @@ export const routes = {
 		'gallery-cycle-journey-andalusia': 'gallery-cycle-journey-andalusia',
 		'gallery-cycle-tour-granada': 'gallery-cycle-tour-granada',
 		'sierra-nevada-e-mtb-tour-8-days': 'sierra-nevada-e-mtb-tour-8-days',
+		'gallery-mtb-tour-8-days': 'gallery-mtb-tour-8-days',
 	},
 } 

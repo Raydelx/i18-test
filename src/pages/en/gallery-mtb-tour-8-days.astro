@@ -1,0 +1,573 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Container from "../../components/container.astro";
+import Sectionhead from "../../components/sectionhead.astro";
+import "photoswipe/style.css";
+
+const images = [
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-001.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-001.jpg",
+    alt: "MTB Sierra Nevada tour photo 001",
+    width: 1600,
+    height: 1200,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-002.webp",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-002.webp",
+    alt: "MTB Sierra Nevada tour photo 002",
+    width: 4080,
+    height: 2296,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-003.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-003.jpg",
+    alt: "MTB Sierra Nevada tour photo 003",
+    width: 1200,
+    height: 1600,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-004.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-004.jpg",
+    alt: "MTB Sierra Nevada tour photo 004",
+    width: 1600,
+    height: 1200,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-005.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-005.jpg",
+    alt: "MTB Sierra Nevada tour photo 005",
+    width: 1600,
+    height: 1200,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-006.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-006.jpg",
+    alt: "MTB Sierra Nevada tour photo 006",
+    width: 1600,
+    height: 1200,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-007.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-007.jpg",
+    alt: "MTB Sierra Nevada tour photo 007",
+    width: 1600,
+    height: 1200,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-008.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-008.jpg",
+    alt: "MTB Sierra Nevada tour photo 008",
+    width: 2048,
+    height: 1536,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-009.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-009.jpg",
+    alt: "MTB Sierra Nevada tour photo 009",
+    width: 1600,
+    height: 1200,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-010.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-010.jpg",
+    alt: "MTB Sierra Nevada tour photo 010",
+    width: 2048,
+    height: 1536,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-011.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-011.jpg",
+    alt: "MTB Sierra Nevada tour photo 011",
+    width: 2048,
+    height: 1536,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-012.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-012.jpg",
+    alt: "MTB Sierra Nevada tour photo 012",
+    width: 1600,
+    height: 1200,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-013.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-013.jpg",
+    alt: "MTB Sierra Nevada tour photo 013",
+    width: 1600,
+    height: 900,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-014.webp",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-014.webp",
+    alt: "MTB Sierra Nevada tour photo 014",
+    width: 4080,
+    height: 2296,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-015.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-015.jpg",
+    alt: "MTB Sierra Nevada tour photo 015",
+    width: 1600,
+    height: 1200,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-016.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-016.jpg",
+    alt: "MTB Sierra Nevada tour photo 016",
+    width: 1600,
+    height: 1200,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-017.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-017.jpg",
+    alt: "MTB Sierra Nevada tour photo 017",
+    width: 2016,
+    height: 1134,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-018.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-018.jpg",
+    alt: "MTB Sierra Nevada tour photo 018",
+    width: 1600,
+    height: 1200,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-019.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-019.jpg",
+    alt: "MTB Sierra Nevada tour photo 019",
+    width: 2016,
+    height: 1134,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-020.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-020.jpg",
+    alt: "MTB Sierra Nevada tour photo 020",
+    width: 1600,
+    height: 1200,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-021.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-021.jpg",
+    alt: "MTB Sierra Nevada tour photo 021",
+    width: 1200,
+    height: 1600,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-022.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-022.jpg",
+    alt: "MTB Sierra Nevada tour photo 022",
+    width: 1200,
+    height: 1600,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-023.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-023.jpg",
+    alt: "MTB Sierra Nevada tour photo 023",
+    width: 1600,
+    height: 1200,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-024.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-024.jpg",
+    alt: "MTB Sierra Nevada tour photo 024",
+    width: 1200,
+    height: 1600,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-025.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-025.jpg",
+    alt: "MTB Sierra Nevada tour photo 025",
+    width: 2040,
+    height: 1530,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-026.webp",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-026.webp",
+    alt: "MTB Sierra Nevada tour photo 026",
+    width: 4080,
+    height: 2296,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-027.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-027.jpg",
+    alt: "MTB Sierra Nevada tour photo 027",
+    width: 1200,
+    height: 1600,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-028.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-028.jpg",
+    alt: "MTB Sierra Nevada tour photo 028",
+    width: 1600,
+    height: 900,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-029.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-029.jpg",
+    alt: "MTB Sierra Nevada tour photo 029",
+    width: 1600,
+    height: 900,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-030.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-030.jpg",
+    alt: "MTB Sierra Nevada tour photo 030",
+    width: 1600,
+    height: 1200,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-031.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-031.jpg",
+    alt: "MTB Sierra Nevada tour photo 031",
+    width: 1600,
+    height: 1200,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-032.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-032.jpg",
+    alt: "MTB Sierra Nevada tour photo 032",
+    width: 1600,
+    height: 1200,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-033.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-033.jpg",
+    alt: "MTB Sierra Nevada tour photo 033",
+    width: 1600,
+    height: 1200,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-034.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-034.jpg",
+    alt: "MTB Sierra Nevada tour photo 034",
+    width: 1600,
+    height: 1200,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-035.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-035.jpg",
+    alt: "MTB Sierra Nevada tour photo 035",
+    width: 1600,
+    height: 1200,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-036.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-036.jpg",
+    alt: "MTB Sierra Nevada tour photo 036",
+    width: 1600,
+    height: 1200,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-037.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-037.jpg",
+    alt: "MTB Sierra Nevada tour photo 037",
+    width: 1600,
+    height: 1200,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-038.webp",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-038.webp",
+    alt: "MTB Sierra Nevada tour photo 038",
+    width: 4080,
+    height: 2296,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-039.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-039.jpg",
+    alt: "MTB Sierra Nevada tour photo 039",
+    width: 1600,
+    height: 1200,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-040.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-040.jpg",
+    alt: "MTB Sierra Nevada tour photo 040",
+    width: 1600,
+    height: 1200,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-041.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-041.jpg",
+    alt: "MTB Sierra Nevada tour photo 041",
+    width: 1600,
+    height: 1200,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-042.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-042.jpg",
+    alt: "MTB Sierra Nevada tour photo 042",
+    width: 1600,
+    height: 1200,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-043.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-043.jpg",
+    alt: "MTB Sierra Nevada tour photo 043",
+    width: 1600,
+    height: 1200,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-044.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-044.jpg",
+    alt: "MTB Sierra Nevada tour photo 044",
+    width: 1600,
+    height: 1200,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-045.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-045.jpg",
+    alt: "MTB Sierra Nevada tour photo 045",
+    width: 1600,
+    height: 1200,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-046.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-046.jpg",
+    alt: "MTB Sierra Nevada tour photo 046",
+    width: 1600,
+    height: 1200,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-047.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-047.jpg",
+    alt: "MTB Sierra Nevada tour photo 047",
+    width: 1600,
+    height: 1200,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-048.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-048.jpg",
+    alt: "MTB Sierra Nevada tour photo 048",
+    width: 1600,
+    height: 1200,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-049.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-049.jpg",
+    alt: "MTB Sierra Nevada tour photo 049",
+    width: 1200,
+    height: 1600,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-050.webp",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-050.webp",
+    alt: "MTB Sierra Nevada tour photo 050",
+    width: 2296,
+    height: 4080,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-051.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-051.jpg",
+    alt: "MTB Sierra Nevada tour photo 051",
+    width: 1600,
+    height: 1200,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-052.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-052.jpg",
+    alt: "MTB Sierra Nevada tour photo 052",
+    width: 1600,
+    height: 1200,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-053.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-053.jpg",
+    alt: "MTB Sierra Nevada tour photo 053",
+    width: 2048,
+    height: 1536,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-054.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-054.jpg",
+    alt: "MTB Sierra Nevada tour photo 054",
+    width: 1351,
+    height: 1600,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-055.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-055.jpg",
+    alt: "MTB Sierra Nevada tour photo 055",
+    width: 1600,
+    height: 1204,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-056.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-056.jpg",
+    alt: "MTB Sierra Nevada tour photo 056",
+    width: 1600,
+    height: 1200,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-057.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-057.jpg",
+    alt: "MTB Sierra Nevada tour photo 057",
+    width: 1200,
+    height: 1600,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-058.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-058.jpg",
+    alt: "MTB Sierra Nevada tour photo 058",
+    width: 1200,
+    height: 1600,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-059.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-059.jpg",
+    alt: "MTB Sierra Nevada tour photo 059",
+    width: 2016,
+    height: 1134,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-060.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-060.jpg",
+    alt: "MTB Sierra Nevada tour photo 060",
+    width: 1600,
+    height: 1200,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-061.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-061.jpg",
+    alt: "MTB Sierra Nevada tour photo 061",
+    width: 1600,
+    height: 1200,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-062.webp",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-062.webp",
+    alt: "MTB Sierra Nevada tour photo 062",
+    width: 2296,
+    height: 4080,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-063.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-063.jpg",
+    alt: "MTB Sierra Nevada tour photo 063",
+    width: 1200,
+    height: 1600,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-064.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-064.jpg",
+    alt: "MTB Sierra Nevada tour photo 064",
+    width: 1600,
+    height: 1200,
+  },
+  {
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-065.jpg",
+    thumb:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-065.jpg",
+    alt: "MTB Sierra Nevada tour photo 065",
+    width: 1200,
+    height: 1600,
+  },
+];
+---
+
+<Layout title="Gallery">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">MTB Sierra Nevada Tour 8-days</Fragment>
+      <Fragment slot="desc"></Fragment>
+    </Sectionhead>
+
+    <div class="mt-16">
+      <div
+        class="pswp-gallery grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-6 object-fill"
+        id="gallery">
+        {
+          images.map((image) => (
+            <a
+              class="object-cover"
+              href={image.src}
+              data-cropped="true"
+              data-pswp-width={image.width}
+              data-pswp-height={image.height}
+              target="_blank">
+              <img
+                class="w-full md:h-64 md:w-72 md:size-64 object-cover rounded-xl hover:scale-105 duration-200 transition-all"
+                src={image.thumb}
+                alt={image.alt}
+              />
+            </a>
+          ))
+        }
+      </div>
+    </div>
+
+    <script>
+      import PhotoSwipeLightbox from "photoswipe/lightbox";
+
+      const lightbox = new PhotoSwipeLightbox({
+        gallery: "#gallery",
+        children: "a",
+        pswpModule: () => import("photoswipe"),
+      });
+      lightbox.init();
+    </script>
+  </Container>
+</Layout>
