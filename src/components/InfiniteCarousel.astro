@@ -1,0 +1,54 @@
+---
+import Card from "./card.astro";
+
+interface CardItem {
+  name: string;
+  href: string;
+  description: string;
+  description2?: string;
+  href_img: string;
+  alt_img: string;
+}
+
+interface Props {
+  items: CardItem[];
+  speed?: number;
+}
+
+const { items, speed = 24 } = Astro.props;
+const duplicatedItems = [...items, ...items];
+---
+
+<div class="relative overflow-hidden w-full py-4">
+  <div
+    class="flex w-max items-stretch will-change-transform"
+    style={`--duration: ${speed}s`}>
+    {
+      duplicatedItems.map((item, index) => (
+        <div class="w-[280px] flex-shrink-0 px-3 sm:w-[320px] lg:w-[360px]">
+          <Card {...item} />
+        </div>
+      ))
+    }
+  </div>
+</div>
+
+<style>
+  .flex {
+    animation: scroll var(--duration) linear infinite;
+    animation-play-state: running;
+  }
+
+  .flex:hover {
+    animation-play-state: paused;
+  }
+
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+</style>
