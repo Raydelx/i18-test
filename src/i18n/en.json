@@ -2010,11 +2010,11 @@
             },
 
             "FROM_MOUNTAINS_TO_COASTLINE": {
-                "TITLE": "Cycle tour Sierra Nevada - Mediterranean Sea",
-                "SUBTITLE": "E-bike tour 1/2 day",
+                "TITLE": "Sierra Nevada - Tropical Coast E-Bike Tour 1/2 Day ",
+                "SUBTITLE": "",
                 "LOCATION": "Granada",
 
-                "PRICE": "110",
+                "PRICE": "130",
                 "PRE_BOOKING": "100%",
                 "MINUMUM_OF_PERSONS": "4",
                 "DURATION": "3 Hours",
@@ -2033,7 +2033,7 @@
                     "TEXT_2": "Liability insurance and assistance",
                     "TEXT_3": "Backup vehicle",
                     "TEXT_4": "Transfer",
-                    "TEXT_5": "E-bike + Pannier",
+                    "TEXT_5": "E-bike",
                     "TEXT_6": "Helmet & gloves",
                     "TEXT_7": "Snack and water",
                     "TEXT_8": "Beach towel" 
