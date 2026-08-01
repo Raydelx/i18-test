@@ -3,14 +3,56 @@ import Layout from "../../layouts/Layout.astro";
 import Container from "../../components/container.astro";
 import Sectionhead from "../../components/sectionhead.astro";
 import GalleryFull from "../../components/galleryFull.astro";
+import SearchableProductsGrid from "../../components/searchable-products-grid.astro";
+import {
+  getLangFromUrl,
+  useTranslations,
+  useTranslatedPath,
+} from "../../i18n/utils.js";
+import { getI18N } from "@/i18n/";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+
+const products = [
+  {
+    title: "Ronda - Córdoba E-bike Tour 8 Days",
+    href: translatePath("gallery-cycle-journey-andalusia"),
+    image: "/cycle-tour/leisure-cycling/cycle-journey-andalusia/jrc-12.webp",
+    alt: "Cycle Journey Andalucia gallery",
+  },
+  {
+    title: "Granada E-Bike Tour 8 Days",
+    href: translatePath("gallery-cycle-tour-granada"),
+    image: "/cycle-tour/leisure-cycling/cycle-tour-granada/ctg-15.webp",
+    alt: "Cycle Tour Granada gallery",
+  },
+  {
+    title: "Sierra Nevada E-MTB Tour 8 Days",
+    href: translatePath("gallery-mtb-tour-8-days"),
+    image:
+      "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-004.webp",
+    alt: "Cycle Tour Granada gallery",
+  },
+  {
+    title: "Sierra Nevada Woestijn E-MTB 1/2 Dag",
+    href: translatePath("gallery-mtb-sierra-nevada-desert"),
+    image:
+      "/cycle-tour/montainbike/sierra-nevada-desert/snd-gallery/snd-gallery-1.webp",
+    alt: "Sierra Nevada Woestijn E-MTB galerij",
+  },
+];
 ---
 
 <Layout title="Gallery">
   <Container>
-    <Sectionhead>
-      <Fragment slot="title">Galerij</Fragment>
+    <Sectionhead class="">
+      <Fragment slot="title">Gallery</Fragment>
       <Fragment slot="desc"></Fragment>
     </Sectionhead>
-    <GalleryFull />
+    <div class="mt-10"><SearchableProductsGrid products={products} /></div>
   </Container>
 </Layout>

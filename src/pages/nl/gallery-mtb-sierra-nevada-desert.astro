@@ -1,0 +1,189 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Container from "../../components/container.astro";
+import Sectionhead from "../../components/sectionhead.astro";
+import "photoswipe/style.css";
+
+const images = [
+  {
+    src: "/cycle-tour/montainbike/sierra-nevada-desert/snd-gallery/snd-gallery-1.webp",
+    thumb:
+      "/cycle-tour/montainbike/sierra-nevada-desert/snd-gallery/snd-gallery-1.webp",
+    alt: "Sierra Nevada Desert E-MTB photo 1",
+    width: 3547,
+    height: 2365,
+  },
+  {
+    src: "/cycle-tour/montainbike/sierra-nevada-desert/snd-gallery/snd-gallery-2.webp",
+    thumb:
+      "/cycle-tour/montainbike/sierra-nevada-desert/snd-gallery/snd-gallery-2.webp",
+    alt: "Sierra Nevada Desert E-MTB photo 2",
+    width: 3547,
+    height: 2365,
+  },
+  {
+    src: "/cycle-tour/montainbike/sierra-nevada-desert/snd-gallery/snd-gallery-3.webp",
+    thumb:
+      "/cycle-tour/montainbike/sierra-nevada-desert/snd-gallery/snd-gallery-3.webp",
+    alt: "Sierra Nevada Desert E-MTB photo 3",
+    width: 3545,
+    height: 2363,
+  },
+  {
+    src: "/cycle-tour/montainbike/sierra-nevada-desert/snd-gallery/snd-gallery-4.webp",
+    thumb:
+      "/cycle-tour/montainbike/sierra-nevada-desert/snd-gallery/snd-gallery-4.webp",
+    alt: "Sierra Nevada Desert E-MTB photo 4",
+    width: 3545,
+    height: 2363,
+  },
+  {
+    src: "/cycle-tour/montainbike/sierra-nevada-desert/snd-gallery/snd-gallery-5.webp",
+    thumb:
+      "/cycle-tour/montainbike/sierra-nevada-desert/snd-gallery/snd-gallery-5.webp",
+    alt: "Sierra Nevada Desert E-MTB photo 5",
+    width: 3248,
+    height: 2165,
+  },
+  {
+    src: "/cycle-tour/montainbike/sierra-nevada-desert/snd-gallery/snd-gallery-6.webp",
+    thumb:
+      "/cycle-tour/montainbike/sierra-nevada-desert/snd-gallery/snd-gallery-6.webp",
+    alt: "Sierra Nevada Desert E-MTB photo 6",
+    width: 3575,
+    height: 2383,
+  },
+  {
+    src: "/cycle-tour/montainbike/sierra-nevada-desert/snd-gallery/snd-gallery-7.webp",
+    thumb:
+      "/cycle-tour/montainbike/sierra-nevada-desert/snd-gallery/snd-gallery-7.webp",
+    alt: "Sierra Nevada Desert E-MTB photo 7",
+    width: 3544,
+    height: 2362,
+  },
+  {
+    src: "/cycle-tour/montainbike/sierra-nevada-desert/snd-gallery/snd-gallery-8.webp",
+    thumb:
+      "/cycle-tour/montainbike/sierra-nevada-desert/snd-gallery/snd-gallery-8.webp",
+    alt: "Sierra Nevada Desert E-MTB photo 8",
+    width: 3547,
+    height: 2365,
+  },
+  {
+    src: "/cycle-tour/montainbike/sierra-nevada-desert/snd-gallery/snd-gallery-9.webp",
+    thumb:
+      "/cycle-tour/montainbike/sierra-nevada-desert/snd-gallery/snd-gallery-9.webp",
+    alt: "Sierra Nevada Desert E-MTB photo 9",
+    width: 3545,
+    height: 2363,
+  },
+  {
+    src: "/cycle-tour/montainbike/sierra-nevada-desert/snd-gallery/snd-gallery-10.webp",
+    thumb:
+      "/cycle-tour/montainbike/sierra-nevada-desert/snd-gallery/snd-gallery-10.webp",
+    alt: "Sierra Nevada Desert E-MTB photo 10",
+    width: 3312,
+    height: 2208,
+  },
+  {
+    src: "/cycle-tour/montainbike/sierra-nevada-desert/snd-gallery/snd-gallery-11.webp",
+    thumb:
+      "/cycle-tour/montainbike/sierra-nevada-desert/snd-gallery/snd-gallery-11.webp",
+    alt: "Sierra Nevada Desert E-MTB photo 11",
+    width: 3874,
+    height: 2583,
+  },
+  {
+    src: "/cycle-tour/montainbike/sierra-nevada-desert/snd-gallery/snd-gallery-12.webp",
+    thumb:
+      "/cycle-tour/montainbike/sierra-nevada-desert/snd-gallery/snd-gallery-12.webp",
+    alt: "Sierra Nevada Desert E-MTB photo 12",
+    width: 3615,
+    height: 2410,
+  },
+  {
+    src: "/cycle-tour/montainbike/sierra-nevada-desert/snd-gallery/snd-gallery-13.webp",
+    thumb:
+      "/cycle-tour/montainbike/sierra-nevada-desert/snd-gallery/snd-gallery-13.webp",
+    alt: "Sierra Nevada Desert E-MTB photo 13",
+    width: 1352,
+    height: 607,
+  },
+  {
+    src: "/cycle-tour/montainbike/sierra-nevada-desert/snd-gallery/snd-gallery-14.webp",
+    thumb:
+      "/cycle-tour/montainbike/sierra-nevada-desert/snd-gallery/snd-gallery-14.webp",
+    alt: "Sierra Nevada Desert E-MTB photo 14",
+    width: 1352,
+    height: 607,
+  },
+  {
+    src: "/cycle-tour/montainbike/sierra-nevada-desert/snd-gallery/snd-gallery-15.webp",
+    thumb:
+      "/cycle-tour/montainbike/sierra-nevada-desert/snd-gallery/snd-gallery-15.webp",
+    alt: "Sierra Nevada Desert E-MTB photo 15",
+    width: 1352,
+    height: 607,
+  },
+  {
+    src: "/cycle-tour/montainbike/sierra-nevada-desert/snd-gallery/snd-gallery-16.webp",
+    thumb:
+      "/cycle-tour/montainbike/sierra-nevada-desert/snd-gallery/snd-gallery-16.webp",
+    alt: "Sierra Nevada Desert E-MTB photo 16",
+    width: 4080,
+    height: 1832,
+  },
+  {
+    src: "/cycle-tour/montainbike/sierra-nevada-desert/snd-gallery/snd-gallery-17.webp",
+    thumb:
+      "/cycle-tour/montainbike/sierra-nevada-desert/snd-gallery/snd-gallery-17.webp",
+    alt: "Sierra Nevada Desert E-MTB photo 17",
+    width: 4080,
+    height: 1832,
+  },
+];
+---
+
+<Layout title="Gallery">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Sierra Nevada Woestijn E-MTB 1/2 Dag</Fragment>
+      <Fragment slot="desc"></Fragment>
+    </Sectionhead>
+
+    <div class="mt-16">
+      <div
+        class="pswp-gallery grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-6 object-fill"
+        id="gallery">
+        {
+          images.map((image) => (
+            <a
+              class="object-cover"
+              href={image.src}
+              data-cropped="true"
+              data-pswp-width={image.width}
+              data-pswp-height={image.height}
+              target="_blank">
+              <img
+                class="w-full md:h-64 md:w-72 md:size-64 object-cover rounded-xl hover:scale-105 duration-200 transition-all"
+                src={image.thumb}
+                alt={image.alt}
+              />
+            </a>
+          ))
+        }
+      </div>
+    </div>
+
+    <script>
+      import PhotoSwipeLightbox from "photoswipe/lightbox";
+
+      const lightbox = new PhotoSwipeLightbox({
+        gallery: "#gallery",
+        children: "a",
+        pswpModule: () => import("photoswipe"),
+      });
+      lightbox.init();
+    </script>
+  </Container>
+</Layout>
