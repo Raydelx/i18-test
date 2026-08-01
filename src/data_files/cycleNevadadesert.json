@@ -1,0 +1,38 @@
+{
+    
+    "cycleSardiniaEs": [   
+      
+      {
+        "name": "Group size",
+        "text1": "Our tours are designed for small groups to ensure a safe, enjoyable, and high-quality experience. A minimum of 4 participants is required to organize the tour. The maximum number of participants is 14, which allows us to provide attentive service, maintain safety on the road, and ensure a personalized experience throughout the tour."
+        
+      },
+      {
+        "name": "Price  ",
+        "text1": "The published price is based on the standard group size of 4 people. For larger groups, we may be able to offer a reduced price per person. Please contact us for a personalised quotation based on your group size and travel dates."
+           
+      },
+      
+      {
+        "name": "Difficulty",
+        "text1": "Technical Level: S1 (Easy to Moderate)",
+        "text2": "This tour is designed for a wide range of riders, making it an excellent choice for anyone with a reasonable level of fitness and some basic mountain biking experience. The Gorafe Desert trails are rated S1, featuring flowing singletracks with loose gravel, small rocks, and occasional erosion channels. There are no tight switchbacks, and gradients remain below 40%. Basic bike handling, braking, and balance skills are all that's needed to enjoy this spectacular desert landscape safely and comfortably.",
+        "text3": "Suitable for: Riders with basic MTB experience and a good level of fitness. No advanced technical skills are required."
+        
+      },
+          
+        
+      {
+        "name": "Weather",
+        "text1": "The Gorafe Desert enjoys a mild and dry climate for most of the year, making it an excellent destination for mountain biking from autumn to late spring. Expect sunny days, low rainfall, and clear skies. Spring and autumn offer pleasant temperatures, while winter is generally cool and ideal for riding, although mornings can be chilly. During the summer months, temperatures regularly exceed 35°C, which is why we do not operate this tour in summer to ensure the comfort and safety of our guests."
+        
+        
+        
+      }
+        
+      
+      
+    ]
+  }
+
+  

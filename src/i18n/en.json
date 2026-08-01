@@ -1745,15 +1745,15 @@
             },
 
             "MTB_SIERRA_NEVADA_DESERT": {
-                "TITLE": "MTB Sierra Nevada Desert",
-                "SUBTITLE":"E-Bike Tour 1 Day",
+                "TITLE": "Sierra Nevada Desert E-MTB 1/2 Day ",
+                "SUBTITLE":"",
                 "LOCATION": "Sierra Nevada",
 
-                "PRICE": "110",
-                "PRE_BOOKING": "110",
+                "PRICE": "130",
+                "PRE_BOOKING": "100%",
                 "MINUMUM_OF_PERSONS": "4",
                 "DURATION": "4 Hours",
-                "TOUR_TYPE": "Guided Tour",
+                "TOUR_TYPE": "Loop",
                 "SEASON": "Spring Autumn Winter",
 
                 "TOTAL_DISTANCE": "45 km",
@@ -1785,13 +1785,14 @@
 
                 
                 "REQUIEREMENTS":"Requirements",
-                "REQUIEREMENTS_TEXT_1":"Level S1",
-                "REQUIEREMENTS_TEXT_2":"Good physical health",
-                "REQUIEREMENTS_TEXT_3":"You are able to control the speed and direction of the bike well",
-                "REQUIEREMENTS_TEXT_4":"You can brake and shift gears with confidence",
-                "REQUIEREMENTS_TEXT_5":"Minimum age: 11 years",
-                "REQUIEREMENTS_TEXT_6":"Minimum height: 1.50 meters",
-                "REQUIEREMENTS_TEXT_7":"Closed shoes required – no sandals!",
+                "REQUIEREMENTS_TEXT_1":"Helmet, mandatory during all rides",
+                "REQUIEREMENTS_TEXT_2":"Personal responsibility for health, fitness and any existing medical conditions",
+                "REQUIEREMENTS_TEXT_3":"Emergency contact information, to be provided before departure",
+                "REQUIEREMENTS_TEXT_4":"You are able to control the speed and direction of the bike well",
+                "REQUIEREMENTS_TEXT_5":"You can brake and shift gears with confidence",
+                "REQUIEREMENTS_TEXT_6":"Minimum age: 11 years",
+                "REQUIEREMENTS_TEXT_7":"Minimum height: 1.50 meters",
+                "REQUIEREMENTS_TEXT_8":"Closed shoes required – no sandals!",
 
                 "LEVEL": {
                     "TITLE": "Level",

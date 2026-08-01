@@ -2,18 +2,12 @@
 import Container from "../../components/container.astro";
 import Link from "../../components/ui/link.astro";
 import LanguageSelector from "../LanguageSelector.astro";
-import Icon from "../ui/icons/Icon.astro";
 import Dropdown from "./dropdown.astro";
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 import { getI18N } from "@/i18n/";
-import {
-  getLangFromUrl,
-  useTranslations,
-  useTranslatedPath,
-} from "../../i18n/utils.js";
+import { getLangFromUrl, useTranslatedPath } from "../../i18n/utils.js";
 
 const lang = getLangFromUrl(Astro.url);
-const t = useTranslations(lang);
 const translatePath = useTranslatedPath(lang);
 
 const { currentLocale } = Astro;
@@ -62,9 +56,10 @@ const menuitems = [
 ];
 ---
 
-<Container>
+<Container class="h-24 lg:h-28">
   <header
-    class="top-0 flex z-50 flex-col lg:flex-row justify-between items-center my-5 rounded-md">
+    id="site-navbar"
+    class="fixed inset-x-0 top-3 z-50 mx-auto flex w-[calc(100%_-_2rem)] max-w-screen-2xl translate-y-0 flex-col items-center justify-between rounded-md border border-white/70 bg-white/95 px-4 py-3 opacity-100 shadow-[0_10px_30px_rgba(60,85,70,0.12)] backdrop-blur transition-[transform,opacity,box-shadow] duration-300 ease-out lg:flex-row lg:px-5">
     <Astronav>
       <div class="relative flex w-full lg:w-auto items-center justify-between">
         <a href={translatePath("/")} class="text-lg">
@@ -78,9 +73,8 @@ const menuitems = [
           <MenuIcon class="w-4 h-4 text-gray-800" />
         </div>
       </div>
-      <MenuItems
-        class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0 sticky top-0 z-20">
-        <ul class="flex flex-col lg:flex-row lg:gap-3 font-semibold">
+      <MenuItems class="hidden z-20 mt-3 w-full lg:mt-0 lg:flex lg:w-auto">
+        <ul class="flex flex-col gap-1 font-semibold lg:flex-row lg:gap-1">
           {
             menuitems.map((item, index) => (
               <li>
@@ -93,7 +87,7 @@ const menuitems = [
                 ) : (
                   <a
                     href={item.path}
-                    class=" flex lg:px-3 py-2 items-center text-gray-800 hover:text-[#4f6658]">
+                    class="flex items-center rounded-md px-3 py-2 text-gray-800 transition-colors hover:bg-[#edf2ee] hover:text-[#3c5546] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#4f6658]">
                     <span>{item.title}</span>
                   </a>
                 )}
@@ -101,7 +95,8 @@ const menuitems = [
             ))
           }
         </ul>
-        <div class="lg:hidden flex items-center mt-3 gap-4">
+        <div
+          class="mt-3 flex items-center gap-4 border-t border-[#d7e2d9] pt-3 lg:hidden">
           <LanguageSelector />
           <Link
             href={translatePath("tailor-made-travel")}
@@ -126,7 +121,7 @@ const menuitems = [
       </MenuItems>
     </Astronav>
     <div>
-      <div class="hidden lg:flex items-center gap-4">
+      <div class="hidden items-center gap-3 lg:flex">
         <LanguageSelector />
         <Link
           class="font-semibold"
@@ -152,3 +147,70 @@ const menuitems = [
     </div>
   </header>
 </Container>
+
+<script>
+  const navbar = document.querySelector("#site-navbar");
+
+  if (navbar) {
+    let previousScrollY = window.scrollY;
+    let scrollDistance = 0;
+    let scrollDirection = 0;
+    let isNavbarVisible = true;
+    let isTicking = false;
+    const scrollThreshold = 12;
+
+    const setNavbarVisibility = (shouldShow: boolean) => {
+      if (shouldShow === isNavbarVisible) return;
+
+      navbar.classList.toggle("-translate-y-[calc(100%+1rem)]", !shouldShow);
+      navbar.classList.toggle("pointer-events-none", !shouldShow);
+      navbar.classList.toggle("opacity-0", !shouldShow);
+      navbar.classList.toggle("opacity-100", shouldShow);
+      isNavbarVisible = shouldShow;
+    };
+
+    const updateNavbarVisibility = () => {
+      const currentScrollY = Math.max(window.scrollY, 0);
+      const scrollDelta = currentScrollY - previousScrollY;
+      const currentDirection = Math.sign(scrollDelta);
+
+      if (currentScrollY <= scrollThreshold) {
+        setNavbarVisibility(true);
+        scrollDistance = 0;
+      } else if (currentDirection !== 0) {
+        scrollDistance =
+          currentDirection === scrollDirection
+            ? scrollDistance + scrollDelta
+            : scrollDelta;
+        scrollDirection = currentDirection;
+
+        if (scrollDistance >= scrollThreshold) {
+          setNavbarVisibility(false);
+        } else if (scrollDistance <= -scrollThreshold) {
+          setNavbarVisibility(true);
+        }
+      }
+
+      navbar.classList.toggle(
+        "shadow-[0_14px_35px_rgba(60,85,70,0.2)]",
+        currentScrollY > 16,
+      );
+
+      previousScrollY = currentScrollY;
+      isTicking = false;
+    };
+
+    window.addEventListener(
+      "scroll",
+      () => {
+        if (!isTicking) {
+          window.requestAnimationFrame(updateNavbarVisibility);
+          isTicking = true;
+        }
+      },
+      { passive: true },
+    );
+
+    updateNavbarVisibility();
+  }
+</script>

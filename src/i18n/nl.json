@@ -1719,12 +1719,12 @@
             },
 
             "MTB_SIERRA_NEVADA_DESERT" :{
-                "TITLE": "MTB Sierra Nevada Woestijn",
-                "SUBTITLE": "E-Bike Tour 1 dag",
+                "TITLE": "Sierra Nevada Woestijn E-MTB 1/2 Dag ",
+                "SUBTITLE": "",
                 "LOCATION": "Sierra Nevada",
 
-                "PRICE": "110",
-                "PRE_BOOKING": "110",
+                "PRICE": "130",
+                "PRE_BOOKING": "100%",
                 "MINUMUM_OF_PERSONS": "4",                
                 "DURATION": "4 Uur",
                 "TOUR_TYPE": "Begeleide Tour",
@@ -1733,7 +1733,7 @@
                 "TOTAL_DISTANCE": "45 km",
                 "TOTAL_ASCENT": "650 m",
                 "TOTAL_DESCENT": "550 m",
-                "ROUTE_TYPE": "Punt tot punt",
+                "ROUTE_TYPE": "Loop",
                 "DIFFICULTY": "S1 Easy",
                 "E_BIKE": "Ja",
 
@@ -1757,14 +1757,15 @@
                 "HIGHLIGHT_TEXT_2":"Indrukwekkende uitzichtpunten",
                 "HIGHLIGHT_TEXT_3":"Avontuurlijke E-bike Tour in Geopark Gorafe",
 
-                "REQUIEREMENTS":"Vereisten",
-                "REQUIEREMENTS_TEXT_1":"Niveau S1 ",
-                "REQUIEREMENTS_TEXT_2":"Goede fysieke gezondheid",
-                "REQUIEREMENTS_TEXT_3":"Je bent in staat om de snelheid en richting van de fiets goed te beheersen",
-                "REQUIEREMENTS_TEXT_4":"Je kunt met vertrouwen remmen en schakelen",
-                "REQUIEREMENTS_TEXT_5":"Minimum Leeftijd: 11 jaar",
-                "REQUIEREMENTS_TEXT_6":"Minimum Lengte: 1,50 meter",
-                "REQUIEREMENTS_TEXT_7":"Gesloten schoenen verplicht – geen sandalen!",
+                 "REQUIEREMENTS":"Vereisten",
+                "REQUIEREMENTS_TEXT_1":"Helm, verplicht tijdens alle ritten",
+                "REQUIEREMENTS_TEXT_2":"Persoonlijke verantwoordelijkheid voor gezondheid, fitheid en bestaande medische aandoeningen",
+                "REQUIEREMENTS_TEXT_3":"Noodcontactinformatie, voor vertrek moet worden verstrekt",
+                "REQUIEREMENTS_TEXT_4":"Je kunt de snelheid en richting van de fiets goed controleren",
+                "REQUIEREMENTS_TEXT_5":"Je kunt vol vertrouwen remmen en schakelen",
+                "REQUIEREMENTS_TEXT_6":"Minimale leeftijd: 11 jaar",
+                "REQUIEREMENTS_TEXT_7":"Minimale lengte: 1,50 meter",
+                "REQUIEREMENTS_TEXT_8":"Gesloten schoenen vereist – geen sandalen!",
 
                 "LEVEL": {
                     "TITLE": "Niveau",
