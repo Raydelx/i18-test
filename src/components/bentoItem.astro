@@ -4,39 +4,43 @@ interface Props {
   title: string;
   subtitle?: string;
   href: string;
+  delay?: number;
 }
 
-const { title, subtitle, href } = Astro.props;
+const { class: className = "", title, subtitle, href, delay = 0 } = Astro.props;
 ---
 
 <a
   href={href}
   class={`
-  ${Astro.props.class}
-  col-span-5
-  relative rounded-xl
-  backdrop-blur-md
-  border border-black/10
-  shadow-inner shadow-white/10
-  overflow-hidden
-  group
-`}>
-  <div
-    class="absolute bottom-0 top-0 z-10 h-full w-full
-    bg-gradient-to-b from-transparent from-60% via-[#151836]/60 to-[#151836]/80">
-  </div>
-
+    ${className}
+    bento-item group relative isolate col-span-5 min-h-[20rem] overflow-hidden rounded-lg
+    border border-white/20 bg-[#183024]
+    shadow-[0_18px_40px_rgba(17,35,25,0.22)]
+    transition-[transform,border-color,box-shadow] duration-500 ease-out
+    hover:-translate-y-1 hover:border-[#ff863f] hover:shadow-[0_24px_48px_rgba(17,35,25,0.30)]
+    focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#ff5e00]
+  `}
+  style={`--bento-delay: ${delay}ms`}>
   <slot name="image" />
 
   <div
-    class="relative z-20 flex h-full select-none flex-col justify-end gap-1 p-4 text-lg md:p-6">
-    <h2 class="mb-4 text-balance text-3xl font-semibold uppercase text-white">
+    class="pointer-events-none absolute inset-0 z-10 bg-gradient-to-t from-[#102517]/75 via-[#183024]/25 via-25% to-transparent to-50%">
+  </div>
+  <div
+    class="pointer-events-none absolute inset-x-0 bottom-0 z-20 h-1 origin-left scale-x-0 bg-[#ff5e00] transition-transform duration-500 group-hover:scale-x-100">
+  </div>
+
+  <div
+    class="relative z-20 flex h-full select-none flex-col justify-end gap-1 p-5 text-lg md:p-7">
+    <h2
+      class="max-w-md text-balance text-3xl font-semibold text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.75)] md:text-4xl">
       {title}
     </h2>
 
     {
       subtitle && (
-        <h3 class="-mt-4 mb-4 text-3xl font-semibold text-sky-200/80">
+        <h3 class="text-xl font-medium text-white/75 md:text-2xl">
           {subtitle}
         </h3>
       )
@@ -45,3 +49,28 @@ const { title, subtitle, href } = Astro.props;
     <slot name="content" />
   </div>
 </a>
+
+<style>
+  .bento-item {
+    animation: bento-item-enter 700ms cubic-bezier(0.22, 1, 0.36, 1) both;
+    animation-delay: var(--bento-delay);
+  }
+
+  @keyframes bento-item-enter {
+    from {
+      opacity: 0;
+      transform: translateY(1.5rem) scale(0.98);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .bento-item {
+      animation: none;
+    }
+  }
+</style>

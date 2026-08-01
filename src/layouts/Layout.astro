@@ -6,7 +6,8 @@ import Navbar from "../components/navbar/navbar.astro";
 import "@fontsource/lato/400.css"; // Specify weight
 import "@fontsource/lato/400-italic.css"; // Specify weight and style
 
-import { getLangFromUrl } from "@/i18n/utils";
+import { LANGUAGES, ui } from "@/i18n/ui";
+import { getLangFromUrl, getLocalizedPathname } from "@/i18n/utils";
 
 // import { getLangFromUrl } from "@/i18n/utils";
 
@@ -16,20 +17,134 @@ import WhatsappButton from "@/components/ui/whatsappButton.astro";
 // const lang = getLangFromUrl(Astro.url);
 
 export interface Props {
-  title: string;
+  title?: string;
+  description?: string;
+  image?: string;
+  imageAlt?: string;
+  structuredData?: Record<string, unknown> | Record<string, unknown>[];
 }
 
 const lang = getLangFromUrl(Astro.url);
+type Locale = keyof typeof ui;
+const siteURL = Astro.site ?? new URL(Astro.url.origin);
 
-const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
+const canonicalURL = new URL(Astro.url.pathname, siteURL).toString();
 
-const resolvedImageWithDomain = new URL("/logo.svg", Astro.site).toString();
+const defaultMetadata = {
+  en: {
+    title: "Guided Cycling, Hiking & Adventure Tours in Spain & Italy",
+    description:
+      "Guided cycling, hiking, road trips and tailor-made adventure holidays across Spain and Italy with Montaraz Outdoors & Culture.",
+    imageAlt: "Guided outdoor adventure with Montaraz Outdoors & Culture",
+  },
+  nl: {
+    title:
+      "Begeleide fiets-, wandel- en avontuurlijke reizen in Spanje en Italie",
+    description:
+      "Begeleide fiets-, wandel- en avontuurlijke reizen in Spanje en Italie met Montaraz Outdoors & Culture.",
+    imageAlt: "Begeleide outdoorervaring met Montaraz Outdoors & Culture",
+  },
+} as const;
 
-const { title } = Astro.props;
+const {
+  title,
+  description,
+  image = "/og-home.jpg",
+  imageAlt,
+  structuredData,
+} = Astro.props;
+const localizedMetadata = defaultMetadata[lang];
+const routeSegments = Astro.url.pathname.split("/").filter(Boolean);
+const routeSlug = routeSegments.at(-1);
+const inferredTitle =
+  routeSlug && routeSlug !== lang
+    ? routeSlug
+        .split("-")
+        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(" ")
+    : undefined;
+const effectiveTitle = title || inferredTitle;
+const pageTitle = effectiveTitle
+  ? `${effectiveTitle} | Montaraz Outdoors & Culture`
+  : localizedMetadata.title;
+const titleBasedDescription = effectiveTitle
+  ? lang === "nl"
+    ? `Ontdek ${effectiveTitle} met Montaraz Outdoors & Culture. Begeleide fiets-, wandel- en avontuurlijke reizen in Spanje en Italie.`
+    : `Discover ${effectiveTitle} with Montaraz Outdoors & Culture. Guided cycling, hiking and adventure travel in Spain and Italy.`
+  : localizedMetadata.description;
+const pageDescription = description ?? titleBasedDescription;
+const resolvedImageWithDomain = new URL(image, siteURL).toString();
+const resolvedImageAlt = imageAlt ?? localizedMetadata.imageAlt;
 
-const makeTitle = title
-  ? title + " | " + "Outdoor & Culture"
-  : "Montaraz Experience, travels, tours, cycling and hiking";
+const alternates = Object.values(LANGUAGES).map(({ code }) => ({
+  lang: code,
+  url: new URL(
+    getLocalizedPathname(Astro.url.pathname, lang, code as Locale),
+    siteURL,
+  ).toString(),
+}));
+const defaultAlternate = alternates.find(
+  (alternate) => alternate.lang === "en",
+);
+
+const organizationSchema = {
+  "@type": "TravelAgency",
+  "@id": new URL("/#organization", siteURL).toString(),
+  name: "Montaraz Outdoors & Culture",
+  url: siteURL.toString(),
+  logo: new URL("/logo-new.webp", siteURL).toString(),
+  image: resolvedImageWithDomain,
+  email: "montarazoutdoors@gmail.com",
+  telephone: "+34665311314",
+  identifier: {
+    "@type": "PropertyValue",
+    name: "Travel agency registration",
+    value: "C.IAN-188135-3",
+  },
+  areaServed: [
+    { "@type": "AdministrativeArea", name: "Andalusia" },
+    { "@type": "Country", name: "Spain" },
+    { "@type": "Country", name: "Italy" },
+  ],
+  sameAs: [
+    "https://www.instagram.com/montaraz_outdoors_culture/",
+    "https://www.youtube.com/@montarazoutdoors",
+  ],
+};
+
+const websiteSchema = {
+  "@type": "WebSite",
+  "@id": new URL("/#website", siteURL).toString(),
+  name: "Montaraz Outdoors & Culture",
+  url: siteURL.toString(),
+  inLanguage: lang,
+  publisher: { "@id": organizationSchema["@id"] },
+};
+
+const webPageSchema = {
+  "@type": "WebPage",
+  "@id": canonicalURL,
+  name: pageTitle,
+  description: pageDescription,
+  url: canonicalURL,
+  inLanguage: lang,
+  isPartOf: { "@id": websiteSchema["@id"] },
+};
+
+const pageStructuredData = structuredData
+  ? Array.isArray(structuredData)
+    ? structuredData
+    : [structuredData]
+  : [];
+const jsonLd = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    organizationSchema,
+    websiteSchema,
+    webPageSchema,
+    ...pageStructuredData,
+  ],
+}).replace(/</g, "\\u003c");
 ---
 
 <!doctype html>
@@ -40,15 +155,24 @@ const makeTitle = title
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.webp" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.webp" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.webp" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon-16x16.webp"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon-32x32.webp"
+    />
     <link rel="icon" type="image/png" sizes="192x192" href="/favicon.webp" />
     <meta name="generator" content={Astro.generator} />
 
-    <!-- <link rel="preload" as="image" href={src} alt="Hero" /> -->
     <SEO
-      title={makeTitle}
-      description="Montaraz Outdoor & Culture oficial website, travels, tours, tripis, hikking, bikes, cycling andalusia and spain, treking. "
+      title={pageTitle}
+      description={pageDescription}
       canonical={canonicalURL}
       twitter={{
         creator: "Raydel Conesa Perez",
@@ -59,14 +183,32 @@ const makeTitle = title
         basic: {
           url: canonicalURL,
           type: "website",
-          title: `Montaraz Outdoor & Culture - Guieded Tours`,
+          title: pageTitle,
           image: resolvedImageWithDomain,
         },
         image: {
-          alt: "",
+          alt: resolvedImageAlt,
         },
       }}
     />
+    <meta property="og:locale" content={lang === "nl" ? "nl_NL" : "en_US"} />
+    <meta name="twitter:image" content={resolvedImageWithDomain} />
+    <meta name="twitter:image:alt" content={resolvedImageAlt} />
+    {
+      alternates.map((alternate) => (
+        <link rel="alternate" hreflang={alternate.lang} href={alternate.url} />
+      ))
+    }
+    {
+      defaultAlternate && (
+        <link
+          rel="alternate"
+          hreflang="x-default"
+          href={defaultAlternate.url}
+        />
+      )
+    }
+    <script type="application/ld+json" set:html={jsonLd} />
   </head>
   <body>
     <div>

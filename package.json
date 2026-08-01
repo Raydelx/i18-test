@@ -12,6 +12,7 @@
     "@astrojs/mdx": "^4.2.3",
     "@astrojs/preact": "^4.0.8",
     "@astrojs/react": "^4.2.3",
+    "@astrojs/sitemap": "^3.7.3",
     "@fontsource/lato": "^5.2.5",
     "@tailwindcss/vite": "^4.1.2",
     "@types/react": "^19.1.0",

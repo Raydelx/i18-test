@@ -23,6 +23,43 @@ const translatePath = useTranslatedPath(lang);
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
 
+const homeSeo =
+  lang === "nl"
+    ? {
+        title:
+          "Begeleide fiets-, wandel- en avontuurlijke reizen in Spanje en Italie",
+        description:
+          "Begeleide fiets-, wandel- en avontuurlijke reizen in Spanje en Italie met Montaraz Outdoors & Culture.",
+        imageAlt: "Begeleide outdoorervaring met Montaraz Outdoors & Culture",
+        videoTitle: "Ontdek Spanje en Italie met Montaraz Outdoors & Culture",
+        videoDescription:
+          "Bekijk hoe onze begeleide fiets-, wandel- en avontuurlijke reizen je verbinden met de landschappen en culturen van Spanje en Italie.",
+        videoPlayLabel: "Speel de Montaraz Outdoors video af",
+        videoThumbnailAlt: "Voorbeeld van de Montaraz Outdoors video",
+      }
+    : {
+        title: "Guided Cycling, Hiking & Adventure Tours in Spain & Italy",
+        description:
+          "Guided cycling, hiking, road trips and tailor-made adventure holidays across Spain and Italy with Montaraz Outdoors & Culture.",
+        imageAlt: "Guided outdoor adventure with Montaraz Outdoors & Culture",
+        videoTitle: "Discover Spain and Italy with Montaraz Outdoors & Culture",
+        videoDescription:
+          "See how our guided cycling, hiking and adventure tours connect you with the landscapes and cultures of Spain and Italy.",
+        videoPlayLabel: "Play the Montaraz Outdoors video",
+        videoThumbnailAlt: "Montaraz Outdoors video preview",
+      };
+
+const videoSchema = {
+  "@type": "VideoObject",
+  name: homeSeo.videoTitle,
+  description: homeSeo.videoDescription,
+  thumbnailUrl: "https://montarazoutdoors.com/video/thumbnail.png",
+  contentUrl: "https://www.youtube.com/watch?v=YpukuwdUOhI",
+  embedUrl: "https://www.youtube-nocookie.com/embed/YpukuwdUOhI",
+  inLanguage: lang,
+  publisher: { "@id": "https://montarazoutdoors.com/#organization" },
+};
+
 const ROADBIKEPRODUCTS = [
   {
     name: "Granada E-Bike Tour 8 Days",
@@ -31,7 +68,7 @@ const ROADBIKEPRODUCTS = [
     description2: "",
     href: translatePath("cycle-tour-granada"),
     href_img: "/home/granada-ebike.webp",
-    alt_img: "string",
+    alt_img: "Cyclists on a guided e-bike tour in Granada, Andalusia",
   },
   {
     name: "Ronda - Córdoba E-Bike Tour 8 Days",
@@ -40,7 +77,7 @@ const ROADBIKEPRODUCTS = [
     description2: "",
     href: translatePath("cycle-ronda-cordoba"),
     href_img: "/home/ronda-cordoba.webp",
-    alt_img: "string",
+    alt_img: "Cyclist on the Ronda to Cordoba e-bike tour in Andalusia",
   },
   {
     name: "Custom-Made Andalusia Trips",
@@ -49,7 +86,7 @@ const ROADBIKEPRODUCTS = [
     description2: "",
     href: translatePath("tailor-made-travel"),
     href_img: "/home/custom-made.webp",
-    alt_img: "string",
+    alt_img: "Tailor-made cycling and adventure holiday in Andalusia",
   },
   {
     name: "Sierra Nevada E-MTB Tour 8 Days",
@@ -59,103 +96,131 @@ const ROADBIKEPRODUCTS = [
     href: translatePath("sierra-nevada-e-mtb-tour-8-days"),
     href_img:
       "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-principal.webp",
-    alt_img: "Sierra Nevada E-BikeTour 8 Days",
+    alt_img: "Guided e-mountain biking in the Sierra Nevada",
   },
 ];
 ---
 
-<Layout title="">
-  <section class="w-full overflow-hidden bg-black">
-    <video
-      class="block h-[350px] w-full object-cover md:h-[85vh]"
-      autoplay
-      muted
-      loop
-      playsinline
-      preload="metadata"
-      width="1280"
-      height="720"
-      aria-hidden="true">
-      <source src="/video/vid-hor-indez.webm" type="video/webm" />
-    </video>
-  </section>
-
-  <section class="mb-10 md:mb-28 lg:px-40 px-4">
-    <Hero />
-  </section>
-
-  <section class="mx-auto w-full max-w-6xl px-4 md:px-8">
-    <div
-      class="overflow-hidden rounded-lg border-4 border-[#ff5e00] bg-black shadow-lg">
-      <button
-        class="group relative block aspect-video w-full overflow-hidden"
-        type="button"
-        data-youtube-poster
-        aria-label="Play Montaraz Outdoors video">
-        <img
-          class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-          src="/video/thumbnail.png"
-          alt="Montaraz Outdoors video preview"
-          width="1280"
-          height="720"
-          loading="lazy"
+<Layout
+  title={homeSeo.title}
+  description={homeSeo.description}
+  image="/og-home.jpg"
+  imageAlt={homeSeo.imageAlt}
+  structuredData={videoSchema}>
+  <main>
+    <section class="w-full overflow-hidden bg-black">
+      <video
+        class="block h-[350px] w-full object-cover md:h-[85vh]"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        poster="/video/thumbnail.png"
+        width="1280"
+        height="720"
+        aria-hidden="true">
+        <source
+          media="(max-width: 767px)"
+          src="/video/vid-hor-indez-mobile.webm"
+          type="video/webm"
         />
-        <span
-          class="absolute inset-0 bg-black/20 transition-colors duration-300 group-hover:bg-black/35"
-        ></span>
-        <span
-          class="absolute left-1/2 top-1/2 grid size-16 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full bg-red-600 text-white shadow-lg transition-transform duration-300 group-hover:scale-110"
-          aria-hidden="true">
-          <svg viewBox="0 0 24 24" class="ml-1 size-8 fill-current"
-            ><path d="M8 5v14l11-7z"></path></svg
-          >
-        </span>
-      </button>
-      <iframe
-        class="hidden aspect-video w-full"
-        data-youtube-player
-        title="Montaraz Outdoors video"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen></iframe>
-    </div>
-  </section>
-
-  <script>
-    const poster = document.querySelector<HTMLButtonElement>(
-      "[data-youtube-poster]",
-    );
-    const player = document.querySelector<HTMLIFrameElement>(
-      "[data-youtube-player]",
-    );
-
-    poster?.addEventListener("click", () => {
-      if (!player) return;
-
-      player.src =
-        "https://www.youtube-nocookie.com/embed/YpukuwdUOhI?autoplay=1&controls=1&rel=0&modestbranding=1";
-      poster.remove();
-      player.classList.remove("hidden");
-    });
-  </script>
-
-  <section class="lg:mt-26 mt-12"><WelcomeCard /></section>
-
-  <Container class="w-full">
-    <section>
-      <CardHome />
+        <source src="/video/vid-hor-indez.webm" type="video/webm" />
+      </video>
     </section>
 
-    <section class="mt-10 w-auto flex justify-center">
-      <NewFaq title="What our clients<br />said about us?" faqs={faqs} />
+    <section class="mb-10 px-4 md:mb-28 lg:px-40">
+      <Hero />
     </section>
 
-    <h2
-      class="text-2xl font-bold text-neutral-800 md:text-4xl md:leading-tight">
-      Exclusive Trips
-    </h2>
-    <main class="mt-10 md:mt-16">
-      <InfiniteCarousel items={ROADBIKEPRODUCTS} speed={30} />
-    </main>
-  </Container>
+    <section
+      class="mx-auto w-full max-w-6xl px-4 md:px-8"
+      aria-labelledby="home-video-title">
+      <div class="mb-5 text-center">
+        <h2
+          id="home-video-title"
+          class="text-2xl font-bold text-neutral-800 md:text-4xl">
+          {homeSeo.videoTitle}
+        </h2>
+        <p class="mt-3 text-base text-neutral-700 md:text-lg">
+          {homeSeo.videoDescription}
+        </p>
+      </div>
+      <div
+        class="overflow-hidden rounded-lg border-4 border-[#ff5e00] bg-black shadow-lg">
+        <button
+          class="group relative block aspect-video w-full overflow-hidden"
+          type="button"
+          data-youtube-poster
+          aria-label={homeSeo.videoPlayLabel}>
+          <img
+            class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+            src="/video/thumbnail.png"
+            alt={homeSeo.videoThumbnailAlt}
+            width="1280"
+            height="720"
+            loading="lazy"
+          />
+          <span
+            class="absolute inset-0 bg-black/20 transition-colors duration-300 group-hover:bg-black/35"
+          ></span>
+          <span
+            class="absolute left-1/2 top-1/2 grid size-16 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full bg-red-600 text-white shadow-lg transition-transform duration-300 group-hover:scale-110"
+            aria-hidden="true">
+            <svg viewBox="0 0 24 24" class="ml-1 size-8 fill-current"
+              ><path d="M8 5v14l11-7z"></path></svg
+            >
+          </span>
+        </button>
+        <iframe
+          class="hidden aspect-video w-full"
+          data-youtube-player
+          title={homeSeo.videoTitle}
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <script>
+      const poster = document.querySelector<HTMLButtonElement>(
+        "[data-youtube-poster]",
+      );
+      const player = document.querySelector<HTMLIFrameElement>(
+        "[data-youtube-player]",
+      );
+
+      poster?.addEventListener("click", () => {
+        if (!player) return;
+
+        player.src =
+          "https://www.youtube-nocookie.com/embed/YpukuwdUOhI?autoplay=1&controls=1&rel=0&modestbranding=1";
+        poster.remove();
+        player.classList.remove("hidden");
+      });
+    </script>
+
+    <section class="mt-12 lg:mt-26"><WelcomeCard /></section>
+
+    <Container class="w-full">
+      <section>
+        <CardHome />
+      </section>
+
+      <section class="mt-10 flex w-auto justify-center">
+        <NewFaq title="What our clients<br />said about us?" faqs={faqs} />
+      </section>
+
+      <section class="mt-10 md:mt-16" aria-labelledby="exclusive-trips-title">
+        <h2
+          id="exclusive-trips-title"
+          class="text-2xl font-bold text-neutral-800 md:text-4xl md:leading-tight">
+          Exclusive Trips
+        </h2>
+        <div class="mt-10 md:mt-16">
+          <InfiniteCarousel items={ROADBIKEPRODUCTS} speed={30} />
+        </div>
+      </section>
+    </Container>
+  </main>
 </Layout>

@@ -25,6 +25,31 @@ export function useTranslatedPath(lang: keyof typeof ui) {
     };
 }
 
+export function getLocalizedPathname(
+	pathname: string,
+	currentLang: keyof typeof ui,
+	targetLang: keyof typeof ui,
+) {
+	const segments = pathname.split('/').filter(Boolean);
+	const contentSegments =
+		segments[0] === currentLang ? segments.slice(1) : segments;
+	const currentRoutes = routes[currentLang] as Record<string, string>;
+	const targetRoutes = routes[targetLang] as Record<string, string>;
+	const routeKeys = contentSegments.map((segment) => {
+		if (currentLang === defaultLang) return segment;
+
+		return (
+			Object.entries(currentRoutes).find(([, value]) => value === segment)?.[0] ??
+			segment
+		);
+	});
+	const localizedSegments = routeKeys.map(
+		(segment) => targetRoutes[segment] ?? segment,
+	);
+
+	return `/${targetLang}${localizedSegments.length ? `/${localizedSegments.join("/")}` : "/"}`;
+}
+
 export function getRouteFromUrl(url: URL): string | undefined {
 	const pathname = new URL(url).pathname;
 	const parts = pathname?.split('/');
