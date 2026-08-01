@@ -3,7 +3,6 @@ import NewFaq from "@/components/newFaq.astro";
 import Container from "@/components/container.astro";
 import faqs from "@/data_files/faqs.json";
 import Layout from "@/layouts/Layout.astro";
-import SliderReactHome from "@/hooks/SliderReactHome";
 import CardHome from "@/components/cardHome.astro";
 import Gallery from "@/components/gallery.astro";
 import Hero from "@/components/hero.astro";
@@ -63,35 +62,24 @@ const ROADBIKEPRODUCTS = [
     alt_img: "Sierra Nevada E-BikeTour 8 Days",
   },
 ];
-const IMG = [
-  {
-    src: "/home/home23.webp",
-  },
-  {
-    src: "/home/home24.webp",
-  },
-
-  {
-    src: "/home/home26.webp",
-  },
-  {
-    src: "/home/home27.webp",
-  },
-  {
-    src: "/home/home28.webp",
-  },
-  {
-    src: "/home/home29.webp",
-  },
-];
 ---
 
 <Layout title="">
-  <section class="m-auto md:w-full">
-    <ol class="relative">
-      {(<SliderReactHome IMG={IMG} client:visible />)}
-    </ol>
+  <section class="w-full overflow-hidden bg-black">
+    <video
+      class="block h-[350px] w-full object-cover md:h-[85vh]"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="metadata"
+      width="1280"
+      height="720"
+      aria-hidden="true">
+      <source src="/video/vid-hor-indez.webm" type="video/webm" />
+    </video>
   </section>
+
   <section class="mb-10 md:mb-28 lg:px-40 px-4">
     <Hero />
   </section>
