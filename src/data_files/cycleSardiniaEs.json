@@ -11,7 +11,12 @@
       
       {
         "name": "Group size",
-        "text1": "Our tours are designed for small groups to ensure a safe, enjoyable, and high-quality experience. A minimum of 10 participants is required to organize the tour. The maximum number of participants is 14, which allows us to provide attentive service, maintain safety on the road, and ensure a personalized experience throughout the tour. If the minimum number of participants is not reached, we can still organize the tour; however, the price will be adjusted accordingly."
+        "text1": "Our tours are designed for small groups to ensure a safe, enjoyable, and high-quality experience. A minimum of 6 participants is required to organize the tour. The maximum number of participants is 14, which allows us to provide attentive service, maintain safety on the road, and ensure a personalized experience throughout the tour. If the minimum number of participants is not reached, we can still organize the tour; however, the price will be adjusted accordingly."
+      },
+      {
+        "name": "Price",
+        "text1": "The published price is based on a group of 10 participants.",
+        "text2": "Please contact us for a personalised quotation based on your group size and travel dates."
       },
       {
         "name": "Tailor-made version",

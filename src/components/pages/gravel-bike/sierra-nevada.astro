@@ -7,8 +7,8 @@ import SliderReact from "../../../hooks/SliderReact";
 import Days from "@/components/products-components/days.astro";
 import Includes from "@/components/products-components/includes.astro";
 import Route from "@/components/ui/icons/route.astro";
-import Cancellation from "@/components/products-components/cancellation.astro";
-import Widget from "@/components/products-components/widget.astro";
+import AccordionProducts from "@/components/accordionProducts.astro";
+import cycleMtbSierraNevada from "@/data_files/cycleMtbSierraNevadaEs.json";
 
 import { getI18N } from "@/i18n/";
 
@@ -50,15 +50,9 @@ const DAYS = [
   },
 ];
 
-const brings = [
+const BIKES = [
   {
-    title: i18n.PRODUCTS.GRAVEL_BIKE.MTB_TRAILS_BIKE.WHAT_TO_BRING_TEXT_2,
-  },
-  {
-    title: i18n.PRODUCTS.GRAVEL_BIKE.MTB_TRAILS_BIKE.WHAT_TO_BRING_TEXT_3,
-  },
-  {
-    title: i18n.PRODUCTS.GRAVEL_BIKE.MTB_TRAILS_BIKE.WHAT_TO_BRING_TEXT_4,
+    src: "/cycle-tour/montainbike/sierra-nevada/sierranevada-1.webp",
   },
 ];
 ---
@@ -271,124 +265,165 @@ const brings = [
       <div class="grid gap-5">
         <div class="">
           <h2
-            class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+            class="max-w-2xl mb-4 inline-block rounded-lg bg-[#3c5546] px-6 py-2 text-2xl font-bold text-white md:text-4xl xl:text-5xl">
             {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.AVAILABILITY}
           </h2>
 
           <ul class="grid gap-2 text-lg">
             <li class="flex flex-wrap gap-2">
-              <Icon icon="spring-logo" size="1.6rem" color="#0E46A3" />
+              <Icon icon="spring-logo" size="1.6rem" color="#ff5e00" />
               <p>
                 {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.AVAILABILITY_SPRING}
               </p>
             </li>
             <li class="flex flex-wrap gap-2">
-              <Icon icon="summer-logo" size="1.6rem" color="#0E46A3" />
+              <Icon icon="summer-logo" size="1.6rem" color="#ff5e00" />
               <p>
                 {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.AVAILABILITY_SUMMER}
               </p>
             </li>
             <li class="flex flex-wrap gap-2">
-              <Icon icon="autumn-logo" size="1.6rem" color="#0E46A3" />
+              <Icon icon="autumn-logo" size="1.6rem" color="#ff5e00" />
               <p>
                 {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.AVAILABILITY_AUTUMN}
               </p>
             </li>
           </ul>
         </div>
-
-        <div class="">
-          <h2
-            class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
-            {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.HIGHLIGHT}
-          </h2>
-          <p class="text-lg text-gray-900 mb-1">
-            <span class="text-xl">🔹</span>
-            {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.HIGHLIGHT_TEXT_1}
-          </p>
-          <p class="text-lg text-gray-900">
-            <span class="text-xl">🔹</span>
-            {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.HIGHLIGHT_TEXT_2}
-          </p>
-        </div>
       </div>
     </div>
 
-    <!-- Button to download PDF -->
+    <div class="mt-10 grid grid-cols-1 items-center gap-2 lg:grid-cols-2">
+      <div>
+        <h2
+          class="max-w-2xl mb-4 inline-block rounded-lg bg-[#3c5546] px-6 py-2 text-2xl font-bold text-white md:text-4xl xl:text-5xl">
+          Bicycle
+        </h2>
+        <p>🔶 E-bike included in the tour</p>
+      </div>
+      <div class="w-full overflow-x-auto">
+        <ol class="w-full">
+          {(<SliderReact IMG={BIKES} client:visible />)}
+        </ol>
+      </div>
+    </div>
+
+    <AccordionProducts
+      title="Travel<br />Information"
+      cycleSardiniaEs={cycleMtbSierraNevada}
+    />
+
+    <div class="mb-14 grid items-center gap-4 lg:mb-20 lg:grid-cols-2">
+      <div>
+        <h2
+          class="mb-4 inline-block rounded-lg bg-[#3c5546] px-6 py-4 text-2xl font-bold text-white md:text-4xl xl:text-5xl">
+          What to pack for your cycle tour
+        </h2>
+        <p class="mb-2">
+          A well-packed bag makes a smoother ride! Here's what we recommend for
+          your cycle tour through Granada.
+        </p>
+
+        <p>🔶 Comfortable clothing and shoes</p>
+        <p>🔶 Sun protection</p>
+        <p>🔶 Small bag with extra snacks</p>
+        <p>🔶 Lightweight windproof and/or waterproof jacket (rain jacket)</p>
+        <p>🔶 Sweater or fleece (extra layers for cooler conditions)</p>
+
+        <p class="mb-2">
+          If you have any questions about the recommended equipment or are
+          unsure what to bring, please do not hesitate to contact us.
+        </p>
+      </div>
+      <div>
+        <img
+          class="rounded-2xl"
+          src="/cycle-tour/montainbike/sierra-nevada/sierra-feature.webp"
+          alt="Cyclist in the Sierra Nevada mountains"
+        />
+      </div>
+    </div>
+
     <section class="grid md:grid-cols-2">
       <div class="">
         <h2
-          class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
-          {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.REQUIEREMENTS}
+          class="max-w-2xl mb-4 inline-block rounded-lg bg-[#3c5546] px-6 py-2 text-2xl font-bold text-white md:text-4xl xl:text-5xl">
+          {i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT.REQUIEREMENTS}
         </h2>
         <p class="text-lg text-gray-900 mb-1">
-          <span class="text-xl strong">🔹</span>
-          {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.REQUIEREMENTS_TEXT_1}
+          <span class="text-xl strong">🔶</span>
+          {
+            i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT
+              .REQUIEREMENTS_TEXT_1
+          }
         </p>
         <p class="text-lg text-gray-900 mb-1">
-          <span class="text-xl strong">🔹</span>
-          {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.REQUIEREMENTS_TEXT_2}
+          <span class="text-xl strong">🔶</span>
+          {
+            i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT
+              .REQUIEREMENTS_TEXT_2
+          }
         </p>
         <p class="text-lg text-gray-900 mb-1">
-          <span class="text-xl strong">🔹</span>
-          {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.REQUIEREMENTS_TEXT_3}
+          <span class="text-xl strong">🔶</span>
+          {
+            i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT
+              .REQUIEREMENTS_TEXT_3
+          }
         </p>
         <p class="text-lg text-gray-900 mb-1">
-          <span class="text-xl strong">🔹</span>
-          {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.REQUIEREMENTS_TEXT_4}
+          <span class="text-xl strong">🔶</span>
+          {
+            i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT
+              .REQUIEREMENTS_TEXT_4
+          }
         </p>
         <p class="text-lg text-gray-900 mb-1">
-          <span class="text-xl strong">🔹</span>
-          {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.REQUIEREMENTS_TEXT_5}
+          <span class="text-xl strong">🔶</span>
+          {
+            i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT
+              .REQUIEREMENTS_TEXT_5
+          }
         </p>
         <p class="text-lg text-gray-900 mb-1">
-          <span class="text-xl strong">🔹</span>
-          {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.REQUIEREMENTS_TEXT_6}
+          <span class="text-xl strong">🔶</span>
+          {
+            i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT
+              .REQUIEREMENTS_TEXT_6
+          }
+        </p>
+        <p class="text-lg text-gray-900 mb-1">
+          <span class="text-xl strong">🔶</span>
+          {
+            i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT
+              .REQUIEREMENTS_TEXT_7
+          }
+        </p>
+        <p class="text-lg text-gray-900 mb-1">
+          <span class="text-xl strong">🔶</span>
+          {
+            i18n.PRODUCTS.GRAVEL_BIKE.MTB_SIERRA_NEVADA_DESERT
+              .REQUIEREMENTS_TEXT_8
+          }
         </p>
       </div>
-      <Cancellation />
+
+      <div>
+        <h2
+          class="max-w-2xl mb-4 inline-block rounded-lg bg-[#3c5546] px-6 py-2 text-2xl font-bold text-white md:text-4xl xl:text-5xl">
+          Terms & Conditions
+        </h2>
+        <p class="max-w-2xl mb-6 md:px-0">
+          Please review our <a
+            href="terms-and-conditions"
+            class="font-bold text-[#ff5e00] hover:text-[#ff863f] visited:text-purple-600"
+            target="_blank"
+            rel="noopener noreferrer">Terms & Conditions</a
+          > before completing your booking. By confirming your reservation, you agree
+          to all policies regarding payments, cancellations, and participation requirements.
+        </p>
+      </div>
     </section>
-
-    <Widget
-      title={i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.WHAT_TO_BRING}
-      description={i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.WHAT_TO_BRING_TEXT_1}
-      img="/cycle-tour/montainbike.webp"
-      text={i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.WHAT_TO_BRING_TEXT_5}
-      brings={brings}
-    />
-
-    <div>
-      <h2
-        class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
-        {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.LEVEL.TITLE}
-      </h2>
-      <p class="text-lg text-gray-900 mb-1">
-        {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.LEVEL.TEXT_1}
-      </p>
-      <p class="text-lg text-gray-900 mb-1">
-        <span class="text-xl strong">🔹</span>
-        {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.LEVEL.TEXT_2}
-      </p>
-      <p class="text-lg text-gray-900 mb-1">
-        <span class="text-xl strong">🔹</span>
-        {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.LEVEL.TEXT_3}
-      </p>
-      <p class="text-lg text-gray-900 mb-1">
-        <span class="text-xl strong">🔹</span>
-        {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.LEVEL.TEXT_4}
-      </p>
-      <p class="text-lg text-gray-900 mb-1">
-        <span class="text-xl strong">🔹</span>
-        {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.LEVEL.TEXT_5}
-      </p>
-      <p class="text-lg text-gray-900 mb-1">
-        <span class="text-xl strong">🔹</span>
-        {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.LEVEL.TEXT_6}
-      </p>
-      <p class="text-lg text-gray-900 mb-1">
-        {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.LEVEL.TEXT_7}
-      </p>
-    </div>
 
     <!-- Slider Photos -->
     <section class="m-auto md:w-full rounded-xl md:px-8 md:py-20">

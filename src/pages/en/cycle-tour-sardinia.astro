@@ -9,6 +9,7 @@ import Includes from "@/components/products-components/includes.astro";
 import Route from "@/components/ui/icons/route.astro";
 import Link from "@/components/ui/link.astro";
 import cycleSardiniaEs from "@/data_files/cycleSardiniaEs.json";
+import { Accordion, AccordionItem } from "free-astro-components";
 
 import ReviewsCompt from "@/components/ui/reviewsCompt.astro";
 
@@ -271,7 +272,7 @@ const DAYS = [
         </InformationProducts>
         <InformationProducts
           title={i18n.INFO_PRODUCTS.MINIMUM_OF_PERSONS}
-          subtitle="10">
+          subtitle="6">
           <div slot="icon">
             <Icon icon="group-logo" size="1.6rem" color="#ff5e00" />
           </div>
@@ -441,14 +442,14 @@ const DAYS = [
           <div slot="description" class="flex flex-col gap-2 mt-4">
             <li class="flex gap-2">
               <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
-              <p class="max-w-[320px] text-md">
-                Travel & cancellation insurance (It is obligatory to take out
-                travel insurance before departure)
+              <p class="text-md">
+                Travel & cancellation insurance (It is recommended to take out
+                travel insurance before departure )
               </p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
-              <p class="max-w-[320px] text-md">Flight</p>
+              <p class="text-md">Flight</p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
@@ -514,7 +515,7 @@ const DAYS = [
       <div class="grid gap-5 md:-mt-20">
         <div>
           <h2
-            class="max-w-2xl mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+            class="mb-4 inline-block rounded-lg bg-[#3c5546] px-6 py-4 text-2xl font-bold text-white md:text-4xl xl:text-5xl">
             {i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.AVAILABILITY}
           </h2>
           <p>
@@ -567,7 +568,7 @@ const DAYS = [
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 mt-10 items-center">
       <div>
         <h2
-          class="max-w-2xl mb-6 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+          class="mb-4 inline-block rounded-lg bg-[#3c5546] px-6 py-4 text-2xl font-bold text-white md:text-4xl xl:text-5xl">
           Bicycle
         </h2>
         <p>🔶 Scott</p>
@@ -593,7 +594,7 @@ const DAYS = [
     <div class="grid lg:grid-cols-2 gap-4 items-center">
       <div>
         <h2
-          class="max-w-2xl mb-6 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+          class="mb-4 inline-block rounded-lg bg-[#3c5546] px-6 py-4 text-2xl font-bold text-white md:text-4xl xl:text-5xl">
           What to Pack for Your Cycling Holiday
         </h2>
         <p class="mb-2">
@@ -656,7 +657,7 @@ const DAYS = [
     <div class="grid lg:grid-cols-2 gap-4 lg:mt-20 mt-10 mb-10">
       <div>
         <h2
-          class="max-w-2xl mb-6 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+          class="mb-4 inline-block rounded-lg bg-[#3c5546] px-6 py-4 text-2xl font-bold text-white md:text-4xl xl:text-5xl">
           Requirements
         </h2>
         <p>🔶 Valid travel insurance</p>
@@ -677,52 +678,7 @@ const DAYS = [
 
       <div>
         <h2
-          class="max-w-2xl mb-6 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
-          Welcome to SARDINIA
-        </h2>
-        <p class="max-w-2xl mb-6 md:px-0 font-bold">
-          Between Culture and Landscapes. Sardinia is the Mediterranean dream!
-        </p>
-        <p class="mb-2">
-          Discover Sardinia on two wheels by a stunning itinerary that brings
-          together island´s most pristine coastlines, culture and flavours in
-          one cycle route.
-        </p>
-        <p>
-          🔶 Explore Ancient Civilisations. From the mysterious Nuraghe towers
-          to Phoenician, Carthaginian, Roman, Aragonese, and Pisan influences,
-          each has left an indelible mark on Sardinia’s identity.
-        </p>
-        <p>
-          🔶 Nature has worked wonders in Sardinia — soaring cliffs and a
-          coastline dotted with world-famous beaches and bays create an
-          outstanding landscape.
-        </p>
-        <p>
-          🔶 Visit hidden mountain villages in the rural heart of Sardinia to
-          beautiful medieval towns such as Alghero and Castelsardo, or Bosa—one
-          of Sardinia’s most beautiful towns, with colorful houses stacked along
-          a steep hillside rising up to a majestic castle.
-        </p>
-        <p>
-          🔶 Discover the Sardinian way of life. This island holds the secret to
-          longetivity, ask the Sardinians.
-        </p>
-        <p>
-          🔶 The Sardinian cuisine – locally produced ricotta, pecorino, and
-          goat cheese; taste traditional Sardinian wines and specialties such as
-          culurgiones, porcetto, and seadas al miele, and much more.
-        </p>
-        <p>
-          🔶 Enjoy your free days with optional activities such as a boat trip,
-          a visit to the Grotta di Nettuno (one of the largest marine caves in
-          Italy), discovering the island’s mining heritage or the Vermentino
-          wine tasting experience – all in one cycle tour.
-        </p>
-      </div>
-      <div>
-        <h2
-          class="max-w-2xl mb-6 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+          class="mb-4 inline-block rounded-lg bg-[#3c5546] px-6 py-4 text-2xl font-bold text-white md:text-4xl xl:text-5xl">
           Terms & Conditions
         </h2>
         <p class="max-w-2xl mb-6 md:px-0">
@@ -741,11 +697,57 @@ const DAYS = [
       </ol>
     </section>
 
+    <div class="mt-10">
+      <h2
+        class="mb-4 inline-block rounded-lg bg-[#3c5546] px-6 py-4 text-2xl font-bold text-white md:text-4xl xl:text-5xl">
+        Welcome to SARDINIA
+      </h2>
+      <p class="max-w-2xl mb-6 md:px-0 font-bold">
+        Between Culture and Landscapes. Sardinia is the Mediterranean dream!
+      </p>
+      <p class="mb-2">
+        Discover Sardinia on two wheels by a stunning itinerary that brings
+        together island´s most pristine coastlines, culture and flavours in one
+        cycle route.
+      </p>
+      <p>
+        🔶 Explore Ancient Civilisations. From the mysterious Nuraghe towers to
+        Phoenician, Carthaginian, Roman, Aragonese, and Pisan influences, each
+        has left an indelible mark on Sardinia’s identity.
+      </p>
+      <p>
+        🔶 Nature has worked wonders in Sardinia — soaring cliffs and a
+        coastline dotted with world-famous beaches and bays create an
+        outstanding landscape.
+      </p>
+      <p>
+        🔶 Visit hidden mountain villages in the rural heart of Sardinia to
+        beautiful medieval towns such as Alghero and Castelsardo, or Bosa—one of
+        Sardinia’s most beautiful towns, with colorful houses stacked along a
+        steep hillside rising up to a majestic castle.
+      </p>
+      <p>
+        🔶 Discover the Sardinian way of life. This island holds the secret to
+        longetivity, ask the Sardinians.
+      </p>
+      <p>
+        🔶 The Sardinian cuisine – locally produced ricotta, pecorino, and goat
+        cheese; taste traditional Sardinian wines and specialties such as
+        culurgiones, porcetto, and seadas al miele, and much more.
+      </p>
+      <p>
+        🔶 Enjoy your free days with optional activities such as a boat trip, a
+        visit to the Grotta di Nettuno (one of the largest marine caves in
+        Italy), discovering the island’s mining heritage or the Vermentino wine
+        tasting experience – all in one cycle tour.
+      </p>
+    </div>
+
     <section>
       <!--  TimeLine per days  -->
-      <div class="md:p-8">
+      <div class="mt-10">
         <h2
-          class="max-w-2xl md:p-8 mb-4 md:px-0 font-bold text-4xl md:text-5xl xl:text-6xl">
+          class="mb-4 inline-block rounded-lg bg-[#3c5546] px-6 py-4 text-2xl font-bold text-white md:text-4xl xl:text-5xl">
           {
             i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.WHAT_TO_EXPECT
               .TITLE
@@ -780,13 +782,669 @@ const DAYS = [
           <span class="text-xl strong">🔶</span>Extra optional activities
         </p>
 
-        {
-          DAYS.map((tour) => (
-            <ol class="mb-10">
-              <Days {...tour} />
-            </ol>
-          ))
-        }
+        <Accordion class="mt-6 mb-10" variant="splitted">
+          <AccordionItem title="Day 1">
+            <p class="font-bold text-xl">Arrival Olbia</p>
+            <p class="">
+              Upon arrival at Olbia Airport, a transfer will be waiting to take
+              you to the hotel. Depending on your arrival time, the rest of the
+              day is free. You may choose to spend the afternoon exploring
+              Olbia’s old town, which offers a pleasant atmosphere for a relaxed
+              stroll, as well as plenty of cafés and restaurants where you can
+              enjoy lunch or a coffee.
+            </p>
+
+            <p class="">
+              In the afternoon, at the agreed meeting time, the tour leader will
+              meet the group at the hotel reception to provide a briefing about
+              the tour and the days ahead. In the evening, a table is reserved
+              at a local restaurant, where we come together for our first dinner
+              and the official start of the trip.
+            </p>
+          </AccordionItem>
+
+          <AccordionItem title="Day 2">
+            <div class="grid md:grid-cols-2 gap-8 md:gap-32">
+              <div class="">
+                <p class="font-bold">Gallura Cork Forest</p>
+                <p class="">
+                  Our first cycling day in Sardinia begins with a short transfer
+                  from Olbia, driving about 30 minutes north to reach the
+                  starting point of today’s ride. From here, the route leads us
+                  through Gallura, a region with a strong local identity and
+                  traditional countryside, known for its granite hills and vast
+                  cork oak forests—some of the most important in Europe. Cork
+                  has been harvested here for centuries, shaping both the local
+                  economy and the landscape.
+                </p>
+                <p class="">
+                  Along the way, we ride through small villages like
+                  Sant’Antonio di Gallura, stopping for coffee and a break,
+                  giving us time to enjoy the easygoing pace of daily life in
+                  Sardinia at its most genuine: simple, peaceful, and deeply
+                  connected to the land.
+                </p>
+
+                <p class="">
+                  The stage concludes in Tempio Pausania, set at the foot of
+                  Mount Limbara. A charming and characteristic town, Tempio
+                  Pausania has long been considered the cradle of Gallura
+                  culture. Its historic centre, built almost entirely from
+                  exposed local granite, creates a distinctive and harmonious
+                  atmosphere, offering enchanting views and a perfect setting to
+                  end our first day of cycling in Sardinia.
+                </p>
+              </div>
+
+              <div class="">
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="distance-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-neutral-900 text-xl font-bold">
+                      Total Distance
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">39 km</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="up-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                      Total Ascent
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">826 m</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="down-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                      Total Descent
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">414 m</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="timer-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                      Duration Trial
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">5 hours</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="difficulty-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                      Difficulty
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">2</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </AccordionItem>
+
+          <AccordionItem title="Day 3">
+            <div class="grid md:grid-cols-2 gap-8 md:gap-32">
+              <div class="">
+                <p class="font-bold">Monte Limbara</p>
+                <p class="">
+                  Waking up above the Gallurese plain and surrounded by dense
+                  cork woods is a memorable start to the day, with Monte Limbara
+                  (1,395 m) dominating the rugged landscape.
+                </p>
+                <p class="">
+                  Today’s ride circles the Monte Limbara massif on a scenic
+                  route towards the village of Berchidda. The road skirts the
+                  western side of the mountain, passing through extensive cork
+                  oak and pine forests. Gradually, the deep greens of the
+                  woodland give way to straw-coloured fields and the blue mirror
+                  of Lago di Coghinas.
+                </p>
+
+                <p class="">
+                  Just before crossing the bridge over the lake, the route turns
+                  east towards the farming town of Berchidda, a village with a
+                  long viticultural tradition. The area is a well-known wine
+                  region, famous for the production of Vermentino di Gallura,
+                  Sardinia’s only DOCG-rated wine
+                </p>
+                <p class="">
+                  The stage continues with a ride to a family-owned vineyard,
+                  where there is the option to join a wine tasting accompanied
+                  by a typical Sardinian lunch, offering a relaxed and authentic
+                  experience of local flavours and traditions.
+                </p>
+                <p class="">After the visit, we return to our hotel by car.</p>
+              </div>
+
+              <div class="">
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="distance-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-neutral-900 text-xl font-bold">
+                      Total Distance
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">46 km</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="up-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                      Total Ascent
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">500 m</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="down-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                      Total Descent
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">795 m</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="timer-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                      Duration Trial
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">4 hours</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="difficulty-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                      Difficulty
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">2</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </AccordionItem>
+          <AccordionItem title="Day 4">
+            <div class="grid md:grid-cols-2 gap-8 md:gap-32">
+              <div class="">
+                <p class="font-bold">Castelsardo.</p>
+                <p class="">
+                  Today’s cycling route leads from Tempio Pausania towards the
+                  coast through farmland where the landscape characterised by
+                  rolling green hills, grazing cows, and the distinctive granite
+                  outcrops.
+                </p>
+                <p class="">
+                  At the end of the stage the sea comes into sight and
+                  Castelsardo appears ahead, a picturesque, fortified medieval
+                  town and one of the most charming destinations in northern
+                  Sardinia overlooking the Gulf of Asinara.
+                </p>
+              </div>
+
+              <div class="">
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="distance-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-neutral-900 text-xl font-bold">
+                      Total Distance
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">46 km</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="up-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                      Total Ascent
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">429 m</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="down-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                      Total Descent
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">945 m</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="timer-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                      Duration Trial
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">5 hours</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="difficulty-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                      Difficulty
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">2</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </AccordionItem>
+          <AccordionItem title="Day 5">
+            <div class="grid gap-8 md:gap-32">
+              <div class="">
+                <p class="font-bold">Rest Day Alghero.</p>
+                <p class="">
+                  Today we slow the pace and enjoy a well-deserved rest day — no
+                  cycling planned. After breakfast, we transfer to Alghero, a
+                  beautiful medieval city set right on the seafront. One of
+                  Sardinia’s most beloved summer destinations, Alghero is the
+                  perfect place to wander, relax, and soak up the atmosphere.
+                </p>
+                <p class="">
+                  Alghero has a strong and proud identity — shaped by its
+                  Aragonese past — and still today you’ll hear a local dialect
+                  of Catalan a reminder of the deep historical roots from
+                  14th-century Catalan colonization.
+                </p>
+                <p class="">
+                  For those who feel like adding a special experience to the
+                  day, two optional activities are available:
+                </p>
+
+                <p class="">
+                  • Dolphin watching & snorkeling, guided by marine biologists
+                  and environmental experts, for an unforgettable encounter with
+                  Sardinia’s marine life.
+                </p>
+                <p class="">
+                  • A boat trip to Neptune’s Cave, one of the most fascinating
+                  natural wonders of Sardinia, accessible by sea and famous for
+                  its spectacular stalactites and underground chambers.
+                </p>
+                <p class="">
+                  For more information about these activities, visit our blog:
+                  Cycle Tour Sardinia.
+                </p>
+              </div>
+            </div>
+          </AccordionItem>
+
+          <AccordionItem title="Day 6">
+            <div class="grid md:grid-cols-2 gap-8 md:gap-32">
+              <div class="">
+                <p class="font-bold">Coastal Road.</p>
+                <p class="">
+                  Today we’re back on the bikes for a spectacular coastal road
+                  toward Bosa, widely considered one of the most scenic routes
+                  in all of Sardinia.
+                </p>
+                <p class="">
+                  The road winds along dramatic cliffs high above the sea,
+                  offering breathtaking views over deep blue waters and hidden
+                  coves below. It’s a ride that perfectly captures the essence
+                  of the island where il Mare and il Monte meet, blending the
+                  Mediterranean landscapes.
+                </p>
+                <p class="">
+                  Our destination is Bosa, one of Sardinia’s most charming
+                  towns, with its colorful houses climbing the hillside along
+                  the river.
+                </p>
+              </div>
+
+              <div class="">
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="distance-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-neutral-900 text-xl font-bold">
+                      Total Distance
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">45 km</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="up-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                      Total Ascent
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">630 m</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="down-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                      Total Descent
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">640 m</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="timer-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                      Duration Trial
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">5 hours</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="difficulty-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                      Difficulty
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">2</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </AccordionItem>
+
+          <AccordionItem title="Day 7">
+            <div class="grid md:grid-cols-2 gap-8 md:gap-32">
+              <div class="">
+                <p class="font-bold">Montiferru & Sinis Peninsula</p>
+                <p class="">
+                  In the morning, we leave Bosa by transfer and head inland to
+                  the village of Santu Lussurgiu, a fascinating historic town
+                  set on the slopes of Montiferru. This area is part of a vast
+                  volcanic complex, known for its rich geological history and an
+                  impressive variety of landscapes. Before getting on the bikes,
+                  we take time to visit the old centre of Santu Lussurgiu, a
+                  tight-knit huddle of Stone houses banked up around a natural
+                  amphitheatre.
+                </p>
+                <p class="">
+                  From here, we begin our cycling stage, riding downhill across
+                  changing scenery and little towns and gradually make our way
+                  toward the coast. The route leads us to the Sinis Peninsula, a
+                  protected natural area celebrated for its wild beauty,
+                  lagoons, and exceptional quartz-sand beaches.
+                </p>
+                <p class="">
+                  After completing the final stretch of the ride, we reach the
+                  remarkable archaeological site of Tharros, once a major city
+                  in ancient times and located at the southernmost tip of the
+                  Sinis Peninsula.
+                </p>
+                <p class="">
+                  After we transfer to our hotel in Oristano, a lovely and
+                  relaxed town that makes an ideal base for the final days of
+                  the holiday.
+                </p>
+              </div>
+
+              <div class="">
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="distance-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-neutral-900 text-xl font-bold">
+                      Total Distance
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">55 km</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="up-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                      Total Ascent
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">183 m</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="down-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                      Total Descent
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">703 m</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="timer-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                      Duration Trial
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">6 hours</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="difficulty-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                      Difficulty
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">2</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </AccordionItem>
+
+          <AccordionItem title="Day 8">
+            <div class="grid md:grid-cols-2 gap-8 md:gap-32">
+              <div class="">
+                <p class="font-bold">Costa Verde</p>
+                <p class="">
+                  On our final cycling day, we begin with a transfer to the
+                  starting point: a tiny fishing village, Marceddi, stretched
+                  along the edge of a beautiful lagoon. This small settlement
+                  has long been known throughout Sardinia for the exceptional
+                  quality of its fish products.
+                </p>
+                <p class="">
+                  From here, we get back on the bikes and cross a narrow bridge,
+                  leaving the lagoon behind as we head toward the Green Coast —
+                  one of Sardinia’s great untamed shorelines. Wild, remote, and
+                  largely unspoiled, this stretch of coast reveals a raw and
+                  powerful landscape, far removed from mass tourism.
+                </p>
+                <p class="">
+                  The route leads us to the spectacular Spiaggia di Piscinas, a
+                  magnificent golden beach where the deep blue sea meets an
+                  immense system of sand dunes. These dunes, are dotted with
+                  macchia mediterránea scrub. This extraordinary environment has
+                  earned the area the nickname “the Sardinian desert.”
+                </p>
+                <p class="">
+                  After enjoying this extraordinary place, we begin our return
+                  ride, heading back toward the fishing village along an epic
+                  mountain road that climbs into the hills. This inland section
+                  offers a completely different perspective. Last part of the
+                  stage follows the same stretch we rode in the morning,
+                  bringing the journey full circle.
+                </p>
+                <p class="">We return by transfer to our hotel.</p>
+              </div>
+
+              <div class="">
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="distance-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-neutral-900 text-xl font-bold">
+                      Total Distance
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">70 km</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="up-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                      Total Ascent
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">904 m</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="down-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                      Total Descent
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">904 m</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="timer-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                      Duration Trial
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">6-7 hours</p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-7 gap-6 md:gap-2">
+                  <div class="col-span-1">
+                    <Icon icon="difficulty-logo" size="3rem" color="#ff5e00" />
+                  </div>
+                  <div class="grid col-span-6">
+                    <h2 class="text-pretty text-gray-900 text-xl font-bold">
+                      Difficulty
+                    </h2>
+                    <p class="text-pretty text-gray-500 text-md">2-3</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </AccordionItem>
+          <AccordionItem title="Day 9">
+            <div class="grid md:grid-cols-2 gap-8 md:gap-32">
+              <div class="">
+                <p class="font-bold">Rest Day Oristano</p>
+                <p class="">
+                  With no cycling planned, the pace slows down completely,
+                  leaving you free to relax and enjoy Sardinia in your own way.
+                </p>
+                <p class="">
+                  For those who wish to stay active or explore a little more, a
+                  range of optional activities is available.
+                </p>
+                <p class="">
+                  One option is to return to the coast, either by bicycle
+                  (approximately 18 km) or by transfer, combined with a visit to
+                  the extraordinary archaeological site of Tharros.
+                </p>
+                <p class="">
+                  Alternatively, you can join a guided tour of the Giara Park, a
+                  unique natural plateau best known as the refuge of the Giara
+                  horses — one of the very few wild horse populations in Europe
+                  — roaming freely in an unspoiled and fascinating landscape.
+                </p>
+                <p class="">
+                  For more information about these activities, visit our blog:
+                  Cycle Tour Sardinia.
+                </p>
+              </div>
+            </div>
+          </AccordionItem>
+          <AccordionItem title="Day 10">
+            <div class="grid md:grid-cols-2 gap-8 md:gap-32">
+              <div class="">
+                <p class="font-bold">Departure Day</p>
+                <p class="">
+                  Today marks the end of our Sardinian adventure. Depending on
+                  your flight schedule, you will be transferred to the airport
+                  for your departure.
+                </p>
+              </div>
+            </div>
+          </AccordionItem>
+        </Accordion>
       </div>
     </section>
 
