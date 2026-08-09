@@ -17,6 +17,7 @@ import { getI18N } from "@/i18n/";
 import NewFaq from "@/components/newFaq.astro";
 import AccordionProducts from "@/components/accordionProducts.astro";
 import BookButton from "@/components/book-button.astro";
+import SardiniaDifficultyModal from "@/components/sardinia-difficulty-modal.astro";
 import SardiniaExperiencesModal from "@/components/sardinia-experiences-modal.astro";
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
@@ -199,12 +200,15 @@ type ReviewsProps = {
           </InformationProducts>
         </div>
       </div>
-      <div class="mt-10 grid grid-cols-2 gap-10">
+      <div class="mt-10 grid gap-5 lg:grid-cols-3 lg:gap-10">
         <div>
           <BookButton />
         </div>
         <div>
           <SardiniaExperiencesModal />
+        </div>
+        <div>
+          <SardiniaDifficultyModal />
         </div>
       </div>
 
@@ -527,8 +531,7 @@ type ReviewsProps = {
         <p class="max-w-2xl mb-6 md:px-0">
           Please review our Terms & Conditions before completing your booking.
           By confirming your reservation, you agree to all policies regarding
-          payments, cancellations, and participation requirements. See Blog
-          Cycle Tour Sardinia.
+          payments, cancellations, and participation requirements.
         </p>
       </div>
     </div>
