@@ -17,6 +17,7 @@ import { getI18N } from "@/i18n/";
 import NewFaq from "@/components/newFaq.astro";
 import AccordionProducts from "@/components/accordionProducts.astro";
 import BookButton from "@/components/book-button.astro";
+import SardiniaExperiencesModal from "@/components/sardinia-experiences-modal.astro";
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
 
@@ -62,168 +63,6 @@ type ReviewsProps = {
     text: string;
   };
 };
-
-const DAYS = [
-  {
-    day: "1",
-    tecnicalInfo: false,
-    title: "Arrival Olbia ",
-    description:
-      "Upon arrival at Olbia Airport, a transfer will be waiting to take you to the hotel. Depending on your arrival time, the rest of the day is free. You may choose to spend the afternoon exploring Olbia’s old town, which offers a pleasant atmosphere for a relaxed stroll, as well as plenty of cafés and restaurants where you can enjoy lunch or a coffee.",
-    description3:
-      "In the afternoon, at the agreed meeting time, the tour leader will meet the group at the hotel reception to provide a briefing about the tour and the days ahead. In the evening, a table is reserved at a local restaurant, where we come together for our first dinner and the official start of the trip.",
-  },
-  {
-    day: "2",
-    tecnicalInfo: true,
-    title: "Gallura Cork Forest",
-    description:
-      "Our first cycling day in Sardinia begins with a short transfer from Olbia, driving about 30 minutes north to reach the starting point of today’s ride. From here, the route leads us through Gallura, a region with a strong local identity and traditional countryside, known for its granite hills and vast cork oak forests—some of the most important in Europe. Cork has been harvested here for centuries, shaping both the local economy and the landscape.",
-    description2:
-      "Along the way, we ride through small villages like Sant’Antonio di Gallura, stopping for coffee and a break, giving us time to enjoy the easygoing pace of daily life in Sardinia at its most genuine: simple, peaceful, and deeply connected to the land.",
-
-    description3:
-      "The stage concludes in Tempio Pausania, set at the foot of Mount Limbara. A charming and characteristic town, Tempio Pausania has long been considered the cradle of Gallura culture. Its historic centre, built almost entirely from exposed local granite, creates a distinctive and harmonious atmosphere, offering enchanting views and a perfect setting to end our first day of cycling in Sardinia.",
-
-    totalDistance: "39 km",
-    totalAscent: "826 m",
-    totalDescent: "414 m",
-    duration: "5 hours",
-    difficulty: "Level 2",
-  },
-
-  {
-    day: "3",
-    tecnicalInfo: true,
-    title: "Monte Limbara. ",
-    description:
-      "Waking up above the Gallurese plain and surrounded by dense cork woods is a memorable start to the day, with Monte Limbara (1,395 m) dominating the rugged landscape.",
-    description2:
-      "Today’s ride circles the Monte Limbara massif on a scenic route towards the village of Berchidda. The road skirts the western side of the mountain, passing through extensive cork oak and pine forests. Gradually, the deep greens of the woodland give way to straw-coloured fields and the blue mirror of Lago di Coghinas.",
-    description3:
-      "Just before crossing the bridge over the lake, the route turns east towards the farming town of Berchidda, a village with a long viticultural tradition. The area is a well-known wine region, famous for the production of Vermentino di Gallura, Sardinia’s only DOCG-rated wine",
-    description4:
-      "The stage continues with a ride to a family-owned vineyard, where there is the option to join a wine tasting accompanied by a typical Sardinian lunch, offering a relaxed and authentic experience of local flavours and traditions.",
-    description5: "After the visit, we return to our hotel by car.",
-
-    totalDistance: "46 km",
-    totalAscent: "500 m",
-    totalDescent: "795 m",
-    duration: "4 hours",
-    difficulty: "Level 2",
-  },
-  {
-    day: "4",
-    tecnicalInfo: true,
-    title: "Castelsardo.",
-    description:
-      "Today’s cycling route leads from Tempio Pausania towards the coast through farmland where the landscape characterised by rolling green hills, grazing cows, and the distinctive granite outcrops. ",
-    description2:
-      "At the end of the stage the sea comes into sight and Castelsardo appears ahead, a picturesque, fortified medieval town and one of the most charming destinations in northern Sardinia overlooking the Gulf of Asinara.",
-
-    totalDistance: "46 km",
-    totalAscent: "429 m",
-    totalDescent: "945 m",
-    duration: "5 hours",
-    difficulty: "Level 2",
-  },
-  {
-    day: "5",
-    tecnicalInfo: false,
-    title: "Rest Day Alghero.",
-    description:
-      "Today we slow the pace and enjoy a well-deserved rest day — no cycling planned. After breakfast, we transfer to Alghero, a beautiful medieval city set right on the seafront. One of Sardinia’s most beloved summer destinations, Alghero is the perfect place to wander, relax, and soak up the atmosphere.",
-    description2:
-      "Alghero has a strong and proud identity — shaped by its Aragonese past — and still today you’ll hear a local dialect of Catalan a reminder of the deep historical roots from 14th-century Catalan colonization.",
-    description3:
-      "For those who feel like adding a special experience to the day, two optional activities are available:",
-    description4:
-      "• Dolphin watching & snorkeling, guided by marine biologists and environmental experts, for an unforgettable encounter with Sardinia’s marine life.",
-    description5:
-      "• A boat trip to Neptune’s Cave, one of the most fascinating natural wonders of Sardinia, accessible by sea and famous for its spectacular stalactites and underground chambers.",
-    description6:
-      "For more information about these activities, visit our blog: Cycle Tour Sardinia.",
-  },
-  {
-    day: "6",
-    tecnicalInfo: true,
-    title: "Coastal Road.",
-    description:
-      "Today we’re back on the bikes for a spectacular coastal road toward Bosa, widely considered one of the most scenic routes in all of Sardinia.",
-    description2:
-      "The road winds along dramatic cliffs high above the sea, offering breathtaking views over deep blue waters and hidden coves below. It’s a ride that perfectly captures the essence of the island where il Mare and il Monte meet, blending the Mediterranean landscapes.",
-    description3:
-      "Our destination is Bosa, one of Sardinia’s most charming towns, with its colorful houses climbing the hillside along the river.",
-
-    totalDistance: "45 km",
-    totalAscent: "630 m",
-    totalDescent: "640 m",
-    duration: "5 hours",
-    difficulty: "Level 2",
-  },
-  {
-    day: "7",
-    tecnicalInfo: true,
-    title: "Montiferru & Sinis Peninsula",
-    description:
-      "In the morning, we leave Bosa by transfer and head inland to the village of Santu Lussurgiu, a fascinating historic town set on the slopes of Montiferru. This area is part of a vast volcanic complex, known for its rich geological history and an impressive variety of landscapes. Before getting on the bikes, we take time to visit the old centre of Santu Lussurgiu, a tight-knit huddle of Stone houses banked up around a natural amphitheatre.",
-    description2:
-      "From here, we begin our cycling stage, riding downhill across changing scenery and little towns and gradually make our way toward the coast. The route leads us to the Sinis Peninsula, a protected natural area celebrated for its wild beauty, lagoons, and exceptional quartz-sand beaches. ",
-
-    description3:
-      "After completing the final stretch of the ride, we reach the remarkable archaeological site of Tharros, once a major city in ancient times and located at the southernmost tip of the Sinis Peninsula. ",
-    description4:
-      "After we transfer to our hotel in Oristano, a lovely and relaxed town that makes an ideal base for the final days of the holiday. ",
-
-    totalDistance: "55 km",
-    totalAscent: "183 m",
-    totalDescent: "703 m",
-    duration: "6 hours",
-    difficulty: "Level 2",
-  },
-  {
-    day: "8",
-    tecnicalInfo: true,
-    title: "Costa Verde ",
-    description:
-      "On our final cycling day, we begin with a transfer to the starting point: a tiny fishing village, Marceddi, stretched along the edge of a beautiful lagoon. This small settlement has long been known throughout Sardinia for the exceptional quality of its fish products.",
-    description2:
-      "From here, we get back on the bikes and cross a narrow bridge, leaving the lagoon behind as we head toward the Green Coast — one of Sardinia’s great untamed shorelines. Wild, remote, and largely unspoiled, this stretch of coast reveals a raw and powerful landscape, far removed from mass tourism.",
-    description3:
-      "The route leads us to the spectacular Spiaggia di Piscinas, a magnificent golden beach where the deep blue sea meets an immense system of sand dunes. These dunes, are dotted with macchia mediterránea scrub. This extraordinary environment has earned the area the nickname “the Sardinian desert.”",
-    description4:
-      "After enjoying this extraordinary place, we begin our return ride, heading back toward the fishing village along an epic mountain road that climbs into the hills. This inland section offers a completely different perspective. Last part of the stage follows the same stretch we rode in the morning, bringing the journey full circle. ",
-    description5: "We return by transfer to our hotel. ",
-
-    totalDistance: "70 km",
-    totalAscent: "904 m",
-    totalDescent: "904 m",
-    duration: "6-7 hours",
-    difficulty: "Level 2-3",
-  },
-  {
-    day: "9",
-    tecnicalInfo: false,
-    title: "Rest Day Oristano",
-    description:
-      "With no cycling planned, the pace slows down completely, leaving you free to relax and enjoy Sardinia in your own way.",
-    description2:
-      "For those who wish to stay active or explore a little more, a range of optional activities is available. ",
-    description3:
-      "One option is to return to the coast, either by bicycle (approximately 18 km) or by transfer, combined with a visit to the extraordinary archaeological site of Tharros. ",
-    description4:
-      "Alternatively, you can join a guided tour of the Giara Park, a unique natural plateau best known as the refuge of the Giara horses — one of the very few wild horse populations in Europe — roaming freely in an unspoiled and fascinating landscape. ",
-    description5:
-      "For more information about these activities, visit our blog: Cycle Tour Sardinia.",
-  },
-  {
-    day: "10",
-    tecnicalInfo: false,
-    title: "Departure Day",
-    description:
-      "Today marks the end of our Sardinian adventure. Depending on your flight schedule, you will be transferred to the airport for your departure.",
-  },
-];
 ---
 
 <Layout title="">
@@ -360,9 +199,13 @@ const DAYS = [
           </InformationProducts>
         </div>
       </div>
-
-      <div class="mt-10 max-w-[320px]">
-        <BookButton />
+      <div class="mt-10 grid grid-cols-2 gap-10">
+        <div>
+          <BookButton />
+        </div>
+        <div>
+          <SardiniaExperiencesModal />
+        </div>
       </div>
 
       <!--  Include, exclude, complementaries  -->

@@ -15,17 +15,12 @@ const t = useTranslations(lang);
 const translatePath = useTranslatedPath(lang);
 ---
 
-<div class="flex justify-center md:w-auto">
-  <div class="relative inline-flex w-full group mb-5 md:mb-10">
-    <div
-      class="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#ff5e00] to-[#FF675E] rounded-xl blur-lg filter group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200">
-    </div>
-    <a
-      href={translatePath("book-my-tour")}
-      title=""
-      role="button"
-      class="relative w-full px-14 py-4 font-bold text-white transition-all duration-[700ms] bg-[#ff5e00] text-center text-xl border-2 border-transparent focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 hover:bg-gray-800 rounded">
-      {i18n.HERO_A}
-    </a>
-  </div>
+<div class="flex w-full justify-center">
+  <a
+    href={translatePath("book-my-tour")}
+    title=""
+    role="button"
+    class="flex min-h-12 w-full items-center justify-center rounded-lg border-2 border-transparent bg-[#ff5e00] px-5 py-3 text-center text-lg font-bold text-white shadow-lg shadow-[#ff5e00]/25 transition-colors hover:bg-[#3c5546] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#3c5546]">
+    {i18n.HERO_A}
+  </a>
 </div>
