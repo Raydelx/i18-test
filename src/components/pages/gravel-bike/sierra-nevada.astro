@@ -19,24 +19,24 @@ const i18n = getI18N({ currentLocale });
 
 const IMG = [
   {
-    src: "/cycle-tour/montainbike/sierra-nevada/sn1.webp",
+    src: "/cycle-tour/montainbike/sierra-nevada/sn-6.webp",
   },
   {
-    src: "/cycle-tour/montainbike/sierra-nevada/sn2.webp",
+    src: "/cycle-tour/montainbike/sierra-nevada/sn-7.webp",
   },
   {
-    src: "/cycle-tour/montainbike/sierra-nevada/sn3.webp",
+    src: "/cycle-tour/montainbike/sierra-nevada/sn-8.webp",
   },
   {
-    src: "/cycle-tour/montainbike/sierra-nevada/sn4.webp",
+    src: "/cycle-tour/montainbike/sierra-nevada/sn-9.webp",
   },
   {
-    src: "/cycle-tour/montainbike/sierra-nevada/sn5.webp",
+    src: "/cycle-tour/montainbike/sierra-nevada/sn-10.webp",
   },
 ];
 const DAYS = [
   {
-    day: "1",
+    day: "",
     tecnicalInfo: true,
     description: i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.WHAT_TO_EXPECT_TEXT_1,
     description2: i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.WHAT_TO_EXPECT_TEXT_2,
@@ -52,7 +52,7 @@ const DAYS = [
 
 const BIKES = [
   {
-    src: "/cycle-tour/montainbike/sierra-nevada/sierranevada-1.webp",
+    src: "/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-bike.webp",
   },
 ];
 ---
@@ -63,7 +63,7 @@ const BIKES = [
       <!-- Foto, nombre y destino -->
 
       <div
-        class="bg-center bg-no-repeat bg-[url('/public/cycle-tour/montainbike/sierra-nevada/info-sierranevada.webp')] bg-cover h-[30rem] rounded-2xl">
+        class="bg-center bg-no-repeat bg-[url('/public/cycle-tour/montainbike/sierra-nevada/sn-principal.webp')] bg-cover h-[30rem] rounded-2xl">
         <div class="flex flex-col justify-end h-full p-6 w-auto">
           <div class="flex gap-2">
             <Icon icon="destiny-logo" size="1.6rem" color="white" />
@@ -246,23 +246,23 @@ const BIKES = [
     <div class="grid md:grid-cols-2 h-auto gap-10 md:gap-20 md:py-36 py-10">
       <div class="static h-[385px] hidden md:block">
         <img
-          class="rounded-xl absolute md:w-[20rem] lg:w-[25rem] hover:z-40 transition-all duration-300 ease-out hover:scale-105"
-          src="/cycle-tour/montainbike/sierra-nevada/sierra-feature.webp"
+          class="rounded-xl absolute md:w-[20rem] lg:w-[35rem] hover:z-40 transition-all duration-300 ease-out hover:scale-105"
+          src="/cycle-tour/montainbike/sierra-nevada/sn-6.webp"
           alt="ciclista mirando la sierra con cicicleta a su lado"
         />
         <img
-          class="rounded-xl absolute md:w-[10rem] lg:w-[12rem] md:mt-48 lg:mt-60 ml-6 z-10 grayscale-[60%] hover:grayscale-0 transition-all duration-300 ease-out hover:scale-105"
-          src="/cycle-tour/montainbike/sierra-nevada/sierra-feature2.webp"
+          class="rounded-xl absolute md:w-[10rem] lg:w-[20rem] md:mt-48 lg:mt-60 ml-6 z-10 grayscale-[60%] hover:grayscale-0 transition-all duration-300 ease-out hover:scale-105"
+          src="/cycle-tour/montainbike/sierra-nevada/sn-7.webp"
           alt="ciclista mirando la sierra con cicicleta a su lado"
         />
         <img
-          class="rounded-xl absolute md:w-[10rem] lg:w-[15em] ml-64 md:-mt-24 lg:-mt-32 grayscale-[60%] hover:grayscale-0 transition-all duration-300 ease-out hover:scale-105"
-          src="/cycle-tour/montainbike/sierra-nevada/sierra-feature3.webp"
+          class="rounded-xl absolute md:w-[10rem] lg:w-[22em] ml-64 md:-mt-24 lg:-mt-25 grayscale-[60%] hover:grayscale-0 transition-all duration-300 ease-out hover:scale-105"
+          src="/cycle-tour/montainbike/sierra-nevada/sn-8.webp"
           alt="ciclista mirando la sierra con cicicleta a su lado"
         />
       </div>
 
-      <div class="grid gap-5">
+      <div class="grid gap-5 mb-10">
         <div class="">
           <h2
             class="max-w-2xl mb-4 inline-block rounded-lg bg-[#3c5546] px-6 py-2 text-2xl font-bold text-white md:text-4xl xl:text-5xl">
@@ -293,7 +293,7 @@ const BIKES = [
       </div>
     </div>
 
-    <div class="mt-10 grid grid-cols-1 items-center gap-2 lg:grid-cols-2">
+    <div class="mt-100 grid grid-cols-1 items-center gap-2 lg:grid-cols-2">
       <div>
         <h2
           class="max-w-2xl mb-4 inline-block rounded-lg bg-[#3c5546] px-6 py-2 text-2xl font-bold text-white md:text-4xl xl:text-5xl">
@@ -338,7 +338,7 @@ const BIKES = [
       <div>
         <img
           class="rounded-2xl"
-          src="/cycle-tour/montainbike/sierra-nevada/sierra-feature.webp"
+          src="/cycle-tour/montainbike/sierra-nevada/sn-map.webp"
           alt="Cyclist in the Sierra Nevada mountains"
         />
       </div>
@@ -413,7 +413,7 @@ const BIKES = [
           class="max-w-2xl mb-4 inline-block rounded-lg bg-[#3c5546] px-6 py-2 text-2xl font-bold text-white md:text-4xl xl:text-5xl">
           Terms & Conditions
         </h2>
-        <p class="max-w-2xl mb-6 md:px-0">
+        <p class="max-w-2xl mb-6 md:px-0 text-lg">
           Please review our <a
             href="terms-and-conditions"
             class="font-bold text-[#ff5e00] hover:text-[#ff863f] visited:text-purple-600"
@@ -432,10 +432,38 @@ const BIKES = [
       </ol>
     </section>
 
-    <!--  TimeLine per days  -->
-    <h2 class="text-4xl md:text-5xl xl:text-6xl md:p-8 mt-16 font-bold mb-4">
-      {i18n.PRODUCTS.GRAVEL_BIKE.SIERRA_NEVADA.WHAT_TO_EXPECT}
+    <div class="mt-10">
+      <h2
+        class="mb-4 inline-block rounded-lg bg-[#3c5546] px-6 py-4 text-2xl font-bold text-white md:text-4xl xl:text-5xl">
+        Welcome to Sierra Nevada Mountains
+      </h2>
+      <p class="max-w-2xl mb-6 md:px-0 text-lg">
+        Experience the beauty of the Sierra Nevada, home to Spain's highest
+        mainland peaks and some of the country's finest mountain biking trails.
+        Ride through forests, quiet mountain villages, and panoramic landscapes.
+      </p>
+    </div>
+
+    <h2
+      class="mb-4 inline-block rounded-lg bg-[#3c5546] px-6 py-4 text-2xl font-bold text-white md:text-4xl xl:text-5xl">
+      What to expect
     </h2>
+
+    <p class="text-lg text-gray-900 mb-1">
+      Fully supported guided tour with E-MTB.
+    </p>
+    <p class="text-lg text-gray-900 mb-1">
+      <span class="text-xl strong">🔶</span>Terrain: Wide and flowing gravel
+      tracks
+    </p>
+    <p class="text-lg text-gray-900 mb-1">
+      <span class="text-xl strong">🔶</span>Riding pace: Relaxed and social.
+      Everyone is encouraged to ride at their own comfortable pace, with regular
+      regrouping stops to enjoy the scenery.
+    </p>
+
+    <!--  TimeLine per days  -->
+
     {
       DAYS.map((tour) => (
         <ol class="mb-10">
