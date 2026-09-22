@@ -28,8 +28,12 @@ const menuitems = [
         path: translatePath("trekking-destinations"),
       },
       {
-        title: i18n.NAV.ROAD_TRIPS,
-        path: translatePath("road-trips-destinations"),
+        title: "Active Discovery Tours",
+        path: "",
+      },
+      {
+        title: i18n.NAV.CULTURE,
+        path: "",
       },
       {
         title: i18n.NAV.TAILOR_MADE_TRAVELS,
@@ -93,7 +97,7 @@ const menuitems = [
           }
         </ul>
         <div
-          class="mt-3 flex items-center gap-4 border-t border-[#d7e2d9] pt-3 lg:hidden">
+          class="mt-3 grid items-center gap-4 border-t border-[#d7e2d9] pt-3 lg:hidden">
           <LanguageSelector />
           <Link
             href={translatePath("tailor-made-travel")}
@@ -114,6 +118,15 @@ const menuitems = [
               >
             </slot></Link
           >
+          <Link
+            class="font-semibold"
+            href=""
+            size="md"
+            style="orange"
+            icon="click-logo">
+            DMC
+            <slot name="icon" />
+          </Link>
         </div>
       </MenuItems>
     </Astronav>
@@ -139,6 +152,15 @@ const menuitems = [
               ></path></svg
             >
           </slot>
+        </Link>
+        <Link
+          class="font-semibold"
+          href=""
+          size="md"
+          style="orange"
+          icon="click-logo">
+          DMC
+          <slot name="icon" />
         </Link>
       </div>
     </div>
