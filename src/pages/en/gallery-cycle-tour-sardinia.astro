@@ -1,0 +1,135 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Container from "../../components/container.astro";
+import Sectionhead from "../../components/sectionhead.astro";
+import "photoswipe/style.css";
+
+const imageDimensions = [
+  [1148, 2040],
+  [1512, 2016],
+  [1152, 2048],
+  [1148, 2040],
+  [1148, 2040],
+  [1148, 2040],
+  [1148, 2040],
+  [1148, 2040],
+  [2016, 1512],
+  [2016, 1512],
+  [1512, 2016],
+  [1512, 2016],
+  [1512, 2016],
+  [1512, 2016],
+  [1512, 2016],
+  [1512, 2016],
+  [1512, 2016],
+  [1512, 2016],
+  [1512, 2016],
+  [1512, 2016],
+  [1512, 2016],
+  [2016, 1512],
+  [1512, 2016],
+  [1512, 2016],
+  [2016, 1512],
+  [1512, 2016],
+  [1512, 2016],
+  [1512, 2016],
+  [1512, 2016],
+  [1512, 2016],
+  [1512, 2016],
+  [1536, 2048],
+  [1512, 2016],
+  [1512, 2016],
+  [1512, 2016],
+  [1512, 2016],
+  [1512, 2016],
+  [1512, 2016],
+  [1512, 2016],
+  [1512, 2016],
+  [1512, 2016],
+  [1512, 2016],
+  [2016, 1512],
+  [1512, 2016],
+  [1512, 2016],
+  [2016, 1512],
+  [1600, 1474],
+  [4032, 3024],
+  [4032, 3024],
+  [4032, 3024],
+  [4032, 3024],
+  [4032, 3024],
+  [4032, 3024],
+  [4032, 3024],
+  [4032, 3024],
+  [3024, 4032],
+  [4624, 2080],
+  [4424, 2080],
+  [4624, 2080],
+  [4624, 2080],
+  [1670, 1536],
+  [4624, 2080],
+  [3319, 2080],
+  [1200, 1600],
+  [1196, 1600],
+  [3888, 2592],
+  [4256, 2185],
+  [5000, 2914],
+  [1500, 996],
+  [3456, 2304],
+] as const;
+
+const images = imageDimensions.map(([width, height], index) => {
+  const src = `/cycle-tour/leisure-cycling/italia/sardinia/gallery/sardiniagallery-${String(index + 1).padStart(2, "0")}.webp`;
+
+  return {
+    src,
+    thumb: src,
+    alt: `Sardinia cycling gallery photo ${index + 1}`,
+    width,
+    height,
+  };
+});
+---
+
+<Layout title="Sardinia Cycling Gallery">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Sardinia Cycling Gallery</Fragment>
+      <Fragment slot="desc">Photos from our cycling tour in Sardinia.</Fragment>
+    </Sectionhead>
+
+    <div class="mt-16">
+      <div
+        class="pswp-gallery grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-6 object-fill"
+        id="gallery">
+        {
+          images.map((image) => (
+            <a
+              class="object-cover"
+              href={image.src}
+              data-cropped="true"
+              data-pswp-width={image.width}
+              data-pswp-height={image.height}
+              target="_blank">
+              <img
+                class="w-full md:h-64 md:w-72 md:size-64 object-cover rounded-xl hover:scale-105 duration-200 transition-all"
+                src={image.thumb}
+                alt={image.alt}
+              />
+            </a>
+          ))
+        }
+      </div>
+    </div>
+
+    <script>
+      import PhotoSwipeLightbox from "photoswipe/lightbox";
+
+      const lightbox = new PhotoSwipeLightbox({
+        gallery: "#gallery",
+        children: "a",
+        pswpModule: () => import("photoswipe"),
+      });
+      lightbox.init();
+    </script>
+  </Container>
+</Layout>
