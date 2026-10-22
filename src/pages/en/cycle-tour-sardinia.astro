@@ -11,6 +11,8 @@ import Link from "@/components/ui/link.astro";
 import cycleSardiniaEs from "@/data_files/cycleSardiniaEs.json";
 import { Accordion, AccordionItem } from "free-astro-components";
 
+import faqs from "@/data_files/reviews-sardinia.json";
+
 import ReviewsCompt from "@/components/ui/reviewsCompt.astro";
 
 import { getI18N } from "@/i18n/";
@@ -75,19 +77,19 @@ type ReviewsProps = {
         class="bg-center bg-cover bg-no-repeat bg-[url('/public/cycle-tour/leisure-cycling/italia/sardinia/sardinia-principal.webp')] h-[25rem] lg:h-[45rem] rounded-2xl">
         <div class="flex flex-col justify-end h-full p-6 w-auto">
           <div class="flex gap-2">
-            <Icon icon="destiny-logo" size="1.6rem" color="white" />
+            <Icon icon="destiny-logo" size="1.6rem" color="#ff5e00" />
             <p
-              class="text-xl font-normal text-white lg:text-2xl flex flex-col justify-end h-full [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
+              class="text-xl font-normal text-[#ff5e00] lg:text-2xl flex flex-col justify-end h-full [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
               Italy
             </p>
           </div>
           <div>
             <h1
-              class="text-3xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-5xl [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
+              class="text-3xl font-extrabold tracking-tight leading-none text-[#ff5e00] md:text-4xl lg:text-5xl [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
               Sardinia E-Bike Tour 10 Days
             </h1>
             <p
-              class="text-xl font-normal text-white lg:text-2xl flex flex-col h-full [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
+              class="text-xl font-normal text-[#ff5e00] lg:text-2xl flex flex-col h-full [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
             </p>
           </div>
         </div>
@@ -97,7 +99,9 @@ type ReviewsProps = {
 
       <div
         class="grid grid-cols-2 md:grid-cols-6 h-auto mt-3 gap-3 place-content-start md:px-6">
-        <InformationProducts title={i18n.INFO_PRODUCTS.PRICE} subtitle="2.500">
+        <InformationProducts
+          title={i18n.INFO_PRODUCTS.PRICE}
+          subtitle="2.810 € shared room 3.185 € single room">
           <div slot="icon">
             <Icon icon="price-logo" size="1.6rem" color="#ff5e00" />
           </div>
@@ -111,7 +115,7 @@ type ReviewsProps = {
         </InformationProducts>
         <InformationProducts
           title={i18n.INFO_PRODUCTS.MINIMUM_OF_PERSONS}
-          subtitle="6">
+          subtitle="10">
           <div slot="icon">
             <Icon icon="group-logo" size="1.6rem" color="#ff5e00" />
           </div>
@@ -147,7 +151,7 @@ type ReviewsProps = {
           class="grid grid-cols-2 justify-between md:grid-cols-6 h-auto mt-3 gap-3 md:px-6">
           <InformationProducts
             title={i18n.INFO_PRODUCTS.TOTAL_DISTANCE}
-            subtitle="300 km">
+            subtitle="373 km">
             <div slot="icon">
               <Icon icon="distance-logo" size="1.6rem" color="#ff5e00" />
             </div>
@@ -155,14 +159,14 @@ type ReviewsProps = {
 
           <InformationProducts
             title={i18n.INFO_PRODUCTS.TOTAL_ASCENT}
-            subtitle="3.471 m">
+            subtitle="4.655 m">
             <div slot="icon">
               <Icon icon="up-logo" size="1.6rem" color="#ff5e00" />
             </div>
           </InformationProducts>
           <InformationProducts
             title={i18n.INFO_PRODUCTS.TOTAL_DESCENT}
-            subtitle="4.401 m">
+            subtitle="5.825 m">
             <div slot="icon">
               <Icon icon="down-logo" size="1.6rem" color="#ff5e00" />
             </div>
@@ -176,7 +180,7 @@ type ReviewsProps = {
           </InformationProducts>
           <InformationProducts
             title={i18n.INFO_PRODUCTS.DIFFICULTY}
-            subtitle="2">
+            subtitle="2-3">
             <div class="flex gap-1" slot="icon">
               <Icon icon="difficulty-logo" size="2rem" color="#ff5e00" />
             </div>
@@ -580,12 +584,7 @@ type ReviewsProps = {
         cheese; taste traditional Sardinian wines and specialties such as
         culurgiones, porcetto, and seadas al miele, and much more.
       </p>
-      <p>
-        🔶 Enjoy your free days with optional activities such as a boat trip, a
-        visit to the Grotta di Nettuno (one of the largest marine caves in
-        Italy), discovering the island’s mining heritage or the Vermentino wine
-        tasting experience – all in one cycle tour.
-      </p>
+      <p>🔶 Enjoy your free days with optional activities.</p>
     </div>
 
     <section>
@@ -611,8 +610,8 @@ type ReviewsProps = {
           with regular stops for photos, coffee, viewpoints, and cultural visits
         </p>
         <p class="text-lg text-gray-900 mb-1">
-          <span class="text-xl strong">🔶</span>Average daily distance: 50 km of
-          cycling per day (approximately 4–6 hours including breaks)
+          <span class="text-xl strong">🔶</span>Average daily distance: 60 km of
+          cycling per day (approximately 6 hours including breaks)
         </p>
         <p class="text-lg text-gray-900 mb-1">
           <span class="text-xl strong">🔶</span>Terrain: countryside roads with
@@ -690,7 +689,7 @@ type ReviewsProps = {
                     <h2 class="text-pretty text-neutral-900 text-xl font-bold">
                       Total Distance
                     </h2>
-                    <p class="text-pretty text-gray-500 text-md">39 km</p>
+                    <p class="text-pretty text-gray-500 text-md">63 km</p>
                   </div>
                 </div>
 
@@ -702,7 +701,7 @@ type ReviewsProps = {
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
                       Total Ascent
                     </h2>
-                    <p class="text-pretty text-gray-500 text-md">826 m</p>
+                    <p class="text-pretty text-gray-500 text-md">1600 m</p>
                   </div>
                 </div>
 
@@ -714,7 +713,7 @@ type ReviewsProps = {
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
                       Total Descent
                     </h2>
-                    <p class="text-pretty text-gray-500 text-md">414 m</p>
+                    <p class="text-pretty text-gray-500 text-md">600 m</p>
                   </div>
                 </div>
 
@@ -726,7 +725,7 @@ type ReviewsProps = {
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
                       Duration Trial
                     </h2>
-                    <p class="text-pretty text-gray-500 text-md">5 hours</p>
+                    <p class="text-pretty text-gray-500 text-md">6 hours</p>
                   </div>
                 </div>
 
@@ -738,7 +737,7 @@ type ReviewsProps = {
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
                       Difficulty
                     </h2>
-                    <p class="text-pretty text-gray-500 text-md">2</p>
+                    <p class="text-pretty text-gray-500 text-md">3</p>
                   </div>
                 </div>
               </div>
@@ -771,12 +770,18 @@ type ReviewsProps = {
                   Sardinia’s only DOCG-rated wine
                 </p>
                 <p class="">
-                  The stage continues with a ride to a family-owned vineyard,
-                  where there is the option to join a wine tasting accompanied
-                  by a typical Sardinian lunch, offering a relaxed and authentic
-                  experience of local flavours and traditions.
+                  The ride continues towards the Wine Museum in Berchidda, where
+                  we stop for a visit and a short wine tasting, discovering more
+                  about the local winemaking traditions. Afterwards, we enjoy a
+                  picnic lunch nearby, surrounded by beautiful panoramic views
+                  of the Sardinian landscape. In the afternoon, we continue
+                  cycling towards the village of Calangianus, riding through the
+                  countryside around the Monte Limbara mountains. Upon arrival,
+                  there is time to relax and enjoy a drink before returning to
+                  the hotel by support vehicle. For those who prefer to keep
+                  cycling, riding all the way back to the hotel is also an
+                  option.
                 </p>
-                <p class="">After the visit, we return to our hotel by car.</p>
               </div>
 
               <div class="">
@@ -788,7 +793,7 @@ type ReviewsProps = {
                     <h2 class="text-pretty text-neutral-900 text-xl font-bold">
                       Total Distance
                     </h2>
-                    <p class="text-pretty text-gray-500 text-md">46 km</p>
+                    <p class="text-pretty text-gray-500 text-md">66 km</p>
                   </div>
                 </div>
 
@@ -800,7 +805,7 @@ type ReviewsProps = {
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
                       Total Ascent
                     </h2>
-                    <p class="text-pretty text-gray-500 text-md">500 m</p>
+                    <p class="text-pretty text-gray-500 text-md">720 m</p>
                   </div>
                 </div>
 
@@ -812,7 +817,7 @@ type ReviewsProps = {
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
                       Total Descent
                     </h2>
-                    <p class="text-pretty text-gray-500 text-md">795 m</p>
+                    <p class="text-pretty text-gray-500 text-md">1265 m</p>
                   </div>
                 </div>
 
@@ -824,7 +829,7 @@ type ReviewsProps = {
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
                       Duration Trial
                     </h2>
-                    <p class="text-pretty text-gray-500 text-md">4 hours</p>
+                    <p class="text-pretty text-gray-500 text-md">5 hours</p>
                   </div>
                 </div>
 
@@ -848,15 +853,19 @@ type ReviewsProps = {
                 <p class="font-bold">Castelsardo.</p>
                 <p class="">
                   Today’s cycling route leads from Tempio Pausania towards the
-                  coast through farmland where the landscape characterised by
-                  rolling green hills, grazing cows, and the distinctive granite
-                  outcrops.
-                </p>
-                <p class="">
-                  At the end of the stage the sea comes into sight and
-                  Castelsardo appears ahead, a picturesque, fortified medieval
-                  town and one of the most charming destinations in northern
-                  Sardinia overlooking the Gulf of Asinara.
+                  coast, passing through farmland characterised by rolling green
+                  hills, grazing cows and distinctive granite outcrops. As we
+                  approach the sea, Castelsardo appears ahead, a picturesque
+                  medieval town perched on a rocky promontory overlooking the
+                  Gulf of Asinara. Founded by the Doria family of Genoa in the
+                  12th century, the town has a rich maritime history, with
+                  narrow cobbled streets, ancient fortifications and a castle at
+                  its heart. Our hotel is located directly opposite a small
+                  beach, offering beautiful views across the water towards the
+                  historic old town. The afternoon is completely free to relax
+                  by the sea, explore the charming historic centre, wander
+                  through its winding streets or enjoy a drink at one of the
+                  local cafés while taking in the coastal atmosphere.
                 </p>
               </div>
 
@@ -869,7 +878,7 @@ type ReviewsProps = {
                     <h2 class="text-pretty text-neutral-900 text-xl font-bold">
                       Total Distance
                     </h2>
-                    <p class="text-pretty text-gray-500 text-md">46 km</p>
+                    <p class="text-pretty text-gray-500 text-md">66 km</p>
                   </div>
                 </div>
 
@@ -881,7 +890,7 @@ type ReviewsProps = {
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
                       Total Ascent
                     </h2>
-                    <p class="text-pretty text-gray-500 text-md">429 m</p>
+                    <p class="text-pretty text-gray-500 text-md">540 m</p>
                   </div>
                 </div>
 
@@ -893,7 +902,7 @@ type ReviewsProps = {
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
                       Total Descent
                     </h2>
-                    <p class="text-pretty text-gray-500 text-md">945 m</p>
+                    <p class="text-pretty text-gray-500 text-md">1585 m</p>
                   </div>
                 </div>
 
@@ -954,21 +963,21 @@ type ReviewsProps = {
               <div class="">
                 <p class="font-bold">Coastal Road.</p>
                 <p class="">
-                  Today we’re back on the bikes for a spectacular coastal road
-                  toward Bosa, widely considered one of the most scenic routes
-                  in all of Sardinia.
-                </p>
-                <p class="">
-                  The road winds along dramatic cliffs high above the sea,
-                  offering breathtaking views over deep blue waters and hidden
-                  coves below. It’s a ride that perfectly captures the essence
-                  of the island where il Mare and il Monte meet, blending the
-                  Mediterranean landscapes.
-                </p>
-                <p class="">
-                  Our destination is Bosa, one of Sardinia’s most charming
-                  towns, with its colorful houses climbing the hillside along
-                  the river.
+                  Today we’re back on the bikes for a spectacular coastal ride
+                  towards Bosa, widely considered one of the most scenic routes
+                  in all of Sardinia. The road winds along dramatic cliffs high
+                  above the sea, offering breathtaking views over deep blue
+                  waters and hidden coves below. It’s a ride that perfectly
+                  captures the essence of the island, where il Mare and il Monte
+                  meet, blending rugged mountains with the beauty of the
+                  Mediterranean coastline. Our destination is Bosa, one of
+                  Sardinia’s most charming towns, with its colourful houses
+                  climbing the hillside along the river, overlooked by the
+                  impressive Malaspina Castle. The afternoon is completely free
+                  to discover Bosa at your own pace. Wander through the narrow
+                  streets of the historic centre, explore its artisan shops,
+                  enjoy a drink by the Temo River or simply relax and soak up
+                  the atmosphere of this picturesque Sardinian town.
                 </p>
               </div>
 
@@ -993,7 +1002,7 @@ type ReviewsProps = {
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
                       Total Ascent
                     </h2>
-                    <p class="text-pretty text-gray-500 text-md">630 m</p>
+                    <p class="text-pretty text-gray-500 text-md">660 m</p>
                   </div>
                 </div>
 
@@ -1005,7 +1014,7 @@ type ReviewsProps = {
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
                       Total Descent
                     </h2>
-                    <p class="text-pretty text-gray-500 text-md">640 m</p>
+                    <p class="text-pretty text-gray-500 text-md">670 m</p>
                   </div>
                 </div>
 
@@ -1017,7 +1026,7 @@ type ReviewsProps = {
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
                       Duration Trial
                     </h2>
-                    <p class="text-pretty text-gray-500 text-md">5 hours</p>
+                    <p class="text-pretty text-gray-500 text-md">3 hours</p>
                   </div>
                 </div>
 
@@ -1041,32 +1050,32 @@ type ReviewsProps = {
               <div class="">
                 <p class="font-bold">Montiferru & Sinis Peninsula</p>
                 <p class="">
-                  In the morning, we leave Bosa by transfer and head inland to
-                  the village of Santu Lussurgiu, a fascinating historic town
-                  set on the slopes of Montiferru. This area is part of a vast
-                  volcanic complex, known for its rich geological history and an
-                  impressive variety of landscapes. Before getting on the bikes,
-                  we take time to visit the old centre of Santu Lussurgiu, a
-                  tight-knit huddle of Stone houses banked up around a natural
-                  amphitheatre.
-                </p>
-                <p class="">
-                  From here, we begin our cycling stage, riding downhill across
-                  changing scenery and little towns and gradually make our way
-                  toward the coast. The route leads us to the Sinis Peninsula, a
-                  protected natural area celebrated for its wild beauty,
-                  lagoons, and exceptional quartz-sand beaches.
-                </p>
-                <p class="">
-                  After completing the final stretch of the ride, we reach the
-                  remarkable archaeological site of Tharros, once a major city
-                  in ancient times and located at the southernmost tip of the
-                  Sinis Peninsula.
-                </p>
-                <p class="">
-                  After we transfer to our hotel in Oristano, a lovely and
-                  relaxed town that makes an ideal base for the final days of
-                  the holiday.
+                  We begin the day with a transfer to Siete Fuentes, a small
+                  village in the Montiferru area, known for its volcanic
+                  origins, forested hills and natural springs. This is a
+                  different side of Sardinia, with lush green landscapes, quiet
+                  country roads and a slower pace of life. From here, we start
+                  cycling through a series of small traditional villages, where
+                  everyday life still follows a relaxed, local rhythm. We stop
+                  in one of the villages for a coffee, taking time to enjoy the
+                  authentic atmosphere before continuing through peaceful
+                  countryside and agricultural landscapes towards the coast. As
+                  we reach the Sinis Peninsula, the scenery opens up to
+                  beautiful coastal landscapes and some of Sardinia’s most
+                  remarkable beaches. Known for their crystal-clear turquoise
+                  waters and distinctive white quartz sands, beaches such as Is
+                  Arutas and Mari Ermi offer a wonderful setting for our picnic
+                  lunch, with time for a refreshing swim if conditions allow. In
+                  the afternoon, we continue cycling towards the archaeological
+                  site of Tharros, an ancient Phoenician-Punic city later
+                  developed by the Romans, dramatically situated on a narrow
+                  peninsula overlooking the sea. Our ride finishes near the
+                  beautiful church of San Giovanni di Sinis, one of Sardinia’s
+                  oldest churches, with origins dating back to the early
+                  Christian period. Here, we can enjoy a final drink and take in
+                  the coastal views before a short transfer of approximately 15
+                  minutes brings us to our hotel in Oristano, where we stay for
+                  the final days of our holiday.
                 </p>
               </div>
 
@@ -1079,7 +1088,7 @@ type ReviewsProps = {
                     <h2 class="text-pretty text-neutral-900 text-xl font-bold">
                       Total Distance
                     </h2>
-                    <p class="text-pretty text-gray-500 text-md">55 km</p>
+                    <p class="text-pretty text-gray-500 text-md">61 km</p>
                   </div>
                 </div>
 
@@ -1091,7 +1100,7 @@ type ReviewsProps = {
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
                       Total Ascent
                     </h2>
-                    <p class="text-pretty text-gray-500 text-md">183 m</p>
+                    <p class="text-pretty text-gray-500 text-md">180 m</p>
                   </div>
                 </div>
 
@@ -1103,7 +1112,7 @@ type ReviewsProps = {
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
                       Total Descent
                     </h2>
-                    <p class="text-pretty text-gray-500 text-md">703 m</p>
+                    <p class="text-pretty text-gray-500 text-md">750 m</p>
                   </div>
                 </div>
 
@@ -1179,7 +1188,7 @@ type ReviewsProps = {
                     <h2 class="text-pretty text-neutral-900 text-xl font-bold">
                       Total Distance
                     </h2>
-                    <p class="text-pretty text-gray-500 text-md">70 km</p>
+                    <p class="text-pretty text-gray-500 text-md">72 km</p>
                   </div>
                 </div>
 
@@ -1191,7 +1200,7 @@ type ReviewsProps = {
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
                       Total Ascent
                     </h2>
-                    <p class="text-pretty text-gray-500 text-md">904 m</p>
+                    <p class="text-pretty text-gray-500 text-md">955 m</p>
                   </div>
                 </div>
 
@@ -1203,7 +1212,7 @@ type ReviewsProps = {
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
                       Total Descent
                     </h2>
-                    <p class="text-pretty text-gray-500 text-md">904 m</p>
+                    <p class="text-pretty text-gray-500 text-md">955 m</p>
                   </div>
                 </div>
 
@@ -1227,7 +1236,7 @@ type ReviewsProps = {
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
                       Difficulty
                     </h2>
-                    <p class="text-pretty text-gray-500 text-md">2-3</p>
+                    <p class="text-pretty text-gray-500 text-md">3</p>
                   </div>
                 </div>
               </div>
@@ -1238,10 +1247,20 @@ type ReviewsProps = {
               <div class="">
                 <p class="font-bold">Rest Day Oristano</p>
                 <p class="">
-                  With no cycling planned, the pace slows down completely,
-                  leaving you free to relax and enjoy Sardinia in your own
-                  way.For more information see extra activities
+                  Today is your second and final free day, with no cycling
+                  planned. Enjoy a relaxing day at the hotel, take a dip in the
+                  swimming pool or explore Oristano at your own pace.
                 </p>
+                <p class="">
+                  For those who would like to discover more of Sardinia’s
+                  fascinating history, there is also the option to book an extra
+                  cultural excursion. This combines a visit to the ancient
+                  archaeological site of Tharros and the Spanish watchtower of
+                  San Giovanni with a visit to the museum in Cabras, where you
+                  can learn more about the island’s ancient Nuragic civilisation
+                  and see the remarkable Giants of Mont’e Prama sculptures.
+                </p>
+                <p class="">For more information, see Extra Activities</p>
               </div>
             </div>
           </AccordionItem>
@@ -1259,6 +1278,10 @@ type ReviewsProps = {
           </AccordionItem>
         </Accordion>
       </div>
+    </section>
+
+    <section class="mt-10 flex w-auto justify-center">
+      <NewFaq title="Reviews Sardinia </br> E-Bike Tour" faqs={faqs} />
     </section>
 
     <script is:inline>

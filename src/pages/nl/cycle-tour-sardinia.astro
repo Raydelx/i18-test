@@ -17,8 +17,8 @@ import { getI18N } from "@/i18n/";
 import NewFaq from "@/components/newFaq.astro";
 import AccordionProducts from "@/components/accordionProducts.astro";
 import BookButton from "@/components/book-button.astro";
-import SardiniaExperiencesModalNl from "@/components/sardinia-experiences-modal-nl.astro";
-import SardiniaDifficultyModalNl from "@/components/sardinia-difficulty-modal-nl.astro";
+import SardiniaDifficultyModal from "@/components/sardinia-difficulty-modal-nl.astro";
+import SardiniaExperiencesModal from "@/components/sardinia-experiences-modal-nl.astro";
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
 
@@ -66,7 +66,7 @@ type ReviewsProps = {
 };
 ---
 
-<Layout title="">
+<Layout title="10-daagse e-biketocht door Sardinië">
   <Container>
     <main class="mt-16">
       <!-- Foto, nombre y destino -->
@@ -84,7 +84,7 @@ type ReviewsProps = {
           <div>
             <h1
               class="text-3xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-5xl [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
-              Sardinië E-biketour 10 dagen
+              10-daagse e-biketocht door Sardinië
             </h1>
             <p
               class="text-xl font-normal text-white lg:text-2xl flex flex-col h-full [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
@@ -97,7 +97,9 @@ type ReviewsProps = {
 
       <div
         class="grid grid-cols-2 md:grid-cols-6 h-auto mt-3 gap-3 place-content-start md:px-6">
-        <InformationProducts title={i18n.INFO_PRODUCTS.PRICE} subtitle="2.500">
+        <InformationProducts
+          title={i18n.INFO_PRODUCTS.PRICE}
+          subtitle="€ 2.810 gedeelde kamer, € 3.185 eenpersoonskamer">
           <div slot="icon">
             <Icon icon="price-logo" size="1.6rem" color="#ff5e00" />
           </div>
@@ -132,7 +134,7 @@ type ReviewsProps = {
         </InformationProducts>
         <InformationProducts
           title={i18n.INFO_PRODUCTS.SEASON}
-          subtitle2="Lente herfst">
+          subtitle2="Lente en herfst">
           <div slot="icon">
             <Icon icon="spring-logo" size="1.6rem" color="#ff5e00" />
             <Icon icon="autumn-logo" size="1.6rem" color="#ff5e00" />
@@ -147,7 +149,7 @@ type ReviewsProps = {
           class="grid grid-cols-2 justify-between md:grid-cols-6 h-auto mt-3 gap-3 md:px-6">
           <InformationProducts
             title={i18n.INFO_PRODUCTS.TOTAL_DISTANCE}
-            subtitle="300 km">
+            subtitle="373 km">
             <div slot="icon">
               <Icon icon="distance-logo" size="1.6rem" color="#ff5e00" />
             </div>
@@ -155,14 +157,14 @@ type ReviewsProps = {
 
           <InformationProducts
             title={i18n.INFO_PRODUCTS.TOTAL_ASCENT}
-            subtitle="3.471 m">
+            subtitle="4.655 m">
             <div slot="icon">
               <Icon icon="up-logo" size="1.6rem" color="#ff5e00" />
             </div>
           </InformationProducts>
           <InformationProducts
             title={i18n.INFO_PRODUCTS.TOTAL_DESCENT}
-            subtitle="4.401 m">
+            subtitle="5.825 m">
             <div slot="icon">
               <Icon icon="down-logo" size="1.6rem" color="#ff5e00" />
             </div>
@@ -176,8 +178,10 @@ type ReviewsProps = {
           </InformationProducts>
           <InformationProducts
             title={i18n.INFO_PRODUCTS.DIFFICULTY}
-            subtitle="2">
-            <div class="flex gap-1" slot="icon"></div>
+            subtitle="2-3">
+            <div class="flex gap-1" slot="icon">
+              <Icon icon="difficulty-logo" size="2rem" color="#ff5e00" />
+            </div>
           </InformationProducts>
           <InformationProducts title="E-bike" subtitle="Ja">
             <div slot="icon">
@@ -197,16 +201,15 @@ type ReviewsProps = {
           </InformationProducts>
         </div>
       </div>
-
       <div class="mt-10 grid gap-5 lg:grid-cols-3 lg:gap-10">
         <div>
           <BookButton />
         </div>
         <div>
-          <SardiniaExperiencesModalNl />
+          <SardiniaExperiencesModal />
         </div>
         <div>
-          <SardiniaDifficultyModalNl />
+          <SardiniaDifficultyModal />
         </div>
       </div>
 
@@ -220,7 +223,7 @@ type ReviewsProps = {
           <ul slot="description" class="mt-4 flex flex-col gap-2">
             <li class="flex gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
-              <p class="max-w-[320px] text-md">2 Professionele gidsen</p>
+              <p class="max-w-[320px] text-md">              2 professionele gidsen</p>
             </li>
             <li class="flex gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
@@ -231,16 +234,16 @@ type ReviewsProps = {
             <li class="flex gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
               <p class="max-w-[320px] text-md">
-                Garantie voor financiële bescherming
+                Financiële garantiebescherming
               </p>
             </li>
             <li class="flex gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
-              <p class="max-w-[320px] text-md">Reservevoertuig</p>
+              <p class="max-w-[320px] text-md">Volgwagen</p>
             </li>
             <li class="flex gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
-              <p class="max-w-[320px] text-md">Bagagetransport</p>
+              <p class="max-w-[320px] text-md">Bagagevervoer</p>
             </li>
             <li class="flex gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
@@ -248,11 +251,11 @@ type ReviewsProps = {
             </li>
             <li class="flex gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
-              <p class="max-w-[320px] text-md">Hotel 3 & 4 sterren</p>
+              <p class="max-w-[320px] text-md">3- en 4-sterrenhotels</p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
-              <p class="max-w-[320px] text-md">Privé kamer 9 nachten</p>
+              <p class="max-w-[320px] text-md">Privékamer, 9 nachten</p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
@@ -268,15 +271,15 @@ type ReviewsProps = {
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
-              <p class="max-w-[320px] text-md">Helm</p>
+              <p class="max-w-[320px] text-md">Fietshelm</p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
-              <p class="max-w-[320px] text-md">Waterfles</p>
+              <p class="max-w-[320px] text-md">Bidon</p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
-              <p class="max-w-[320px] text-md">Fiets T-shirt</p>
+              <p class="max-w-[320px] text-md">Fietsshirt</p>
             </li>
           </ul>
         </Includes>
@@ -287,14 +290,14 @@ type ReviewsProps = {
           <div slot="description" class="flex flex-col gap-2 mt-4">
             <li class="flex gap-2">
               <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
-              <p class="max-w-[320px] text-md">
-                Reis- en annuleringsverzekering (Het is verplicht om vóór
-                vertrek een reisverzekering af te sluiten)
+              <p class="text-md">
+                Reis- en annuleringsverzekering (we raden aan vóór vertrek een
+                reisverzekering af te sluiten)
               </p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
-              <p class="max-w-[320px] text-md">Vlucht</p>
+              <p class="text-md">Vlucht</p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
@@ -329,7 +332,7 @@ type ReviewsProps = {
             <li class="flex gap-2">
               <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
               <p class="max-w-[320px] text-md">
-                Privévervoer voor of na de tour
+                Privévervoer vóór of na de tour
               </p>
             </li>
           </div>
@@ -343,30 +346,30 @@ type ReviewsProps = {
         <img
           class="rounded-xl absolute md:w-[20rem] lg:w-[25rem] hover:z-40 transition-all duration-300 ease-out hover:scale-105"
           src="/cycle-tour/leisure-cycling/italia/sardinia/sardinia-3.webp"
-          alt="Fietser die met een fiets naast zich naar de bergen kijkt"
+          alt="Fietser kijkt uit over de bergen met de fiets naast zich"
         />
         <img
           class="rounded-xl absolute md:w-[10rem] lg:w-[12rem] md:mt-48 lg:mt-30 ml-6 z-10 grayscale-[60%] hover:grayscale-0 transition-all duration-300 ease-out hover:scale-105"
           src="/cycle-tour/leisure-cycling/italia/sardinia/sardinia-1.webp"
-          alt="Fietser die met een fiets naast zich naar de bergen kijkt"
+          alt="Fietser kijkt uit over de bergen met de fiets naast zich"
         />
         <img
           class="rounded-xl absolute md:w-[10rem] lg:w-[15em] ml-64 md:-mt-24 lg:-mt-32 grayscale-[60%] hover:grayscale-0 transition-all duration-300 ease-out hover:scale-105"
           src="/cycle-tour/leisure-cycling/italia/sardinia/sardinia-5.webp"
-          alt="Fietser die met een fiets naast zich naar de bergen kijkt"
+          alt="Fietser kijkt uit over de bergen met de fiets naast zich"
         />
       </div>
 
       <div class="grid gap-5 md:-mt-20">
         <div>
           <h2
-            class="mb-4 inline-block rounded-lg bg-[#3c5546] px-6 py-4 text-2xl font-bold text-white md:text-4xl xl:text-5xll">
+            class="mb-4 inline-block rounded-lg bg-[#3c5546] px-6 py-4 text-2xl font-bold text-white md:text-4xl xl:text-5xl">
             {i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.AVAILABILITY}
           </h2>
           <p>
-            Kun je geen geschikte data in de planning vinden? Neem contact met
-            ons op om je beschikbaarheid door te geven. Voor privétours bieden
-            wij graag een op maat gemaakte oplossing aan.
+            Geen geschikte data in de planning gevonden? Neem contact met ons
+            op en laat weten wanneer je beschikbaar bent. Voor privétours bieden
+            we graag een reis op maat aan.
           </p>
           <div class="gap-4 mt-6">
             <ul class="text-lg">
@@ -418,10 +421,10 @@ type ReviewsProps = {
         </h2>
         <p>🔶 Scott</p>
         <p>🔶 Aluminium frame</p>
-        <p>🔶 625ah Accu</p>
+        <p>🔶 Accu van 625 Ah</p>
         <p>🔶 Aangedreven door Bosch</p>
-        <p>🔶 Shimano hydraulische schijfrem & apparatuur</p>
-        <p>🔶 Schwalbe anti-lek 700x50 band</p>
+        <p>🔶 Shimano hydraulische schijfremmen en uitrusting</p>
+        <p>🔶 Schwalbe-antilekbanden 700x50</p>
         <p>🔶 Gewicht: 22 kg</p>
       </div>
       <div class="w-full overflow-x-auto">
@@ -440,65 +443,61 @@ type ReviewsProps = {
       <div>
         <h2
           class="mb-4 inline-block rounded-lg bg-[#3c5546] px-6 py-4 text-2xl font-bold text-white md:text-4xl xl:text-5xl">
-          Wat mee te nemen voor je fietsvakantie
+          Wat neem je mee op je fietsvakantie?
         </h2>
         <p class="mb-2">
-          Een goed ingepakte tas zorgt voor een soepelere rit! Dit is wat wij
-          aanraden voor je fietstour door Sardinië.
+          Met een goed ingepakte tas verloopt je fietstocht een stuk soepeler!
+          Dit raden we aan voor je fietstocht door Sardinië.
         </p>
-        <p class="font-bold mb-2">Inpaklijst</p>
+        <p class="font-bold mb-2">Paklijst</p>
         <p class="font-bold">Fietskleding:</p>
         <p>
-          🔶 Fietsbroek (met pad) en fietsshirts – 2–3 sets (lange en korte
+          🔶 Fietsbroek (met zeem) en fietsshirt – 2–3 sets (met lange en korte
           mouwen)
         </p>
-        <p>🔶 Lichtgewicht wind- en/of waterdichte jas (regenjas)</p>
-        <p>🔶 Trui of fleece (extra lagen voor koelere omstandigheden)</p>
+        <p>🔶 Licht wind- en/of waterdicht jack (regenjack)</p>
+        <p>🔶 Trui of fleecevest (extra laag voor koelere omstandigheden)</p>
         <p>
-          🔶 Gewatteerde fietshandschoenen (voorjaars- en herfstochtenden kunnen
-          fris zijn)
+          🔶 Fietshandschoenen met padding (ochtenden in lente en herfst kunnen fris zijn)
         </p>
-        <p>🔶 Armbeschermers en beenstukken (optioneel maar zeer nuttig)</p>
-        <p class="mb-2">🔶 Sportsokken (sneldrogend)</p>
-        <p class="font-bold">Zon- en weerbescherming:</p>
+        <p>🔶 Arm- en beenwarmers (optioneel, maar erg handig)</p>
+        <p class="mb-2">🔶 Sneldrogende sportsokken</p>
+        <p class="font-bold">Bescherming tegen zon en weer:</p>
         <p>🔶 Zonnehoed</p>
         <p>🔶 Nekwarmer (buff)</p>
         <p>🔶 Zonnebril</p>
-        <p>🔶 Fietspet of buff (zonbescherming onder de helm)</p>
-        <p>🔶 Zonnebrandcrème (hoge SPF)</p>
+        <p>🔶 Fietspet of buff (beschermt tegen de zon onder de helm)</p>
+        <p>🔶 Zonnebrandcrème (hoge SPF-factor)</p>
         <p class="mb-2">🔶 Lippenbalsem met SPF (aanbevolen)</p>
-        <p class="font-bold">Uitrusting & accessoires:</p>
-        <p>🔶 Waterfles (door ons verzorgd)</p>
+        <p class="font-bold">Uitrusting en accessoires:</p>
+        <p>🔶 Bidon (door ons verstrekt)</p>
         <p>
-          🔶 Fietshelm (door ons verzorgd) Laat het ons weten als je een helm
-          nodig hebt!
+          🔶 Fietshelm (door ons verstrekt). Geef aan als je een helm nodig
+          hebt!
         </p>
         <p>🔶 Gelzadelhoes voor extra comfort (optioneel)</p>
         <p>🔶 Kleine rugzak</p>
-        <p class="mb-2">🔶 Fietstas (door ons verzorgd)</p>
-        <p class="font-bold">Schoenen & vrijetijdskleding:</p>
-        <p>
-          🔶 Comfortabele schoenen (niet aanbevolen om mee te fietsen met
-          sandalen)
-        </p>
-        <p>🔶 Vrijetijdskleding en een extra paar schoenen voor de avonden</p>
+        <p class="mb-2">🔶 Fietstas (door ons verstrekt)</p>
+        <p class="font-bold">Schoenen en vrijetijdskleding:</p>
+        <p>🔶 Comfortabele schoenen (fietsen op sandalen raden we af)</p>
+        <p>🔶 Vrijetijdskleding en een extra paar schoenen voor 's avonds</p>
         <p class="mb-2">🔶 Badkleding</p>
-        <p class="font-bold">Documenten & gezondheid:</p>
+        <p class="font-bold">Documenten en gezondheid:</p>
         <p>🔶 Paspoort</p>
         <p>🔶 Reisverzekering</p>
         <p>🔶 Persoonlijke EHBO-set</p>
         <p>🔶 Insectenwerend middel</p>
         <p class="mb-2">🔶 Persoonlijke medicatie (indien van toepassing)</p>
         <p>
-          Als je vragen hebt over de aanbevolen uitrusting of niet zeker weet
-          wat je mee moet nemen, neem dan gerust contact met ons op.
+          Heb je vragen over de aanbevolen uitrusting of weet je niet zeker wat
+          je moet meenemen? Neem dan gerust contact met ons op.
         </p>
       </div>
       <div>
         <img
           class="rounded-2xl"
           src="/cycle-tour/leisure-cycling/italia/sardinia/sardinia-map.webp"
-          alt="Kaart van Sardinië-tour"
+          alt="Kaart van de fietstocht door Sardinië"
         />
       </div>
     </div>
@@ -511,80 +510,29 @@ type ReviewsProps = {
         </h2>
         <p>🔶 Geldige reisverzekering</p>
         <p>
-          🔶 Ondertekend vrijwaringsformulier, in te vullen vóór de start van de
-          tour
+          🔶 Ondertekende verklaring van afstand van aansprakelijkheid, in te
+          vullen vóór aanvang van de tour
         </p>
-        <p>🔶 Voldoende lichamelijke conditie.</p>
-        <p>🔶 Ervaring met langere ritten.</p>
+        <p>🔶 Goede lichamelijke conditie.</p>
+        <p>🔶 Ervaring met langere fietstochten.</p>
+        <p>🔶 Goed kunnen schakelen en afdalingen beheersen is belangrijk.</p>
+        <p>🔶 Een helm is verplicht tijdens alle fietstochten.</p>
         <p>
-          🔶 Zelfverzekerd schakelen is belangrijk en het beheersen van
-          afdalingen
+          🔶 Je bent zelf verantwoordelijk voor je gezondheid, conditie en
+          eventuele bestaande medische aandoeningen.
         </p>
-        <p>🔶 Helm verplicht tijdens alle ritten</p>
-        <p>
-          🔶 Persoonlijke verantwoordelijkheid voor gezondheid, fitheid en
-          eventuele bestaande medische aandoeningen
-        </p>
-        <p>🔶 Noodcontactgegevens, te verstrekken vóór vertrek</p>
+        <p>🔶 Contactgegevens voor noodgevallen, vóór vertrek aan te leveren</p>
       </div>
 
       <div>
         <h2
           class="mb-4 inline-block rounded-lg bg-[#3c5546] px-6 py-4 text-2xl font-bold text-white md:text-4xl xl:text-5xl">
-          Welkom op SARDINIË
-        </h2>
-        <p class="max-w-2xl mb-6 md:px-0 font-bold">
-          Tussen cultuur en landschappen. Sardinië is de mediterrane droom!
-        </p>
-        <p class="mb-2">
-          Ontdek Sardinië op twee wielen met een prachtig traject dat de meest
-          ongerepte kusten, cultuur en smaken van het eiland samenbrengt in één
-          fietsroute.
-        </p>
-        <p>
-          🔶 Verken oude beschavingen. Van de mysterieuze Nuraghe-torens tot
-          Fenicische, Carthaagse, Romeinse, Aragonese en Pisanaanse invloeden,
-          elk heeft een onuitwisbare stempel gedrukt op de identiteit van
-          Sardinië.
-        </p>
-        <p>
-          🔶 De natuur heeft wonderen verricht in Sardinië — torenhoge kliffen
-          en een kustlijn bezaaid met wereldberoemde stranden en baaien vormen
-          een uitzonderlijk landschap.
-        </p>
-        <p>
-          🔶 Bezoek verborgen bergdorpjes in het landelijke hart van Sardinië
-          tot prachtige middeleeuwse steden zoals Alghero en Castelsardo, of
-          Bosa — een van de mooiste steden van Sardinië, met kleurrijke huizen
-          die tegen een steile heuvel zijn aangebouwd en omhoog leiden naar een
-          majestueus kasteel.
-        </p>
-        <p>
-          🔶 Ontdek de Sardijnse levenswijze. Dit eiland bewaart het geheim van
-          een lang leven, vraag het de Sardijnen.
-        </p>
-        <p>
-          🔶 De Sardijnse keuken – lokaal geproduceerde ricotta, pecorino en
-          geitenkaas; proef traditionele Sardijnse wijnen en specialiteiten
-          zoals culurgiones, porcetto en seadas al miele, en nog veel meer.
-        </p>
-        <p>
-          🔶 Geniet van je vrije dagen met optionele activiteiten zoals een
-          boottocht, een bezoek aan de Grotta di Nettuno (een van de grootste
-          zeegrotten van Italië), het ontdekken van het mijnbouwverleden van het
-          eiland of de Vermentino-wijnproeverij – allemaal in één fietstocht.
-        </p>
-      </div>
-      <div>
-        <h2
-          class="mb-4 inline-block rounded-lg bg-[#3c5546] px-6 py-4 text-2xl font-bold text-white md:text-4xl xl:text-5xl">
-          Algemene Voorwaarden
+          Algemene voorwaarden
         </h2>
         <p class="max-w-2xl mb-6 md:px-0">
-          Lees onze Algemene Voorwaarden voordat je je boeking afrondt. Door je
-          reservering te bevestigen ga je akkoord met alle regels met betrekking
-          tot betalingen, annuleringen en deelnamevereisten. Zie blog Cycle Tour
-          Sardinië.
+          Lees onze algemene voorwaarden door voordat je je boeking afrondt.
+          Door je reservering te bevestigen, ga je akkoord met alle bepalingen
+          over betalingen, annuleringen en deelnamevereisten.
         </p>
       </div>
     </div>
@@ -595,6 +543,47 @@ type ReviewsProps = {
         {(<SliderReact IMG={IMG} client:visible />)}
       </ol>
     </section>
+
+    <div class="mt-10">
+      <h2
+        class="mb-4 inline-block rounded-lg bg-[#3c5546] px-6 py-4 text-2xl font-bold text-white md:text-4xl xl:text-5xl">
+        Welkom op SARDINIË
+      </h2>
+      <p class="max-w-2xl mb-6 md:px-0 font-bold">
+        Tussen cultuur en landschappen: Sardinië is de mediterrane droom!
+      </p>
+      <p class="mb-2">
+        Ontdek Sardinië op twee wielen tijdens een prachtige route langs de
+        ongerepte kust, cultuur en smaken van het eiland.
+      </p>
+      <p>
+        🔶 Ontdek oude beschavingen. Van de mysterieuze nuraghe-torens tot
+        Fenicische, Carthaagse, Romeinse, Aragonese en Pisaanse invloeden: ze
+        hebben allemaal een onuitwisbare stempel op de identiteit van Sardinië
+        gedrukt.
+      </p>
+      <p>
+        🔶 De natuur heeft Sardinië rijkelijk bedeeld: hoge kliffen en een
+        kustlijn vol wereldberoemde stranden en baaien vormen samen een
+        indrukwekkend landschap.
+      </p>
+      <p>
+        🔶 Bezoek verborgen bergdorpen in het landelijke hart van Sardinië en
+        prachtige middeleeuwse steden zoals Alghero en Castelsardo, of Bosa —
+        een van de mooiste plaatsen van Sardinië, met kleurrijke huizen tegen
+        een steile heuvel die oprijst naar een majestueus kasteel.
+      </p>
+      <p>
+        🔶 Ontdek de Sardijnse manier van leven. Dit eiland kent het geheim van
+        een lang leven — vraag het de Sardijnen maar.
+      </p>
+      <p>
+        🔶 De Sardijnse keuken: lokaal gemaakte ricotta, pecorino en geitenkaas.
+        Proef traditionele Sardijnse wijnen en specialiteiten zoals
+        culurgiones, porcetto en seadas al miele, en nog veel meer.
+      </p>
+      <p>🔶 Geef je vrije dagen een extra invulling met optionele activiteiten.</p>
+    </div>
 
     <section>
       <!--  TimeLine per days  -->
@@ -608,30 +597,29 @@ type ReviewsProps = {
         </h2>
 
         <p class="text-lg text-gray-900 mb-1">
-          <span class="text-xl strong">🔶</span>Volledig begeleide reis met
-          e-bike en ondersteuning
+          <span class="text-xl strong">🔶</span>Volledig begeleide tour met
+          e-bike en uitgebreide ondersteuning
         </p>
         <p class="text-lg text-gray-900 mb-1">
-          <span class="text-xl strong">🔶</span>Privékamers in 3- en
-          4-sterrenhotels
+          <span class="text-xl strong">🔶</span>Privékamers in 3- en 4-sterrenhotels
         </p>
         <p class="text-lg text-gray-900 mb-1">
           <span class="text-xl strong">🔶</span>Fietstempo: ontspannen en
-          sociaal, met regelmatige stops voor foto's, koffie, uitzichtpunten en
+          gezellig, met regelmatige stops voor foto's, koffie, uitzichtpunten en
           culturele bezoeken
         </p>
         <p class="text-lg text-gray-900 mb-1">
-          <span class="text-xl strong">🔶</span>Gemiddelde dagafstand: 50 km
-          fietsen per dag (ongeveer 4–6 uur inclusief pauzes)
+          <span class="text-xl strong">🔶</span>Gemiddelde dagafstand: 60 km
+          fietsen per dag (ongeveer 6 uur inclusief pauzes)
         </p>
         <p class="text-lg text-gray-900 mb-1">
-          <span class="text-xl strong">🔶</span>Terrein: rustige wegen op het
-          platteland.
+          <span class="text-xl strong">🔶</span>Terrein: landelijke wegen met
+          weinig verkeer.
         </p>
         <p class="text-lg text-gray-900 mb-1">
-          <span class="text-xl strong">🔶</span>Dagindeling: aankomst meestal in
-          de middag, met tijd om te ontspannen, van het hotel te genieten of de
-          omgeving te verkennen
+          <span class="text-xl strong">🔶</span>Dagindeling: aankomst meestal
+          in de namiddag, met tijd om te ontspannen, van het hotel te genieten
+          of de omgeving te verkennen
         </p>
         <p class="text-lg text-gray-900 mb-1">
           <span class="text-xl strong">🔶</span>Extra optionele activiteiten
@@ -641,53 +629,54 @@ type ReviewsProps = {
           <AccordionItem title="Dag 1">
             <p class="font-bold text-xl">Aankomst in Olbia</p>
             <p class="">
-              Bij aankomst op de luchthaven van Olbia staat er een transfer
-              klaar om je naar het hotel te brengen. Afhankelijk van je
-              aankomsttijd is de rest van de dag vrij. Je kunt de middag
-              doorbrengen met het verkennen van de oude binnenstad van Olbia,
-              waar je ontspannen kunt wandelen en keuze hebt uit vele cafés en
-              restaurants voor lunch of een koffie.
+              Bij aankomst op de luchthaven van Olbia staat er vervoer klaar
+              naar het hotel. Afhankelijk van je aankomsttijd is de rest van de
+              dag vrij. Je kunt de middag doorbrengen in het oude centrum van
+              Olbia, met een aangename sfeer voor een ontspannen wandeling en
+              volop cafés en restaurants voor een lunch of een kop koffie.
             </p>
 
             <p class="">
-              In de middag ontmoet de reisleider de groep op het afgesproken
-              tijdstip bij de hotelreceptie voor een briefing over de reis en de
-              komende dagen. 's Avonds is er een tafel gereserveerd in een
-              lokaal restaurant, waar we samenkomen voor ons eerste diner en de
-              officiële start van de reis.
+              In de namiddag ontmoet de reisleider de groep op het afgesproken
+              tijdstip bij de receptie van het hotel voor een briefing over de
+              tour en de komende dagen. 's Avonds is er een tafel gereserveerd
+              bij een lokaal restaurant, waar we samen genieten van ons eerste
+              diner en de reis officieel van start gaat.
             </p>
           </AccordionItem>
 
           <AccordionItem title="Dag 2">
             <div class="grid md:grid-cols-2 gap-8 md:gap-32">
               <div class="">
-                <p class="font-bold">Kurkbos van Gallura</p>
+                <p class="font-bold">Kurkeikenbossen van Gallura</p>
                 <p class="">
                   Onze eerste fietsdag op Sardinië begint met een korte transfer
-                  vanuit Olbia. We rijden ongeveer 30 minuten noordwaarts naar
-                  het startpunt van de rit. Vanaf hier voert de route door
-                  Gallura, een regio met een sterke lokale identiteit en een
-                  traditioneel landschap, bekend om granieten heuvels en
-                  uitgestrekte kurkeikenbossen, die tot de belangrijkste van
-                  Europa behoren. Kurk wordt hier al eeuwen geoogst en vormt
-                  zowel de lokale economie als het landschap.
+                  vanuit Olbia. Na ongeveer 30 minuten rijden naar het noorden
+                  bereiken we het vertrekpunt van de route. Vanaf hier fietsen
+                  we door Gallura, een regio met een sterke eigen identiteit en
+                  een traditioneel landelijk karakter, bekend om de granieten
+                  heuvels en uitgestrekte kurkeikenbossen — enkele van de
+                  belangrijkste van Europa. Al eeuwenlang wordt hier kurk
+                  geoogst, wat zowel de lokale economie als het landschap heeft
+                  gevormd.
                 </p>
                 <p class="">
-                  Onderweg fietsen we door kleine dorpen zoals Sant'Antonio di
-                  Gallura en stoppen we voor koffie en een pauze. Zo ervaren we
-                  het ontspannen dagelijkse leven op Sardinië in zijn meest
-                  authentieke vorm: eenvoudig, rustig en nauw verbonden met het
-                  land.
+                  Onderweg fietsen we door kleine dorpen zoals Sant’Antonio di
+                  Gallura. We stoppen voor koffie en een pauze en nemen de tijd
+                  om het ontspannen dagelijkse leven op Sardinië op zijn
+                  puurst te ervaren: eenvoudig, vredig en sterk verbonden met
+                  het land.
                 </p>
 
                 <p class="">
-                  De etappe eindigt in Tempio Pausania, aan de voet van de Monte
-                  Limbara. Dit charmante en karakteristieke stadje geldt al
-                  lange tijd als de bakermat van de Gallurese cultuur. Het
-                  historische centrum is vrijwel geheel gebouwd met zichtbaar
-                  lokaal graniet en biedt een kenmerkende, harmonieuze sfeer en
-                  een perfecte plek om onze eerste fietsdag op Sardinië af te
-                  sluiten.
+                  De etappe eindigt in Tempio Pausania, aan de voet van de
+                  Monte Limbara. Dit charmante, karakteristieke stadje wordt al
+                  lange tijd beschouwd als de bakermat van de Gallurische
+                  cultuur. Het historische centrum is bijna volledig gebouwd
+                  met lokaal graniet in het zicht en heeft daardoor een
+                  bijzondere, harmonieuze sfeer. De betoverende uitzichten
+                  maken het de perfecte plek om onze eerste fietsdag op Sardinië
+                  af te sluiten.
                 </p>
               </div>
 
@@ -700,7 +689,7 @@ type ReviewsProps = {
                     <h2 class="text-pretty text-neutral-900 text-xl font-bold">
                       Totale afstand
                     </h2>
-                    <p class="text-pretty text-gray-500 text-md">39 km</p>
+                    <p class="text-pretty text-gray-500 text-md">63 km</p>
                   </div>
                 </div>
 
@@ -712,7 +701,7 @@ type ReviewsProps = {
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
                       Totale stijging
                     </h2>
-                    <p class="text-pretty text-gray-500 text-md">826 m</p>
+                    <p class="text-pretty text-gray-500 text-md">1600 m</p>
                   </div>
                 </div>
 
@@ -724,7 +713,7 @@ type ReviewsProps = {
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
                       Totale daling
                     </h2>
-                    <p class="text-pretty text-gray-500 text-md">414 m</p>
+                    <p class="text-pretty text-gray-500 text-md">600 m</p>
                   </div>
                 </div>
 
@@ -734,9 +723,9 @@ type ReviewsProps = {
                   </div>
                   <div class="grid col-span-6">
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
-                      Duur
+                      Duur van de rit
                     </h2>
-                    <p class="text-pretty text-gray-500 text-md">5 uur</p>
+                    <p class="text-pretty text-gray-500 text-md">6 uur</p>
                   </div>
                 </div>
 
@@ -748,7 +737,7 @@ type ReviewsProps = {
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
                       Moeilijkheidsgraad
                     </h2>
-                    <p class="text-pretty text-gray-500 text-md">2</p>
+                    <p class="text-pretty text-gray-500 text-md">3</p>
                   </div>
                 </div>
               </div>
@@ -760,34 +749,37 @@ type ReviewsProps = {
               <div class="">
                 <p class="font-bold">Monte Limbara</p>
                 <p class="">
-                  Wakker worden boven de Gallurese vlakte, omringd door dichte
-                  kurkbossen, is een onvergetelijke start van de dag. De Monte
-                  Limbara (1.395 m) domineert het ruige landschap.
+                  Wakker worden boven de vlakte van Gallura, omringd door
+                  dichte kurkeikenbossen, is een onvergetelijke start van de
+                  dag. De Monte Limbara (1.395 m) torent hoog boven het ruige
+                  landschap uit.
                 </p>
                 <p class="">
-                  De rit van vandaag voert rondom het massief van de Monte
-                  Limbara, via een schilderachtige route naar het dorp
-                  Berchidda. De weg volgt de westzijde van de berg, door
-                  uitgestrekte kurkeiken- en dennenbossen. Geleidelijk maken de
-                  diepgroene bossen plaats voor strokleurige velden en de blauwe
-                  spiegel van het Lago di Coghinas.
+                  Vandaag fietsen we via een schilderachtige route rond het
+                  Monte Limbara-massief richting het dorp Berchidda. De weg
+                  loopt langs de westkant van de berg en voert door uitgestrekte
+                  kurkeiken- en dennenbossen. Langzaam maken de diepe
+                  groentinten van het bos plaats voor strogele velden en het
+                  blauwe spiegelende water van het Lago di Coghinas.
                 </p>
 
                 <p class="">
-                  Net voordat we de brug over het meer oversteken, gaat de route
-                  oostwaarts naar het agrarische stadje Berchidda, een dorp met
-                  een lange wijnbouwtraditie. Het gebied is een bekende
-                  wijnstreek en beroemd om de productie van Vermentino di
-                  Gallura, de enige DOCG-geclassificeerde wijn van Sardinië.
+                  Vlak voor de brug over het meer buigt de route af naar het
+                  oosten, richting Berchidda, een agrarisch dorp met een lange
+                  wijnbouwtraditie. De streek is een bekend wijngebied en
+                  beroemd om de Vermentino di Gallura, de enige wijn van
+                  Sardinië met de DOCG-classificatie.
                 </p>
                 <p class="">
-                  De etappe gaat verder naar een familiebedrijf met wijngaard,
-                  waar je kunt deelnemen aan een wijnproeverij met een typische
-                  Sardijnse lunch: een ontspannen en authentieke kennismaking
-                  met lokale smaken en tradities.
-                </p>
-                <p class="">
-                  Na het bezoek keren we met de auto terug naar ons hotel.
+                  We fietsen verder naar het Wijnmuseum in Berchidda, waar we
+                  stoppen voor een bezoek en een korte proeverij en meer leren
+                  over de lokale wijntradities. Daarna genieten we in de buurt
+                  van een picknicklunch, met prachtig panoramisch uitzicht over
+                  het Sardijnse landschap. 's Middags fietsen we door het
+                  platteland rond het Monte Limbara-gebergte naar Calangianus.
+                  Daar is tijd om te ontspannen en iets te drinken voordat we
+                  met het volgvoertuig teruggaan naar het hotel. Wie liever
+                  doorfietst, kan ook helemaal terug naar het hotel fietsen.
                 </p>
               </div>
 
@@ -800,7 +792,7 @@ type ReviewsProps = {
                     <h2 class="text-pretty text-neutral-900 text-xl font-bold">
                       Totale afstand
                     </h2>
-                    <p class="text-pretty text-gray-500 text-md">46 km</p>
+                    <p class="text-pretty text-gray-500 text-md">66 km</p>
                   </div>
                 </div>
 
@@ -812,7 +804,7 @@ type ReviewsProps = {
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
                       Totale stijging
                     </h2>
-                    <p class="text-pretty text-gray-500 text-md">500 m</p>
+                    <p class="text-pretty text-gray-500 text-md">720 m</p>
                   </div>
                 </div>
 
@@ -824,7 +816,7 @@ type ReviewsProps = {
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
                       Totale daling
                     </h2>
-                    <p class="text-pretty text-gray-500 text-md">795 m</p>
+                    <p class="text-pretty text-gray-500 text-md">1265 m</p>
                   </div>
                 </div>
 
@@ -834,9 +826,9 @@ type ReviewsProps = {
                   </div>
                   <div class="grid col-span-6">
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
-                      Duur
+                      Duur van de rit
                     </h2>
-                    <p class="text-pretty text-gray-500 text-md">4 uur</p>
+                    <p class="text-pretty text-gray-500 text-md">5 uur</p>
                   </div>
                 </div>
 
@@ -857,17 +849,23 @@ type ReviewsProps = {
           <AccordionItem title="Dag 4">
             <div class="grid md:grid-cols-2 gap-8 md:gap-32">
               <div class="">
-                <p class="font-bold">Castelsardo.</p>
+                <p class="font-bold">Castelsardo</p>
                 <p class="">
-                  De fietsroute van vandaag voert van Tempio Pausania naar de
-                  kust, door landbouwgebied met glooiende groene heuvels,
-                  grazende koeien en kenmerkende granieten rotsformaties.
-                </p>
-                <p class="">
-                  Aan het einde van de etappe komt de zee in zicht en verschijnt
-                  Castelsardo voor ons: een schilderachtig, versterkt
-                  middeleeuws stadje en een van de charmantste bestemmingen in
-                  Noord-Sardinië, met uitzicht over de Golf van Asinara.
+                  Vandaag fietsen we vanuit Tempio Pausania richting de kust,
+                  door landbouwgebied met glooiende groene heuvels, grazende
+                  koeien en opvallende granieten rotsformaties. Naarmate we de
+                  zee naderen, doemt Castelsardo op: een schilderachtig
+                  middeleeuws stadje op een rotsachtige landtong met uitzicht
+                  over de Golf van Asinara. Het stadje werd in de 12e eeuw
+                  gesticht door de Genuese familie Doria en heeft een rijke
+                  maritieme geschiedenis, met smalle geplaveide straatjes,
+                  eeuwenoude vestingwerken en een kasteel in het hart. Ons hotel
+                  ligt recht tegenover een klein strand en biedt prachtig
+                  uitzicht over het water op de historische binnenstad. De
+                  middag is helemaal vrij om aan zee te ontspannen, het
+                  sfeervolle historische centrum te verkennen, door de kronkelige
+                  straatjes te dwalen of iets te drinken in een lokaal café en
+                  van de kustsfeer te genieten.
                 </p>
               </div>
 
@@ -880,7 +878,7 @@ type ReviewsProps = {
                     <h2 class="text-pretty text-neutral-900 text-xl font-bold">
                       Totale afstand
                     </h2>
-                    <p class="text-pretty text-gray-500 text-md">46 km</p>
+                    <p class="text-pretty text-gray-500 text-md">66 km</p>
                   </div>
                 </div>
 
@@ -892,7 +890,7 @@ type ReviewsProps = {
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
                       Totale stijging
                     </h2>
-                    <p class="text-pretty text-gray-500 text-md">429 m</p>
+                    <p class="text-pretty text-gray-500 text-md">540 m</p>
                   </div>
                 </div>
 
@@ -904,7 +902,7 @@ type ReviewsProps = {
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
                       Totale daling
                     </h2>
-                    <p class="text-pretty text-gray-500 text-md">945 m</p>
+                    <p class="text-pretty text-gray-500 text-md">1585 m</p>
                   </div>
                 </div>
 
@@ -914,7 +912,7 @@ type ReviewsProps = {
                   </div>
                   <div class="grid col-span-6">
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
-                      Duur
+                      Duur van de rit
                     </h2>
                     <p class="text-pretty text-gray-500 text-md">5 uur</p>
                   </div>
@@ -937,27 +935,26 @@ type ReviewsProps = {
           <AccordionItem title="Dag 5">
             <div class="grid gap-8 md:gap-32">
               <div class="">
-                <p class="font-bold">Rustdag in Alghero.</p>
+                <p class="font-bold">Rustdag in Alghero</p>
                 <p class="">
                   Vandaag doen we het rustig aan en genieten we van een
-                  welverdiende rustdag: er staat niet gefietst op het programma.
-                  Na het ontbijt gaan we per transfer naar Alghero, een mooie
-                  middeleeuwse stad direct aan zee. Als een van Sardinië's meest
-                  geliefde zomerbestemmingen is Alghero perfect om rond te
-                  dwalen, te ontspannen en de sfeer op te snuiven.
+                  welverdiende rustdag — er staat geen fietstocht op het
+                  programma. Na het ontbijt reizen we naar Alghero, een
+                  prachtige middeleeuwse stad direct aan zee. Alghero is een
+                  van de geliefdste zomerbestemmingen van Sardinië en de
+                  perfecte plek om rond te wandelen, te ontspannen en de sfeer
+                  op te snuiven.
                 </p>
                 <p class="">
-                  Alghero heeft een sterke en trotse identiteit, gevormd door
-                  het Aragonese verleden. Ook nu nog hoor je er een lokaal
+                  Alghero heeft een sterke, trotse identiteit die gevormd is
+                  door het Aragonese verleden. Ook vandaag hoor je er een lokaal
                   Catalaans dialect, een herinnering aan de diepe historische
                   wortels van de Catalaanse kolonisatie in de 14e eeuw.
                 </p>
                 <p class="">
-                  Voor wie een bijzondere ervaring aan de dag wil toevoegen,
-                  zijn er extra activiteiten beschikbaar.
-                </p>
-                <p class="">
-                  Bekijk de extra activiteiten voor meer informatie.
+                  Wie de dag graag een bijzondere ervaring toevoegt, kan kiezen
+                  uit extra activiteiten. Zie 'Extra activiteiten' voor meer
+                  informatie.
                 </p>
               </div>
             </div>
@@ -966,23 +963,24 @@ type ReviewsProps = {
           <AccordionItem title="Dag 6">
             <div class="grid md:grid-cols-2 gap-8 md:gap-32">
               <div class="">
-                <p class="font-bold">Kustweg.</p>
+                <p class="font-bold">Kustroute</p>
                 <p class="">
                   Vandaag stappen we weer op de fiets voor een spectaculaire
-                  kustweg richting Bosa, die algemeen geldt als een van de meest
-                  schilderachtige routes van heel Sardinië.
-                </p>
-                <p class="">
-                  De weg slingert langs indrukwekkende kliffen hoog boven zee en
-                  biedt adembenemende uitzichten over diepblauw water en
-                  verborgen baaien. Deze rit vangt de essentie van het eiland,
-                  waar il Mare en il Monte samenkomen in mediterrane
-                  landschappen.
-                </p>
-                <p class="">
-                  Onze bestemming is Bosa, een van Sardinië's charmantste
-                  stadjes, met kleurrijke huizen die langs de rivier tegen de
-                  heuvel omhoog klimmen.
+                  kustrit naar Bosa, algemeen beschouwd als een van de mooiste
+                  routes van heel Sardinië. De weg slingert langs dramatische
+                  kliffen hoog boven zee en biedt adembenemend uitzicht op het
+                  diepblauwe water en de verborgen baaien beneden. Deze rit
+                  vangt de essentie van het eiland perfect: il Mare en il Monte
+                  komen samen, met ruige bergen en de schoonheid van de
+                  mediterrane kust. Onze bestemming is Bosa, een van de
+                  charmantste plaatsen van Sardinië, met kleurrijke huizen die
+                  tegen de heuvel langs de rivier opklimmen, onder het
+                  waakzame oog van het indrukwekkende Malaspina-kasteel. De
+                  middag is helemaal vrij om Bosa op je eigen tempo te
+                  ontdekken. Dwaal door de smalle straatjes van het historische
+                  centrum, bezoek ambachtelijke winkels, drink iets aan de
+                  Temo of ontspan en geniet van de sfeer in dit schilderachtige
+                  Sardijnse stadje.
                 </p>
               </div>
 
@@ -1007,7 +1005,7 @@ type ReviewsProps = {
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
                       Totale stijging
                     </h2>
-                    <p class="text-pretty text-gray-500 text-md">630 m</p>
+                    <p class="text-pretty text-gray-500 text-md">660 m</p>
                   </div>
                 </div>
 
@@ -1019,7 +1017,7 @@ type ReviewsProps = {
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
                       Totale daling
                     </h2>
-                    <p class="text-pretty text-gray-500 text-md">640 m</p>
+                    <p class="text-pretty text-gray-500 text-md">670 m</p>
                   </div>
                 </div>
 
@@ -1029,9 +1027,9 @@ type ReviewsProps = {
                   </div>
                   <div class="grid col-span-6">
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
-                      Duur
+                      Duur van de rit
                     </h2>
-                    <p class="text-pretty text-gray-500 text-md">5 uur</p>
+                    <p class="text-pretty text-gray-500 text-md">3 uur</p>
                   </div>
                 </div>
 
@@ -1053,33 +1051,35 @@ type ReviewsProps = {
           <AccordionItem title="Dag 7">
             <div class="grid md:grid-cols-2 gap-8 md:gap-32">
               <div class="">
-                <p class="font-bold">Montiferru &amp; het schiereiland Sinis</p>
+                <p class="font-bold">Montiferru en het schiereiland Sinis</p>
                 <p class="">
-                  's Ochtends verlaten we Bosa per transfer en rijden we
-                  landinwaarts naar Santu Lussurgiu, een fascinerend historisch
-                  stadje op de hellingen van Montiferru. Dit gebied maakt deel
-                  uit van een groot vulkanisch complex, bekend om zijn rijke
-                  geologische geschiedenis en indrukwekkende variatie aan
-                  landschappen. Voordat we op de fiets stappen, bezoeken we het
-                  oude centrum van Santu Lussurgiu, een dichte groep stenen
-                  huizen rond een natuurlijk amfitheater.
-                </p>
-                <p class="">
-                  Vanaf hier begint onze fietsroute, bergafwaarts door
-                  wisselende landschappen en kleine stadjes, geleidelijk
-                  richting de kust. De route leidt naar het schiereiland Sinis,
-                  een beschermd natuurgebied dat bekendstaat om zijn wilde
-                  schoonheid, lagunes en bijzondere stranden met kwartszand.
-                </p>
-                <p class="">
-                  Na het laatste deel van de rit bereiken we de bijzondere
-                  archeologische vindplaats Tharros, ooit een belangrijke stad
-                  in de oudheid, aan de zuidpunt van het schiereiland Sinis.
-                </p>
-                <p class="">
-                  Daarna gaan we per transfer naar ons hotel in Oristano, een
-                  aangenaam en ontspannen stadje dat een ideale uitvalsbasis is
-                  voor de laatste dagen van de vakantie.
+                  We beginnen de dag met een transfer naar Siete Fuentes, een
+                  klein dorp in de streek Montiferru, bekend om zijn vulkanische
+                  oorsprong, beboste heuvels en natuurlijke bronnen. Dit is een
+                  heel andere kant van Sardinië, met weelderig groene
+                  landschappen, rustige landwegen en een lager tempo. Vanaf
+                  hier fietsen we door een reeks kleine traditionele dorpen,
+                  waar het dagelijks leven nog steeds een ontspannen, lokaal
+                  ritme volgt. In een van de dorpen stoppen we voor koffie en
+                  nemen we de tijd om van de authentieke sfeer te genieten.
+                  Daarna fietsen we door het vredige platteland en
+                  landbouwlandschap richting de kust. Op het schiereiland Sinis
+                  opent het landschap zich en zien we prachtige kustgezichten
+                  en enkele van de bijzonderste stranden van Sardinië. Stranden
+                  zoals Is Arutas en Mari Ermi staan bekend om hun
+                  kristalheldere turquoise water en kenmerkende witte
+                  kwartszand. Ze zijn een heerlijke plek voor onze picknick,
+                  met tijd voor een verfrissende duik als de omstandigheden het
+                  toelaten. 's Middags fietsen we verder naar de archeologische
+                  vindplaats Tharros, een oude Fenicisch-Punische stad die later
+                  door de Romeinen werd uitgebouwd, spectaculair gelegen op een
+                  smal schiereiland met uitzicht op zee. Onze rit eindigt bij
+                  het mooie kerkje van San Giovanni di Sinis, een van de oudste
+                  kerken van Sardinië, waarvan de oorsprong teruggaat tot de
+                  vroegchristelijke periode. We genieten hier van een laatste
+                  drankje en het uitzicht op de kust. Na een korte transfer van
+                  ongeveer 15 minuten komen we aan bij ons hotel in Oristano,
+                  waar we de laatste dagen van onze vakantie verblijven.
                 </p>
               </div>
 
@@ -1092,7 +1092,7 @@ type ReviewsProps = {
                     <h2 class="text-pretty text-neutral-900 text-xl font-bold">
                       Totale afstand
                     </h2>
-                    <p class="text-pretty text-gray-500 text-md">55 km</p>
+                    <p class="text-pretty text-gray-500 text-md">61 km</p>
                   </div>
                 </div>
 
@@ -1104,7 +1104,7 @@ type ReviewsProps = {
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
                       Totale stijging
                     </h2>
-                    <p class="text-pretty text-gray-500 text-md">183 m</p>
+                    <p class="text-pretty text-gray-500 text-md">180 m</p>
                   </div>
                 </div>
 
@@ -1116,7 +1116,7 @@ type ReviewsProps = {
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
                       Totale daling
                     </h2>
-                    <p class="text-pretty text-gray-500 text-md">703 m</p>
+                    <p class="text-pretty text-gray-500 text-md">750 m</p>
                   </div>
                 </div>
 
@@ -1126,7 +1126,7 @@ type ReviewsProps = {
                   </div>
                   <div class="grid col-span-6">
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
-                      Duur
+                      Duur van de rit
                     </h2>
                     <p class="text-pretty text-gray-500 text-md">6 uur</p>
                   </div>
@@ -1152,35 +1152,37 @@ type ReviewsProps = {
               <div class="">
                 <p class="font-bold">Costa Verde</p>
                 <p class="">
-                  Op onze laatste fietsdag beginnen we met een transfer naar het
-                  startpunt: het kleine vissersdorp Marceddi, langs de rand van
-                  een prachtige lagune. Deze kleine nederzetting is op heel
+                  Op onze laatste fietsdag beginnen we met een transfer naar
+                  het vertrekpunt: Marceddi, een klein vissersdorp langs de
+                  rand van een prachtige lagune. Dit dorp staat op heel
                   Sardinië al lange tijd bekend om de uitzonderlijke kwaliteit
-                  van haar visproducten.
+                  van zijn visproducten.
                 </p>
                 <p class="">
-                  Vanaf hier stappen we weer op de fiets en steken we een smalle
-                  brug over. We laten de lagune achter ons en rijden naar de
-                  Groene Kust, een van Sardinië's grote ongerepte kustlijnen.
-                  Deze wilde, afgelegen kuststrook toont een krachtig landschap,
-                  ver verwijderd van massatoerisme.
+                  Hier stappen we weer op de fiets en steken we een smalle brug
+                  over. We laten de lagune achter ons en rijden richting de
+                  Groene Kust — een van de grote ongerepte kustgebieden van
+                  Sardinië. Deze wilde, afgelegen en grotendeels ongerepte kust
+                  biedt een ruig en indrukwekkend landschap, ver weg van het
+                  massatoerisme.
                 </p>
                 <p class="">
-                  De route leidt naar de spectaculaire Spiaggia di Piscinas, een
-                  prachtig goudkleurig strand waar de diepblauwe zee een immens
-                  duinlandschap ontmoet. De duinen zijn bedekt met mediterrane
-                  struiken. Deze bijzondere omgeving heeft het gebied de bijnaam
-                  'de Sardijnse woestijn' opgeleverd.
+                  De route voert ons naar het spectaculaire Spiaggia di
+                  Piscinas, een schitterend goudkleurig strand waar de
+                  diepblauwe zee samenkomt met een uitgestrekt duinengebied. De
+                  duinen zijn bezaaid met mediterrane maquis. Dit bijzondere
+                  landschap heeft de streek de bijnaam 'de Sardijnse woestijn'
+                  opgeleverd.
                 </p>
                 <p class="">
                   Nadat we van deze bijzondere plek hebben genoten, beginnen we
-                  aan de terugrit naar het vissersdorp over een indrukwekkende
-                  bergweg die de heuvels in klimt. Dit binnenlandse gedeelte
-                  biedt een heel ander perspectief. Het laatste deel van de
-                  etappe volgt dezelfde weg als in de ochtend en maakt de route
-                  rond.
+                  aan de terugrit naar het vissersdorp via een indrukwekkende
+                  bergweg die de heuvels in klimt. Dit binnenlandse deel biedt
+                  een heel ander perspectief. Het laatste deel van de etappe
+                  volgt dezelfde route die we 's ochtends reden en maakt de
+                  lus compleet.
                 </p>
-                <p class="">We keren per transfer terug naar ons hotel.</p>
+                <p class="">We gaan met een transfer terug naar ons hotel.</p>
               </div>
 
               <div class="">
@@ -1192,7 +1194,7 @@ type ReviewsProps = {
                     <h2 class="text-pretty text-neutral-900 text-xl font-bold">
                       Totale afstand
                     </h2>
-                    <p class="text-pretty text-gray-500 text-md">70 km</p>
+                    <p class="text-pretty text-gray-500 text-md">72 km</p>
                   </div>
                 </div>
 
@@ -1204,7 +1206,7 @@ type ReviewsProps = {
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
                       Totale stijging
                     </h2>
-                    <p class="text-pretty text-gray-500 text-md">904 m</p>
+                    <p class="text-pretty text-gray-500 text-md">955 m</p>
                   </div>
                 </div>
 
@@ -1216,7 +1218,7 @@ type ReviewsProps = {
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
                       Totale daling
                     </h2>
-                    <p class="text-pretty text-gray-500 text-md">904 m</p>
+                    <p class="text-pretty text-gray-500 text-md">955 m</p>
                   </div>
                 </div>
 
@@ -1226,9 +1228,9 @@ type ReviewsProps = {
                   </div>
                   <div class="grid col-span-6">
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
-                      Duur
+                      Duur van de rit
                     </h2>
-                    <p class="text-pretty text-gray-500 text-md">6-7 uur</p>
+                    <p class="text-pretty text-gray-500 text-md">6–7 uur</p>
                   </div>
                 </div>
 
@@ -1240,7 +1242,7 @@ type ReviewsProps = {
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
                       Moeilijkheidsgraad
                     </h2>
-                    <p class="text-pretty text-gray-500 text-md">2-3</p>
+                    <p class="text-pretty text-gray-500 text-md">3</p>
                   </div>
                 </div>
               </div>
@@ -1251,13 +1253,21 @@ type ReviewsProps = {
               <div class="">
                 <p class="font-bold">Rustdag in Oristano</p>
                 <p class="">
-                  Omdat er niet gefietst wordt, gaat het tempo helemaal omlaag.
-                  Je bent vrij om te ontspannen en op je eigen manier van
-                  Sardinië te genieten.
+                  Vandaag is je tweede en laatste vrije dag; er staat geen
+                  fietstocht op het programma. Geniet van een ontspannen dag in
+                  het hotel, neem een duik in het zwembad of verken Oristano op
+                  je eigen tempo.
                 </p>
                 <p class="">
-                  Bekijk de extra activiteiten voor meer informatie.
+                  Wie meer wil ontdekken over de fascinerende geschiedenis van
+                  Sardinië, kan ook een extra culturele excursie boeken. Deze
+                  combineert een bezoek aan de oude archeologische vindplaats
+                  Tharros en de Spaanse wachttoren van San Giovanni met een
+                  bezoek aan het museum in Cabras. Daar leer je meer over de
+                  oude Nuraghe-beschaving van het eiland en kun je de bijzondere
+                  beelden van de Reuzen van Mont'e Prama bewonderen.
                 </p>
+                <p class="">Zie 'Extra activiteiten' voor meer informatie.</p>
               </div>
             </div>
           </AccordionItem>
@@ -1266,9 +1276,9 @@ type ReviewsProps = {
               <div class="">
                 <p class="font-bold">Vertrekdag</p>
                 <p class="">
-                  Vandaag eindigt ons Sardijnse avontuur. Afhankelijk van je
-                  vluchtschema word je naar de luchthaven gebracht voor je
-                  vertrek.
+                  Vandaag komt ons Sardijnse avontuur ten einde. Afhankelijk
+                  van je vluchtschema word je naar de luchthaven gebracht voor
+                  je vertrek.
                 </p>
               </div>
             </div>

@@ -19,13 +19,13 @@ const { items, speed = 24 } = Astro.props;
 const duplicatedItems = [...items, ...items];
 ---
 
-<div class="relative overflow-hidden w-full py-4">
+<div class="relative w-full overflow-hidden py-4">
   <div
-    class="flex w-max items-stretch will-change-transform"
+    class="carousel-track flex w-max items-stretch will-change-transform"
     style={`--duration: ${speed}s`}>
     {
       duplicatedItems.map((item, index) => (
-        <div class="w-[280px] flex-shrink-0 px-3 sm:w-[320px] lg:w-[360px]">
+        <div class="w-[380px] flex-shrink-0 px-8 md:w-[440px]">
           <Card {...item} />
         </div>
       ))
@@ -34,13 +34,20 @@ const duplicatedItems = [...items, ...items];
 </div>
 
 <style>
-  .flex {
+  .carousel-track {
     animation: scroll var(--duration) linear infinite;
     animation-play-state: running;
+    padding-top: 8rem;
   }
 
-  .flex:hover {
+  .carousel-track:hover {
     animation-play-state: paused;
+  }
+
+  @media (min-width: 768px) {
+    .carousel-track {
+      padding-top: 6rem;
+    }
   }
 
   @keyframes scroll {
