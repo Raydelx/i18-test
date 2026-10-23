@@ -106,6 +106,7 @@ export const routes = {
 		'gallery-mtb-tour-8-days': 'gallery-mtb-tour-8-days',
 		'gallery-mtb-sierra-nevada-desert': 'gallery-mtb-sierra-nevada-desert',
 		'gallery-cycle-tour-sardinia': 'gallery-cycle-tour-sardinia',
+		'dmc': 'dmc',
 	},
 	en: {
 		blog: 'blog',
@@ -172,5 +173,6 @@ export const routes = {
 		'gallery-mtb-tour-8-days': 'gallery-mtb-tour-8-days',
 		'gallery-mtb-sierra-nevada-desert': 'gallery-mtb-sierra-nevada-desert',
 		'gallery-cycle-tour-sardinia': 'gallery-cycle-tour-sardinia',
+		 'dmc': 'dmc',
 	},
 } 

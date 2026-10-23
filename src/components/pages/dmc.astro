@@ -1,0 +1,385 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Container from "@/components/container.astro";
+import { dmcContent } from "@/i18n/dmc";
+import { getLangFromUrl, useTranslatedPath } from "@/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const translatePath = useTranslatedPath(lang);
+const t = dmcContent[lang];
+const contactHref = translatePath("contact");
+const heroImage = "/andalucia.webp";
+
+const icons = {
+  bike: '<circle cx="5.5" cy="17.5" r="3.5"/><circle cx="18.5" cy="17.5" r="3.5"/><circle cx="15" cy="5" r="1"/><path d="M12 17.5V14l-3-3 4-3 2 3h2"/>',
+  mountain: '<path d="m8 3 4 8 5-5 5 15H2L8 3z"/>',
+  compass:
+    '<circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>',
+  utensils:
+    '<path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/>',
+  check: '<path d="M20 6 9 17l-5-5"/>',
+  arrow: '<path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>',
+  pin: '<path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/>',
+};
+---
+
+<Layout title={t.metaTitle} description={t.metaDescription} image={heroImage}>
+  <noscript>
+    <style>
+      .dmc-reveal,
+      .dmc-hero-in {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+    </style>
+  </noscript>
+  <Container>
+    <!-- Hero -->
+    <section
+      class="relative mt-6 overflow-hidden rounded-3xl min-h-[34rem] md:min-h-[42rem] flex items-end isolate">
+      <img
+        src={heroImage}
+        alt={t.hero.imageAlt}
+        fetchpriority="high"
+        class="dmc-kenburns absolute inset-0 -z-20 h-full w-full object-cover"
+      />
+      <div
+        class="absolute inset-0 -z-10 bg-gradient-to-t from-[#1d2b23]/90 via-[#3c5546]/50 to-[#3c5546]/10">
+      </div>
+      <div
+        class="dmc-orb absolute -top-24 -right-24 -z-10 h-80 w-80 rounded-full bg-[#ff5e00]/25 blur-3xl">
+      </div>
+
+      <div class="w-full p-6 md:p-12 lg:p-16">
+        <span
+          class="dmc-hero-in inline-flex items-center gap-2 rounded-full bg-white/15 px-4 py-1.5 text-xs md:text-sm font-semibold uppercase tracking-wider text-white backdrop-blur"
+          style="--d:100ms">
+          <svg
+            viewBox="0 0 24 24"
+            class="h-4 w-4 text-[#ff863f]"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            set:html={icons.pin}
+          />
+          {t.hero.eyebrow}
+        </span>
+        <h1
+          class="dmc-hero-in mt-5 max-w-3xl text-4xl font-extrabold leading-[1.05] tracking-tight text-white md:text-6xl xl:text-7xl"
+          style="--d:250ms">
+          {t.hero.title}
+        </h1>
+        <div
+          class="mt-6 max-w-2xl space-y-3 text-base font-light text-white/90 md:text-xl">
+          {
+            t.hero.text.map((p, i) => (
+              <p class="dmc-hero-in" style={`--d:${400 + i * 150}ms`}>
+                {p}
+              </p>
+            ))
+          }
+        </div>
+        <a
+          href={contactHref}
+          class="dmc-hero-in group mt-8 inline-flex items-center gap-3 rounded-full bg-[#ff5e00] px-7 py-3.5 font-semibold text-white shadow-lg shadow-[#ff5e00]/30 transition hover:bg-[#ff863f] hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+          style="--d:750ms">
+          {t.hero.cta}
+          <svg
+            viewBox="0 0 24 24"
+            class="h-5 w-5 transition-transform group-hover:translate-x-1"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            set:html={icons.arrow}
+          />
+        </a>
+      </div>
+    </section>
+
+    <!-- Badges -->
+    <ul class="mt-6 flex flex-wrap justify-center gap-3">
+      {
+        t.badges.map((b, i) => (
+          <li
+            class="dmc-reveal inline-flex items-center gap-2 rounded-full border border-[#3c5546]/15 bg-[#edf2ee] px-5 py-2 text-sm font-semibold text-[#3c5546]"
+            style={`--d:${i * 120}ms`}>
+            <svg
+              viewBox="0 0 24 24"
+              class="h-4 w-4 text-[#ff5e00]"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              set:html={icons.check}
+            />
+            {b}
+          </li>
+        ))
+      }
+    </ul>
+
+    <!-- Intro -->
+    <section class="mt-20 grid gap-10 px-2 lg:grid-cols-12 lg:gap-16">
+      <div class="dmc-reveal lg:col-span-5">
+        <p class="text-sm font-bold uppercase tracking-widest text-[#ff5e00]">
+          {t.intro.eyebrow}
+        </p>
+        <h2
+          class="mt-3 text-3xl font-bold leading-tight tracking-tight text-[#3c5546] md:text-5xl">
+          {t.intro.title}
+        </h2>
+        <div class="mt-6 h-1.5 w-20 rounded-full bg-[#ff5e00]"></div>
+      </div>
+      <div
+        class="space-y-5 text-lg leading-relaxed text-gray-600 lg:col-span-7">
+        {
+          t.intro.text.map((p, i) => (
+            <p class="dmc-reveal" style={`--d:${i * 120}ms`}>
+              {p}
+            </p>
+          ))
+        }
+      </div>
+    </section>
+
+    <!-- Specialties -->
+    <section class="mt-24">
+      <div class="dmc-reveal text-center">
+        <p class="text-sm font-bold uppercase tracking-widest text-[#ff5e00]">
+          {t.specialties.eyebrow}
+        </p>
+        <h2
+          class="mt-3 text-3xl font-bold tracking-tight text-[#3c5546] md:text-5xl">
+          {t.specialties.title}
+        </h2>
+      </div>
+      <div class="mt-12 grid gap-6 md:grid-cols-2">
+        {
+          t.specialties.items.map((item, i) => (
+            <article
+              class="dmc-reveal group relative overflow-hidden rounded-3xl border border-[#3c5546]/10 bg-white p-8 shadow-sm transition duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-[#3c5546]/10"
+              style={`--d:${(i % 2) * 150}ms`}>
+              <div class="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-[#edf2ee] transition duration-500 group-hover:scale-150" />
+              <div class="relative">
+                <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#3c5546] text-white transition duration-300 group-hover:bg-[#ff5e00] group-hover:rotate-6">
+                  <svg
+                    viewBox="0 0 24 24"
+                    class="h-7 w-7"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    set:html={icons[item.icon]}
+                  />
+                </div>
+                <h3 class="mt-6 text-xl font-bold text-[#3c5546] md:text-2xl">
+                  {item.title}
+                </h3>
+                <p class="mt-3 leading-relaxed text-gray-600">{item.text}</p>
+              </div>
+            </article>
+          ))
+        }
+      </div>
+    </section>
+
+    <!-- Ground services -->
+    <section
+      class="dmc-reveal relative mt-24 overflow-hidden rounded-3xl bg-[#3c5546] px-6 py-14 text-white md:px-14 md:py-20">
+      <div
+        class="dmc-orb absolute -bottom-32 -left-24 h-96 w-96 rounded-full bg-[#ff5e00]/20 blur-3xl">
+      </div>
+      <div class="relative grid gap-12 lg:grid-cols-12 lg:gap-16">
+        <div class="lg:col-span-5">
+          <p class="text-sm font-bold uppercase tracking-widest text-[#ff863f]">
+            {t.services.eyebrow}
+          </p>
+          <h2
+            class="mt-3 text-3xl font-bold leading-tight tracking-tight md:text-5xl">
+            {t.services.title}
+          </h2>
+          <p class="mt-6 text-lg font-light text-white/85">{t.services.text}</p>
+          <p class="mt-8 border-l-4 border-[#ff5e00] pl-4 italic text-white/80">
+            {t.services.closing}
+          </p>
+        </div>
+        <div class="lg:col-span-7">
+          <p class="mb-5 font-semibold text-white/90">{t.services.listIntro}</p>
+          <ul class="grid gap-3 sm:grid-cols-2">
+            {
+              t.services.items.map((item, i) => (
+                <li
+                  class="dmc-reveal flex items-start gap-3 rounded-2xl bg-white/10 p-4 backdrop-blur transition hover:bg-white/20"
+                  style={`--d:${i * 80}ms`}>
+                  <span class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#ff5e00]">
+                    <svg
+                      viewBox="0 0 24 24"
+                      class="h-4 w-4"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      set:html={icons.check}
+                    />
+                  </span>
+                  <span>{item}</span>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Montaraz -->
+    <section class="mt-24">
+      <div class="dmc-reveal text-center">
+        <p class="text-sm font-bold uppercase tracking-widest text-[#ff5e00]">
+          {t.why.eyebrow}
+        </p>
+        <h2
+          class="mt-3 text-3xl font-bold tracking-tight text-[#3c5546] md:text-5xl">
+          {t.why.title}
+        </h2>
+        <p class="mx-auto mt-4 max-w-2xl text-lg text-gray-500">
+          {t.why.subtitle}
+        </p>
+      </div>
+      <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {
+          t.why.items.map((item, i) => (
+            <article
+              class="dmc-reveal group rounded-3xl bg-[#edf2ee] p-8 transition duration-300 hover:-translate-y-1.5 hover:bg-white hover:shadow-xl hover:shadow-[#3c5546]/10"
+              style={`--d:${(i % 3) * 120}ms`}>
+              <span class="text-5xl font-extrabold text-[#3c5546]/20 transition group-hover:text-[#ff5e00]">
+                {String(i + 1).padStart(2, "0")}
+              </span>
+              <h3 class="mt-4 text-xl font-bold text-[#3c5546]">
+                {item.title}
+              </h3>
+              <p class="mt-3 leading-relaxed text-gray-600">{item.text}</p>
+            </article>
+          ))
+        }
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section
+      class="dmc-reveal relative my-24 overflow-hidden rounded-3xl bg-gradient-to-br from-[#3c5546] via-[#4f6658] to-[#3c5546] px-6 py-16 text-center text-white md:px-16 md:py-24">
+      <div
+        class="dmc-orb absolute -top-24 left-1/2 h-72 w-72 -translate-x-1/2 rounded-full bg-[#ff5e00]/30 blur-3xl">
+      </div>
+      <div class="relative mx-auto max-w-3xl">
+        <h2 class="text-3xl font-bold leading-tight tracking-tight md:text-5xl">
+          {t.cta.title}
+        </h2>
+        <div class="mt-6 space-y-4 text-lg font-light text-white/90">
+          {t.cta.text.map((p) => <p>{p}</p>)}
+        </div>
+        <a
+          href={contactHref}
+          class="group mt-10 inline-flex items-center gap-3 rounded-full bg-[#ff5e00] px-8 py-4 text-lg font-semibold text-white shadow-lg shadow-black/20 transition hover:bg-[#ff863f] hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+          {t.cta.button}
+          <svg
+            viewBox="0 0 24 24"
+            class="h-5 w-5 transition-transform group-hover:translate-x-1"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            set:html={icons.arrow}
+          />
+        </a>
+      </div>
+    </section>
+  </Container>
+</Layout>
+
+<style is:global>
+  .dmc-reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition:
+      opacity 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) var(--d, 0ms),
+      transform 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) var(--d, 0ms);
+  }
+  .dmc-reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+  .dmc-hero-in {
+    opacity: 0;
+    animation: dmc-fade-up 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) var(--d, 0ms)
+      forwards;
+  }
+  .dmc-kenburns {
+    animation: dmc-kenburns 22s ease-in-out infinite alternate;
+  }
+  .dmc-orb {
+    animation: dmc-float 9s ease-in-out infinite alternate;
+  }
+  @keyframes dmc-fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  @keyframes dmc-kenburns {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.08);
+    }
+  }
+  @keyframes dmc-float {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+    to {
+      transform: translate3d(20px, 30px, 0);
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .dmc-reveal,
+    .dmc-hero-in {
+      opacity: 1;
+      transform: none;
+      transition: none;
+      animation: none;
+    }
+    .dmc-kenburns,
+    .dmc-orb {
+      animation: none;
+    }
+  }
+</style>
+
+<script>
+  const items = document.querySelectorAll<HTMLElement>(".dmc-reveal");
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.15, rootMargin: "0px 0px -5% 0px" },
+  );
+  items.forEach((el) => observer.observe(el));
+</script>
