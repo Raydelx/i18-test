@@ -67,7 +67,7 @@ type ReviewsProps = {
 ---
 
 <Layout title="10-daagse e-biketocht door Sardinië">
-  <Container>
+  <Container class="sardinia-product">
     <main class="mt-16">
       <!-- Foto, nombre y destino -->
 
@@ -96,7 +96,7 @@ type ReviewsProps = {
       <!-- Informacion general de los viajes -->
 
       <div
-        class="grid grid-cols-2 md:grid-cols-6 h-auto mt-3 gap-3 place-content-start md:px-6">
+        class="sardinia-stat-grid grid grid-cols-2 md:grid-cols-6 h-auto mt-3 gap-3 place-content-start md:px-6">
         <InformationProducts
           title={i18n.INFO_PRODUCTS.PRICE}
           subtitle="€ 2.810 gedeelde kamer, € 3.185 eenpersoonskamer">
@@ -144,7 +144,7 @@ type ReviewsProps = {
 
       <!-- Informacion tecnica -->
 
-      <div class="">
+      <div class="sardinia-stat-grid">
         <div
           class="grid grid-cols-2 justify-between md:grid-cols-6 h-auto mt-3 gap-3 md:px-6">
           <InformationProducts
@@ -1300,3 +1300,91 @@ type ReviewsProps = {
     </script>
   </Container>
 </Layout>
+
+<style is:global>
+  .sardinia-product {
+    color: #374151;
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+
+  .sardinia-product h1 {
+    font-size: clamp(2.35rem, 5.5vw, 4.5rem);
+    line-height: 1.06;
+  }
+
+  .sardinia-product h2 {
+    font-size: clamp(1.45rem, 2.6vw, 2.1rem);
+    line-height: 1.2;
+  }
+
+  .sardinia-product h3 {
+    font-size: clamp(1.2rem, 1.8vw, 1.5rem);
+    line-height: 1.3;
+  }
+
+  .sardinia-product h4 {
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+
+  .sardinia-product p,
+  .sardinia-product li {
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+
+  .sardinia-product p.font-bold {
+    font-size: 1.05rem;
+    line-height: 1.45;
+  }
+
+  .sardinia-product .sardinia-stat-grid p:first-child {
+    font-size: 0.95rem;
+    line-height: 1.35;
+  }
+
+  .sardinia-product .sardinia-stat-grid p:not(:first-child) {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .sardinia-product .grid-cols-7 h2 {
+    font-size: 1rem;
+    line-height: 1.35;
+  }
+
+  .sardinia-product .grid-cols-7 p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .sardinia-product button,
+  .sardinia-product a {
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  @media (min-width: 768px) {
+    .sardinia-product {
+      font-size: 1.0625rem;
+    }
+
+    .sardinia-product p,
+    .sardinia-product li {
+      font-size: 1.0625rem;
+    }
+
+    .sardinia-product p.font-bold {
+      font-size: 1.125rem;
+    }
+
+    .sardinia-product .sardinia-stat-grid p:first-child {
+      font-size: 1rem;
+    }
+
+    .sardinia-product .sardinia-stat-grid p:not(:first-child) {
+      font-size: 0.95rem;
+    }
+  }
+</style>
