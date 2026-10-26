@@ -7,11 +7,14 @@ interface Props {
   subtitle3?: string;
 }
 
-const { title, subtitle, subtitle2, subtitle3 } = Astro.props;
+const { class: className, title, subtitle, subtitle2, subtitle3 } = Astro.props;
 ---
 
 <div
-  class="grid hover:scale-110 transition-all duration-200 drop-shadow-md hover:drop-shadow-xl">
+  class:list={[
+    "product-info-card grid hover:scale-110 transition-all duration-200 drop-shadow-md hover:drop-shadow-xl",
+    className,
+  ]}>
   <div class="md:p-3">
     <p class="text-black font-semibold md:text-xl text-xl tracking-wider">
       {title}

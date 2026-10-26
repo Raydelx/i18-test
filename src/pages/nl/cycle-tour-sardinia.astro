@@ -1,4 +1,5 @@
 ---
+import "@/styles/product-page.css";
 import Container from "@/components/container.astro";
 import InformationProducts from "@/components/ui/informationProducts.astro";
 import Icon from "@/components/Icon.astro";
@@ -67,7 +68,7 @@ type ReviewsProps = {
 ---
 
 <Layout title="10-daagse e-biketocht door Sardinië">
-  <Container class="sardinia-product">
+  <Container class="sardinia-product product-page">
     <main class="mt-16">
       <!-- Foto, nombre y destino -->
 
@@ -342,7 +343,7 @@ type ReviewsProps = {
     </main>
 
     <div class="grid md:grid-cols-2 h-auto gap-10 md:gap-20 md:py-36 py-10">
-      <div class="static h-[385px] hidden md:block">
+      <div class="product-photo-collage static h-[385px] hidden md:block">
         <img
           class="rounded-xl absolute md:w-[20rem] lg:w-[25rem] hover:z-40 transition-all duration-300 ease-out hover:scale-105"
           src="/cycle-tour/leisure-cycling/italia/sardinia/sardinia-3.webp"
@@ -623,6 +624,21 @@ type ReviewsProps = {
         <p class="text-lg text-gray-900 mb-1">
           <span class="text-xl strong">🔶</span>Privékamers in 3- en
           4-sterrenhotels
+        </p>
+        <p class="text-lg text-gray-900 mb-1">
+          <span class="text-xl strong">🔶</span>6 dagen fietsen door de
+          prachtige landschappen, kustwegen en traditionele dorpen van Sardinië.
+        </p>
+        <p class="text-lg text-gray-900 mb-1">
+          <span class="text-xl strong">🔶</span>2 vrije dagen om te ontspannen,
+          de lokale cultuur te ontdekken of op je eigen tempo optionele
+          activiteiten te ondernemen.
+        </p>
+        <p class="text-lg text-gray-900 mb-1">
+          <span class="text-xl strong">🔶</span>Comfortabele hotelovernachtingen:
+          op de tweede en derde dag en tijdens de laatste drie nachten verblijven
+          we in hetzelfde hotel. Zo kun je ontspannen en de omgeving verkennen
+          zonder elke dag je koffers in en uit te pakken.
         </p>
         <p class="text-lg text-gray-900 mb-1">
           <span class="text-xl strong">🔶</span>Fietstempo: ontspannen en

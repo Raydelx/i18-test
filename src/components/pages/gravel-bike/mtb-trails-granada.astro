@@ -1,4 +1,5 @@
 ---
+import "@/styles/product-page.css";
 import Container from "../../../components/container.astro";
 import InformationProducts from "../../../components/ui/informationProducts.astro";
 import Icon from "../../../components/Icon.astro";
@@ -69,7 +70,7 @@ const DAYS = [
 ---
 
 <Layout title="Gravel Bike / MTB">
-  <Container>
+  <Container class="product-page">
     <main class="mt-16">
       <!-- Foto, nombre y destino -->
 
@@ -99,14 +100,14 @@ const DAYS = [
           title={i18n.INFO_PRODUCTS.PRICE}
           subtitle={i18n.PRODUCTS.GRAVEL_BIKE.MTB_TRAILS_BIKE.PRICE}>
           <div slot="icon">
-            <Icon icon="price-logo" size="1.6rem" color="#0E46A3" />
+            <Icon icon="price-logo" size="1.6rem" color="#ff5e00" />
           </div>
         </InformationProducts>
         <InformationProducts
           title={i18n.INFO_PRODUCTS.PRE_BOOKING}
           subtitle={i18n.PRODUCTS.GRAVEL_BIKE.MTB_TRAILS_BIKE.PRE_BOOKING}>
           <div slot="icon">
-            <Icon icon="price-logo" size="1.6rem" color="#0E46A3" />
+            <Icon icon="price-logo" size="1.6rem" color="#ff5e00" />
           </div>
         </InformationProducts>
         <InformationProducts
@@ -114,7 +115,7 @@ const DAYS = [
           subtitle={i18n.PRODUCTS.GRAVEL_BIKE.MTB_TRAILS_BIKE
             .MINUMUM_OF_PERSONS}>
           <div slot="icon">
-            <Icon icon="group-logo" size="1.6rem" color="#0E46A3" />
+            <Icon icon="group-logo" size="1.6rem" color="#ff5e00" />
           </div>
         </InformationProducts>
 
@@ -122,22 +123,22 @@ const DAYS = [
           title={i18n.INFO_PRODUCTS.DURATION}
           subtitle={i18n.PRODUCTS.GRAVEL_BIKE.MTB_TRAILS_BIKE.DURATION}>
           <div slot="icon">
-            <Icon icon="timer-logo" size="1.6rem" color="#0E46A3" />
+            <Icon icon="timer-logo" size="1.6rem" color="#ff5e00" />
           </div>
         </InformationProducts>
         <InformationProducts
           title={i18n.INFO_PRODUCTS.TOUR_TYPE}
           subtitle={i18n.PRODUCTS.GRAVEL_BIKE.MTB_TRAILS_BIKE.TOUR_TYPE}>
           <div slot="icon">
-            <Icon icon="guide-logo" size="1.6rem" color="#0E46A3" />
+            <Icon icon="guide-logo" size="1.6rem" color="#ff5e00" />
           </div>
         </InformationProducts>
         <InformationProducts
           title={i18n.INFO_PRODUCTS.SEASON}
-          subtitle2={i18n.PRODUCTS.GRAVEL_BIKE.MTB_TRAILS_BIKE.SEASON}>
-          <!-- <div slot="icon">
-            <Icon icon="autumn-logo" size="1.6rem" color="#0E46A3" />
-          </div> -->
+          subtitle={i18n.PRODUCTS.GRAVEL_BIKE.MTB_TRAILS_BIKE.SEASON}>
+          <div slot="icon">
+            <Icon icon="autumn-logo" size="1.6rem" color="#ff5e00" />
+          </div>
         </InformationProducts>
       </div>
       <div class="">
@@ -147,7 +148,7 @@ const DAYS = [
             title={i18n.INFO_PRODUCTS.TOTAL_DISTANCE}
             subtitle={i18n.PRODUCTS.GRAVEL_BIKE.MTB_TRAILS_BIKE.TOTAL_DISTANCE}>
             <div slot="icon">
-              <Icon icon="distance-logo" size="1.6rem" color="#0E46A3" />
+              <Icon icon="distance-logo" size="1.6rem" color="#ff5e00" />
             </div>
           </InformationProducts>
 
@@ -155,20 +156,22 @@ const DAYS = [
             title={i18n.INFO_PRODUCTS.TOTAL_ASCENT}
             subtitle={i18n.PRODUCTS.GRAVEL_BIKE.MTB_TRAILS_BIKE.TOTAL_ASCENT}>
             <div slot="icon">
-              <Icon icon="up-logo" size="1.6rem" color="#0E46A3" />
+              <Icon icon="up-logo" size="1.6rem" color="#ff5e00" />
             </div>
           </InformationProducts>
           <InformationProducts
             title={i18n.INFO_PRODUCTS.TOTAL_DESCENT}
             subtitle={i18n.PRODUCTS.GRAVEL_BIKE.MTB_TRAILS_BIKE.TOTAL_DESCENT}>
             <div slot="icon">
-              <Icon icon="down-logo" size="1.6rem" color="#0E46A3" />
+              <Icon icon="down-logo" size="1.6rem" color="#ff5e00" />
             </div>
           </InformationProducts>
           <InformationProducts
             title={i18n.INFO_PRODUCTS.ROUTE_TYPE}
             subtitle={i18n.PRODUCTS.GRAVEL_BIKE.MTB_TRAILS_BIKE.ROUTE_TYPE}>
-            <Route />
+            <div slot="icon">
+              <Route />
+            </div>
           </InformationProducts>
           <InformationProducts
             title={i18n.INFO_PRODUCTS.DIFFICULTY}
@@ -177,7 +180,7 @@ const DAYS = [
           </InformationProducts>
           <InformationProducts title="MTB" subtitle="Yes">
             <div slot="icon">
-              <Icon icon="bike-logo" size="1.6rem" color="#0E46A3" />
+              <Icon icon="bike-logo" size="1.6rem" color="#ff5e00" />
             </div>
           </InformationProducts>
         </div>
@@ -253,7 +256,7 @@ const DAYS = [
     </div>
 
     <div class="grid md:grid-cols-2 h-auto gap-10 md:gap-20 py-10 items-center">
-      <div class="static h-[385px] hidden md:block content-center">
+      <div class="product-photo-collage static h-[385px] hidden md:block content-center">
         <img
           class="rounded-xl absolute md:w-[20rem] lg:w-[30rem] hover:z-40 transition-all duration-300 ease-out hover:scale-105"
           src="/cycle-tour/montainbike/mtb-trails-granada/mtb-tg-5.webp"

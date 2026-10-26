@@ -1,4 +1,5 @@
 ---
+import "@/styles/product-page.css";
 import Container from "@/components/container.astro";
 import InformationProducts from "@/components/ui/informationProducts.astro";
 import Icon from "@/components/Icon.astro";
@@ -55,8 +56,8 @@ type ReviewsProps = {
 };
 ---
 
-<Layout title="">
-  <Container>
+<Layout title={i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_TOUR_GRANADA.TITLE}>
+  <Container class="product-page">
     <main class="mt-16">
       <!-- Foto, nombre y destino -->
 
@@ -73,7 +74,7 @@ type ReviewsProps = {
           <div>
             <h1
               class="text-3xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-5xl [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
-              Granada E-BikeTour 8 Days
+              {i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_TOUR_GRANADA.TITLE}
             </h1>
           </div>
         </div>
@@ -315,7 +316,7 @@ type ReviewsProps = {
     </main>
 
     <div class="grid md:grid-cols-2 h-auto gap-10 md:gap-20 md:py-36 py-10">
-      <div class="static h-[385px] hidden md:block">
+      <div class="product-photo-collage static h-[385px] hidden md:block">
         <img
           class="rounded-xl absolute md:w-[20rem] lg:w-[25rem] hover:z-40 transition-all duration-300 ease-out hover:scale-105"
           src="/cycle-tour/leisure-cycling/cycle-tour-granada/ctg-1.webp"

@@ -1,4 +1,5 @@
 ---
+import "@/styles/product-page.css";
 import Container from "../../../components/container.astro";
 import InformationProducts from "../../../components/ui/informationProducts.astro";
 import Icon from "../../../components/Icon.astro";
@@ -58,7 +59,7 @@ const BIKES = [
 ---
 
 <Layout title="Gravel Bike / MTB">
-  <Container>
+  <Container class="product-page">
     <main class="mt-16">
       <!-- Foto, nombre y destino -->
 
@@ -244,7 +245,7 @@ const BIKES = [
     </main>
 
     <div class="grid md:grid-cols-2 h-auto gap-10 md:gap-20 md:py-36 py-10">
-      <div class="static h-[385px] hidden md:block">
+      <div class="product-photo-collage static h-[385px] hidden md:block">
         <img
           class="rounded-xl absolute md:w-[20rem] lg:w-[35rem] hover:z-40 transition-all duration-300 ease-out hover:scale-105"
           src="/cycle-tour/montainbike/sierra-nevada/sn-6.webp"
