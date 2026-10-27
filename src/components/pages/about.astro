@@ -12,6 +12,7 @@ const i18n = getI18N({ currentLocale });
 ---
 
 <Layout title="About">
+  <div class="about-page">
   <Container>
     <Sectionhead class="mb-6">
       <Fragment slot="title">{i18n.ABOUT.ABOUT}</Fragment>
@@ -195,4 +196,86 @@ const i18n = getI18N({ currentLocale });
     </h2>
   </div>
   <Team />
+  </div>
 </Layout>
+
+<style is:global>
+  .about-reveal {
+    opacity: 1;
+    transform: none;
+  }
+
+  .about-motion-ready .about-reveal {
+    opacity: 0;
+    transform: translateY(32px);
+    transition:
+      opacity 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) var(--d, 0ms),
+      transform 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) var(--d, 0ms);
+  }
+
+  .about-motion-ready .about-reveal.about-zoom {
+    transform: scale(0.96);
+  }
+
+  .about-motion-ready .about-reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  .about-page img[src="/logo.svg"] {
+    animation: about-float 6s ease-in-out infinite alternate;
+  }
+
+  @keyframes about-float {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-8px);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .about-motion-ready .about-reveal,
+    .about-page img[src="/logo.svg"] {
+      opacity: 1;
+      transform: none;
+      transition: none;
+      animation: none;
+    }
+  }
+</style>
+
+<script>
+  const page = document.querySelector<HTMLElement>(".about-page");
+  const reduceMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)",
+  ).matches;
+
+  if (page && "IntersectionObserver" in window && !reduceMotion) {
+    const targets = page.querySelectorAll<HTMLElement>(
+      ":scope > .max-w-screen-2xl > *, :scope > :not(.max-w-screen-2xl)",
+    );
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12, rootMargin: "0px 0px -5% 0px" },
+    );
+
+    targets.forEach((target, i) => {
+      target.classList.add("about-reveal");
+      if (target.classList.contains("grid") && target.className.includes("bg-")) {
+        target.classList.add("about-zoom");
+      }
+      target.style.setProperty("--d", `${(i % 3) * 90}ms`);
+      observer.observe(target);
+    });
+    page.classList.add("about-motion-ready");
+  }
+</script>

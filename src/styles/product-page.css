@@ -15,6 +15,11 @@
   color: #3c5546;
 }
 
+.product-page h2.text-white,
+.product-page h2[class*="bg-[#3c5546]"] {
+  color: #fff;
+}
+
 .product-page .group > h2 {
   color: #fff;
   font-size: 1.25rem;

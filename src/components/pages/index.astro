@@ -224,3 +224,61 @@ const ROADBIKEPRODUCTS = [
     </Container>
   </main>
 </Layout>
+
+<style is:global>
+  .home-reveal {
+    opacity: 1;
+    transform: none;
+  }
+
+  .home-motion-ready .home-reveal {
+    opacity: 0;
+    transform: translateY(32px);
+    transition:
+      opacity 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) var(--d, 0ms),
+      transform 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) var(--d, 0ms);
+  }
+
+  .home-motion-ready .home-reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .home-motion-ready .home-reveal {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+  }
+</style>
+
+<script>
+  const main = document.querySelector<HTMLElement>("main");
+  const reduceMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)",
+  ).matches;
+
+  if (main && "IntersectionObserver" in window && !reduceMotion) {
+    const targets = main.querySelectorAll<HTMLElement>(
+      ":scope > section:not(:first-child), :scope > div > section",
+    );
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.08, rootMargin: "0px 0px -5% 0px" },
+    );
+
+    targets.forEach((target) => {
+      target.classList.add("home-reveal");
+      observer.observe(target);
+    });
+    main.classList.add("home-motion-ready");
+  }
+</script>
