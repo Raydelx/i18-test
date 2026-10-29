@@ -11,6 +11,8 @@ import cycleSardiniaNl from "@/data_files/cycleMtbSierraNevadaEs.json";
 import { getI18N } from "@/i18n/";
 import AccordionProducts from "@/components/accordionProducts.astro";
 import BookButton from "@/components/book-button.astro";
+import SierraNevadaDifficultyModal from "@/components/sierra-nevada-difficulty-modal.astro";
+import SierraNevadaExperiencesModal from "@/components/sierra-nevada-experiences-modal.astro";
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
 
@@ -82,7 +84,10 @@ type ReviewsProps = {
 
       <div
         class="grid grid-cols-2 md:grid-cols-6 h-auto mt-3 gap-3 place-content-start md:px-6">
-        <InformationProducts title={i18n.INFO_PRODUCTS.PRICE} subtitle="1.995">
+        <InformationProducts
+          title={i18n.INFO_PRODUCTS.PRICE}
+          subtitle="2.196 € shared room"
+          subtitle3="2.448 € single room">
           <div slot="icon">
             <Icon icon="price-logo" size="1.6rem" color="#ff5e00" />
           </div>
@@ -96,7 +101,7 @@ type ReviewsProps = {
         </InformationProducts>
         <InformationProducts
           title={i18n.INFO_PRODUCTS.MINIMUM_OF_PERSONS}
-          subtitle="6">
+          subtitle="10">
           <div slot="icon">
             <Icon icon="group-logo" size="1.6rem" color="#ff5e00" />
           </div>
@@ -185,8 +190,10 @@ type ReviewsProps = {
         </div>
       </div>
 
-      <div class="mt-10 max-w-[320px]">
+      <div class="mt-10 grid gap-5 md:grid-cols-3 lg:gap-8">
         <BookButton />
+        <SierraNevadaExperiencesModal />
+        <SierraNevadaDifficultyModal />
       </div>
 
       <!--  Include, exclude, complementaries  -->
@@ -199,64 +206,33 @@ type ReviewsProps = {
           <ul slot="description" class="mt-4 flex flex-col gap-2">
             <li class="flex gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
-              <p class="max-w-[320px] text-md">Professional guides</p>
+              <p class="max-w-[320px] text-md">2 Professional guides</p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Rural hotels</p>
             </li>
             <li class="flex gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
               <p class="max-w-[320px] text-md">
-                Liability insurance and assistance
-              </p>
-            </li>
-            <li class="flex gap-2">
-              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
-              <p class="max-w-[320px] text-md">
-                Financial Protection Guarantee
-              </p>
-            </li>
-            <li class="flex gap-2">
-              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
-              <p class="max-w-[320px] text-md">
-                Support vehicles and bike trailers
-              </p>
-            </li>
-            <li class="flex gap-2">
-              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
-              <p class="max-w-[320px] text-md">Luggage transport</p>
-            </li>
-            <li class="flex gap-2">
-              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
-              <p class="max-w-[320px] text-md">Airport transfer</p>
-            </li>
-            <li class="flex gap-2">
-              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
-              <p class="max-w-[320px] text-md">
-                Accommodation including breakfast
+                Welcome lunch: freshly prepared homemade paella
               </p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
-              <p class="max-w-[320px] text-md">7 x days</p>
+              <p class="max-w-[320px] text-md">Breakfast: 7 days</p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
-              <p class="max-w-[320px] text-md">5 x picnics</p>
+              <p class="max-w-[320px] text-md">Lunch: 6 days</p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
-              <p class="max-w-[320px] text-md">7 x Dinner</p>
+              <p class="max-w-[320px] text-md">Dinner: 6 days</p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
-              <p class="max-w-[320px] text-md">E-bike</p>
-            </li>
-
-            <li class="flex flex-wrap gap-2">
-              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
-              <p class="max-w-[320px] text-md">Water bottle</p>
-            </li>
-            <li class="flex flex-wrap gap-2">
-              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
-              <p class="max-w-[320px] text-md">Cycle t-shirt</p>
+              <p class="max-w-[320px] text-md">Helmet</p>
             </li>
           </ul>
         </Includes>
@@ -281,10 +257,6 @@ type ReviewsProps = {
             <li class="flex flex-wrap gap-2">
               <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
               <p class="max-w-[320px] text-md">Lunch free day</p>
-            </li>
-            <li class="flex flex-wrap gap-2">
-              <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
-              <p class="max-w-[320px] text-md">Helmet</p>
             </li>
             <li class="flex gap-2">
               <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
@@ -350,12 +322,17 @@ type ReviewsProps = {
             preferred travel dates, and we'll be happy to arrange a tour that
             fits your schedule.
           </p>
+          <p>For private tours we are happy to offer a tailor-made tour.</p>
           <div class="gap-4 mt-6">
             <ul class="text-lg">
               <div class="grid lg:grid-cols-2 gap-2 mt-4">
                 <div class="flex gap-2">
                   <Icon icon="spring-logo" size="1.6rem" color="#ff5e00" />
                   <p>Spring</p>
+                </div>
+                <div class="flex gap-2">
+                  <Icon icon="autumn-logo" size="1.6rem" color="#ff5e00" />
+                  <p>Autumn</p>
                 </div>
               </div>
             </ul>
@@ -704,18 +681,25 @@ type ReviewsProps = {
         <Accordion class="mt-6 mb-10" variant="splitted">
           <AccordionItem title="Day 1 – Arrival in Níguelas">
             <p class="">
-              Upon arrival at Málaga Airport, you will be transferred to
-              Níguelas, a charming mountain village nestled on the slopes of the
-              Sierra Nevada in the beautiful Lecrín Valley. Here, you'll stay in
-              a peaceful rural hotel, the perfect base for the adventure ahead.
+              Upon arrival at Málaga or Granada Airport, you'll be transferred
+              to Nigüelas, a charming mountain village nestled on the slopes of
+              the Sierra Nevada in the beautiful Lecrín Valley. Here, you'll
+              stay in a peaceful rural hotel, the perfect base for the adventure
+              ahead.
             </p>
             <p class="">
               We recommend arriving in the morning, allowing plenty of time to
-              settle in and enjoy a relaxed start to your holiday. To celebrate
-              the beginning of the tour, we've arranged a special welcome
-              surprise: a delicious, freshly prepared paella lunch. It's the
-              perfect way to get to know your fellow riders and start your
-              mountain biking adventure in true Andalusian style.
+              settle in and enjoy a relaxed start to your holiday. To welcome
+              you to Andalusia, we've arranged a special lunch: a delicious
+              homemade paella, freshly prepared by our cook. It's the perfect
+              opportunity to get to know your fellow riders and start your
+              gravel adventure in true Andalusian style.
+            </p>
+            <p class="">
+              After lunch, we'll get your bike ready and check everything
+              together, and do a short warm-up ride. It's a great opportunity to
+              get comfortable with your bike, enjoy the surrounding scenery and
+              prepare for the adventure ahead.
             </p>
           </AccordionItem>
 
@@ -723,12 +707,19 @@ type ReviewsProps = {
             <div class="grid md:grid-cols-2 gap-8 md:gap-32">
               <div class="">
                 <p class="">
-                  After breakfast, we transfer by bus to the starting point of
-                  today's ride. From here, we begin our mountain bike adventure
-                  along the northern slopes of the Sierra Nevada Natural Park,
-                  cycling through spectacular mountain scenery towards the
-                  historic region of Guadix, renowned for its unique cave
-                  dwellings. For the next two nights, we'll stay in a
+                  After breakfast, we transfer by bus to the starting point in
+                  Sierra de Huétor Natural Park. From here, we begin our gravel
+                  adventure along scenic forest tracks, riding through peaceful
+                  woodland and beautiful mountain landscapes before heading
+                  towards the spectacular Badlands of Guadix. As the scenery
+                  gradually changes from green forests to rugged, desert-like
+                  terrain, we'll discover one of the most striking landscapes in
+                  Granada province.
+                </p>
+                <p class="">
+                  Our destination is the historic region of Guadix, famous for
+                  its unique cave dwellings and extraordinary geological
+                  formations. For the next two nights, we'll stay in a
                   traditional cave hotel, offering a truly authentic and
                   unforgettable Andalusian experience.
                 </p>
@@ -1051,23 +1042,30 @@ type ReviewsProps = {
                   Our final riding stage begins with a transfer from the hotel
                   to Trevélez, the highest village in the Sierra Nevada,
                   renowned throughout Spain for its traditionally cured Serrano
-                  ham. From here, we cycle to the breathtaking Poqueira Gorge,
-                  home to three of the region's most picturesque and authentic
-                  white villages: Capileira, Bubión, and Pampaneira. Our stop is
-                  the beautiful white village of Capileira, where you'll have
-                  time to wander through its narrow, winding streets, browse the
-                  local craft shops for souvenirs, and enjoy a coffee on one of
-                  the village's charming terraces. We then continue through La
-                  Taha, one of the most authentic areas of the Alpujarras, where
-                  a collection of tiny traditional white villages is connected
-                  by quiet mountain roads and scenic trails. This peaceful and
-                  unspoilt landscape offers a fitting finale to our journey
-                  around the Sierra Nevada. Our ride concludes at a panoramic
-                  viewpoint, where we'll celebrate the successful completion of
-                  all five stages with a well-deserved toast while taking in the
-                  breathtaking views. Afterwards, a transfer takes us back to
-                  our hotel in Níguelas, where our adventure around the Sierra
-                  Nevada comes full circle.
+                  ham. From here, we cycle through the beautiful landscapes of
+                  the Alpujarras towards La Taha, one of the region's most
+                  authentic and unspoilt areas. This collection of traditional
+                  white villages is connected by quiet mountain roads and scenic
+                  tracks, offering a wonderful glimpse into the rural life and
+                  heritage of the Alpujarras.
+                </p>
+                <p class="">
+                  At the end of the ride, we'll stop at a panoramic viewpoint to
+                  enjoy lunch while taking in the spectacular mountain scenery.
+                  After lunch, a transfer takes us to Capileira, where we'll
+                  spend the night.
+                </p>
+                <p class="">
+                  Capileira is one of the three famous white villages of the
+                  Poqueira Gorge, together with Bubión and Pampaneira. Perched
+                  high on the southern slopes of the Sierra Nevada, at
+                  approximately 1,400–1,500 metres above sea level, these
+                  villages are known for their traditional architecture, narrow
+                  winding streets, flat-roofed houses and stunning mountain
+                  views. The dramatic Poqueira Gorge provides a spectacular
+                  backdrop to this final evening in the Alpujarras, the perfect
+                  place to relax and celebrate the end of our cycling adventure
+                  around the Sierra Nevada.
                 </p>
               </div>
 
@@ -1139,25 +1137,32 @@ type ReviewsProps = {
             <div class="grid md:grid-cols-2 gap-8 md:gap-32">
               <div class="">
                 <p class="">
-                  After several unforgettable days on the trails, today is yours
-                  to enjoy at a more relaxed pace. A private transfer will take
-                  you to the historic city of Granada, where you can spend the
-                  day exploring one of Spain's most fascinating cultural
-                  destinations. Stroll through the charming streets of the old
-                  town, discover lively squares, and soak up the unique
-                  atmosphere created by centuries of Moorish and Spanish
-                  history. You may choose to visit the magnificent Alhambra, the
-                  world-famous palace and fortress complex that overlooks the
-                  city (advance booking is essential). Granada is also renowned
-                  for its vibrant culinary scene. Enjoy authentic Andalusian
-                  cuisine in one of the city's traditional tapas bars, where
-                  complimentary tapas are often served with your drink, or relax
-                  on a sunny terrace in one of the picturesque neighbourhoods.
-                  If you wish, you can end the day with an authentic flamenco
-                  performance, particularly in the historic Sacromonte district,
-                  where this passionate art form has deep cultural roots. At the
-                  end of the day, your private transfer will take you back to
-                  the hotel in Níguelas for your final evening of the tour.
+                  After several unforgettable days exploring the trails and
+                  landscapes around the Sierra Nevada, it's time to enjoy a
+                  change of pace. After breakfast, a private transfer will take
+                  us to the historic city of Granada, where you'll spend the day
+                  discovering one of Spain's most fascinating cultural
+                  destinations. Tonight, we'll stay in Granada, giving you the
+                  opportunity to experience the city's unique atmosphere into
+                  the evening.
+                </p>
+                <p class="">
+                  Stroll through the charming streets of the old town, explore
+                  lively squares, and discover the rich heritage of centuries of
+                  Moorish and Spanish history. You may choose to visit the
+                  magnificent Alhambra, the world-famous palace and fortress
+                  complex overlooking the city, including the spectacular Nasrid
+                  Palaces (advance booking is essential).
+                </p>
+                <p class="">
+                  Granada is also renowned for its vibrant culinary scene. Enjoy
+                  authentic Andalusian cuisine in one of the city's traditional
+                  tapas bars, where complimentary tapas are often served with
+                  your drink, or relax on a sunny terrace in one of its
+                  picturesque neighbourhoods. If you wish, you can round off the
+                  day with an authentic flamenco performance in the historic
+                  Sacromonte district, where this passionate art form has deep
+                  cultural roots.
                 </p>
               </div>
             </div>
@@ -1167,10 +1172,10 @@ type ReviewsProps = {
             <div class="grid gap-8 md:gap-32">
               <div class="">
                 <p class="">
-                  After breakfast, it's time to say farewell to Granada. A
-                  private transfer will take you to Málaga Airport for your
-                  onward journey, bringing an end to an unforgettable mountain
-                  biking adventure around the Sierra Nevada.
+                  After breakfast, a private transfer will take you to Málaga or
+                  Granada Airport for your onward journey, bringing an end to an
+                  unforgettable mountain biking adventure around the Sierra
+                  Nevada.
                 </p>
               </div>
             </div>

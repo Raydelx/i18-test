@@ -4,28 +4,43 @@
       
         
       {
+        "name": "Price  ",
+        "text1": "The published price is based on the standard group of 10 people. For groups of more than 10 participants, the tour price per person will be reduced for everyone. Please contact us for a personalised quotation based on your group size and travel dates."
+           
+      },
+      {
+        "name": "Tailor-made version",
+        "text1": "For private groups, our tours can be fully tailored to your needs and preferences. Whether you want to adjust the itinerary, choose specific accommodations, or select the tour dates, we can create a personalized experience just for your group. To get started, we will send you a simple form to fill out with your preferences and requirements. Once we receive it, we will work with you to design a tour that perfectly matches your group’s interests, pace, and style."
+        
+      },
+      {
         "name": "Group size",
         "text1": "Our tours are designed for small groups to ensure a safe, enjoyable, and high-quality experience. A minimum of 4 participants is required to organize the tour. The maximum number of participants is 14, which allows us to provide attentive service, maintain safety on the road, and ensure a personalized experience throughout the tour."
         
       },
       {
-        "name": "Price  ",
-        "text1": "The published price is based on the standard group size of 4 people. For larger groups, we may be able to offer a reduced price per person. Please contact us for a personalised quotation based on your group size and travel dates."
-           
+        "name": "Self-Guided Tours",
+        "text1": "Our tour can also be organized as a self-guided experience, allowing you to explore at your own pace. In this case, we will provide you with all the necessary information, including detailed route notes, accommodation details, and any additional guidance to ensure a smooth trip. "        
       },
-      
       {
-        "name": "Difficulty",
-        "text1": "Technical Level: S1 (Easy to Moderate)",
-        "text2": "This tour is designed for a wide range of riders, making it an excellent choice for anyone with a reasonable level of fitness and some basic mountain biking experience. The Gorafe Desert trails are rated S1, featuring flowing double tracks with loose gravel, small rocks, and occasional erosion channels. There are no tight switchbacks, and gradients remain below 40%. Basic bike handling, braking, and balance skills are all that's needed to enjoy this spectacular desert landscape safely and comfortably.",
-        "text3": "Suitable for: Riders with basic MTB experience and a good level of fitness. No advanced technical skills are required."
-        
+        "name": "Accommodations ",
+        "text1": "The hotels included in our tours are carefully selected rural hotels, chosen for their location, comfort, and quality, to ensure a pleasant and relaxing stay throughout your cycling holiday. We favour charming rural accommodations that allow you to experience the local character and authentic atmosphere of each destination. In each destination, we work with more than one carefully chosen hotel. This allows us to guarantee a consistently high standard of accommodation and to remain flexible. The final hotel allocation is determined according to the number of participants and availability at the time of booking, while always maintaining the same level of comfort and service. "        
       },
-          
-        
+      {
+        "name": "Transport",
+        "text1": "On this tour, we provide private transport to ensure smooth transfers, comfort, and maximum flexibility throughout your cycling holiday. Montaraz uses its own 8-seat passenger vehicle, together with a trusted private transport company when needed, to transport participants between destinations.  Our Montaraz vehicle also serves as a support vehicle along the cycling routes, offering additional safety and flexibility. It is available if a participant needs a rest, experiences fatigue, or requires assistance during the ride. The tour also includes airport transfers at the start and end of the trip, as well as luggage transport between hotels, allowing you to enjoy your cycling experience without worrying about logistics."        
+      },
+      {
+        "name": "Airport transfers ",
+        "text1": "Airport transfers are included on the first and last days of the tour, with transfers arranged from Málaga or Granada Airport according to our scheduled departure times. Individual transfers outside these times are not included in the tour price. Please note that very early departures, such as leaving the hotel at 04:00 to catch a 06:00 flight, are not covered by the included transfer service. Please ensure that your flight schedule is compatible with one of our scheduled departure times. If your flight requires a different departure time, let us know in advance so we can explore whether alternative arrangements are possible. Additional costs may apply."        
+      },
+      {
+        "name": "Dietary Requirements",
+        "text1": "There are no problems accommodating vegetarian or vegan diets on this tour. Please let us know in advance if you have specific dietary requirements, so that our accommodations and restaurants can prepare accordingly."        
+      },       
       {
         "name": "Weather",
-        "text1": "The Sierra Nevada enjoys over 300 days of sunshine each year, making it an excellent destination for mountain biking throughout most of the year. We organize our MTB tours in spring, autumn, and winter, when temperatures are pleasant and ideal for outdoor activities. During the summer months, temperatures can become very high, especially at lower elevations, so we do not operate tours during this period. Thanks to the region's varied altitude, riders can enjoy comfortable conditions, spectacular views, and diverse landscapes in every season outside of summer.  "
+        "text1": "Granada enjoys over 300 days of sunshine each year, making it an excellent destination for mountain biking throughout most of the year. We organize our MTB tours in spring, autumn, and winter, when temperatures are pleasant and ideal for outdoor activities. During the summer months, temperatures can become very high, especially at lower elevations, so we do not operate tours during this period. Thanks to the region's varied altitude, riders can enjoy comfortable conditions, spectacular views, and diverse landscapes in every season outside of summer."
         
         
         

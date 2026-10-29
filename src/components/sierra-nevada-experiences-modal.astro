@@ -1,0 +1,130 @@
+<button
+  type="button"
+  data-sierra-nevada-experiences-open
+  class="flex min-h-12 w-full items-center justify-center rounded-lg border-2 border-transparent bg-[#ff5e00] px-5 py-3 text-lg font-bold text-white shadow-lg shadow-[#ff5e00]/25 transition-colors hover:bg-[#3c5546] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#3c5546]">
+  Extra Activities
+</button>
+
+<dialog
+  data-sierra-nevada-experiences-dialog
+  aria-labelledby="sierra-nevada-experiences-title"
+  class="m-auto max-h-[calc(100vh-2rem)] w-[calc(100%-2rem)] max-w-5xl overflow-hidden rounded-lg border-0 bg-white p-0 text-[#233229] shadow-2xl backdrop:bg-black/60">
+  <div class="flex max-h-[calc(100vh-2rem)] flex-col">
+    <header
+      class="flex items-start justify-between gap-4 bg-[#3c5546] px-5 py-4 text-white sm:px-8">
+      <div>
+        <p class="text-sm font-bold uppercase tracking-wide text-[#ffbe8f]">
+          Sierra Nevada E-MTB Tour
+        </p>
+        <h2
+          id="sierra-nevada-experiences-title"
+          class="mt-1 text-2xl font-bold sm:text-3xl">
+          Extra Activities
+        </h2>
+      </div>
+      <form method="dialog">
+        <button
+          type="submit"
+          class="rounded-lg border border-white/60 px-3 py-2 text-sm font-bold transition-colors hover:bg-white hover:text-[#3c5546] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff5e00]">
+          Close
+        </button>
+      </form>
+    </header>
+
+    <div class="overflow-y-auto px-5 py-6 sm:px-8 sm:py-8">
+      <article
+        class="border border-[#3c5546]/20 border-l-4 border-l-[#ff5e00] p-5">
+        <h3
+          class="flex flex-wrap items-center gap-x-3 gap-y-2 text-xl font-bold text-[#3c5546]">
+          <span>Alhambra Palace &amp; Nasrid Palaces Visit</span>
+          <span
+            class="inline-flex shrink-0 rounded-md bg-[#ff5e00] px-2.5 py-1 text-xs font-bold uppercase tracking-[0.08em] text-white">
+            Day 7
+          </span>
+        </h3>
+        <p class="mt-3 leading-relaxed">
+          Discover the magnificent Alhambra, Granada’s most iconic monument and
+          a UNESCO World Heritage Site. Explore the extraordinary architecture
+          of the Nasrid Palaces, the historic Alcazaba fortress and the beautiful
+          Generalife Palace and gardens. This unforgettable cultural experience
+          offers a fascinating insight into the history of Al-Andalus and is the
+          perfect complement to your Sierra Nevada E-MTB adventure.
+        </p>
+
+        <dl
+          class="mt-4 grid gap-2 border-t border-[#3c5546]/15 pt-4 text-sm sm:grid-cols-2">
+          <div>
+            <dt class="font-bold text-[#3c5546]">Place</dt>
+            <dd>Granada</dd>
+          </div>
+          <div>
+            <dt class="font-bold text-[#3c5546]">Reservation</dt>
+            <dd>Advance booking required</dd>
+          </div>
+          <div>
+            <dt class="font-bold text-[#3c5546]">Price</dt>
+            <dd>EUR 30 per person (standard general admission ticket, without a guide.)</dd>
+          </div>
+          <div>
+            <dt class="font-bold text-[#3c5546]">Duration</dt>
+            <dd>Approximately 3 hours</dd>
+          </div>
+        </dl>
+
+        <div class="mt-4 grid gap-4 text-sm leading-relaxed sm:grid-cols-2">
+          <div>
+            <p class="font-bold text-[#3c5546]">Included</p>
+            <ul class="mt-1 list-disc space-y-1 pl-5">
+              <li>Admission to the Nasrid Palaces</li>
+              <li>Access to the Alcazaba fortress</li>
+              <li>Admission to the Generalife Palace and gardens</li>
+            </ul>
+          </div>
+          <div>
+            <p class="font-bold text-[#3c5546]">Not Included</p>
+            <ul class="mt-1 list-disc space-y-1 pl-5">
+              <li>Transport to and from the Alhambra</li>
+              <li>Guided tour</li>
+              <li>Meals and drinks</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mt-4 text-sm leading-relaxed">
+          <p class="font-bold text-[#3c5546]">Important Information</p>
+          <ul class="mt-1 list-disc space-y-1 pl-5">
+            <li>
+              Entry to the Nasrid Palaces is at a specific time indicated on
+              your ticket.
+            </li>
+            <li>
+              Advance booking is strongly recommended due to limited
+              availability.
+            </li>
+            <li>
+              Visitors must bring their original passport or official
+              identification document.
+            </li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const openButton = document.querySelector<HTMLButtonElement>(
+    "[data-sierra-nevada-experiences-open]",
+  );
+  const dialog = document.querySelector<HTMLDialogElement>(
+    "[data-sierra-nevada-experiences-dialog]",
+  );
+
+  openButton?.addEventListener("click", () => dialog?.showModal());
+
+  dialog?.addEventListener("click", (event) => {
+    if (event.target === dialog) {
+      dialog.close();
+    }
+  });
+</script>
