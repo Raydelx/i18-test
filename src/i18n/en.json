@@ -1671,9 +1671,9 @@
                 "SUBTITLE":"",
                 "LOCATION": "Sierra Nevada",
 
-                "PRICE": "110",
+                "PRICE": "130",
                 "PRE_BOOKING": "100%",
-                "MINUMUM_OF_PERSONS": "4",                
+                "MINUMUM_OF_PERSONS": "6",                
                 "DURATION": "5 Hours",
                 "TOUR_TYPE": "Guided",
                 "SEASON": "Spring  Summer  Autumn",
@@ -1686,8 +1686,8 @@
 
                  "INCLUDED": {
                     "TITLE": "Included",
-                    "TEXT_1": "Professional guide",
-                    "TEXT_2": "Liability insurance and assistance",
+                    "TEXT_1": "2 Professional guide",
+                    "TEXT_2": "Liability insurance and as   sistance",
                     "TEXT_3": "Vehicle supported tour",
                     "TEXT_4": "Transfer",
                     "TEXT_5": "E-bike",

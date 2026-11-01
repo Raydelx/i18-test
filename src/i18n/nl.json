@@ -1648,9 +1648,9 @@
                 "SUBTITLE": "",
                 "LOCATION": "Sierra Nevada",
 
-                "PRICE": "110",
+                "PRICE": "130",
                 "PRE_BOOKING": "100%",
-                "MINUMUM_OF_PERSONS": "4",                
+                "MINUMUM_OF_PERSONS": "6",                
                 "DURATION": "5 Uur",
                 "TOUR_TYPE": "Geleid",
                 "SEASON": "Lente  Zomer  Herfst",
@@ -1663,7 +1663,7 @@
 
                 "INCLUDED": {
                     "TITLE": "Inbegrepen",
-                    "TEXT_1": "Professionele gids",
+                    "TEXT_1": "2 Professionele gidsen",
                     "TEXT_2": "Aansprakelijkheidsverzekering en assistentie",
                     "TEXT_3": "Tour met volgvoertuig",
                     "TEXT_4": "Transfer",
