@@ -11,6 +11,8 @@ import cycleSardiniaNl from "@/data_files/cycleMtbSierraNevadaNl.json";
 import { getI18N } from "@/i18n/";
 import AccordionProducts from "@/components/accordionProducts.astro";
 import BookButton from "@/components/book-button.astro";
+import SierraNevadaExperiencesModalNl from "@/components/sierra-nevada-experiences-modal-nl.astro";
+import SierraNevadaDifficultyModal from "@/components/sierra-nevada-difficulty-modal.astro";
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
 
@@ -72,8 +74,12 @@ type ReviewsProps = {
           <div>
             <h1
               class="text-3xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-5xl [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
-              Sierra Nevada E-MTB-tour - 8 dagen
+              Sierra Nevada E-MTB-tour | 8 dagen
             </h1>
+            <p
+              class="text-3xl font-extrabold tracking-tight leading-none text-[#ff5e00] md:text-4xl lg:text-5xl [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
+              Bergpaden, afgelegen dorpen &amp; Andalusisch avontuur
+            </p>
           </div>
         </div>
       </div>
@@ -82,7 +88,10 @@ type ReviewsProps = {
 
       <div
         class="grid grid-cols-2 md:grid-cols-6 h-auto mt-3 gap-3 place-content-start md:px-6">
-        <InformationProducts title={i18n.INFO_PRODUCTS.PRICE} subtitle="1.995">
+        <InformationProducts
+          title={i18n.INFO_PRODUCTS.PRICE}
+          subtitle="2.196 € gedeelde kamer"
+          subtitle3="2.448 € eenpersoonskamer">
           <div slot="icon">
             <Icon icon="price-logo" size="1.6rem" color="#ff5e00" />
           </div>
@@ -96,7 +105,7 @@ type ReviewsProps = {
         </InformationProducts>
         <InformationProducts
           title={i18n.INFO_PRODUCTS.MINIMUM_OF_PERSONS}
-          subtitle="6">
+          subtitle="10">
           <div slot="icon">
             <Icon icon="group-logo" size="1.6rem" color="#ff5e00" />
           </div>
@@ -185,8 +194,10 @@ type ReviewsProps = {
         </div>
       </div>
 
-      <div class="mt-10 max-w-[320px]">
+      <div class="mt-10 grid gap-5 md:grid-cols-3 lg:gap-8">
         <BookButton />
+        <SierraNevadaExperiencesModalNl />
+        <SierraNevadaDifficultyModal lang="nl" />
       </div>
 
       <!--  Include, exclude, complementaries  -->
@@ -294,6 +305,10 @@ type ReviewsProps = {
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Diner op de vrije dag</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
               <p class="max-w-[320px] text-md">Helm</p>
             </li>
             <li class="flex gap-2">
@@ -358,7 +373,8 @@ type ReviewsProps = {
           <p>
             Deze tour heeft geen vaste vertrekdata. Neem contact met ons op met
             je gewenste reisdata; we organiseren graag een tour die bij je
-            planning past.
+            planning past. Voor privétours bieden we graag een tour op maat
+            aan.
           </p>
           <div class="gap-4 mt-6">
             <ul class="text-lg">
@@ -366,6 +382,10 @@ type ReviewsProps = {
                 <div class="flex gap-2">
                   <Icon icon="spring-logo" size="1.6rem" color="#ff5e00" />
                   <p>Lente</p>
+                </div>
+                <div class="flex gap-2">
+                  <Icon icon="autumn-logo" size="1.6rem" color="#ff5e00" />
+                  <p>Herfst</p>
                 </div>
               </div>
             </ul>
@@ -565,10 +585,10 @@ type ReviewsProps = {
 
     <div class="grid lg:grid-cols-2 gap-4 lg:mt-20 mt-10 mb-10">
       <div>
-        <p
+        <h2
           class="max-w-2xl mb-4 font-bold text-2xl md:text-4xl xl:text-5xl bg-[#3c5546] inline-block text-white px-6 py-2 rounded-lg">
           Vereisten
-        </p>
+        </h2>
         <p>🔶 Geldige reisverzekering</p>
         <p>
           🔶 Ondertekend aansprakelijkheidsformulier, in te vullen vóór de start
@@ -725,35 +745,48 @@ type ReviewsProps = {
         <Accordion class="mt-6 mb-10" variant="splitted">
           <AccordionItem title="Dag 1 – Aankomst in Níguelas">
             <p class="">
-              Na aankomst op de luchthaven van Málaga word je naar Níguelas
-              gebracht, een charmant bergdorp op de hellingen van de Sierra
-              Nevada, in de prachtige Lecrín-vallei. Je verblijft hier in een
-              rustig landelijk hotel, de perfecte uitvalsbasis voor het avontuur
-              dat voor je ligt.
+              Na aankomst op de luchthaven van Málaga of Granada word je naar
+              Nigüelas gebracht, een charmant bergdorp op de hellingen van de
+              Sierra Nevada, in de prachtige Lecrín-vallei. Je verblijft hier in
+              een rustig landelijk hotel, de perfecte uitvalsbasis voor het
+              avontuur dat voor je ligt.
             </p>
             <p class="">
               We raden aan om 's ochtends aan te komen, zodat je alle tijd hebt
               om je te installeren en ontspannen aan je vakantie te beginnen. Om
-              de start van de tour te vieren, staat er een speciale
-              welkomstverrassing klaar: een heerlijke, vers bereide paella als
-              lunch. Een perfecte gelegenheid om kennis te maken met je
-              medefietsers en je mountainbike-avontuur in echte Andalusische
-              stijl te beginnen.
+              je welkom te heten in Andalusië hebben we een speciale lunch
+              geregeld: een heerlijke huisgemaakte paella, vers bereid door onze
+              kok. Een perfecte gelegenheid om kennis te maken met je
+              medefietsers en je gravel-avontuur in echte Andalusische stijl te
+              beginnen.
+            </p>
+            <p class="">
+              Na de lunch maken we je fiets klaar, controleren we samen alles en
+              maken we een korte warming-uprit. Zo raak je vertrouwd met je
+              fiets, geniet je van de omgeving en bereid je je voor op het
+              avontuur dat voor je ligt.
             </p>
           </AccordionItem>
 
-          <AccordionItem title="Dag 2 – Van Níguelas naar Guadix">
+          <AccordionItem title="Dag 2 – Sierra de Huétor naar Guadix">
             <div class="grid md:grid-cols-2 gap-8 md:gap-32">
               <div class="">
                 <p class="">
-                  Na het ontbijt brengt een bus ons naar het startpunt van de
-                  rit van vandaag. Vanaf hier begint ons mountainbike-avontuur
-                  langs de noordhellingen van het natuurpark Sierra Nevada. We
-                  fietsen door een spectaculair berglandschap naar de
-                  historische regio Guadix, bekend om haar bijzondere
-                  grotwoningen. De komende twee nachten verblijven we in een
-                  traditioneel grothotel, voor een authentieke en onvergetelijke
-                  Andalusische ervaring.
+                  Na het ontbijt brengt een bus ons naar het startpunt in het
+                  natuurpark Sierra de Huétor. Vanaf hier begint ons
+                  gravel-avontuur over schilderachtige bospaden, door rustige
+                  bossen en prachtige berglandschappen, op weg naar de
+                  spectaculaire badlands van Guadix. Naarmate het landschap
+                  geleidelijk verandert van groene bossen in ruig, woestijnachtig
+                  terrein, ontdekken we een van de meest opvallende landschappen
+                  van de provincie Granada.
+                </p>
+                <p class="">
+                  Onze bestemming is de historische regio Guadix, beroemd om haar
+                  unieke grotwoningen en buitengewone geologische formaties. De
+                  komende twee nachten verblijven we in een traditioneel
+                  grothotel, voor een authentieke en onvergetelijke Andalusische
+                  ervaring.
                 </p>
               </div>
 
@@ -1070,26 +1103,34 @@ type ReviewsProps = {
             <div class="grid md:grid-cols-2 gap-8 md:gap-32">
               <div class="">
                 <p class="">
-                  Onze laatste fietsdag begint met een transfer van het hotel
+                  Onze laatste fietsetappe begint met een transfer van het hotel
                   naar Trevélez, het hoogstgelegen dorp van de Sierra Nevada, in
                   heel Spanje bekend om zijn traditioneel gerijpte Serranoham.
-                  Vanaf hier fietsen we naar de adembenemende Poqueira-kloof,
-                  waar drie van de mooiste en meest authentieke witte dorpen van
-                  de regio liggen: Capileira, Bubión en Pampaneira. We stoppen
-                  in het prachtige witte dorp Capileira. Je hebt tijd om door de
-                  smalle, kronkelende straatjes te slenteren, lokale
-                  ambachtswinkels te bezoeken en koffie te drinken op een van de
-                  gezellige terrassen. Daarna rijden we verder door La Taha, een
-                  van de meest authentieke gebieden van de Alpujarras. Hier zijn
-                  kleine traditionele witte dorpen verbonden door rustige
-                  bergwegen en schilderachtige paden. Dit vredige, ongerepte
-                  landschap vormt een passend slot van onze tocht rond de Sierra
-                  Nevada. We eindigen de rit bij een panoramisch uitzichtpunt,
-                  waar we met een welverdiend proostmoment vieren dat we alle
-                  vijf etappes hebben voltooid en genieten van het adembenemende
-                  uitzicht. Daarna brengt een transfer ons terug naar ons hotel
-                  in Níguelas, waar onze rondreis door de Sierra Nevada weer
-                  rond is.
+                  Vanaf hier fietsen we door de prachtige landschappen van de
+                  Alpujarras naar La Taha, een van de meest authentieke en
+                  ongerepte gebieden van de regio. Deze verzameling
+                  traditionele witte dorpen is verbonden door rustige
+                  bergwegen en schilderachtige paden en geeft een prachtig
+                  inkijkje in het landelijke leven en het erfgoed van de
+                  Alpujarras.
+                </p>
+                <p class="">
+                  Aan het einde van de rit stoppen we bij een panoramisch
+                  uitzichtpunt om te lunchen en te genieten van het
+                  spectaculaire berglandschap. Na de lunch brengt een transfer
+                  ons naar Capileira, waar we overnachten.
+                </p>
+                <p class="">
+                  Capileira is een van de drie beroemde witte dorpen van de
+                  Poqueira-kloof, samen met Bubión en Pampaneira. Hoog op de
+                  zuidhellingen van de Sierra Nevada, op ongeveer 1.400–1.500
+                  meter boven zeeniveau, staan deze dorpen bekend om hun
+                  traditionele architectuur, smalle kronkelende straatjes,
+                  huizen met platte daken en indrukwekkende uitzichten op de
+                  bergen. De dramatische Poqueira-kloof vormt een spectaculaire
+                  achtergrond voor deze laatste avond in de Alpujarras, de
+                  perfecte plek om te ontspannen en het einde van ons
+                  fietsavontuur rond de Sierra Nevada te vieren.
                 </p>
               </div>
 
@@ -1162,25 +1203,30 @@ type ReviewsProps = {
               <div class="">
                 <p class="">
                   Na een aantal onvergetelijke dagen op de paden kun je het
-                  vandaag rustig aan doen. Een privétransfer brengt je naar de
-                  historische stad Granada, waar je de dag kunt besteden aan het
-                  verkennen van een van de meest fascinerende culturele
-                  bestemmingen van Spanje. Wandel door de sfeervolle straatjes
-                  van de oude stad, ontdek levendige pleinen en geniet van de
-                  bijzondere sfeer die eeuwen Moorse en Spaanse geschiedenis
-                  hebben achtergelaten. Je kunt het indrukwekkende Alhambra
+                  vandaag rustig aan doen. Na het ontbijt brengt een
+                  privétransfer ons naar de historische stad Granada, waar je de
+                  dag kunt besteden aan het verkennen van een van de meest
+                  fascinerende culturele bestemmingen van Spanje. Vanavond
+                  overnachten we in Granada, zodat je ook 's avonds de unieke
+                  sfeer van de stad kunt ervaren.
+                </p>
+                <p class="">
+                  Wandel door de sfeervolle straatjes van de oude stad, ontdek
+                  levendige pleinen en ontdek het rijke erfgoed van eeuwen Moorse
+                  en Spaanse geschiedenis. Je kunt het indrukwekkende Alhambra
                   bezoeken, het wereldberoemde paleis- en vestingcomplex dat
-                  boven de stad uittorent (vooraf reserveren is noodzakelijk).
+                  boven de stad uittorent, inclusief de spectaculaire
+                  Nasridenpaleizen (vooraf reserveren is noodzakelijk).
+                </p>
+                <p class="">
                   Granada staat ook bekend om zijn bruisende eetcultuur. Proef
                   authentieke Andalusische gerechten in een traditionele
                   tapasbar, waar vaak gratis tapas bij je drankje worden
                   geserveerd, of ontspan op een zonnig terras in een van de
-                  pittoreske wijken. Je kunt de dag afsluiten met een
-                  authentieke flamencovoorstelling, bijvoorbeeld in de
-                  historische wijk Sacromonte, waar deze gepassioneerde
-                  kunstvorm diep geworteld is. Aan het einde van de dag brengt
-                  je privétransfer je terug naar het hotel in Níguelas voor de
-                  laatste avond van de tour.
+                  pittoreske wijken. Als je wilt, kun je de dag afsluiten met
+                  een authentieke flamencovoorstelling in de historische wijk
+                  Sacromonte, waar deze gepassioneerde kunstvorm diep geworteld
+                  is.
                 </p>
               </div>
             </div>
@@ -1190,10 +1236,10 @@ type ReviewsProps = {
             <div class="grid gap-8 md:gap-32">
               <div class="">
                 <p class="">
-                  Na het ontbijt is het tijd om afscheid te nemen van Granada.
-                  Een privétransfer brengt je naar de luchthaven van Málaga voor
-                  je terugreis. Daarmee komt een einde aan een onvergetelijk
-                  mountainbike-avontuur rond de Sierra Nevada.
+                  Na het ontbijt brengt een privétransfer je naar de luchthaven
+                  van Málaga of Granada voor je terugreis. Daarmee komt een
+                  einde aan een onvergetelijk mountainbike-avontuur rond de
+                  Sierra Nevada.
                 </p>
               </div>
             </div>

@@ -1,0 +1,178 @@
+---
+interface Props {
+  lang?: "en" | "nl";
+}
+
+const { lang = "en" } = Astro.props;
+
+const t =
+  lang === "nl"
+    ? {
+        button: "Moeilijkheidsniveaus",
+        close: "Sluiten",
+        tour: "Sierra Nevada E-MTB-tour",
+        title: "Moeilijkheidsniveaus",
+        system: "Beoordelingssysteem voor padmoeilijkheid",
+        level: "Technisch niveau: S0 - S1 (Gemakkelijk tot gemiddeld)",
+        intro:
+          "Deze tour is ontworpen voor een breed scala aan fietsers en is een uitstekende keuze voor iedereen met een redelijke conditie en enige basiservaring met mountainbiken.",
+        s0: "S0 staat voor een singletrack zonder bijzondere moeilijkheden. De meeste zijn bos- of graspaden met goede grip, of vast grind. Op dit type paden kom je geen treden, rotsen of wortels tegen. Het hellingspercentage loopt van licht tot matig en de bochten zijn altijd vrij ruim. S0-paden kunnen worden gereden zonder bijzondere technische mountainbikevaardigheden.",
+        s0List: [
+          ["Padomstandigheden", "compacte ondergrond met goede grip"],
+          ["Obstakels", "geen"],
+          ["Helling", "licht tot matig"],
+          ["Bochten", "ruim"],
+          ["Technische MTB-vaardigheden", "geen speciale vaardigheden nodig"],
+        ],
+        doubleTrack1:
+          "+ We nemen ook dubbele sporen op, met ritten over vast grind/aarde.",
+        doubleTrack2:
+          "Het dubbele spoor is relatief breed, zodat je naast elkaar kunt fietsen. Dat zorgt voor een socialere fietservaring, perfect om samen van het landschap te genieten.",
+        s1Title:
+          "Op een S1-pad kom je kleine obstakels tegen, zoals niet erg uitstekende wortels en kleine stenen.",
+        s1: "De hogere moeilijkheidsgraad wordt vaak veroorzaakt door afwateringsgootjes of erosie. Op S1-singletracks is de ondergrond mogelijk niet erg compact. De helling bedraagt maximaal 40% en er komen geen haarspeldbochten voor. Vanaf S1 zijn basistechnieken voor mountainbiken en een goede concentratie vereist. Voor de lastigere passages moet je kunnen doseren met de remmen en het traject kunnen beïnvloeden door je lichaamsgewicht te verplaatsen. Alle obstakels kunnen met basisvaardigheden worden overreden.",
+        s1List: [
+          [
+            "Padomstandigheden",
+            "mogelijk losse ondergrond, met kleine wortels en stenen",
+          ],
+          [
+            "Obstakels",
+            "kleine obstakels (afwateringsgootjes, schade door erosie)",
+          ],
+          ["Helling", "<40%"],
+          ["Bochten", "smal"],
+          ["Technische MTB-vaardigheden", "basisrijvaardigheden vereist"],
+        ],
+      }
+    : {
+        button: "Difficulty Levels",
+        close: "Close",
+        tour: "Sierra Nevada E-MTB Tour",
+        title: "Difficulty Levels",
+        system: "Trail Difficulty Rating System",
+        level: "Technical Level: S0 - S1 (Easy to Moderate)",
+        intro:
+          "This tour is designed for a wide range of riders, making it an excellent choice for anyone with a reasonable level of fitness and some basic mountain biking experience.",
+        s0: "S0 indicates a single trail that does not present particular difficulties. Most of them are forest or meadow trails with good grip, or compact gravel. In this type of trails you will not face steps, rocks or roots. The gradient of the trail goes from mild to moderate and the curves are always quite wide. S0 trails can be tackled without special mountain bike technical skills.",
+        s0List: [
+          ["Trail conditions", "compact terrain with good grip"],
+          ["Obstacles", "none"],
+          ["Gradient", "mild to moderate"],
+          ["Curves", "wide"],
+          ["MTB Tech Skills", "no special skills required"],
+        ],
+        doubleTrack1:
+          "+ We include the double track with rides on hard-pack gravel/dirt",
+        doubleTrack2:
+          "The doubletrack is relatively wide where you can cycle side by side and offer a more social riding experience, perfect for enjoying the scenery together",
+        s1Title:
+          "On an S1 trail you will find small obstacles such as not very prominent roots and small stones.",
+        s1: "Often the increased difficulty rating is due to the drains or erosion. In S1 single trails the surface could be not very compact. The gradient reaches a maximum of 40% and no switchbacks will be encountered. Starting from S1 level, basic mtb riding techniques and good concentration are required. The trickier passages require the ability to dose the brakes and to affect the trajectory by body displacement. Obstacles can all be rolled over with basic riding skills.",
+        s1List: [
+          [
+            "Trail conditions",
+            "loose surface possible, with small roots and stones",
+          ],
+          [
+            "Obstacles",
+            "small obstacles (drains, damage caused by erosion)",
+          ],
+          ["Gradient", "<40%"],
+          ["Curves", "narrow"],
+          ["MTB Tech skills", "basic driving skills required"],
+        ],
+      };
+---
+
+<button
+  type="button"
+  data-sierra-nevada-difficulty-open
+  class="flex min-h-12 w-full items-center justify-center rounded-lg border-2 border-transparent bg-[#ff5e00] px-5 py-3 text-lg font-bold text-white shadow-lg shadow-[#ff5e00]/25 transition-colors hover:bg-[#3c5546] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#3c5546]">
+  {t.button}
+</button>
+
+<dialog
+  data-sierra-nevada-difficulty-dialog
+  aria-labelledby="sierra-nevada-difficulty-title"
+  class="m-auto max-h-[calc(100vh-2rem)] w-[calc(100%-2rem)] max-w-5xl overflow-hidden rounded-lg border-0 bg-white p-0 text-[#233229] shadow-2xl backdrop:bg-black/60">
+  <div class="flex max-h-[calc(100vh-2rem)] flex-col">
+    <header
+      class="flex items-start justify-between gap-4 bg-[#3c5546] px-5 py-4 text-white sm:px-8">
+      <div>
+        <p class="text-sm font-bold uppercase tracking-wide text-[#ffbe8f]">
+          {t.tour}
+        </p>
+        <h2
+          id="sierra-nevada-difficulty-title"
+          class="mt-1 text-2xl font-bold sm:text-3xl">
+          {t.title}
+        </h2>
+      </div>
+      <form method="dialog">
+        <button
+          type="submit"
+          class="rounded-lg border border-white/60 px-3 py-2 text-sm font-bold transition-colors hover:bg-white hover:text-[#3c5546] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff5e00]">
+          {t.close}
+        </button>
+      </form>
+    </header>
+
+    <div class="overflow-y-auto px-5 py-6 sm:px-8 sm:py-8">
+      <article
+        class="border border-[#3c5546]/20 border-l-4 border-l-[#ff5e00] p-5">
+        <h3 class="text-xl font-bold text-[#3c5546]">{t.system}</h3>
+        <h4 class="mt-2 text-lg font-bold text-[#3c5546]">{t.level}</h4>
+        <p class="mt-3 leading-relaxed">{t.intro}</p>
+
+        <section class="mt-5 border-t border-[#3c5546]/15 pt-4">
+          <h4 class="font-bold text-[#3c5546]">S0</h4>
+          <p class="mt-2 leading-relaxed">{t.s0}</p>
+          <ul class="mt-3 list-disc space-y-1 pl-5 leading-relaxed">
+            {
+              t.s0List.map(([label, value]) => (
+                <li>
+                  <strong>{label}:</strong> {value}
+                </li>
+              ))
+            }
+          </ul>
+          <p class="mt-4 font-bold leading-relaxed">{t.doubleTrack1}</p>
+          <p class="mt-2 leading-relaxed">{t.doubleTrack2}</p>
+        </section>
+
+        <section class="mt-5 border-t border-[#3c5546]/15 pt-4">
+          <h4 class="font-bold text-[#3c5546]">S1</h4>
+          <p class="mt-2 font-bold leading-relaxed">{t.s1Title}</p>
+          <p class="mt-2 leading-relaxed">{t.s1}</p>
+          <ul class="mt-3 list-disc space-y-1 pl-5 leading-relaxed">
+            {
+              t.s1List.map(([label, value]) => (
+                <li>
+                  <strong>{label}:</strong> {value}
+                </li>
+              ))
+            }
+          </ul>
+        </section>
+      </article>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const openButton = document.querySelector<HTMLButtonElement>(
+    "[data-sierra-nevada-difficulty-open]",
+  );
+  const dialog = document.querySelector<HTMLDialogElement>(
+    "[data-sierra-nevada-difficulty-dialog]",
+  );
+
+  openButton?.addEventListener("click", () => dialog?.showModal());
+
+  dialog?.addEventListener("click", (event) => {
+    if (event.target === dialog) {
+      dialog.close();
+    }
+  });
+</script>

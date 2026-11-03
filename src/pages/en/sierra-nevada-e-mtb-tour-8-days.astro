@@ -12,6 +12,7 @@ import { getI18N } from "@/i18n/";
 import AccordionProducts from "@/components/accordionProducts.astro";
 import BookButton from "@/components/book-button.astro";
 import SierraNevadaExperiencesModal from "@/components/sierra-nevada-experiences-modal.astro";
+import SierraNevadaDifficultyModal from "@/components/sierra-nevada-difficulty-modal.astro";
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
 
@@ -73,8 +74,12 @@ type ReviewsProps = {
           <div>
             <h1
               class="text-3xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-5xl [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
-              Sierra Nevada E-MTB Tour 8 Days
+              Sierra Nevada E-MTBTour | 8 Days
             </h1>
+            <p
+              class="text-3xl font-extrabold tracking-tight leading-none text-[#ff5e00] md:text-4xl lg:text-5xl [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
+              Mountain Trails, Remote Villages & Andalusian Adventure
+            </p>
           </div>
         </div>
       </div>
@@ -192,6 +197,7 @@ type ReviewsProps = {
       <div class="mt-10 grid gap-5 md:grid-cols-3 lg:gap-8">
         <BookButton />
         <SierraNevadaExperiencesModal />
+        <SierraNevadaDifficultyModal />
       </div>
 
       <!--  Include, exclude, complementaries  -->
@@ -262,10 +268,6 @@ type ReviewsProps = {
                 On-route refreshments and snacks
               </p>
             </li>
-            <li class="flex flex-wrap gap-2">
-              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
-              <p class="max-w-[320px] text-md">Helmet</p>
-            </li>
 
             <li class="flex flex-wrap gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
@@ -287,7 +289,7 @@ type ReviewsProps = {
                 <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
               </div>
               <p class="max-w-[320px] text-md">
-                Travel & cancellation insurance (It is obligatory to take out
+                Travel & cancellation insurance (It is recommended to take out
                 travel insurance before departure)
               </p>
             </li>
@@ -295,10 +297,7 @@ type ReviewsProps = {
               <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
               <p class="max-w-[320px] text-md">Flight</p>
             </li>
-            <li class="flex flex-wrap gap-2">
-              <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
-              <p class="max-w-[320px] text-md">Lunch free day</p>
-            </li>
+
             <li class="flex gap-2">
               <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
               <p class="max-w-[320px] text-md">Extra meals</p>
@@ -314,6 +313,18 @@ type ReviewsProps = {
             <li class="flex flex-wrap gap-2">
               <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
               <p class="max-w-[320px] text-md">Tips</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Dinner free day</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Lunch free day</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Helmet</p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
@@ -743,7 +754,7 @@ type ReviewsProps = {
             </p>
           </AccordionItem>
 
-          <AccordionItem title="Day 2 – Níguelas to Guadix">
+          <AccordionItem title="Day 2 – Sierra de Huétor to Guadix">
             <div class="grid md:grid-cols-2 gap-8 md:gap-32">
               <div class="">
                 <p class="">
