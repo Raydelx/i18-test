@@ -1687,7 +1687,7 @@
                  "INCLUDED": {
                     "TITLE": "Included",
                     "TEXT_1": "2 Professional guide",
-                    "TEXT_2": "Liability insurance and as   sistance",
+                    "TEXT_2": "Liability insurance and assistance",
                     "TEXT_3": "Vehicle supported tour",
                     "TEXT_4": "Transfer",
                     "TEXT_5": "E-bike",
@@ -2005,14 +2005,14 @@
 
             
             "CYCLE_TOUR_GRANADA": {
-                "TITLE": "Granada E-Bike Tour 8 Days",
-                "SUBTITLE": "",
+                "TITLE": "Granada – Sierra Nevada E-Bike Tour | 8 Days",
+                "SUBTITLE": "Mountain Scenery, White Villages & Local Culture",
                 "LOCATION": "Granada"
             },
 
             "FROM_MOUNTAINS_TO_COASTLINE": {
-                "TITLE": "Sierra Nevada - Tropical Coast E-Bike Tour 1/2 Day ",
-                "SUBTITLE": "",
+                "TITLE": "Sierra Nevada – Tropical Coast E-Bike Tour | 1 Day",
+                "SUBTITLE": "Lemon Groves, Green Valleys & Rural Granada",
                 "LOCATION": "Granada",
 
                 "PRICE": "130",
@@ -2430,8 +2430,8 @@
             },
 
             "CYCLE_TOUR_SARDINIA" : {
-                "TITLE": "Sardinia E-Bike Tour 10 Days",
-                "SUBTITLE": ""
+                "TITLE": "Sardinia E-Bike Tour | 10 Days",
+                "SUBTITLE": "Discover Sardinia at a slower pace "
             },
 
               "E_BIKE_SIGHTSEEN_GRANADA": {

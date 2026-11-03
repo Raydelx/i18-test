@@ -27,15 +27,13 @@ const i18n = getI18N({ currentLocale });
 
     <div class="grid lg:grid-cols-3 gap-6 mt-8">
       <div class="grid grid-cols-1 content-center">
-        <a href={translatePath("leisure-cycling-spain")}>
+        <a href={translatePath("leisure-cycling-portugal")}>
           <img
             class="duration-300 ob-cover ease-in-out hover:scale-105 text-center m-auto"
-            src="/destinations/spain.webp"
-            alt="Spain map 3D"
+            src="/destinations/portugal.png"
+            alt="Portugal map 3D"
           />
-          <p class="text-center text-3xl font-bold">
-            {i18n.DESTINATIONS_SPAIN}
-          </p>
+          <p class="text-center text-3xl font-bold">Portugal</p>
         </a>
       </div>
 
@@ -60,6 +58,18 @@ const i18n = getI18N({ currentLocale });
           />
           <p class="text-center text-3xl font-bold">
             {i18n.DESTINATIONS_ITALY}
+          </p>
+        </a>
+      </div>
+      <div class="grid grid-cols-1 content-center">
+        <a href={translatePath("leisure-cycling-spain")}>
+          <img
+            class="duration-300 ob-cover ease-in-out hover:scale-105 text-center m-auto"
+            src="/destinations/spain.png"
+            alt="Spain map 3D"
+          />
+          <p class="text-center text-3xl font-bold">
+            {i18n.DESTINATIONS_SPAIN}
           </p>
         </a>
       </div>

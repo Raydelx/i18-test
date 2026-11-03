@@ -7,7 +7,7 @@ import Layout from "@/layouts/Layout.astro";
 import SliderReact from "@/hooks/SliderReact";
 import Includes from "@/components/products-components/includes.astro";
 import Route from "@/components/ui/icons/route.astro";
-import cycleSardiniaNl from "@/data_files/cycleMtbSierraNevadaEs.json";
+import cycleSardiniaNl from "@/data_files/cycleMtbSierraNevadaNl.json";
 import { getI18N } from "@/i18n/";
 import AccordionProducts from "@/components/accordionProducts.astro";
 import BookButton from "@/components/book-button.astro";
@@ -54,7 +54,7 @@ type ReviewsProps = {
 };
 ---
 
-<Layout title="">
+<Layout title="Sierra Nevada E-MTB-tour - 8 dagen">
   <Container class="product-page">
     <main class="mt-16">
       <!-- Foto, nombre y destino -->
@@ -72,7 +72,7 @@ type ReviewsProps = {
           <div>
             <h1
               class="text-3xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-5xl [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
-              Sierra Nevada E-MTB Tour 8 Days
+              Sierra Nevada E-MTB-tour - 8 dagen
             </h1>
           </div>
         </div>
@@ -103,21 +103,21 @@ type ReviewsProps = {
         </InformationProducts>
         <InformationProducts
           title={i18n.INFO_PRODUCTS.DURATION}
-          subtitle="8 Days">
+          subtitle="8 dagen">
           <div slot="icon">
             <Icon icon="timer-logo" size="1.6rem" color="#ff5e00" />
           </div>
         </InformationProducts>
         <InformationProducts
           title={i18n.INFO_PRODUCTS.TOUR_TYPE}
-          subtitle="Guided">
+          subtitle="Begeleid">
           <div slot="icon">
             <Icon icon="guide-logo" size="1.6rem" color="#ff5e00" />
           </div>
         </InformationProducts>
         <InformationProducts
           title={i18n.INFO_PRODUCTS.SEASON}
-          subtitle2="Spring Autumn">
+          subtitle2="Lente Herfst">
           <div slot="icon">
             <Icon icon="spring-logo" size="1.6rem" color="#ff5e00" />
             <Icon icon="autumn-logo" size="1.6rem" color="#ff5e00" />
@@ -154,7 +154,7 @@ type ReviewsProps = {
           </InformationProducts>
           <InformationProducts
             title={i18n.INFO_PRODUCTS.ROUTE_TYPE}
-            subtitle="Point-to-point">
+            subtitle="Van punt naar punt">
             <div slot="icon">
               <Route />
             </div>
@@ -166,7 +166,7 @@ type ReviewsProps = {
               <Icon icon="difficulty-logo" size="2rem" color="#ff5e00" />
             </div>
           </InformationProducts>
-          <InformationProducts title="E-Bike" subtitle="Yes">
+          <InformationProducts title="E-bike" subtitle="Ja">
             <div slot="icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -199,64 +199,74 @@ type ReviewsProps = {
           <ul slot="description" class="mt-4 flex flex-col gap-2">
             <li class="flex gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
-              <p class="max-w-[320px] text-md">Professional guides</p>
+              <p class="max-w-[320px] text-md">2 professionele gidsen</p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Welkomstlunch</p>
             </li>
             <li class="flex gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
               <p class="max-w-[320px] text-md">
-                Liability insurance and assistance
+                Aansprakelijkheidsverzekering en assistentie
               </p>
             </li>
             <li class="flex gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
               <p class="max-w-[320px] text-md">
-                Financial Protection Guarantee
+                Financiële beschermingsgarantie
               </p>
             </li>
             <li class="flex gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Volgwagens en fietstrailers</p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Bagagevervoer</p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Luchthaventransfer</p>
+            </li>
+            <li class="flex gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Landelijke hotels</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Ontbijt: 7 dagen</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Lunch: 6 dagen</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Diner: 6 dagen</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
+              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
+              <p class="max-w-[320px] text-md">Elektrische fiets</p>
+            </li>
+            <li class="flex flex-wrap gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
               <p class="max-w-[320px] text-md">
-                Support vehicles and bike trailers
-              </p>
-            </li>
-            <li class="flex gap-2">
-              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
-              <p class="max-w-[320px] text-md">Luggage transport</p>
-            </li>
-            <li class="flex gap-2">
-              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
-              <p class="max-w-[320px] text-md">Airport transfer</p>
-            </li>
-            <li class="flex gap-2">
-              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
-              <p class="max-w-[320px] text-md">
-                Accommodation including breakfast
+                Verfrissingen en snacks onderweg
               </p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
-              <p class="max-w-[320px] text-md">7 x days</p>
-            </li>
-            <li class="flex flex-wrap gap-2">
-              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
-              <p class="max-w-[320px] text-md">5 x picnics</p>
-            </li>
-            <li class="flex flex-wrap gap-2">
-              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
-              <p class="max-w-[320px] text-md">7 x Dinner</p>
-            </li>
-            <li class="flex flex-wrap gap-2">
-              <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
-              <p class="max-w-[320px] text-md">E-bike</p>
+              <p class="max-w-[320px] text-md">Helm</p>
             </li>
 
             <li class="flex flex-wrap gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
-              <p class="max-w-[320px] text-md">Water bottle</p>
+              <p class="max-w-[320px] text-md">Waterfles</p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="check-logo" size="1.6rem" color="#ff5e00" />
-              <p class="max-w-[320px] text-md">Cycle t-shirt</p>
+              <p class="max-w-[320px] text-md">Fietsshirt</p>
             </li>
           </ul>
         </Includes>
@@ -270,48 +280,48 @@ type ReviewsProps = {
                 <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
               </div>
               <p class="max-w-[320px] text-md">
-                Travel & cancellation insurance (It is obligatory to take out
-                travel insurance before departure)
+                Reis- en annuleringsverzekering (een reisverzekering is
+                verplicht vóór vertrek)
               </p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
-              <p class="max-w-[320px] text-md">Flight</p>
+              <p class="max-w-[320px] text-md">Vlucht</p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
-              <p class="max-w-[320px] text-md">Lunch free day</p>
+              <p class="max-w-[320px] text-md">Lunch op de vrije dag</p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
-              <p class="max-w-[320px] text-md">Helmet</p>
+              <p class="max-w-[320px] text-md">Helm</p>
             </li>
             <li class="flex gap-2">
               <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
-              <p class="max-w-[320px] text-md">Extra meals</p>
+              <p class="max-w-[320px] text-md">Extra maaltijden</p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
-              <p class="max-w-[320px] text-md">Extra excursions</p>
+              <p class="max-w-[320px] text-md">Extra excursies</p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
-              <p class="max-w-[320px] text-md">Personal expenses</p>
+              <p class="max-w-[320px] text-md">Persoonlijke uitgaven</p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
-              <p class="max-w-[320px] text-md">Tips</p>
+              <p class="max-w-[320px] text-md">Fooien</p>
             </li>
             <li class="flex flex-wrap gap-2">
               <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
-              <p class="max-w-[320px] text-md">Extra nights</p>
+              <p class="max-w-[320px] text-md">Extra overnachtingen</p>
             </li>
             <li class="flex gap-2">
               <div>
                 <Icon icon="uncheck-logo" size="1.6rem" color="#ff5e00" />
               </div>
               <p class="max-w-[320px] text-md">
-                Private transport after or before the tour
+                Privévervoer vóór of na de tour
               </p>
             </li>
           </div>
@@ -325,17 +335,17 @@ type ReviewsProps = {
         <img
           class="rounded-xl absolute md:w-[20rem] lg:w-[25rem] hover:z-40 transition-all duration-300 ease-out hover:scale-105"
           src="/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-2.webp"
-          alt="ciclista mirando la sierra con cicicleta a su lado"
+          alt="Fietser kijkt uit over de Sierra Nevada met de fiets naast zich"
         />
         <img
           class="rounded-xl absolute md:w-[10rem] lg:w-[20rem] md:mt-48 lg:mt-40 ml-6 z-10 grayscale-[60%] hover:grayscale-0 transition-all duration-300 ease-out hover:scale-105"
           src="/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-3.webp"
-          alt="ciclista mirando la sierra con cicicleta a su lado"
+          alt="Fietser kijkt uit over de Sierra Nevada met de fiets naast zich"
         />
         <img
           class="rounded-xl absolute md:w-[20rem] lg:w-[15em] ml-64 md:-mt-24 lg:-mt-32 grayscale-[60%] hover:grayscale-0 transition-all duration-300 ease-out hover:scale-105"
           src="/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-4.webp"
-          alt="ciclista mirando la sierra con cicicleta a su lado"
+          alt="Fietser kijkt uit over de Sierra Nevada met de fiets naast zich"
         />
       </div>
 
@@ -346,16 +356,16 @@ type ReviewsProps = {
             {i18n.PRODUCTS.LEISURE_CYCLING.CYCLE_RONDA_CORDOBA.AVAILABILITY}
           </h2>
           <p>
-            This tour has no fixed departure dates. Contact us with your
-            preferred travel dates, and we'll be happy to arrange a tour that
-            fits your schedule.
+            Deze tour heeft geen vaste vertrekdata. Neem contact met ons op met
+            je gewenste reisdata; we organiseren graag een tour die bij je
+            planning past.
           </p>
           <div class="gap-4 mt-6">
             <ul class="text-lg">
               <div class="grid lg:grid-cols-2 gap-2 mt-4">
                 <div class="flex gap-2">
                   <Icon icon="spring-logo" size="1.6rem" color="#ff5e00" />
-                  <p>Spring</p>
+                  <p>Lente</p>
                 </div>
               </div>
             </ul>
@@ -368,7 +378,7 @@ type ReviewsProps = {
       <div>
         <h2
           class="max-w-2xl mb-4 font-bold text-2xl md:text-4xl xl:text-5xl bg-[#3c5546] inline-block text-white px-6 py-2 rounded-lg">
-          Bicycle
+          Fiets
         </h2>
         <p>🔶 e-MTB HARDTAIL T -Tronik X 9.1 800Wh</p>
       </div>
@@ -380,7 +390,7 @@ type ReviewsProps = {
     </div>
 
     <AccordionProducts
-      title="Travel<br />Information"
+      title="Reis<br />informatie"
       cycleSardiniaEs={cycleSardiniaNl}
     />
 
@@ -389,81 +399,87 @@ type ReviewsProps = {
       <div class="text-center bg-[#3c5546] rounded-xl p-4">
         <h2
           class="max-w-2xl font-bold text-2xl md:text-2xl text-white px-6 py-2 rounded-lg">
-          Weather Conditions in Granada (Lower Altitudes)
+          Weersomstandigheden in Granada (lagere hoogtes)
         </h2>
         <p class="mb-4 px-6 py-2 text-white font-bold">
-          Conditions are generally very pleasant, with noticeable temperature
-          differences between day and night.
+          De omstandigheden zijn over het algemeen zeer aangenaam, met merkbare
+          temperatuurverschillen tussen dag en nacht.
         </p>
-        <p class="px-6 py-2 text-white">🔶 Daytime temperatures: 20°C–26°C</p>
+        <p class="px-6 py-2 text-white">🔶 Temperaturen overdag: 20°C–26°C</p>
+        <p class="px-6 py-2 text-white">🔶 Temperaturen 's nachts: 10°C–13°C</p>
         <p class="px-6 py-2 text-white">
-          🔶 Night-time temperatures: 10°C–13°C
+          🔶 Klimaat: mild en overwegend zonnig
         </p>
-        <p class="px-6 py-2 text-white">🔶 Climate: Mild and mostly sunny</p>
         <p class="px-6 py-2 text-white">
-          🔶 Rainfall: Small chance of occasional showers (approximately 5–6
-          rainy days per month)
+          🔶 Neerslag: kleine kans op een enkele bui (ongeveer 5–6 regendagen
+          per maand)
         </p>
       </div>
 
       <div class="text-center bg-[#3c5546] rounded-xl p-4">
         <h2
           class="max-w-2xl font-bold text-2xl md:text-2xl text-white px-6 py-2 rounded-lg">
-          Weather Conditions in Gorafe / Semi-Arid Areas
+          Weersomstandigheden in Gorafe / semi-aride gebieden
         </h2>
         <p class="mb-4 px-6 py-2 text-white font-bold">
-          The main factors here are heat and strong sun exposure.
+          De belangrijkste factoren zijn hier warmte en sterke blootstelling aan
+          de zon.
         </p>
         <p class="px-6 py-2 text-white">
-          🔶 Temperatures are similar to or slightly higher than in Granada.
+          🔶 De temperaturen zijn vergelijkbaar met of iets hoger dan in
+          Granada.
         </p>
         <p class="px-6 py-2 text-white">
-          🔶 The sun makes it feel warmer than the actual temperature.
+          🔶 Door de zon voelt het warmer aan dan de werkelijke temperatuur.
         </p>
         <p class="px-6 py-2 text-white">
-          🔶 Dry climate with very little shade.
+          🔶 Droog klimaat met zeer weinig schaduw.
         </p>
       </div>
 
       <div class="text-center bg-[#3c5546] rounded-xl p-4">
         <h2
           class="max-w-2xl font-bold text-2xl md:text-2xl text-white px-6 py-2 rounded-lg">
-          Weather Conditions in the Sierra Nevada (1,800–2,000 m)
+          Weersomstandigheden in de Sierra Nevada (1.800–2.000 m)
         </h2>
         <p class="mb-4 px-6 py-2 text-white font-bold">
-          At higher elevations, temperatures are considerably lower—often up to
-          10°C cooler than in Granada.
+          Op grotere hoogte zijn de temperaturen aanzienlijk lager — vaak tot
+          10°C koeler dan in Granada.
         </p>
-        <p class="mb-4 px-6 py-2 text-white">Typical conditions include:</p>
-        <p class="px-6 py-2 text-white">🔶 Cool mornings</p>
-        <p class="px-6 py-2 text-white">🔶 Mild temperatures around midday</p>
-        <p class="px-6 py-2 text-white">🔶 Cold descents</p>
+        <p class="mb-4 px-6 py-2 text-white">Typische omstandigheden:</p>
+        <p class="px-6 py-2 text-white">🔶 Koele ochtenden</p>
         <p class="px-6 py-2 text-white">
-          🔶 Daytime temperatures: approximately 10°C–20°C
+          🔶 Gematigde temperaturen rond het middaguur
         </p>
-        <p class="px-6 py-2 text-white">🔶 Feels like: Cooler due to wind</p>
+        <p class="px-6 py-2 text-white">🔶 Koude afdalingen</p>
         <p class="px-6 py-2 text-white">
-          🔶 Weather: Rapid weather changes are possible
+          🔶 Temperaturen overdag: ongeveer 10°C–20°C
+        </p>
+        <p class="px-6 py-2 text-white">
+          🔶 Gevoelstemperatuur: koeler door de wind
+        </p>
+        <p class="px-6 py-2 text-white">
+          🔶 Weer: snelle weersveranderingen zijn mogelijk
         </p>
       </div>
       <div class="text-center bg-[#3c5546] rounded-xl p-4 lg:col-start-2">
         <h2
           class="max-w-2xl font-bold text-2xl md:text-2xl text-white px-6 py-2 rounded-lg">
-          Important Considerations
+          Belangrijke aandachtspunten
         </h2>
         <p class="mb-4 px-6 py-2 text-white font-bold">
-          During the tour, riders may experience:
+          Tijdens de tour kunnen fietsers te maken krijgen met:
         </p>
 
         <p class="px-6 py-2 text-white">
-          🔶 Large temperature variations (up to 15°C in a single day)
+          🔶 Grote temperatuurschommelingen (tot 15°C op één dag)
         </p>
         <p class="px-6 py-2 text-white">
-          🔶 Rapid weather changes in the mountains
+          🔶 Snelle weersveranderingen in de bergen
         </p>
-        <p class="px-6 py-2 text-white">🔶 Wind in exposed areas</p>
+        <p class="px-6 py-2 text-white">🔶 Wind op onbeschutte plekken</p>
         <p class="px-6 py-2 text-white">
-          🔶 Strong UV radiation, even when temperatures are relatively low
+          🔶 Sterke uv-straling, zelfs wanneer de temperatuur relatief laag is
         </p>
       </div>
     </div>
@@ -472,74 +488,77 @@ type ReviewsProps = {
       <div>
         <h2
           class="mb-4 font-bold text-2xl md:text-4xl xl:text-5xl bg-[#3c5546] inline-block text-white px-6 py-4 rounded-lg">
-          What to Pack for Your Cycling Holidays
+          Wat neem je mee op je fietsvakantie?
         </h2>
         <p class="mb-2">
-          A well-packed bag makes a smoother ride! Here’s what we recommend for
-          your cycle tour through Granada.
+          Met een goed ingepakte tas verloopt je fietstocht een stuk prettiger.
+          Dit raden we aan voor je fietstour door Granada.
         </p>
         <p class="font-bold mb-2">Checklist</p>
-        <p class="font-bold">Cycling clothing:</p>
+        <p class="font-bold">Fietskleding:</p>
         <p>
-          🔶 Cycling (padded) shorts and jerseys – 2–3 sets (long and short
-          sleeves)
+          🔶 Fietsbroek (met zeem) en fietsshirts – 2–3 sets (lange en korte
+          mouwen)
         </p>
-        <p>🔶 Lightweight windproof and/or waterproof jacket (rain jacket)</p>
-        <p>🔶 Sweater or fleece (extra layers for cooler conditions)</p>
+        <p>🔶 Licht wind- en/of waterdicht jack (regenjas)</p>
+        <p>🔶 Trui of fleece (extra laag voor koelere omstandigheden)</p>
         <p>
-          🔶 Padded cycling gloves (spring and autumn mornings can be chilly)
+          🔶 Fietshandschoenen met padding (ochtenden in de lente en herfst
+          kunnen fris zijn)
         </p>
-        <p>🔶 Arm and leg warmers (optional but very useful)</p>
-        <p>🔶 Sports socks (quick-dry) shirts</p>
-        <p>🔶 Lightweight thermal base layer</p>
-        <p>🔶 Short-finger cycling gloves</p>
-        <p>🔶 Full-finger cycling gloves (recommended for mountain stages)</p>
-        <p class="mb-2">🔶 Cycling shoes</p>
-
-        <p class="font-bold">Sun & weather protection:</p>
-        <p>🔶 Sunhat</p>
-        <p>🔶 Neck warmer (buff)</p>
-        <p>🔶 Sunglasses</p>
-        <p>🔶 Cycling cap or buff (sun protection under the helmet)</p>
-        <p>🔶 Sunscreen (high SPF)</p>
-        <p class="mb-2">🔶 Lip balm with SPF (recommended)</p>
-
-        <p class="font-bold">Equipment & accessories:</p>
-        <p>🔶 Water bottle (provided by us))</p>
-        <p>🔶 Bike helmet</p>
-        <p>🔶 Gel seat cover for added comfort (optional)</p>
-        <p>🔶 Small rucksack</p>
-        <p class="mb-2">🔶 GPS device with the provided GPX routes</p>
-
-        <p class="font-bold">Bike Essentials</p>
-        <p>🔶 Spare inner tube</p>
-        <p>🔶 Mini pump or CO₂ inflator</p>
-        <p>🔶 Multi-tool</p>
-        <p>🔶 Chain quick link</p>
-        <p class="mb-2">🔶 Tubeless repair kit</p>
-
-        <p class="font-bold">Clothing for After the Ride</p>
-        <p>🔶 Comfortable casual clothing</p>
-        <p>🔶 Warm fleece or jumper for the evenings</p>
-        <p>🔶 Comfortable walking shoes</p>
-        <p class="mb-2">🔶 Swimwear</p>
-
-        <p class="font-bold">Documents & health:</p>
-        <p>🔶 Passport</p>
-        <p>🔶 Travel insurance</p>
-        <p>🔶 Personal first aid kit</p>
-        <p>🔶 Insect repellent</p>
-        <p class="mb-2">🔶 Personal medication (if applicable)</p>
+        <p>🔶 Arm- en beenstukken (optioneel, maar erg handig)</p>
+        <p>🔶 Sneldrogende sportsokken</p>
+        <p>🔶 Licht thermisch ondershirt</p>
+        <p>🔶 Fietshandschoenen met korte vingers</p>
         <p>
-          If you have any questions about the recommended equipment or are
-          unsure what to bring, please do not hesitate to contact us.
+          🔶 Fietshandschoenen met lange vingers (aanbevolen voor bergetappes)
+        </p>
+        <p class="mb-2">🔶 Fietsschoenen</p>
+
+        <p class="font-bold">Bescherming tegen zon en weer:</p>
+        <p>🔶 Zonnehoed</p>
+        <p>🔶 Nekwarmer (buff)</p>
+        <p>🔶 Zonnebril</p>
+        <p>🔶 Fietspet of buff (zonbescherming onder de helm)</p>
+        <p>🔶 Zonnebrandcrème (hoge SPF)</p>
+        <p class="mb-2">🔶 Lippenbalsem met SPF (aanbevolen)</p>
+
+        <p class="font-bold">Uitrusting en accessoires:</p>
+        <p>🔶 Bidon (door ons verstrekt)</p>
+        <p>🔶 Fietshelm</p>
+        <p>🔶 Gelzadelhoes voor extra comfort (optioneel)</p>
+        <p>🔶 Kleine rugzak</p>
+        <p class="mb-2">🔶 Gps-apparaat met de aangeleverde GPX-routes</p>
+
+        <p class="font-bold">Essentiële fietsbenodigdheden</p>
+        <p>🔶 Reservebinnenband</p>
+        <p>🔶 Minipomp of CO₂-patroon</p>
+        <p>🔶 Multitool</p>
+        <p>🔶 Snelschakel voor de ketting</p>
+        <p class="mb-2">🔶 Tubeless-reparatieset</p>
+
+        <p class="font-bold">Kleding voor na de rit</p>
+        <p>🔶 Comfortabele vrijetijdskleding</p>
+        <p>🔶 Warme fleece of trui voor 's avonds</p>
+        <p>🔶 Comfortabele wandelschoenen</p>
+        <p class="mb-2">🔶 Badkleding</p>
+
+        <p class="font-bold">Documenten en gezondheid:</p>
+        <p>🔶 Paspoort</p>
+        <p>🔶 Reisverzekering</p>
+        <p>🔶 Persoonlijke EHBO-kit</p>
+        <p>🔶 Insectenwerend middel</p>
+        <p class="mb-2">🔶 Persoonlijke medicatie (indien nodig)</p>
+        <p>
+          Heb je vragen over de aanbevolen uitrusting of twijfel je wat je mee
+          moet nemen? Neem dan gerust contact met ons op.
         </p>
       </div>
       <div>
         <img
           class="rounded-2xl"
           src="/cycle-tour/montainbike/mtb-sierra-nevada-tour-8-days/mt-srnt-map.webp"
-          alt="Kaart van Sardinië-tour"
+          alt="Kaart van de Sierra Nevada-tour"
         />
       </div>
     </div>
@@ -548,50 +567,49 @@ type ReviewsProps = {
       <div>
         <p
           class="max-w-2xl mb-4 font-bold text-2xl md:text-4xl xl:text-5xl bg-[#3c5546] inline-block text-white px-6 py-2 rounded-lg">
-          Requirements
+          Vereisten
         </p>
-        <p>🔶 Valid travel insurance</p>
+        <p>🔶 Geldige reisverzekering</p>
         <p>
-          🔶 Signed release of liability form, to be completed before the start
-          of the tour
+          🔶 Ondertekend aansprakelijkheidsformulier, in te vullen vóór de start
+          van de tour
         </p>
-        <p>🔶 Be in good physical condition</p>
+        <p>🔶 Een goede lichamelijke conditie hebben</p>
         <p>
-          🔶 Have previous mountain biking (MTB) experience and be confident
-          riding on forest tracks, gravel roads, and mountain trails.
+          🔶 Eerdere mountainbike-ervaring (MTB) hebben en vertrouwd zijn met
+          rijden op bospaden, gravelwegen en bergpaden.
         </p>
 
-        <p>🔶 Helmet, mandatory during all rides</p>
+        <p>🔶 Een helm dragen; deze is verplicht tijdens alle ritten</p>
         <p>
-          🔶 Personal responsibility for health, fitness and any existing
-          medical conditions
+          🔶 Zelf verantwoordelijk zijn voor je gezondheid, conditie en
+          eventuele medische aandoeningen
         </p>
-        <p>🔶 Emergency contact information, to be provided before departure</p>
-        <p>🔶 Be able to follow GPX routes using a GPS device or smartphone.</p>
+        <p>🔶 Contactgegevens voor noodgevallen aanleveren vóór vertrek</p>
+        <p>🔶 GPX-routes kunnen volgen met een gps-apparaat of smartphone.</p>
         <p>
-          🔶 Be capable of carrying out basic bike repairs, such as fixing a
-          puncture.
+          🔶 Eenvoudige fietsreparaties kunnen uitvoeren, zoals een lekke band
+          plakken.
         </p>
         <p>
-          🔶 Bring appropriate cycling clothing suitable for changing mountain
-          weather conditions.
+          🔶 Geschikte fietskleding meenemen voor wisselende weersomstandigheden
+          in de bergen.
         </p>
       </div>
 
       <div>
         <h2
           class="max-w-2xl mb-4 font-bold text-2xl md:text-4xl xl:text-5xl bg-[#3c5546] inline-block text-white px-6 py-2 rounded-lg">
-          Terms & Conditions
+          Algemene voorwaarden
         </h2>
         <p class="max-w-2xl mb-6 md:px-0">
-          Please review our <a
+          Lees onze <a
             href="terms-and-conditions"
             class="text-[#ff5e00] hover:text-[#ff863f] visited:text-purple-600 font-bold"
             target="_blank"
-            rel="noopener noreferrer">Terms & Conditions</a
-          > before completing your booking. By confirming your reservation, you agree
-          to all policies regarding payments, cancellations, and participation requirements.
-          See MTB Tour Granada.
+            rel="noopener noreferrer">Algemene voorwaarden</a
+          > voordat je je boeking afrondt. Door je reservering te bevestigen, ga je
+          akkoord met alle regels over betalingen, annuleringen en deelnamevereisten.
         </p>
       </div>
     </div>
@@ -606,22 +624,23 @@ type ReviewsProps = {
     <div class="mt-8 mb-8">
       <h2
         class="max-w-2xl mb-4 font-bold text-2xl md:text-4xl xl:text-5xl bg-[#3c5546] inline-block text-white px-6 py-2 rounded-lg">
-        Welcome To Granada
+        Welkom in Granada
       </h2>
 
       <p class="mb-2">
-        Discover the Sierra Nevada, the highest mountain on the Iberian
-        Peninsula, on an unforgettable mountain bike adventure through one of
-        the country's most diverse natural landscapes. This circular route takes
-        you around the entire mountain range, revealing its many contrasts—from
-        the lush southern slopes of the Alpujarras and the remote northern face
-        of the Sierra Nevada to the spectacular badlands of the Gorafe Desert.
-        Beyond its breathtaking scenery, Granada is also renowned for its rich
-        history and culture. During your free day, you can explore the vibrant
-        city of Granada and visit the world-famous Alhambra, a masterpiece of
-        Moorish architecture and one of Spain's most iconic landmarks. Together,
-        the spectacular landscapes and unique cultural heritage make this tour a
-        truly unforgettable experience.
+        Ontdek de Sierra Nevada, de hoogste bergketen van het Iberisch
+        schiereiland, tijdens een onvergetelijk mountainbike-avontuur door een
+        van de meest gevarieerde natuurgebieden van Spanje. Deze rondrit voert
+        je door het hele gebergte en laat de vele contrasten zien: van de
+        weelderige zuidhellingen van de Alpujarras en de afgelegen noordzijde
+        van de Sierra Nevada tot het spectaculaire geërodeerde landschap van de
+        Gorafe-woestijn. Naast het adembenemende landschap staat Granada bekend
+        om zijn rijke geschiedenis en cultuur. Op je vrije dag kun je de
+        levendige stad Granada verkennen en het wereldberoemde Alhambra
+        bezoeken, een meesterwerk van Moorse architectuur en een van de
+        bekendste bezienswaardigheden van Spanje. De indrukwekkende landschappen
+        en het unieke culturele erfgoed maken deze tour samen tot een
+        onvergetelijke ervaring.
       </p>
     </div>
 
@@ -637,100 +656,104 @@ type ReviewsProps = {
         </h2>
 
         <p class="text-lg text-gray-900 mb-1">
-          <span class="text-xl strong">🔶</span>Guided mountain bike tour with
-          GPS navigation and full logistical support.
+          <span class="text-xl strong">🔶</span>Begeleide mountainbiketour met
+          gps-navigatie en volledige logistieke ondersteuning.
         </p>
         <p class="text-lg text-gray-900 mb-1">
-          <span class="text-xl strong">🔶</span>Security assistant available to
-          support the group and coordinate in case of emergencies
+          <span class="text-xl strong">🔶</span>Er is een veiligheidsassistent
+          beschikbaar om de groep te ondersteunen en bij noodgevallen te
+          coördineren.
         </p>
         <p class="text-lg text-gray-900 mb-1">
-          <span class="text-xl strong">🔶</span>Safety checkpoints at designated
-          locations throughout the ride to monitor group progress and rider
-          wellbeing
+          <span class="text-xl strong">🔶</span>Veiligheidscontroles op
+          aangewezen punten tijdens de rit om de voortgang van de groep en het
+          welzijn van de deelnemers te volgen.
         </p>
         <p class="text-lg text-gray-900 mb-1">
-          <span class="text-xl strong">🔶</span>Regular rest stops and
-          refreshment breaks
+          <span class="text-xl strong">🔶</span>Regelmatige rust- en
+          verfrissingspauzes.
         </p>
         <p class="text-lg text-gray-900 mb-1">
-          <span class="text-xl strong">🔶</span>Bike setup and basic mechanical
-          support
+          <span class="text-xl strong">🔶</span>Fietsafstelling en eenvoudige
+          technische ondersteuning.
         </p>
         <p class="text-lg text-gray-900 mb-1">
-          <span class="text-xl strong">🔶</span>Weather monitoring and route
-          adjustments when necessary
+          <span class="text-xl strong">🔶</span>Weersvoorspellingen volgen en
+          routes indien nodig aanpassen.
         </p>
         <p class="text-lg text-gray-900 mb-1">
-          <span class="text-xl strong">🔶</span>High-quality logistics
+          <span class="text-xl strong">🔶</span>Logistiek van hoge kwaliteit.
         </p>
         <p class="text-lg text-gray-900 mb-1">
-          <span class="text-xl strong">🔶</span>Local expertise
+          <span class="text-xl strong">🔶</span>Lokale expertise.
         </p>
         <p class="text-lg text-gray-900 mb-1">
-          <span class="text-xl strong">🔶</span> Private group experience, ideal for
-          MTB clubs and groups of friends (6–24 riders).
+          <span class="text-xl strong">🔶</span>Een privé-ervaring voor groepen,
+          ideaal voor MTB-clubs en vriendengroepen (6–24 fietsers).
         </p>
         <p class="text-lg text-gray-900 mb-1">
-          <span class="text-xl strong">🔶</span>Accommodation in carefully
-          selected hotels, with private standard single or double rooms where
-          available. For larger groups, shared twin rooms may be used.
+          <span class="text-xl strong">🔶</span>Verblijf in zorgvuldig
+          geselecteerde hotels, met waar beschikbaar privékamers voor één of
+          twee personen. Bij grotere groepen kunnen gedeelde tweepersoonskamers
+          worden gebruikt.
         </p>
         <p class="text-lg text-gray-900 mb-1">
-          <span class="text-xl strong">🔶</span>Ride at your own pace, with
-          support vehicles and refreshment stops at strategic locations along
-          the route.
+          <span class="text-xl strong">🔶</span>Fiets in je eigen tempo, met
+          ondersteuningsvoertuigen en verfrissingsstops op strategische punten
+          langs de route.
         </p>
         <p class="text-lg text-gray-900 mb-1">
-          <span class="text-xl strong">🔶</span>Average daily distance: Around
-          70 km with 1,000–1,500 metres of climbing.
+          <span class="text-xl strong">🔶</span>Gemiddelde dagafstand: ongeveer
+          70 km met 1.000–1.500 hoogtemeters.
         </p>
         <p class="text-lg text-gray-900 mb-1">
-          <span class="text-xl strong">🔶</span>Terrain: The routes are
-          predominantly off-road, with a high proportion of gravel tracks,
-          complemented by flowing singletracks and occasional technical
-          sections.
+          <span class="text-xl strong">🔶</span>Terrein: de routes lopen
+          grotendeels onverhard, met veel gravelpaden, aangevuld met vloeiende
+          singletracks en af en toe technische stukken.
         </p>
         <p class="text-lg text-gray-900 mb-1">
-          <span class="text-xl strong">🔶</span>A journey through diverse
-          landscapes, including the Sierra Nevada, the Alpujarras, the northern
-          slopes of the mountains, and the unique Gorafe Desert.
+          <span class="text-xl strong">🔶</span>Een tocht door uiteenlopende
+          landschappen, waaronder de Sierra Nevada, de Alpujarras, de
+          noordhellingen van het gebergte en de bijzondere Gorafe-woestijn.
         </p>
         <p class="text-lg text-gray-900 mb-1">
-          <span class="text-xl strong">🔶</span>Free day in Granada, with the
-          opportunity to explore the historic city and visit the Alhambra.
+          <span class="text-xl strong">🔶</span>Een vrije dag in Granada, met de
+          mogelijkheid om de historische stad te verkennen en het Alhambra te
+          bezoeken.
         </p>
 
         <Accordion class="mt-6 mb-10" variant="splitted">
-          <AccordionItem title="Day 1 – Arrival in Níguelas">
+          <AccordionItem title="Dag 1 – Aankomst in Níguelas">
             <p class="">
-              Upon arrival at Málaga Airport, you will be transferred to
-              Níguelas, a charming mountain village nestled on the slopes of the
-              Sierra Nevada in the beautiful Lecrín Valley. Here, you'll stay in
-              a peaceful rural hotel, the perfect base for the adventure ahead.
+              Na aankomst op de luchthaven van Málaga word je naar Níguelas
+              gebracht, een charmant bergdorp op de hellingen van de Sierra
+              Nevada, in de prachtige Lecrín-vallei. Je verblijft hier in een
+              rustig landelijk hotel, de perfecte uitvalsbasis voor het avontuur
+              dat voor je ligt.
             </p>
             <p class="">
-              We recommend arriving in the morning, allowing plenty of time to
-              settle in and enjoy a relaxed start to your holiday. To celebrate
-              the beginning of the tour, we've arranged a special welcome
-              surprise: a delicious, freshly prepared paella lunch. It's the
-              perfect way to get to know your fellow riders and start your
-              mountain biking adventure in true Andalusian style.
+              We raden aan om 's ochtends aan te komen, zodat je alle tijd hebt
+              om je te installeren en ontspannen aan je vakantie te beginnen. Om
+              de start van de tour te vieren, staat er een speciale
+              welkomstverrassing klaar: een heerlijke, vers bereide paella als
+              lunch. Een perfecte gelegenheid om kennis te maken met je
+              medefietsers en je mountainbike-avontuur in echte Andalusische
+              stijl te beginnen.
             </p>
           </AccordionItem>
 
-          <AccordionItem title="Day 2 – Níguelas to Guadix">
+          <AccordionItem title="Dag 2 – Van Níguelas naar Guadix">
             <div class="grid md:grid-cols-2 gap-8 md:gap-32">
               <div class="">
                 <p class="">
-                  After breakfast, we transfer by bus to the starting point of
-                  today's ride. From here, we begin our mountain bike adventure
-                  along the northern slopes of the Sierra Nevada Natural Park,
-                  cycling through spectacular mountain scenery towards the
-                  historic region of Guadix, renowned for its unique cave
-                  dwellings. For the next two nights, we'll stay in a
-                  traditional cave hotel, offering a truly authentic and
-                  unforgettable Andalusian experience.
+                  Na het ontbijt brengt een bus ons naar het startpunt van de
+                  rit van vandaag. Vanaf hier begint ons mountainbike-avontuur
+                  langs de noordhellingen van het natuurpark Sierra Nevada. We
+                  fietsen door een spectaculair berglandschap naar de
+                  historische regio Guadix, bekend om haar bijzondere
+                  grotwoningen. De komende twee nachten verblijven we in een
+                  traditioneel grothotel, voor een authentieke en onvergetelijke
+                  Andalusische ervaring.
                 </p>
               </div>
 
@@ -741,7 +764,7 @@ type ReviewsProps = {
                   </div>
                   <div class="grid col-span-6">
                     <h2 class="text-pretty text-neutral-900 text-xl font-bold">
-                      Total Distance
+                      Totale afstand
                     </h2>
                     <p class="text-pretty text-gray-500 text-md">70 km</p>
                   </div>
@@ -753,7 +776,7 @@ type ReviewsProps = {
                   </div>
                   <div class="grid col-span-6">
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
-                      Total Ascent
+                      Totale stijging
                     </h2>
                     <p class="text-pretty text-gray-500 text-md">1600 m</p>
                   </div>
@@ -765,7 +788,7 @@ type ReviewsProps = {
                   </div>
                   <div class="grid col-span-6">
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
-                      Total Descent
+                      Totale daling
                     </h2>
                     <p class="text-pretty text-gray-500 text-md">2000 m</p>
                   </div>
@@ -777,9 +800,9 @@ type ReviewsProps = {
                   </div>
                   <div class="grid col-span-6">
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
-                      Duration Trial
+                      Ritduur
                     </h2>
-                    <p class="text-pretty text-gray-500 text-md">6 hours</p>
+                    <p class="text-pretty text-gray-500 text-md">6 uur</p>
                   </div>
                 </div>
 
@@ -789,7 +812,7 @@ type ReviewsProps = {
                   </div>
                   <div class="grid col-span-6">
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
-                      Difficulty
+                      Moeilijkheidsgraad
                     </h2>
                     <p class="text-pretty text-gray-500 text-md">S0 - S1</p>
                   </div>
@@ -798,19 +821,19 @@ type ReviewsProps = {
             </div>
           </AccordionItem>
 
-          <AccordionItem title="Day 3 – Gorafe Desert">
+          <AccordionItem title="Dag 3 – Gorafe-woestijn">
             <div class="grid md:grid-cols-2 gap-8 md:gap-32">
               <div class="">
                 <p class="">
-                  Today's stage takes us directly from the hotel into one of the
-                  most extraordinary landscapes in southern Spain. We ride
-                  through the spectacular Gorafe Desert, exploring the heart of
-                  the UNESCO Granada Geopark, a unique landscape shaped by
-                  millions of years of erosion. The route winds through dramatic
-                  badlands, colourful canyons, dry riverbeds, and striking rock
-                  formations. After completing the loop through the desert, we
-                  return to our cave hotel by transport in Guadix for a second
-                  overnight stay.
+                  De etappe van vandaag voert ons rechtstreeks van het hotel
+                  naar een van de meest bijzondere landschappen van Zuid-Spanje.
+                  We fietsen door de spectaculaire Gorafe-woestijn, in het hart
+                  van het UNESCO Geopark Granada: een uniek landschap dat in
+                  miljoenen jaren door erosie is gevormd. De route slingert door
+                  ruige badlands, kleurrijke kloven, droge rivierbeddingen en
+                  opvallende rotsformaties. Na de rondrit door de woestijn
+                  brengt vervoer ons terug naar ons grothotel in Guadix, waar we
+                  voor de tweede nacht verblijven.
                 </p>
               </div>
 
@@ -821,7 +844,7 @@ type ReviewsProps = {
                   </div>
                   <div class="grid col-span-6">
                     <h2 class="text-pretty text-neutral-900 text-xl font-bold">
-                      Total Distance
+                      Totale afstand
                     </h2>
                     <p class="text-pretty text-gray-500 text-md">80 km</p>
                   </div>
@@ -833,7 +856,7 @@ type ReviewsProps = {
                   </div>
                   <div class="grid col-span-6">
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
-                      Total Ascent
+                      Totale stijging
                     </h2>
                     <p class="text-pretty text-gray-500 text-md">1300 m</p>
                   </div>
@@ -845,7 +868,7 @@ type ReviewsProps = {
                   </div>
                   <div class="grid col-span-6">
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
-                      Total Descent
+                      Totale daling
                     </h2>
                     <p class="text-pretty text-gray-500 text-md">1300 m</p>
                   </div>
@@ -857,9 +880,9 @@ type ReviewsProps = {
                   </div>
                   <div class="grid col-span-6">
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
-                      Duration Trial
+                      Ritduur
                     </h2>
-                    <p class="text-pretty text-gray-500 text-md">6 hours</p>
+                    <p class="text-pretty text-gray-500 text-md">6 uur</p>
                   </div>
                 </div>
 
@@ -869,7 +892,7 @@ type ReviewsProps = {
                   </div>
                   <div class="grid col-span-6">
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
-                      Difficulty
+                      Moeilijkheidsgraad
                     </h2>
                     <p class="text-pretty text-gray-500 text-md">S0</p>
                   </div>
@@ -877,22 +900,22 @@ type ReviewsProps = {
               </div>
             </div>
           </AccordionItem>
-          <AccordionItem title="Day 4 – Sierra Nevada North">
+          <AccordionItem title="Dag 4 – Noordelijke Sierra Nevada">
             <div class="grid md:grid-cols-2 gap-8 md:gap-32">
               <div class="">
                 <p class="">
-                  After breakfast, we continue our journey along the northern
-                  slopes of the Sierra Nevada. Today's route takes us through
-                  the forests of the Sierra Nevada Natural Park, following
-                  scenic mountain bike trails surrounded by pine forests, open
-                  mountain landscapes, and breathtaking views of the highest
-                  peaks on the Iberian Peninsula. Our stage finishes in the
-                  picturesque mountain village of La Calahorra, dominated by its
-                  impressive Renaissance castle. Built in the early 16th
-                  century, La Calahorra Castle was one of the first Renaissance
-                  castles in Spain and remains one of the region's most iconic
-                  landmarks, standing proudly against the backdrop of the Sierra
-                  Nevada.
+                  Na het ontbijt vervolgen we onze reis langs de noordelijke
+                  hellingen van de Sierra Nevada. De route van vandaag voert
+                  door de bossen van het natuurpark Sierra Nevada, over
+                  schilderachtige mountainbikepaden tussen dennenbossen en open
+                  berglandschappen, met adembenemend uitzicht op de hoogste
+                  toppen van het Iberisch schiereiland. De etappe eindigt in het
+                  pittoreske bergdorp La Calahorra, gedomineerd door het
+                  indrukwekkende renaissancekasteel. Het kasteel van La
+                  Calahorra werd begin 16e eeuw gebouwd en was een van de eerste
+                  renaissancekastelen van Spanje. Tegen de achtergrond van de
+                  Sierra Nevada is het nog altijd een van de meest iconische
+                  bezienswaardigheden van de regio.
                 </p>
               </div>
 
@@ -903,7 +926,7 @@ type ReviewsProps = {
                   </div>
                   <div class="grid col-span-6">
                     <h2 class="text-pretty text-neutral-900 text-xl font-bold">
-                      Total Distance
+                      Totale afstand
                     </h2>
                     <p class="text-pretty text-gray-500 text-md">70 km</p>
                   </div>
@@ -915,7 +938,7 @@ type ReviewsProps = {
                   </div>
                   <div class="grid col-span-6">
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
-                      Total Ascent
+                      Totale stijging
                     </h2>
                     <p class="text-pretty text-gray-500 text-md">1500 m</p>
                   </div>
@@ -927,7 +950,7 @@ type ReviewsProps = {
                   </div>
                   <div class="grid col-span-6">
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
-                      Total Descent
+                      Totale daling
                     </h2>
                     <p class="text-pretty text-gray-500 text-md">1200 m</p>
                   </div>
@@ -939,9 +962,9 @@ type ReviewsProps = {
                   </div>
                   <div class="grid col-span-6">
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
-                      Duration Trial
+                      Ritduur
                     </h2>
-                    <p class="text-pretty text-gray-500 text-md">6 hours</p>
+                    <p class="text-pretty text-gray-500 text-md">6 uur</p>
                   </div>
                 </div>
 
@@ -951,7 +974,7 @@ type ReviewsProps = {
                   </div>
                   <div class="grid col-span-6">
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
-                      Difficulty
+                      Moeilijkheidsgraad
                     </h2>
                     <p class="text-pretty text-gray-500 text-md">S0 - S1</p>
                   </div>
@@ -959,24 +982,23 @@ type ReviewsProps = {
               </div>
             </div>
           </AccordionItem>
-          <AccordionItem title="Day 5 – The Alpujarras I">
+          <AccordionItem title="Dag 5 – De Alpujarras I">
             <div class="grid gap-8 md:gap-32">
               <div class="">
                 <p class="">
-                  Today's adventure begins with a transfer to Puerto de la Ragua
-                  (2,000 m), a mountain pass marking the border between the
-                  provinces of Granada and Almería. From here, we descend onto
-                  the southern slopes of the Sierra Nevada, entering the
-                  beautiful region of La Alpujarra. Famous for its whitewashed
-                  Berber villages clinging to the mountainsides, La Alpujarra
-                  has a unique character shaped by its Moorish heritage. As we
-                  ride through this spectacular landscape, we'll pass
-                  traditional villages, terraced hillsides, and chestnut
-                  forests, with magnificent views across the surrounding
-                  mountains. Our destination is a charming, traditional
-                  Andalusian cortijo (country farmhouse), where we'll spend the
-                  night and experience the warm hospitality and rural atmosphere
-                  for which the region is renowned.
+                  Het avontuur van vandaag begint met een transfer naar Puerto
+                  de la Ragua (2.000 m), een bergpas op de grens van de
+                  provincies Granada en Almería. Vanaf hier dalen we af naar de
+                  zuidelijke hellingen van de Sierra Nevada en trekken we de
+                  prachtige regio La Alpujarra in. Deze streek staat bekend om
+                  de witgekalkte Berberdorpen tegen de berghellingen en heeft
+                  dankzij haar Moorse erfgoed een uniek karakter. Tijdens de rit
+                  door dit indrukwekkende landschap passeren we traditionele
+                  dorpen, terrasvormige hellingen en kastanjebossen, met
+                  schitterend uitzicht op de omliggende bergen. Onze bestemming
+                  is een charmante traditionele Andalusische cortijo (landhuis),
+                  waar we overnachten en de warme gastvrijheid en landelijke
+                  sfeer ervaren waar de regio om bekendstaat.
                 </p>
               </div>
 
@@ -987,7 +1009,7 @@ type ReviewsProps = {
                   </div>
                   <div class="grid col-span-6">
                     <h2 class="text-pretty text-neutral-900 text-xl font-bold">
-                      Total Distance
+                      Totale afstand
                     </h2>
                     <p class="text-pretty text-gray-500 text-md">68 km</p>
                   </div>
@@ -999,7 +1021,7 @@ type ReviewsProps = {
                   </div>
                   <div class="grid col-span-6">
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
-                      Total Ascent
+                      Totale stijging
                     </h2>
                     <p class="text-pretty text-gray-500 text-md">860 m</p>
                   </div>
@@ -1011,7 +1033,7 @@ type ReviewsProps = {
                   </div>
                   <div class="grid col-span-6">
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
-                      Total Descent
+                      Totale daling
                     </h2>
                     <p class="text-pretty text-gray-500 text-md">1700 m</p>
                   </div>
@@ -1023,9 +1045,9 @@ type ReviewsProps = {
                   </div>
                   <div class="grid col-span-6">
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
-                      Duration Trial
+                      Ritduur
                     </h2>
-                    <p class="text-pretty text-gray-500 text-md">5 hours</p>
+                    <p class="text-pretty text-gray-500 text-md">5 uur</p>
                   </div>
                 </div>
 
@@ -1035,7 +1057,7 @@ type ReviewsProps = {
                   </div>
                   <div class="grid col-span-6">
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
-                      Difficulty
+                      Moeilijkheidsgraad
                     </h2>
                     <p class="text-pretty text-gray-500 text-md">S0</p>
                   </div>
@@ -1044,30 +1066,30 @@ type ReviewsProps = {
             </div>
           </AccordionItem>
 
-          <AccordionItem title="Day 6 – The Alpujarras II">
+          <AccordionItem title="Dag 6 – De Alpujarras II">
             <div class="grid md:grid-cols-2 gap-8 md:gap-32">
               <div class="">
                 <p class="">
-                  Our final riding stage begins with a transfer from the hotel
-                  to Trevélez, the highest village in the Sierra Nevada,
-                  renowned throughout Spain for its traditionally cured Serrano
-                  ham. From here, we cycle to the breathtaking Poqueira Gorge,
-                  home to three of the region's most picturesque and authentic
-                  white villages: Capileira, Bubión, and Pampaneira. Our stop is
-                  the beautiful white village of Capileira, where you'll have
-                  time to wander through its narrow, winding streets, browse the
-                  local craft shops for souvenirs, and enjoy a coffee on one of
-                  the village's charming terraces. We then continue through La
-                  Taha, one of the most authentic areas of the Alpujarras, where
-                  a collection of tiny traditional white villages is connected
-                  by quiet mountain roads and scenic trails. This peaceful and
-                  unspoilt landscape offers a fitting finale to our journey
-                  around the Sierra Nevada. Our ride concludes at a panoramic
-                  viewpoint, where we'll celebrate the successful completion of
-                  all five stages with a well-deserved toast while taking in the
-                  breathtaking views. Afterwards, a transfer takes us back to
-                  our hotel in Níguelas, where our adventure around the Sierra
-                  Nevada comes full circle.
+                  Onze laatste fietsdag begint met een transfer van het hotel
+                  naar Trevélez, het hoogstgelegen dorp van de Sierra Nevada, in
+                  heel Spanje bekend om zijn traditioneel gerijpte Serranoham.
+                  Vanaf hier fietsen we naar de adembenemende Poqueira-kloof,
+                  waar drie van de mooiste en meest authentieke witte dorpen van
+                  de regio liggen: Capileira, Bubión en Pampaneira. We stoppen
+                  in het prachtige witte dorp Capileira. Je hebt tijd om door de
+                  smalle, kronkelende straatjes te slenteren, lokale
+                  ambachtswinkels te bezoeken en koffie te drinken op een van de
+                  gezellige terrassen. Daarna rijden we verder door La Taha, een
+                  van de meest authentieke gebieden van de Alpujarras. Hier zijn
+                  kleine traditionele witte dorpen verbonden door rustige
+                  bergwegen en schilderachtige paden. Dit vredige, ongerepte
+                  landschap vormt een passend slot van onze tocht rond de Sierra
+                  Nevada. We eindigen de rit bij een panoramisch uitzichtpunt,
+                  waar we met een welverdiend proostmoment vieren dat we alle
+                  vijf etappes hebben voltooid en genieten van het adembenemende
+                  uitzicht. Daarna brengt een transfer ons terug naar ons hotel
+                  in Níguelas, waar onze rondreis door de Sierra Nevada weer
+                  rond is.
                 </p>
               </div>
 
@@ -1078,7 +1100,7 @@ type ReviewsProps = {
                   </div>
                   <div class="grid col-span-6">
                     <h2 class="text-pretty text-neutral-900 text-xl font-bold">
-                      Total Distance
+                      Totale afstand
                     </h2>
                     <p class="text-pretty text-gray-500 text-md">36 km</p>
                   </div>
@@ -1090,7 +1112,7 @@ type ReviewsProps = {
                   </div>
                   <div class="grid col-span-6">
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
-                      Total Ascent
+                      Totale stijging
                     </h2>
                     <p class="text-pretty text-gray-500 text-md">950 m</p>
                   </div>
@@ -1102,7 +1124,7 @@ type ReviewsProps = {
                   </div>
                   <div class="grid col-span-6">
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
-                      Total Descent
+                      Totale daling
                     </h2>
                     <p class="text-pretty text-gray-500 text-md">1350 m</p>
                   </div>
@@ -1114,9 +1136,9 @@ type ReviewsProps = {
                   </div>
                   <div class="grid col-span-6">
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
-                      Duration Trial
+                      Ritduur
                     </h2>
-                    <p class="text-pretty text-gray-500 text-md">5 hours</p>
+                    <p class="text-pretty text-gray-500 text-md">5 uur</p>
                   </div>
                 </div>
 
@@ -1126,7 +1148,7 @@ type ReviewsProps = {
                   </div>
                   <div class="grid col-span-6">
                     <h2 class="text-pretty text-gray-900 text-xl font-bold">
-                      Difficulty
+                      Moeilijkheidsgraad
                     </h2>
                     <p class="text-pretty text-gray-500 text-md">S0</p>
                   </div>
@@ -1135,42 +1157,43 @@ type ReviewsProps = {
             </div>
           </AccordionItem>
 
-          <AccordionItem title="Day 7 – Free Day in Granada">
+          <AccordionItem title="Dag 7 – Vrije dag in Granada">
             <div class="grid md:grid-cols-2 gap-8 md:gap-32">
               <div class="">
                 <p class="">
-                  After several unforgettable days on the trails, today is yours
-                  to enjoy at a more relaxed pace. A private transfer will take
-                  you to the historic city of Granada, where you can spend the
-                  day exploring one of Spain's most fascinating cultural
-                  destinations. Stroll through the charming streets of the old
-                  town, discover lively squares, and soak up the unique
-                  atmosphere created by centuries of Moorish and Spanish
-                  history. You may choose to visit the magnificent Alhambra, the
-                  world-famous palace and fortress complex that overlooks the
-                  city (advance booking is essential). Granada is also renowned
-                  for its vibrant culinary scene. Enjoy authentic Andalusian
-                  cuisine in one of the city's traditional tapas bars, where
-                  complimentary tapas are often served with your drink, or relax
-                  on a sunny terrace in one of the picturesque neighbourhoods.
-                  If you wish, you can end the day with an authentic flamenco
-                  performance, particularly in the historic Sacromonte district,
-                  where this passionate art form has deep cultural roots. At the
-                  end of the day, your private transfer will take you back to
-                  the hotel in Níguelas for your final evening of the tour.
+                  Na een aantal onvergetelijke dagen op de paden kun je het
+                  vandaag rustig aan doen. Een privétransfer brengt je naar de
+                  historische stad Granada, waar je de dag kunt besteden aan het
+                  verkennen van een van de meest fascinerende culturele
+                  bestemmingen van Spanje. Wandel door de sfeervolle straatjes
+                  van de oude stad, ontdek levendige pleinen en geniet van de
+                  bijzondere sfeer die eeuwen Moorse en Spaanse geschiedenis
+                  hebben achtergelaten. Je kunt het indrukwekkende Alhambra
+                  bezoeken, het wereldberoemde paleis- en vestingcomplex dat
+                  boven de stad uittorent (vooraf reserveren is noodzakelijk).
+                  Granada staat ook bekend om zijn bruisende eetcultuur. Proef
+                  authentieke Andalusische gerechten in een traditionele
+                  tapasbar, waar vaak gratis tapas bij je drankje worden
+                  geserveerd, of ontspan op een zonnig terras in een van de
+                  pittoreske wijken. Je kunt de dag afsluiten met een
+                  authentieke flamencovoorstelling, bijvoorbeeld in de
+                  historische wijk Sacromonte, waar deze gepassioneerde
+                  kunstvorm diep geworteld is. Aan het einde van de dag brengt
+                  je privétransfer je terug naar het hotel in Níguelas voor de
+                  laatste avond van de tour.
                 </p>
               </div>
             </div>
           </AccordionItem>
 
-          <AccordionItem title="Day 8 – Departure">
+          <AccordionItem title="Dag 8 – Vertrek">
             <div class="grid gap-8 md:gap-32">
               <div class="">
                 <p class="">
-                  After breakfast, it's time to say farewell to Granada. A
-                  private transfer will take you to Málaga Airport for your
-                  onward journey, bringing an end to an unforgettable mountain
-                  biking adventure around the Sierra Nevada.
+                  Na het ontbijt is het tijd om afscheid te nemen van Granada.
+                  Een privétransfer brengt je naar de luchthaven van Málaga voor
+                  je terugreis. Daarmee komt een einde aan een onvergetelijk
+                  mountainbike-avontuur rond de Sierra Nevada.
                 </p>
               </div>
             </div>
@@ -1190,11 +1213,11 @@ type ReviewsProps = {
           if (show) {
             content.classList.remove("max-h-0", "opacity-0");
             content.classList.add("max-h-[2000px]", "opacity-100");
-            btn.textContent = "Less info ⬆";
+            btn.textContent = "Minder info ⬆";
           } else {
             content.classList.remove("max-h-[2000px]", "opacity-100");
             content.classList.add("max-h-0", "opacity-0");
-            btn.textContent = "More info ⬇";
+            btn.textContent = "Meer info ⬇";
           }
         });
       });

@@ -108,6 +108,7 @@ export const routes = {
 		'gallery-mtb-sierra-nevada-desert': 'gallery-mtb-sierra-nevada-desert',
 		'gallery-cycle-tour-sardinia': 'gallery-cycle-tour-sardinia',
 		'dmc': 'dmc',
+		'leisure-cycling-portugal': 'leisure-cycling-portugal',
 	},
 	en: {
 		blog: 'blog',
@@ -176,5 +177,6 @@ export const routes = {
 		'gallery-mtb-sierra-nevada-desert': 'gallery-mtb-sierra-nevada-desert',
 		'gallery-cycle-tour-sardinia': 'gallery-cycle-tour-sardinia',
 		 'dmc': 'dmc',
+		 'leisure-cycling-portugal': 'leisure-cycling-portugal'
 	},
 } 
