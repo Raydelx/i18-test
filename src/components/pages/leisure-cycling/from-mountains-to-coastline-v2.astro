@@ -1,0 +1,1333 @@
+---
+import Icon from "../../../components/Icon.astro";
+import Layout from "../../../layouts/Layout.astro";
+import Route from "@/components/ui/icons/route.astro";
+import BookButton from "@/components/book-button.astro";
+import cycleData from "@/data_files/cycleMediterraneanSea.json";
+import { getI18N } from "@/i18n/";
+import { getLangFromUrl, useTranslatedPath } from "@/i18n/utils";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+const lang = getLangFromUrl(Astro.url);
+const translatePath = useTranslatedPath(lang);
+const T = i18n.PRODUCTS.LEISURE_CYCLING.FROM_MOUNTAINS_TO_COASTLINE;
+
+const BASE = "/cycle-tour/leisure-cycling/from-montains-to-coastline";
+const HERO = `${BASE}/from-montains-to-coastline.webp`;
+
+const GALLERY = [5, 6, 7, 8, 9].map((n) => `${BASE}/fmtc-${n}.webp`);
+const COLLAGE = [4, 6, 8].map((n) => `${BASE}/fmtc-${n}.webp`);
+
+const facts = [
+  { icon: "price-logo", label: i18n.INFO_PRODUCTS.PRICE, value: T.PRICE },
+  {
+    icon: "price-logo",
+    label: i18n.INFO_PRODUCTS.PRE_BOOKING,
+    value: T.PRE_BOOKING,
+  },
+  {
+    icon: "group-logo",
+    label: i18n.INFO_PRODUCTS.MINIMUM_OF_PERSONS,
+    value: T.MINUMUM_OF_PERSONS,
+  },
+  { icon: "timer-logo", label: i18n.INFO_PRODUCTS.DURATION, value: T.DURATION },
+  {
+    icon: "guide-logo",
+    label: i18n.INFO_PRODUCTS.TOUR_TYPE,
+    value: T.TOUR_TYPE,
+  },
+  { icon: "autumn-logo", label: i18n.INFO_PRODUCTS.SEASON, value: T.SEASON },
+];
+
+const stats = [
+  {
+    icon: "distance-logo",
+    label: i18n.INFO_PRODUCTS.TOTAL_DISTANCE,
+    value: T.TOTAL_DISTANCE,
+  },
+  {
+    icon: "up-logo",
+    label: i18n.INFO_PRODUCTS.TOTAL_ASCENT,
+    value: T.TOTAL_ASCENT,
+  },
+  {
+    icon: "down-logo",
+    label: i18n.INFO_PRODUCTS.TOTAL_DESCENT,
+    value: T.TOTAL_DESCENT,
+  },
+];
+
+const included = [
+  T.INCLUDED.TEXT_1,
+  T.INCLUDED.TEXT_2,
+  T.INCLUDED.TEXT_3,
+  T.INCLUDED.TEXT_4,
+  T.INCLUDED.TEXT_5,
+  T.INCLUDED.TEXT_6,
+  T.INCLUDED.TEXT_7,
+  T.INCLUDED.TEXT_8,
+];
+
+const seasons = [
+  { icon: "spring-logo", text: T.AVAILABILITY_TEXT_1 },
+  { icon: "summer-logo", text: T.AVAILABILITY_TEXT_2 },
+  { icon: "autumn-logo", text: T.AVAILABILITY_TEXT_3 },
+  { icon: "winter-logo", text: T.AVAILABILITY_TEXT_4 },
+];
+
+const expect = [
+  "Fully supported guided tour with E-bike",
+  "Terrain: countryside roads with little traffic.",
+  "Riding pace: Relaxed and social. Everyone is encouraged to ride at their own comfortable pace, allowing each participant to fully enjoy the scenery. Re-grouping points are arranged throughout the tour to ensure the group stays connected while maintaining flexibility for individual riders.",
+];
+
+const pack = [
+  "Comfortable clothing and shoes",
+  "Sun Protection",
+  "Small bag with extra snacks",
+  "Lightweight windproof and/or waterproof jacket (rain jacket)",
+  "Sweater or fleece (extra layers for cooler conditions)",
+];
+
+const requirements = [
+  "Good physical health",
+  "Minimum age and height: 11 years and 1.50 m",
+  "Closed shoes, no open shoes!",
+  "You are capable of controlling bicycle speed and direction on paved roads",
+  "You can brake, and use gears with confidence",
+  "Signed release of liability form, to be completed before the start of the tour",
+  "Helmet, mandatory during all rides",
+  "Personal responsibility for health, fitness and any existing medical conditions",
+  "Emergency contact information, to be provided before departure",
+];
+
+const faq = cycleData.cycleSardiniaEs.map((item: Record<string, string>) => ({
+  name: item.name,
+  texts: ["text1", "text2", "text3", "text4"]
+    .map((k) => item[k])
+    .filter(Boolean),
+}));
+
+const nav = [
+  { id: "overview", label: "Overview" },
+  { id: "itinerary", label: T.WHAT_TO_EXPECT },
+  { id: "included", label: T.INCLUDED.TITLE },
+  { id: "gallery", label: "Gallery" },
+  { id: "practical", label: "Practical" },
+  { id: "info", label: "Travel Information" },
+];
+---
+
+<Layout title="">
+  <div class="fm2">
+    <!-- Hero -->
+    <header class="fm2-hero" style={`--hero:url('${HERO}')`}>
+      <div class="fm2-hero-bg" data-parallax></div>
+      <div class="fm2-hero-shade"></div>
+      <a class="fm2-compare" href={translatePath("from-mountains-to-coastline")}>
+        ← Original version
+      </a>
+      <div class="fm2-hero-inner">
+        <p class="fm2-chip fm2-rise" style="--d:100ms">
+          <Icon icon="destiny-logo" size="1.3rem" color="white" />
+          {T.LOCATION}
+        </p>
+        <h1 class="fm2-title fm2-rise" style="--d:250ms">{T.TITLE}</h1>
+        <p class="fm2-subtitle fm2-rise" style="--d:400ms">{T.SUBTITLE}</p>
+        <div class="fm2-hero-cta fm2-rise" style="--d:550ms">
+          <BookButton />
+        </div>
+      </div>
+      <svg class="fm2-wave" viewBox="0 0 1440 80" preserveAspectRatio="none">
+        <path
+          d="M0,40 C240,90 480,0 720,40 C960,80 1200,10 1440,40 L1440,80 L0,80 Z"
+          fill="#fff"></path>
+      </svg>
+    </header>
+
+    <!-- Sticky section nav -->
+    <nav class="fm2-nav" aria-label="Sections">
+      <div class="fm2-nav-inner">
+        {
+          nav.map((n) => (
+            <a href={`#${n.id}`} data-nav={n.id}>
+              {n.label}
+            </a>
+          ))
+        }
+      </div>
+    </nav>
+
+    <main class="fm2-wrap">
+      <!-- Overview -->
+      <section id="overview" class="fm2-section">
+        <div class="fm2-facts">
+          {
+            facts.map((f, i) => (
+              <div class="fm2-fact fm2-reveal" style={`--d:${i * 70}ms`}>
+                <span class="fm2-fact-icon">
+                  <Icon icon={f.icon as any} size="1.6rem" color="#ff5e00" />
+                </span>
+                <span class="fm2-fact-label">{f.label}</span>
+                <span class="fm2-fact-value">{f.value}</span>
+              </div>
+            ))
+          }
+        </div>
+
+        <div class="fm2-ribbon fm2-reveal">
+          {
+            stats.map((s) => (
+              <div>
+                <Icon icon={s.icon as any} size="1.6rem" color="#ff5e00" />
+                <span class="fm2-ribbon-label">{s.label}</span>
+                <span class="fm2-ribbon-value">{s.value}</span>
+              </div>
+            ))
+          }
+        </div>
+
+        <div class="fm2-story">
+          <div class="fm2-collage fm2-reveal">
+            {
+              COLLAGE.map((src, i) => (
+                <img
+                  class={`fm2-collage-img fm2-collage-${i + 1}`}
+                  src={src}
+                  alt="ciclista mirando la sierra con cicicleta a su lado"
+                  loading="lazy"
+                />
+              ))
+            }
+          </div>
+          <div class="fm2-reveal" style="--d:150ms">
+            <h2 class="fm2-h2">Welcome To Granada</h2>
+            <p class="fm2-lead">
+              Sun and Snow, Land and Sea, History and Legend
+            </p>
+            <p class="fm2-text">
+              The Province of Granada offers an extraordinary diversity of
+              landscapes, cultures, and experiences. From the legendary city
+              that witnessed the fall of the last Moorish kingdom of Al-Andalus
+              to some of Spain's most unspoilt natural areas, this is a region
+              of remarkable contrasts and enduring beauty.
+            </p>
+            <div class="fm2-tags">
+              <span class="fm2-tag">
+                <Icon icon="difficulty-logo" size="1.8rem" color="#ff5e00" />
+                <span><b>{i18n.INFO_PRODUCTS.DIFFICULTY}</b> {T.DIFFICULTY}</span>
+              </span>
+              <span class="fm2-tag">
+                <Route />
+                <span><b>{i18n.INFO_PRODUCTS.ROUTE_TYPE}</b> {T.ROUTE_TYPE}</span>
+              </span>
+              <span class="fm2-tag">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="34"
+                  height="24"
+                  fill="#ff5e00"
+                  viewBox="80 90 330 330"
+                  ><path
+                    d="M83.172,319.817Q85.646,320,88.1,320A64,64,0,0,0,136.544,214.29a64.376,64.376,0,0,0-11.981-10.841l9.59-17.982,46.293,46.293A31.986,31.986,0,1,0,235.7,264h20.823a64.023,64.023,0,1,0,42.47-68.439l-10.025-19.605L300.944,152H316a20,20,0,0,0,0-40H276a20,20,0,0,0,0,40h7.053l-8,16H143.469l16.49-30.918L160,137l4.8-9H200a8,8,0,0,0,0-16H166.624A24.039,24.039,0,0,0,144,96H120a8,8,0,0,0-8,8v32a8,8,0,0,0,8,8h18.136l-27.748,52.028a64.045,64.045,0,0,0-86.2,55.141h0A64.072,64.072,0,0,0,83.172,319.817ZM312,256a8,8,0,1,1,8,8A8.009,8.009,0,0,1,312,256Zm-20-38.953L303.183,238.9a24.037,24.037,0,0,0-5.8,9.1h-24.7A48.052,48.052,0,0,1,292.007,217.047Zm-14.122-27.618,6.775,13.25A64.062,64.062,0,0,0,256.521,248H240a31.8,31.8,0,0,0-4.446-16.244ZM260.686,184l-36.443,36.443a31.9,31.9,0,0,0-32.483,0L155.314,184ZM96,256a8,8,0,1,1-8-8A8.009,8.009,0,0,1,96,256Z"
+                  ></path><path
+                    d="M380,168H344v16h36a92,92,0,0,1,0,184H327.324a47.991,47.991,0,0,0-94.642,0H190.99A32.057,32.057,0,0,0,160,344H120a8,8,0,0,0-8,8H96a8,8,0,1,0,0,16h16v16H96a8,8,0,1,0,0,16h16a8,8,0,0,0,8,8h40a32.057,32.057,0,0,0,30.987-24h41.692a47.991,47.991,0,0,0,94.642,0H380a108,108,0,0,0,0-216ZM294.659,380.438l-16,24-13.312-8.876L273.055,384H272a8,8,0,0,1-6.653-12.438l16-24,13.312,8.876L286.951,368H288a8,8,0,0,1,6.656,12.438Z"
+                  ></path></svg
+                >
+                <span><b>E-Bike</b> Yes</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Itinerary -->
+      <section id="itinerary" class="fm2-section">
+        <h2 class="fm2-h2 fm2-reveal">{T.WHAT_TO_EXPECT}</h2>
+        <ul class="fm2-expect">
+          {
+            expect.map((e, i) => (
+              <li class="fm2-reveal" style={`--d:${i * 100}ms`}>
+                <span class="fm2-dot"></span>
+                <p>{e}</p>
+              </li>
+            ))
+          }
+        </ul>
+
+        <div class="fm2-day fm2-reveal">
+          <div class="fm2-day-text">
+            <p class="fm2-text">{T.DAY_1.TEXT_1}</p>
+            <p class="fm2-text">
+              <b>{i18n.DAY.OPTIONAL}</b>
+              {T.DAY_1.TEXT_2}
+            </p>
+            <p class="fm2-text">
+              <b>{i18n.DAY.OPTIONAL}</b>
+              {T.DAY_1.TEXT_3}
+            </p>
+          </div>
+          <div class="fm2-day-stats">
+            <div class="fm2-stat">
+              <Icon icon="distance-logo" size="2.4rem" color="#ff5e00" />
+              <div>
+                <span class="fm2-stat-label">{i18n.DAY.TOTAL_DISTANCE}</span>
+                <span class="fm2-stat-num" data-count="50" data-unit=" km"
+                  >50 km</span
+                >
+              </div>
+            </div>
+            <div class="fm2-stat">
+              <Icon icon="up-logo" size="2.4rem" color="#ff5e00" />
+              <div>
+                <span class="fm2-stat-label">{i18n.DAY.TOTAL_ASCENT}</span>
+                <span class="fm2-stat-num" data-count="450" data-unit=" m"
+                  >450 m</span
+                >
+              </div>
+            </div>
+            <div class="fm2-stat">
+              <Icon icon="down-logo" size="2.4rem" color="#ff5e00" />
+              <div>
+                <span class="fm2-stat-label">{i18n.DAY.TOTAL_DESCENT}</span>
+                <span class="fm2-stat-num" data-count="1350" data-unit=" m"
+                  >1350 m</span
+                >
+              </div>
+            </div>
+            <div class="fm2-stat">
+              <Icon icon="timer-logo" size="2.4rem" color="#ff5e00" />
+              <div>
+                <span class="fm2-stat-label">{i18n.INFO_PRODUCTS.DURATION}</span>
+                <span class="fm2-stat-num">3 hours</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Included -->
+      <section id="included" class="fm2-section">
+        <div class="fm2-two">
+          <div class="fm2-card fm2-reveal">
+            <h2 class="fm2-h3">{T.INCLUDED.TITLE}</h2>
+            <ul class="fm2-list">
+              {
+                included.map((t, i) => (
+                  <li style={`--d:${i * 60}ms`}>
+                    <Icon icon="check-logo" size="1.5rem" color="#ff5e00" />
+                    <span>{t}</span>
+                  </li>
+                ))
+              }
+            </ul>
+          </div>
+          <div class="fm2-card fm2-card-soft fm2-reveal" style="--d:120ms">
+            <h2 class="fm2-h3">{T.NOT_INCLUDED.TITLE}</h2>
+            <ul class="fm2-list">
+              <li>
+                <Icon icon="uncheck-logo" size="1.5rem" color="#ff5e00" />
+                <span>{T.NOT_INCLUDED.TEXT_1}</span>
+              </li>
+            </ul>
+
+            <h2 class="fm2-h3 fm2-mt">{T.AVAILABILITY}</h2>
+            <ul class="fm2-seasons">
+              {
+                seasons.map((s) => (
+                  <li>
+                    <Icon icon={s.icon as any} size="1.5rem" color="#ff5e00" />
+                    <span>{s.text}</span>
+                  </li>
+                ))
+              }
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery -->
+      <section id="gallery" class="fm2-section">
+        <div class="fm2-gallery-head fm2-reveal">
+          <h2 class="fm2-h2">Gallery</h2>
+          <div class="fm2-arrows">
+            <button type="button" data-dir="-1" aria-label="Previous">←</button>
+            <button type="button" data-dir="1" aria-label="Next">→</button>
+          </div>
+        </div>
+        <div class="fm2-track" data-track>
+          {
+            GALLERY.map((src) => (
+              <button type="button" class="fm2-slide" data-full={src}>
+                <img
+                  src={src}
+                  alt="ciclista mirando la sierra con cicicleta a su lado"
+                  loading="lazy"
+                />
+              </button>
+            ))
+          }
+        </div>
+        <dialog class="fm2-dialog" data-dialog>
+          <img alt="" />
+          <button type="button" data-close aria-label="Close">✕</button>
+        </dialog>
+      </section>
+
+      <!-- Practical -->
+      <section id="practical" class="fm2-section">
+        <div class="fm2-two">
+          <div class="fm2-card fm2-reveal">
+            <h2 class="fm2-h3">Bicycle</h2>
+            <p class="fm2-text">🔶 E-Bike Bergamont E REVOX SPORT</p>
+            <img
+              class="fm2-bike"
+              src="/cycle-tour/leisure-cycling/cycle-tour-granada/bike-1.webp"
+              alt="E-Bike Bergamont E REVOX SPORT"
+              loading="lazy"
+            />
+          </div>
+          <div class="fm2-reveal" style="--d:120ms">
+            <img
+              class="fm2-map"
+              src={`${BASE}/fmtc-map.webp`}
+              alt="Kaart van Sardinië-tour"
+              loading="lazy"
+            />
+          </div>
+        </div>
+
+        <div class="fm2-two fm2-mt">
+          <div class="fm2-card fm2-reveal">
+            <h2 class="fm2-h3">What to pack for your cycle tour</h2>
+            <p class="fm2-text">
+              A well-packed bag makes a smoother ride! Here’s what we recommend
+              for your cycle tour through Granada.
+            </p>
+            <ul class="fm2-bullets">
+              {pack.map((p) => <li>{p}</li>)}
+            </ul>
+            <p class="fm2-text">
+              If you have any questions about the recommended equipment or are
+              unsure what to bring, please do not hesitate to contact us.
+            </p>
+          </div>
+          <div class="fm2-card fm2-reveal" style="--d:120ms">
+            <h2 class="fm2-h3">{T.REQUIEREMENTS}</h2>
+            <ul class="fm2-bullets">
+              {requirements.map((r) => <li>{r}</li>)}
+            </ul>
+          </div>
+        </div>
+
+        <div class="fm2-terms fm2-reveal">
+          <h2 class="fm2-h3">Terms &amp; Conditions</h2>
+          <p class="fm2-text">
+            Please review our <a
+              href="terms-and-conditions"
+              target="_blank"
+              rel="noopener noreferrer">Terms &amp; Conditions</a
+            > before completing your booking. By confirming your reservation, you
+            agree to all policies regarding payments, cancellations, and participation
+            requirements.
+          </p>
+        </div>
+      </section>
+
+      <!-- Travel info -->
+      <section id="info" class="fm2-section">
+        <h2 class="fm2-h2 fm2-reveal">Travel Information</h2>
+        <div class="fm2-faq">
+          {
+            faq.map((f, i) => (
+              <details class="fm2-item fm2-reveal" style={`--d:${i * 60}ms`}>
+                <summary>
+                  <span>{f.name}</span>
+                  <i aria-hidden="true"></i>
+                </summary>
+                <div class="fm2-item-body">
+                  <div>
+                    {f.texts.map((t) => (
+                      <p>{t}</p>
+                    ))}
+                  </div>
+                </div>
+              </details>
+            ))
+          }
+        </div>
+      </section>
+
+      <section class="fm2-final fm2-reveal">
+        <h2>{T.TITLE}</h2>
+        <p>{T.SUBTITLE}</p>
+        <div class="fm2-final-btn"><BookButton /></div>
+      </section>
+    </main>
+  </div>
+</Layout>
+
+<style is:global>
+  .fm2 {
+    --o: #ff5e00;
+    --g: #3c5546;
+    --ink: #1f2a24;
+    --mist: #f3f6f4;
+    color: var(--ink);
+    overflow-x: clip;
+  }
+  .fm2 * {
+    box-sizing: border-box;
+  }
+  .fm2-wrap {
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 0 1.25rem 4rem;
+  }
+  .fm2-section {
+    padding-top: 4.5rem;
+    scroll-margin-top: 4.5rem;
+  }
+
+  /* Hero */
+  .fm2-hero {
+    position: relative;
+    min-height: 34rem;
+    height: 82vh;
+    max-height: 46rem;
+    margin-top: 4rem;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    color: #fff;
+  }
+  .fm2-hero-bg {
+    position: absolute;
+    inset: -8% 0;
+    background: var(--hero) center/cover no-repeat;
+    animation: fm2-zoom 18s ease-out both;
+    will-change: transform;
+  }
+  .fm2-hero-shade {
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(to top, rgb(60 85 70 / 0.92), rgb(60 85 70 / 0.15) 60%),
+      linear-gradient(120deg, rgb(255 94 0 / 0.25), transparent 50%);
+  }
+  .fm2-hero-inner {
+    position: relative;
+    width: 100%;
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 0 1.25rem 7rem;
+  }
+  .fm2-chip {
+    display: inline-flex;
+    gap: 0.5rem;
+    align-items: center;
+    padding: 0.4rem 1rem;
+    border-radius: 999px;
+    background: rgb(255 255 255 / 0.16);
+    backdrop-filter: blur(8px);
+    font-weight: 600;
+  }
+  .fm2-title {
+    margin: 1rem 0 0.5rem;
+    font-size: clamp(2.2rem, 6vw, 4.5rem);
+    line-height: 1.02;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    max-width: 18ch;
+    color: #fff;
+    background: none;
+  }
+  .fm2-subtitle {
+    font-size: clamp(1.3rem, 3.2vw, 2.2rem);
+    font-weight: 800;
+    color: var(--o);
+    margin: 0;
+  }
+  .fm2-hero-cta {
+    margin-top: 1.75rem;
+    max-width: 18rem;
+  }
+  .fm2-compare {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 2;
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    background: rgb(255 255 255 / 0.9);
+    color: var(--g);
+    font-weight: 700;
+    font-size: 0.875rem;
+    transition:
+      background 0.2s,
+      color 0.2s;
+  }
+  .fm2-compare:hover {
+    background: var(--o);
+    color: #fff;
+  }
+  .fm2-wave {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 4.5rem;
+  }
+  @keyframes fm2-zoom {
+    from {
+      transform: scale(1.12);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  .fm2-rise {
+    opacity: 0;
+    transform: translateY(1.5rem);
+    animation: fm2-rise 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) var(--d, 0ms)
+      forwards;
+  }
+  @keyframes fm2-rise {
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  /* Sticky nav */
+  .fm2-nav {
+    position: sticky;
+    top: 4rem;
+    z-index: 30;
+    background: rgb(255 255 255 / 0.92);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #e3e9e5;
+  }
+  .fm2-nav-inner {
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+    display: flex;
+    gap: 0.25rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .fm2-nav a {
+    position: relative;
+    padding: 0.95rem 0.9rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    color: var(--g);
+  }
+  .fm2-nav a::after {
+    content: "";
+    position: absolute;
+    left: 0.9rem;
+    right: 0.9rem;
+    bottom: 0;
+    height: 3px;
+    border-radius: 3px;
+    background: var(--o);
+    transform: scaleX(0);
+    transition: transform 0.3s;
+  }
+  .fm2-nav a.is-active::after,
+  .fm2-nav a:hover::after {
+    transform: scaleX(1);
+  }
+
+  /* Type */
+  .fm2-h2 {
+    font-size: clamp(1.8rem, 4vw, 2.75rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: var(--g);
+    margin: 0 0 1.25rem;
+    background: none;
+    padding: 0;
+  }
+  .fm2-h2::after {
+    content: "";
+    display: block;
+    width: 3.5rem;
+    height: 5px;
+    margin-top: 0.6rem;
+    border-radius: 5px;
+    background: var(--o);
+  }
+  .fm2-h3 {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--g);
+    margin: 0 0 1rem;
+  }
+  .fm2-lead {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0 0 0.75rem;
+  }
+  .fm2-text {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #4a5750;
+    margin: 0 0 0.9rem;
+  }
+  .fm2-text b {
+    color: var(--ink);
+  }
+  .fm2-mt {
+    margin-top: 2rem;
+  }
+
+  /* Scroll reveal */
+  .fm2-reveal {
+    opacity: 0;
+    transform: translateY(2rem);
+    transition:
+      opacity 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) var(--d, 0ms),
+      transform 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) var(--d, 0ms);
+  }
+  .fm2-reveal.is-in {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* Facts */
+  .fm2-facts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.9rem;
+    margin-top: -1.5rem;
+  }
+  @media (min-width: 768px) {
+    .fm2-facts {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media (min-width: 1024px) {
+    .fm2-facts {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+  .fm2-fact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 1.1rem;
+    border-radius: 1.25rem;
+    background: #fff;
+    border: 1px solid #e3e9e5;
+    box-shadow: 0 10px 30px -18px rgb(60 85 70 / 0.5);
+    transition:
+      transform 0.3s,
+      box-shadow 0.3s,
+      opacity 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) var(--d, 0ms);
+  }
+  .fm2-fact:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 36px -16px rgb(255 94 0 / 0.45);
+  }
+  .fm2-fact-icon {
+    display: grid;
+    place-items: center;
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 0.8rem;
+    background: rgb(255 94 0 / 0.1);
+    margin-bottom: 0.4rem;
+  }
+  .fm2-fact-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #7a877f;
+    font-weight: 700;
+  }
+  .fm2-fact-value {
+    font-weight: 700;
+    color: var(--g);
+    line-height: 1.3;
+  }
+
+  /* Story */
+  .fm2-story {
+    display: grid;
+    gap: 3rem;
+    align-items: center;
+    margin-top: 4.5rem;
+  }
+  @media (min-width: 900px) {
+    .fm2-story {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  .fm2-collage {
+    position: relative;
+    height: 24rem;
+  }
+  .fm2-collage-img {
+    position: absolute;
+    object-fit: cover;
+    border-radius: 1.25rem;
+    box-shadow: 0 20px 40px -20px rgb(0 0 0 / 0.5);
+    transition:
+      transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1),
+      z-index 0s;
+  }
+  .fm2-collage-1 {
+    inset: 0 22% 22% 0;
+    width: 78%;
+    height: 78%;
+  }
+  .fm2-collage-2 {
+    right: 0;
+    top: 12%;
+    width: 42%;
+    height: 40%;
+    border: 6px solid #fff;
+    transform: rotate(4deg);
+  }
+  .fm2-collage-3 {
+    left: 14%;
+    bottom: 0;
+    width: 46%;
+    height: 38%;
+    border: 6px solid #fff;
+    transform: rotate(-4deg);
+  }
+  .fm2-collage-img:hover {
+    transform: scale(1.06) rotate(0);
+    z-index: 5;
+  }
+  .fm2-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 1.25rem;
+  }
+  .fm2-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    background: var(--mist);
+    font-size: 0.95rem;
+  }
+  .fm2-tag b {
+    color: var(--g);
+    margin-right: 0.25rem;
+  }
+
+  /* Itinerary */
+  .fm2-expect {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem;
+    display: grid;
+    gap: 1rem;
+    border-left: 3px dashed rgb(255 94 0 / 0.5);
+    margin-left: 0.6rem;
+    padding-left: 1.6rem;
+  }
+  .fm2-expect li {
+    position: relative;
+  }
+  .fm2-expect p {
+    margin: 0;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #4a5750;
+  }
+  .fm2-dot {
+    position: absolute;
+    left: -2.2rem;
+    top: 0.45rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: var(--o);
+    box-shadow: 0 0 0 5px rgb(255 94 0 / 0.2);
+    animation: fm2-pulse 2.4s ease-in-out infinite;
+  }
+  @keyframes fm2-pulse {
+    50% {
+      box-shadow: 0 0 0 10px rgb(255 94 0 / 0);
+    }
+  }
+  .fm2-day {
+    display: grid;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 1.75rem;
+    background: var(--g);
+    color: #fff;
+  }
+  @media (min-width: 900px) {
+    .fm2-day {
+      grid-template-columns: 1.4fr 1fr;
+      padding: 2.75rem;
+    }
+  }
+  .fm2-day .fm2-text {
+    color: rgb(255 255 255 / 0.88);
+  }
+  .fm2-day .fm2-text b {
+    color: #fff;
+  }
+  .fm2-day-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+    align-content: center;
+  }
+  .fm2-stat {
+    display: flex;
+    gap: 0.7rem;
+    align-items: center;
+  }
+  .fm2-stat-label {
+    display: block;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    opacity: 0.75;
+  }
+  .fm2-stat-num {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #fff;
+  }
+  .fm2-ribbon {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 1.25rem;
+  }
+  .fm2-ribbon > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 1.25rem;
+    background: var(--mist);
+  }
+  .fm2-ribbon-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #7a877f;
+    font-weight: 700;
+    margin-top: 0.3rem;
+  }
+  .fm2-ribbon-value {
+    font-weight: 800;
+    color: var(--g);
+  }
+
+  /* Cards & lists */
+  .fm2-two {
+    display: grid;
+    gap: 1.5rem;
+  }
+  @media (min-width: 900px) {
+    .fm2-two {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  .fm2-card {
+    padding: 2rem;
+    border-radius: 1.75rem;
+    background: #fff;
+    border: 1px solid #e3e9e5;
+    box-shadow: 0 14px 36px -24px rgb(60 85 70 / 0.5);
+  }
+  .fm2-card-soft {
+    background: var(--mist);
+  }
+  .fm2-list,
+  .fm2-seasons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.75rem;
+  }
+  .fm2-list li,
+  .fm2-seasons li {
+    display: flex;
+    gap: 0.7rem;
+    align-items: flex-start;
+    line-height: 1.5;
+    transition: transform 0.25s;
+  }
+  .fm2-list li:hover,
+  .fm2-seasons li:hover {
+    transform: translateX(6px);
+  }
+  .fm2-list svg,
+  .fm2-seasons svg {
+    flex: none;
+    margin-top: 0.1rem;
+  }
+  .fm2-bullets {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem;
+    display: grid;
+    gap: 0.6rem;
+  }
+  .fm2-bullets li {
+    position: relative;
+    padding-left: 1.5rem;
+    line-height: 1.55;
+    color: #4a5750;
+  }
+  .fm2-bullets li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.55rem;
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 2px;
+    background: var(--o);
+    transform: rotate(45deg);
+  }
+  .fm2-bike,
+  .fm2-map {
+    width: 100%;
+    border-radius: 1.25rem;
+    margin-top: 1rem;
+    transition: transform 0.5s;
+  }
+  .fm2-map {
+    margin-top: 0;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0 14px 36px -24px rgb(60 85 70 / 0.6);
+  }
+  .fm2-bike:hover,
+  .fm2-map:hover {
+    transform: scale(1.02);
+  }
+  .fm2-terms {
+    margin-top: 2rem;
+    padding: 1.75rem 2rem;
+    border-radius: 1.5rem;
+    border-left: 6px solid var(--o);
+    background: var(--mist);
+  }
+  .fm2-terms a {
+    color: var(--o);
+    font-weight: 700;
+  }
+  .fm2-terms a:hover {
+    text-decoration: underline;
+  }
+
+  /* Gallery */
+  .fm2-gallery-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .fm2-arrows {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+  }
+  .fm2-arrows button {
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    border: 2px solid var(--g);
+    color: var(--g);
+    font-size: 1.2rem;
+    transition: all 0.2s;
+  }
+  .fm2-arrows button:hover {
+    background: var(--o);
+    border-color: var(--o);
+    color: #fff;
+  }
+  .fm2-track {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    padding: 0.5rem 0;
+  }
+  .fm2-slide {
+    flex: 0 0 min(78%, 26rem);
+    scroll-snap-align: start;
+    overflow: hidden;
+    border-radius: 1.5rem;
+    cursor: zoom-in;
+    aspect-ratio: 4 / 5;
+  }
+  .fm2-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
+  }
+  .fm2-slide:hover img {
+    transform: scale(1.08);
+  }
+  .fm2-dialog {
+    border: 0;
+    padding: 0;
+    background: transparent;
+    max-width: 94vw;
+    max-height: 92vh;
+    margin: auto;
+  }
+  .fm2-dialog::backdrop {
+    background: rgb(20 30 25 / 0.88);
+    backdrop-filter: blur(4px);
+  }
+  .fm2-dialog img {
+    max-width: 94vw;
+    max-height: 92vh;
+    border-radius: 1rem;
+    animation: fm2-pop 0.35s cubic-bezier(0.2, 0.7, 0.2, 1);
+  }
+  .fm2-dialog button {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: #fff;
+    color: var(--g);
+    font-weight: 800;
+  }
+  @keyframes fm2-pop {
+    from {
+      opacity: 0;
+      transform: scale(0.92);
+    }
+  }
+
+  /* FAQ */
+  .fm2-faq {
+    display: grid;
+    gap: 0.75rem;
+  }
+  .fm2-item {
+    border-radius: 1.25rem;
+    border: 1px solid #e3e9e5;
+    background: #fff;
+    overflow: hidden;
+    transition: box-shadow 0.3s;
+  }
+  .fm2-item[open] {
+    box-shadow: 0 14px 30px -20px rgb(255 94 0 / 0.6);
+    border-color: var(--o);
+  }
+  .fm2-item summary {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 1.5rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--g);
+    cursor: pointer;
+  }
+  .fm2-item summary::-webkit-details-marker {
+    display: none;
+  }
+  .fm2-item summary i {
+    position: relative;
+    width: 1rem;
+    height: 1rem;
+    flex: none;
+  }
+  .fm2-item summary i::before,
+  .fm2-item summary i::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 2px;
+    background: var(--o);
+    transition: transform 0.3s;
+  }
+  .fm2-item summary i::after {
+    transform: rotate(90deg);
+  }
+  .fm2-item[open] summary i::after {
+    transform: rotate(0);
+  }
+  .fm2-item-body {
+    padding: 0 1.5rem 1.4rem;
+    animation: fm2-open 0.4s ease;
+  }
+  .fm2-item-body p {
+    margin: 0 0 0.75rem;
+    line-height: 1.7;
+    color: #4a5750;
+  }
+  @keyframes fm2-open {
+    from {
+      opacity: 0;
+      transform: translateY(-0.5rem);
+    }
+  }
+
+  /* Final CTA */
+  .fm2-final {
+    margin-top: 5rem;
+    padding: 3rem 1.5rem;
+    text-align: center;
+    border-radius: 2rem;
+    color: #fff;
+    background: linear-gradient(135deg, var(--g), #2c4033 60%, var(--o) 180%);
+    background-size: 200% 200%;
+    animation: fm2-grad 10s ease-in-out infinite;
+  }
+  .fm2-final h2 {
+    font-size: clamp(1.6rem, 4vw, 2.6rem);
+    font-weight: 800;
+    color: #fff;
+    margin: 0;
+    background: none;
+  }
+  .fm2-final p {
+    color: var(--o);
+    font-weight: 800;
+    font-size: 1.3rem;
+    margin: 0.4rem 0 1.5rem;
+  }
+  .fm2-final-btn {
+    max-width: 18rem;
+    margin: 0 auto;
+  }
+  @keyframes fm2-grad {
+    50% {
+      background-position: 100% 100%;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .fm2 *,
+    .fm2 *::before,
+    .fm2 *::after {
+      animation: none !important;
+      transition: none !important;
+    }
+    .fm2-reveal,
+    .fm2-rise {
+      opacity: 1;
+      transform: none;
+    }
+  }
+</style>
+
+<script>
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  // Scroll reveal
+  const reveal = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) {
+          e.target.classList.add("is-in");
+          reveal.unobserve(e.target);
+        }
+      });
+    },
+    { threshold: 0.12 },
+  );
+  document.querySelectorAll(".fm2-reveal").forEach((el) => reveal.observe(el));
+
+  // Count-up numbers
+  const counters = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((e) => {
+        if (!e.isIntersecting) return;
+        counters.unobserve(e.target);
+        const el = e.target as HTMLElement;
+        const end = Number(el.dataset.count);
+        const unit = el.dataset.unit ?? "";
+        const start = performance.now();
+        const tick = (now: number) => {
+          const p = Math.min((now - start) / 1400, 1);
+          const eased = 1 - Math.pow(1 - p, 3);
+          el.textContent = Math.round(end * eased) + unit;
+          if (p < 1) requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+      });
+    },
+    { threshold: 0.6 },
+  );
+  if (!reduce) {
+    document
+      .querySelectorAll<HTMLElement>("[data-count]")
+      .forEach((el) => counters.observe(el));
+  }
+
+  // Hero parallax
+  const bg = document.querySelector<HTMLElement>("[data-parallax]");
+  if (bg && !reduce) {
+    window.addEventListener(
+      "scroll",
+      () => {
+        const y = Math.min(window.scrollY, 900);
+        bg.style.transform = `translateY(${y * 0.25}px)`;
+      },
+      { passive: true },
+    );
+  }
+
+  // Active section in nav
+  const links = document.querySelectorAll<HTMLAnchorElement>("[data-nav]");
+  const spy = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((e) => {
+        if (!e.isIntersecting) return;
+        links.forEach((l) =>
+          l.classList.toggle("is-active", l.dataset.nav === e.target.id),
+        );
+      });
+    },
+    { rootMargin: "-35% 0px -60% 0px" },
+  );
+  links.forEach((l) => {
+    const target = document.getElementById(l.dataset.nav ?? "");
+    if (target) spy.observe(target);
+  });
+
+  // Gallery arrows and lightbox
+  const track = document.querySelector<HTMLElement>("[data-track]");
+  document.querySelectorAll<HTMLElement>(".fm2-arrows button").forEach((b) =>
+    b.addEventListener("click", () => {
+      const dir = Number(b.dataset.dir);
+      track?.scrollBy({ left: dir * 340, behavior: "smooth" });
+    }),
+  );
+  const dialog = document.querySelector<HTMLDialogElement>("[data-dialog]");
+  const full = dialog?.querySelector("img");
+  document.querySelectorAll<HTMLElement>(".fm2-slide").forEach((s) =>
+    s.addEventListener("click", () => {
+      if (full) full.src = s.dataset.full ?? "";
+      dialog?.showModal();
+    }),
+  );
+  dialog?.addEventListener("click", () => dialog.close());
+</script>
