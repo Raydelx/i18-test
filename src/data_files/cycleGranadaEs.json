@@ -2,6 +2,10 @@
     
     "cycleSardiniaEs": [   
       {
+        "name": "Price",
+        "text1": "The published price is based on a group of 10 participants. The final price per person may be adjusted depending on the final group size. For groups of more than 10 participants, the price per person will be reduced for everyone, while smaller groups may result in a price increase. Please contact us for a personalised quotation based on your group size and travel dates."
+      },
+      {
         "name": "Difficulty",
         "text1": "Our e-bike tours are specially designed for recreational cyclists who enjoy discovering the region at a relaxed pace. These tours focus on enjoying the landscape, cultural heritage, and history of the area. Thanks to electric assistance, these routes are accessible to almost everyone with a basic  level of fitness. However, it's important to note that we divide the tours into three difficulty levels, based on distance and elevation gain. While the e-bike takes much of the physical effort out of cycling, longer distances or greater elevation can still make for a more challenging ride. ",
         "text2": "To participate in these cycling holidays, it’s important that you have a good basic fitness level, cycle regularly, and are comfortable shifting gears efficiently when climbing, this will greatly enhance your enjoyment on the road.",
@@ -22,11 +26,7 @@
       },
       {
         "name": "Accommodations ",
-        "text1": "This is a Flower Tour, which means you will stay in the same hotel throughout the entire tour rather than changing accommodation each day. Your hotel is conveniently located close to the city of Granada, providing a comfortable base from which to explore the region. This arrangement allows you to settle in, enjoy a more relaxed pace, and travel each day without the need to pack and move your luggage.",
-        "text2": "The hotels included in our tours have been carefully selected with great attention to their location, comfort, and quality, to ensure a pleasant and relaxing stay throughout your cycling holiday. In each destination, we work with more than one carefully chosen hotel. This allows us to guarantee a consistently high standard of accommodation and to remain flexible. The final hotel allocation is determined according to the number of participants and availability at the time of booking, while always maintaining the same level of comfort and service. All accommodations used on our tours are rated between 3 and 4 stars, offering a good balance of quality and comfort. The accommodations include breakfast and provide attentive service, often with facilities such as a restaurant, bar, garden, and swimming pool. The hotel rooms are private standard single or double rooms, depending on the hotel, and each comes with a private bathroom. If you wish to share a room with a friend, family member, or partner, please indicate this when making your pre-reservation so we can prepare the appropriate rooming list.",
-        "text6": "Please note: ",
-        "text7": "• We do not pair single travelers with other participants they do not know, in order to respect privacy and ensure comfort.",
-        "text8": "• Adding extra days at our selected accommodations can be arranged, but must be requested in advance."
+        "text1": "For this tour, we have carefully selected Alquería de los Lentos, a charming rural hotel located in Nigüelas, approximately 15 minutes from Granada. Set in the beautiful Lecrín Valley, at the foothills of Sierra Nevada, this former 16th-century flour mill offers a peaceful retreat surrounded by gardens, olive groves and mountain scenery. With its authentic Andalusian character, welcoming atmosphere and beautiful natural setting, it is the perfect place to relax and enjoy the slower pace of life in southern Spain. We have chosen this special accommodation to offer you a more authentic experience. Please note: The hotel is located outside Granada, so independent visits to the city are not possible on cycling days. You will have the opportunity to explore Granada during your free day, when you can enjoy the city and its famous Alhambra at your own pace."
       },
       {
         "name": "Transport",
@@ -41,7 +41,7 @@
       },
       {
         "name": "Optional Activities ",
-        "text1": "Some extra experiences need to be booked in advance, while others can be decided on the day, depending on how you feel. For more information about these activities, visit our blog: Cycle Tour Granada."        
+        "text1": "Some extra experiences need to be booked in advance, while others can be decided on the day, depending on how you feel."        
       },
       
       

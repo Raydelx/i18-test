@@ -13,6 +13,8 @@ import DayItem from "@/components/products-components/dayItem.astro";
 import { getI18N } from "@/i18n/";
 import AccordionProducts from "@/components/accordionProducts.astro";
 import BookButton from "@/components/book-button.astro";
+import GranadaDifficultyModal from "@/components/granada-difficulty-modal.astro";
+import GranadaExperiencesModal from "@/components/granada-experiences-modal.astro";
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
 
@@ -87,8 +89,11 @@ type ReviewsProps = {
       <!-- Informacion general de los viajes -->
 
       <div
-        class="grid grid-cols-2 md:grid-cols-6 h-auto mt-3 gap-3 place-content-start md:px-6">
-        <InformationProducts title={i18n.INFO_PRODUCTS.PRICE} subtitle="1390">
+        class="grid grid-cols-2 md:grid-cols-7 h-auto mt-3 gap-3 place-content-start md:px-6">
+        <InformationProducts
+          title={i18n.INFO_PRODUCTS.PRICE}
+          class="md:col-span-2"
+          subtitle="1730 € shared room / 1995 € single room">
           <div slot="icon">
             <Icon icon="price-logo" size="1.6rem" color="#ff5e00" />
           </div>
@@ -191,8 +196,10 @@ type ReviewsProps = {
         </div>
       </div>
 
-      <div class="mt-10 max-w-[320px]">
+      <div class="mt-10 grid gap-5 md:grid-cols-3 lg:gap-8">
         <BookButton />
+        <GranadaExperiencesModal />
+        <GranadaDifficultyModal />
       </div>
 
       <!--  Include, exclude, complementaries  -->
@@ -272,7 +279,7 @@ type ReviewsProps = {
               </div>
 
               <p class="max-w-[320px] text-md">
-                Travel & cancellation insurance (It is obligatory to take out
+                Travel & cancellation insurance (It is recommended to take out
                 travel insurance before departure)
               </p>
             </li>
@@ -491,7 +498,6 @@ type ReviewsProps = {
             rel="noopener noreferrer">Terms & Conditions</a
           > before completing your booking. By confirming your reservation, you agree
           to all policies regarding payments, cancellations, and participation requirements.
-          See Blog Cycle Tour Granada.
         </p>
       </div>
     </div>
